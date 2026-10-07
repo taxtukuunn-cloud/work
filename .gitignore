@@ -1,0 +1,30 @@
+# 文章の直しに要らない重いもの（ゲーム側の元のファイルはそのまま残る）
+*.png
+*.PNG
+*.jpg
+*.JPG
+*.jpeg
+*.gif
+*.bmp
+*.webp
+*.psd
+*.ogg
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.mp4
+*.webm
+*.avi
+*.mov
+*.exe
+*.dll
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+__pycache__/
+*.pyc
+# 配布用の zip は外す（tools.zip だけ残す）
+*.zip
+!tools.zip
