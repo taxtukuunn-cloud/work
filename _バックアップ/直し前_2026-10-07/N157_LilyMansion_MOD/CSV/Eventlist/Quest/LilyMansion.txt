@@ -1,0 +1,2 @@
+魔導の塔とリリィの館（館の女主人　リリィ）,Card/LilyMansion_master,クエストイベント
+魔導の塔とリリィの館【回想バトル】,Card/LilyMansion_master,回想バトル,$$LilyMansion_挑戦回数,>=,1
