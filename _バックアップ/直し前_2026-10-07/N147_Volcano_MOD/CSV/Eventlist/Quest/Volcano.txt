@@ -1,0 +1,2 @@
+ゴルド火山（火の精霊　サラマンダー）,Card/Volcano_master,クエストイベント
+ゴルド火山【回想バトル】,Card/Volcano_master,回想バトル,$$Volcano_挑戦回数,>=,1
