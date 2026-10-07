@@ -1,0 +1,2 @@
+三つの塔と城（試練の塔の主　デミウルゴス）,Card/Hunter_master,クエストイベント
+三つの塔と城【回想バトル】,Card/Hunter_master,回想バトル,$$Hunter_挑戦回数,>=,1
