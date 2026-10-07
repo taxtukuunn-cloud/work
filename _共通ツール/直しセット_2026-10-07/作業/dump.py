@@ -3,9 +3,10 @@
 行はそのままの形（字下げだけ外す）で出すので、patches の「元の行」にそのまま写せる。
 画像・SE・ウェイト・フェード・画面色・ループダメージの行は省く（射精・フラッシュ・話者は出す）。"""
 import sys, os, glob, re
-ROOT = 'C:/Users/taku2/Downloads/MOD/'
-BAK = ROOT + '_バックアップ/直し前_2026-10-07/'
 HERE = os.path.dirname(os.path.abspath(__file__))
+# MOD の置き場所。環境変数 MOD_ROOT があればそれ、無ければ この道具から3つ上（リポジトリのいちばん上＝Downloads\MOD）
+ROOT = (os.environ.get('MOD_ROOT') or os.path.normpath(os.path.join(HERE, '..', '..', '..'))).replace('\\', '/').rstrip('/') + '/'
+BAK = ROOT + '_バックアップ/直し前_2026-10-07/'
 SKIP = re.compile(r'^(画像|SE|ウェイト|フェードアウト|フェードイン|画面色|ループダメージ|エフェクト|BGM|背景|話者生成|#)')
 
 mod = sys.argv[1]

@@ -21,9 +21,10 @@ patches/<MOD>.py の書き方
 """
 import sys, os, re, glob, shutil, zipfile, importlib.util, io
 
-ROOT = 'C:/Users/taku2/Downloads/MOD/'
-BAK = ROOT + '_バックアップ/直し前_2026-10-07/'
 HERE = os.path.dirname(os.path.abspath(__file__))
+# MOD の置き場所。環境変数 MOD_ROOT があればそれ、無ければ この道具から3つ上（リポジトリのいちばん上＝Downloads\MOD）
+ROOT = (os.environ.get('MOD_ROOT') or os.path.normpath(os.path.join(HERE, '..', '..', '..'))).replace('\\', '/').rstrip('/') + '/'
+BAK = ROOT + '_バックアップ/直し前_2026-10-07/'
 BAD = re.compile(r'[,$%&#{}<>]')
 ROUTES = {"btl": "戦闘負け", "onani": "オナニー負け", "inochi": "命乞い負け", "onedari": "おねだり負け"}
 KEYS = ["m1", "m2", "m3", "e1", "e2", "e3", "boss"]
