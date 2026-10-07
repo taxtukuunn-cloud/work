@@ -1,0 +1,2 @@
+魔王城の天将（魔王　アリスフィーズ16世）,Card/Tensho_master,クエストイベント
+魔王城の天将【回想バトル】,Card/Tensho_master,回想バトル,$$Tensho_挑戦回数,>=,1

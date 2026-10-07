@@ -1,0 +1,2 @@
+女王たちの宮殿（議長　クィーンヴァンパイア）,Card/Queens_master,クエストイベント
+女王たちの宮殿【回想バトル】,Card/Queens_master,回想バトル,$$Queens_挑戦回数,>=,1

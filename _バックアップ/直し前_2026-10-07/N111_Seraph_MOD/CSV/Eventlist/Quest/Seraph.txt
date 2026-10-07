@@ -1,0 +1,2 @@
+天界の熾天使（熾天使　ミカエラ）,Card/Seraph_master,クエストイベント
+天界の熾天使【回想バトル】,Card/Seraph_master,回想バトル,$$Seraph_挑戦回数,>=,1

@@ -1,0 +1,2 @@
+パンドラ牧場（牧場主　パンドラ＝ナハト）,Card/PandoraFarm_master,クエストイベント
+パンドラ牧場【回想バトル】,Card/PandoraFarm_master,回想バトル,$$PandoraFarm_挑戦回数,>=,1
