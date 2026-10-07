@@ -1,0 +1,2 @@
+レド山の虫たち（蛇神　ケツァルコァトル）,Card/RedMountain_master,クエストイベント
+レド山の虫たち【回想バトル】,Card/RedMountain_master,回想バトル,$$RedMountain_挑戦回数,>=,1
