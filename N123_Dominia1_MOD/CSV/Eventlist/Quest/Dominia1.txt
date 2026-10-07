@@ -1,0 +1,2 @@
+ドミナルク帝城攻略（帝都守備隊隊長　レイゼンダール）,Card/Dominia1_master,クエストイベント
+ドミナルク帝城攻略【回想バトル】,Card/Dominia1_master,回想バトル,$$Dominia1_挑戦回数,>=,1
