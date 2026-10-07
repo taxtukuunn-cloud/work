@@ -1,0 +1,2 @@
+女王封印の間（淫魔女王　サディラス）,Card/Grail_master,クエストイベント
+女王封印の間【回想バトル】,Card/Grail_master,回想バトル,$$Grail_挑戦回数,>=,1
