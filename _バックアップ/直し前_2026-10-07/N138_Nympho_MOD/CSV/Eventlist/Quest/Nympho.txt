@@ -1,0 +1,2 @@
+夢の魔法学院（夢の創造主　イーヴァ）,Card/Nympho_master,クエストイベント
+夢の魔法学院【回想バトル】,Card/Nympho_master,回想バトル,$$Nympho_挑戦回数,>=,1
