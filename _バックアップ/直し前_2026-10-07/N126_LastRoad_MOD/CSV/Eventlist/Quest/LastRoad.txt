@@ -1,0 +1,2 @@
+街道と古城（古城の主　ヴァンパイア）,Card/LastRoad_master,クエストイベント
+街道と古城【回想バトル】,Card/LastRoad_master,回想バトル,$$LastRoad_挑戦回数,>=,1
