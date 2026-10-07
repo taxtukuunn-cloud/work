@@ -1,0 +1,2 @@
+サキュバスの村（村の長老　エルダーサキュバス）,Card/SuccVillage_master,クエストイベント
+サキュバスの村【回想バトル】,Card/SuccVillage_master,回想バトル,$$SuccVillage_挑戦回数,>=,1
