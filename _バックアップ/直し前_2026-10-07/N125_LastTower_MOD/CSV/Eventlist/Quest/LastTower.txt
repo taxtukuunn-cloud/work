@@ -1,0 +1,2 @@
+中央の塔（淫女王）,Card/LastTower_master,クエストイベント
+中央の塔【回想バトル】,Card/LastTower_master,回想バトル,$$LastTower_挑戦回数,>=,1
