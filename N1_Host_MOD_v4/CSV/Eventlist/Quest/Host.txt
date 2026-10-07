@@ -1,0 +1,2 @@
+クラブ・ルクス（NO.1ホスト　レン）,Card/Host_master,クエストイベント
+クラブ・ルクス【回想バトル】,Card/Host_master,回想バトル,$$Host_挑戦回数,>=,1

@@ -1,0 +1,131 @@
+# N108 女王たちの宮殿（Queens）画像データ。登場人物は全員20歳以上。5人とも女性（ふたなり・NH・女装なし）。
+# 見た目は設計メモ・brief の文章の目印から作成（作品名・キャラ名は tags に書かない）。筋肉の線は描かない。
+# 人魚の女王：原作は水色の肌・青い尾 → pale pearl-lilac skin／violet and silver fish tail に置き換え（髪は白、瞳は violet）。
+# 髪色の書き分け：吸血鬼＝platinum blonde（淡い金）／エルフ＝golden hair（濃い金）／ハーピー＝pale lavender／蜂＝black（黄の差し色）／人魚＝white。
+# 挿入は 人魚の尾びれの先（boss）と エルフの細い蔓（e3）だけ。どちらも体・植物なので pen なし。吸血鬼・蜂は指だけ。ハーピーは後ろに触れない。
+# 吸精の口づけは牙が肌を破らない（傷・流血なし）。蔓は柔らかく跡が残らない。主人公の右手首には金の輪。
+RING = "smooth gold bangles on his right wrist"
+SOFT_NEG = "muscular female, abs, broad shoulders on the woman, scary"
+BITE_NEG = "blood, bite wound, fangs piercing skin, bleeding neck, scary fangs"
+DATA = {
+ "code": "Queens",
+ "world": "white marble palace floating on a misty lake, council of monster queens, banners of five colors without text, candlelight, a great bell high above, detailed background",
+ "bg": "council hall of a white marble palace on a lake, a large round table and five ornate thrones, banners of five colors without text hanging from the walls, a great bronze bell under the domed ceiling, many candles, tall windows with mist outside, no humans",
+ "josou": None,
+ "chars": {
+   "m": {"type": "woman", "jp": "クィーンヴァンパイア",
+         "tags": "adult woman, mature female, mature face, sharp adult features, 30 years old, adult proportions, beautiful detailed eyes, tall, long legs, vampire, pale skin, platinum blonde hair, long wavy hair, two curved black horns, red eyes, black and red gothic dress, wide flowing red cape, soft voluptuous feminine body, huge breasts, wide hips",
+         "name": "the horned blonde vampire queen in a red cape",
+         "pose": "spreading her wide red cape with one hand, the other hand raised with a beckoning finger, haughty smile, looking down at viewer with red eyes",
+         "neg": SOFT_NEG + ", " + BITE_NEG},
+   "e1": {"type": "woman", "jp": "クィーンハーピー",
+          "tags": "adult woman, mature female, mature face, 28 years old, adult proportions, beautiful detailed eyes, tall, long legs, harpy, pale lavender hair, very long hair, small gold crown, golden eyes, large pink feathered wings, pale green dress, bird legs with soft pink feathers, soft curvy feminine body, large breasts",
+          "name": "the crowned harpy queen with pink wings",
+          "pose": "large pink wings half spread, hands folded in front of her, dignified calm smile, looking at viewer",
+          "neg": SOFT_NEG + ", sharp claws, scary talons"},
+   "e2": {"type": "woman", "jp": "クィーン・ビー",
+          "tags": "adult woman, mature female, mature face, 27 years old, adult proportions, beautiful detailed eyes, tall, long legs, bee woman, four arms, black hair with yellow streaks, short bob hair, antennae, gold crown, amber eyes, white fur-trimmed dress, white fur collar, glossy black tights, large transparent insect wings, soft curvy feminine body, large breasts, wide hips",
+          "name": "the four-armed bee queen in white fur",
+          "pose": "upper arms crossed under her chest, one lower hand holding a golden honey jar without text, the other lower hand on her hip, proud smile, looking at viewer",
+          "neg": SOFT_NEG + ", stinger, insect face, compound eyes, insect legs",
+          "neg_remove": ["extra arms"]},
+   "e3": {"type": "woman", "jp": "クィーンエルフ",
+          "tags": "adult woman, mature female, mature face, sharp adult features, 26 years old, adult proportions, beautiful detailed eyes, tall, long legs, elf, pointy ears, golden hair, very long straight hair, silver tiara, green eyes, green and white dress decorated with flowers, soft slender feminine body, medium breasts",
+          "name": "the golden-haired elf queen in a flower dress",
+          "pose": "arms crossed, a soft green vine curling around her wrist, cold composed expression, looking down at viewer",
+          "neg": SOFT_NEG + ", thorns, rope burns"},
+   "boss": {"type": "woman", "jp": "クィーンマーメイド",
+            "tags": "adult woman, mature female, mature face, 32 years old, adult proportions, beautiful detailed eyes, mermaid, white hair, very long wavy hair, seashell hair ornament, violet eyes, pale pearl-lilac skin, white seashell top, pearl necklaces, long violet and silver fish tail, wide soft tail fin, soft voluptuous feminine body, huge breasts",
+            "name": "the white-haired mermaid queen with a seashell ornament",
+            "pose": "sitting upright on the rim of a marble water basin, her long fish tail curled in the water, one hand on her chest as if singing, gentle graceful smile, looking at viewer",
+            "neg": SOFT_NEG + ", legs on the mermaid, human legs, feet"},
+ },
+ "places": {
+   "pier":     "lake pier in thick mist, wooden planks, a moored boat, the white palace reflected on the water",
+   "stairs":   "grand white marble staircase of the palace, banners of five colors without text, polished steps",
+   "council":  "council hall, a large round table and five thrones, a great bell under the domed ceiling, candlelight",
+   "night":    "windowless antechamber of the night wing, black and red drapes, a coffin-shaped velvet chaise longue, a decanter of red wine, candles",
+   "balcony":  "moon-viewing balcony, full moon, night wind, a path of moonlight on the lake, tall glass doors, a single chair",
+   "water":    "antechamber of the water wing, half of the floor is a shallow marble water basin, seashell decorations, rippling light",
+   "gate":     "water gate leading down to the lake, stone steps descending into cold clear water, an underwater passage, dim light",
+   "sky":      "high-ceilinged tower room of the sky wing, a bed of soft pink feathers, wide open windows, clouds outside",
+   "tower":    "top of the palace tower, strong wind, clouds, wide view of the whole lake, a nest bed of feathers",
+   "flower":   "antechamber of the flower wing, golden honey jars without text, hexagonal honeycomb ornaments, warm golden light",
+   "cellar":   "underground honey storehouse, rows of honey jars without text on shelves, thick sweet air, dim warm light",
+   "forest":   "antechamber of the forest wing, a living tree growing indoors, a wardrobe of flower dresses, potted plants, soft green light",
+   "garden":   "palace courtyard, a marble fountain, flower beds, butterflies, a large tree, a path under green arches",
+   "banquet":  "banquet hall, a long dining table with dishes of five countries, silver candelabra, wine glasses, white tablecloth",
+   "castle":   "bedchamber of a black spired night castle, red moon in the window, a large canopy bed with black and red sheets, candles",
+   "rock":     "flat smooth rock in the middle of the misty lake, calm water all around, the far shore faint in the mist",
+ },
+ "atk": {
+   "m1": ("council", "he kneels on the marble floor before her throne, the vampire queen sits above gazing down with glowing red eyes, one finger lifting his chin, he opens his own collar and tilts his head to offer his neck, " + RING + ", knees trembling"),
+   "m2": ("night", "he stands wrapped inside her wide red cape, the vampire queen holds him from behind with her lips pressed on the side of his neck, sucking gently without breaking the skin, one cold hand pinching his nipple, two fingers of her other hand in his anus, fingering, " + RING),
+   "m3": ("night", "he lies on his back on the velvet chaise longue, the vampire queen leans over him kissing him deeply, tongues, saliva trail, two fingers of her hand in his anus, fingering, her red cape spread over both, his hips lifting, " + RING),
+   "e1": ("sky", "he sits on the feather bed wrapped in her large pink wings, the harpy queen kneels behind him, the tips of her wing feathers brushing both his nipples and his sides, he laughs breathlessly with his back arched, loose pink feathers in the air, " + RING),
+   "e2": ("flower", "he is held in the bee queen's four arms from behind, glossy golden honey on his chest and inner thighs, her upper two hands rolling both his nipples, her lower two honey-coated fingers in his anus, fingering, proud smile, " + RING),
+   "e3": ("forest", "he hangs in the air with his wrists and ankles held open by soft green vines from the indoor tree, a thin smooth vine in his anus, another vine tip stroking his nipple, the elf queen stands in front with arms crossed watching coldly, " + RING),
+   "boss": ("water", "he sits half submerged in the shallow water basin with his legs open, the mermaid queen behind him singing softly into his ear, her arms around his chest, the soft rolled tip of her tail fin in his anus, dazed, ripples, " + RING),
+ },
+ "atk_desc": {
+   "m1": "the vampire queen makes him kneel and offer his neck with her charming red gaze.",
+   "m2": "the vampire queen drinks his energy from his neck inside her cape while teasing his nipple and pressing inside with her fingers.",
+   "m3": "the vampire queen seals his lips with a deep kiss and stops just before he comes.",
+   "e1": "the harpy queen wraps him in her wings and tickles his nipples with her feather tips.",
+   "e2": "the bee queen coats him in warm golden honey and teases four spots at once with her four arms.",
+   "e3": "the elf queen binds him with soft vines and lets a thin vine stroke him inside while she only watches.",
+   "boss": "the mermaid queen sings into his ear and strokes him inside with her tail fin to the rhythm of her song.",
+ },
+ "lose": {
+   # ヴァンパイア 技1（誘惑の魔眼）
+   "btl_m1":     ("council", "he kneels on top of the round table with his collar pulled open, the vampire queen leans over him holding his chin, glowing red eyes locked on his face, her lips on his neck, two fingers of her other hand in his anus, fingering, a black velvet choker on his neck, " + RING + ", cum dripping untouched"),
+   "onani_m1":   ("balcony", "kneeling alone before the tall glass door, staring at his own reflection, tracing the side of his own neck with his fingertips, penis untouched, " + RING + ", the vampire queen watches far away behind the glass with red eyes"),
+   "inochi_m1":  ("pier", "he sits in a narrow boat drifting through the mist, the vampire queen sits facing him holding his chin, glowing red eyes close to his, her lips on his neck, her cold hand pinching his nipple, a black spired castle faint in the mist ahead, " + RING + ", cum dripping"),
+   "onedari_m1": ("night", "he kneels before the velvet chaise longue looking up, the vampire queen sits above him holding his face in both hands, glowing red eyes gazing into his, then her lips on his open collarbone, her red cape around his shoulders, " + RING + ", trembling, cum dripping untouched"),
+   # ヴァンパイア 技2（★吸精の口づけ）
+   "btl_m2":     ("night", "he stands wrapped inside her wide red cape, the vampire queen behind him sucking the side of his neck, two faint red kiss marks on his neck, one cold hand rolling his nipple, two fingers of her other hand deep in his anus, fingering, " + RING + ", knees giving way, cum dripping untouched"),
+   "onani_m2":   ("banquet", "sitting alone on the floor in the shadow of the long dining table, pressing the side of his own neck with his fingertips, the other hand pinching his own nipple, a spilled wine glass, penis untouched, " + RING + ", the vampire queen watches far away from the head of the table"),
+   "inochi_m2":  ("garden", "he sits on the rim of the marble fountain leaning back limp, the vampire queen sits beside him holding his shoulders, her lips on his neck drinking slowly, her cold fingers rolling his nipple, a red rose floating on the water, " + RING + ", cum dripping"),
+   "onedari_m2": ("castle", "he lies on his side on the black and red canopy bed, the vampire queen lies behind him with her lips on the right side of his neck, one hand on his nipple, two fingers of her other hand in his anus, fingering, red moon in the window, " + RING + ", cum on the sheets"),
+   # ヴァンパイア 技3（夜想曲）
+   "btl_m3":     ("night", "he lies on his back on the velvet chaise longue, a black silk blindfold over his hair and eyes, the vampire queen over him kissing him deeply, tongues, saliva trail, two fingers of her hand in his anus, fingering, " + RING + ", cum on his stomach"),
+   "onani_m3":   ("balcony", "sitting alone on the balcony chair under the full moon, sucking two of his own fingers as if kissing, the other hand reaching behind with a finger pressing his own anus, hips frozen on the edge, penis untouched, " + RING + ", the vampire queen watches far away from the glass doors"),
+   "inochi_m3":  ("banquet", "at dawn light, he sits on the vampire queen's lap at the long dining table facing her, the vampire queen pulls her lips away from his with a saliva trail and kisses his neck, her fingers pinching his nipple, burnt-down candles, " + RING + ", cum dripping"),
+   "onedari_m3": ("castle", "he lies on his back on the canopy bed, the vampire queen over him with her lips just above his, one finger held up counting, two fingers of her other hand in his anus, fingering, an hourglass on the bedside table, " + RING + ", he trembles on the edge"),
+   # ハーピー（★羽根の愛撫）
+   "btl_e1":     ("sky", "he sits limp on the feather bed wrapped in her large pink wings, the harpy queen behind him, the tips of her wing feathers circling both his nipples, he laughs weakly with tears of laughter, a pink feather ornament pinned at his collar, " + RING + ", cum dripping untouched"),
+   "onani_e1":   ("tower", "sitting alone on the windy tower top, stroking his own neck and nipple with a single pink feather, shoulders shaking, penis untouched, " + RING + ", the harpy queen watches far away in the sky with wings spread"),
+   "inochi_e1":  ("tower", "he lies on the nest bed of feathers on the tower top, the harpy queen stands over him fanning him with her large pink wings, feather tips brushing both his nipples, wind and loose feathers, the lake far below, " + RING + ", cum dripping untouched"),
+   "onedari_e1": ("sky", "he lies on his back on the feather bed in morning light, the harpy queen sits beside him preening, stroking his nipple with one loose pink feather, her soft feathered bird foot resting gently on his lower belly, calm smile, " + RING + ", cum on his stomach"),
+   # ビー（★黄金蜜）
+   "btl_e2":     ("flower", "he is cradled in the bee queen's four arms from behind, glossy golden honey on his nipples, inner thighs and hips, her upper two hands rolling both his nipples, her lower two honey-coated fingers deep in his anus, fingering, a beeswax crown ornament on his head, " + RING + ", cum dripping untouched"),
+   "onani_e2":   ("banquet", "sitting alone under the long dining table, smearing table honey on his own nipple with one hand, a honeyed finger of the other hand pressing his own anus, a honey pot without text beside him, penis untouched, " + RING + ", the bee queen watches far away hovering on transparent wings"),
+   "inochi_e2":  ("cellar", "he sits collapsed on the floor among the honey jars, covered in dripping golden honey, the bee queen holds him up from behind in her four arms, upper hands rolling his nipples, lower honey-coated fingers in his anus, fingering, a brass key on a cord at his neck, " + RING + ", cum dripping"),
+   "onedari_e2": ("flower", "he sits on the bee queen's lap facing her, the bee queen kisses him feeding him honey mouth to mouth, honey dripping from his lips, her upper two hands on both his nipples, her lower two honey-coated fingers in his anus, fingering, " + RING + ", cum dripping"),
+   # エルフ（★森の蔓）
+   "btl_e3":     ("forest", "he hangs in the air under the indoor tree with wrists and ankles held open by soft green vines, a thin smooth vine in his anus, the elf queen stands in front with arms crossed watching coldly, a green vine bracelet on his left wrist, " + RING + ", cum dripping untouched"),
+   "onani_e3":   ("garden", "kneeling alone behind a flower bed, his wrists loosely tied in front with a curtain cord, one finger reaching behind into his own anus, penis untouched, " + RING + ", the elf queen watches far away beside the fountain"),
+   "inochi_e3":  ("forest", "he hangs upright beside a row of potted plants, soft green vines around his wrists and ankles, a thin smooth vine in his anus, a potted plant with a blank wooden tag without text beside him, the elf queen stands close with one finger lifting his chin, cold eyes, " + RING + ", cum dripping untouched"),
+   "onedari_e3": ("forest", "he kneels on the moss under the indoor tree with his wrists tied above his head by a soft green vine, the elf queen kneels behind him, her palm glowing pale green on his lower belly, a thin smooth vine in his anus, composed face, " + RING + ", cum dripping"),
+   # マーメイド（★人魚の歌）
+   "btl_boss":   ("water", "he reclines half submerged in the shallow water basin with his legs open, the mermaid queen behind him holding his chest, singing into his ear, the soft rolled tip of her tail fin in his anus, a seashell necklace on his neck, dazed, " + RING + ", cum in the water"),
+   "onani_boss": ("gate", "sitting alone waist-deep on the stone steps in the clear water, lips parted as if humming, one hand reaching behind to stroke his own anus in rhythm, penis untouched, " + RING + ", the mermaid queen watches far away under the water of the passage"),
+   "inochi_boss":("rock", "he lies on his back on the flat rock in the middle of the lake, the mermaid queen lies beside him half in the water, singing into his ear, her long tail wrapped around his waist, the soft tip of her tail fin in his anus, mist, " + RING + ", cum on his stomach"),
+   "onedari_boss":("water", "he floats on his back in the water basin with his head resting on the mermaid queen's chest, the mermaid queen cradles him singing a lullaby, her hand stroking his hair, the soft rolled tip of her tail fin in his anus, his legs open, " + RING + ", cum in the water"),
+ },
+ "lose_desc": "keeps him as the cherished prize of the queens' council, twelve gold bangles on his right wrist.",
+ "onanie": {
+   "master": ("banquet", "sitting in the shadow of the dining table, pressing the side of his own neck with his fingertips, the other hand pinching his own nipple, " + RING + ", penis untouched"),
+   "e1": ("tower", "sitting on the floor, stroking his own neck and nipple with a single pink feather, " + RING + ", penis untouched"),
+   "e2": ("banquet", "sitting under the dining table, smearing honey on his own nipple, a honeyed finger pressing his own anus, " + RING + ", penis untouched"),
+   "e3": ("garden", "kneeling behind a flower bed, his wrists loosely tied with a curtain cord, one finger in his own anus, " + RING + ", penis untouched"),
+   "boss": ("gate", "sitting waist-deep on the stone steps in the water, humming, one hand reaching behind to stroke his own anus in rhythm, " + RING + ", penis untouched"),
+ },
+ "magic": {
+   "1": (None, "council", "a great bronze bell swinging under the domed ceiling, soft golden sound ripples in the air, a single gold bangle resting on the round table below"),
+   "2": (None, "stairs", "five tall banners in red, pale green, pink, gold and white without text raised along the marble staircase, fluttering in the wind"),
+   "3": ("m", "night", "holding her wide red cape across the lower half of her face, glowing red eyes peering over the edge of the cape, sly smile"),
+   "4": (None, "flower", "an ornate golden honey jar without text with a wooden dipper, thick glossy golden honey dripping, warm glow, flowers beside it"),
+   "5": (None, "council", "the round table with five empty ornate thrones around it, candles lit, a row of gold bangles laid on the table, the great bell above"),
+ },
+}

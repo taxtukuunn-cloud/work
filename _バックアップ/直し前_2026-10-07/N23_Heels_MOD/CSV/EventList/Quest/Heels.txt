@@ -1,0 +1,2 @@
+足の女王様のサロン,Card/Heels_master,クエストイベント
+足の女王様のサロン【回想バトル】,Card/Heels_master,回想バトル,$$Heels_挑戦回数,>=,1

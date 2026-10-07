@@ -1,0 +1,2 @@
+蜂の女王の巣,Card/Hive_master,クエストイベント
+蜂の女王の巣【回想バトル】,Card/Hive_master,回想バトル,$$Hive_挑戦回数,>=,1

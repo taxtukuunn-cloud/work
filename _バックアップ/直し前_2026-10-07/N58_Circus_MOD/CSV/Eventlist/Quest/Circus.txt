@@ -1,0 +1,2 @@
+夜想サーカス（団長　カリオペ）,Card/Circus_master,クエストイベント
+夜想サーカス【回想バトル】,Card/Circus_master,回想バトル,$$Circus_挑戦回数,>=,1

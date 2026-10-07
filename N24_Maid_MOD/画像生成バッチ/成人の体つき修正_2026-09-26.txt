@@ -1,0 +1,26 @@
+2026-09-26　画像生成前の修正（N21 蜂の女王の巣で見つかった問題への対策）
+
+N21 で、主人公タグ「petite, short, androgynous, feminine body, narrow shoulders, thin arms」の組み合わせが
+幼く見える体つきで描かれる原因になったため、生成前に build_prompts.py を直した。
+
+■ 主人公
+  削除：androgynous / feminine body / petite / short / very short / slender / narrow shoulders / narrow waist / thin arms / thin legs / no muscles
+  追加：adult man, mature male, 25 years old, adult male body, adult proportions, long legs, slim adult build, lean,
+        not muscular, defined jawline, adam's apple, collarbones, flat male chest, ordinary human man,
+        he is a head shorter than the other man
+  （小柄さは「相手より頭ひとつ低い」で表す。150cm・非筋肉質の設定は変えない）
+  場面文の「the small man」「petite man」は「the shorter man」「shorter adult man」に置き換え。
+
+■ 責め手（男の娘）
+  削除：girlish / soft face / round face
+  追加：mature face, sharp adult features, 25 years old, adult proportions, long legs
+
+■ ネガティブ（全画像）
+  追加：childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi,
+        small body, petite male, young boy, kid
+  オナニーCG：hand on crotch, hand near penis, touching penis を追加し、
+             場面文に「both of his hands are clearly away from his penis」を追加。
+
+■ 元の版
+  build_prompts_旧.py ／ *_prompts_旧.json（直す前）。プロンプトJSONは新しい build_prompts.py から作り直し済み。
+  生成後も必ず1枚ずつ目で確認し、幼く見えるものは run_*.bat <キー> --random --batch 4 で撮り直す。

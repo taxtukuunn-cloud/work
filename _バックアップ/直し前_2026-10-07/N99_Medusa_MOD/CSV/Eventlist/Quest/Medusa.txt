@@ -1,0 +1,2 @@
+石化の瞳（ゴルゴンの長姉　リティア）,Card/Medusa_master,クエストイベント
+石化の瞳【回想バトル】,Card/Medusa_master,回想バトル,$$Medusa_挑戦回数,>=,1

@@ -1,0 +1,2 @@
+時計塔の魔女（時の魔女　セクンダ）,Card/Clock_master,クエストイベント
+時計塔の魔女【回想バトル】,Card/Clock_master,回想バトル,$$Clock_挑戦回数,>=,1

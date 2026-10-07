@@ -1,0 +1,2 @@
+吸血鬼の魔城（城の最古参　エルダーヴァンパイア）,Card/VampCastle_master,クエストイベント
+吸血鬼の魔城【回想バトル】,Card/VampCastle_master,回想バトル,$$VampCastle_挑戦回数,>=,1

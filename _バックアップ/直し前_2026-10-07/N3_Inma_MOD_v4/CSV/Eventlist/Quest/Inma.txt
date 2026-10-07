@@ -1,0 +1,2 @@
+淫魔の館（男の娘淫魔　リリム）,Card/Inma_master,クエストイベント
+淫魔の館【回想バトル】,Card/Inma_master,回想バトル,$$Inma_挑戦回数,>=,1

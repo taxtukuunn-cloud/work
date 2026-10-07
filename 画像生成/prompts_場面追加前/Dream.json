@@ -1,0 +1,79 @@
+{
+ "Dream_master": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 30 years old, tall, long legs, both eyes clearly visible, succubus, small bat wings, pink hair, very long hair, floating hair, purple eyes, lavender nightgown, star hair ornament, sleepy seductive smile, large breasts, standing, confident, looking down at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Dream_e1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 22 years old, both eyes clearly visible, tapir ears, small tail, white hair, fluffy short hair, black eyes, oversized pajamas, sleepy, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Dream_e2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 26 years old, both eyes clearly visible, sheep horns, yellow hair, fluffy bob, brown eyes, woolly cape, wool dress, gentle smile, huge breasts, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Dream_e3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 25 years old, black hair, long bangs, one eye visible, red eyes, gothic black outfit, shadow aura, gloomy smirk, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Dream_boss": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 35 years old, tall, long legs, both eyes clearly visible, silver hair, metallic hair, long hair, gold eyes, starry night dress, crescent crown, tall, serene, large breasts, standing, confident, looking down at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Dream_bg": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, dreamy lavender bedroom floating among clouds and stars, large canopy bed, purple and pink light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, 1girl, people, blue theme, blue light",
+  "width": 1216,
+  "height": 832,
+  "rmbg": false
+ },
+ "Dream_magic_1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 26 years old, both eyes clearly visible, sheep horns, yellow hair, fluffy bob, brown eyes, woolly cape, wool dress, gentle smile, huge breasts, holding a fluffy toy sheep, sheep jumping over a fence in the clouds, looking at viewer, cowboy shot, dreamy lavender bedroom floating among clouds and stars, large canopy bed, purple and pink light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Dream_magic_2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 25 years old, black hair, long bangs, one eye visible, red eyes, gothic black outfit, shadow aura, gloomy smirk, cage made of dark shadow, looking at viewer, cowboy shot, dreamy lavender bedroom floating among clouds and stars, large canopy bed, purple and pink light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Dream_magic_3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 30 years old, tall, long legs, both eyes clearly visible, succubus, small bat wings, pink hair, very long hair, floating hair, purple eyes, lavender nightgown, star hair ornament, sleepy seductive smile, large breasts, singing a lullaby with eyes half closed, music notes, stars, looking at viewer, cowboy shot, dreamy lavender bedroom floating among clouds and stars, large canopy bed, purple and pink light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Dream_magic_4": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 22 years old, both eyes clearly visible, tapir ears, small tail, white hair, fluffy short hair, black eyes, oversized pajamas, sleepy, floating through a swirling dream portal, looking at viewer, cowboy shot, dreamy lavender bedroom floating among clouds and stars, large canopy bed, purple and pink light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Dream_magic_5": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 35 years old, tall, long legs, both eyes clearly visible, silver hair, metallic hair, long hair, gold eyes, starry night dress, crescent crown, tall, serene, large breasts, raising a hand, starry night sky and a crescent moon, looking at viewer, cowboy shot, dreamy lavender bedroom floating among clouds and stars, large canopy bed, purple and pink light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ }
+}

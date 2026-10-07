@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOD まとめツール</title>
+<style>
+:root{--bg:#f4f2ee;--card:#fff;--ink:#22242a;--sub:#6b6f7a;--line:#dcd8d0;--acc:#8a3b5c;--acc2:#f3e4ea;--ok:#2f7d4f;--ng:#b3402e;--warn:#a86a00;--mono:Consolas,"BIZ UDGothic",monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#17181c;--card:#212329;--ink:#e8e6e1;--sub:#9a9eaa;--line:#363943;--acc:#e08fb0;--acc2:#3a2530;--ok:#6cc48c;--ng:#f08a78;--warn:#e0b060}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 "Yu Gothic UI","Meiryo",sans-serif;padding-bottom:var(--logh,250px)}
+header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:8px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+h1{font-size:16px;margin:0 8px 0 0}
+h2{font-size:15px;margin:0 0 8px}
+h3{font-size:13px;margin:14px 0 6px;color:var(--sub);font-weight:600}
+.tabs{display:flex;gap:4px}
+.tabs button{border:1px solid transparent;background:none;color:var(--sub);padding:6px 14px;border-radius:6px;font:inherit;cursor:pointer}
+.tabs button.on{background:var(--acc2);color:var(--acc);border-color:var(--acc);font-weight:600}
+.chip{font-size:12px;padding:2px 10px;border-radius:99px;border:1px solid var(--line);color:var(--sub);white-space:nowrap}
+.chip.ok{color:var(--ok);border-color:var(--ok)}.chip.ng{color:var(--ng);border-color:var(--ng)}.chip.run{color:var(--warn);border-color:var(--warn)}
+.sp{flex:1}
+main{max-width:1180px;margin:0 auto;padding:16px}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:14px}
+button{font:inherit;padding:5px 12px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+button:hover{border-color:var(--acc)}
+button.pri{background:var(--acc);color:#fff;border-color:var(--acc);font-weight:600}
+@media (prefers-color-scheme:dark){button.pri{color:#1a1014}}
+button.stop{color:var(--ng);border-color:var(--ng)}
+button:disabled{opacity:.45;cursor:default}
+input,select,textarea{font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+textarea{width:100%;min-height:54px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0}
+.step{display:grid;grid-template-columns:26px 1fr;gap:4px 8px;padding:8px 0;border-top:1px solid var(--line)}
+.step:first-of-type{border-top:0}
+.step .no{width:24px;height:24px;border-radius:50%;background:var(--acc2);color:var(--acc);text-align:center;font-weight:700;font-size:12px;line-height:24px}
+.note{color:var(--sub);font-size:12.5px}
+table{border-collapse:collapse;width:100%}
+th,td{padding:4px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+th{font-size:12px;color:var(--sub);font-weight:600;position:sticky;top:0;background:var(--card)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{max-height:460px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+.bar{display:inline-block;width:90px;height:8px;border-radius:4px;background:var(--line);vertical-align:middle;margin-right:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--acc)}
+.okc{color:var(--ok)}.ngc{color:var(--ng)}.warnc{color:var(--warn)}
+#log{position:fixed;left:0;right:0;bottom:0;height:var(--logh,250px);background:#15161a;color:#d8d6d0;border-top:2px solid var(--acc);display:flex;flex-direction:column;z-index:6}
+#log .bar2{display:flex;gap:10px;align-items:center;padding:4px 12px;background:#1f2026;font-size:12.5px}
+#log pre{flex:1;margin:0;padding:8px 12px;overflow:auto;font:12.5px/1.5 var(--mono);white-space:pre-wrap;word-break:break-all}
+#log button{background:#2a2c34;color:#d8d6d0;border-color:#444;padding:2px 10px;font-size:12px}
+#toast{position:fixed;top:60px;right:16px;background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;display:none;z-index:20;max-width:480px}
+dialog{border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);width:min(1200px,96vw);max-height:92vh;padding:0}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+.dh{position:sticky;top:0;background:var(--card);padding:10px 16px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap;z-index:2}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;padding:14px 16px}
+.cell{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--bg);font-size:12px}
+.cell .nm{padding:3px 6px;font-family:var(--mono);overflow:hidden;text-overflow:ellipsis}
+.cell .pics{display:flex;gap:2px;overflow-x:auto}
+.cell label{position:relative;flex:0 0 100%;cursor:pointer}
+.cell.multi label{flex:0 0 70%}
+.cell img{width:100%;display:block;aspect-ratio:832/1216;object-fit:cover;background:#000}
+.cell input{position:absolute;top:4px;left:4px;width:18px;height:18px}
+.cell label.x img{opacity:.3}
+.cell .none{aspect-ratio:832/1216;display:flex;align-items:center;justify-content:center;color:var(--sub)}
+.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px 12px}
+.form label{display:flex;flex-direction:column;font-size:12px;color:var(--sub);gap:2px}
+.form label.w{grid-column:1/-1}
+fieldset{border:1px solid var(--line);border-radius:8px;margin:10px 0;padding:8px 12px}
+legend{font-weight:600;padding:0 6px}
+.tech{display:grid;grid-template-columns:150px 120px 1fr;gap:6px;margin:4px 0;align-items:center}
+.tech .opt{grid-column:1/-1;display:flex;gap:12px;font-size:12.5px;align-items:center;flex-wrap:wrap}
+.err{color:var(--ng);white-space:pre-wrap}
+.hide{display:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>MOD まとめツール</h1>
+  <div class="tabs" id="tabs">
+    <button data-t="img" class="on">① 画像</button>
+    <button data-t="card">② カード・シナリオ</button>
+    <button data-t="game">③ ゲームへ反映</button>
+    <button data-t="conf">設定</button>
+  </div>
+  <span class="sp"></span>
+  <span class="chip" id="cComfy">ComfyUI …</span>
+  <span class="chip" id="cJob">待機中</span>
+  <button class="stop" id="bStop" disabled>止める</button>
+</header>
+<div id="toast"></div>
+
+<main>
+<!-- ============ 画像 ============ -->
+<div id="t-img">
+  <section>
+    <h2>事前準備</h2>
+    <div class="step"><div class="no">0</div><div><button onclick="act({action:'comfy'})">ComfyUI を起動する</button> <span class="note">撮影のボタンを押した時も、起動していなければ自動で起動します。</span></div></div>
+    <div class="step"><div class="no">1</div><div>
+      <b>構図の元絵候補を撮る</b>
+      <div class="row">構図の id <input id="poseIds" placeholder="空欄＝全部　例 kiss_pov,lap_side" size="34"> 1構図あたり <input id="poseN" type="number" value="4" min="1" max="16" style="width:60px"> 枚
+        <button onclick="act({action:'simple',id:'pose_list'})">構図の一覧を見る</button>
+        <button onclick="pose(true)">件数だけ見る</button><button class="pri" onclick="pose(false)">撮る</button>
+        <button onclick="openP('pose_cand')">撮った候補のフォルダ</button></div>
+      <div class="note">撮れたら良い絵だけ残します（幼く見える絵は使わない）。</div></div></div>
+    <div class="step"><div class="no">2</div><div><b>元絵を選んで下書きにする</b>
+      <div class="row"><button onclick="act({action:'simple',id:'sort'})">候補を整理する</button>
+        <button onclick="act({action:'simple',id:'adopt_dry'})">採用の内容を見る</button>
+        <button onclick="act({action:'simple',id:'adopt'})">元絵を採用する</button>
+        <button onclick="act({action:'simple',id:'depth'})">奥行き下書きを作る</button>
+        <button onclick="act({action:'simple',id:'region'})">人物の範囲を作る</button>
+        <button onclick="openP('pose_src')">構図下書き元</button><button onclick="openP('pose')">構図下書き</button></div></div></div>
+    <div class="step"><div class="no">3</div><div><b>絵柄（MODごと）</b>
+      <div class="row"><button onclick="act({action:'simple',id:'style_list'})">絵柄の一覧と割当を見る</button>
+        <button onclick="act({action:'simple',id:'style_blank'})">空欄のMODにランダムで割り当てる</button>
+        <button onclick="openP('style_csv')">絵柄割当.csv を開く</button></div></div></div>
+    <div class="step"><div class="no">4</div><div><b>画像プロンプト・下見</b>
+      <div class="row"><select id="buildDir"></select>
+        <button onclick="prompts(false)">点検だけ</button><button onclick="prompts(true)">作り直す</button>
+        <span class="note">下の表で選んだMODが対象（選んでいなければ全部）</span></div>
+      <div class="row"><button onclick="act({action:'simple',id:'preview'})">下見（全MODの全場面を撮らずに点検）</button><button onclick="openP('preview_csv')">下見_MOD別.csv</button></div></div></div>
+    <div class="step"><div class="no">＋</div><div><b>そのほかの道具</b>（今までの bat を別の画面で開く）
+      <div class="row"><select id="batSel"></select><button onclick="act({action:'bat',name:$('batSel').value})">開く</button><button onclick="openP('img')">画像生成フォルダ</button></div></div></div>
+  </section>
+
+  <section>
+    <h2>撮影と確認</h2>
+    <div class="row">
+      <button onclick="sel('all')">全部選ぶ</button><button onclick="sel('none')">外す</button><button onclick="sel('todo')">撮り終えていないMODを選ぶ</button>
+      <span class="sp"></span>
+      撮る画像 <input id="keys" placeholder="空欄＝全部　例 lose_btl,atk_m1" size="26">
+      <label><input type="checkbox" id="redo"> 撮り直す（新しいシード）</label>
+      候補 <input id="batch" type="number" value="1" min="1" max="8" style="width:54px"> 枚
+      <button class="pri" onclick="shoot()">選んだMODを撮る</button>
+    </div>
+    <div class="row"><span class="note" id="modSum"></span><span class="sp"></span>
+      <button onclick="collect(true)">選んだMODを完成フォルダへ集める</button><button onclick="collect(false)">全部を集める</button><button onclick="openP('done')">完成フォルダ</button></div>
+    <div class="scroll"><table id="modTbl"><thead><tr><th></th><th class="num">番号</th><th>コード</th><th>絵柄</th><th>撮影（済／全部）</th><th class="num">完成</th><th></th></tr></thead><tbody></tbody></table></div>
+    <div class="note">撮り終えた絵は飛ばすので、途中で止めても次回は続きから。「見る」で絵を確かめ、だめな絵は「外す」（_外した フォルダへ移すだけで消しません）→「撮り直す」。</div>
+  </section>
+</div>
+
+<!-- ============ カード・シナリオ ============ -->
+<div id="t-card" class="hide">
+  <section>
+    <h2>制作中のMOD</h2>
+    <div class="row"><button onclick="act({action:'import_kit'})">作りかけを取り込む（kit106 の N106〜）</button><button onclick="openP('wip')">制作中フォルダ</button>
+      <span class="note">文章（敗北シナリオ28本・セリフ5本）は Claude が書いて、各フォルダの scen・lines に置きます。</span></div>
+    <div class="scroll"><table id="wipTbl"><thead><tr><th>名前</th><th>設定</th><th>設計書</th><th>シナリオ</th><th>セリフ</th><th>MODフォルダ</th><th></th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section>
+    <h2>新しいMODを作る（骨組み）</h2>
+    <div class="note">入力すると 制作中 に cfg.py（カードの設定）と brief.md（設計書）ができ、続けて通し確認をします。登場人物は全員20歳以上。攻撃タイプは1キャラ2種・得意技（★）は1つ・累積スタックは主人公用と男モンスター用を別々に。</div>
+    <div id="nm"></div>
+    <div class="row"><button class="pri" onclick="newmod()">骨組みを作る</button><span class="err" id="nmErr"></span></div>
+  </section>
+  <section>
+    <h2>できているMOD</h2>
+    <div class="scroll" style="max-height:300px"><table id="doneTbl"><thead><tr><th class="num">番号</th><th>コード</th><th>フォルダ</th><th class="num">カード</th><th class="num">完成画像</th><th></th></tr></thead><tbody></tbody></table></div>
+  </section>
+</div>
+
+<!-- ============ ゲームへ反映 ============ -->
+<div id="t-game" class="hide">
+  <section>
+    <h2>ゲームフォルダへ一括で反映</h2>
+    <div class="note">入れるもの：各MODの CSV（カード・クエスト登録など）と画像（完成フォルダ優先）、回想の栞の共通画像。<br>
+      入れるのは「MODコードで始まる名前のファイル」だけです。本編のファイルには触れません。カードを入れ替える時は前のファイルの控えを取ります。</div>
+    <div class="row">ゲーム: <code id="gameDir"></code> <span class="err" id="gameErr"></span></div>
+    <div class="row"><button onclick="plan()">調べる（まだ入れない）</button>
+      <label><input type="checkbox" id="over"> 保留も入れ替える</label>
+      <button class="pri" id="bDeploy" onclick="deploy()" disabled>ゲームへ入れる</button><span class="note" id="planSum"></span></div>
+    <div class="scroll"><table id="planTbl"><thead><tr><th class="num">番号</th><th>コード</th><th class="num">カード等</th><th class="num">画像</th><th class="num">新しく</th><th class="num">入れ替え</th><th class="num">同じ</th><th class="num">保留</th><th>メモ</th></tr></thead><tbody></tbody></table></div>
+    <div class="note">保留＝ゲームに同じ名前で中身の違うファイルがあり、このツールで入れた記録が無いもの。前に手で入れた自分のMODなら「保留も入れ替える」に印を付けて入れてください（控えを取ってから入れ替えます）。</div>
+  </section>
+</div>
+
+<!-- ============ 設定 ============ -->
+<div id="t-conf" class="hide">
+  <section>
+    <h2>場所の設定</h2>
+    <div class="form">
+      <label class="w">MODの置き場 <input id="cf_mod_root"></label>
+      <label class="w">ComfyUI（ComfyUI_windows_portable） <input id="cf_comfy_dir"></label>
+      <label class="w">ゲーム本体 <input id="cf_game_dir"></label>
+    </div>
+    <div class="row"><button class="pri" onclick="saveConf()">保存</button><button onclick="openP('tool')">まとめツールのフォルダ</button><button onclick="openP('log')">記録フォルダ</button><button onclick="openP('game')">ゲームのフォルダ</button></div>
+  </section>
+</div>
+</main>
+
+<dialog id="gal">
+  <div class="dh"><b id="galT"></b><span class="note" id="galS"></span><span class="sp"></span>
+    <button onclick="galPick('nothing')">撮れていない絵を選ぶ</button>
+    <button onclick="reject()">印の絵を外す</button>
+    <button onclick="reshoot()">撮り直す（4枚ずつ）</button>
+    <button onclick="openP('outdir',{code:galCode})">フォルダ</button>
+    <button onclick="$('gal').close()">閉じる</button></div>
+  <div class="grid" id="galG"></div>
+  <div id="galR" style="border-top:1px solid var(--line);padding-top:12px"></div>
+</dialog>
+
+<div id="log"><div class="bar2"><b>記録</b><span id="logWait" class="note"></span><span class="sp"></span>
+  <button onclick="toggleLog()">高さを変える</button><button onclick="$('logPre').textContent=''">表示を消す</button></div><pre id="logPre"></pre></div>
+
+<script>
+const $=id=>document.getElementById(id);
+let MODS=[],WIP=[],checked=new Set(),logNext=0,galCode='',DEF=null,confLoaded=false;
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function toast(m,bad){const t=$('toast');t.textContent=m;t.style.background=bad?'var(--ng)':'';t.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>t.style.display='none',bad?7000:2600)}
+async function get(u){const r=await fetch(u);return r.json()}
+async function post(u,b){const r=await fetch(u,{method:'POST',headers:{'Content-Type':'application/json','X-Tool':'1'},body:JSON.stringify(b||{})});return r.json()}
+async function act(b){const r=await post('/api/do',b);if(r.error)toast(r.error,true);else if(r.msg)toast(r.msg);refreshSoon();return r}
+function openP(what,extra){act(Object.assign({action:'open',what},extra||{}))}
+function refreshSoon(){setTimeout(tick,300)}
+
+document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#tabs button').forEach(x=>x.classList.toggle('on',x===b));
+  ['img','card','game','conf'].forEach(t=>$('t-'+t).classList.toggle('hide',t!==b.dataset.t));loadMods()});
+$('bStop').onclick=async()=>{if(confirm('動いている作業と、待っている作業をすべて止めますか？')){await post('/api/stop');refreshSoon()}};
+function toggleLog(){const h=getComputedStyle(document.body).getPropertyValue('--logh').trim();document.body.style.setProperty('--logh',h==='250px'||!h?'55vh':h==='55vh'?'90px':'250px')}
+
+async function tick(){
+  try{
+    const s=await get('/api/status');
+    const c=$('cComfy');c.className='chip '+(s.comfy.up?(s.comfy.running+s.comfy.pending?'run':'ok'):'ng');
+    c.textContent=s.comfy.up?('ComfyUI '+(s.comfy.running+s.comfy.pending?'撮影中（残り '+(s.comfy.running+s.comfy.pending)+'）':'起動中')):'ComfyUI 停止中';
+    const j=$('cJob');j.className='chip '+(s.job.running?'run':'');j.textContent=s.job.running?('作業中: '+s.job.title):'待機中';
+    $('bStop').disabled=!s.job.running&&!s.job.waiting_n;
+    $('logWait').textContent=s.job.waiting_n?('このあと '+s.job.waiting_n+' 件: '+s.job.waiting.slice(0,4).join(' → ')+(s.job.waiting_n>4?' …':'')):'';
+    window.COMFY=s.comfy;window.JOB=s.job;
+    $('gameDir').textContent=s.conf.game_dir;$('gameErr').textContent=s.game_error||'';
+    if(!confLoaded){['mod_root','comfy_dir','game_dir'].forEach(k=>$('cf_'+k).value=s.conf[k]);confLoaded=true;
+      if(!s.paths.img)toast('画像生成フォルダに gen.py が見つかりません。「設定」でMODの置き場を確かめてください。',true)}
+    const l=await get('/api/log?since='+logNext);
+    if(l.lines.length){const p=$('logPre'),stick=p.scrollTop+p.clientHeight>=p.scrollHeight-30;p.textContent+=l.lines.join('\n')+'\n';
+      if(p.textContent.length>400000)p.textContent=p.textContent.slice(-300000);if(stick)p.scrollTop=p.scrollHeight}
+    logNext=l.next;
+  }catch(e){$('cJob').className='chip ng';$('cJob').textContent='ツールが止まっています（まとめツール.bat を起動）'}
+}
+setInterval(tick,1500);tick();
+
+async function loadMods(){
+  const d=await get('/api/mods');MODS=d.mods;WIP=d.wip;
+  $('batSel').innerHTML=d.bats.map(b=>`<option>${esc(b)}</option>`).join('');
+  $('buildDir').innerHTML=d.builds.map(b=>`<option>${esc(b)}</option>`).join('')||'<option value="">（作り直す道具なし）</option>';
+  const withP=MODS.filter(m=>m.prompts);
+  $('modTbl').tBodies[0].innerHTML=withP.map(m=>{const pct=m.total?Math.round(m.shot*100/m.total):0;
+    return `<tr><td><input type="checkbox" data-c="${m.code}" ${checked.has(m.code)?'checked':''}></td><td class="num">${m.n?'N'+m.n:''}</td><td>${m.code}</td><td>${esc(m.style)||'<span class="note">なし</span>'}</td>
+    <td><span class="bar"><i style="width:${pct}%"></i></span><span class="${m.shot>=m.total&&m.total?'okc':''}">${m.shot} / ${m.total}</span></td><td class="num">${m.done||''}</td><td><button onclick="gallery('${m.code}')">見る</button></td></tr>`}).join('');
+  $('modTbl').querySelectorAll('input').forEach(i=>i.onchange=()=>{i.checked?checked.add(i.dataset.c):checked.delete(i.dataset.c);sum()});
+  const tot=withP.reduce((a,m)=>a+m.total,0),sh=withP.reduce((a,m)=>a+m.shot,0);
+  window.SUM=`${withP.length} 個のMOD・${tot} 枚のうち ${sh} 枚 撮影済み${d.skip_onanie?'（オナニー場面は撮らない設定）':''}`;sum();
+  $('wipTbl').tBodies[0].innerHTML=WIP.map(w=>`<tr><td>${w.name}</td><td class="${w.cfg?'okc':'ngc'}">${w.cfg?'あり':'なし'}</td><td class="${w.brief?'okc':'ngc'}">${w.brief?'あり':'なし'}</td>
+    <td class="${w.scen>=28?'okc':'warnc'}">${w.scen} / 28</td><td class="${w.lines>=5?'okc':'warnc'}">${w.lines} / 5</td><td>${w.built?'<span class="okc">組み立て済み</span>':'<span class="note">まだ</span>'}</td>
+    <td><button onclick="act({action:'check',name:'${w.name}'})">点検</button> <button onclick="act({action:'build',name:'${w.name}',trial:true})">通し確認</button>
+    <button ${w.scen>=28&&w.lines>=5?'class="pri"':'disabled title="シナリオ28本とセリフ5本がそろってから"'} onclick="build('${w.name}',${w.built})">組み立て</button>
+    <button onclick="openP('wipdir',{name:'${w.name}'})">フォルダ</button></td></tr>`).join('')||'<tr><td colspan="7" class="note">まだありません。下の入力画面で作るか、「作りかけを取り込む」を押してください。</td></tr>';
+  $('doneTbl').tBodies[0].innerHTML=MODS.filter(m=>m.folder||m.zip).map(m=>`<tr><td class="num">${m.n?'N'+m.n:''}</td><td>${m.code}</td><td>${esc(m.folder)||'<span class="warnc">zip のまま</span>'}</td><td class="num">${m.cards||''}</td><td class="num">${m.done||''}</td>
+    <td>${m.zip?`<button onclick="act({action:'unzip',code:'${m.code}'})">zip を展開</button>`:''}</td></tr>`).join('');
+}
+function sum(){$('modSum').textContent=(window.SUM||'')+'　／　選択中 '+checked.size+' 個'}
+function sel(k){checked=new Set(k==='none'?[]:MODS.filter(m=>m.prompts&&(k==='all'||m.shot<m.total)).map(m=>m.code));loadMods()}
+function busyOther(){return window.COMFY&&window.COMFY.up&&(window.COMFY.running+window.COMFY.pending)>0&&!(window.JOB&&window.JOB.running)}
+function shoot(){if(!checked.size)return toast('MODを選んでください',true);
+  if(busyOther()&&!confirm('ComfyUI が別の所（今までの bat など）から撮影中です。続けて並べると撮影が混ざります。それでも始めますか？'))return;
+  const redo=$('redo').checked;if(redo&&!$('keys').value.trim()&&!confirm('選んだMODの全部の絵を撮り直します。よろしいですか？'))return;
+  act({action:'shoot',codes:[...checked],keys:$('keys').value,redo,batch:+$('batch').value})}
+function collect(only){if(only&&!checked.size)return toast('MODを選んでください',true);act({action:'collect',codes:only?[...checked]:[]})}
+function pose(dry){if(!dry&&busyOther()&&!confirm('ComfyUI が別の所から撮影中です。それでも始めますか？'))return;act({action:'pose',ids:$('poseIds').value,n:+$('poseN').value,dry})}
+function prompts(write){const d=$('buildDir').value;if(!d)return;if(write&&!confirm('選んだMODの prompts を作り直します（'+(checked.size||'全部')+'）。よろしいですか？'))return;act({action:'prompts',dir:d,codes:[...checked],write})}
+function build(n,built){if(built&&!confirm(n+'_MOD はすでにあります。カードを作り直して入れ替えますか？（前の CSV は控えを取ります）'))return;act({action:'build',name:n})}
+
+async function gallery(code){galCode=code;const d=await get('/api/images?code='+code);if(d.error)return toast(d.error,true);
+  const have=d.rows.filter(r=>r.files.length&&!r.extra).length,all=d.rows.filter(r=>!r.extra).length;
+  $('galT').textContent=code;$('galS').textContent=`${have} / ${all} 枚　絵をクリックで「外す」印`;
+  $('galG').innerHTML=d.rows.map(r=>`<div class="cell ${r.files.length>1?'multi':''}" data-n="${r.name}"><div class="nm" title="${r.name}">${r.name.replace(code+'_','')}${r.files.length>1?' ×'+r.files.length:''}${r.extra?' （一覧に無い名前）':''}</div>
+    <div class="pics">${r.files.length?r.files.map(f=>`<label><input type="checkbox" data-f="${f}"><img loading="lazy" src="/img?code=${code}&file=${encodeURIComponent(f)}&w=360" ondblclick="window.open('/img?code=${code}&file=${encodeURIComponent(f)}')"></label>`).join(''):`<label class="none"><input type="checkbox" data-none="1" style="position:static;margin-right:6px">まだ</label>`}</div></div>`).join('');
+  const rj=d.rejected||[];
+  $('galR').innerHTML=rj.length?`<h3 style="margin:0 16px">外した絵（${rj.length} 枚）　戻したい絵に印を付けて「印の絵を戻す」 <button onclick="restore()">印の絵を戻す</button></h3><div class="grid">`+rj.map(r=>`<div class="cell" data-n="${r.name}"><div class="nm" title="${esc(r.path)}">${r.name.replace(code+'_','')}</div>
+    <div class="pics"><label><input type="checkbox" data-r="${esc(r.path)}"><img loading="lazy" src="/img?code=${code}&rej=1&file=${encodeURIComponent(r.path)}&w=360&t=${Math.round(r.mtime)}" ondblclick="window.open('/img?code=${code}&rej=1&file=${encodeURIComponent(r.path)}')"></label></div></div>`).join('')+'</div>':'';
+  $('galG').querySelectorAll('input[data-f]').forEach(i=>i.onchange=()=>i.parentNode.classList.toggle('x',i.checked));
+  if(!$('gal').open)$('gal').showModal()}
+function galPick(){$('galG').querySelectorAll('input[data-none]').forEach(i=>i.checked=true)}
+async function reject(){const fs=[...$('galG').querySelectorAll('input[data-f]:checked')].map(i=>i.dataset.f);if(!fs.length)return toast('外す絵に印を付けてください',true);
+  await act({action:'reject',code:galCode,files:fs});gallery(galCode);loadMods()}
+async function restore(){const fs=[...$('galR').querySelectorAll('input[data-r]:checked')].map(i=>i.dataset.r);if(!fs.length)return toast('戻す絵に印を付けてください',true);
+  await act({action:'restore',code:galCode,files:fs});gallery(galCode);loadMods()}
+function reshoot(){const names=new Set();$('galG').querySelectorAll('.cell').forEach(c=>{const any=c.querySelector('input:checked'),has=c.querySelector('input[data-f]');
+    if(any||(!has&&false))names.add(c.dataset.n)});
+  if(!names.size)return toast('撮り直す絵に印を付けてください（外した後なら「撮れていない絵を選ぶ」）',true);
+  if(busyOther()&&!confirm('ComfyUI が別の所から撮影中です。それでも始めますか？'))return;
+  act({action:'reshoot',code:galCode,names:[...names],batch:4});$('gal').close()}
+
+/* ---- 新しいMOD ---- */
+const CK=[['master','マスター',3],['e1','下級1（e1）',2],['e2','下級2（e2）',2],['e3','下級3（e3）',2],['boss','上級（boss）',2]];
+async function initForm(){DEF=await get('/api/newmod_defaults');
+  const opt=(a,v)=>a.map(x=>`<option ${x===v?'selected':''}>${x}</option>`).join('');
+  let h=`<div class="form"><label>番号 <input id="nm_n" type="number" value="${DEF.next_n}"></label><label>コード（英数字・先頭大文字） <input id="nm_code" placeholder="例 Garden"></label>
+   <label>MOD名 <input id="nm_title" placeholder="例 薔薇園の茶会"></label><label>属性 <select id="nm_attr">${opt(['闇属性','光属性','地属性','水属性','火属性','風属性'])}</select></label>
+   <label>主人公の累積スタック名（12で敗北） <input id="nm_stack"></label><label>男モンスターの累積スタック名（6で処理） <input id="nm_mstack"></label>
+   <label>男モンスターが6に届いた時 <select id="nm_fate"><option value="conv">相手側に寝返る（召喚される）</option><option value="destroy">破壊</option></select></label>
+   <label class="w">累積スタックの見た目・数え方 <input id="nm_stack_desc" placeholder="何が1つずつ増えるか。体のどこにどう見えるか"></label>
+   <label class="w">世界観・勝負の形（400字ほど） <textarea id="nm_world"></textarea></label></div>`;
+  for(const [k,lab,n] of CK){h+=`<fieldset><legend>${lab}</legend><div class="form">
+   <label>肩書き <input id="nm_${k}_title"></label><label>名前（話者名） <input id="nm_${k}_name"></label>
+   <label>年齢（20以上） <input id="nm_${k}_age" type="number" min="20" value="${k==='master'?28:k==='boss'?32:24}"></label>
+   <label>性別 <select id="nm_${k}_gender">${opt(['女','ふたなり','ニューハーフ','男の娘'])}</select></label>
+   <label>身長 cm <input id="nm_${k}_height" type="number" value="170"></label>
+   <label>スリーサイズ B / W / H <span style="display:flex;gap:4px"><input id="nm_${k}_b" type="number" style="width:33%" value="90"><input id="nm_${k}_w" type="number" style="width:33%" value="60"><input id="nm_${k}_h" type="number" style="width:33%" value="90"></span></label>
+   <label>タイプ <select id="nm_${k}_race">${opt(['ローグ','戦士','獣'])}</select></label>
+   <label>一人称 <input id="nm_${k}_first" value="わたし"></label><label>主人公の呼び方 <input id="nm_${k}_call"></label>
+   <label class="w">外見 <input id="nm_${k}_look"></label><label class="w">性格 <input id="nm_${k}_persona"></label><label class="w">話し方・口癖 <input id="nm_${k}_tone"></label></div>
+   <h3>技（${n}つ・攻撃タイプは別々に・★得意技は1つ）</h3>`;
+    for(let i=0;i<n;i++)h+=`<div class="tech"><input id="nm_${k}_t${i}_name" placeholder="技の名前"><select id="nm_${k}_t${i}_type">${opt(DEF.types,DEF.types[(i*3+CK.findIndex(c=>c[0]===k))%DEF.types.length])}</select><input id="nm_${k}_t${i}_desc" placeholder="どんな責めか（説明文に入る）">
+     <div class="opt"><label><input type="radio" name="nm_${k}_fav" value="${i}" ${i===(k==='master'?1:0)?'checked':''}> ★得意技</label>
+     <label><input type="checkbox" id="nm_${k}_t${i}_insert"> 挿入する（指ほぐしの後だけ）</label><label><input type="checkbox" id="nm_${k}_t${i}_finger"> 指でほぐす（ほぐし+1）</label>
+     <span>状態異常 <select id="nm_${k}_t${i}_st">${DEF.statuses.map(s=>`<option value="${s}">${s||'なし'}</option>`).join('')}</select> <input id="nm_${k}_t${i}_turns" type="number" value="1" min="1" max="3" style="width:48px"> ターン</span></div></div>`;
+    h+='</fieldset>'}
+  const st=DEF.statuses.filter(s=>s);
+  h+=`<fieldset><legend>魔法・罠（5枚・名前だけ決める）</legend><div class="form">
+   <label>累積+2の魔法 <input id="nm_mg_add"></label><label>モンスターを手札に加える魔法 <input id="nm_mg_search"></label>
+   <label>罠（攻撃したカードに状態異常） <span style="display:flex;gap:4px"><input id="nm_mg_trap" style="flex:1"><select id="nm_mg_trap_st">${opt(st,'魅了')}</select></span></label>
+   <label>男モンスター1体に状態異常の魔法 <span style="display:flex;gap:4px"><input id="nm_mg_target" style="flex:1"><select id="nm_mg_target_st">${opt(st,'発情')}</select></span></label>
+   <label>永続魔法（毎ターン+1・3回で自壊） <input id="nm_mg_persist"></label></div></fieldset>
+   <fieldset><legend>決まり文句（空欄なら仮の文が入ります。あとで cfg.py で直せます）</legend><div class="form">
+   <label class="w">敗北イベントの題 <input id="nm_lose_title" placeholder="―― MOD名　〇〇 ――"></label>
+   <label class="w">主人公のスタックが12に届いた時の一文（80〜110字） <textarea id="nm_player_full_desc"></textarea></label>
+   <label class="w">男モンスターが6に届いた時の説明 <textarea id="nm_conv_desc"></textarea></label>
+   <label class="w">その時のマスターのセリフ <textarea id="nm_magic_conv"></textarea></label></div></fieldset>`;
+  $('nm').innerHTML=h}
+function v(id){const e=$(id);return e?(e.type==='checkbox'?e.checked:e.value):''}
+async function newmod(){const b={action:'newmod',chars:{},magic:{}};
+  ['n','code','title','attr','stack','mstack','fate','stack_desc','world','lose_title','player_full_desc','conv_desc','magic_conv'].forEach(k=>b[k]=v('nm_'+k));
+  for(const [k,,n] of CK){const c={techs:[]};['title','name','age','gender','height','b','w','h','race','first','call','look','persona','tone'].forEach(f=>c[f]=v(`nm_${k}_${f}`));
+    const fav=+(document.querySelector(`input[name=nm_${k}_fav]:checked`)||{}).value;
+    for(let i=0;i<n;i++)c.techs.push({name:v(`nm_${k}_t${i}_name`),type:v(`nm_${k}_t${i}_type`),desc:v(`nm_${k}_t${i}_desc`),fav:i===fav,insert:v(`nm_${k}_t${i}_insert`),finger:v(`nm_${k}_t${i}_finger`),st:v(`nm_${k}_t${i}_st`),turns:+v(`nm_${k}_t${i}_turns`)});
+    b.chars[k]=c}
+  ['add','search','trap','trap_st','target','target_st','persist'].forEach(k=>b.magic[k]=v('nm_mg_'+k));
+  const r=await post('/api/do',b);
+  if(r.errors){$('nmErr').textContent=r.errors.join('\n');toast('入力を確かめてください（'+r.errors.length+'件）',true)}
+  else if(r.error){$('nmErr').textContent=r.error}
+  else{$('nmErr').textContent='';toast(r.name+' を作りました。下の記録で通し確認の結果を見てください。');loadMods();window.scrollTo(0,0)}}
+
+/* ---- ゲームへ反映 ---- */
+let planCodes=[];
+async function plan(){$('planSum').textContent='調べています…';const codes=MODS.filter(m=>m.folder).map(m=>m.code);
+  const d=await post('/api/deploy_plan',{codes});if(!d.ok){$('planSum').textContent='';return toast(d.error,true)}
+  planCodes=d.rows.map(r=>r.code);
+  $('planTbl').tBodies[0].innerHTML=d.rows.map(r=>`<tr><td class="num">${r.n?'N'+r.n:''}</td><td>${r.code}</td><td class="num">${r.csv}</td><td class="num">${r.img||'<span class="warnc">0</span>'}</td>
+    <td class="num">${r.new||''}</td><td class="num">${r.upd||''}</td><td class="num note">${r.same||''}</td><td class="num ${r.held?'warnc':''}" title="${esc(r.held_names.slice(0,30).join('\n'))}">${r.held||''}</td>
+    <td class="note">${r.skipped.length?'対象外 '+r.skipped.length+'（名前がコードで始まらない）':''}${!r.img?' 画像なし':''}</td></tr>`).join('');
+  const t=d.total;$('planSum').textContent=`${d.rows.length} 個のMOD： 新しく ${t.new}／入れ替え ${t.upd}／同じ ${t.same}／保留 ${t.held}${d.recall?'／回想の栞の共通画像を入れます':''}`;
+  $('bDeploy').disabled=false}
+function deploy(){const over=$('over').checked;
+  if(!confirm('ゲームのフォルダへコピーします。'+(over?'\n保留のファイルも、控えを取ってから入れ替えます。':'\n保留のファイルは入れ替えません。')+'\nよろしいですか？'))return;
+  act({action:'deploy',codes:planCodes,overwrite_held:over});$('bDeploy').disabled=true}
+async function saveConf(){const b={action:'config'};['mod_root','comfy_dir','game_dir'].forEach(k=>b[k]=$('cf_'+k).value);await act(b);loadMods()}
+
+initForm();loadMods();setInterval(()=>{if(!$('gal').open)loadMods()},20000);
+</script>
+</body>
+</html>

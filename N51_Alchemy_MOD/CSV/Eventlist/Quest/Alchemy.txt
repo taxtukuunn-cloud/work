@@ -1,0 +1,2 @@
+錬金術師の塔（錬金術師　パラケルシア）,Card/Alchemy_master,クエストイベント
+錬金術師の塔【回想バトル】,Card/Alchemy_master,回想バトル,$$Alchemy_挑戦回数,>=,1

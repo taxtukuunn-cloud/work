@@ -1,0 +1,2 @@
+アラクネの古城（蜘蛛の女王　アラーネ）,Card/Arachne_master,クエストイベント
+アラクネの古城【回想バトル】,Card/Arachne_master,回想バトル,$$Arachne_挑戦回数,>=,1

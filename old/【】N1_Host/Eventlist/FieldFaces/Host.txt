@@ -1,0 +1,1 @@
+#Host/Host_master.png,Card/Host_master,フィールドイベント,場所,==,&&場所モルゲン

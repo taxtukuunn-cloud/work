@@ -1,0 +1,79 @@
+{
+ "Office_master": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 39 years old, adult proportions, beautiful detailed eyes, long legs, red hair, bob cut, gold eyes, white tight business suit, pencil skirt, high heels, large breasts, arms crossed, holding a fountain pen, confident strict smile, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Office_e1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 23 years old, adult proportions, beautiful detailed eyes, long legs, brown hair, loose curls, brown eyes, red vest, tight skirt, pantyhose, large breasts, bowing slightly with a bright business smile, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Office_e2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 26 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, blonde hair, chignon, green eyes, glasses, black business suit, holding a tablet, medium breasts, adjusting glasses, cool efficient expression, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Office_e3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 29 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, black hair, long straight hair, purple eyes, grey pant suit, white gloves, medium breasts, pulling on a white glove, calm observing gaze, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Office_boss": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 35 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, silver hair, long hair, metallic sheen, gold eyes, black three-piece skirt suit, plain badge on chest, large breasts, hands folded behind back, quiet dominant smile, looking down at viewer, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Office_bg": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, executive office on the top floor of a skyscraper at night, floor-to-ceiling windows with city lights, large black desk, leather chair, papers without text, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, 1girl, person, people",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Office_magic_1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 39 years old, adult proportions, beautiful detailed eyes, long legs, red hair, bob cut, gold eyes, white tight business suit, pencil skirt, high heels, large breasts, stamping a document on the desk, papers without text, looking at viewer, top floor executive office of a skyscraper at night, floor-to-ceiling windows with city lights, black desk, leather chair, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Office_magic_2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 26 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, blonde hair, chignon, green eyes, glasses, black business suit, holding a tablet, medium breasts, pointing at a wall clock showing late night, tablet in hand, looking at viewer, top floor executive office of a skyscraper at night, floor-to-ceiling windows with city lights, black desk, leather chair, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Office_magic_3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 29 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, black hair, long straight hair, purple eyes, grey pant suit, white gloves, medium breasts, reading out a memo, papers without text, office corridor, looking at viewer, top floor executive office of a skyscraper at night, floor-to-ceiling windows with city lights, black desk, leather chair, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Office_magic_4": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 35 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, silver hair, long hair, metallic sheen, gold eyes, black three-piece skirt suit, plain badge on chest, large breasts, handing a plain business card toward viewer, looking at viewer, top floor executive office of a skyscraper at night, floor-to-ceiling windows with city lights, black desk, leather chair, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Office_magic_5": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 39 years old, adult proportions, beautiful detailed eyes, long legs, red hair, bob cut, gold eyes, white tight business suit, pencil skirt, high heels, large breasts, holding up a golden key in front of a large office door, looking at viewer, top floor executive office of a skyscraper at night, floor-to-ceiling windows with city lights, black desk, leather chair, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ }
+}

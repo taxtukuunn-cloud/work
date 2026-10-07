@@ -1,0 +1,2 @@
+四大精霊の泉（泉の女神　ルサルカ）,Card/Spirit_master,クエストイベント
+四大精霊の泉【回想バトル】,Card/Spirit_master,回想バトル,$$Spirit_挑戦回数,>=,1

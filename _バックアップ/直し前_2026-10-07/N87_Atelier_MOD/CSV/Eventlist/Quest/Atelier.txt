@@ -1,0 +1,2 @@
+アトリエの画家（画家　アデライード）,Card/Atelier_master,クエストイベント
+アトリエの画家【回想バトル】,Card/Atelier_master,回想バトル,$$Atelier_挑戦回数,>=,1

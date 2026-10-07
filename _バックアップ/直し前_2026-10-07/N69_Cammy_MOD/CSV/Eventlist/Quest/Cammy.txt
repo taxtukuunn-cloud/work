@@ -1,0 +1,2 @@
+ギャンブルカジノ（キャミー）,Card/Cammy_master,クエストイベント
+ギャンブルカジノ【回想バトル】,Card/Cammy_master,回想バトル,$$Cammy_挑戦回数,>=,1

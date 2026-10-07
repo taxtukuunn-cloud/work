@@ -1,0 +1,2 @@
+砂漠のピラミッド（王墓の番人　スフィンクス）,Card/Sphinx2_master,クエストイベント
+砂漠のピラミッド【回想バトル】,Card/Sphinx2_master,回想バトル,$$Sphinx2_挑戦回数,>=,1

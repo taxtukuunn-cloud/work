@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>相手キャラのLoRA</title>
+<style>
+:root{--bg:#f4f2ee;--card:#fff;--ink:#22242a;--sub:#6b6f7a;--line:#dcd8d0;--acc:#8a3b5c;--acc2:#f3e4ea;--ok:#2f7d4f;--ng:#b3402e;--warn:#a86a00;--mono:Consolas,"BIZ UDGothic",monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181c;--card:#212329;--ink:#e8e6e1;--sub:#9a9eaa;--line:#363943;--acc:#e08fb0;--acc2:#3a2530;--ok:#6cc48c;--ng:#f08a78;--warn:#e0b060}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 "Yu Gothic UI","Meiryo",sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:6px 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+main{padding:12px;max-width:1500px;margin:0 auto}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:12px}
+h2{font-size:15px;margin:0 0 8px}h3{font-size:13px;margin:10px 0 4px;color:var(--sub)}
+button{font:inherit;font-size:13px;padding:4px 10px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+button:hover{border-color:var(--acc)}button.pri{background:var(--acc);color:#fff;border-color:var(--acc);font-weight:600}
+button:disabled{opacity:.45;cursor:default}button.sm{padding:1px 7px;font-size:12px}
+input,select{font:inherit;font-size:13px;padding:3px 7px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+.row{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:5px 0}
+.sp{flex:1}.note{color:var(--sub);font-size:12.5px}.mono{font-family:var(--mono);font-size:12px}
+.chip{font-size:12px;padding:1px 9px;border-radius:99px;border:1px solid var(--line);color:var(--sub)}
+.chip.ok{color:var(--ok);border-color:var(--ok)}.chip.run{color:var(--warn);border-color:var(--warn)}
+.warnbox{border:1px solid var(--warn);color:var(--warn);border-radius:8px;padding:6px 10px;font-size:13px;margin:6px 0}
+.okc{color:var(--ok)}.ngc{color:var(--ng)}.warnc{color:var(--warn)}.hide{display:none!important}
+table{border-collapse:collapse;width:100%}th,td{padding:3px 7px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:12px;color:var(--sub);position:sticky;top:0;background:var(--card)}td.num,th.num{text-align:right}
+.scroll{max-height:420px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+.two{display:grid;grid-template-columns:minmax(320px,.8fr) minmax(400px,1.4fr);gap:12px;align-items:start}
+@media (max-width:900px){.two{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin:6px 0;background:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.cell{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--bg);font-size:12px;position:relative}
+.cell img{width:100%;display:block;aspect-ratio:832/1216;object-fit:contain;background:#000;cursor:zoom-in}
+.cell label{display:block;padding:2px 6px}
+.cell.x img{opacity:.3}
+body.blur img.c{filter:blur(26px) saturate(.5)}
+dialog{border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);width:min(1200px,96vw);max-height:92vh;padding:0}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+.dh{position:sticky;top:0;background:var(--card);padding:8px 14px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap;z-index:2}
+.db{padding:10px 14px}
+#lb{width:auto;max-width:96vw;background:#000;border:0}#lb img{max-width:94vw;max-height:88vh;display:block}
+#toast{position:fixed;top:50px;right:14px;background:var(--ink);color:var(--bg);padding:7px 13px;border-radius:8px;display:none;z-index:30;max-width:520px;white-space:pre-wrap}
+.steps{display:flex;gap:6px;flex-wrap:wrap;font-size:13px}.steps span{border:1px solid var(--acc);border-radius:8px;padding:2px 10px;background:var(--acc2)}
+</style>
+</head>
+<body>
+<header><b>相手キャラの LoRA</b><span class="sp"></span><label class="note"><input type="checkbox" id="blur"> 絵をぼかす</label><span class="chip" id="cBusy">…</span><span class="chip" id="cComfy">…</span></header>
+<div id="toast"></div>
+<main>
+<section>
+  <div class="steps"><span>1. 学習用の絵を撮る</span>→<span>2. 絵を選ぶ</span>→<span>3. 学習データを作る</span>→<span>4. 学習する</span>→<span>5. 試し撮り</span>→<span>6. 場面を撮り直す</span></div>
+  <div class="note" style="margin-top:6px">相手キャラ1人の絵（そのMODの立ち絵の指示・そのMODの絵柄）を撮って学習し、場面を撮るときに相手の見た目をそろえます。
+    できた LoRA は ComfyUI の loras\キャラ\chr_&lt;MOD&gt;_&lt;キャラ&gt;_&lt;絵柄&gt; に入り、場面を撮るときに自動で使われます。
+    <b>ダウンロードしたキャラ LoRA を当ててあるキャラは、自作ができたら自作に切り替えます</b>（gen.py の直しは撮影が終わってから行います）。</div>
+  <div class="warnbox">学習（4）は ComfyUI とグラフィックボードを取り合うので、<b>ComfyUI の黒い画面を閉じてから</b>押してください（閉じるまで押せません）。撮影中は 1・4・5・6 は押せません。</div>
+  <div id="noTool" class="warnbox hide"></div>
+</section>
+<div class="two">
+  <section>
+    <h2>MOD の一覧</h2>
+    <div class="row"><input id="q" placeholder="MOD で絞り込む" size="14"><select id="f"><option value="">全部</option><option value="todo">まだ学習していないキャラがある</option><option value="shot">学習用の絵がある</option><option value="done">学習済みがある</option></select></div>
+    <div class="scroll" style="max-height:760px"><table id="mt"><thead><tr><th class="num">番号</th><th>MOD</th><th>絵柄</th><th class="num">絵あり</th><th class="num">学習済み</th><th class="num">ダウンロード</th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section>
+    <h2 id="dt">MOD を選んでください</h2>
+    <div id="dBody" class="hide">
+      <div class="row">
+        <button class="pri idle" onclick="shoot()">1. 学習用の絵を撮る（全部のキャラ）</button>
+        <button onclick="prep()">3. 学習データを作る</button>
+        <button class="pri idle train" onclick="train(false)">4. 学習する</button>
+        <button class="idle train" onclick="train(true)">4. 学習し直す（全部）</button>
+      </div>
+      <div class="note">1 は 1キャラ 32 枚（16構図×2枚）・1MOD 約50分。3 は 12 枚以上残っているキャラだけ作ります。4 は 1キャラ 10〜15分（学習済みのキャラは飛ばす）。</div>
+      <div id="chars"></div>
+    </div>
+  </section>
+</div>
+</main>
+<dialog id="pk"><div class="dh"><b id="pkT"></b><span class="note" id="pkS"></span><span class="sp"></span><button onclick="moveSel(false)">印の絵を外す</button><button onclick="$('pk').close();loadMod(CUR)">閉じる</button></div>
+  <div class="db"><div class="note" id="pkP"></div><details><summary class="note">立ち絵の指示（このキャラの見た目）</summary><div class="mono" id="pkStand" style="white-space:pre-wrap"></div></details>
+  <div class="grid" id="pkG" style="margin-top:8px"></div><h3 id="pkRT"></h3><div class="row" id="pkRB"></div><div class="grid" id="pkR"></div></div></dialog>
+<dialog id="tv"><div class="dh"><b id="tvT"></b><span class="note">左＝キャラLoRA あり／右＝なし（同じシード）</span><span class="sp"></span><button onclick="$('tv').close()">閉じる</button></div><div class="db" id="tvB"></div></dialog>
+<dialog id="lb" onclick="this.close()"><img id="lbImg"></dialog>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let D=null,CUR='',PK=null;
+function toast(m,bad){const t=$('toast');t.textContent=m;t.style.background=bad?'var(--ng)':'';t.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>t.style.display='none',bad?8000:3000)}
+async function api(p,q){const r=await fetch('/api/kozu/'+p+(q?'?'+new URLSearchParams(q):''));const j=await r.json();if(j.error){toast(j.error,true);throw new Error(j.error)}return j}
+async function post(p,b){const r=await fetch('/api/kozu/'+p,{method:'POST',headers:{'Content-Type':'application/json','X-Tool':'1'},body:JSON.stringify(b||{})});const j=await r.json();if(j.error){toast(j.error,true);throw new Error(j.error)}if(j.msg)toast(j.msg);return j}
+function img(q,w){return '/kimg?'+new URLSearchParams(Object.assign({w:w==null?240:w},q))}
+function zoom(u){$('lbImg').src=u;$('lb').showModal()}
+$('blur').onchange=()=>document.body.classList.toggle('blur',$('blur').checked);
+async function state(){try{const s=await api('state');const b=s.busy.filter(x=>!x.startsWith('ComfyUI'));const c=$('cBusy');c.className='chip '+(s.busy.length?'run':'ok');c.textContent=s.busy.length?'撮影や作業中':'撮影していません';c.title=s.busy.join('\n');
+  window.BUSY=s.busy.length&&!s.test;const cs=$('cComfy');const up=s.busy.some(x=>x.startsWith('ComfyUI'))||(D&&D.comfy&&D.comfy.up);cs.textContent='ComfyUI '+(up?'起動中':'止まっています');cs.className='chip '+(up?'run':'ok');window.COMFYUP=up;
+  document.querySelectorAll('.idle').forEach(e=>{e.disabled=!!window.BUSY;e.title=window.BUSY?'撮影や作業中は押せません':''});
+  document.querySelectorAll('.train').forEach(e=>{if(up){e.disabled=true;e.title='ComfyUI を閉じてから押してください'}})}catch(e){}}
+setInterval(state,8000);
+async function load(){D=await api('chara_mods');if(!D.tools||!D.venv)$('noTool').classList.remove('hide'),$('noTool').textContent=(!D.tools?'Lora用\\chara の道具が見つかりません。':'')+(!D.venv?'学習の道具（Lora用\\sd-scripts）がありません。先に Lora用\\1_セットアップ.bat を実行してください。':'');
+  drawMods();state();const m=new URLSearchParams(location.search).get('mod');if(m)loadMod(m)}
+['q','f'].forEach(id=>$(id).oninput=drawMods);
+function drawMods(){const q=$('q').value.trim().toLowerCase(),f=$('f').value;
+  $('mt').tBodies[0].innerHTML=D.mods.filter(m=>(!q||m.code.toLowerCase().includes(q))&&(!f||(f==='todo'?m.done<5:f==='shot'?m.shot:m.done))).map(m=>`<tr style="cursor:pointer;${m.code===CUR?'background:var(--acc2)':''}" onclick="loadMod('${m.code}')"><td class="num">${m.n?'N'+m.n:''}</td><td>${m.code}</td><td>${esc(m.style)}</td><td class="num">${m.shot||''}</td><td class="num ${m.done?'okc':''}">${m.done||''}</td><td class="num">${m.mapped||''}</td></tr>`).join('')}
+async function loadMod(code){CUR=code;drawMods();if(!D)return;const m=D.mods.find(x=>x.code===code);if(!m)return;$('dt').textContent=code+'（絵柄 '+m.style+'）';$('dBody').classList.remove('hide');
+  $('chars').innerHTML=m.chars.map(c=>`<div class="card"><div class="row"><b>${esc(c.ja)}</b><span class="mono note">${esc(c.tag)}</span>${c.done?'<span class="chip ok">学習済み</span>':''}${c.mapped?'<span class="chip">ダウンロードの LoRA：'+esc(c.mapped.replace('キャラ\\\\',''))+'</span>':''}</div>
+    <div class="note">学習用の絵 <b>${c.shot}</b> 枚${c.rejected?'（外した '+c.rejected+'）':''}${c.shot&&c.shot<12?' <span class="ngc">12 枚より少ない</span>':''}／学習データ ${c.data} 枚${c.toml?'（設定あり）':''}／LoRA ${c.own.length?esc(c.own.map(x=>x.replace(/^chr_.*?(-\d+)?\.safetensors$/,'$1')||'最終').join(' ')):'まだ'}／このキャラの場面 ${c.scenes}${c.has_prompt?'':' <span class="ngc">立ち絵の指示が無い</span>'}</div>
+    <div class="row"><button class="sm idle" onclick="shoot(['${c.char}'])">このキャラだけ撮る</button><button class="sm" onclick="pick('${c.char}')" ${c.shot||c.rejected?'':'disabled'}>2. 絵を選ぶ</button>
+     <button class="sm idle" onclick="tryShot('${c.char}')">5. 試し撮り</button><button class="sm" onclick="tryView('${c.tag}')">試し撮りを見る</button><button class="sm idle" onclick="reshoot('${c.char}',${c.scenes})">6. このキャラの場面を撮り直す</button></div></div>`).join('');state()}
+async function shoot(chars){if(!confirm('学習用の絵を撮ります（ComfyUI を使います）。よろしいですか？'))return;await post('chara_shoot',{code:CUR,chars})}
+async function prep(){await post('chara_prep',{code:CUR})}
+async function train(redo){if(!confirm(redo?'このMODの全部のキャラを学習し直します。よろしいですか？':'学習します（ComfyUI は閉じたままにしてください）。よろしいですか？'))return;await post('chara_train',{code:CUR,redo})}
+async function tryShot(ch){await post('chara_try',{code:CUR,char:ch})}
+async function reshoot(ch,n){if(!confirm('このキャラの場面 '+n+' 枚を撮り直します（前の絵は消えません）。よろしいですか？'))return;await post('chara_reshoot',{code:CUR,char:ch})}
+async function pick(ch){PK=await api('chara_imgs',{code:CUR,char:ch});$('pkT').textContent='絵を選ぶ：'+PK.tag;
+  $('pkS').innerHTML=`残っている絵 <b class="${PK.files.length<PK.min?'ngc':''}">${PK.files.length}</b> 枚（${PK.min} 枚以上残す）`;
+  $('pkP').innerHTML='見るところ：'+PK.points.map(x=>esc(x).replace(/\*\*(.+?)\*\*/,'<b>$1</b>')).join('／');$('pkStand').textContent=PK.stand;
+  $('pkG').innerHTML=PK.files.map(f=>`<div class="cell"><img class="c" loading="lazy" src="${img({k:'chara',tag:PK.tag,n:f})}" onclick="zoom('${img({k:'chara',tag:PK.tag,n:f},0)}')"><label><input type="checkbox" data-f="${esc(f)}" onchange="this.closest('.cell').classList.toggle('x',this.checked)"> 外す　<span class="mono">${esc(f.replace(/_\d+_\.png$/,''))}</span></label></div>`).join('')||'<div class="note">ありません</div>';
+  $('pkRT').textContent=PK.rejected.length?'外した絵（'+PK.rejected.length+' 枚）':'';$('pkRB').innerHTML=PK.rejected.length?'<button onclick="moveSel(true)">印の絵を戻す</button>':'';
+  $('pkR').innerHTML=PK.rejected.map(f=>`<div class="cell"><img class="c" loading="lazy" src="${img({k:'chara',tag:PK.tag,n:f,rej:'1'})}" onclick="zoom('${img({k:'chara',tag:PK.tag,n:f,rej:'1'},0)}')"><label><input type="checkbox" data-r="${esc(f)}"> 戻す</label></div>`).join('');
+  if(!$('pk').open)$('pk').showModal()}
+async function moveSel(back){const files=[...document.querySelectorAll(back?'#pkR input:checked':'#pkG input:checked')].map(i=>back?i.dataset.r:i.dataset.f);if(!files.length)return toast('絵に印を付けてください',true);
+  await post('chara_move',{code:CUR,char:PK.char,files,back});await pick(PK.char);D=await api('chara_mods')}
+async function tryView(tag){const d=await api('chara_try_imgs',{tag});$('tvT').textContent='試し撮り：'+tag;
+  $('tvB').innerHTML=d.pairs.map(p=>`<div class="row"><b class="mono">${esc(p.key)}</b></div><div class="row">`+[['あり',p.yes],['なし',p.no]].map(([s,f])=>f?`<div class="cell" style="width:300px"><img class="c" src="${img({k:'cltry',tag,sub:s,n:f},600)}" onclick="zoom('${img({k:'cltry',tag,sub:s,n:f},0)}')"><label>LoRA ${s}</label></div>`:`<div class="note" style="width:300px">${s}：まだ</div>`).join('')+'</div>').join('')||'<div class="note">まだありません（「5. 試し撮り」を押して、撮り終わるのを待ってください）</div>';$('tv').showModal()}
+if(new URLSearchParams(location.search).get('blur')==='1'){$('blur').checked=true;document.body.classList.add('blur')}
+load();
+</script>
+</body>
+</html>

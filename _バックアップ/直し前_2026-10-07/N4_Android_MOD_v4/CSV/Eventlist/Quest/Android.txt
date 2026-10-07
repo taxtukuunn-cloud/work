@@ -1,0 +1,2 @@
+地下研究施設（男の娘アンドロイド　NX-00）,Card/Android_master,クエストイベント
+地下研究施設【回想バトル】,Card/Android_master,回想バトル,$$Android_挑戦回数,>=,1

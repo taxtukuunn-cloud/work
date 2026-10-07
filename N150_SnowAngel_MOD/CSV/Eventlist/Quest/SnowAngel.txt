@@ -1,0 +1,2 @@
+雪のほこらの天使たち（智天使　エデン）,Card/SnowAngel_master,クエストイベント
+雪のほこらの天使たち【回想バトル】,Card/SnowAngel_master,回想バトル,$$SnowAngel_挑戦回数,>=,1

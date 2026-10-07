@@ -1,0 +1,107 @@
+# N38 補習室の家庭教師（Tutor）場面データ。登場人物は全員20歳以上。女性と男の娘の混合。黒板・答案・カード類は文字なし。
+ST = {"pen": "strapon"}                  # キョウコ（グレーのベルトの黒い張形）・サエコ（黒ベルト金具の濃灰の張形）
+TOY = {"pen": "toy"}                     # チアキの赤いアナルバイブ
+CG = {"cage": True}                      # サエコの銀の貞操帯
+STCG = {"pen": "strapon", "cage": True}
+
+DATA = {
+ "code": "Tutor",
+ "world": "after-hours cram school for adults in a city building at night, fluorescent lights, blank blackboards and whiteboards without text, quiet empty rooms, detailed background",
+ "chars": {
+   "m": {"type": "woman",
+         "tags": "adult woman, mature female, beautiful detailed eyes, adult proportions, 35 years old, tall, long legs, both eyes clearly visible, black hair, long straight hair, red eyes, glasses, grey pencil suit, black pantyhose, pointer stick, teacher, strict smile, large breasts, confident",
+         "name": "the black-haired headmistress in glasses and a grey suit"},
+   "e1": {"type": "otoko",
+          "tags": "adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 21 years old, both eyes clearly visible, brown hair, fluffy short hair, green eyes, cardigan, shirt, necktie, teasing smile",
+          "name": "the brown-haired lecturer in a beige cardigan and necktie"},
+   "e2": {"type": "woman",
+          "tags": "adult woman, mature female, beautiful detailed eyes, adult proportions, 27 years old, both eyes clearly visible, pink hair, loose ponytail, brown eyes, lab coat, knit sweater, pencil skirt, gentle smile, huge breasts",
+          "name": "the pink-haired nurse in a lab coat"},
+   "e3": {"type": "otoko",
+          "tags": "adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 24 years old, both eyes clearly visible, blonde hair, half updo, purple eyes, vest, slacks, red pen, bright smile",
+          "name": "the blonde tutor in a grey vest with a red pen"},
+   "boss": {"type": "woman",
+            "tags": "adult woman, mature female, beautiful detailed eyes, adult proportions, 42 years old, tall, long legs, both eyes clearly visible, grey hair, bob cut, gold eyes, black three-piece suit, key in breast pocket, tall, mature, cold, large breasts, confident",
+            "name": "the grey-bobbed chairwoman in a black three-piece suit"},
+ },
+ "places": {
+   "room": "private tutoring room, two-seat desk and chairs, sunset window, wall clock without numbers, blank blackboard without text",
+   "study": "self-study room, rows of partitioned desks, humming fluorescent lights, empty chairs",
+   "office": "headmistress's office, black leather sofa, striped light through blinds, bookshelves, coffee cup",
+   "window": "headmistress's office window with the blinds raised, night city view, coffee cup on the sill",
+   "infirmary": "school infirmary, white bed, pale green curtain, stainless steel tray",
+   "lounge": "teachers' lounge, soft fabric sofa, mugs, copy machine, electric kettle",
+   "interview": "interview room, two chairs facing each other, small round table, potted plant, closed blinds",
+   "lecture": "empty tiered lecture hall at night, teacher's platform, blank whiteboard without text",
+   "archive": "archive room, steel shelves of old papers, stepladder, dim bare bulb",
+   "kitchen": "narrow office kitchenette, small sink, steaming electric kettle, instant coffee, tiny window",
+   "nap": "nap room, narrow cot, blackout curtains, soft blanket, green emergency light",
+   "exam": "mock exam hall, rows of long tables with partition boards, big wall clock without numbers",
+   "hall": "corridor at night, long bench, linoleum floor, dim night lights, glowing vending machine",
+   "roof": "building rooftop at night, water tank, metal railing, distant city lights",
+   "chair_office": "chairwoman's office on the top floor, thick carpet, heavy mahogany desk, huge night-view window, small safe",
+   "chair_sofa": "chairwoman's reception area, white leather sofa, low glass table, pendulum clock",
+ },
+ "atk": {
+   "m1": ("room", "he stands before the blank blackboard, the headmistress presses the round-capped tip of a silver pointer stick on his nipple and rolls it in circles, her other hand lifting his chin, strict smile, he trembles"),
+   "m2": ("room", "they sit side by side at the two-seat desk, the headmistress holds his chin and kisses him deeply, her glasses taken off in her other hand, tongues, saliva trail, he trembles, flushed"),
+   "m3": ("office", "from side, he is on all fours on the black leather sofa, the headmistress kneels behind him pegging his anus with a black strap-on on a grey leather belt, anal, a thin clear silicone rod in the tip of his penis, turning his face to kiss him, his own penis separate", ST),
+   "e1": ("room", "they sit side by side at the desk, the lecturer leans to his ear whispering, under the desk the lecturer's socked foot strokes his penis, footjob, blank word cards without text on the desk"),
+   "e2": ("infirmary", "he lies on the white bed, two pink egg vibrators taped on his nipples with skin-colored medical tape, a kitchen timer without text beside him, the nurse sits beside him with two fingers in his anus, fingering"),
+   "e3": ("room", "he lies with his upper body face down on the desk, hips out, the tutor stands behind him pushing a slim red anal vibrator into his anus, clicking a red pen with the other hand, bright smile", TOY),
+   "boss": ("chair_office", "he stands before the heavy mahogany desk, his penis locked in a chastity cage, the chairwoman reads questions from a blank sheet without text, a key in her breast pocket, he trembles, dazed, hands at his sides", CG),
+ },
+ "atk_desc": {
+   "m1": "the headmistress rolls his nipples with her pointer stick.",
+   "m2": "the headmistress rewards his correct answer with a deep kiss.",
+   "m3": "the headmistress gives him a special lesson from front and behind.",
+   "e1": "the lecturer whispers phrases for him to memorize.",
+   "e2": "the nurse trains his concentration with nipple vibrators.",
+   "e3": "the tutor rewards each right answer with a stronger vibration.",
+   "boss": "the chairwoman gives him a graduation exam he can never pass.",
+ },
+ "lose": {
+   "btl_m1": ("room", "he stands before the blank blackboard, the headmistress without her glasses kisses him deeply while pressing the round tip of her pointer stick on his bare nipple, rolling it, cum dripping on the floor, his knees shaking"),
+   "onani_m1": ("study", "sitting alone at a partitioned study desk, sucking his own fingers, the other wet fingertip tracing circles on his own nipple as if pointing, penis untouched, the headmistress stands far behind by the door watching"),
+   "inochi_m1": ("office", "he sits beside the headmistress on the black leather sofa, the headmistress points her silver pointer stick at his nipple and kisses his cheek, a plain notebook without text on her lap, blinds striping the light"),
+   "onedari_m1": ("lecture", "he sits on the teacher's platform with empty tiered seats behind him, pushing his chest out, the headmistress stands before him rolling his right nipple with the pointer stick tip, leaning in to kiss him"),
+
+   "btl_m2": ("room", "they sit side by side at the two-seat desk, the headmistress kisses him deeply with her glasses in her hand, making him swallow her saliva, her other hand stroking his chest, cum on his thigh, dazed"),
+   "onani_m2": ("lounge", "sitting alone on the fabric sofa, sucking his own fingers deeply as if kissing, the other wet finger on his own nipple, penis untouched, the headmistress stands far away by the copy machine holding a mug, watching"),
+   "inochi_m2": ("kitchen", "in the narrow kitchenette he leans back against the sink, the headmistress kisses him deeply holding his face in both hands, the kettle steaming beside them, tongues, saliva trail, his knees weak"),
+   "onedari_m2": ("window", "before the window with the blinds raised over the night city, he looks up begging with his mouth open, the headmistress takes off her glasses and kisses him deeply, tongues, saliva"),
+
+   "btl_m3": ("office", "from side, he is on all fours on the black leather sofa, the headmistress pegs his anus with her black strap-on, anal, a thin silicone rod in the tip of his penis, kissing him over his shoulder, his own penis separate, cum dripping", ST),
+   "onani_m3": ("nap", "lying alone on the cot, sucking his own fingers, one wet finger on his own nipple, the other hand reaching back to his own anus, penis untouched, the headmistress stands far away by the blackout curtain watching"),
+   "inochi_m3": ("infirmary", "from side, he lies on his back on the white bed holding his knees, the headmistress pegs his anus with her black strap-on, anal, a thin clear rod in the tip of his penis, kissing him, green curtain, his own penis separate", ST),
+   "onedari_m3": ("exam", "from side, he lies with his chest on a long exam table, the headmistress stands behind him pegging his anus with her black strap-on, anal, a thin clear rod in the tip of his penis, partition boards, his own penis separate", ST),
+
+   "btl_e1": ("room", "he sits at the desk beside the lecturer, the lecturer whispers into his ear, a socked foot under the desk stroking his penis, footjob, a stack of blank word cards without text, cum on the desk leg, dazed"),
+   "onani_e1": ("study", "sitting alone at a partitioned desk, hands flat on the desk, lips murmuring memorized phrases, flushed, trembling, penis untouched, the lecturer leans on a far partition watching, teasing smile"),
+   "inochi_e1": ("hall", "he sits on the bench in the night corridor, the lecturer sits beside him whispering a charm into his ear, one shoeless socked foot stroking his penis, footjob, vending machine glow"),
+   "onedari_e1": ("lounge", "he sits on the fabric sofa, the lecturer sits beside him with socked feet resting on his lap stroking his penis with the soles, footjob, leaning in to whisper into his ear, mugs on the table"),
+
+   "btl_e2": ("infirmary", "he lies on the white bed, pink egg vibrators taped on both nipples, the nurse sits beside him with two warm gel-covered fingers in his anus, fingering, a kitchen timer without text ticking, cum on his belly"),
+   "onani_e2": ("interview", "sitting alone on a chair in the interview room, trembling fingertips pressed on his own nipples, counting, a kitchen timer without text on the table, penis untouched, the nurse stands far away by the door"),
+   "inochi_e2": ("nap", "he lies on his side on the cot under a blanket, a pink egg vibrator taped on his nipple, the nurse sits behind him with a finger in his anus as if taking his temperature, fingering, gentle smile"),
+   "onedari_e2": ("archive", "he stands with his hands on a steel shelf, pink egg vibrators taped on his nipples, the nurse stands behind him with two fingers in his anus, fingering, a kitchen timer in her other hand, a stepladder beside them"),
+
+   "btl_e3": ("room", "from side, he lies with his upper body face down on the desk, a slim red anal vibrator in his anus, the tutor leans over him kissing him as he turns his head, patting his head, cum dripping", TOY),
+   "onani_e3": ("lounge", "lying face down alone on the fabric sofa with hips raised, reaching back with a trembling finger in his own anus, penis untouched, the tutor stands far away clicking a red pen, bright smile"),
+   "inochi_e3": ("interview", "he stands bent over with his hands on the back of a chair, the tutor behind him pushes a slim red anal vibrator into his anus, praising him, potted plant, closed blinds", TOY),
+   "onedari_e3": ("roof", "on the night rooftop he holds the railing with hips out, the tutor behind him holds a slim red anal vibrator in his anus, turning up the vibration, city lights far below, water tank", TOY),
+
+   "btl_boss": ("chair_office", "from side, he lies with his chest on the heavy mahogany desk, his penis locked in a chastity cage, the chairwoman pegs his anus with a dark grey strap-on on a black belt with gold buckles, anal, a key in her breast pocket", STCG),
+   "onani_boss": ("lecture", "sitting alone in the front row of the empty lecture hall, hands resting on his thighs, his penis locked in a chastity cage, trembling, dazed, the chairwoman stands at the far lectern reading from a blank sheet", CG),
+   "inochi_boss": ("chair_sofa", "he sits on the white leather sofa, his penis locked in a chastity cage, the chairwoman sits beside him reading aloud from a document without text, her fingertip on the cage, pendulum clock", CG),
+   "onedari_boss": ("chair_office", "he stands with his hands on the huge night-view window, his penis locked in a chastity cage, the chairwoman behind him pegs his anus with her dark grey strap-on, anal, city lights below, his reflection in the glass", STCG),
+ },
+ "lose_desc": "keeps him at the cram school forever as a student who can never graduate.",
+ "onanie": {
+   "master": ("study", "sitting at a study desk, sucking two of his own fingers deeply as if kissing, tongue wrapped around them, the other wet finger tracing his own nipple, penis untouched"),
+   "e1": ("room", "sitting at the desk with both hands flat on the desktop, lips moving as he repeats memorized phrases aloud again and again, flushed, hips twitching, thighs pressed together, penis untouched"),
+   "e2": ("infirmary", "sitting on the white bed, trembling fingertips pressed on both his own nipples like vibrators, counting the seconds under his breath, chest pushed out, penis untouched"),
+   "e3": ("lounge", "lying face down on the sofa with his hips raised, reaching back with a trembling finger in his own anus, cheek on the cushion, penis untouched"),
+   "boss": ("lecture", "sitting upright in the front row with hands resting on his thighs, his penis locked in a chastity cage, repeating exam questions in his head, dazed", CG),
+ },
+}

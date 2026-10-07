@@ -1,0 +1,123 @@
+# N65 ギルドの胞子調査（Flower）画像データ。登場人物は全員20歳以上。全員女性。調査票・瓶のラベル・記録帳は文字なし。
+# 本編キャラ（フラワー・キノコレディ）は本編の立ち絵を見ずに、本文の手がかり（フラワー＝サキュバス・緑に光る瞳・大きな胸／
+# キノコレディ＝茸の傘のような帽子・胸元をほどく布・ショール・とても大きな胸）と役から決めた見た目。
+# 胞子の芽＝肌にぽつりと咲く小さな白い芽（寄生・気持ち悪い描写にしない）。
+SHEET = "a blank survey sheet without text"
+BUDS = "tiny white flower-like spore buds dotting his skin"
+
+DATA = {
+ "code": "Flower",
+ "world": "enchanted mushroom forest near an adventurers guild, giant soft glowing mushrooms, sweet sparkling spores drifting in the air, mossy ground, fantasy, detailed background",
+ "bg": "deep enchanted mushroom forest, giant mushrooms with glowing caps, soft moss carpet, white mycelium lace hanging from branches, sparkling spores floating in green light",
+ "josou": None,
+ "chars": {
+   "m": {"type": "woman", "jp": "フラワー", "canon": True, "canon_img": "F11_Stand.png",
+         "tags": "adult woman, mature female, mature face, sharp adult features, 24 years old, adult proportions, beautiful detailed eyes, long legs, tall, succubus, small black horns, black bat wings, heart-tipped demon tail, blonde hair, long wavy hair, pink flower hair ornament, green eyes, black and pink corset dress, short skirt, detached sleeves, black thighhighs, large breasts",
+         "name": "the blonde succubus in a black and pink corset dress",
+         "pose": "leaning forward with one hand on her knee, the other hand making a peace sign by her eye, teasing grin, looking at viewer"},
+   "e1": {"type": "woman", "jp": "キノコレディ", "canon": True, "canon_img": "EU32.png",
+          "tags": "adult woman, mature female, mature face, 27 years old, adult proportions, beautiful detailed eyes, long legs, tall, mushroom woman, large red mushroom cap hat with white spots, light green hair, long wavy hair, brown eyes, cream off-shoulder dress, thin cream shawl, gentle smile, huge breasts",
+          "name": "the mushroom lady in a red spotted cap hat",
+          "pose": "hands clasped under her chest, head tilted, soft motherly smile, looking at viewer"},
+   "e2": {"type": "woman", "jp": "研究員 モリー",
+          "tags": "adult woman, mature female, mature face, 25 years old, adult proportions, beautiful detailed eyes, long legs, dark brown hair, single braid, green eyes, round glasses, white lab coat over a thin shirt, brown skirt, thin white gloves, holding a glass specimen jar, curious smile, medium breasts",
+          "name": "the braided researcher in round glasses and a lab coat",
+          "pose": "holding up a glass specimen jar and peering at viewer through her round glasses, eager curious smile"},
+   "e3": {"type": "woman", "jp": "胞子の幽霊 ルル",
+          "tags": "adult woman, mature female, mature face, 22 years old, adult proportions, beautiful detailed eyes, long legs, ghost woman, translucent pale skin, floating, very light pink hair, very long hair, purple eyes, droopy eyes, translucent white dress, sleepy smile, medium breasts",
+          "name": "the translucent ghost woman with very light pink hair",
+          "pose": "floating in the air with her knees bent, one finger on her lips, sleepy half-lidded smile, looking at viewer"},
+   "boss": {"type": "woman", "jp": "茸の女王 モレル",
+            "tags": "adult woman, mature female, mature face, 32 years old, adult proportions, beautiful detailed eyes, long legs, tall, reddish brown hair, very long hair, mushroom cap hair ornament, gold eyes, long white mycelium lace dress, queen, gentle motherly smile, voluptuous, huge breasts",
+            "name": "the mushroom queen in a white mycelium lace dress",
+            "pose": "arms opened wide as if to embrace, head slightly tilted, gentle possessive smile, looking at viewer"},
+ },
+ "places": {
+   "camp":      "adventurers survey camp at the forest entrance, canvas tent, bedroll on the grass, small campfire, lantern",
+   "office":    "guild survey room at night, long wooden desk, desk lamp, quill pen and inkwell, wooden chair, shelves of documents",
+   "clearing":  "mossy forest clearing surrounded by trees and giant mushrooms, soft moss ground, sunlight through leaves",
+   "colony":    "mushroom colony in dappled sunlight, clusters of soft mushrooms, sweet glowing spores floating, moss",
+   "labtent":   "research tent in the forest, folding specimen table, rows of glass jars with blank labels without text, lantern",
+   "hut":       "old foggy watchtower hut, wooden floor, straw mat, window filled with white fog, cold dim light",
+   "nursery":   "deepest nursery hall of the mushroom forest, softly glowing mushrooms all around, white mycelium lace curtains, thick soft moss bed",
+   "arena":     "guild tournament ground, stone stage, wooden fence, spectator benches, banners without text",
+   "meadow":    "flower meadow at the edge of the forest, sparkling spores floating over the flowers, soft grass",
+   "riverside": "river bank survey point, smooth rocks, clear shallow river, ferns",
+   "spring":    "moonlit forest spring, still water reflecting the moon, ferns and glowing mushrooms at the edge",
+   "queen":     "queen's garden under enormous mushroom caps like a roof, moss throne woven with white mycelium, glowing mushrooms",
+   "mushhouse": "cozy house carved inside a giant mushroom, round window, soft moss bed, warm lamp light",
+   "specimen":  "cold stone specimen room in the guild basement, examination table, shelves of glass jars with blank labels without text",
+   "attic":     "old windmill attic, straw on the floor, moonlight through a small window, wooden beams",
+   "inn":       "guild inn room at night, wooden bed with white sheets, small bedside table, window showing a dark forest",
+ },
+ "atk": {
+   "m1": ("camp", "he lies on his back on a bedroll, the succubus kneels between his legs slamming her large breasts down on his erection, clothed paizuri through her corset neckline, breasts bouncing, precum, back arched, trembling"),
+   "m2": ("office", "he sits slumped in a wooden chair, the succubus stands before him staring into his face, glowing green magic circles spinning in her eyes, her fingertip hovering over his chest, no hands on him, erection twitching"),
+   "m3": ("clearing", "he lies on his back on the moss, the succubus straddles him kissing him deeply, tongues, saliva trail, her thighs squeezing his erection between them, thighjob, precum, trembling"),
+   "e1": ("colony", "he kneels on the moss with his face buried in the mushroom lady's cleavage, the mushroom lady hugs his head and presses her huge breasts together around his face, pafupafu, sweet glowing spores drifting, body limp"),
+   "e2": ("labtent", "from side, he lies on his back on the folding specimen table holding his knees, the researcher stands beside him with two gloved fingers in his anus, fingering, prostate massage, her other hand holding a glass jar, round glasses"),
+   "e3": ("hut", "he lies on his side on the straw mat, the ghost woman floats behind him licking inside his ear, ear licking, her translucent cold hand on his chest, white cold breath, shivering, blush"),
+   "boss": ("nursery", "he lies on the moss bed held from behind by the mushroom queen, fine white mycelium threads from her hair ornament coiled around his nipples, other soft threads slipping into his anus, her huge breasts against his back, trembling"),
+ },
+ "atk_desc": {
+   "m1": "the succubus slams her breasts down on him.",
+   "m2": "the succubus analyzes his weak points with her glowing eyes.",
+   "m3": "the succubus kisses him and squeezes him between her thighs in front of others.",
+   "e1": "the mushroom lady smothers him in her sweet spore-scented breasts.",
+   "e2": "the researcher takes a specimen with her gloved fingers.",
+   "e3": "the ghost woman licks his ear with her cold tongue.",
+   "boss": "the mushroom queen embraces him with her mycelium threads.",
+ },
+ "lose": {
+   # フラワー 技1（叩きつけるパイズリ）
+   "btl_m1":     ("camp", "he sits on the bedroll, the succubus stands in front of him lifting her large breasts with both hands and letting them bounce, no hands on him, his hips floating off the bedroll, cum spurting untouched, " + BUDS),
+   "onani_m1":   ("arena", "kneeling alone by the arena fence with hands on his knees, staring ahead with his mouth moving, hips lifting as if pulled upward, penis untouched, the succubus stands far away on the stone stage bouncing her breasts, watching"),
+   "inochi_m1":  ("camp", "he sits in front of the canvas tent, the succubus holds " + SHEET + " and lets her large breasts bounce above his face, no hands on him, his hips floating, cum on his belly, dazed"),
+   "onedari_m1": ("office", "he lies on his back on the long desk, the succubus leans over his face letting her large breasts drop and bounce, his hips lifted off the desk, cum spurting untouched, " + SHEET + " and a quill pen at the desk edge"),
+   # フラワー 技2（アナライズ）
+   "btl_m2":     ("office", "he sinks in the wooden chair under the desk lamp, the succubus stands before him staring down, faint green magic circles glowing in her eyes, no hands on him, cum dripping untouched, " + BUDS),
+   "onani_m2":   ("arena", "sitting alone on the stone floor with his hands resting on his knees, head bowed, lips murmuring, hips twitching, penis untouched, the succubus watches from far across the stone stage with glowing green eyes"),
+   "inochi_m2":  ("clearing", "he kneels on the moss, the succubus stands over him gazing down, glowing green eyes, her gaze sliding from his neck to his nipples, no hands on him, cum dripping untouched, " + BUDS),
+   "onedari_m2": ("inn", "he sits on the bed with his knees giving way, the succubus sits facing him with a soft smile and an ordinary gaze, no hands on him, cum dripping untouched, " + SHEET + " on the bedside table"),
+   # フラワー 技3（仲間の目の前で）
+   "btl_m3":     ("clearing", "he lies on his back on the moss, the succubus straddles him kissing him deeply, tongues, saliva trail, her thighs squeezing his penis, thighjob, cum on her thighs, bushes rustling around them"),
+   "onani_m3":   ("arena", "kneeling alone on the training ground licking his own lips, sucking one of his own fingers as if kissing, knees trembling, penis untouched, the succubus watches from far away by the fence"),
+   "inochi_m3":  ("camp", "he lies on his back beside the campfire, the succubus leans over and kisses the corner of his lips, no other touch, cum spurting untouched, his face turned aside, flushed"),
+   "onedari_m3": ("arena", "he stands on the stone floor, the succubus hugs him from behind with her lips at his ear, a small kiss on his ear, cum dripping untouched, " + SHEET + " on a bench"),
+   # キノコレディ（胞子のぱふぱふ）
+   "btl_e1":     ("colony", "he lies on the moss with his face buried in the mushroom lady's cleavage, the mushroom lady cradles his head and presses her huge breasts together, pafupafu, sweet glowing spores drifting, cum dripping untouched, sleepy"),
+   "onani_e1":   ("meadow", "sitting alone in the flower meadow with his face buried in a thin cream shawl, breathing in deeply, one hand stroking his own chest, body limp, penis untouched, the mushroom lady watches from far away"),
+   "inochi_e1":  ("colony", "he lies on the moss under a giant mushroom cap, the mushroom lady lies beside him hugging his head to her huge breasts, breast smother, no hand on his penis, cum on his belly, drowsy"),
+   "onedari_e1": ("mushhouse", "he lies on the moss bed with his head held against the mushroom lady's huge breasts, his ear on her chest listening to her heartbeat, cum dripping untouched, " + SHEET + " by the pillow"),
+   # 研究員 モリー（採取の指）
+   "btl_e2":     ("labtent", "from side, he lies on his back on the folding specimen table holding his knees up, the researcher stands beside him with two gloved fingers in his anus, prostate massage, holding a glass jar under his dripping untouched penis"),
+   "onani_e2":   ("riverside", "crouching alone behind a rock by the river, one gloved hand reaching behind with two wet fingers in his own anus, the other hand bracing on the rock, penis untouched, the researcher watches from far away"),
+   "inochi_e2":  ("labtent", "from side, he lies on a narrow cot, the researcher sits beside him with two gloved fingers in his anus, prostate massage, a glass jar catching cum from his untouched penis, shelves of jars"),
+   "onedari_e2": ("specimen", "from side, he lies on the stone examination table with knees raised, the researcher's gloved fingers in his anus, her other gloved hand stroking his penis, cum dripping into a glass jar, round glasses"),
+   # 胞子の幽霊 ルル（冷たい舌）
+   "btl_e3":     ("hut", "he lies on his side on the straw mat, the ghost woman floats behind him with her lips at his ear, cold tongue licking inside his ear, ear licking, cum dripping untouched, shivering, white fog at the window"),
+   "onani_e3":   ("spring", "kneeling alone at the moonlit spring, dipping his fingers into the water and tracing the rim of his own ear with cold wet fingertips, one fingertip in his ear, penis untouched, the ghost woman floats far away over the water, watching"),
+   "inochi_e3":  ("hut", "he sits on the straw mat hugging his knees, the ghost woman floats beside him licking his ear, ear licking, her translucent hands resting on his shoulders, cum dripping untouched, fog, shivering"),
+   "onedari_e3": ("attic", "he lies on the straw in the moonlight, the ghost woman floats beside him with her lips right at his ear whispering, not touching, cum dripping untouched, " + SHEET + " floating by her hand"),
+   # 茸の女王 モレル（菌糸の抱擁）
+   "btl_boss":   ("nursery", "he lies on his back on the moss bed, fine white mycelium threads from the mushroom queen's hair ornament coiled around his nipples and slipping into his anus, the mushroom queen kneels beside him stroking his hair, cum spilling untouched"),
+   "onani_boss": ("queen", "sitting alone on the moss, a strip of white lace wound around his chest, pinching his own nipple, the other hand reaching behind with a finger shallowly in his own anus, penis untouched, the mushroom queen watches from the far throne"),
+   "inochi_boss":("nursery", "he lies curled in a soft cradle of white mycelium threads wrapped around his chest and hips, one thread in his anus, the mushroom queen sits beside the cradle hugging his head to her huge breasts, cum dripping, sleepy"),
+   "onedari_boss":("queen", "he sits at the foot of the moss throne, only two white mycelium threads coiled tight around his nipples, the mushroom queen leans down from the throne smiling, cum dripping untouched, " + SHEET + " on the armrest"),
+ },
+ "lose_desc": "keeps him in the mushroom forest as a research subject with twelve white spore buds on his skin.",
+ "onanie": {
+   "master": ("arena", "kneeling with hands on his knees, lips moving as if reporting his weak points aloud, hips floating, penis untouched"),
+   "e1": ("meadow", "face buried in a thin sweet-scented shawl, breathing in deeply, one hand stroking his own chest, body limp, penis untouched"),
+   "e2": ("riverside", "crouching with a glove on one hand reaching behind, two wet fingers in his own anus pressing inward, penis untouched"),
+   "e3": ("spring", "tracing the rim of his own ear with cold wet fingertips, one fingertip slipped into his ear, head tilted, penis untouched"),
+   "boss": ("queen", "a strip of white lace wound around his chest, pinching his own nipple, the other hand's finger shallowly in his own anus, penis untouched"),
+ },
+ "magic": {
+   "1": ("m", "colony", "the succubus blows on her open palm, a cloud of sweet sparkling white spores scattering toward the viewer, playful wink"),
+   "2": (None, "office", "a guild request document without text pinned to a wooden desk beside a quill pen and a small mushroom sample jar"),
+   "3": (None, "clearing", "a swirling cloud of rainbow-shimmering hallucinogenic spores bursting from a cluster of glowing mushrooms, dreamy haze"),
+   "4": ("e1", "colony", "the mushroom lady holds up a small purple spotted mushroom between two fingers, pale numbing spores trailing from it, gentle smile"),
+   "5": ("boss", "queen", "the mushroom queen stands with her arms spread wide, giant glowing mushrooms sprouting all around her, white mycelium lace spreading over the ground, gentle smile"),
+ },
+}

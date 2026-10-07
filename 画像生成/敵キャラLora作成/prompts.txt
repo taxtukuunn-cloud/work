@@ -1,0 +1,29 @@
+circle_boss:
+  circle_boss, 1girl, black sweater, turtleneck, long sleeves, key necklace, earrings, black pants, latex pants, shiny clothes, high-waist pants, black footwear, high heels
+
+circle_e1:
+  circle_e1, 1girl, beige cardigan, open cardigan, white shirt, white ribbon, long sleeves, sleeves past wrists, white skirt, miniskirt, bare legs, black footwear, high heels
+
+circle_e2:
+  circle_e2, 1girl, grey hoodie, hood down, long sleeves, ear piercing, bare legs, black footwear, high heels
+
+circle_e3:
+  circle_e3, 1girl, white sweater dress, cable knit, buttons, beige cardigan, open cardigan, long sleeves, bare legs, black footwear, high heels
+
+circle_master:
+  circle_master, 1girl, black hoodie, hood down, long sleeves, black skirt, miniskirt, bare legs, black footwear
+
+host_boss:
+  host_boss, 1girl, black coat, open coat, long coat, black dress, plunging neckline, collarbone, shiny clothes, long dress, side slit, bare legs, black footwear, high heels
+
+host_e1:
+  host_e1, 1girl, yellow sweater vest, white shirt, collared shirt, short sleeves, purple bowtie, purple shorts, short shorts, bare legs, brown footwear, loafers
+
+host_e2:
+  host_e2, 1girl, grey jacket, blazer, white shirt, collared shirt, green necktie, long sleeves, grey skirt, pencil skirt, miniskirt, bare legs, black footwear, high heels
+
+host_e3:
+  host_e3, 1girl, black vest, white shirt, collared shirt, short sleeves, black bowtie, black skirt, pencil skirt, miniskirt, belt, keys, white gloves, bare legs, black footwear, high heels
+
+host_master:
+  host_master, 1girl, black jacket, blazer, no shirt, plunging neckline, collarbone, long sleeves, shiny clothes, black shorts, bare legs, black footwear, high heels

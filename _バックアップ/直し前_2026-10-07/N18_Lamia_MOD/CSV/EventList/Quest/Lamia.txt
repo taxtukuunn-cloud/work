@@ -1,0 +1,2 @@
+ラミアの神殿,Card/Lamia_master,クエストイベント
+ラミアの神殿【回想バトル】,Card/Lamia_master,回想バトル,$$Lamia_挑戦回数,>=,1

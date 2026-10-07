@@ -1,0 +1,309 @@
+{
+ "atk_m1": {
+  "char": "master",
+  "scene": "{A} stands beside {P} lying on the reclined examination table, {A} pressing two small round electrode terminals with thin cables to both of {P}'s temples, light blue glowing signal lines flowing from the terminals, {A} not touching {P}'s body anywhere else, {P} with soft white cuffs on wrists and ankles, arched back, hips lifting off the table, blushing, open mouth, drooling, trembling, toes curling, erect penis twitching untouched, precum, monitor waveform spiking, from side, no penetration",
+  "place": "white measurement room of an abandoned underground research facility, reclining white examination table, flickering broken ceiling light, exposed cables on the walls, monitors showing only waveforms without text, cold blue light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "atk_m2": {
+  "char": "master",
+  "scene": "{A} stands over {P} lying on the white examination table, two of {A}'s thin white robotic arms with small sensor probe tips pinching and rolling both of {P}'s nipples, a third arm tip with a tiny soft brush flicking a nipple, {A} watching a floating monitor with plain waveforms, expressionless, {P} with soft white cuffs on wrists, blushing, biting lip, arched back, trembling chest, swollen erect nipples, sweat, from above, no penetration",
+  "place": "white measurement room of an abandoned underground research facility, reclining white examination table, flickering broken ceiling light, exposed cables on the walls, monitors showing only waveforms without text, cold blue light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "atk_m3": {
+  "char": "master",
+  "scene": "{P} lies on the reclined examination table with legs spread and lifted in soft ankle cuffs, a small clear medical speculum inserted in his anus opened slightly, lube glistening, one thin white robotic arm of {A} holding the speculum, another arm's slender finger pushing inside through the opening pressing his prostate, {A} standing between his legs looking at a monitor with pink waveform, expressionless, {P} blushing, tears of pleasure, open mouth, arched back, toes curling, trembling thighs, from side",
+  "place": "white measurement room of an abandoned underground research facility, reclining white examination table, flickering broken ceiling light, exposed cables on the walls, monitors showing only waveforms without text, cold blue light",
+  "watchers": false,
+  "neg": "huge insertion, oversized object"
+ },
+ "atk_e1": {
+  "char": "e1",
+  "scene": "{A} leans over {P} lying on the white examination table, {A}'s sensor fingertips pinching and rolling both of {P}'s nipples, small scanner on {A}'s wrist glowing green, {A} looking at the nipples with a businesslike expression, {P} blushing, eyes squeezed shut, arched back, erect swollen nipples, trembling, hands cuffed above head, sweat, close-up, from above, no penetration, cold white light on skin, sweat on chest, heavy breathing, {A}'s thin fingers precise",
+  "place": "second measurement room, white examination table, glass window to a dark corridor, one flickering ceiling light, wall monitors with green waveforms without text, cracked ceiling panels",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "atk_e2": {
+  "char": "e2",
+  "scene": "{A} stands beside {P} lying on the white examination table with legs apart, a transparent suction cup cylinder with a thin tube fitted over {P}'s erect penis sucking, small electrode pads stuck on both of {P}'s nipples and lower belly, {A}'s fingertip electrodes glowing red on {P}'s perineum, {A} cold expressionless, {P} blushing, open mouth, tears, arched back, hips jerking, cum flowing into the tube, from side, no penetration",
+  "place": "collection room of an underground facility, rows of transparent tanks along the wall, thin tubes running up to the ceiling, white floor, cold white light, wall clock without numbers",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "atk_e3": {
+  "char": "e3",
+  "scene": "{A} sits behind {P} on the examination table and leans close to his ear, {A}'s lips at {P}'s ear whispering, small speaker earpiece glowing purple, purple concentric sound wave rings in the air, {A}'s hands gently covering {P}'s eyes, {P} with dazed hypnotized expression, blushing ears, open mouth, drooling slightly, limp relaxed body, trembling, from side, close-up, no penetration, {A}'s hood slightly lowered, lavender hair brushing {P}'s cheek, sweat on neck, glowing circuit lines",
+  "place": "cylindrical echo chamber, walls covered with sound-absorbing foam panels, many small speakers embedded all around the walls, faint purple light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "atk_boss": {
+  "char": "boss",
+  "scene": "{P} lies on his back on the white examination table, legs held spread and lifted by two of {A}'s dark grey robotic arms, one robotic arm ending in a smooth mechanical piston dildo of realistic size thrusting into his anus, anal sex, lube glistening, other robotic arms pinching his nipples, {A} standing at the end of the table with arms folded, long dark grey hair, commanding expression, {P} blushing, tears of pleasure, open mouth, arched back, toes curling, motion lines, from side",
+  "place": "vast central hall of an underground facility, huge golden lens on the ceiling, walls of monitors showing heartbeat waveforms without text, white examination table in the center",
+  "watchers": false,
+  "neg": "huge insertion, oversized dildo"
+ },
+ "lose_btl_m1": {
+  "char": "master",
+  "scene": "{P} lies on the reclined examination table with soft white cuffs on wrists and ankles, {A} stands beside him holding two small electrode terminals with cables to his temples, light blue glowing signal lines, {A} gently brushing sweaty bangs from {P}'s forehead with his fingertips, {A}'s expression softening slightly, {P} arched back, hips floating off the table, blushing, drooling, tears, erect penis twitching untouched, cum on stomach, monitor waveform spiking, from side, no penetration",
+  "place": "white measurement room of an abandoned underground research facility, reclining white examination table, flickering broken ceiling light, exposed cables on the walls, monitors showing only waveforms without text, cold blue light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onani_m1": {
+  "char": "master",
+  "scene": "{P} lies on the reclined examination table in a dark room, {A} sits beside him pressing the electrode terminals to {P}'s temples, {A}'s thin robotic arm guiding {P}'s own fingertips to press against his own temple next to the terminal, {P} with eyes half closed, blushing, open mouth, back arched, hips lifting, trembling legs, precum dripping untouched, pale blue light from the big screen, from side, no penetration",
+  "place": "dark room with an entire wall of large glowing screen showing only waveforms without text, white reclining chair, pale blue light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_inochi_m1": {
+  "char": "master",
+  "scene": "{P} sits reclined in a chair in the control room with his left wrist held by a soft strap on the armrest, his right hand free resting on the armrest beside a green glowing square button, {A} stands behind the chair holding electrode terminals with cables to {P}'s temples, {A}'s two robotic arms slack and damaged, {P} blushing, teary eyes, open mouth, trembling, hips lifting, precum untouched, from front, no penetration",
+  "place": "control room of an underground facility, rows of terminals with green glowing screens without text, wall of monitors showing waveforms, dim green light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onedari_m1": {
+  "char": "master",
+  "scene": "{P} lies on the white examination table under the single ceiling light, {A} stands beside him with one hand on a round dial device and the other holding the electrode terminals to {P}'s temples, a thin robotic arm fingertip hovering over his nipple, {P} blushing, wet eyes, begging expression, open mouth, arched back, hips twitching, wet stain on his trousers, sweat, from above, no penetration",
+  "place": "small circular white room with curved walls, single ceiling light shining straight down, white examination table in the center",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus",
+  "wear": "wears only an unbuttoned white shirt and dark trousers with a wet stain, chest exposed"
+ },
+ "lose_btl_m2": {
+  "char": "master",
+  "scene": "{P} lies on the white examination table with soft cuffs on wrists and ankles, four thin white robotic arms of {A} hover just above his chest, one sensor probe tip pinching a swollen red nipple, a tiny brush tip flicking the other nipple, {A} standing at his side reading a monitor, {P} arched back, chest pushed up, blushing, tears, open mouth, erect penis untouched, cum splashed on stomach, nipples wet and shining, from above, no penetration",
+  "place": "white measurement room of an abandoned underground research facility, reclining white examination table, flickering broken ceiling light, exposed cables on the walls, monitors showing only waveforms without text, cold blue light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onani_m2": {
+  "char": "master",
+  "scene": "{P} sits in the white reclining chair facing the big glowing screen, thin transparent caps on his fingertips, {A}'s robotic arms with a pinching probe and a soft silicone tongue probe playing with both of his nipples, {A} standing beside the chair watching, {P} chest thrust forward, blushing, drooling, trembling, hands gripping the armrests, swollen erect nipples, pale blue light, from side, no penetration",
+  "place": "dark room with an entire wall of large glowing screen showing only waveforms without text, white reclining chair, pale blue light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_inochi_m2": {
+  "char": "master",
+  "scene": "{P} lies on an old examination table between tall shelves, transparent small suction cups on both of his nipples with thin tubes, {A} standing beside him brushing sweaty bangs away from {P}'s forehead with his own fingers, a robotic arm holding a thin needle-like sensor above the nipple, {P} blushing, exhausted teary eyes, arched back, trembling, sweat, from side, no penetration",
+  "place": "records archive room, low ceiling, rows of grey shelves full of small data cartridges, tiny blue indicator lamps, dusty air, dim light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onedari_m2": {
+  "char": "master",
+  "scene": "{P} sits in the white treatment chair behind the counter with wrists on the armrests, {A} standing beside him, a transparent suction cup sucking his left nipple and a soft brush probe sweeping his right nipple, electrode terminals on his temples, {P} blushing, begging expression, open mouth, arched back, trembling, swollen nipples, from front, no penetration, {A}'s robotic arms hovering, glowing light blue eyes watching closely, sweat on chest, heavy breathing",
+  "place": "old reception room of an abandoned research facility, worn counter with a terminal, white treatment chair, blank broken sign panel, pale morning light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_btl_m3": {
+  "char": "master",
+  "scene": "{P} lies on the reclined examination table with legs spread in soft ankle cuffs, a clear medical speculum inserted in his anus opened wide, lube dripping onto the table, one of {A}'s thin robotic arms holding the speculum, {A}'s two slender fingers pushing inside through the opening pressing his prostate, electrode terminals on {P}'s temples, a monitor showing pink inner walls, {A} standing between his legs, {P} blushing, tears of pleasure, open mouth, arched back, toes curling, from side",
+  "place": "white measurement room of an abandoned underground research facility, reclining white examination table, flickering broken ceiling light, exposed cables on the walls, monitors showing only waveforms without text, cold blue light",
+  "watchers": false,
+  "neg": "huge insertion, oversized object"
+ },
+ "lose_onani_m3": {
+  "char": "master",
+  "scene": "{P} lies on the floor mat between shelves with legs spread, a clear medical speculum inserted in his anus held open by {A}'s robotic arm, {A} kneeling between his legs with two fingers inside pressing his prostate, bottle of lube tipped over on the floor, electrode terminals on {P}'s temples, {P} blushing, tears, drooling, arched back, toes curling, a monitor with pink image beside them, from side",
+  "place": "records archive room, low ceiling, rows of grey shelves full of small data cartridges, tiny blue indicator lamps, dusty air, dim light",
+  "watchers": false,
+  "neg": "huge insertion, oversized object"
+ },
+ "lose_inochi_m3": {
+  "char": "master",
+  "scene": "{P} lies on the white examination table with legs spread and lifted, a clear medical speculum inserted in his anus, a thin rounded vibrating probe held by {A}'s robotic arm pressing his prostate through the opening, {A} with one of his damaged robotic arms hanging limp, glowing eyes, electrode terminals on {P}'s temples, {P} blushing, tears of pleasure, trembling thighs, arched back, lube glistening, early morning light through glass window, from side",
+  "place": "second measurement room, white examination table, glass window to a dark corridor, one flickering ceiling light, wall monitors with green waveforms without text, cracked ceiling panels",
+  "watchers": false,
+  "neg": "huge insertion, oversized object"
+ },
+ "lose_onedari_m3": {
+  "char": "master",
+  "scene": "{P} sits in the white treatment chair with legs spread over the leg rests, holding a small lube bottle in his own hand, a clear medical speculum in his anus opened by {A}'s robotic arm, {A} sitting on a stool between his legs typing on the counter terminal with one hand, {P} blushing, embarrassed begging face, open mouth, trembling, lube glistening, evening light, from front",
+  "place": "old reception room of an abandoned research facility, worn counter with a terminal, white treatment chair, blank broken sign panel, pale morning light",
+  "watchers": false,
+  "neg": "huge insertion, oversized object"
+ },
+ "lose_btl_e1": {
+  "char": "e1",
+  "scene": "{P} lies on the white examination table with soft cuffs on wrists and ankles and legs apart, {A} standing beside him pinching and rolling {P}'s nipple with sensor fingertips, a thin white rod probe with a small indicator lamp inserted in {P}'s anus held by {A}'s other hand, lube glistening, {A} looking only at the scanner on his wrist, businesslike face, {P} blushing, eyes rolled half closed, open mouth, arched back, erect penis untouched, cum on stomach, from side",
+  "place": "second measurement room, white examination table, glass window to a dark corridor, one flickering ceiling light, wall monitors with green waveforms without text, cracked ceiling panels",
+  "watchers": false,
+  "neg": "huge insertion"
+ },
+ "lose_onani_e1": {
+  "char": "e1",
+  "scene": "{P} sits in a white chair in front of shelves with legs spread, pinching his own nipples with both hands, a thin white rod probe with a red lamp inserted in his anus held by {A} kneeling beside the chair, lube glistening, {A} reading his wrist scanner, businesslike expression, {P} blushing, whispering, open mouth, drooling, trembling, from front, {A}'s green eyes on the scanner, sweat on chest, toes curling, heavy breathing",
+  "place": "records archive room, low ceiling, rows of grey shelves full of small data cartridges, tiny blue indicator lamps, dusty air, dim light",
+  "watchers": false,
+  "neg": "huge insertion"
+ },
+ "lose_inochi_e1": {
+  "char": "e1",
+  "scene": "{P} sits in the white treatment chair with legs spread on the foot rests, holding his shirt up above his chest with both hands, {A} standing beside him pinching his nipples with sensor fingertips, a thin white rod probe with a small red lamp inserted in his anus, lube glistening, early morning light through a cracked skylight, {P} blushing, tears, biting lip, trembling, from front",
+  "place": "old reception room of an abandoned research facility, worn counter with a terminal, white treatment chair, blank broken sign panel, pale morning light",
+  "watchers": false,
+  "neg": "huge insertion",
+  "wear": "wears only a white shirt lifted up above his chest"
+ },
+ "lose_onedari_e1": {
+  "char": "e1",
+  "scene": "{P} lies on the white examination table with legs spread, {A} standing beside him, a thin white rod probe with a red lamp inserted in {P}'s anus tapping his prostate, {A}'s other sensor fingertip scratching {P}'s erect nipple, small blank paper slip on the table edge, {P} blushing, begging expression, drooling, hips jerking, erect penis untouched, from above, cold light from above, {A}'s green eyes watching the lamp, sweat, toes curling",
+  "place": "small circular white room with curved walls, single ceiling light shining straight down, white examination table in the center",
+  "watchers": false,
+  "neg": "huge insertion"
+ },
+ "lose_btl_e2": {
+  "char": "e2",
+  "scene": "{P} lies on the white examination table with legs spread, a transparent suction cylinder with a thin tube fitted over his erect penis, cum flowing through the tube into a transparent tank, small electrode pads on his nipples and lower belly, {A} standing beside him pressing a fingertip electrode on {P}'s perineum, faint red sparks, {A} cold expressionless, {P} arched back, head thrown back, tears, open mouth, trembling, from side, no penetration",
+  "place": "collection room of an underground facility, rows of transparent tanks along the wall, thin tubes running up to the ceiling, white floor, cold white light, wall clock without numbers",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onani_e2": {
+  "char": "e2",
+  "scene": "{P} sits in a white chair with hips floating, his own fingers pressing his perineum rhythmically, a transparent suction cylinder with a tube fitted over his erect penis, {A} standing beside the chair touching {P}'s nipple with a red glowing fingertip electrode, electrode pad on lower belly, {P} blushing, drooling, tears, trembling thighs, from front, no penetration, thin tube leading to a tank, {A}'s red eyes glowing, sweat on chest, heavy breathing",
+  "place": "records archive room, low ceiling, rows of grey shelves full of small data cartridges, tiny blue indicator lamps, dusty air, dim light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_inochi_e2": {
+  "char": "e2",
+  "scene": "{P} lies on the white examination table, small transparent suction cups with electrodes on both nipples making them swollen, a wide electrode belt around his lower belly, a transparent suction cup over his erect penis with a tube, {A} standing beside him turning a dial on a control box upward, {A}'s red fingertip electrode on {P}'s perineum, {P} arched back, tears, open mouth, trembling, morning light, from side, no penetration",
+  "place": "second measurement room, white examination table, glass window to a dark corridor, one flickering ceiling light, wall monitors with green waveforms without text, cracked ceiling panels",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onedari_e2": {
+  "char": "e2",
+  "scene": "{P} on all fours on a low padded cushioned bench with his chest pressed onto the cushion, wrists held in soft rings, a transparent suction cylinder hanging down over his erect penis pulling downward with a tube, electrode pads on nipples and lower belly, {A} standing behind him pressing a red glowing fingertip electrode on {P}'s perineum, {P} blushing, drooling, begging face, tears, trembling, from side, no penetration",
+  "place": "small circular white room with curved walls, single ceiling light shining straight down, white examination table in the center",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_btl_e3": {
+  "char": "e3",
+  "scene": "{P} lies on his back on the examination table in the echo chamber, {A} sitting beside him with his index finger resting on {P}'s temple and his lips close to {P}'s ear, purple sound wave rings echoing from speakers all around, {P} with vacant hypnotized eyes, blushing, drooling, back arched, hips lifting, trembling, cum on stomach untouched, from above, no penetration",
+  "place": "cylindrical echo chamber, walls covered with sound-absorbing foam panels, many small speakers embedded all around the walls, faint purple light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onani_e3": {
+  "char": "e3",
+  "scene": "{P} sits in a chair between shelves with both hands clenched on his knees, {A} kneeling in front of him with his hands gently laid over {P}'s clenched hands, {A}'s lips near {P}'s ear, small speaker earpiece glowing, a small recording lens with a red dot nearby, {P} whispering, blushing, teary dazed eyes, hips lifting off the chair, trembling, from side, no penetration",
+  "place": "records archive room, low ceiling, rows of grey shelves full of small data cartridges, tiny blue indicator lamps, dusty air, dim light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_inochi_e3": {
+  "char": "e3",
+  "scene": "{P} sits reclined in a white chair facing the huge glowing screen, his thumb pressing a small white button on the armrest, {A} standing behind the chair whispering into his ear, small speaker glowing purple, faint purple sound rings, {P} limp, dazed hypnotized expression, blushing, drooling, trembling, knees falling apart, dawn light, from side, no penetration, {A}'s hand resting on {P}'s shoulder, lavender hair falling forward, sweat, heavy breathing",
+  "place": "dark room with an entire wall of large glowing screen showing only waveforms without text, white reclining chair, pale blue light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onedari_e3": {
+  "char": "e3",
+  "scene": "{P} lies with his head on {A}'s lap, {A} sitting seiza on a white mat, {P} turned on his side offering his left ear, {A} bending down with lips at {P}'s ear, tongue touching the ear, speaker grille around the round wall glowing purple, {P} blushing ears, dazed eyes, drooling, curled trembling body, from above, no penetration, {A}'s hand stroking {P}'s hair, calm half-closed purple eyes, sweat, heavy breathing, toes curling",
+  "place": "small circular white room with curved walls, single ceiling light shining straight down, white examination table in the center",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_btl_boss": {
+  "char": "boss",
+  "scene": "{P} lies on his back on the white examination table, wrists and ankles held by {A}'s dark grey robotic arms, legs spread and lifted, a robotic arm ending in a mechanical piston dildo of realistic size thrusting into his anus, anal sex, lube dripping, other arms pinching his nipples, {A} standing at the head of the table looking down, golden lens glowing above, small in the background: a silver white-haired android in a white lab coat and a light green-haired android in a white technician uniform, {P} tears of pleasure, open mouth, arched back, toes curling, from side",
+  "place": "vast central hall of an underground facility, huge golden lens on the ceiling, walls of monitors showing heartbeat waveforms without text, white examination table in the center",
+  "watchers": true,
+  "neg": "huge insertion, oversized dildo"
+ },
+ "lose_onani_boss": {
+  "char": "boss",
+  "scene": "{P} on all fours on a floor mat with hips raised, a smooth mechanical piston dildo of realistic size on {A}'s robotic arm thrusting into his anus from behind, lube dripping down his thighs, {A} standing behind him with arms folded, other arms resting on {P}'s back, {P} pushing his hips back, blushing, tears, drooling, open mouth, cheek on the mat, a small lube vial on the floor, from side",
+  "place": "control room of an underground facility, rows of terminals with green glowing screens without text, wall of monitors showing waveforms, dim green light",
+  "watchers": false,
+  "neg": "huge insertion, oversized dildo"
+ },
+ "lose_inochi_boss": {
+  "char": "boss",
+  "scene": "{P} sits reclined in a deep white chair like a dental chair, wrists held by soft rings on the armrests, legs spread wide on split leg rests, a mechanical piston dildo of realistic size on {A}'s robotic arm thrusting into his anus, lube glistening, {A} standing beside the chair taking {P}'s hand, a thin gold glowing line on {P}'s wrist, {P} blushing, tears of pleasure, head back, trembling, from side",
+  "place": "small circular white room with curved walls, single ceiling light shining straight down, white examination table in the center",
+  "watchers": false,
+  "neg": "huge insertion, oversized dildo"
+ },
+ "lose_onedari_boss": {
+  "char": "boss",
+  "scene": "{P} bent over a metal reading desk with his cheek on the desk and hands on the edge, {A} standing beside him, a mechanical piston dildo of realistic size on {A}'s robotic arm thrusting into his anus from behind, lube dripping, a small black voice recorder with a red lamp on the desk near {P}'s mouth, {P} blushing, drooling, tears, open mouth, trembling legs, from side",
+  "place": "records archive room, low ceiling, rows of grey shelves full of small data cartridges, tiny blue indicator lamps, dusty air, dim light",
+  "watchers": false,
+  "neg": "huge insertion, oversized dildo"
+ },
+ "onanie_master": {
+  "char": "master",
+  "scene": "{P} lies alone on his back on the reclined examination table, both hands' fingertips pressed to his own temples, eyes closed, no hands anywhere else, hips lifting off the table on their own, arched back, blushing, open mouth, trembling legs, toes curling, sweat, dim small lamp light, from side, sweat on forehead, heavy breathing, lips parted, fingers trembling at temples, legs pressed apart, faint glow of the monitor",
+  "place": "white measurement room of an abandoned underground research facility, reclining white examination table, flickering broken ceiling light, exposed cables on the walls, monitors showing only waveforms without text, cold blue light",
+  "watchers": false,
+  "neg": "penetration"
+ },
+ "onanie_e1": {
+  "char": "e1",
+  "scene": "{P} sits alone on the edge of the examination table, pinching and rolling his own nipples with both hands, lips moving as he whispers, blushing, half-closed eyes, erect nipples, trembling shoulders, knees pressed together, sweat, from front, fingertips rolling the nipples, erect swollen nipples, sweat on chest, heavy breathing, dim cold light, cuffs dangling unused on the table, head tilted down, lonely aroused expression, bare feet dangling",
+  "place": "second measurement room, white examination table, glass window to a dark corridor, one flickering ceiling light, wall monitors with green waveforms without text, cracked ceiling panels",
+  "watchers": false,
+  "neg": "penetration"
+ },
+ "onanie_e2": {
+  "char": "e2",
+  "scene": "{P} sits alone in a chair, one hand's fingers pressing the lower belly below his navel and the other hand's fingers pressing his perineum between his thighs, hips lifting, blushing, biting lip, teary eyes, trembling, sweat, from front, fingertips sinking into the skin in a steady rhythm, lower belly twitching, sweat on stomach, heavy breathing, head tilted back, toes curling, empty transparent tanks behind him, lonely aroused expression",
+  "place": "collection room of an underground facility, rows of transparent tanks along the wall, thin tubes running up to the ceiling, white floor, cold white light, wall clock without numbers",
+  "watchers": false,
+  "neg": "penetration"
+ },
+ "onanie_e3": {
+  "char": "e3",
+  "scene": "{P} sits alone on a stool with both hands clenched tightly on his knees, no hands on his body, lips whispering, eyes unfocused, blushing ears, back shivering, hips lifting slightly, drooling, sweat, speakers on the walls, from side, eyes half closed, hypnotized expression, knuckles white from clenching, goosebumps, shoulders trembling, sweat on neck, faint purple light, lonely aroused expression, bare feet on the floor",
+  "place": "cylindrical echo chamber, walls covered with sound-absorbing foam panels, many small speakers embedded all around the walls, faint purple light",
+  "watchers": false,
+  "neg": "penetration"
+ },
+ "onanie_boss": {
+  "char": "boss",
+  "scene": "{P} alone on all fours on a floor mat with hips raised, one hand reaching behind with two lube-wet fingers inserted in his own anus, other forearm on the mat, cheek on the mat, small lube vial beside him, blushing, drooling, teary eyes, trembling thighs, from side, hips pushing back against his own fingers, lube dripping down his thighs, sweat on back, heavy breathing, toes curling, monitor glow on his skin",
+  "place": "control room of an underground facility, rows of terminals with green glowing screens without text, wall of monitors showing waveforms, dim green light",
+  "watchers": false,
+  "neg": "dildo"
+ },
+ "magic_1": {
+  "char": "master",
+  "scene": "{A} holds out one open hand toward the viewer, a thin light blue scanning light sweeping from his palm, four thin white robotic arms spread behind him, glowing light blue eyes, expressionless, pov, upper body, looking at viewer, cold blue light, glowing circuit lines on his neck, holographic scan grid in the air, dramatic lighting, sci-fi atmosphere, detailed mechanical arms, upper body focus",
+  "place": "white measurement room of an abandoned underground research facility, reclining white examination table, flickering broken ceiling light, exposed cables on the walls, monitors showing only waveforms without text, cold blue light"
+ },
+ "magic_2": {
+  "char": "master",
+  "scene": "{A} touches a floating glowing holographic panel of plain light blue shapes without text with his fingertip, four robotic arms on his back typing on other floating panels, calm expression, pov, upper body, looking at viewer, glowing light blue eyes, glowing lines of light flowing between the panels, light blue glow on his face, cool calculating gaze, sci-fi atmosphere, dramatic lighting, detailed mechanical arms",
+  "place": "control room of an underground facility, rows of terminals with green glowing screens without text, wall of monitors showing waveforms, dim green light"
+ },
+ "magic_3": {
+  "char": "master",
+  "scene": "{A} stands with one hand raised, glowing blue rings of light rising from the floor toward the viewer, restraint field, four robotic arms spread, pov, from below, looking at viewer, expressionless, rings of light tightening in the air, glowing light blue eyes, lab coat fluttering, four robotic arms spread wide, cold blue light, sci-fi atmosphere, dramatic lighting",
+  "place": "white measurement room of an abandoned underground research facility, reclining white examination table, flickering broken ceiling light, exposed cables on the walls, monitors showing only waveforms without text, cold blue light"
+ },
+ "magic_4": {
+  "char": "master",
+  "scene": "{A} stands in front of a tall sealed capsule with frosted glass glowing brightly from within, the inside hidden by light, cables on the floor, one robotic arm plugging a thick power cable into the capsule, sparks, looking back at viewer, pov, bright light leaking from the capsule seams, orange emergency light on his face, lab coat fluttering, calm expression, sci-fi atmosphere, dramatic lighting",
+  "place": "dark storage bay of an underground facility, emergency power lines, orange warning lights, rows of sealed capsules"
+ },
+ "magic_5": {
+  "char": "e3",
+  "scene": "{A} spreads his arms, purple concentric sound wave rings radiating from him toward the viewer, half-closed glowing purple eyes, speaker earpiece glowing, hood down, pov, looking at viewer, lavender hair floating, glowing purple circuit lines, robe fluttering, many small speakers glowing on the walls, calm hypnotic expression, sci-fi atmosphere, dramatic lighting, upper body",
+  "place": "cylindrical echo chamber, walls covered with sound-absorbing foam panels, many small speakers embedded all around the walls, faint purple light"
+ }
+}

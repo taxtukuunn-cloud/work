@@ -1,0 +1,2 @@
+砂の蛇使い（パトラ）,Card/Patra_master,クエストイベント
+砂の蛇使い【回想バトル】,Card/Patra_master,回想バトル,$$Patra_挑戦回数,>=,1

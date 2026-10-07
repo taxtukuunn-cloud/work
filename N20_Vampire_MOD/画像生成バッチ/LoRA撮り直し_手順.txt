@@ -1,0 +1,17 @@
+N20 吸血鬼の館：LoRA（sdduel_style）で画像を撮り直す手順
+
+1. lora_test_vampire.bat をダブルクリック（約12分）
+   - 最初に今の51枚を output\Vampire_beforeLoRA へ控える（採用画像は上書きしない）
+   - 立ち絵（ノクティア）・技CG（atk_m1）・敗北CG（lose_btl_e1）を各2枚、output\Vampire\_candidates に出す
+   - *_c1.png は今の画像と同じシード。output\Vampire の同名画像と並べると、LoRAの効き方だけが分かる
+2. 確かめること
+   - 主人公が小柄（150cm）・華奢（非筋肉質）のままか。紺の短髪・目元が隠れた顔のままか
+   - 責め手の髪色・服・翼（ピピの腕の羽など）が崩れていないか
+   - 崩れる → lora_all_vampire.bat の「set LS=」を「set LS=--lora-strength 0.5」に書き換える
+3. lora_all_vampire.bat をダブルクリック（全51枚・約1時間40分）
+   - output\Vampire の51枚をLoRAありで上書き（元は Vampire_beforeLoRA に残る）
+4. 崩れた画像だけ撮り直し：run_vampire.bat Vampire_atk_m3 --random --batch 3 → run_vampire.bat --pick Vampire_atk_m3 2
+   前回崩れやすかったもの：ふたなりの挿入（m3・boss）、ピピの羽（e2）、乳首舐め（男女が逆になる）、オナニー（手がペニスに行く）
+5. 気に入ったら install_vampire.bat でゲームの Picture\Vampire へ。LoRA前に戻すときは output\Vampire_beforeLoRA の画像を output\Vampire へコピーして install
+
+※ LoRAを一時的に外す：run_vampire.bat <キー> --no-lora

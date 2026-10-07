@@ -1,0 +1,7 @@
+{
+  "on": false,
+  "scope": "scene",
+  "pos": "dim lighting, warm lighting, soft lighting, bokeh, depth of field, blurry background, sweat, shiny skin, glistening skin, heavy breathing, visible breath, steam, blush, half-closed eyes, wet eyes, parted lips",
+  "neg": "flat lighting, harsh lighting, overexposed, white background, simple background",
+  "memo": "2026-10-05 しっとりした雰囲気の語（ユーザー要望）。on=true で場面の撮影に足す。scope：scene＝全部の場面／lose＝負けの場面だけ／atk＝攻撃の絵だけ。まとめツール ④「雰囲気」タブで直す。gen.py --mood／--no-mood で一時的に入れる・外す"
+}

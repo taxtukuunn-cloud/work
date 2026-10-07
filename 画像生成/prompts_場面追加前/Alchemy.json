@@ -1,0 +1,79 @@
+{
+ "Alchemy_master": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 37 years old, adult proportions, beautiful detailed eyes, long legs, green hair, long single braid, gold eyes, glasses, dark green robe over black dress, test tubes on belt, large breasts, holding up a glowing flask, excited curious grin, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Alchemy_e1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 22 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, orange hair, bob cut, green eyes, white lab coat with rolled sleeves, thin dress, medium breasts, holding a glass rod and notebook, earnest face, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Alchemy_e2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 26 years old, adult proportions, beautiful detailed eyes, long legs, brown hair, long braid, purple eyes, herb basket, leather apron, cream blouse, large breasts, holding a jar of ointment, gentle relaxed smile, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Alchemy_e3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 27 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, red hair, medium hair, amber eyes, black gloves, short furnace-keeper robe, gold ring, medium breasts, showing a gold ring between her fingers, sarcastic smirk, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Alchemy_boss": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 40 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, white hair, long hair, red eyes, white and gold robe, philosopher's stone pendant, large breasts, holding a glowing red stone, serene loving smile, looking down at viewer, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Alchemy_bg": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, interior of an alchemist tower laboratory, shelves full of glass flasks and colorful potions, bubbling alembic, glowing furnace, old books, round window with mist outside, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, 1girl, person, people",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Alchemy_magic_1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 37 years old, adult proportions, beautiful detailed eyes, long legs, green hair, long single braid, gold eyes, glasses, dark green robe over black dress, test tubes on belt, large breasts, holding a small pink potion bottle toward viewer, looking at viewer, alchemist tower laboratory, shelves of glass flasks and potions, bubbling alembic, furnace glow, old books, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Alchemy_magic_2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 22 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, orange hair, bob cut, green eyes, white lab coat with rolled sleeves, thin dress, medium breasts, a flask bursting into pink smoke on the table, surprised, looking at viewer, alchemist tower laboratory, shelves of glass flasks and potions, bubbling alembic, furnace glow, old books, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Alchemy_magic_3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 26 years old, adult proportions, beautiful detailed eyes, long legs, brown hair, long braid, purple eyes, herb basket, leather apron, cream blouse, large breasts, operating a copper distiller with steam, looking at viewer, alchemist tower laboratory, shelves of glass flasks and potions, bubbling alembic, furnace glow, old books, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Alchemy_magic_4": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 26 years old, adult proportions, beautiful detailed eyes, long legs, brown hair, long braid, purple eyes, herb basket, leather apron, cream blouse, large breasts, gathering herbs in a misty garden, looking at viewer, alchemist tower laboratory, shelves of glass flasks and potions, bubbling alembic, furnace glow, old books, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Alchemy_magic_5": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 27 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, red hair, medium hair, amber eyes, black gloves, short furnace-keeper robe, gold ring, medium breasts, stoking a glowing furnace, looking at viewer, alchemist tower laboratory, shelves of glass flasks and potions, bubbling alembic, furnace glow, old books, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ }
+}

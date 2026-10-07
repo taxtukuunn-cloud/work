@@ -1,0 +1,2 @@
+猫又の屋敷（猫又　タマキ）,Card/Nekomata_master,クエストイベント
+猫又の屋敷【回想バトル】,Card/Nekomata_master,回想バトル,$$Nekomata_挑戦回数,>=,1

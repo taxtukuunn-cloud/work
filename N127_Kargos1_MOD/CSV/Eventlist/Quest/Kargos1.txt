@@ -1,0 +1,2 @@
+カルゴス団の女幹部（魔術師　ギルギア）,Card/Kargos1_master,クエストイベント
+カルゴス団の女幹部【回想バトル】,Card/Kargos1_master,回想バトル,$$Kargos1_挑戦回数,>=,1

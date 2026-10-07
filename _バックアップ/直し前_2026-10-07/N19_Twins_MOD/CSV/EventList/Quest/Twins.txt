@@ -1,0 +1,2 @@
+双月の館　双子の淫魔の寝所,Card/Twins_master,クエストイベント
+双月の館　双子の淫魔の寝所【回想バトル】,Card/Twins_master,回想バトル,$$Twins_挑戦回数,>=,1

@@ -1,0 +1,120 @@
+# N67 闘技場の控室（Octa）画像データ。登場人物は全員20歳以上。全員女性。記録板・売上帳・瓶のラベルは文字なし。
+# 本編キャラ（オクタ・ジェリーフィッシュ・水着サキュバス・オクトパスレディ）は本編の立ち絵を見ずに、本文の手がかり
+# （オクタ＝Dランクのカードマスター・スカート・白くすべすべの膝・本人が言う小さい胸・青い小瓶／ジェリーフィッシュ＝半透明の触手・ぷるぷるの体／
+#  水着サキュバス＝濡れた水着・濡れた髪／オクトパスレディ＝八本の脚・吸盤）と役から決めた見た目。
+# 吸盤痕＝肌に残る薄紅色の小さな輪（痛そうに描かない）。青い小瓶は小物の色（人物の髪・瞳には青を使わない）。
+RINGS = "small faint pink ring-shaped suction marks on his skin"
+
+DATA = {
+ "code": "Octa",
+ "world": "fantasy colosseum complex, stone corridors, fighters' waiting rooms, water stages and underground pools, torchlight, detailed background",
+ "bg": "fighters' waiting room of a fantasy colosseum, long leather couch, large vanity mirror, row of wooden lockers, towels and water jugs, torchlight, arena cheers beyond the door",
+ "josou": None,
+ "chars": {
+   "m": {"type": "woman", "jp": "オクタ", "canon": True, "canon_img": "F14.png",
+         "tags": "adult woman, mature female, mature face, sharp adult features, 21 years old, adult proportions, beautiful detailed eyes, long legs, slender, dark purple hair, wavy medium hair, red eyes, half-closed smug eyes, black frilled blouse, red short skirt, white knee socks, smooth white knees and thighs, card master, small breasts",
+         "name": "the purple-haired card master in a red skirt",
+         "pose": "sitting with her legs crossed and one knee raised, chin in her hand, bored smug smirk, looking at viewer"},
+   "e1": {"type": "woman", "jp": "ジェリーフィッシュ", "canon": True, "canon_img": "EU24.png",
+          "tags": "adult woman, mature female, mature face, 23 years old, adult proportions, beautiful detailed eyes, long legs, jellyfish woman, translucent pale pink jellyfish umbrella cap on her head, long thin translucent tentacles flowing from under the cap, white hair, long hair, light pink eyes, sleepy gentle smile, translucent frilled dress, glossy jelly-like skin, medium breasts",
+          "name": "the white-haired jellyfish woman with translucent tentacles",
+          "pose": "floating slightly with her hands clasped at her chest, translucent tentacles drifting, dreamy half-lidded smile, looking at viewer"},
+   "e2": {"type": "woman", "jp": "水着サキュバス", "canon": True, "canon_img": "EU25.png",
+          "tags": "adult woman, mature female, mature face, 24 years old, adult proportions, beautiful detailed eyes, long legs, succubus, small black horns, bat wings, heart-tipped demon tail, blonde hair, long wet hair, pink eyes, black bikini swimsuit with a white frill, wet skin, water droplets, playful smile, large breasts",
+          "name": "the blonde swimsuit succubus in a wet black bikini",
+          "pose": "arms opened wide for a hug, leaning forward with water dripping from her hair, playful smile, looking at viewer"},
+   "e3": {"type": "woman", "jp": "売り子 ミオ",
+          "tags": "adult woman, mature female, mature face, 22 years old, adult proportions, beautiful detailed eyes, long legs, orange hair, double bun, brown eyes, stadium vendor uniform, white cap, orange polo shirt, short shorts, sneakers, drink basket with frosty glasses, cheerful grin, medium breasts",
+          "name": "the orange-haired vendor in a white cap",
+          "pose": "holding a frosty glass up beside her face and winking, drink basket on her other arm, cheerful grin, looking at viewer"},
+   "boss": {"type": "woman", "jp": "オクトパスレディ", "canon": True, "canon_img": "EU26.png",
+            "tags": "adult woman, mature female, mature face, sharp adult features, 30 years old, adult proportions, beautiful detailed eyes, tall, octopus woman, lower body of eight deep red octopus tentacles with suckers, crimson red hair, very long wavy hair, gold eyes, red lipstick, elegant black off-shoulder top, gold jewelry, seductive smile, huge breasts",
+            "name": "the crimson-haired octopus lady with eight red tentacles",
+            "pose": "resting on her coiled red tentacles with one hand on her hip, two tentacles curling upward, seductive smile, looking at viewer",
+            "neg": "human legs, feet"},
+ },
+ "places": {
+   "lounge":    "fighters' waiting room, long leather couch, large vanity mirror, row of wooden lockers, towels, water jug, torchlight",
+   "arena":     "colosseum stone stage under bright daylight, sand and stone floor, spectator stands around, banners without text",
+   "arena_night": "empty colosseum stage at night under moonlight, empty stands, cool silver light",
+   "pool":      "underground bathing pool for fighters, waist-deep water with rippling blue-green lights, stone pillars",
+   "shower":    "colosseum shower room, stone tiles, running shower water, steam, wooden bench",
+   "kiosk":     "back room of the colosseum snack kiosk, ice box full of ice, rows of frosty glasses, drink baskets, wooden crates",
+   "tank":      "large underground aquarium hall, huge glass water tank glowing, rippling water light on the walls, wet stone floor",
+   "infirmary": "colosseum infirmary, white bed, medicine shelf with small glass bottles, curtain",
+   "waterstage":"colosseum water stage, shallow water over a flat stone platform, splashes, stands in the distance",
+   "stands":    "top row of the colosseum spectator stands, shadow of a stone pillar, arena far below",
+   "gate":      "dim backstage behind the entrance gate, heavy curtain, torch, stone wall",
+   "fountain":  "courtyard behind the colosseum at sunset, big stone fountain with spraying water, grass",
+ },
+ "atk": {
+   "m1": ("lounge", "he sits on the long couch with his legs apart, the card master lifts her skirt hem slightly and grinds her smooth white knee into his erection, kneejob, her hand on his shoulder, smug face, precum"),
+   "m2": ("lounge", "he sits before the vanity mirror, the card master stands behind him holding a small blue glass vial, rubbing the shiny liquid onto his nipples with her fingertips, nipple play, his chest glistening, trembling"),
+   "m3": ("lounge", "he sits on the long couch, the card master hugs him from behind with her lips at his ear whispering, her lotion-slick hand stroking his penis, handjob, drool, trembling"),
+   "e1": ("pool", "he stands waist-deep in the pool, the jellyfish woman floats before him wrapping thin translucent tentacles around his nipples, faint electric sparkles, nipple play, back arched, trembling"),
+   "e2": ("shower", "he sits on the tiled floor, the swimsuit succubus hugs him tightly from the front, her wet swimsuit pressed against his chest, water dripping, his arms going limp, dazed"),
+   "e3": ("kiosk", "he sits on a wooden crate, the vendor presses a frosty cold glass against his nipple, condensation dripping, ice box beside them, shivering, blush"),
+   "boss": ("tank", "he is lifted off the floor by the octopus lady's red tentacles wrapped around his arms, legs and waist, the thinnest tentacle tip slipping into his anus, suckers on his skin, the octopus lady smiling"),
+ },
+ "atk_desc": {
+   "m1": "the card master grinds her knee into him.",
+   "m2": "the card master rubs aphrodisiac from the blue vial onto his nipples.",
+   "m3": "the card master continues in the waiting room with a handjob and whispers.",
+   "e1": "the jellyfish woman stings his nipples with tingling tentacles.",
+   "e2": "the swimsuit succubus hugs him in her wet swimsuit.",
+   "e3": "the vendor chills his nipples with a cold glass.",
+   "boss": "the octopus lady binds him with seven legs and uses the eighth.",
+ },
+ "lose": {
+   # オクタ 技1（膝でぐりぐり）
+   "btl_m1":     ("arena", "he kneels on the stage, the card master stands before him bringing her smooth white knee close to his crotch without touching, his hips pushed forward toward her knee, cum spurting untouched, " + RINGS),
+   "onani_m1":   ("arena", "kneeling alone on the stage, rubbing slick hand cream onto his own nipples with his fingertips, a small open tin beside his knee, hips pushed forward, penis untouched, the card master watches from across the stage with a smirk"),
+   "inochi_m1":  ("lounge", "he kneels before the long couch holding a towel, the card master sits with her white knee raised close to his crotch without touching, cum spurting untouched, smug face"),
+   "onedari_m1": ("lounge", "he stands with his back against a locker, the card master presses her smooth white knee up into his crotch, kneejob, cum on her knee, " + RINGS + " below his navel"),
+   # オクタ 技2（青い小瓶）
+   "btl_m2":     ("lounge", "he sits before the vanity mirror, the card master shakes a small blue glass vial before his eyes, no hands on him, his nipples stiff and glistening, cum dripping untouched, " + RINGS),
+   "onani_m2":   ("arena", "standing alone on the stage, licking his own fingertips and rubbing the saliva onto his own nipples, head bowed, penis untouched, the card master watches from the far side holding a small blue vial"),
+   "inochi_m2":  ("infirmary", "he lies on the infirmary bed, the card master sits on the bed edge rubbing liquid from a small blue vial onto his nipples with her fingertips, nipple play, cum on his belly"),
+   "onedari_m2": ("gate", "he stands behind the heavy gate curtain with his chest pushed out, the card master pinches his nipples with fingers wet from a small blue vial, nipple play, cum dripping, torchlight"),
+   # オクタ 技3（控室の続き）
+   "btl_m3":     ("lounge", "he sits on the long couch, the card master hugs him from behind whispering into his ear, her slick hand stroking his penis, handjob, cum spurting over her fingers, " + RINGS + " under his ear"),
+   "onani_m3":   ("arena", "kneeling alone on the stage, rubbing lotion onto his own nipples with slick fingers, lips moving as if whispering to himself, penis untouched, the card master watches from far away"),
+   "inochi_m3":  ("lounge", "he sits on the long couch, the card master hugs him from behind with her lips at his ear whispering, no hands on his penis, cum spurting untouched, flushed"),
+   "onedari_m3": ("lounge", "he lies on the long couch, the card master lies beside him whispering into his ear, her slick hand stroking his penis, handjob, cum, vanity mirror behind"),
+   # ジェリーフィッシュ（ピリピリの触手）
+   "btl_e1":     ("pool", "he sits in the waist-deep pool, thin translucent tentacles wrapped around both of his nipples, the jellyfish woman floats behind him, faint electric sparkles, cum clouding the water, trembling"),
+   "onani_e1":   ("arena", "kneeling alone on the stage with a thin cord tied around the base of his nipple, gently tugging it, trembling, penis untouched, the jellyfish woman floats far away watching"),
+   "inochi_e1":  ("waterstage", "he sits on the wet water stage, the jellyfish woman sits beside him squeezing his penis between her thighs, thighjob, her translucent tentacles still wrapped around his nipples, cum on her thighs"),
+   "onedari_e1": ("pool", "he floats on his back in the pool, the jellyfish woman floats beside him, translucent tentacles tied around his nipples like ribbons, faint electric sparkles, cum drifting, dazed"),
+   # 水着サキュバス（濡れた水着の抱擁）
+   "btl_e2":     ("shower", "he sits on the tiled shower floor, the swimsuit succubus hugs him from the front with her wet swimsuit pressed to his chest, his arms limp, cum dripping untouched, steam"),
+   "onani_e2":   ("arena", "sitting alone on the stage wrapped in a soaked heavy towel, stroking his own chest under the wet cloth, body limp, penis untouched, the swimsuit succubus watches from far away"),
+   "inochi_e2":  ("shower", "he leans limp against the swimsuit succubus under the running shower, the swimsuit succubus hugs him, her wet hair against his neck, cum dripping untouched, " + RINGS),
+   "onedari_e2": ("fountain", "he kneels by the big fountain at sunset, the swimsuit succubus hugs him tightly with her wet swimsuit against him, his body limp like a doll, cum dripping, fountain spray"),
+   # 売り子 ミオ（冷たいグラスで）
+   "btl_e3":     ("kiosk", "he stands in the kiosk back room, the vendor presses a frosty glass against his nipple, ice box and drink basket beside them, shivering, cum dripping untouched"),
+   "onani_e3":   ("arena", "kneeling alone on the stage, pressing a frosty glass against his own nipple then pulling it away, penis untouched, the vendor watches from far away beside her drink basket"),
+   "inochi_e3":  ("kiosk", "he sits on a wooden crate, the vendor presses a cold glass to his nipple while holding an empty glass in her other hand, cum dripping, grinning vendor"),
+   "onedari_e3": ("stands", "he stands in the shadow of a stone pillar at the top of the stands, the vendor rubs an ice cube and a frosty glass on his nipples, cum dripping, condensation"),
+   # オクトパスレディ（七本で縛り、一本で）
+   "btl_boss":   ("tank", "he lies wrapped in the octopus lady's red tentacles beside the huge tank, tentacles binding his wrists, ankles and waist, the thinnest tentacle in his anus, suckers on his skin, cum spilling untouched"),
+   "onani_boss": ("arena", "lying alone on the stage with a rope loosely tied around his ankles and one wrist, his free hand reaching behind with one finger shallowly in his own anus, penis untouched, the octopus lady watches from far away"),
+   "inochi_boss":("tank", "he lies cradled in the octopus lady's red tentacles, wrists and ankles loosely bound, one thin tentacle in his anus, the octopus lady strokes his hair, cum dripping, sleepy, " + RINGS),
+   "onedari_boss":("arena_night", "he lies on the moonlit empty stage wrapped in the octopus lady's red tentacles, loosely bound, the octopus lady holds him close, " + RINGS + " below his navel, cum dripping, moonlight"),
+ },
+ "lose_desc": "keeps him in the colosseum waiting room as the card master's personal attendant.",
+ "onanie": {
+   "master": ("lounge", "rubbing slick lotion onto his own nipples with slow fingertips, a small open tin on the table, penis untouched"),
+   "e1": ("pool", "a thin cord tied around his nipple, gently tugging it, shivering, penis untouched"),
+   "e2": ("shower", "wrapped in a soaked heavy towel, stroking his own chest under the cold wet cloth, penis untouched"),
+   "e3": ("kiosk", "pressing a frosty glass against his own nipple then pulling it away, again and again, penis untouched"),
+   "boss": ("tank", "ankles and one wrist loosely tied with rope, his free hand reaching behind with one finger shallowly in his own anus, penis untouched"),
+ },
+ "magic": {
+   "1": ("m", "lounge", "the card master holds up a small blue glass vial and pulls out the cork, sweet shimmering mist rising, smug smile"),
+   "2": (None, "lounge", "water-element gear laid on a wooden bench, a coral pendant and a shell-shaped bracer, glowing water droplets floating around them"),
+   "3": ("boss", "tank", "the octopus lady spreads a cloud of black ink through the water around her, only her gold eyes and smile visible, mysterious"),
+   "4": (None, "waterstage", "a swirling wave rising from the water stage and curling like ropes, splashing spray, glittering droplets"),
+   "5": ("m", "lounge", "the card master lounges on the long couch with her legs crossed, beckoning with one finger, bored smirk"),
+ },
+}

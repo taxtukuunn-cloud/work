@@ -1,0 +1,1 @@
+#Slime/Slime_master.png,Card/Slime_master,フィールドイベント,場所,==,&&場所モルゲン

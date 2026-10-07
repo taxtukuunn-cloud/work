@@ -1,0 +1,2 @@
+禁書庫の司書（司書長　ヘレナ）,Card/Library_master,クエストイベント
+禁書庫の司書【回想バトル】,Card/Library_master,回想バトル,$$Library_挑戦回数,>=,1

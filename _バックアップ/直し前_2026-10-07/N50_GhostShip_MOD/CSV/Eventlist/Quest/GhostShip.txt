@@ -1,0 +1,2 @@
+霧の幽霊船（船長　モルガナ）,Card/GhostShip_master,クエストイベント
+霧の幽霊船【回想バトル】,Card/GhostShip_master,回想バトル,$$GhostShip_挑戦回数,>=,1

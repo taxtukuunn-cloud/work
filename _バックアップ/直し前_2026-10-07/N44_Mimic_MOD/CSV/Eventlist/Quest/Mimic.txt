@@ -1,0 +1,2 @@
+迷宮の宝箱（迷宮の主　ラビリス）,Card/Mimic_master,クエストイベント
+迷宮の宝箱【回想バトル】,Card/Mimic_master,回想バトル,$$Mimic_挑戦回数,>=,1

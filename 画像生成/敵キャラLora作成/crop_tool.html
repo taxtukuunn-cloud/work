@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoRA 切り抜きツール</title>
+<style>
+  :root {
+    --bg: #f4f3f7; --panel: #ffffff; --line: #d9d6e3; --text: #1f1b2e; --sub: #6a6580;
+    --accent: #5b3fd1; --accent-text: #ffffff; --warn: #a15c00; --ok: #1d7a46; --chip: #ece9f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16141d; --panel: #211e2b; --line: #393548; --text: #ece9f6; --sub: #a29cb8;
+      --accent: #9a85f5; --accent-text: #16141d; --warn: #f0b45a; --ok: #6fd39b; --chip: #2d293a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 14px/1.6 "Segoe UI", "Yu Gothic UI", "Meiryo", system-ui, sans-serif; }
+  main { max-width: 1180px; margin: 0 auto; padding: 24px 16px 80px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .lead { color: var(--sub); margin: 0 0 16px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; }
+  #drop { border: 2px dashed var(--line); text-align: center; padding: 28px 16px; cursor: pointer; }
+  #drop.over { border-color: var(--accent); background: var(--chip); }
+  #drop strong { display: block; font-size: 16px; }
+  #drop span { color: var(--sub); }
+  .row { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+  label { display: inline-flex; align-items: center; gap: 6px; }
+  input[type=text], input[type=number], select {
+    background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: 6px;
+    padding: 5px 8px; font: inherit; }
+  input[type=number] { width: 68px; }
+  button { font: inherit; border-radius: 7px; border: 1px solid var(--line); background: var(--panel);
+    color: var(--text); padding: 7px 14px; cursor: pointer; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: 600; }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  .card { display: grid; grid-template-columns: 250px 1fr; gap: 14px; }
+  @media (max-width: 760px) { .card { grid-template-columns: 1fr; } }
+  .card h2 { font-size: 13px; margin: 0 0 6px; color: var(--sub); font-weight: 600; word-break: break-all; }
+  .fields { display: grid; gap: 7px; }
+  .fields label { justify-content: space-between; }
+  .fields input[type=text] { width: 100%; }
+  .fields .stack { display: block; }
+  .fields .stack span { display: block; color: var(--sub); font-size: 12px; }
+  .strip { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; align-items: flex-start; }
+  .strip figure { margin: 0; flex: 0 0 auto; text-align: center; }
+  .strip canvas { display: block; height: 230px; width: auto; border: 1px solid var(--line); border-radius: 4px; }
+  .strip figcaption { font-size: 11px; color: var(--sub); }
+  .note { color: var(--warn); font-size: 12px; }
+  .remove { float: right; padding: 2px 9px; font-size: 12px; }
+  #status { margin-left: 4px; }
+  #status.ok { color: var(--ok); } #status.warn { color: var(--warn); }
+  #summary { color: var(--sub); }
+  details { color: var(--sub); } details summary { cursor: pointer; color: var(--text); }
+  code { background: var(--chip); padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>LoRA 切り抜きツール</h1>
+  <p class="lead">透過背景のキャラ画像から、学習用の切り抜き(全身・膝上・上半身・顔・下半身)を作ります。画像はこのPCの中だけで処理され、どこにも送信されません。</p>
+
+  <div id="drop" class="panel" tabindex="0">
+    <strong>ここに画像をドロップ</strong>
+    <span>またはクリックして選択 (PNG・複数可)。同じキャラ名の画像は1つのフォルダにまとまります。</span>
+    <input id="file" type="file" accept="image/*" multiple hidden>
+  </div>
+
+  <div class="panel row">
+    <label>1キャラあたりの「枚数×リピート」 <input id="total" type="number" min="10" max="400" step="10" value="60"></label>
+    <label><input id="mkTxt" type="checkbox" checked> タグファイル(.txt)も作る</label>
+    <label><input id="keepTxt" type="checkbox" checked> 既存の .txt は上書きしない (フォルダ保存時)</label>
+  </div>
+
+  <div id="list"></div>
+
+  <div class="panel row">
+    <button id="saveDir" class="primary" disabled>フォルダに直接保存</button>
+    <button id="saveZip" disabled>zip でダウンロード</button>
+    <span id="summary"></span>
+    <span id="status"></span>
+  </div>
+
+  <details class="panel">
+    <summary>使い方と出力先</summary>
+    <p><b>フォルダに直接保存</b>: 「敵キャラLora作成」フォルダを選ぶと、その中の <code>train\キャラ名\img\リピート数_キャラ名\</code> に保存します (Chrome / Edge)。キャラのフォルダがすでにある場合はそのフォルダに追加し、リピート数は変えません。</p>
+    <p><b>zip</b>: 同じ構成の <code>train</code> フォルダが入った zip をダウンロードします。展開して「敵キャラLora作成」に上書きコピーしてください。</p>
+    <p><b>キャラ名</b>はファイル名から自動で付きます (例: <code>Circle_boss_00001_.png</code> → <code>circle_boss</code>)。これがトリガーワードになります。</p>
+    <p><b>切る位置</b>は頭の上からの割合です。プレビューを見ながら数値を調整してください。0 にするとその切り抜きは作りません。</p>
+    <p><b>タグ</b>: このツールが書くのは「トリガーワード・構図・背景」と、入力した服のタグだけです。服のタグを自動で付けたい場合は「タグファイルも作る」をオフにして、kohya_ss の WD14 Tagger を使ってください。</p>
+  </details>
+</main>
+
+<script>
+"use strict";
+const PRESETS = {
+  standard: { label: "正面立ち", cowboy: 0.62, upper: 0.42, portrait: 0.24, lower: 0.40, angle: "" },
+  above:    { label: "見下ろし構図", cowboy: 0, upper: 0.72, portrait: 0.50, lower: 0, angle: "from above, looking up" },
+};
+const CROPS = [
+  { id: "01_full_body",      label: "全身",   bg: "#ffffff", bgTag: "white background", target: 1216, tags: "full body, standing", parts: ["top", "bottom"], angle: true,  range: p => [0, 1] },
+  { id: "02_full_body_grey", label: "全身(灰)", bg: "#808080", bgTag: "grey background",  target: 1280, tags: "full body, standing", parts: ["top", "bottom"], angle: true,  range: p => [0, 1] },
+  { id: "03_cowboy_shot",    label: "膝上",   bg: "#ffffff", bgTag: "white background", target: 1280, tags: "cowboy shot, standing", parts: ["top", "bottom"], angle: false, range: p => p.cowboy > 0 ? [0, p.cowboy] : null },
+  { id: "04_upper_body",     label: "上半身", bg: "#808080", bgTag: "grey background",  target: 1152, tags: "upper body", parts: ["top"], angle: true, range: p => p.upper > 0 ? [0, p.upper] : null },
+  { id: "05_portrait",       label: "顔",     bg: "#ffffff", bgTag: "white background", target: 896,  tags: "portrait, close-up", parts: ["top"], angle: true, range: p => p.portrait > 0 ? [0, p.portrait] : null },
+  { id: "06_lower_body",     label: "下半身", bg: "#ffffff", bgTag: "white background", target: 1280, tags: "lower body, head out of frame, standing", parts: ["bottom"], angle: false, range: p => (p.lower > 0 && p.lower < 1) ? [p.lower, 1] : null },
+];
+const MAX_UPSCALE = 3.5;
+const $ = id => document.getElementById(id);
+const items = [];   // {file, stem, name, suffix, img, w, h, mask, y0, y1, hasAlpha, params, top, bottom, el}
+
+function cleanName(s) {
+  return s.toLowerCase().replace(/[^a-z0-9_]+/g, "_").replace(/^_+|_+$/g, "") || "chara";
+}
+function splitStem(stem) {
+  const m = stem.match(/^(.*?)_(\d+)_?$/);
+  return m ? { name: cleanName(m[1]), suffix: m[2] } : { name: cleanName(stem), suffix: "" };
+}
+
+async function addFiles(files) {
+  for (const file of files) {
+    if (!file.type.startsWith("image/")) continue;
+    const img = await createImageBitmap(file);
+    const c = document.createElement("canvas"); c.width = img.width; c.height = img.height;
+    const ctx = c.getContext("2d", { willReadFrequently: true }); ctx.drawImage(img, 0, 0);
+    const data = ctx.getImageData(0, 0, c.width, c.height).data;
+    const w = c.width, h = c.height, mask = new Uint8Array(w * h);
+    let y0 = h, y1 = -1, transparent = 0;
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+      const a = data[(y * w + x) * 4 + 3];
+      if (a > 128) { mask[y * w + x] = 1; if (y < y0) y0 = y; if (y > y1) y1 = y; } else transparent++;
+    }
+    const hasAlpha = transparent > w * h * 0.02 && y1 >= 0;
+    if (!hasAlpha) { mask.fill(1); y0 = 0; y1 = h - 1; }
+    const stem = file.name.replace(/\.[^.]+$/, ""), sp = splitStem(stem);
+    const it = { file, stem, name: sp.name, suffix: sp.suffix, img, w, h, mask, y0, y1, hasAlpha,
+                 preset: "standard", params: { ...PRESETS.standard }, top: "", bottom: "" };
+    items.push(it); buildCard(it);
+  }
+  refresh();
+}
+
+function cropBox(it, fa, fb) {
+  const H = it.y1 - it.y0, w = it.w;
+  let ya = Math.floor(it.y0 + H * fa), yb = Math.floor(it.y0 + H * fb);
+  if (yb <= ya) return null;
+  let xa = w, xb = -1;
+  for (let y = ya; y < yb; y++) { const o = y * w;
+    for (let x = 0; x < w; x++) if (it.mask[o + x]) { if (x < xa) xa = x; if (x > xb) xb = x; } }
+  if (xb < 0) return null;
+  const px = Math.floor((xb - xa) * 0.10) + 8, py = Math.floor((yb - ya) * 0.04) + 6;
+  xa -= px; xb += px;
+  if (fa === 0) ya -= py;
+  if (fb === 1) yb += py;
+  if (xb - xa < (yb - ya) * 0.5) { const m = Math.floor(((yb - ya) * 0.5 - (xb - xa)) / 2); xa -= m; xb += m; }
+  xa = Math.max(0, xa); ya = Math.max(0, ya); xb = Math.min(w, xb); yb = Math.min(it.h, yb);
+  return { x: xa, y: ya, w: xb - xa, h: yb - ya };
+}
+function activeCrops(it) {
+  const out = [];
+  for (const c of CROPS) { const r = c.range(it.params); if (!r) continue;
+    const b = cropBox(it, r[0], r[1]); if (b) out.push({ c, b }); }
+  return out;
+}
+function renderCrop(it, c, b, canvas, maxSide) {
+  let s = Math.min(c.target / Math.max(b.w, b.h), MAX_UPSCALE);
+  let ow = Math.max(8, Math.round(b.w * s / 8) * 8), oh = Math.max(8, Math.round(b.h * s / 8) * 8);
+  if (maxSide) { const k = maxSide / Math.max(ow, oh); ow = Math.round(ow * k); oh = Math.round(oh * k); }
+  canvas.width = ow; canvas.height = oh;
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = c.bg; ctx.fillRect(0, 0, ow, oh);
+  ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = "high";
+  ctx.drawImage(it.img, b.x, b.y, b.w, b.h, 0, 0, ow, oh);
+  return canvas;
+}
+function caption(it, c) {
+  const parts = [it.name, "1girl", "solo", c.tags];
+  if (c.angle && it.params.angle) parts.push(it.params.angle);
+  for (const p of c.parts) if (it[p].trim()) parts.push(it[p].trim().replace(/,\s*$/, ""));
+  parts.push("simple background", c.bgTag);
+  return parts.join(", ") + "\n";
+}
+function filePrefix(it) {
+  // 連番 00001 (またはなし) は接頭辞なし。2枚目以降は連番を付けて区別する。
+  const same = items.filter(o => o.name === it.name);
+  const base = o => o.suffix ? (Number(o.suffix) === 1 ? "" : o.suffix + "_") : (same.indexOf(o) === 0 ? "" : String(same.indexOf(o) + 1).padStart(5, "0") + "_");
+  const mine = base(it), idx = same.indexOf(it);
+  // 同じ接頭辞になる画像が前にあれば、順番の番号を足して重複を避ける
+  return same.slice(0, idx).some(o => base(o) === mine) ? `n${idx + 1}_${mine}` : mine;
+}
+
+function buildCard(it) {
+  const el = document.createElement("div"); el.className = "panel card"; it.el = el;
+  el.innerHTML = `
+    <div>
+      <button class="remove" title="この画像を外す">外す</button>
+      <h2></h2>
+      <div class="fields">
+        <label class="stack"><span>キャラ名 (トリガーワード)</span><input type="text" data-k="name"></label>
+        <label>構図 <select data-k="preset">${Object.entries(PRESETS).map(([k, v]) => `<option value="${k}">${v.label}</option>`).join("")}</select></label>
+        <label>膝上の下端 <input type="number" data-p="cowboy" min="0" max="1" step="0.02"></label>
+        <label>上半身の下端 <input type="number" data-p="upper" min="0" max="1" step="0.02"></label>
+        <label>顔の下端 <input type="number" data-p="portrait" min="0" max="1" step="0.02"></label>
+        <label>下半身の上端 <input type="number" data-p="lower" min="0" max="1" step="0.02"></label>
+        <label class="stack"><span>上の服のタグ (任意)</span><input type="text" data-k="top" placeholder="black sweater, turtleneck"></label>
+        <label class="stack"><span>下の服・靴のタグ (任意)</span><input type="text" data-k="bottom" placeholder="black pants, high heels"></label>
+        <div class="note"></div>
+      </div>
+    </div>
+    <div class="strip"></div>`;
+  el.querySelector("h2").textContent = it.file.name;
+  if (!it.hasAlpha) el.querySelector(".note").textContent = "透過背景ではないため、画像全体をキャラとして扱っています。背景は差し替えられません。";
+  el.querySelector(".remove").onclick = () => { items.splice(items.indexOf(it), 1); el.remove(); refresh(); };
+  const sync = () => {
+    el.querySelector('[data-k="name"]').value = it.name;
+    el.querySelector('[data-k="preset"]').value = it.preset;
+    el.querySelectorAll("[data-p]").forEach(i => i.value = it.params[i.dataset.p]);
+  };
+  el.querySelector('[data-k="name"]').onchange = e => { it.name = cleanName(e.target.value); sync(); refresh(); };
+  el.querySelector('[data-k="preset"]').onchange = e => { it.preset = e.target.value; it.params = { ...PRESETS[it.preset] }; sync(); preview(it); refresh(); };
+  el.querySelectorAll("[data-p]").forEach(i => i.oninput = () => {
+    const v = Math.min(1, Math.max(0, parseFloat(i.value) || 0)); it.params[i.dataset.p] = v; preview(it); refresh(); });
+  el.querySelector('[data-k="top"]').oninput = e => it.top = e.target.value;
+  el.querySelector('[data-k="bottom"]').oninput = e => it.bottom = e.target.value;
+  sync(); $("list").appendChild(el); preview(it);
+}
+function preview(it) {
+  const strip = it.el.querySelector(".strip"); strip.textContent = "";
+  for (const { c, b } of activeCrops(it)) {
+    const fig = document.createElement("figure"), cv = document.createElement("canvas");
+    renderCrop(it, c, b, cv, 460);
+    const cap = document.createElement("figcaption"); cap.textContent = c.label;
+    fig.append(cv, cap); strip.appendChild(fig);
+  }
+}
+
+function plan() {
+  const total = Math.max(1, parseInt($("total").value) || 60), by = new Map();
+  for (const it of items) { if (!by.has(it.name)) by.set(it.name, []); by.get(it.name).push(it); }
+  const out = [];
+  for (const [name, list] of by) {
+    const n = list.reduce((s, it) => s + activeCrops(it).length, 0);
+    if (n) out.push({ name, list, count: n, rep: Math.max(1, Math.round(total / n)) });
+  }
+  return out;
+}
+function refresh() {
+  const p = plan(), has = p.length > 0;
+  $("saveZip").disabled = !has;
+  $("saveDir").disabled = !has || !window.showDirectoryPicker;
+  $("saveDir").title = window.showDirectoryPicker ? "" : "このブラウザは非対応です (Chrome / Edge で開いてください)";
+  $("summary").textContent = has ? p.map(c => `${c.name}: ${c.count}枚×${c.rep}`).join(" / ") : "";
+}
+function status(msg, cls) { const s = $("status"); s.textContent = msg; s.className = cls || ""; }
+
+const toBlob = cv => new Promise(r => cv.toBlob(r, "image/png"));
+async function* outputs() {   // yields {name, rep, file, blob|text}
+  const cv = document.createElement("canvas"), mkTxt = $("mkTxt").checked;
+  for (const ch of plan()) for (const it of ch.list) {
+    const pre = filePrefix(it);
+    for (const { c, b } of activeCrops(it)) {
+      renderCrop(it, c, b, cv);
+      yield { name: ch.name, rep: ch.rep, file: pre + c.id + ".png", blob: await toBlob(cv) };
+      if (mkTxt) yield { name: ch.name, rep: ch.rep, file: pre + c.id + ".txt", text: caption(it, c) };
+    }
+  }
+}
+
+// ---- zip (無圧縮) ----
+const CRC = (() => { const t = new Uint32Array(256);
+  for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(u8) { let c = 0xFFFFFFFF; for (let i = 0; i < u8.length; i++) c = CRC[(c ^ u8[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+function makeZip(entries) {
+  const enc = new TextEncoder(), chunks = [], central = []; let off = 0;
+  for (const e of entries) {
+    const nm = enc.encode(e.path), crc = crc32(e.data), sz = e.data.length;
+    const lh = new DataView(new ArrayBuffer(30));
+    lh.setUint32(0, 0x04034b50, true); lh.setUint16(4, 20, true); lh.setUint16(6, 0x0800, true);
+    lh.setUint16(8, 0, true); lh.setUint32(14, crc, true); lh.setUint32(18, sz, true); lh.setUint32(22, sz, true);
+    lh.setUint16(26, nm.length, true);
+    chunks.push(new Uint8Array(lh.buffer), nm, e.data);
+    const ch = new DataView(new ArrayBuffer(46));
+    ch.setUint32(0, 0x02014b50, true); ch.setUint16(4, 20, true); ch.setUint16(6, 20, true); ch.setUint16(8, 0x0800, true);
+    ch.setUint32(16, crc, true); ch.setUint32(20, sz, true); ch.setUint32(24, sz, true);
+    ch.setUint16(28, nm.length, true); ch.setUint32(42, off, true);
+    central.push(new Uint8Array(ch.buffer), nm);
+    off += 30 + nm.length + sz;
+  }
+  const csz = central.reduce((s, c) => s + c.length, 0), end = new DataView(new ArrayBuffer(22));
+  end.setUint32(0, 0x06054b50, true); end.setUint16(8, entries.length, true); end.setUint16(10, entries.length, true);
+  end.setUint32(12, csz, true); end.setUint32(16, off, true);
+  return new Blob([...chunks, ...central, new Uint8Array(end.buffer)], { type: "application/zip" });
+}
+
+$("saveZip").onclick = async () => {
+  try {
+    status("作成中…"); const entries = [], enc = new TextEncoder(); let n = 0;
+    for await (const o of outputs()) {
+      const data = o.blob ? new Uint8Array(await o.blob.arrayBuffer()) : enc.encode(o.text);
+      entries.push({ path: `train/${o.name}/img/${o.rep}_${o.name}/${o.file}`, data }); if (o.blob) n++;
+    }
+    const a = document.createElement("a"); a.href = URL.createObjectURL(makeZip(entries));
+    a.download = "train.zip"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+    window.__lastZipEntries = entries.map(e => e.path);
+    status(`${n}枚を train.zip に保存しました`, "ok");
+  } catch (e) { status("失敗: " + e.message, "warn"); }
+};
+
+$("saveDir").onclick = async () => {
+  let root;
+  try { root = await window.showDirectoryPicker({ mode: "readwrite" }); } catch (e) { return; }
+  try {
+    status("保存中…"); const keep = $("keepTxt").checked, dirs = new Map(); let n = 0, skipped = 0; const reused = [];
+    const train = await root.getDirectoryHandle("train", { create: true });
+    for await (const o of outputs()) {
+      if (!dirs.has(o.name)) {
+        const img = await (await train.getDirectoryHandle(o.name, { create: true })).getDirectoryHandle("img", { create: true });
+        let found = null; const re = new RegExp("^\\d+_" + o.name + "$");
+        for await (const [k, h] of img.entries()) if (h.kind === "directory" && re.test(k)) { found = h; if (k !== `${o.rep}_${o.name}`) reused.push(k); break; }
+        dirs.set(o.name, found || await img.getDirectoryHandle(`${o.rep}_${o.name}`, { create: true }));
+      }
+      const dir = dirs.get(o.name);
+      if (o.text !== undefined && keep) {
+        try { await dir.getFileHandle(o.file); skipped++; continue; } catch (e) { /* なければ作る */ }
+      }
+      const w = await (await dir.getFileHandle(o.file, { create: true })).createWritable();
+      await w.write(o.blob || o.text); await w.close(); if (o.blob) n++;
+    }
+    let msg = `${n}枚を「${root.name}\\train」に保存しました`;
+    if (skipped) msg += ` (既存の .txt ${skipped}件はそのまま)`;
+    if (reused.length) msg += ` / 既存フォルダを使用: ${reused.join(", ")} (リピート数は必要ならフォルダ名を変更)`;
+    status(msg, "ok");
+  } catch (e) { status("失敗: " + e.message, "warn"); }
+};
+
+const drop = $("drop"), fileInput = $("file");
+drop.onclick = () => fileInput.click();
+drop.onkeydown = e => { if (e.key === "Enter" || e.key === " ") fileInput.click(); };
+fileInput.onchange = () => { addFiles([...fileInput.files]); fileInput.value = ""; };
+["dragenter", "dragover"].forEach(t => drop.addEventListener(t, e => { e.preventDefault(); drop.classList.add("over"); }));
+["dragleave", "drop"].forEach(t => drop.addEventListener(t, e => { e.preventDefault(); drop.classList.remove("over"); }));
+drop.addEventListener("drop", e => addFiles([...e.dataTransfer.files]));
+window.addEventListener("dragover", e => e.preventDefault());
+window.addEventListener("drop", e => e.preventDefault());
+$("total").oninput = refresh;
+refresh();
+</script>
+</body>
+</html>

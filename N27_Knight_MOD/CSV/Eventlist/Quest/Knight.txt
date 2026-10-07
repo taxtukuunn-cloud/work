@@ -1,0 +1,2 @@
+国境の砦（騎士団長　アルヴィン）,Card/Knight_master,クエストイベント
+国境の砦【回想バトル】,Card/Knight_master,回想バトル,$$Knight_挑戦回数,>=,1

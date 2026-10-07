@@ -1,0 +1,122 @@
+# N72 モルゲン牢獄（Yatsume）画像データ。登場人物は全員20歳以上。すべて女性（アラクネを含む）。
+# ヤツメ・巨乳アラクネは本編キャラ（立ち絵を見ずに本文から作った見た目。canon_img と見比べて直す）。ツムギ・リリカ・ジョロウは新規。
+# アラクネの蜘蛛の下半身は「黒く艶のある、なめらかな脚」。毛深い・不気味な描写にしない（SPIDER／SPIDER_NEG）。
+# 主人公の足首には刑期の数だけ白い糸が巻かれる（ANK）。断頭台はふとももで頭を挟む技で、首を絞める・苦痛の描写はしない。
+SPIDER = "arachne, human upper body, spider lower body below the waist, glossy smooth black spider abdomen, eight glossy smooth black spider legs, sleek shiny chitin, elegant"
+SPIDER_NEG = "hairy legs, hairy spider, furry spider, scary, creepy, horror, insect face, mandibles, human legs on the spider woman"
+ANK = "loops of white thread wound around his ankle"
+DATA = {
+ "code": "Yatsume",
+ "world": "gloomy fantasy stone prison at night, iron bars, torchlight, white spider silk threads strung across the high ceilings, detailed background",
+ "bg": "long corridor of a fantasy stone prison at night, rows of iron-barred cells, flickering wall torches, white spider silk webs in the high vaulted ceiling, no people",
+ "josou": None,
+ "chars": {
+   "m":    {"type": "woman", "jp": "ヤツメ", "canon": True, "canon_img": "F20.png",
+            "tags": "adult woman, mature female, mature face, 28 years old, adult proportions, beautiful detailed eyes, long legs, tall, crimson red hair, long high ponytail, sharp violet eyes, cold confident smirk, black prison warden uniform jacket with silver buttons, black military cap, black leather gloves, black pencil skirt, pale thighs, knee-high black leather boots with heels, holding a ring of keys, medium breasts",
+            "name": "the red-haired warden in black leather boots",
+            "pose": "standing with one booted foot forward, arms crossed, looking down with a cold smirk, looking at viewer"},
+   "e1":   {"type": "woman", "jp": "巨乳アラクネ", "canon": True, "canon_img": "EU48.png", "neg": SPIDER_NEG,
+            "tags": "adult woman, mature female, mature face, 26 years old, adult proportions, beautiful detailed eyes, " + SPIDER + ", lavender pink hair, long wavy hair, pink eyes, seductive smile, black lace bra top, pale skin, huge breasts",
+            "name": "the pink-haired busty arachne",
+            "pose": "hanging upside down from a white web by a silk thread, arms under her huge breasts, seductive smile, looking at viewer"},
+   "e2":   {"type": "woman", "jp": "看守 ツムギ", "neg": SPIDER_NEG,
+            "tags": "adult woman, mature female, mature face, 24 years old, adult proportions, beautiful detailed eyes, " + SPIDER + ", grey hair, long straight hair, red eyes, expressionless, prison guard uniform jacket, holding a small notebook without text, medium breasts",
+            "name": "the grey-haired arachne guard",
+            "pose": "standing still on her spider legs holding a small notebook without text, expressionless, looking at viewer"},
+   "e3":   {"type": "woman", "jp": "女囚の顔役 リリカ",
+            "tags": "adult woman, mature female, mature face, 27 years old, adult proportions, beautiful detailed eyes, long legs, blonde hair, wolf cut, amber eyes, smirk, loose black and white striped prison uniform worn open at the chest, sleeves rolled up, large breasts",
+            "name": "the blonde wolf-cut inmate in a striped prison uniform",
+            "pose": "leaning against iron bars with one hand on her hip, licking her lips, smirk, looking at viewer"},
+   "boss": {"type": "woman", "jp": "牢獄の主 ジョロウ", "neg": SPIDER_NEG,
+            "tags": "adult woman, mature female, mature face, 34 years old, adult proportions, beautiful detailed eyes, tall, " + SPIDER + ", large spider lower body with yellow stripes on the glossy black abdomen, black hair with yellow streaks, very long hair, gold eyes, languid smile, black kimono-like robe with gold embroidery, loose collar, large breasts",
+            "name": "the black-and-yellow-haired arachne queen in a black robe",
+            "pose": "lounging on a throne woven of white silk, resting her cheek on her hand, languid smile, looking down at viewer"},
+ },
+ "places": {
+   "interro":  "prison interrogation room, cold stone floor, wooden desk with a blank document without text, single lamp",
+   "punish":   "punishment cell with a hard wooden cot, stone walls, iron door, dim torchlight",
+   "inspect":  "white stone intake inspection room, iron hooks on the ceiling, leather examination table, lamp",
+   "atrium":   "high prison atrium with a huge white spider web strung below the ceiling, stone floor far below",
+   "duty":     "small night duty room of the prison guards, one oil lamp, simple wooden chair, desk",
+   "cell":     "women's shared prison cell, straw beds, iron bars, stone walls with scratch marks",
+   "cocoon":   "deepest cocoon hall of the prison, many white silk cocoons hanging from the ceiling, faint glow, silk throne",
+   "court":    "prison trial hall, tall judge's seat, stone floor, torches",
+   "tower":    "round stone room at the top of the prison watchtower, small window with moonlight",
+   "corridor": "dim corridor of the solitary cell block, iron-barred window between two cells, cold stone wall",
+   "yard":     "prison courtyard at night, spider web strung overhead, white threads hanging down, stone pavement",
+   "office":   "warden's office, heavy desk, a thick punishment ledger without text, iron key rack",
+   "bath":     "prison bathhouse, steam, white tiles, wooden buckets",
+   "spin":     "prison spinning room, old wooden spinning wheels, spools of white silk thread",
+   "private":  "warden's private room, bed with dark sheets, boots by the bed, lamp",
+ },
+ "atk": {
+   "m1": ("interro", "he sits on the stone floor with his wrists tied behind his back by white silk thread, the warden stands over him pressing the sole of her black boot on his erection, footjob, pinching his nipple with her gloved fingers, cold smirk"),
+   "m2": ("punish", "he lies on his back on the hard cot, the warden sits above his head with his head clamped between her pale thighs, her skirt draped over his face, his arms limp, dazed, gentle squeeze, no choking"),
+   "m3": ("inspect", "from behind, he stands with his wrists tied above his head by silk thread to a hook, the warden stands behind him pegging his anus with her strap-on, anal, her gloved fingers pinching his nipples, his own penis separate", {"pen": "strapon"}),
+   "e1": ("atrium", "he is stuck spread-eagled on the huge white web, the busty arachne hangs over him tying thin white silk threads around both his nipples and pulling them, seductive smile"),
+   "e2": ("duty", "he sits tied to a wooden chair with a white silk blindfold over his eyes, the arachne guard leans to his ear whispering, her tongue in his ear, expressionless, lamp light"),
+   "e3": ("cell", "his back is pressed against the iron bars, the blonde inmate holds his jaw and kisses him deeply, sucking his tongue, saliva trail, smirk"),
+   "boss": ("cocoon", "he is wrapped up to the chest in a white silk cocoon hanging from the ceiling, the arachne queen holds him against her breasts, a bundle of white silk threads pushed into his anus through the cocoon, his head thrown back"),
+ },
+ "atk_desc": {
+   "m1": "the warden judges him with her boot.",
+   "m2": "the warden clamps his head in her thigh guillotine.",
+   "m3": "the warden performs the body inspection with her strap-on.",
+   "e1": "the busty arachne ties his nipples with her silk.",
+   "e2": "the arachne guard blindfolds him with silk and whispers in his ear.",
+   "e3": "the blonde inmate gives him the cell's welcome kiss.",
+   "boss": "the arachne queen interrogates him inside her cocoon.",
+ },
+ "lose": {
+   # ヤツメ 技1（ブーツで）
+   "btl_m1":     ("interro", "he kneels on the stone floor with his wrists tied behind him, licking the toe of the warden's black boot, the warden sits on the desk looking down, cum dripping from the boot sole, " + ANK),
+   "onani_m1":   ("court", "kneeling alone on the stone floor with his rolled-up jacket pressed to both sides of his head, stroking his own chest, flushed, penis untouched, the warden watches from the tall judge's seat"),
+   "inochi_m1":  ("interro", "he lies on his back on the stone floor, the warden steps on his penis with one boot sole and rolls his nipple with the toe of the other boot, cum spurting on the black leather, a blank document with a red thumbprint without text on the desk"),
+   "onedari_m1": ("office", "he kneels on the floor before the desk, the warden sits in her chair lifting his chin with the toe of her black boot, looking down coldly, cum on the boot, thick ledger without text on the desk, " + ANK),
+   # ヤツメ 技2（断頭台）
+   "btl_m2":     ("punish", "he lies on the hard cot with his wrists and ankles tied by silk to the corners, his head clamped between the warden's pale thighs, the warden strokes his penis, cum on her glove and his belly, gentle squeeze, no choking"),
+   "onani_m2":   ("duty", "kneeling alone on the floor with a rolled blanket pressed to both sides of his head, stroking his own chest, penis untouched, the warden sits on a chair with her legs crossed watching"),
+   "inochi_m2":  ("private", "he sleeps peacefully on the bed with his head resting between the warden's pale thighs, the warden strokes his hair, cum on his belly, silk threads on his wrists, gentle squeeze, no choking"),
+   "onedari_m2": ("tower", "he kneels on the floor by the moonlit window with his face held between the warden's pale thighs as she sits on a chair, his penis rubbing on the toe of her black boot, cum on the boot"),
+   # ヤツメ 技3（身体検査・ペニバン）
+   "btl_m3":     ("inspect", "from behind, he stands with his wrists tied above his head to a hook, the warden behind him pegging his anus deeply with her strap-on, anal, pulling both his nipples with her gloved fingers, his own penis separate, cum dripping to the floor", {"pen": "strapon"}),
+   "onani_m3":   ("court", "lying alone on the floor hugging a rolled blanket around his head, one hand stroking his own chest, the other hand reaching behind with his own fingers in his anus, penis untouched, the warden watches from the judge's seat"),
+   "inochi_m3":  ("inspect", "from side, he lies on his back on the leather examination table with his legs lifted, the warden pegging his anus with her strap-on, anal, pinching his nipple, his own penis separate, cum on his chest", {"pen": "strapon"}),
+   "onedari_m3": ("bath", "from behind, he stands with his forehead and hands against the white tile wall in the steam, the warden behind him pegging his anus with her strap-on, anal, her gloved hand stroking his penis, cum on the tiles, his own penis separate", {"pen": "strapon"}),
+   # 巨乳アラクネ（糸で縛って）
+   "btl_e1":     ("atrium", "he is stuck on the huge white web, the busty arachne hangs upside down squeezing his penis between her huge breasts, paizuri, pulling the silk threads tied to his nipples, cum on her chin"),
+   "onani_e1":   ("yard", "sitting alone on the pavement with his shirt open, a thin white thread tied loosely to his own nipple, winding it around his finger and pulling, penis untouched, the busty arachne watches from the web far above"),
+   "inochi_e1":  ("atrium", "he hangs on his back on the web, the busty arachne plucks the silk threads tied to his nipples like harp strings, no hands on his penis, cum dripping, " + ANK),
+   "onedari_e1": ("spin", "he sits by an old spinning wheel, silk threads from his nipples wound onto the spinning wheel, the busty arachne squeezes his penis between her huge breasts, paizuri, cum overflowing, a woven tag without text on his neck"),
+   # ツムギ（糸の目隠し）
+   "btl_e2":     ("duty", "he sits tied to the chair with a white silk blindfold, the arachne guard licks inside his ear, her glossy black spider legs holding his penis, cum on her glossy legs, expressionless"),
+   "onani_e2":   ("tower", "sitting alone with a cloth tied over his own eyes as a blindfold, tracing his own ears with his fingertips, head tilted, penis untouched, the arachne guard watches from the far wall with a notebook"),
+   "inochi_e2":  ("duty", "he kneels on the floor with a white silk blindfold, the arachne guard leans close to his ear whispering, one hand stroking his penis, a silk thread on his other ear, cum on her hand"),
+   "onedari_e2": ("punish", "he sits on the edge of the cot with a white silk blindfold, the arachne guard licks deep into his ear, her glossy black spider legs holding his penis, cum on her legs, expressionless"),
+   # リリカ（独房の洗礼）
+   "btl_e3":     ("cell", "he sits on the straw with his wrists tied, the blonde inmate kisses him deeply sucking his tongue, her hand stroking his penis, pinching his nipple, cum on her striped uniform"),
+   "onani_e3":   ("corridor", "standing alone with his forehead pressed against the cold stone wall, sucking his own fingers deeply, penis untouched, the blonde inmate watches from behind the iron bars of her cell"),
+   "inochi_e3":  ("cell", "he sits against the stone wall, the blonde inmate holds his cheeks with both hands and kisses him deeply, tongues, saliva trail, cum on her striped uniform, " + ANK),
+   "onedari_e3": ("corridor", "he presses his face to the iron-barred window between two cells, the blonde inmate kisses him through the bars sucking his tongue, her hand through the bars stroking his penis, cum on the bars"),
+   # ジョロウ（繭の尋問）
+   "btl_boss":   ("cocoon", "he is wrapped in a white silk cocoon from the chest down hanging from the ceiling, the arachne queen presses his face to her breasts, a bundle of silk threads in his anus, a silk thread coiled around his penis, cum on the cocoon"),
+   "onani_boss": ("cocoon", "curled up alone wrapped in a large piece of white silk cloth like a cocoon, one hand reaching behind with his own fingers in his anus, penis untouched, the arachne queen watches from her silk throne far away"),
+   "inochi_boss":("cocoon", "he hangs inside a white silk cocoon with only his head out, the arachne queen hugs the cocoon and buries his face in her breasts, cum seeping through the white silk, a gold-threaded silk letter without text"),
+   "onedari_boss":("cocoon", "he kneels wrapped in a white silk cocoon before the silk throne, the arachne queen holds his face to her breasts, a bundle of silk threads in his anus, her fingers stroking his penis, cum on the cocoon"),
+ },
+ "lose_desc": "locks him in the prison as a lifelong inmate.",
+ "onanie": {
+   "master": ("punish", "kneeling on the cot with a rolled blanket pressed to both sides of his head, softly squeezing it, stroking his own chest, penis untouched"),
+   "e1": ("yard", "with his shirt open, a thin white thread tied loosely around his own nipple, winding it on his finger and pulling it gently, penis untouched"),
+   "e2": ("tower", "a cloth tied over his own eyes, tracing his own ears with his fingertips in the dark, penis untouched"),
+   "e3": ("corridor", "his forehead pressed to the cold stone wall, sucking his own fingers hard, penis untouched"),
+   "boss": ("cocoon", "wrapped in a blanket like a cocoon, one hand reaching behind with his own fingers loosening his anus, penis untouched"),
+ },
+ "magic": {
+   "1": ("m", "office", "writing a new charge in a thick ledger without text with a quill, cold smirk, key ring on her belt"),
+   "2": (None, "atrium", "a huge glistening white spider web spanning the high prison atrium, dew drops on the silk"),
+   "3": ("e2", "corridor", "shooting a white silk thread from her hand across the corridor, expressionless"),
+   "4": ("e1", "atrium", "showing a small drop of purple venom on her fingertip, seductive smile"),
+   "5": (None, "punish", "an empty punishment cell with heavy iron door, chains and white silk threads on the walls, cold torchlight"),
+ },
+}

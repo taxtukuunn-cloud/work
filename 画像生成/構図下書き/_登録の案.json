@@ -1,0 +1,4693 @@
+{
+ "made": "2026-10-07（10-06 の案に、今日の新しい構図 37 を足した）",
+ "note": "Claude の登録の案。A=ツールのおすすめどおり／B=予備の行／C=Claude の見立て（初めは印なし）／保留=登録しない",
+ "plans": [
+  {
+   "comp": "arachne",
+   "reading": "アラクネ",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "",
+   "role": "",
+   "posture": "",
+   "extra": true,
+   "why": "アラクネの体（蜘蛛の脚）。当て分けを入れてから、アラクネの相手にだけ当てる",
+   "marks": [
+    "arachne：翼・尻尾・触手など",
+    "arachne_2：翼・尻尾・触手など",
+    "arachne_3：翼・尻尾・触手など",
+    "arachne_4：翼・尻尾・触手など",
+    "arachne_5：翼・尻尾・触手など"
+   ],
+   "check": false
+  },
+  {
+   "comp": "armpit_stand_front",
+   "reading": "脇・立つ・前から",
+   "group": "B",
+   "rows": [
+    [
+     "armpit",
+     2
+    ]
+   ],
+   "row_labels": [
+    "armpit：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "armpit_stand_front：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "bloodsuck_behind",
+   "reading": "吸血・後ろから見る",
+   "group": "B",
+   "rows": [
+    [
+     "bloodsuck",
+     0
+    ]
+   ],
+   "row_labels": [
+    "bloodsuck：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from behind",
+   "role": "the other character is behind him, biting his neck",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "bound_tentacle_stand",
+   "reading": "拘束・触手・立つ",
+   "group": "B",
+   "rows": [
+    [
+     "bondage",
+     4
+    ]
+   ],
+   "row_labels": [
+    "bondage：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "bound_tentacle_stand：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "bound_wrap_hj",
+   "reading": "拘束・巻きつく・手",
+   "group": "B",
+   "rows": [
+    [
+     "bondage",
+     4
+    ],
+    [
+     "handjob",
+     4
+    ]
+   ],
+   "row_labels": [
+    "bondage：予備（姿勢の行のどれにも当たらないとき）",
+    "handjob：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the navy-haired man is bound, the other character wraps around him and strokes him",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "bound_wrap_hj：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "chastity_fours_behind",
+   "reading": "貞操帯・四つんばい・後ろから見る",
+   "group": "B",
+   "rows": [
+    [
+     "chastity",
+     0
+    ]
+   ],
+   "row_labels": [
+    "chastity：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man is on all fours",
+   "posture": "fours",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "chastity_fours_behind：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "chest_press_stand",
+   "reading": "胸に顔・押しつける・立つ",
+   "group": "B",
+   "rows": [
+    [
+     "seat_chest",
+     0
+    ],
+    [
+     "stand_chest",
+     0
+    ]
+   ],
+   "row_labels": [
+    "seat_chest：予備（姿勢の行のどれにも当たらないとき）",
+    "stand_chest：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "chesthug_lap_finger",
+   "reading": "胸に抱く・膝の上・指・前立腺",
+   "group": "B",
+   "rows": [
+    [
+     "fingering",
+     2
+    ],
+    [
+     "prostate",
+     1
+    ],
+    [
+     "seat_chest",
+     0
+    ],
+    [
+     "stand_chest",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：予備（姿勢の行のどれにも当たらないとき）",
+    "prostate：予備（姿勢の行のどれにも当たらないとき）",
+    "seat_chest：予備（姿勢の行のどれにも当たらないとき）",
+    "stand_chest：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the other character sits on his lap",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "chin_pov",
+   "reading": "あごを持ち上げる・主人公目線",
+   "group": "C",
+   "rows": [
+    [
+     "kiss",
+     4
+    ]
+   ],
+   "row_labels": [
+    "kiss：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "",
+   "extra": true,
+   "why": "あごを持ち上げる技の組が無いので、キスの予備の行に",
+   "marks": [
+    "chin_pov：頭が上の端で切れている"
+   ],
+   "check": false
+  },
+  {
+   "comp": "collar_pov",
+   "reading": "首輪・主人公目線",
+   "group": "B",
+   "rows": [
+    [
+     "collar",
+     0
+    ]
+   ],
+   "row_labels": [
+    "collar：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov, from below",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "ear_sit_front_beside_whisper",
+   "reading": "耳・座る・前から・横に並ぶ・ささやき",
+   "group": "B",
+   "rows": [
+    [
+     "ear",
+     1
+    ],
+    [
+     "ear_soft",
+     1
+    ]
+   ],
+   "row_labels": [
+    "ear：予備（姿勢の行のどれにも当たらないとき）",
+    "ear_soft：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, the other character is beside him",
+   "posture": "sit",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "ear_sit_front_beside_whisper：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "ear_two_sides_front",
+   "reading": "耳・相手2人・左右から・前から",
+   "group": "B",
+   "rows": [
+    [
+     "ear",
+     1
+    ],
+    [
+     "ear_soft",
+     1
+    ],
+    [
+     "multi",
+     3
+    ]
+   ],
+   "row_labels": [
+    "ear：予備（姿勢の行のどれにも当たらないとき）",
+    "ear_soft：予備（姿勢の行のどれにも当たらないとき）",
+    "multi：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from front, upper body",
+   "role": "upper bodies only, the navy-haired man is in the middle, the two women lean in from both sides with their faces at his ears",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "ear_two_sides_front：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "facesit",
+   "reading": "顔に座る",
+   "group": "C",
+   "rows": [
+    [
+     "smother",
+     0
+    ]
+   ],
+   "row_labels": [
+    "smother：寝ている場面"
+   ],
+   "tags": "",
+   "role": "the navy-haired man lies on his back, the other character sits on his face",
+   "posture": "lie",
+   "extra": true,
+   "why": "顔に座る技の組が無いので、顔をうずめる（smother）の寝ている行に",
+   "marks": [],
+   "check": false
+  },
+  {
+   "comp": "facesit_foot",
+   "reading": "顔に座る・足",
+   "group": "B",
+   "rows": [
+    [
+     "footjob",
+     1
+    ]
+   ],
+   "row_labels": [
+    "footjob：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character sits on his face",
+   "posture": "lie",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "facesit_front",
+   "reading": "顔に座る・前から",
+   "group": "C",
+   "rows": [
+    [
+     "smother",
+     0
+    ]
+   ],
+   "row_labels": [
+    "smother：寝ている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man lies on his back, the other character sits on his face",
+   "posture": "lie",
+   "extra": true,
+   "why": "同上",
+   "marks": [
+    "facesit_front：頭が上の端で切れている"
+   ],
+   "check": false
+  },
+  {
+   "comp": "facesit_nipple_above",
+   "reading": "顔に座る・乳首・上から",
+   "group": "B",
+   "rows": [
+    [
+     "nipple",
+     3
+    ]
+   ],
+   "row_labels": [
+    "nipple：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from above",
+   "role": "the navy-haired man lies on his back, the other character sits on his face",
+   "posture": "lie",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "facesit_pov",
+   "reading": "顔に座る・主人公目線",
+   "group": "C",
+   "rows": [
+    [
+     "smother",
+     0
+    ]
+   ],
+   "row_labels": [
+    "smother：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "同上",
+   "marks": [],
+   "check": false
+  },
+  {
+   "comp": "facesit_side",
+   "reading": "顔に座る・横から",
+   "group": "C",
+   "rows": [
+    [
+     "smother",
+     0
+    ]
+   ],
+   "row_labels": [
+    "smother：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character sits on his face",
+   "posture": "lie",
+   "extra": true,
+   "why": "同上",
+   "marks": [],
+   "check": false
+  },
+  {
+   "comp": "figure_four",
+   "reading": "4の字・4の字",
+   "group": "C",
+   "rows": [
+    [
+     "thigh",
+     0
+    ]
+   ],
+   "row_labels": [
+    "thigh：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the navy-haired man lies on his back, the other character locks his legs with hers",
+   "posture": "lie",
+   "extra": true,
+   "why": "4の字固めの組が無いので、太ももの予備の行に",
+   "marks": [],
+   "check": false
+  },
+  {
+   "comp": "figure_four_foot",
+   "reading": "4の字・4の字・足",
+   "group": "B",
+   "rows": [
+    [
+     "footjob",
+     1
+    ]
+   ],
+   "row_labels": [
+    "footjob：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from above",
+   "role": "the navy-haired man lies on his back, the other character locks his legs with hers",
+   "posture": "lie",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "finger_bent_behind_facing",
+   "reading": "指・前立腺・前かがみ・後ろから見る・向かい合う",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man bends forward, the other character faces him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "finger_bent_behind_facing_b",
+   "reading": "指・前立腺・前かがみ・後ろから見る・向かい合う・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man bends forward, the other character faces him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "finger_bent_behind_facing_b：小物や線が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "finger_bent_behind_lap",
+   "reading": "指・前立腺・前かがみ・後ろから見る・膝の上",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man bends forward, the other character sits on his lap",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "finger_fours_behind_tentacle",
+   "reading": "指・前立腺・四つんばい・後ろから見る・触手",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man is on all fours",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "finger_fours_behind_tentacle：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "finger_fours_behind_tentacle_b",
+   "reading": "指・前立腺・四つんばい・後ろから見る・触手・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man is on all fours",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "finger_fours_behind_tentacle_b：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "finger_fours_front_tentacle",
+   "reading": "指・前立腺・四つんばい・前から・触手",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man is on all fours",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "finger_fours_front_tentacle：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "finger_fours_side_hj",
+   "reading": "指・前立腺・四つんばい・横から・手",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man is on all fours",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "finger_lap_hips",
+   "reading": "指・前立腺・膝の上・腰",
+   "group": "B",
+   "rows": [
+    [
+     "fingering",
+     2
+    ],
+    [
+     "prostate",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：予備（姿勢の行のどれにも当たらないとき）",
+    "prostate：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the other character sits on his lap",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "finger_lap_hips：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "finger_lie_above_facing_finger",
+   "reading": "指・前立腺・寝る・上から・向かい合う・指・前立腺",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：寝ている場面"
+   ],
+   "tags": "from above",
+   "role": "the navy-haired man lies on his back, the other character faces him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "finger_lie_low_beside",
+   "reading": "指・前立腺・寝る・下から・横に並ぶ",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：寝ている場面"
+   ],
+   "tags": "from below, low angle",
+   "role": "the navy-haired man lies on his back, the other character is beside him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "finger_lie_low_beside：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "finger_lie_side_back",
+   "reading": "指・前立腺・寝る・横から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character is behind him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "finger_prone_behind_on_finger",
+   "reading": "指・前立腺・うつ伏せ・後ろから見る・上に乗る・指・前立腺",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man lies face down, the other character sits on top of him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "finger_prone_stand_low",
+   "reading": "指・前立腺・うつ伏せ・立つ・下から",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from below, low angle",
+   "role": "the navy-haired man lies face down",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "finger_prone_stand_low：小物や線が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "finger_side_legs",
+   "reading": "指・前立腺・横から・脚",
+   "group": "B",
+   "rows": [
+    [
+     "fingering",
+     2
+    ],
+    [
+     "prostate",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：予備（姿勢の行のどれにも当たらないとき）",
+    "prostate：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the other character is beside him",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "finger_side_sit",
+   "reading": "指・前立腺・横から・座る",
+   "group": "B",
+   "rows": [
+    [
+     "fingering",
+     2
+    ],
+    [
+     "prostate",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：予備（姿勢の行のどれにも当たらないとき）",
+    "prostate：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man sits",
+   "posture": "sit",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "finger_sit_front_back",
+   "reading": "指・前立腺・座る・前から・後ろから",
+   "group": "B",
+   "rows": [
+    [
+     "fingering",
+     2
+    ],
+    [
+     "prostate",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：予備（姿勢の行のどれにも当たらないとき）",
+    "prostate：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, the other character is behind him",
+   "posture": "sit",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "finger_sit_front_back：黒い余白が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "finger_sit_front_back_nipple",
+   "reading": "指・前立腺・座る・前から・後ろから・乳首",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "nipple：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, the other character is behind him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "finger_sit_front_back_nipple_b",
+   "reading": "指・前立腺・座る・前から・後ろから・乳首・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "nipple：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, the other character is behind him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "finger_sit_front_back_nipple_b：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "finger_wall_stand_low",
+   "reading": "指・前立腺・壁・立つ・下から",
+   "group": "B",
+   "rows": [
+    [
+     "fingering",
+     2
+    ],
+    [
+     "prostate",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：予備（姿勢の行のどれにも当たらないとき）",
+    "prostate：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from below, low angle",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "foot_lie_pov_urethra",
+   "reading": "足・寝る・主人公目線・尿道",
+   "group": "A",
+   "rows": [
+    [
+     "footjob",
+     0
+    ]
+   ],
+   "row_labels": [
+    "footjob：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "foot_side_sitting",
+   "reading": "足・横から・座る",
+   "group": "B",
+   "rows": [
+    [
+     "footjob",
+     1
+    ]
+   ],
+   "row_labels": [
+    "footjob：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man sits",
+   "posture": "sit",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "hairjob_pov",
+   "reading": "髪でこする・主人公目線",
+   "group": "C",
+   "rows": [
+    [
+     "handjob",
+     4
+    ]
+   ],
+   "row_labels": [
+    "handjob：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "",
+   "extra": true,
+   "why": "髪でこする技の組が無いので、手の予備の行に",
+   "marks": [
+    "hairjob_pov：頭が上の端で切れている"
+   ],
+   "check": false
+  },
+  {
+   "comp": "headlock",
+   "reading": "頭を抱え込む",
+   "group": "C",
+   "rows": [
+    [
+     "smother",
+     2
+    ]
+   ],
+   "row_labels": [
+    "smother：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the other character holds his head against her body",
+   "posture": "",
+   "extra": true,
+   "why": "頭を抱え込む技の組が無いので、smother の予備の行に",
+   "marks": [],
+   "check": false
+  },
+  {
+   "comp": "headlock_foot",
+   "reading": "頭を抱え込む・足",
+   "group": "B",
+   "rows": [
+    [
+     "footjob",
+     1
+    ]
+   ],
+   "row_labels": [
+    "footjob：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from front",
+   "role": "the other character holds his head against her body",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "hj_lie_side_on_whisper",
+   "reading": "手・寝る・横から・上に乗る・ささやき",
+   "group": "A",
+   "rows": [
+    [
+     "ear",
+     0
+    ],
+    [
+     "ear_soft",
+     0
+    ],
+    [
+     "handjob",
+     0
+    ]
+   ],
+   "row_labels": [
+    "ear：寝ている場面",
+    "ear_soft：寝ている場面",
+    "handjob：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character sits on top of him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "hj_lie_side_on_whisper：頭が上の端で切れている",
+    "hj_lie_side_on_whisper：頭が横の端で切れている",
+    "hj_lie_side_on_whisper：小物や線が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "hj_side_clothed",
+   "reading": "手・横から・服を着た",
+   "group": "B",
+   "rows": [
+    [
+     "handjob",
+     4
+    ]
+   ],
+   "row_labels": [
+    "handjob：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the other character is beside him",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "hj_side_clothed：頭が上の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "hj_sit_side_beside_nipple",
+   "reading": "手・座る・横から・横に並ぶ・乳首",
+   "group": "A",
+   "rows": [
+    [
+     "handjob",
+     1
+    ],
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "handjob：座っている場面",
+    "nipple：座っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man sits, the other character is beside him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "hj_sit_side_beside_nipple：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "hold_behind_stand_hj",
+   "reading": "相手が抱える・後ろから見る・立つ・手",
+   "group": "A",
+   "rows": [
+    [
+     "handjob",
+     2
+    ]
+   ],
+   "row_labels": [
+    "handjob：立っている場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "hold_behind_tentacle",
+   "reading": "相手が抱える・後ろから見る・触手",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "from behind",
+   "role": "",
+   "posture": "",
+   "extra": true,
+   "why": "触手。当て分けを入れてから",
+   "marks": [
+    "hold_behind_tentacle：翼・尻尾・触手など"
+   ],
+   "check": false
+  },
+  {
+   "comp": "hug_lie_above_facing",
+   "reading": "抱く・寝る・上から・向かい合う",
+   "group": "A",
+   "rows": [
+    [
+     "close_hug",
+     0
+    ]
+   ],
+   "row_labels": [
+    "close_hug：寝ている場面"
+   ],
+   "tags": "from above",
+   "role": "the navy-haired man lies on his back, the other character faces him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "hug_lie_above_facing：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "hug_lie_side_over_kiss",
+   "reading": "抱く・寝る・横から・覆いかぶさる・キス",
+   "group": "A",
+   "rows": [
+    [
+     "close_hug",
+     0
+    ],
+    [
+     "kiss",
+     1
+    ]
+   ],
+   "row_labels": [
+    "close_hug：寝ている場面",
+    "kiss：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character leans over him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "hug_lie_side_over_kiss：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "hug_sit_side_facing_smother",
+   "reading": "抱く・座る・横から・向かい合う・顔をうずめる",
+   "group": "A",
+   "rows": [
+    [
+     "close_hug",
+     1
+    ]
+   ],
+   "row_labels": [
+    "close_hug：座っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man sits, the other character faces him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "hug_sit_side_facing_smother：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "hug_sit_side_facing_smother_b",
+   "reading": "抱く・座る・横から・向かい合う・顔をうずめる・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "close_hug",
+     1
+    ]
+   ],
+   "row_labels": [
+    "close_hug：座っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man sits, the other character faces him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "hug_sit_side_facing_smother_c",
+   "reading": "抱く・座る・横から・向かい合う・顔をうずめる・別の形c",
+   "group": "A",
+   "rows": [
+    [
+     "close_hug",
+     1
+    ]
+   ],
+   "row_labels": [
+    "close_hug：座っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man sits, the other character faces him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "hug_stand_behind_facing_smother",
+   "reading": "抱く・立つ・後ろから見る・向かい合う・顔をうずめる",
+   "group": "A",
+   "rows": [
+    [
+     "smother",
+     1
+    ]
+   ],
+   "row_labels": [
+    "smother：立っている場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man stands, the other character faces him",
+   "posture": "stand",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "hug_stand_behind_facing_smother：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "hug_stand_side_facing",
+   "reading": "抱く・立つ・横から・向かい合う",
+   "group": "B",
+   "rows": [
+    [
+     "close_hug",
+     2
+    ],
+    [
+     "stand_embrace",
+     0
+    ]
+   ],
+   "row_labels": [
+    "close_hug：予備（姿勢の行のどれにも当たらないとき）",
+    "stand_embrace：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man stands, the other character faces him",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "kiss_lie_above_hj",
+   "reading": "キス・寝る・上から・手",
+   "group": "A",
+   "rows": [
+    [
+     "handjob",
+     0
+    ],
+    [
+     "kiss",
+     1
+    ]
+   ],
+   "row_labels": [
+    "handjob：寝ている場面",
+    "kiss：寝ている場面"
+   ],
+   "tags": "from above",
+   "role": "the navy-haired man lies on his back",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "kiss_lie_above_hj：小物や線が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "kiss_lie_side_on_hj",
+   "reading": "キス・寝る・横から・上に乗る・手",
+   "group": "A",
+   "rows": [
+    [
+     "handjob",
+     0
+    ],
+    [
+     "kiss",
+     1
+    ]
+   ],
+   "row_labels": [
+    "handjob：寝ている場面",
+    "kiss：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character sits on top of him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "kiss_lie_side_on_hj：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "kiss_stand_side_facing",
+   "reading": "キス・立つ・横から・向かい合う",
+   "group": "A",
+   "rows": [
+    [
+     "kiss",
+     3
+    ]
+   ],
+   "row_labels": [
+    "kiss：立っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man stands, the other character faces him",
+   "posture": "stand",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "kiss_standing_clothed",
+   "reading": "キス・立つ・服を着た",
+   "group": "A",
+   "rows": [
+    [
+     "kiss",
+     3
+    ]
+   ],
+   "row_labels": [
+    "kiss：立っている場面"
+   ],
+   "tags": "",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "lamia",
+   "reading": "ラミア",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "",
+   "role": "",
+   "posture": "",
+   "extra": true,
+   "why": "ラミアの体。当て分けを入れてから",
+   "marks": [
+    "lamia：翼・尻尾・触手など",
+    "lamia_2：翼・尻尾・触手など",
+    "lamia_3：翼・尻尾・触手など",
+    "lamia_4：翼・尻尾・触手など",
+    "lamia_5：翼・尻尾・触手など",
+    "lamia_6：翼・尻尾・触手など",
+    "lamia_7：翼・尻尾・触手など",
+    "lamia_8：翼・尻尾・触手など",
+    "lamia_9：翼・尻尾・触手など"
+   ],
+   "check": false
+  },
+  {
+   "comp": "lamia_coil",
+   "reading": "ラミア・巻きつく",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "",
+   "role": "",
+   "posture": "",
+   "extra": true,
+   "why": "ラミアの体。当て分けを入れてから",
+   "marks": [
+    "lamia_coil：翼・尻尾・触手など",
+    "lamia_coil_2：翼・尻尾・触手など",
+    "lamia_coil_3：翼・尻尾・触手など",
+    "lamia_coil_4：翼・尻尾・触手など",
+    "lamia_coil_5：翼・尻尾・触手など",
+    "lamia_coil_6：翼・尻尾・触手など",
+    "lamia_coil_7：翼・尻尾・触手など",
+    "lamia_coil_8：翼・尻尾・触手など"
+   ],
+   "check": false
+  },
+  {
+   "comp": "lamia_coil_legs",
+   "reading": "ラミア・巻きつく・脚",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "",
+   "role": "",
+   "posture": "",
+   "extra": true,
+   "why": "ラミアの体。当て分けを入れてから",
+   "marks": [
+    "lamia_coil_legs：翼・尻尾・触手など"
+   ],
+   "check": false
+  },
+  {
+   "comp": "lamia_pov_coil",
+   "reading": "ラミア・主人公目線・巻きつく",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "",
+   "extra": true,
+   "why": "ラミアの体。当て分けを入れてから",
+   "marks": [
+    "lamia_pov_coil：翼・尻尾・触手など",
+    "lamia_pov_coil_2：翼・尻尾・触手など"
+   ],
+   "check": false
+  },
+  {
+   "comp": "lap_finger_anal",
+   "reading": "膝の上・指・前立腺・（anal）",
+   "group": "B",
+   "rows": [
+    [
+     "fingering",
+     2
+    ],
+    [
+     "prostate",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：予備（姿勢の行のどれにも当たらないとき）",
+    "prostate：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the other character sits on his lap",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "lowangle_side_hj",
+   "reading": "（lowangle）・横から・手",
+   "group": "A",
+   "rows": [
+    [
+     "handjob",
+     0
+    ]
+   ],
+   "row_labels": [
+    "handjob：寝ている場面"
+   ],
+   "tags": "from below, head out of frame",
+   "role": "the navy-haired man lies on his back, the other character sits beside him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "lying_on_him_lookback",
+   "reading": "寝る・上に乗る・主人公を・振り返る",
+   "group": "C",
+   "rows": [
+    [
+     "close_hug",
+     0
+    ]
+   ],
+   "row_labels": [
+    "close_hug：寝ている場面"
+   ],
+   "tags": "",
+   "role": "the navy-haired man lies on his back, the other character sits on top of him",
+   "posture": "lie",
+   "extra": true,
+   "why": "上に寝そべる形なので、抱きしめの寝ている行に",
+   "marks": [],
+   "check": false
+  },
+  {
+   "comp": "lying_on_legs_side",
+   "reading": "寝る・上に乗る・脚・横から",
+   "group": "C",
+   "rows": [
+    [
+     "close_hug",
+     0
+    ]
+   ],
+   "row_labels": [
+    "close_hug：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character sits on top of him",
+   "posture": "lie",
+   "extra": true,
+   "why": "同上",
+   "marks": [
+    "lying_on_legs_side：形が読めない"
+   ],
+   "check": false
+  },
+  {
+   "comp": "machine_pov_straddle",
+   "reading": "機械・主人公目線・またがる",
+   "group": "B",
+   "rows": [
+    [
+     "straddle",
+     0
+    ]
+   ],
+   "row_labels": [
+    "straddle：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "machine_pov_straddle：翼・尻尾・触手など",
+    "machine_pov_straddle_2：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "multi_two_sandwich_seated",
+   "reading": "相手が複数・相手2人・はさむ・座る",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     2
+    ]
+   ],
+   "row_labels": [
+    "multi：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits in the middle, the two women sit on both sides of him pressing their bodies against him, their faces beside his ears",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "multi_two_sandwich_seated：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "multi_two_sandwich_stand",
+   "reading": "相手が複数・相手2人・はさむ・立つ",
+   "group": "B",
+   "rows": [
+    [
+     "multi",
+     3
+    ]
+   ],
+   "row_labels": [
+    "multi：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man stands in the middle with his arms raised, the two women stand on both sides of him pressing their bodies against him",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "multi_two_sandwich_stand_2：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "nipple_lick_hj",
+   "reading": "乳首・舐める・手",
+   "group": "B",
+   "rows": [
+    [
+     "nipple",
+     3
+    ]
+   ],
+   "row_labels": [
+    "nipple：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the other character leans over him",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "nipple_lie_pov_beside",
+   "reading": "乳首・寝る・主人公目線・横に並ぶ",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     0
+    ]
+   ],
+   "row_labels": [
+    "nipple：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer, the other character is beside the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "nipple_lie_pov_beside：頭が上の端で切れている",
+    "nipple_lie_pov_beside：頭が横の端で切れている",
+    "nipple_lie_pov_beside：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "nipple_lie_pov_hj",
+   "reading": "乳首・寝る・主人公目線・手",
+   "group": "A",
+   "rows": [
+    [
+     "handjob",
+     0
+    ],
+    [
+     "nipple",
+     0
+    ]
+   ],
+   "row_labels": [
+    "handjob：寝ている場面",
+    "nipple：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "nipple_lie_pov_on",
+   "reading": "乳首・寝る・主人公目線・上に乗る",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     0
+    ]
+   ],
+   "row_labels": [
+    "nipple：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer, the other character sits on top of the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "nipple_lie_pov_on：頭が上の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "nipple_lie_pov_on_b",
+   "reading": "乳首・寝る・主人公目線・上に乗る・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     0
+    ]
+   ],
+   "row_labels": [
+    "nipple：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer, the other character sits on top of the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "nipple_sit_front_back_kiss",
+   "reading": "乳首・座る・前から・後ろから・キス",
+   "group": "A",
+   "rows": [
+    [
+     "kiss",
+     2
+    ],
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "kiss：座っている場面",
+    "nipple：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, the other character is behind him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "nipple_sit_front_foot",
+   "reading": "乳首・座る・前から・足",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "nipple：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "nipple_sit_front_kiss",
+   "reading": "乳首・座る・前から・キス",
+   "group": "A",
+   "rows": [
+    [
+     "kiss",
+     2
+    ],
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "kiss：座っている場面",
+    "nipple：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "nipple_sit_front_tentacle",
+   "reading": "乳首・座る・前から・触手",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "nipple：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "nipple_sit_front_tentacle：頭が横の端で切れている",
+    "nipple_sit_front_tentacle：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "nipple_sit_tentacle",
+   "reading": "乳首・座る・触手",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "nipple：座っている場面"
+   ],
+   "tags": "",
+   "role": "the navy-haired man sits",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "nipple_sit_tentacle：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "nipple_stand_close_beside",
+   "reading": "乳首・立つ・寄り・横に並ぶ",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     2
+    ]
+   ],
+   "row_labels": [
+    "nipple：立っている場面"
+   ],
+   "tags": "close-up",
+   "role": "the navy-haired man stands, the other character is beside him",
+   "posture": "stand",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "nipple_stand_close_beside：頭が上の端で切れている",
+    "nipple_stand_close_beside：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "nipple_stand_front_back",
+   "reading": "乳首・立つ・前から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     2
+    ]
+   ],
+   "row_labels": [
+    "nipple：立っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man stands, the other character is behind him",
+   "posture": "stand",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "oral_hang_above_between",
+   "reading": "口・吊り・上から・脚の間",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "from above",
+   "role": "the navy-haired man is suspended by his wrists, the other character is between his legs",
+   "posture": "",
+   "extra": true,
+   "why": "口の技の組がまだ無い（新しい組が要る）",
+   "marks": [
+    "oral_hang_above_between：小物や線が残っている"
+   ],
+   "check": false
+  },
+  {
+   "comp": "oral_pov_low",
+   "reading": "口・主人公目線・下から",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "",
+   "extra": true,
+   "why": "口の技の組がまだ無い（新しい組が要る）",
+   "marks": [
+    "oral_pov_low_10：頭が上の端で切れている",
+    "oral_pov_low_3：翼・尻尾・触手など",
+    "oral_pov_low_4：頭が上の端で切れている",
+    "oral_pov_low_5：翼・尻尾・触手など",
+    "oral_pov_low_6：頭が上の端で切れている",
+    "oral_pov_low_6：翼・尻尾・触手など",
+    "oral_pov_low_8：頭が上の端で切れている"
+   ],
+   "check": false
+  },
+  {
+   "comp": "oral_side_lying",
+   "reading": "口・横から・寝る",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back",
+   "posture": "lie",
+   "extra": true,
+   "why": "口の技の組がまだ無い（新しい組が要る）",
+   "marks": [
+    "oral_side_lying_2：形が読めない",
+    "oral_side_lying_4：頭が上の端で切れている",
+    "oral_side_lying_4：小物や線が残っている"
+   ],
+   "check": false
+  },
+  {
+   "comp": "oral_stand_side",
+   "reading": "口・立つ・横から",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "from side",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "口の技の組がまだ無い（新しい組が要る）",
+   "marks": [
+    "oral_stand_side：翼・尻尾・触手など"
+   ],
+   "check": false
+  },
+  {
+   "comp": "paizuri",
+   "reading": "胸で挟む",
+   "group": "B",
+   "rows": [
+    [
+     "paizuri",
+     2
+    ]
+   ],
+   "row_labels": [
+    "paizuri：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the other character is between his legs",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_bent_front_back",
+   "reading": "ペニバン・逆アナル・前かがみ・前から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man bends forward, the other character is behind him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_bent_front_back_b",
+   "reading": "ペニバン・逆アナル・前かがみ・前から・後ろから・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man bends forward, the other character is behind him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_bent_side_back",
+   "reading": "ペニバン・逆アナル・前かがみ・横から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man bends forward, the other character is behind him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "peg_bent_side_back：小物や線が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_fours_front_back",
+   "reading": "ペニバン・逆アナル・四つんばい・前から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man is on all fours, the other character is behind him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_fours_side_sandwich_peg",
+   "reading": "ペニバン・逆アナル・四つんばい・横から・はさむ・ペニバン・逆アナル",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man is on all fours, two other characters sandwich him from the front and the back",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_lie_side_back_nipple",
+   "reading": "ペニバン・逆アナル・寝る・横から・後ろから・乳首",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     0
+    ],
+    [
+     "peg",
+     3
+    ]
+   ],
+   "row_labels": [
+    "nipple：寝ている場面",
+    "peg：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character is behind him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "peg_lie_side_back_nipple：小物や線が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_piledriver_back",
+   "reading": "ペニバン・逆アナル・ちんぐり返し・後ろから",
+   "group": "B",
+   "rows": [
+    [
+     "peg",
+     6
+    ]
+   ],
+   "row_labels": [
+    "peg：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the other character is behind him",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_prone_front_back",
+   "reading": "ペニバン・逆アナル・うつ伏せ・前から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man lies face down, the other character is behind him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_prone_side_on",
+   "reading": "ペニバン・逆アナル・うつ伏せ・横から・上に乗る",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies face down, the other character sits on top of him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_prone_side_on_b",
+   "reading": "ペニバン・逆アナル・うつ伏せ・横から・上に乗る・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies face down, the other character sits on top of him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "peg_prone_side_on_b：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_sit_front_back",
+   "reading": "ペニバン・逆アナル・座る・前から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     4
+    ]
+   ],
+   "row_labels": [
+    "peg：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, the other character is behind him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_sit_front_back_hj",
+   "reading": "ペニバン・逆アナル・座る・前から・後ろから・手",
+   "group": "A",
+   "rows": [
+    [
+     "handjob",
+     1
+    ],
+    [
+     "peg",
+     4
+    ]
+   ],
+   "row_labels": [
+    "handjob：座っている場面",
+    "peg：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, the other character is behind him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_stand_side_back",
+   "reading": "ペニバン・逆アナル・立つ・横から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     1
+    ]
+   ],
+   "row_labels": [
+    "peg：立っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man stands, the other character is behind him",
+   "posture": "stand",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "peg_stand_side_back：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_stand_side_back_nipple",
+   "reading": "ペニバン・逆アナル・立つ・横から・後ろから・乳首",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     2
+    ],
+    [
+     "peg",
+     1
+    ],
+    [
+     "peg_nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "nipple：立っている場面",
+    "peg：立っている場面",
+    "peg_nipple：立っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man stands, the other character is behind him",
+   "posture": "stand",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_strapon",
+   "reading": "ペニバン・逆アナル・ペニバン",
+   "group": "B",
+   "rows": [
+    [
+     "peg",
+     6
+    ]
+   ],
+   "row_labels": [
+    "peg：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the other character is behind him",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "pov_loom",
+   "reading": "主人公目線・覆いかぶさる",
+   "group": "C",
+   "rows": [
+    [
+     "close_hug",
+     2
+    ]
+   ],
+   "row_labels": [
+    "close_hug：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer, the other character leans over the viewer",
+   "posture": "",
+   "extra": true,
+   "why": "覆いかぶさる形なので、抱きしめの予備の行に",
+   "marks": [
+    "pov_loom_3：翼・尻尾・触手など",
+    "pov_loom_4：翼・尻尾・触手など",
+    "pov_loom_5：頭が上の端で切れている",
+    "pov_loom_5：形が読めない"
+   ],
+   "check": false
+  },
+  {
+   "comp": "pov_multi_front",
+   "reading": "主人公目線・相手が複数・前から",
+   "group": "C",
+   "rows": [
+    [
+     "multi",
+     3
+    ]
+   ],
+   "row_labels": [
+    "multi：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "",
+   "extra": true,
+   "why": "相手が複数なので multi の予備の行に",
+   "marks": [
+    "pov_multi_front：形が読めない",
+    "pov_multi_front_2：形が読めない",
+    "pov_multi_front_5：頭が上の端で切れている",
+    "pov_multi_front_5：頭が横の端で切れている",
+    "pov_multi_front_6：小物や線が残っている"
+   ],
+   "check": false
+  },
+  {
+   "comp": "pov_multi_low",
+   "reading": "主人公目線・相手が複数・下から",
+   "group": "C",
+   "rows": [
+    [
+     "multi",
+     3
+    ]
+   ],
+   "row_labels": [
+    "multi：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "",
+   "extra": true,
+   "why": "同上",
+   "marks": [
+    "pov_multi_low：形が読めない",
+    "pov_multi_low_4：形が読めない",
+    "pov_multi_low_7：形が読めない",
+    "pov_multi_low_9：形が読めない"
+   ],
+   "check": false
+  },
+  {
+   "comp": "prone_reverse_sit",
+   "reading": "うつ伏せ・逆向き・座る",
+   "group": "C",
+   "rows": [
+    [
+     "straddle",
+     0
+    ]
+   ],
+   "row_labels": [
+    "straddle：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the navy-haired man lies face down, the other character sits on his back facing his legs",
+   "posture": "fours",
+   "extra": true,
+   "why": "うつ伏せの上に座る形なので、またがるの予備の行に",
+   "marks": [
+    "prone_reverse_sit：形が読めない"
+   ],
+   "check": false
+  },
+  {
+   "comp": "rekiben_front_back_peg",
+   "reading": "背面駅弁・前から・後ろから・ペニバン・逆アナル",
+   "group": "B",
+   "rows": [
+    [
+     "peg",
+     6
+    ]
+   ],
+   "row_labels": [
+    "peg：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from front",
+   "role": "the other character is behind him",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "reverse_straddle_side",
+   "reading": "逆向き・またがる・横から",
+   "group": "B",
+   "rows": [
+    [
+     "straddle",
+     0
+    ]
+   ],
+   "row_labels": [
+    "straddle：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character sits on top of him facing away from his face",
+   "posture": "lie",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "reverse_straddle_side：小物や線が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "rimjob_bent_side_back",
+   "reading": "お尻を舐める・前かがみ・横から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "rusty",
+     0
+    ]
+   ],
+   "row_labels": [
+    "rusty：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man bends forward, the other character is behind him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "rimjob_lying_side",
+   "reading": "お尻を舐める・寝る・横から",
+   "group": "A",
+   "rows": [
+    [
+     "rusty",
+     1
+    ]
+   ],
+   "row_labels": [
+    "rusty：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "rimjob_lying_side：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "rimjob_sit_behind_between",
+   "reading": "お尻を舐める・座る・後ろから見る・脚の間",
+   "group": "B",
+   "rows": [
+    [
+     "rusty",
+     3
+    ]
+   ],
+   "row_labels": [
+    "rusty：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man sits, the other character is between his legs",
+   "posture": "sit",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "rimjob_sit_behind_between：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "rimjob_standing_side",
+   "reading": "お尻を舐める・立つ・横から",
+   "group": "B",
+   "rows": [
+    [
+     "rusty",
+     3
+    ]
+   ],
+   "row_labels": [
+    "rusty：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "rimjob_standing_side：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "rusty_bent_side",
+   "reading": "お尻を舐めながら手・前かがみ・横から",
+   "group": "A",
+   "rows": [
+    [
+     "rusty",
+     0
+    ]
+   ],
+   "row_labels": [
+    "rusty：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man bends forward",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "rusty_fours_behind_hj",
+   "reading": "お尻を舐めながら手・四つんばい・後ろから見る・手",
+   "group": "A",
+   "rows": [
+    [
+     "rusty",
+     0
+    ]
+   ],
+   "row_labels": [
+    "rusty：四つんばい・前かがみの場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man is on all fours",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "rusty_fours_behind_hj：小物や線が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "rusty_fours_side_back_hj",
+   "reading": "お尻を舐めながら手・四つんばい・横から・後ろから・手",
+   "group": "A",
+   "rows": [
+    [
+     "rusty",
+     0
+    ]
+   ],
+   "row_labels": [
+    "rusty：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man is on all fours, the other character is behind him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "rusty_fours_side_back_hj_b",
+   "reading": "お尻を舐めながら手・四つんばい・横から・後ろから・手・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "rusty",
+     0
+    ]
+   ],
+   "row_labels": [
+    "rusty：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man is on all fours, the other character is behind him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "rusty_stand_above",
+   "reading": "お尻を舐めながら手・立つ・上から",
+   "group": "B",
+   "rows": [
+    [
+     "rusty",
+     3
+    ]
+   ],
+   "row_labels": [
+    "rusty：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from above",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "rusty_stand_above：頭が上の端で切れている",
+    "rusty_stand_above：小物や線が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "sit_between_legs_front",
+   "reading": "座る・脚の間・脚・前から",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "from front",
+   "role": "the navy-haired man sits, the other character is between his legs",
+   "posture": "sit",
+   "extra": true,
+   "why": "技が決まっていない。元絵を見て項目を決めてから",
+   "marks": [],
+   "check": false
+  },
+  {
+   "comp": "smother_lie_front",
+   "reading": "顔をうずめる・寝る・前から",
+   "group": "A",
+   "rows": [
+    [
+     "smother",
+     0
+    ]
+   ],
+   "row_labels": [
+    "smother：寝ている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man lies on his back",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "smother_lie_front：頭が上の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "smother_lie_side_back",
+   "reading": "顔をうずめる・寝る・横から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "smother",
+     0
+    ]
+   ],
+   "row_labels": [
+    "smother：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character is behind him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "smother_lie_side_back：頭が上の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "smother_lie_side_beside",
+   "reading": "顔をうずめる・寝る・横から・横に並ぶ",
+   "group": "A",
+   "rows": [
+    [
+     "smother",
+     0
+    ]
+   ],
+   "row_labels": [
+    "smother：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character is beside him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "smother_lie_side_beside：頭が上の端で切れている",
+    "smother_lie_side_beside：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "smother_lie_side_over",
+   "reading": "顔をうずめる・寝る・横から・覆いかぶさる",
+   "group": "A",
+   "rows": [
+    [
+     "smother",
+     0
+    ]
+   ],
+   "row_labels": [
+    "smother：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, the other character leans over him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "stand_chest_side",
+   "reading": "立つ・胸に顔・横から",
+   "group": "B",
+   "rows": [
+    [
+     "seat_chest",
+     0
+    ],
+    [
+     "stand_chest",
+     0
+    ]
+   ],
+   "row_labels": [
+    "seat_chest：予備（姿勢の行のどれにも当たらないとき）",
+    "stand_chest：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "stand_chest_side：頭が上の端で切れている",
+    "stand_chest_side：形が読めない",
+    "stand_chest_side_2：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "stand_embrace_side_finger",
+   "reading": "立つ・抱き合う・横から・指・前立腺",
+   "group": "B",
+   "rows": [
+    [
+     "close_hug",
+     2
+    ],
+    [
+     "fingering",
+     2
+    ],
+    [
+     "prostate",
+     1
+    ],
+    [
+     "stand_embrace",
+     0
+    ]
+   ],
+   "row_labels": [
+    "close_hug：予備（姿勢の行のどれにも当たらないとき）",
+    "fingering：予備（姿勢の行のどれにも当たらないとき）",
+    "prostate：予備（姿勢の行のどれにも当たらないとき）",
+    "stand_embrace：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "stand_embrace_side_finger：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "stand_over_face_lookback",
+   "reading": "立つ・覆いかぶさる・顔・振り返る",
+   "group": "C",
+   "rows": [
+    [
+     "smother",
+     1
+    ]
+   ],
+   "row_labels": [
+    "smother：立っている場面"
+   ],
+   "tags": "",
+   "role": "the navy-haired man stands, the other character leans over him",
+   "posture": "stand",
+   "extra": true,
+   "why": "顔の上に立つ形なので、smother の立っている行に",
+   "marks": [],
+   "check": false
+  },
+  {
+   "comp": "straddle_behind_lookback",
+   "reading": "またがる・後ろから見る・振り返る",
+   "group": "B",
+   "rows": [
+    [
+     "straddle",
+     0
+    ]
+   ],
+   "row_labels": [
+    "straddle：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man lies on his back, the other character sits on top of him, looking back over her shoulder",
+   "posture": "lie",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "straddle_lie_pov_tentacle",
+   "reading": "またがる・寝る・主人公目線・触手",
+   "group": "B",
+   "rows": [
+    [
+     "straddle",
+     0
+    ]
+   ],
+   "row_labels": [
+    "straddle：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "straddle_lie_pov_tentacle：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "succubus_tail",
+   "reading": "サキュバス・尻尾",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "",
+   "role": "",
+   "posture": "",
+   "extra": true,
+   "why": "尻尾。当て分けを入れてから",
+   "marks": [
+    "succubus_tail：翼・尻尾・触手など",
+    "succubus_tail_2：翼・尻尾・触手など",
+    "succubus_tail_3：翼・尻尾・触手など"
+   ],
+   "check": false
+  },
+  {
+   "comp": "tentacle_fours_behind_finger",
+   "reading": "触手・四つんばい・後ろから見る・指・前立腺",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man is on all fours",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "tentacle_fours_behind_finger：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "tentacle_fours_behind_on_peg",
+   "reading": "触手・四つんばい・後ろから見る・上に乗る・ペニバン・逆アナル",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man is on all fours, the other character sits on top of him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "tentacle_fours_behind_on_peg：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "tentacle_hang_front_finger",
+   "reading": "触手・吊り・前から・指・前立腺",
+   "group": "B",
+   "rows": [
+    [
+     "fingering",
+     2
+    ],
+    [
+     "prostate",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：予備（姿勢の行のどれにも当たらないとき）",
+    "prostate：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man is suspended by his wrists",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "tentacle_hang_front_finger：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "tentacle_legs_watch",
+   "reading": "触手・脚・見ている",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "",
+   "role": "",
+   "posture": "",
+   "extra": true,
+   "why": "触手。当て分けを入れてから",
+   "marks": [
+    "tentacle_legs_watch：翼・尻尾・触手など"
+   ],
+   "check": false
+  },
+  {
+   "comp": "tentacle_lie_pov_straddle",
+   "reading": "触手・寝る・主人公目線・またがる",
+   "group": "B",
+   "rows": [
+    [
+     "straddle",
+     0
+    ]
+   ],
+   "row_labels": [
+    "straddle：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "tentacle_lie_pov_straddle：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "topdown_hj_hands",
+   "reading": "（topdown）・手・両手",
+   "group": "A",
+   "rows": [
+    [
+     "handjob",
+     0
+    ]
+   ],
+   "row_labels": [
+    "handjob：寝ている場面"
+   ],
+   "tags": "from above, head out of frame",
+   "role": "the navy-haired man lies on his back, the other character leans over his chest",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "two_ear_sit_front_sandwich",
+   "reading": "相手2人・耳・座る・前から・はさむ",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     2
+    ]
+   ],
+   "row_labels": [
+    "multi：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, two other characters sandwich him from the front and the back",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "two_kiss_bent_low_sandwich_finger",
+   "reading": "相手2人・キス・前かがみ・下から・はさむ・指・前立腺",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "multi",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "multi：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from below, low angle",
+   "role": "the navy-haired man bends forward, two other characters sandwich him from the front and the back",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "two_kiss_bent_low_sandwich_finger：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "two_low_close",
+   "reading": "相手2人・下から・寄り",
+   "group": "B",
+   "rows": [
+    [
+     "multi",
+     3
+    ]
+   ],
+   "row_labels": [
+    "multi：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from below, low angle",
+   "role": "two other characters are close to him",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "two_low_close：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "two_nipple_lie_pov_over_nipple",
+   "reading": "相手2人・乳首・寝る・主人公目線・覆いかぶさる・乳首",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     1
+    ],
+    [
+     "nipple",
+     0
+    ]
+   ],
+   "row_labels": [
+    "multi：寝ている場面",
+    "nipple：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer, the other character leans over the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "two_nipple_sit_front_sides_nipple",
+   "reading": "相手2人・乳首・座る・前から・左右から・乳首",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     2
+    ],
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "multi：座っている場面",
+    "nipple：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, two other characters are on both sides of him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "two_nipple_sit_side_sandwich_whisper",
+   "reading": "相手2人・乳首・座る・横から・はさむ・ささやき",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     2
+    ],
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "multi：座っている場面",
+    "nipple：座っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man sits, two other characters sandwich him from the front and the back",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "two_nipple_sit_side_sandwich_whisper：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "two_nipple_stand_front_sandwich_kiss",
+   "reading": "相手2人・乳首・立つ・前から・はさむ・キス",
+   "group": "A",
+   "rows": [
+    [
+     "kiss",
+     3
+    ],
+    [
+     "nipple",
+     2
+    ]
+   ],
+   "row_labels": [
+    "kiss：立っている場面",
+    "nipple：立っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man stands, two other characters sandwich him from the front and the back",
+   "posture": "stand",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "two_nipple_stand_front_sandwich_kiss：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "two_nipple_stand_side_sandwich_rimjob",
+   "reading": "相手2人・乳首・立つ・横から・はさむ・お尻を舐める",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     2
+    ]
+   ],
+   "row_labels": [
+    "nipple：立っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man stands, two other characters sandwich him from the front and the back",
+   "posture": "stand",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "two_peg_fours_side_sides_peg",
+   "reading": "相手2人・ペニバン・逆アナル・四つんばい・横から・左右から・ペニバン・逆アナル",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     0
+    ],
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "multi：四つんばい・前かがみの場面",
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man is on all fours, two other characters are on both sides of him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "two_peg_fours_side_sides_peg：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "two_pov_lying",
+   "reading": "相手2人・主人公目線・寝る",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     1
+    ]
+   ],
+   "row_labels": [
+    "multi：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "two_pov_lying：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "two_straddle_sit_front_sandwich_whisper",
+   "reading": "相手2人・またがる・座る・前から・はさむ・ささやき",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     2
+    ]
+   ],
+   "row_labels": [
+    "multi：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, two other characters sandwich him from the front and the back",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "urethra_stand_pov",
+   "reading": "尿道・立つ・主人公目線",
+   "group": "B",
+   "rows": [
+    [
+     "urethra",
+     0
+    ]
+   ],
+   "row_labels": [
+    "urethra：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "urethra_stand_pov：頭が上の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "whisper_lie_side_sandwich_kiss",
+   "reading": "ささやき・寝る・横から・はさむ・キス",
+   "group": "A",
+   "rows": [
+    [
+     "ear",
+     0
+    ],
+    [
+     "ear_soft",
+     0
+    ],
+    [
+     "kiss",
+     1
+    ]
+   ],
+   "row_labels": [
+    "ear：寝ている場面",
+    "ear_soft：寝ている場面",
+    "kiss：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back, two other characters sandwich him from the front and the back",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "whisper_sit_front_back_nipple",
+   "reading": "ささやき・座る・前から・後ろから・乳首",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "nipple：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, the other character is behind him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "whisper_sit_front_back_nipple：頭が上の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "whisper_sit_side_facing_hug",
+   "reading": "ささやき・座る・横から・向かい合う・抱く",
+   "group": "A",
+   "rows": [
+    [
+     "close_hug",
+     1
+    ]
+   ],
+   "row_labels": [
+    "close_hug：座っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man sits, the other character faces him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "whisper_stand_side_back_nipple",
+   "reading": "ささやき・立つ・横から・後ろから・乳首",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     2
+    ]
+   ],
+   "row_labels": [
+    "nipple：立っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man stands, the other character is behind him",
+   "posture": "stand",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "xray",
+   "reading": "断面の絵",
+   "group": "保留",
+   "rows": [],
+   "row_labels": [],
+   "tags": "",
+   "role": "",
+   "posture": "",
+   "extra": true,
+   "why": "断面の絵。ふつうの場面には向かない",
+   "marks": [
+    "xray：小物や線が残っている",
+    "xray_5：小物や線が残っている",
+    "xray_6：小物や線が残っている",
+    "xray_7：小物や線が残っている"
+   ],
+   "check": false
+  },
+  {
+   "comp": "bound_stand_front",
+   "reading": "拘束・立つ・前から",
+   "group": "B",
+   "rows": [
+    [
+     "bondage",
+     4
+    ]
+   ],
+   "row_labels": [
+    "bondage：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man stands",
+   "posture": "stand",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "chastity_lie_pov",
+   "reading": "貞操帯・寝る・主人公目線",
+   "group": "B",
+   "rows": [
+    [
+     "chastity",
+     0
+    ]
+   ],
+   "row_labels": [
+    "chastity：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "chastity_lie_pov：翼・尻尾・触手など",
+    "chastity_lie_pov：小物や線が残っている",
+    "chastity_lie_pov_3：小物や線が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "facesit_lie_front",
+   "reading": "顔に座る・寝る・前から",
+   "group": "C",
+   "rows": [
+    [
+     "smother",
+     0
+    ]
+   ],
+   "row_labels": [
+    "smother：寝ている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man lies on his back, the other character sits on his face",
+   "posture": "lie",
+   "extra": true,
+   "why": "顔に座る技の組が無いので、顔をうずめる（smother）の寝ている行に",
+   "marks": [],
+   "check": false
+  },
+  {
+   "comp": "finger_piledriver_pov",
+   "reading": "指・前立腺・ちんぐり返し・主人公目線",
+   "group": "B",
+   "rows": [
+    [
+     "fingering",
+     2
+    ],
+    [
+     "prostate",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：予備（姿勢の行のどれにも当たらないとき）",
+    "prostate：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "finger_piledriver_side",
+   "reading": "指・前立腺・ちんぐり返し・横から",
+   "group": "B",
+   "rows": [
+    [
+     "fingering",
+     2
+    ],
+    [
+     "prostate",
+     1
+    ]
+   ],
+   "row_labels": [
+    "fingering：予備（姿勢の行のどれにも当たらないとき）",
+    "prostate：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the other character is with him",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "finger_piledriver_side_12：頭が横の端で切れている",
+    "finger_piledriver_side_14：頭が上の端で切れている",
+    "finger_piledriver_side_16：黒い余白が残っている",
+    "finger_piledriver_side_17：黒い余白が残っている",
+    "finger_piledriver_side_18：頭が横の端で切れている",
+    "finger_piledriver_side_18：黒い余白が残っている",
+    "finger_piledriver_side_19：頭が上の端で切れている",
+    "finger_piledriver_side_19：黒い余白が残っている",
+    "finger_piledriver_side_3：頭が横の端で切れている",
+    "finger_piledriver_side_4：頭が上の端で切れている",
+    "finger_piledriver_side_4：頭が横の端で切れている",
+    "finger_piledriver_side_5：頭が横の端で切れている",
+    "finger_piledriver_side_7：頭が横の端で切れている",
+    "finger_piledriver_side_8：頭が上の端で切れている",
+    "finger_piledriver_side_9：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "finger_prone_behind_lap",
+   "reading": "指・前立腺・うつ伏せ・後ろから見る・膝の上",
+   "group": "A",
+   "rows": [
+    [
+     "fingering",
+     0
+    ],
+    [
+     "prostate",
+     0
+    ]
+   ],
+   "row_labels": [
+    "fingering：四つんばい・前かがみの場面",
+    "prostate：四つんばい・前かがみの場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man lies face down, the other character sits on his lap",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "finger_prone_behind_lap_10：頭が横の端で切れている",
+    "finger_prone_behind_lap_11：頭が横の端で切れている",
+    "finger_prone_behind_lap_14：頭が横の端で切れている",
+    "finger_prone_behind_lap_2：頭が横の端で切れている",
+    "finger_prone_behind_lap_20：頭が上の端で切れている",
+    "finger_prone_behind_lap_22：頭が横の端で切れている",
+    "finger_prone_behind_lap_3：頭が横の端で切れている",
+    "finger_prone_behind_lap_4：頭が上の端で切れている",
+    "finger_prone_behind_lap_4：頭が横の端で切れている",
+    "finger_prone_behind_lap_7：頭が横の端で切れている",
+    "finger_prone_behind_lap_8：頭が横の端で切れている",
+    "finger_prone_behind_lap_8：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "foot_lie_front_lap",
+   "reading": "足・寝る・前から・膝の上",
+   "group": "A",
+   "rows": [
+    [
+     "footjob",
+     0
+    ]
+   ],
+   "row_labels": [
+    "footjob：寝ている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man lies on his back, the other character sits on his lap",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "foot_lie_front_lap_2：頭が横の端で切れている",
+    "foot_lie_front_lap_4：頭が横の端で切れている",
+    "foot_lie_front_lap_5：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "foot_lie_pov",
+   "reading": "足・寝る・主人公目線",
+   "group": "A",
+   "rows": [
+    [
+     "footjob",
+     0
+    ]
+   ],
+   "row_labels": [
+    "footjob：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "foot_lie_pov_b",
+   "reading": "足・寝る・主人公目線・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "footjob",
+     0
+    ]
+   ],
+   "row_labels": [
+    "footjob：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "headlock_sit_side",
+   "reading": "頭を抱え込む・座る・横から",
+   "group": "C",
+   "rows": [
+    [
+     "smother",
+     2
+    ]
+   ],
+   "row_labels": [
+    "smother：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the other character holds his head against her body",
+   "posture": "sit",
+   "extra": true,
+   "why": "頭を抱え込む技の組が無いので、smother の予備の行に（形が読めない下書きが多い。奥行きの点検の判定を先に）",
+   "marks": [
+    "headlock_sit_side_11：頭が上の端で切れている",
+    "headlock_sit_side_12：頭が上の端で切れている",
+    "headlock_sit_side_12：形が読めない",
+    "headlock_sit_side_13：頭が横の端で切れている",
+    "headlock_sit_side_15：頭が横の端で切れている",
+    "headlock_sit_side_16：頭が横の端で切れている",
+    "headlock_sit_side_17：頭が横の端で切れている",
+    "headlock_sit_side_17：形が読めない",
+    "headlock_sit_side_19：小物や線が残っている",
+    "headlock_sit_side_2：頭が横の端で切れている",
+    "headlock_sit_side_20：頭が上の端で切れている",
+    "headlock_sit_side_22：頭が横の端で切れている",
+    "headlock_sit_side_22：形が読めない",
+    "headlock_sit_side_23：頭が上の端で切れている",
+    "headlock_sit_side_24：頭が上の端で切れている",
+    "headlock_sit_side_25：頭が上の端で切れている",
+    "headlock_sit_side_25：形が読めない",
+    "headlock_sit_side_28：形が読めない",
+    "headlock_sit_side_3：頭が横の端で切れている",
+    "headlock_sit_side_30：頭が横の端で切れている",
+    "headlock_sit_side_31：頭が上の端で切れている",
+    "headlock_sit_side_31：頭が横の端で切れている",
+    "headlock_sit_side_31：形が読めない",
+    "headlock_sit_side_32：頭が横の端で切れている",
+    "headlock_sit_side_33：頭が上の端で切れている",
+    "headlock_sit_side_33：頭が横の端で切れている",
+    "headlock_sit_side_33：形が読めない",
+    "headlock_sit_side_35：形が読めない",
+    "headlock_sit_side_4：頭が上の端で切れている",
+    "headlock_sit_side_4：形が読めない",
+    "headlock_sit_side_5：頭が上の端で切れている",
+    "headlock_sit_side_5：頭が横の端で切れている",
+    "headlock_sit_side_6：頭が上の端で切れている",
+    "headlock_sit_side_6：形が読めない",
+    "headlock_sit_side_7：頭が上の端で切れている",
+    "headlock_sit_side_7：頭が横の端で切れている",
+    "headlock_sit_side_7：形が読めない",
+    "headlock_sit_side_8：頭が上の端で切れている",
+    "headlock_sit_side_8：形が読めない",
+    "headlock_sit_side_9：頭が上の端で切れている"
+   ],
+   "check": false
+  },
+  {
+   "comp": "kiss_lie_side",
+   "reading": "キス・寝る・横から",
+   "group": "A",
+   "rows": [
+    [
+     "kiss",
+     1
+    ]
+   ],
+   "row_labels": [
+    "kiss：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "kiss_lie_side：翼・尻尾・触手など",
+    "kiss_lie_side_2：翼・尻尾・触手など",
+    "kiss_lie_side_3：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "kiss_sit_side_nipple",
+   "reading": "キス・座る・横から・乳首",
+   "group": "A",
+   "rows": [
+    [
+     "kiss",
+     2
+    ],
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "kiss：座っている場面",
+    "nipple：座っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man sits",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）／主人公が小さく見える下書きがある（幼く見えないか確かめる）",
+   "marks": [
+    "kiss_sit_side_nipple：頭が横の端で切れている",
+    "kiss_sit_side_nipple_11：翼・尻尾・触手など",
+    "kiss_sit_side_nipple_11：形が読めない",
+    "kiss_sit_side_nipple_12：頭が横の端で切れている",
+    "kiss_sit_side_nipple_12：翼・尻尾・触手など",
+    "kiss_sit_side_nipple_13：頭が横の端で切れている",
+    "kiss_sit_side_nipple_13：翼・尻尾・触手など",
+    "kiss_sit_side_nipple_2：頭が横の端で切れている",
+    "kiss_sit_side_nipple_3：小物や線が残っている",
+    "kiss_sit_side_nipple_4：小物や線が残っている",
+    "kiss_sit_side_nipple_5：小物や線が残っている",
+    "kiss_sit_side_nipple_6：頭が横の端で切れている",
+    "kiss_sit_side_nipple_7：小物や線が残っている",
+    "kiss_sit_side_nipple_8：翼・尻尾・触手など"
+   ],
+   "check": false
+  },
+  {
+   "comp": "nipple_kneel_front_back_peg",
+   "reading": "乳首・ひざまずく・前から・後ろから・ペニバン・逆アナル",
+   "group": "B",
+   "rows": [
+    [
+     "nipple",
+     3
+    ],
+    [
+     "peg",
+     6
+    ]
+   ],
+   "row_labels": [
+    "nipple：予備（姿勢の行のどれにも当たらないとき）",
+    "peg：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man kneels, the other character is behind him",
+   "posture": "kneel",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "nipple_kneel_front_back_peg：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "nipple_sit_front_back_hj",
+   "reading": "乳首・座る・前から・後ろから・手",
+   "group": "A",
+   "rows": [
+    [
+     "handjob",
+     1
+    ],
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "handjob：座っている場面",
+    "nipple：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, the other character is behind him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "nipple_sit_side",
+   "reading": "乳首・座る・横から",
+   "group": "A",
+   "rows": [
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "nipple：座っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man sits",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "nipple_sit_side：小物や線が残っている",
+    "nipple_sit_side_2：翼・尻尾・触手など",
+    "nipple_sit_side_3：小物や線が残っている",
+    "nipple_sit_side_5：小物や線が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "paizuri_lie_pov",
+   "reading": "胸で挟む・寝る・主人公目線",
+   "group": "A",
+   "rows": [
+    [
+     "paizuri",
+     0
+    ]
+   ],
+   "row_labels": [
+    "paizuri：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "paizuri_lie_pov：頭が上の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg",
+   "reading": "ペニバン・逆アナル",
+   "group": "B",
+   "rows": [
+    [
+     "peg",
+     6
+    ]
+   ],
+   "row_labels": [
+    "peg：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "",
+   "role": "the other character is with him",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "peg_12：頭が上の端で切れている",
+    "peg_2：頭が上の端で切れている",
+    "peg_2：頭が横の端で切れている",
+    "peg_2：小物や線が残っている",
+    "peg_20：翼・尻尾・触手など",
+    "peg_6：頭が横の端で切れている",
+    "peg_7：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_bent_side",
+   "reading": "ペニバン・逆アナル・前かがみ・横から",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man bends forward",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "peg_bent_side：頭が横の端で切れている",
+    "peg_bent_side_2：頭が横の端で切れている",
+    "peg_bent_side_3：頭が横の端で切れている",
+    "peg_bent_side_4：頭が横の端で切れている",
+    "peg_bent_side_7：頭が上の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_bent_side_b",
+   "reading": "ペニバン・逆アナル・前かがみ・横から・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man bends forward",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "peg_bent_side_b：頭が横の端で切れている",
+    "peg_bent_side_b_10：形が読めない",
+    "peg_bent_side_b_11：形が読めない",
+    "peg_bent_side_b_12：形が読めない",
+    "peg_bent_side_b_14：頭が横の端で切れている",
+    "peg_bent_side_b_15：頭が横の端で切れている",
+    "peg_bent_side_b_17：頭が横の端で切れている",
+    "peg_bent_side_b_2：頭が横の端で切れている",
+    "peg_bent_side_b_4：形が読めない",
+    "peg_bent_side_b_5：形が読めない",
+    "peg_bent_side_b_6：形が読めない",
+    "peg_bent_side_b_7：形が読めない",
+    "peg_bent_side_b_8：頭が横の端で切れている",
+    "peg_bent_side_b_8：形が読めない",
+    "peg_bent_side_b_9：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_bent_side_chastity",
+   "reading": "ペニバン・逆アナル・前かがみ・横から・貞操帯",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man bends forward",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "peg_bent_side_chastity：頭が横の端で切れている",
+    "peg_bent_side_chastity_11：頭が横の端で切れている",
+    "peg_bent_side_chastity_12：頭が横の端で切れている",
+    "peg_bent_side_chastity_13：頭が横の端で切れている",
+    "peg_bent_side_chastity_14：頭が上の端で切れている",
+    "peg_bent_side_chastity_15：形が読めない",
+    "peg_bent_side_chastity_16：形が読めない",
+    "peg_bent_side_chastity_17：形が読めない",
+    "peg_bent_side_chastity_18：形が読めない",
+    "peg_bent_side_chastity_19：形が読めない",
+    "peg_bent_side_chastity_2：形が読めない",
+    "peg_bent_side_chastity_20：形が読めない",
+    "peg_bent_side_chastity_21：形が読めない",
+    "peg_bent_side_chastity_22：形が読めない",
+    "peg_bent_side_chastity_23：頭が横の端で切れている",
+    "peg_bent_side_chastity_24：頭が横の端で切れている",
+    "peg_bent_side_chastity_25：頭が横の端で切れている",
+    "peg_bent_side_chastity_26：頭が横の端で切れている",
+    "peg_bent_side_chastity_27：頭が横の端で切れている",
+    "peg_bent_side_chastity_28：頭が横の端で切れている",
+    "peg_bent_side_chastity_3：頭が横の端で切れている",
+    "peg_bent_side_chastity_5：形が読めない",
+    "peg_bent_side_chastity_6：頭が横の端で切れている",
+    "peg_bent_side_chastity_8：頭が横の端で切れている",
+    "peg_bent_side_chastity_9：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_fours_side",
+   "reading": "ペニバン・逆アナル・四つんばい・横から",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man is on all fours",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "peg_fours_side：頭が横の端で切れている",
+    "peg_fours_side：形が読めない",
+    "peg_fours_side_2：頭が横の端で切れている",
+    "peg_fours_side_3：頭が上の端で切れている",
+    "peg_fours_side_3：頭が横の端で切れている",
+    "peg_fours_side_3：1人だけ",
+    "peg_fours_side_8：頭が横の端で切れている",
+    "peg_fours_side_9：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_hang_side_bound",
+   "reading": "ペニバン・逆アナル・吊り・横から・拘束",
+   "group": "B",
+   "rows": [
+    [
+     "bondage",
+     4
+    ],
+    [
+     "peg",
+     6
+    ]
+   ],
+   "row_labels": [
+    "bondage：予備（姿勢の行のどれにも当たらないとき）",
+    "peg：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man is suspended by his wrists",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "peg_hang_side_bound：頭が横の端で切れている",
+    "peg_hang_side_bound_2：頭が横の端で切れている",
+    "peg_hang_side_bound_3：頭が横の端で切れている",
+    "peg_hang_side_bound_4：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_hang_side_bound_b",
+   "reading": "ペニバン・逆アナル・吊り・横から・拘束・別の形b",
+   "group": "B",
+   "rows": [
+    [
+     "bondage",
+     4
+    ],
+    [
+     "peg",
+     6
+    ]
+   ],
+   "row_labels": [
+    "bondage：予備（姿勢の行のどれにも当たらないとき）",
+    "peg：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man is suspended by his wrists",
+   "posture": "",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "peg_hang_side_bound_b：頭が横の端で切れている",
+    "peg_hang_side_bound_b_2：頭が横の端で切れている",
+    "peg_hang_side_bound_b_3：頭が横の端で切れている",
+    "peg_hang_side_bound_b_4：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_lie_above_back",
+   "reading": "ペニバン・逆アナル・寝る・上から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     3
+    ]
+   ],
+   "row_labels": [
+    "peg：寝ている場面"
+   ],
+   "tags": "from above",
+   "role": "the navy-haired man lies on his back, the other character is behind him",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "peg_lie_above_back_2：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_lie_pov",
+   "reading": "ペニバン・逆アナル・寝る・主人公目線",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     3
+    ]
+   ],
+   "row_labels": [
+    "peg：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_lie_pov_b",
+   "reading": "ペニバン・逆アナル・寝る・主人公目線・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     3
+    ]
+   ],
+   "row_labels": [
+    "peg：寝ている場面"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [],
+   "check": true
+  },
+  {
+   "comp": "peg_lie_side",
+   "reading": "ペニバン・逆アナル・寝る・横から",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     3
+    ]
+   ],
+   "row_labels": [
+    "peg：寝ている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies on his back",
+   "posture": "lie",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "peg_lie_side_12：頭が横の端で切れている",
+    "peg_lie_side_3：頭が横の端で切れている",
+    "peg_lie_side_6：頭が上の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "peg_prone_side_back",
+   "reading": "ペニバン・逆アナル・うつ伏せ・横から・後ろから",
+   "group": "A",
+   "rows": [
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man lies face down, the other character is behind him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "peg_prone_side_back：頭が横の端で切れている",
+    "peg_prone_side_back_10：頭が横の端で切れている",
+    "peg_prone_side_back_11：頭が横の端で切れている",
+    "peg_prone_side_back_12：頭が横の端で切れている",
+    "peg_prone_side_back_13：頭が上の端で切れている",
+    "peg_prone_side_back_13：頭が横の端で切れている",
+    "peg_prone_side_back_2：頭が横の端で切れている",
+    "peg_prone_side_back_3：頭が横の端で切れている",
+    "peg_prone_side_back_4：頭が横の端で切れている",
+    "peg_prone_side_back_5：頭が横の端で切れている",
+    "peg_prone_side_back_6：頭が横の端で切れている",
+    "peg_prone_side_back_7：頭が横の端で切れている",
+    "peg_prone_side_back_9：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "rimjob_fours_behind_over_hj",
+   "reading": "お尻を舐める・四つんばい・後ろから見る・覆いかぶさる・手",
+   "group": "A",
+   "rows": [
+    [
+     "rusty",
+     0
+    ]
+   ],
+   "row_labels": [
+    "rusty：四つんばい・前かがみの場面"
+   ],
+   "tags": "from behind",
+   "role": "the navy-haired man is on all fours, the other character leans over him",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "rimjob_fours_behind_over_hj_2：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "rimjob_fours_side",
+   "reading": "お尻を舐める・四つんばい・横から",
+   "group": "A",
+   "rows": [
+    [
+     "rusty",
+     0
+    ]
+   ],
+   "row_labels": [
+    "rusty：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man is on all fours",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "rimjob_fours_side：形が読めない",
+    "rimjob_fours_side_10：形が読めない",
+    "rimjob_fours_side_11：頭が横の端で切れている",
+    "rimjob_fours_side_12：頭が上の端で切れている",
+    "rimjob_fours_side_13：頭が上の端で切れている",
+    "rimjob_fours_side_15：頭が横の端で切れている",
+    "rimjob_fours_side_16：頭が上の端で切れている",
+    "rimjob_fours_side_16：頭が横の端で切れている",
+    "rimjob_fours_side_16：形が読めない",
+    "rimjob_fours_side_3：頭が横の端で切れている",
+    "rimjob_fours_side_3：形が読めない",
+    "rimjob_fours_side_4：頭が横の端で切れている",
+    "rimjob_fours_side_4：形が読めない",
+    "rimjob_fours_side_5：頭が上の端で切れている",
+    "rimjob_fours_side_5：形が読めない",
+    "rimjob_fours_side_6：形が読めない",
+    "rimjob_fours_side_8：頭が横の端で切れている",
+    "rimjob_fours_side_8：形が読めない"
+   ],
+   "check": true
+  },
+  {
+   "comp": "straddle_lie_pov",
+   "reading": "またがる・寝る・主人公目線",
+   "group": "B",
+   "rows": [
+    [
+     "straddle",
+     0
+    ]
+   ],
+   "row_labels": [
+    "straddle：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "straddle_lie_pov：頭が横の端で切れている",
+    "straddle_lie_pov：形が読めない",
+    "straddle_lie_pov_5：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "thigh_lie_pov_on",
+   "reading": "太もも・寝る・主人公目線・上に乗る",
+   "group": "B",
+   "rows": [
+    [
+     "thigh",
+     0
+    ]
+   ],
+   "row_labels": [
+    "thigh：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "pov",
+   "role": "seen through the navy-haired man's eyes, the other character faces the viewer, the other character sits on top of the viewer",
+   "posture": "lie",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "thigh_lie_pov_on_4：翼・尻尾・触手など"
+   ],
+   "check": true
+  },
+  {
+   "comp": "two_nipple_sit_side_sandwich_whisper_b",
+   "reading": "相手2人・乳首・座る・横から・はさむ・ささやき・別の形b",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     2
+    ],
+    [
+     "nipple",
+     1
+    ]
+   ],
+   "row_labels": [
+    "multi：座っている場面",
+    "nipple：座っている場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man sits, two other characters sandwich him from the front and the back",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）／主人公が小さく見える下書きがある（幼く見えないか確かめる）",
+   "marks": [
+    "two_nipple_sit_side_sandwich_whisper_b：小物や線が残っている",
+    "two_nipple_sit_side_sandwich_whisper_b_10：翼・尻尾・触手など",
+    "two_nipple_sit_side_sandwich_whisper_b_10：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_11：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_12：頭が横の端で切れている",
+    "two_nipple_sit_side_sandwich_whisper_b_12：小物や線が残っている",
+    "two_nipple_sit_side_sandwich_whisper_b_12：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_13：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_14：小物や線が残っている",
+    "two_nipple_sit_side_sandwich_whisper_b_14：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_15：小物や線が残っている",
+    "two_nipple_sit_side_sandwich_whisper_b_15：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_16：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_17：翼・尻尾・触手など",
+    "two_nipple_sit_side_sandwich_whisper_b_17：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_2：頭が横の端で切れている",
+    "two_nipple_sit_side_sandwich_whisper_b_2：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_4：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_5：翼・尻尾・触手など",
+    "two_nipple_sit_side_sandwich_whisper_b_5：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_6：小物や線が残っている",
+    "two_nipple_sit_side_sandwich_whisper_b_6：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_7：頭が横の端で切れている",
+    "two_nipple_sit_side_sandwich_whisper_b_7：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_8：翼・尻尾・触手など",
+    "two_nipple_sit_side_sandwich_whisper_b_8：形が読めない",
+    "two_nipple_sit_side_sandwich_whisper_b_9：翼・尻尾・触手など",
+    "two_nipple_sit_side_sandwich_whisper_b_9：形が読めない"
+   ],
+   "check": false
+  },
+  {
+   "comp": "two_peg_fours_side_sandwich_peg",
+   "reading": "相手2人・ペニバン・逆アナル・四つんばい・横から・はさむ・ペニバン・逆アナル",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     0
+    ],
+    [
+     "peg",
+     2
+    ]
+   ],
+   "row_labels": [
+    "multi：四つんばい・前かがみの場面",
+    "peg：四つんばい・前かがみの場面"
+   ],
+   "tags": "from side",
+   "role": "the navy-haired man is on all fours, two other characters sandwich him from the front and the back",
+   "posture": "fours",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "two_peg_fours_side_sandwich_peg：黒い余白が残っている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "two_whisper_sit",
+   "reading": "相手2人・ささやき・座る",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     2
+    ]
+   ],
+   "row_labels": [
+    "multi：座っている場面"
+   ],
+   "tags": "",
+   "role": "the navy-haired man sits",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "two_whisper_sit：頭が上の端で切れている",
+    "two_whisper_sit：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "two_whisper_sit_front_sides",
+   "reading": "相手2人・ささやき・座る・前から・左右から",
+   "group": "A",
+   "rows": [
+    [
+     "multi",
+     2
+    ]
+   ],
+   "row_labels": [
+    "multi：座っている場面"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, two other characters are on both sides of him",
+   "posture": "sit",
+   "extra": true,
+   "why": "ツールのおすすめの行（技と姿勢が合う）",
+   "marks": [
+    "two_whisper_sit_front_sides：頭が横の端で切れている",
+    "two_whisper_sit_front_sides_2：頭が横の端で切れている"
+   ],
+   "check": true
+  },
+  {
+   "comp": "whisper_sit_front_beside",
+   "reading": "ささやき・座る・前から・横に並ぶ",
+   "group": "B",
+   "rows": [
+    [
+     "ear",
+     1
+    ],
+    [
+     "ear_soft",
+     1
+    ]
+   ],
+   "row_labels": [
+    "ear：予備（姿勢の行のどれにも当たらないとき）",
+    "ear_soft：予備（姿勢の行のどれにも当たらないとき）"
+   ],
+   "tags": "from front",
+   "role": "the navy-haired man sits, the other character is beside him",
+   "posture": "sit",
+   "extra": true,
+   "why": "技の組はあるが、姿勢の行が無いので「予備」の行に",
+   "marks": [
+    "whisper_sit_front_beside：頭が上の端で切れている",
+    "whisper_sit_front_beside：頭が横の端で切れている",
+    "whisper_sit_front_beside_2：頭が上の端で切れている",
+    "whisper_sit_front_beside_2：頭が横の端で切れている",
+    "whisper_sit_front_beside_2：1人だけ",
+    "whisper_sit_front_beside_3：頭が上の端で切れている",
+    "whisper_sit_front_beside_3：頭が横の端で切れている",
+    "whisper_sit_front_beside_3：1人だけ",
+    "whisper_sit_front_beside_4：頭が上の端で切れている",
+    "whisper_sit_front_beside_4：頭が横の端で切れている",
+    "whisper_sit_front_beside_5：頭が横の端で切れている",
+    "whisper_sit_front_beside_6：頭が上の端で切れている",
+    "whisper_sit_front_beside_6：頭が横の端で切れている",
+    "whisper_sit_front_beside_7：頭が上の端で切れている",
+    "whisper_sit_front_beside_7：頭が横の端で切れている",
+    "whisper_sit_front_beside_8：頭が上の端で切れている",
+    "whisper_sit_front_beside_8：頭が横の端で切れている",
+    "whisper_sit_front_beside_9：頭が上の端で切れている",
+    "whisper_sit_front_beside_9：頭が横の端で切れている"
+   ],
+   "check": true
+  }
+ ]
+}

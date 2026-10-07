@@ -1,0 +1,2 @@
+忍びの隠れ里,Card/Ninja_master,クエストイベント
+忍びの隠れ里【回想バトル】,Card/Ninja_master,回想バトル,$$Ninja_挑戦回数,>=,1

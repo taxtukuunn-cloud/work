@@ -1,0 +1,161 @@
+﻿MOD,敗北シナリオの本数,どのファイルに何本,カードのフォルダ,本文の元,道具のpy,zip,読む用の写し,敗北シナリオの総字数
+N1_Host_MOD_v4,28,CSV/Card\Host_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致16%）。直すのはカードのtxt。作り直すと直しが消える,gen.py,N1_Host_tools.zip[tools scen有 gen有],N1_Host_敗北シナリオ集_読む用.txt,210817
+N2_Circle_MOD_v4,28,CSV/Card\Circle_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致23%）。直すのはカードのtxt。作り直すと直しが消える,cfg.py gen_v4.py,N2_Circle_tools.zip[tools scen有 gen有],N2_Circle_敗北シナリオ集_読む用.txt,206467
+N3_Inma_MOD_v4,28,CSV/Card\Inma_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致21%）。直すのはカードのtxt。作り直すと直しが消える,cfg.py gen_v4.py,N3_Inma_tools.zip[tools scen有 gen有],N3_Inma_敗北シナリオ集_読む用.txt,212100
+N4_Android_MOD_v4,28,CSV/Card\Android_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致23%）。直すのはカードのtxt。作り直すと直しが消える,cfg.py gen_v4.py,N4_Android_tools.zip[tools scen有 gen有],N4_Android_敗北シナリオ集_読む用.txt,207674
+N5_Witch_MOD_v4,28,CSV/Card\Witch_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致24%）。直すのはカードのtxt。作り直すと直しが消える,cfg.py gen_v4.py,N5_Witch_tools.zip[tools scen有 gen有],N5_Witch_敗北シナリオ集_読む用.txt,208313
+N6_Puppet_MOD_v4,28,Picture/Card\Puppet_master.txt(28),Picture/Card,B カードの方が新しい（scenは古いまま・一致26%）。直すのはカードのtxt。作り直すと直しが消える,cfg.py gen_v4.py,N6_Puppet_tools.zip[tools scen有 gen有],N6_Puppet_敗北シナリオ集_読む用.txt,204815
+N7_Inmon_MOD_v4,28,CSV/Card\Inmon_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致21%）。直すのはカードのtxt。作り直すと直しが消える,cfg.py gen_v4.py,N7_Inmon_tools.zip[tools scen有 gen有],N7_Inmon_敗北シナリオ集_読む用.txt,208539
+N8_Esthe,0,,,カードに敗北シナリオなし,,N8_Esthe_MOD_最新版.zip[tools scen有 gen有],,0
+N8_Esthe_MOD_v4,28,CSV/Card\Esthe_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致32%）。直すのはカードのtxt。作り直すと直しが消える,cfg.py gen_v4.py,N8_Esthe_tools.zip[tools scen有 gen有],N8_Esthe_敗北シナリオ集_読む用.txt,205031
+N9_Clinic_MOD_v4,28,CSV/Card\Clinic_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致28%）。直すのはカードのtxt。作り直すと直しが消える,cfg.py gen_v4.py,N9_Clinic_tools.zip[tools scen有 gen有],N9_Clinic_敗北シナリオ集_読む用.txt / _控え_四つん這い合わせ前/N9_Clinic_敗北シナリオ集_読む用.txt,207169
+N10_Lab_MOD_v4,28,CSV/Card\Lab_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致29%）。直すのはカードのtxt。作り直すと直しが消える,cfg.py gen_v4.py,N10_Lab_tools.zip[tools scen有 gen有],N10_Lab_敗北シナリオ集_読む用.txt,205546
+N11_Slime_MOD_v4,28,CSV/Card\Slime_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致19%）。直すのはカードのtxt。作り直すと直しが消える,cfg.py gen_v4.py,N11_Slime_tools.zip[tools scen有 gen有],N11_Slime_敗北シナリオ集_読む用.txt,210791
+N12_Salon_MOD_v4,28,CSV/Card\Salon_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致29%）。直すのはカードのtxt。作り直すと直しが消える,,N12_Salon_tools.zip[tools scen有 gen有],N12_Salon_敗北シナリオ集_読む用.txt,206483
+N13_CrossCafe_MOD_v4,28,CSV/Card\CrossCafe_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致24%）。直すのはカードのtxt。作り直すと直しが消える,,N13_CrossCafe_tools.zip[tools scen有 gen有],N13_CrossCafe_敗北シナリオ集_読む用.txt,207676
+N14_Idol_MOD_v4,28,CSV/Card\Idol_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致30%）。直すのはカードのtxt。作り直すと直しが消える,,N14_Idol_tools.zip[tools scen有 gen有],N14_Idol_敗北シナリオ集_読む用.txt,208034
+N15_Dorm_MOD_v4,28,CSV/Card\Dorm_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致28%）。直すのはカードのtxt。作り直すと直しが消える,,N15_Dorm_tools.zip[tools scen有 gen有],N15_Dorm_敗北シナリオ集_読む用.txt,210368
+N16_Alraune_MOD,28,CSV/Card\Alraune_master.txt(28),CSV/Card,C カードのtxtに直に書いてある（古い丸ごとzipあり）,,N16_Alraune_MOD.zip[MOD丸ごとのzip scen有 gen有]; N16_Alraune_MOD_v4.zip[MOD丸ごとのzip scen有 gen有],読む用_敗北シナリオ集.md / 読む用_敗北シナリオ集_v4.md,208966
+N17_Scylla_MOD,28,CSV/Card\Scylla_master.txt(28),CSV/Card / N17_Scylla_MOD/Card(古い写し・数えない),B カードの方が新しい（scenは古いまま・一致14%）。直すのはカードのtxt。作り直すと直しが消える,N17_Scylla_MOD/tools/gen.py,N17_Scylla_MOD.zip[MOD丸ごとのzip scen有 gen有]; N17_Scylla_MOD_v4.zip[MOD丸ごとのzip scen有 gen有],N17_Scylla_敗北シナリオ集_読む用.txt / N17_Scylla_MOD/N17_Scylla_敗北シナリオ集_読む用.txt,216991
+N18_Lamia_MOD,28,CSV/Card\Lamia_master.txt(28),CSV/Card,C カードのtxtに直に書いてある（古い丸ごとzipあり）,,N18_Lamia_MOD_v4.zip[MOD丸ごとのzip scen有 gen有],N18_Lamia_シナリオ集.md / 読む用_敗北シナリオ集_v4.md,216185
+N19_Twins_MOD,28,CSV/Card\Twins_master.txt(28),CSV/Card,C カードのtxtに直に書いてある（古い丸ごとzipあり）,,N19_Twins_MOD.zip[MOD丸ごとのzip scen有 gen有],読む用_敗北シナリオ集.txt / _控え_ドレインの絵合わせ前/読む用_敗北シナリオ集.txt,212197
+N20_Vampire_MOD,28,CSV/Card\Vampire_master.txt(28),CSV/Card,C カードのtxtに直に書いてある（古い丸ごとzipあり）,,N20_Vampire_MOD.zip[MOD丸ごとのzip scen有 gen有],読む用_敗北シナリオ集.md,209377
+N21_Hive_MOD,28,CSV/Card\Hive_master.txt(28),CSV/Card,C カードのtxtに直に書いてある（古い丸ごとzipあり）,,N21_Hive_MOD_v4.zip[MOD丸ごとのzip scen有 gen有],読む用_敗北シナリオ集_v4.md,217310
+N22_Prison_MOD,28,CSV/Card\Prison_master.txt(28),CSV/Card,C カードのtxtに直に書いてある,,,N22_Prison_シナリオ集.md,208379
+N23_Heels_MOD,28,CSV/Card\Heels_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N23_Heels_敗北シナリオ集_読む用.txt,203325
+N24_Maid_MOD,28,CSV/Card\Maid_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N24_Maid_敗北シナリオ集_読む用.txt,204732
+N25_Auction_MOD,28,CSV/Card\Auction_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N25_Auction_敗北シナリオ集_読む用.txt,204775
+N26_Kitsune_MOD,28,CSV/Card\Kitsune_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致19%）。直すのはカードのtxt。作り直すと直しが消える,,tools.zip[tools scen有 gen有],N26_Kitsune_敗北シナリオ集_読む用.txt,215350
+N27_Knight_MOD,28,CSV/Card\Knight_master.txt(28),CSV/Card,C カードのtxtに直に書いてある（古い丸ごとzipあり）,,N27_Knight_MOD.zip[MOD丸ごとのzip scen有 gen有],読む用_敗北シナリオ集.md,211771
+N28_Gym_MOD,28,CSV/Card\Gym_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致23%）。直すのはカードのtxt。作り直すと直しが消える,,tools.zip[tools scen有 gen有],N28_Gym_敗北シナリオ集_読む用.txt,213446
+N29_Summoner_MOD,28,CSV/Card\Summoner_master.txt(28),CSV/Card,B カードの方が新しい（scenは古いまま・一致13%）。直すのはカードのtxt。作り直すと直しが消える,,tools.zip[tools scen有 gen有],N29_Summoner_敗北シナリオ集_読む用.txt,225475
+N30_Ninja_MOD,28,CSV/Card\Ninja_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N30_Ninja_敗北シナリオ集_読む用.txt,214336
+N31_Onsen_MOD,28,CSV/Card\Onsen_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,tools/cfg.py tools/gen_v4.py,tools.zip[tools scen有 gen有],N31_Onsen_読む用シナリオ集.txt,202172
+N32_Arachne_MOD,28,CSV/Card\Arachne_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,,tools.zip[tools scen有 gen有],N32_Arachne_読む用シナリオ集.txt,203582
+N33_Dream_MOD,28,CSV/Card\Dream_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが99%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N33_Dream_読む用シナリオ集.txt,205318
+N34_Library_MOD,28,CSV/Card\Library_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N34_Library_読む用シナリオ集.txt,201833
+N35_Angel_MOD,28,CSV/Card\Angel_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N35_Angel_読む用シナリオ集.txt,201340
+N36_Harem_MOD,28,CSV/Card\Harem_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが99%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N36_Harem_読む用シナリオ集.txt,209129
+N37_Dragon_MOD,28,CSV/Card\Dragon_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが99%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N37_Dragon_読む用シナリオ集.txt,203557
+N38_Tutor_MOD,28,CSV/Card\Tutor_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N38_Tutor_読む用シナリオ集.txt,205219
+N39_DarkElf_MOD,28,CSV/Card\DarkElf_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが99%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N39_DarkElf_読む用シナリオ集.txt,203593
+N40_Casino_MOD,28,CSV/Card\Casino_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが99%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N40_Casino_読む用シナリオ集.txt,205308
+N41_Nekomata_MOD,28,CSV/Card\Nekomata_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N41_Nekomata_読む用シナリオ集.txt,203952
+N42_Snow_MOD,28,CSV/Card\Snow_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが99%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N42_Snow_読む用シナリオ集.txt,202772
+N43_Oni_MOD,28,CSV/Card\Oni_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが99%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N43_Oni_読む用シナリオ集.txt,203110
+N44_Mimic_MOD,28,CSV/Card\Mimic_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが99%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N44_Mimic_読む用シナリオ集.txt,205383
+N45_Train_MOD,28,CSV/Card\Train_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが99%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N45_Train_読む用シナリオ集.txt,209484
+N46_ShowPub_MOD,28,CSV/Card\ShowPub_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,tools/cfg.py tools/gen_v4.py,,N46_ShowPub_読む用シナリオ集.txt,80935
+N47_Oiran_MOD,28,CSV/Card\Oiran_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N47_Oiran_読む用シナリオ集.txt,80252
+N48_Office_MOD,28,CSV/Card\Office_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N48_Office_読む用シナリオ集.txt,81851
+N49_Lingerie_MOD,28,CSV/Card\Lingerie_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N49_Lingerie_読む用シナリオ集.txt,79519
+N50_GhostShip_MOD,28,CSV/Card\GhostShip_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N50_GhostShip_読む用シナリオ集.txt,79965
+N51_Alchemy_MOD,28,CSV/Card\Alchemy_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N51_Alchemy_読む用シナリオ集.txt,80117
+N52_Masque_MOD,28,CSV/Card\Masque_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N52_Masque_読む用シナリオ集.txt,81666
+N53_Fortune_MOD,28,CSV/Card\Fortune_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N53_Fortune_読む用シナリオ集.txt,79768
+N54_Revue_MOD,28,CSV/Card\Revue_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N54_Revue_読む用シナリオ集.txt,82032
+N55_Studio_MOD,28,CSV/Card\Studio_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N55_Studio_読む用シナリオ集.txt,81924
+N56_Luna_MOD,28,CSV/Card\Luna_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N56_Luna_読む用シナリオ集.txt,81191
+N57_Police_MOD,28,CSV/Card\Police_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N57_Police_読む用シナリオ集.txt,80559
+N58_Circus_MOD,28,CSV/Card\Circus_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N58_Circus_読む用シナリオ集.txt,82674
+N59_Candy_MOD,28,CSV/Card\Candy_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N59_Candy_読む用シナリオ集.txt,81665
+N60_Starship_MOD,28,CSV/Card\Starship_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが97%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v4.py,,N60_Starship_読む用シナリオ集.txt,81326
+N61_Konoha_MOD,28,CSV/Card\Konoha_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N61_Konoha_読む用シナリオ集.txt,102774
+N62_Eruru_MOD,28,CSV/Card\Eruru_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N62_Eruru_読む用シナリオ集.txt,101860
+N63_Exam_MOD,28,CSV/Card\Exam_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N63_Exam_読む用シナリオ集.txt,107338
+N64_Sister_MOD,28,CSV/Card\Sister_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N64_Sister_読む用シナリオ集.txt,108522
+N65_Flower_MOD,28,CSV/Card\Flower_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N65_Flower_読む用シナリオ集.txt,107959
+N66_Tavern_MOD,28,CSV/Card\Tavern_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N66_Tavern_読む用シナリオ集.txt,107988
+N67_Octa_MOD,28,CSV/Card\Octa_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N67_Octa_読む用シナリオ集.txt,107074
+N68_Patra_MOD,28,CSV/Card\Patra_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N68_Patra_読む用シナリオ集.txt,106223
+N69_Cammy_MOD,28,CSV/Card\Cammy_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N69_Cammy_読む用シナリオ集.txt,108277
+N70_Neneko_MOD,28,CSV/Card\Neneko_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N70_Neneko_読む用シナリオ集.txt,107527
+N71_Eiraira_MOD,28,CSV/Card\Eiraira_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N71_Eiraira_読む用シナリオ集.txt,107012
+N72_Yatsume_MOD,28,CSV/Card\Yatsume_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N72_Yatsume_読む用シナリオ集.txt,107734
+N73_Musashi_MOD,28,CSV/Card\Musashi_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py tools/_控え_脇と乳首の直し前/cfg.py,,N73_Musashi_読む用シナリオ集.txt / tools/_控え_脇と乳首の直し前/N73_Musashi_読む用シナリオ集.txt,108154
+N74_Necro_MOD,28,CSV/Card\Necro_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N74_Necro_読む用シナリオ集.txt,102304
+N75_SEruru_MOD,28,CSV/Card\SEruru_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,tools/cfg.py tools/gen_v5.py,,N75_SEruru_読む用シナリオ集.txt,107620
+N76_Gemini_MOD,28,CSV/Card\Gemini_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：フォルダ,,tools.zip[tools scen有 gen有],N76_Gemini_読む用シナリオ集.txt,107586
+N77_Sylvia_MOD,28,CSV/Card\Sylvia_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N77_Sylvia_読む用シナリオ集.txt,108012
+N78_Kiss_MOD,28,CSV/Card\Kiss_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N78_Kiss_読む用シナリオ集.txt,109735
+N79_Perfume_MOD,28,CSV/Card\Perfume_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N79_Perfume_読む用シナリオ集.txt,107716
+N80_Queen_MOD,28,CSV/Card\Queen_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N80_Queen_読む用シナリオ集.txt,107806
+N81_Inn_MOD,28,CSV/Card\Inn_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N81_Inn_読む用シナリオ集.txt,107957
+N82_Ranch_MOD,28,CSV/Card\Ranch_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N82_Ranch_読む用シナリオ集.txt,107823
+N83_Tengu_MOD,28,CSV/Card\Tengu_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N83_Tengu_読む用シナリオ集.txt,107575
+N84_Centaur_MOD,28,CSV/Card\Centaur_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N84_Centaur_読む用シナリオ集.txt,107742
+N85_Labyrinth_MOD,28,CSV/Card\Labyrinth_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N85_Labyrinth_読む用シナリオ集.txt,107338
+N86_Military_MOD,28,CSV/Card\Military_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N86_Military_読む用シナリオ集.txt,107307
+N87_Atelier_MOD,28,CSV/Card\Atelier_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N87_Atelier_読む用シナリオ集.txt,107489
+N88_Tea_MOD,28,CSV/Card\Tea_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N88_Tea_読む用シナリオ集.txt,107511
+N89_Bride_MOD,28,CSV/Card\Bride_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N89_Bride_読む用シナリオ集.txt,107230
+N90_General_MOD,28,CSV/Card\General_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N90_General_読む用シナリオ集.txt,107868
+N91_Underworld_MOD,28,CSV/Card\Underworld_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N91_Underworld_読む用シナリオ集.txt,107404
+N92_Spirit_MOD,28,CSV/Card\Spirit_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N92_Spirit_読む用シナリオ集.txt,107658
+N93_Moth_MOD,28,CSV/Card\Moth_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N93_Moth_読む用シナリオ集.txt,107520
+N94_Werewolf_MOD,28,CSV/Card\Werewolf_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N94_Werewolf_読む用シナリオ集.txt,107641
+N95_Smith_MOD,28,CSV/Card\Smith_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N95_Smith_読む用シナリオ集.txt,108338
+N96_Clock_MOD,28,CSV/Card\Clock_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N96_Clock_読む用シナリオ集.txt,108364
+N97_Mirror_MOD,28,CSV/Card\Mirror_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N97_Mirror_読む用シナリオ集.txt,107666
+N98_Beach_MOD,28,CSV/Card\Beach_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N98_Beach_読む用シナリオ集.txt,107772
+N99_Medusa_MOD,28,CSV/Card\Medusa_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N99_Medusa_読む用シナリオ集.txt,107634
+N100_Sphinx_MOD,28,CSV/Card\Sphinx_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N100_Sphinx_読む用シナリオ集.txt,107415
+N101_Valkyrie_MOD,28,CSV/Card\Valkyrie_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N101_Valkyrie_読む用シナリオ集.txt,107806
+N102_Pawn_MOD,28,CSV/Card\Pawn_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N102_Pawn_読む用シナリオ集.txt,107032
+N103_Amazon_MOD,28,CSV/Card\Amazon_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N103_Amazon_読む用シナリオ集.txt,107832
+N104_Shrine_MOD,28,CSV/Card\Shrine_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N104_Shrine_読む用シナリオ集.txt,108769
+N105_Sky_MOD,28,CSV/Card\Sky_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N105_Sky_読む用シナリオ集.txt,108173
+N106_Genji_MOD,28,CSV/Card\Genji_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N106_Genji_読む用シナリオ集.txt,108314
+N107_Tensho_MOD,28,CSV/Card\Tensho_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N107_Tensho_読む用シナリオ集.txt,108472
+N108_Queens_MOD,28,CSV/Card\Queens_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N108_Queens_読む用シナリオ集.txt,110245
+N109_Yamatai_MOD,28,CSV/Card\Yamatai_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N109_Yamatai_読む用シナリオ集.txt,109770
+N110_Poseidon_MOD,28,CSV/Card\Poseidon_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N110_Poseidon_読む用シナリオ集.txt,108266
+N111_Seraph_MOD,28,CSV/Card\Seraph_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N111_Seraph_読む用シナリオ集.txt,110305
+N112_Sphinx2_MOD,28,CSV/Card\Sphinx2_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N112_Sphinx2_読む用シナリオ集.txt,108767
+N113_Ranch2_MOD,28,CSV/Card\Ranch2_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N113_Ranch2_読む用シナリオ集.txt,111358
+N114_PandoraFarm_MOD,28,CSV/Card\PandoraFarm_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N114_PandoraFarm_読む用シナリオ集.txt,109400
+N115_Hakai_MOD,28,CSV/Card\Hakai_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N115_Hakai_読む用シナリオ集.txt,109935
+N116_Sosei_MOD,28,CSV/Card\Sosei_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N116_Sosei_読む用シナリオ集.txt,108715
+N117_Konton_MOD,28,CSV/Card\Konton_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N117_Konton_読む用シナリオ集.txt,109489
+N118_Yumir_MOD,28,CSV/Card\Yumir_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N118_Yumir_読む用シナリオ集.txt,108932
+N119_Venus_MOD,28,CSV/Card\Venus_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N119_Venus_読む用シナリオ集.txt,108172
+N120_Diamond_MOD,28,CSV/Card\Diamond_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N120_Diamond_読む用シナリオ集.txt,110308
+N121_Arena_MOD,28,CSV/Card\Arena_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N121_Arena_読む用シナリオ集.txt,108452
+N122_Queen2_MOD,28,CSV/Card\Queen2_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N122_Queen2_読む用シナリオ集.txt,110746
+N124_Dominia2_MOD,28,CSV/Card\Dominia2_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N124_Dominia2_読む用シナリオ集.txt,111934
+N125_LastTower_MOD,28,CSV/Card\LastTower_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N125_LastTower_読む用シナリオ集.txt,108030
+N126_LastRoad_MOD,28,CSV/Card\LastRoad_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N126_LastRoad_読む用シナリオ集.txt,109900
+N127_Kargos1_MOD,28,CSV/Card\Kargos1_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N127_Kargos1_読む用シナリオ集.txt,107346
+N128_Kargos2_MOD,28,CSV/Card\Kargos2_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N128_Kargos2_読む用シナリオ集.txt,109375
+N129_Shrift1_MOD,28,CSV/Card\Shrift1_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N129_Shrift1_読む用シナリオ集.txt,112432
+N130_Shrift2_MOD,28,CSV/Card\Shrift2_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N130_Shrift2_読む用シナリオ集.txt,109926
+N131_Moon1_MOD,28,CSV/Card\Moon1_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N131_Moon1_読む用シナリオ集.txt,107684
+N132_Moon2_MOD,28,CSV/Card\Moon2_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N132_Moon2_読む用シナリオ集.txt,107500
+N133_REso_MOD,28,CSV/Card\REso_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N133_REso_読む用シナリオ集.txt,108787
+N134_Witches_MOD,28,CSV/Card\Witches_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N134_Witches_読む用シナリオ集.txt,109415
+N135_LostF_MOD,28,CSV/Card\LostF_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N135_LostF_読む用シナリオ集.txt,109619
+N136_Hunter_MOD,28,CSV/Card\Hunter_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N136_Hunter_読む用シナリオ集.txt,109934
+N137_Grail_MOD,28,CSV/Card\Grail_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N137_Grail_読む用シナリオ集.txt,110285
+N138_Nympho_MOD,28,CSV/Card\Nympho_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N138_Nympho_読む用シナリオ集.txt,107044
+N139_Alfimia_MOD,28,CSV/Card\Alfimia_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N139_Alfimia_読む用シナリオ集.txt,109427
+N140_Honey_MOD,28,CSV/Card\Honey_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N140_Honey_読む用シナリオ集.txt,108567
+N141_Bikyaku_MOD,28,CSV/Card\Bikyaku_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N141_Bikyaku_読む用シナリオ集.txt,112676
+N142_Daydream_MOD,28,CSV/Card\Daydream_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N142_Daydream_読む用シナリオ集.txt,108208
+N143_VampCastle_MOD,28,CSV/Card\VampCastle_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N143_VampCastle_読む用シナリオ集.txt,113501
+N144_Plansect_MOD,28,CSV/Card\Plansect_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N144_Plansect_読む用シナリオ集.txt,110408
+N145_Spiders_MOD,28,CSV/Card\Spiders_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N145_Spiders_読む用シナリオ集.txt,107586
+N146_Minotaur_MOD,28,CSV/Card\Minotaur_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N146_Minotaur_読む用シナリオ集.txt,111596
+N147_Volcano_MOD,28,CSV/Card\Volcano_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N147_Volcano_読む用シナリオ集.txt,109898
+N148_SuccVillage_MOD,28,CSV/Card\SuccVillage_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N148_SuccVillage_読む用シナリオ集.txt,109928
+N149_Amos_MOD,28,CSV/Card\Amos_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N149_Amos_読む用シナリオ集.txt,107435
+N150_SnowAngel_MOD,28,CSV/Card\SnowAngel_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N150_SnowAngel_読む用シナリオ集.txt,111200
+N151_OpenSea_MOD,28,CSV/Card\OpenSea_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N151_OpenSea_読む用シナリオ集.txt,110784
+N152_Madam_MOD,28,CSV/Card\Madam_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N152_Madam_読む用シナリオ集.txt,109687
+N153_BlackCastle_MOD,28,CSV/Card\BlackCastle_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N153_BlackCastle_読む用シナリオ集.txt,110930
+N154_RedMountain_MOD,28,CSV/Card\RedMountain_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N154_RedMountain_読む用シナリオ集.txt,108231
+N155_ElfNinja_MOD,28,CSV/Card\ElfNinja_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N155_ElfNinja_読む用シナリオ集.txt,107371
+N156_Research_MOD,28,CSV/Card\Research_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N156_Research_読む用シナリオ集.txt,111860
+N157_LilyMansion_MOD,28,CSV/Card\LilyMansion_master.txt(28),CSV/Card,A 道具のデータ(scen)から作り直す作り。scenとカードが98%一致。scenの置き場所：tools.zipの中だけ,,tools.zip[tools scen有 gen有],N157_LilyMansion_読む用シナリオ集.txt,107974
+Rosetta_MOD,5,Card\Rosetta_master.txt(5),Card,C カードのtxtに直に書いてある,,,,54372
+Ruin_MOD,5,Card\Ruin_master.txt(5),Card,C カードのtxtに直に書いてある,,,,30989
+Yakai_MOD,2,CSV/Card\Yakai_master.txt(2),CSV/Card,C カードのtxtに直に書いてある,,,,138511

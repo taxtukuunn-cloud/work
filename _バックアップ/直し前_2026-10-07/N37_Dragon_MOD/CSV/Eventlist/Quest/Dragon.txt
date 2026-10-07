@@ -1,0 +1,2 @@
+竜の宝物庫（竜の女王　イグニス）,Card/Dragon_master,クエストイベント
+竜の宝物庫【回想バトル】,Card/Dragon_master,回想バトル,$$Dragon_挑戦回数,>=,1

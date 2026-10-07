@@ -1,0 +1,2 @@
+スフィンクスの謎（スフィンクス　ネフェルカ）,Card/Sphinx_master,クエストイベント
+スフィンクスの謎【回想バトル】,Card/Sphinx_master,回想バトル,$$Sphinx_挑戦回数,>=,1

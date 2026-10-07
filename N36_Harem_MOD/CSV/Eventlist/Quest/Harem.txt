@@ -1,0 +1,2 @@
+砂漠の後宮（女王　シェヘラ）,Card/Harem_master,クエストイベント
+砂漠の後宮【回想バトル】,Card/Harem_master,回想バトル,$$Harem_挑戦回数,>=,1

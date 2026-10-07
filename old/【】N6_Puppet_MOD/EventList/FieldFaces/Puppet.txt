@@ -1,0 +1,1 @@
+#Puppet/Puppet_master.png,Card/Puppet_master,フィールドイベント,場所,==,&&場所モルゲン

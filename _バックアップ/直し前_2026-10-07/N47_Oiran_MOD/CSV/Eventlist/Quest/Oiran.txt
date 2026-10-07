@@ -1,0 +1,2 @@
+朧廓の花魁（花魁　ユウガオ）,Card/Oiran_master,クエストイベント
+朧廓の花魁【回想バトル】,Card/Oiran_master,回想バトル,$$Oiran_挑戦回数,>=,1

@@ -1,0 +1,1 @@
+#Witch/Witch_master.png,Card/Witch_master,フィールドイベント,場所,==,&&場所モルゲン

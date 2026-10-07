@@ -1,0 +1,2 @@
+ギルドの胞子調査（フラワー）,Card/Flower_master,クエストイベント
+ギルドの胞子調査【回想バトル】,Card/Flower_master,回想バトル,$$Flower_挑戦回数,>=,1

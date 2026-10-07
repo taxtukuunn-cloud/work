@@ -1,0 +1,122 @@
+# N81 宿の看板娘の夜の顔（Inn）画像データ。登場人物は全員20歳以上。女性のみ（全員サキュバス）。女装なし。
+# アネットは昼（人間の姿：まとめ髪・生成りのブラウスに深緑のエプロンドレス）と夜（角と翼・ほどいた髪・黒いナイトドレス）の二つの姿。
+# tags は共通の見た目だけにして、姿は場面の行為文に書く。責めの絵は夜の姿、朝の配膳の絵だけ昼の姿。
+# 挿入はノクティ（黒い革の帯）・オルテンシア（紫の帯）のペニバンだけ。宿の生活感（シーツ・盆・ランタン・棚の小瓶）を一つ入れる。小瓶・宿帳は文字なし。
+NIGHT = "the waitress in her night succubus form with small curved horns, black bat wings, long loose hair and a black nightdress"
+DAY = "the waitress in her daytime human form with her hair tied up, a cream blouse and a dark green apron dress"
+ST = {"pen": "strapon"}
+DATA = {
+ "code": "Inn",
+ "world": "cozy medieval fantasy inn at night, wooden walls and floorboards, warm orange lantern light, fresh white linen, evening primrose flowers outside the window, detailed background",
+ "bg": "cozy medieval inn guest room at night, wooden bed with fresh white sheets, lit lantern on a side table, window with evening primrose flowers and moonlight",
+ "josou": None,
+ "chars": {
+   "m": {"type": "woman", "jp": "アネット",
+         "tags": "adult woman, mature female, mature face, sharp adult features, 30 years old, adult proportions, beautiful detailed eyes, long legs, tall, voluptuous, pink hair, very long hair, red eyes, huge breasts",
+         "name": "the tall pink-haired inn waitress",
+         "pose": "night succubus form, small curved horns, black bat wings, long loose hair, black nightdress, holding a lit lantern, sweet seductive smile, looking at viewer"},
+   "e1": {"type": "woman", "jp": "リネア",
+          "tags": "adult woman, mature female, mature face, 27 years old, adult proportions, beautiful detailed eyes, long legs, succubus, flaxen hair, long hair, green eyes, small horns, thin succubus tail, off-white linen dress, rolled-up sleeves, laundry maid, large breasts",
+          "name": "the flaxen-haired laundry maid in an off-white dress",
+          "pose": "holding a wicker laundry basket of white sheets on her hip, gentle droopy-eyed smile, looking at viewer"},
+   "e2": {"type": "woman", "jp": "ハニカ",
+          "tags": "adult woman, mature female, mature face, 24 years old, adult proportions, beautiful detailed eyes, long legs, succubus, red hair, hair bun, amber eyes, small black bat wings, white chef coat, apron, inn cook, large breasts",
+          "name": "the red-haired cook in a white chef coat",
+          "pose": "holding a jar of golden honey and licking honey off her finger, cheerful grin, looking at viewer"},
+   "e3": {"type": "woman", "jp": "ノクティ",
+          "tags": "adult woman, mature female, mature face, 25 years old, adult proportions, beautiful detailed eyes, long legs, succubus, black hair, short hair, red eyes, bat wings, black hooded cape, night watch, holding a lantern, medium breasts",
+          "name": "the black-haired night watch in a black cape",
+          "pose": "holding a lantern up, sleepy half-closed eyes, faint smile, looking at viewer"},
+   "boss": {"type": "woman", "jp": "オルテンシア",
+            "tags": "adult woman, mature female, mature face, sharp adult features, 38 years old, adult proportions, beautiful detailed eyes, long legs, tall, voluptuous, succubus, purple hair, long wavy hair, gold eyes, large curved horns, large bat wings, purple gown-like dress, soft shawl, landlady, huge breasts",
+            "name": "the purple-haired landlady in a purple gown and shawl",
+            "pose": "arms slightly open as if inviting a hug, warm motherly smile, looking at viewer"},
+ },
+ "places": {
+   "room":    "guest room at night, creaking wooden bed with fresh white sheets, lit lantern, evening primrose outside the window",
+   "corner":  "empty corner room upstairs, furniture covered with white cloths, moonlight through the window",
+   "hall":    "inn corridor at night, creaking floorboards, lanterns at intervals, light leaking from door gaps",
+   "dining_am": "inn dining hall in the morning, sunlight, fresh bread steaming on wooden tables",
+   "dining_pm": "inn dining hall after closing, chairs upturned on tables, embers in the fireplace",
+   "kitchen": "inn kitchen, wooden shelf of small glass vials glowing pale gold, warm stove, flour and honey on the worktable",
+   "pantry":  "pantry, rows of honey jars without labels, dried herbs hanging, cool stone walls",
+   "laundry": "inn backyard laundry, white sheets billowing on clotheslines, wooden washtub, sunshine",
+   "linen":   "linen room, piles of folded white sheets and pillows, soft mountain of linen",
+   "bath":    "inn bathhouse, wooden bathtub, steam, fresh bath towels, dressing area",
+   "desk":    "inn front desk, open guest register without text, small hand bell, ring of keys",
+   "attic":   "attic night watch room, sloped ceiling, lantern, narrow bed",
+   "terrace": "small moon-viewing balcony, long bench, night breeze, pale yellow evening primrose, full moon",
+   "parlor":  "landlady's parlor, purple drapes, large sofa in front of a fireplace, warm glow",
+   "master_bed": "landlady's bedroom, large canopy bed, thick feather duvet, soft sinking pillows",
+ },
+ "atk": {
+   "m1": ("dining_pm", "he sits on a chair, " + NIGHT + " leans over him placing a tray of warm milk and honey bread, unbuttoning her nightdress to press her deep cleavage close to his face, teasing smile"),
+   "m2": ("room", "he lies on his back in bed pretending to sleep, " + NIGHT + " straddles over him with her wings spread, kissing him deeply, tongues, a thread of saliva dripping into his mouth, faint pale gold glow at their lips"),
+   "m3": ("room", "they lie in bed side by side on two pillows, " + NIGHT + " cuddles him from the side licking his ear, his penis squeezed between her thighs, thighjob, lantern light"),
+   "e1": ("laundry", "he is wrapped tightly from neck to feet in a fresh white sheet like a cocoon, the laundry maid hugs him from above, stroking his chest through the sheet, billowing sheets on the clotheslines"),
+   "e2": ("kitchen", "he lies on his back on the kitchen worktable, the cook drips golden honey on his nipple with her finger and licks it off, honey jar beside, honey trickling over his chest, shelf of glowing vials"),
+   "e3": ("hall", "he slumps drowsily against the corridor wall, the night watch leans to his ear whispering a lullaby, holding up her lantern, faint sleepy magic sparkles around his head, no hands on him"),
+   "boss": ("parlor", "on the large sofa by the fireplace, he lies with his face buried in the landlady's huge chest, the landlady strokes his head with one hand and pinches his nipple with the other, shawl draped over him"),
+ },
+ "atk_desc": {
+   "m1": "the waitress serves a late-night tray while showing off her cleavage.",
+   "m2": "the waitress sneaks into his bed and drains his magic with a kiss.",
+   "m3": "the waitress lies beside him licking his ear and squeezing him with her thighs.",
+   "e1": "the laundry maid wraps him in a fresh white sheet and hugs him.",
+   "e2": "the cook tastes honey from his nipples.",
+   "e3": "the night watch sings him to the edge of sleep.",
+   "boss": "the landlady puts him to sleep in her bosom.",
+ },
+ "lose": {
+   # アネット 技1（看板娘のおもてなし・胸）
+   "btl_m1":     ("dining_pm", "he sits on a chair in the closed dining hall, " + NIGHT + " bends over him with her nightdress unbuttoned, cleavage near his face, kissing him deeply, pale gold glow at their lips, a late-night tray on the table, cum on his thighs"),
+   "onani_m1":   ("hall", "sitting alone on the floor against his room door, sucking two of his own fingers, the other fingertip tracing his lips, penis untouched, " + NIGHT + " stands far away down the corridor holding a lantern, watching"),
+   "inochi_m1":  ("desk", "he leans on the front desk, " + NIGHT + " leans over the counter with his face held between her breasts, then kisses him deeply, the open guest register without text under them, cum dripping down the counter"),
+   "onedari_m1": ("kitchen", "he sits on a stool before the shelf of glowing vials holding a pen over the open register without text, " + NIGHT + " hugs him to her unbuttoned cleavage and kisses him deeply, cum on the floor"),
+   # アネット 技2（★夜這いの口づけ）
+   "btl_m2":     ("room", "he lies on his back in the creaking bed, " + NIGHT + " straddles him with wings spread, kissing him deeply, tongues, faint pale gold glow flowing from his lips to hers, her hand stroking his penis, handjob, cum on the sheets"),
+   "onani_m2":   ("corner", "lying alone under a blanket among cloth-covered furniture, sucking his own fingers deeply as if being kissed, hips trembling, penis untouched, " + NIGHT + " stands far away in the shadow of the white cloths, watching"),
+   "inochi_m2":  ("bath", "he sits on the edge of the wooden bathtub in the steam, " + NIGHT + " holds his face and kisses him in a long deep kiss, tongues, saliva trail, dawn light in the window, cum in the water"),
+   "onedari_m2": ("terrace", "on the long bench under the full moon, he sits with the open register without text on his lap, " + NIGHT + " wraps him in her black wings kissing him deeply, a black feather on the bench, cum dripping"),
+   # アネット 技3（添い寝・耳＋股間）
+   "btl_m3":     ("room", "they lie in bed side by side on two pillows, " + NIGHT + " licks his ear with her tongue deep in it, his penis squeezed between her thighs, thighjob, cum on her thighs, his mouth open, lantern light"),
+   "onani_m3":   ("linen", "lying alone buried in the soft pile of white linen, tracing his own ear with a wet fingertip, the other finger on his lips, penis untouched, " + NIGHT + " stands far away by the linen shelves, watching"),
+   "inochi_m3":  ("terrace", "they lie side by side on the long bench under the moon, " + NIGHT + " cuddles him licking his ear, his penis squeezed between her thighs, thighjob, his head drooping in a doze, cum on the bench"),
+   "onedari_m3": ("desk", "on a narrow nap cot behind the front desk, " + NIGHT + " lies beside him kissing his ear, his penis squeezed between her thighs, thighjob, small hand bell on the desk, cum on the blanket"),
+   # リネア（洗いたてのシーツ／物干しの脚）
+   "btl_e1":     ("laundry", "he is wrapped tightly in a fresh white sheet up to his neck, lying on a laundry basket of sheets, the laundry maid hugs him from above, her bare foot slipped into the sheet hem rubbing his penis, footjob, billowing sheets, cum on the sheet"),
+   "onani_e1":   ("room", "lying alone in bed wrapped tightly in a fresh white sheet from neck to feet, stroking his own chest through the sheet, penis untouched, the laundry maid stands far away by the door holding a laundry basket, watching"),
+   "inochi_e1":  ("linen", "he is sunk in the soft pile of linen wrapped in many layers of white sheets, the laundry maid lies on top hugging him, her bare foot slipped into the sheet hems rubbing his penis, footjob, cum on the sheets"),
+   "onedari_e1": ("bath", "in the dressing area of the bathhouse, he is wrapped in a large bath towel, the laundry maid hugs him from behind drying him, her bare foot slipped under the towel hem rubbing his penis, footjob, steam"),
+   # ハニカ（蜂蜜の味見／捏ね手）
+   "btl_e2":     ("kitchen", "he lies on his back on the kitchen worktable, the cook licks golden honey off his nipple, her other hand kneading his penis like bread dough, handjob, honey trickling over his chest, cum on the flour, shelf of glowing vials"),
+   "onani_e2":   ("room", "sitting alone on the bed, smearing golden honey on his own nipple with a fingertip and rubbing it slowly, a late-night tray with a honey pot beside him, penis untouched, the cook stands far away in the doorway, watching"),
+   "inochi_e2":  ("pantry", "he stands leaning against the cool stone wall between honey jars, the cook licks the honey off his nipple and nibbles it gently, honey dripping over his chest, cum on the stone floor, flushed"),
+   "onedari_e2": ("dining_pm", "he lies on his back on a dining table among upturned chairs, the cook licks honey from his left nipple after the right, her hand kneading his penis, handjob, honey jar beside, cum on his stomach"),
+   # ノクティ（おやすみの魔法／夜番の見回り・ペニバン）
+   "btl_e3":     ("hall", "from side, he lies on his side on the corridor floor drowsy, the night watch lies behind him pegging his anus slowly with a strap-on on a black leather belt, anal, whispering a lullaby into his ear, lantern on the floor, his own penis separate", ST),
+   "onani_e3":   ("room", "lying alone in bed in the dark with the lantern out, hands resting on the sheet, lips humming a lullaby, drowsy, hips floating, penis untouched, the night watch sits far away on the windowsill, watching"),
+   "inochi_e3":  ("attic", "he lies asleep on the narrow bed under the sloped ceiling, the night watch sits beside him with her hand over his forehead casting sleepy magic, faint sparkles, cum on the sheet, a small glowing vial on the table"),
+   "onedari_e3": ("desk", "from side, he lies on his side on a bench behind the front desk, dozing, the night watch lies behind him pegging his anus slowly with her black-belted strap-on, anal, whispering good night into his ear, his own penis separate", ST),
+   # オルテンシア（大家の寝かしつけ／大家の夜伽・ペニバン）
+   "btl_boss":   ("parlor", "from side, he lies on his back on the large sofa by the fireplace with legs lifted, the landlady pegs his anus with a strap-on on a purple belt, anal, pressing his face into her huge chest and pinching his nipple, his own penis separate", ST),
+   "onani_boss": ("room", "lying alone face down with his face buried in a soft pillow, one hand pinching his own nipple, penis untouched, the landlady stands far away in the doorway holding a lantern, watching"),
+   "inochi_boss":("bath", "from side, after the bath, he lies on a bench of fresh bath towels with legs lifted, the landlady pegs his anus with her purple-belted strap-on, anal, hugging his head to her huge chest, steam, his own penis separate", ST),
+   "onedari_boss":("master_bed", "from side, he lies on his back in the canopy bed under the thick feather duvet with legs lifted, the landlady pegs his anus with her purple-belted strap-on, anal, his face buried in her huge chest, pinching his nipple, his own penis separate", ST),
+ },
+ "lose_desc": "keeps him as a permanent guest of the inn, his magic filling vials on the shelf.",
+ "onanie": {
+   "master": ("room", "lying in bed under the blanket, tracing his own lips with a fingertip and sucking two of his own fingers as if being kissed, penis untouched"),
+   "e1": ("room", "lying in bed wrapped tightly in a fresh white sheet from neck to feet, stroking his own chest through the sheet, penis untouched"),
+   "e2": ("room", "sitting on the bed, smearing golden honey on his own nipple with a fingertip and rubbing it, honey pot beside, penis untouched"),
+   "e3": ("room", "lying in bed in the dark with the lantern out, hands resting on the sheet, humming a lullaby, drowsy, hips floating, penis untouched"),
+   "boss": ("room", "lying face down with his face buried in a soft pillow, one hand pinching his own nipple, penis untouched"),
+ },
+ "magic": {
+   "1": (None, "room", "a late-night tray with a mug of warm milk and honey bread on a bedside table, lantern light"),
+   "2": (None, "desk", "an open guest register without text on the front desk, a quill pen, a small hand bell and a ring of keys"),
+   "3": (None, "hall", "a guest room door left ajar in a dark corridor, warm lantern light spilling through the gap"),
+   "4": ("m", "room", "night succubus form with small curved horns, black bat wings, long loose hair and a black nightdress, offering a small cup of warm nightcap with both hands, sweet smile"),
+   "5": ("m", "desk", "daytime human form, hair tied up, cream blouse and dark green apron dress, standing behind the front desk holding out a room key, bright cheerful smile"),
+ },
+}

@@ -1,0 +1,2 @@
+女将校の捕虜収容所（収容所長　ヴァルトラウト）,Card/Military_master,クエストイベント
+女将校の捕虜収容所【回想バトル】,Card/Military_master,回想バトル,$$Military_挑戦回数,>=,1

@@ -1,0 +1,289 @@
+{
+ "atk_m1": {
+  "char": "master",
+  "scene": "{P} lies on his back on the examination table with legs apart, {A} standing beside the table palpates his penis and scrotum with white-gloved fingers as a clinical examination, other gloved thumb pressing his perineum, blank medical chart on a clipboard beside her, {P} blushing, turning his face away, biting his lip, trembling, hands gripping the table paper, erection, precum, {A} calm expressionless face, from side, no penetration",
+  "place": "clinic first examination room, examination table with white paper sheet, box of medical gloves, blank medical chart, cold fluorescent lighting, wall clock, blinds",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on"
+ },
+ "atk_m2": {
+  "char": "master",
+  "scene": "{P} lies on his back on the reclined table hugging his knees to his chest with feet on metal leg rests, {A} sits between his legs and slides one lube-coated white-gloved middle finger into his anus after gentle loosening, prostate massage, fingering, curling her finger upward, other hand resting on his lower belly, glistening lube, {P} blushing, open mouth, tears of pleasure, arched back, toes curling, untouched erection leaking precum, {A} calm expression behind glasses, from side",
+  "place": "clinic procedure room, special reclined table with metal leg rests, tray with lube bottle and gloves, frosted glass window, fluorescent lighting",
+  "watchers": false
+ },
+ "atk_m3": {
+  "char": "master",
+  "scene": "{P} reclines on the procedure chair with legs strapped on the leg rests, {A} presses a small white palm-sized medical massager against his perineum from outside, her gloved thumb turning its dial, vibration lines, {P} hips lifting, arched back, blushing, tears, drooling, clenched fists, untouched erection twitching with precum, edging, {A} watching his face coolly with clipboard under her arm, from side, external vibration only, nothing inserted",
+  "place": "windowless first procedure room, reclining procedure chair with black leather straps and leg rests, round surgical light overhead, steel instrument tray",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on, urethral insertion, sounding, catheter"
+ },
+ "atk_e1": {
+  "char": "e1",
+  "scene": "{P} lies on the examination bed with his patient gown open, {A} leans over him pressing the cold round stethoscope chest piece onto one nipple while pinching and rolling the other nipple with gloved fingertips, earpieces in her ears, {P} blushing, eyes squeezed shut, arched back, trembling, erect nipples, {A} cheerful smile, from above, no penetration",
+  "place": "nurse examination room, thermometer cases on glass shelf, blank temperature charts on the wall, examination bed, afternoon light through blinds",
+  "watchers": false,
+  "wear": "wears only an open thin white patient gown and nothing else",
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on"
+ },
+ "atk_e2": {
+  "char": "e2",
+  "scene": "{P} reclines on the white examination chair with small round electrode pads stuck on both nipples and on his perineum, thin cords running to a gray device, {A} stands beside him holding a stopwatch and clipboard, one finger on the device dial, {P} hips lifting, trembling, blushing, tears, open mouth, erection twitching, edging, electric sparks effect, {A} expressionless, from side, no penetration",
+  "place": "windowless examination room B, three monitors with glowing screens without text, gray measuring device, reclined white examination chair with thin electrode cords, fluorescent light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on, urethral insertion, sounding, catheter"
+ },
+ "atk_e3": {
+  "char": "e3",
+  "scene": "{P} lies on the tilted table with his hips raised, {A} standing behind his hips slowly pushes the thin nozzle of a small medical syringe filled with warm clear jelly into his loosened anus with two lube-coated gloved fingers spreading him, glistening jelly dripping, jar of warm jelly beside her, {P} blushing, clutching the table edge, trembling, open mouth, tears, {A} gentle smile, from side",
+  "place": "dispensing room, tilted white treatment table with head lower than hips, shelves of medicine bottles glowing amber, warm water bath with small jelly jar, sunset light through blinds",
+  "watchers": false
+ },
+ "atk_boss": {
+  "char": "boss",
+  "scene": "{P} strapped by the thighs in the leather procedure chair with legs spread on leg rests, {A} holds a slender smooth white prostate stimulator inserted into his lubed anus after finger preparation with one black-gloved hand, her other black-gloved thumb pressing his perineum from outside, {P} arched back, eyes rolled up under his bangs, drooling, tears of pleasure, trembling, untouched erection leaking, {A} stern face behind glasses, surgical light, from side",
+  "place": "windowless first procedure room, reclining procedure chair with black leather straps and leg rests, round surgical light overhead, steel instrument tray",
+  "watchers": false
+ },
+ "onanie": {
+  "char": "master",
+  "scene": "{P} lies alone on his back on the white sofa with his patient gown pushed up, hugging one knee to his chest, reaching under with one lube-wet middle finger slowly inserted into his own anus, the other hand pinching his own nipple, small pump bottle of hand lotion on the floor, blushing, biting lip, tears, trembling, sweat, searching expression",
+  "place": "clinic waiting room after hours, white sofa, stacked magazines, dark reception window, wall clock, dim fluorescent light",
+  "watchers": false,
+  "wear": "wears only a white patient gown pushed up to his chest",
+  "neg": "penis grab, dildo, sex toy, strap-on"
+ },
+ "lose_btl_m1": {
+  "char": "master",
+  "scene": "{P} lies on his back on the examination table with legs spread, {A} stands beside him pressing her lube-coated white-gloved thumb into his perineum from outside, other gloved hand holding a fresh pair of gloves, {P} climax, arched back, trembling, tears, open mouth, cum on his belly, half-hard penis, afternoon light stripes through blinds, from side, no penetration",
+  "place": "clinic first examination room, examination table with white paper sheet, box of medical gloves, blank medical chart, cold fluorescent lighting, wall clock, blinds",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on"
+ },
+ "lose_onani_m1": {
+  "char": "master",
+  "scene": "{P} lies on his back on the white sofa hugging his knees, {A} kneels beside the sofa with her gloved middle finger inside his anus and her thumb pressing his perineum, pinching from inside and outside, a small monitor on the table with a glowing screen without text, stopwatch, {P} dry orgasm, back arched, mouth open, trembling thighs, untouched erection, small black camera in the ceiling corner, from side",
+  "place": "clinic waiting room after hours, white sofa, stacked magazines, dark reception window, wall clock, dim fluorescent light",
+  "watchers": false,
+  "wear": "wears only an open thin white patient gown and nothing else",
+  "neg": "strap-on, dildo"
+ },
+ "lose_inochi_m1": {
+  "char": "master",
+  "scene": "{P} sits spread-legged in the large black leather chair, {A} leans over him palpating his scrotum with a white-gloved hand while her other hand holds a blank consent form on the desk with a small red stamp pad, {P} holding a pen with a shaking hand, blushing, tears, trembling, erection, morning sunlight across the desk, from front",
+  "place": "director's office, heavy wooden desk, large black leather chair, bookshelves of chart binders, blank documents, window",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on"
+ },
+ "lose_onedari_m1": {
+  "char": "master",
+  "scene": "{P} lies on his back on the hospital bed with knees bent, {A} sits on a round stool beside the bed with her gloved middle finger inside his anus, blank white reservation slip on her lap, {P} clutching the nurse call cord, dry orgasm, arched back, toes curling, trembling, untouched erection leaking precum, night, reading lamp glow, from side",
+  "place": "private hospital room at night, white bed with side rails, nurse call button on a cord, small reading lamp, white curtain, dark window",
+  "watchers": false,
+  "neg": "strap-on, dildo"
+ },
+ "lose_btl_m2": {
+  "char": "master",
+  "scene": "{P} lies on the reclined table hugging his knees with feet on metal leg rests, {A} sits between his legs with two gloved fingers deep in his anus milking his prostate, her other gloved palm pressing his lower belly, prostate milking, cloudy white fluid dribbling from his untouched penis, {P} dazed face, drooling, tears of pleasure, trembling, {A} leaning close looking at his face, from side",
+  "place": "clinic procedure room, special reclined table with metal leg rests, tray with lube bottle and gloves, frosted glass window, fluorescent lighting",
+  "watchers": false,
+  "neg": "strap-on, dildo"
+ },
+ "lose_onani_m2": {
+  "char": "master",
+  "scene": "{P} lies on his back on the white sofa hugging his knees, {A} kneels beside the sofa with her lube-coated gloved middle finger inside his anus, turning a stopwatch on a steel tray toward him, {P} blushing, tears, open mouth, trembling, cloudy fluid dripping from his untouched penis, bottle of hand lotion dropped on the floor, night, from side",
+  "place": "clinic waiting room after hours, white sofa, stacked magazines, dark reception window, wall clock, dim fluorescent light",
+  "watchers": false,
+  "wear": "wears only an open thin white patient gown and nothing else",
+  "neg": "strap-on, dildo"
+ },
+ "lose_inochi_m2": {
+  "char": "master",
+  "scene": "{P} lies on his back on the hospital bed with knees raised, {A} sits on the bed edge with two gloved fingers inside his anus milking his prostate, {P} gripping the nurse call button without pressing it, cloudy fluid seeping from his untouched penis onto the sheet, blushing, tears, dazed, trembling, midnight, streetlight through the window, from side",
+  "place": "private hospital room at night, white bed with side rails, nurse call button on a cord, small reading lamp, white curtain, dark window",
+  "watchers": false,
+  "neg": "strap-on, dildo"
+ },
+ "lose_onedari_m2": {
+  "char": "master",
+  "scene": "{P} sits slumped in the large black leather chair with legs over the armrests, {A} kneels in front of him with two gloved fingers deep in his anus, a small silver voice recorder on the desk beside them, {P} gripping the leather seat with both hands, head thrown back, tears, drooling, trembling, cloudy fluid dribbling from his untouched penis, early morning light, from front",
+  "place": "director's office, heavy wooden desk, large black leather chair, bookshelves of chart binders, blank documents, window",
+  "watchers": false,
+  "neg": "strap-on, dildo"
+ },
+ "lose_btl_m3": {
+  "char": "master",
+  "scene": "{P} reclines on the procedure chair with legs on the leg rests, {A} presses the small white medical massager against his perineum from outside while her other gloved middle finger is inside his loosened anus, dry orgasm, {P} head back against the chair, tears, drooling, trembling thighs, belly twitching, untouched erection, surgical light glaring overhead, vibration lines, from side",
+  "place": "windowless first procedure room, reclining procedure chair with black leather straps and leg rests, round surgical light overhead, steel instrument tray",
+  "watchers": false,
+  "neg": "strap-on, dildo, urethral insertion, sounding, catheter"
+ },
+ "lose_onani_m3": {
+  "char": "master",
+  "scene": "{P} sits on the hospital bed hugging his knees in the dark, {A} stands beside the bed holding a penlight on him and pressing the small white medical massager against his perineum from outside, {P} blushing, tears, trembling, open mouth, nurse call button in his sweaty palm, jar of hand cream on the pillow, night, from side",
+  "place": "private hospital room at night, white bed with side rails, nurse call button on a cord, small reading lamp, white curtain, dark window",
+  "watchers": false,
+  "wear": "wears only an open thin white patient gown and nothing else",
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on, urethral insertion, sounding, catheter"
+ },
+ "lose_inochi_m3": {
+  "char": "master",
+  "scene": "{P} slumps in the large black leather chair with his legs hooked over the armrests, {A} kneels in front of him pressing the small white medical massager to his perineum from outside with her gloved middle finger inside his anus, three blank reservation slips stacked on the desk, {P} dry orgasm, trembling, head sunk into the backrest, dazed, tears, rain on the window, from front",
+  "place": "director's office, heavy wooden desk, large black leather chair, bookshelves of chart binders, blank documents, window",
+  "watchers": false,
+  "neg": "strap-on, dildo, urethral insertion, sounding, catheter"
+ },
+ "lose_onedari_m3": {
+  "char": "master",
+  "scene": "{P} lies on his back on the examination table with legs spread, {A} turns the dial of the small white medical massager to maximum and presses it hard on his perineum from outside while her gloved middle finger pushes up inside his anus, {P} arched back, tears, open mouth, pleading expression, trembling, precum, blank medical chart with pen on the desk, blinds closed, from side",
+  "place": "clinic first examination room, examination table with white paper sheet, box of medical gloves, blank medical chart, cold fluorescent lighting, wall clock, blinds",
+  "watchers": false,
+  "neg": "strap-on, dildo, urethral insertion, sounding, catheter"
+ },
+ "lose_btl_e1": {
+  "char": "e1",
+  "scene": "{P} lies on the examination bed with his gown open, {A} leans over him pressing a digital thermometer tip to one nipple and lightly flicking the other nipple with the back of her gloved fingernail, stethoscope hanging from her neck, {P} nipple orgasm, arched back lifting off the bed, eyes rolled back, trembling, untouched erection twitching, blank temperature chart on the wall, from above, no penetration",
+  "place": "nurse examination room, thermometer cases on glass shelf, blank temperature charts on the wall, examination bed, afternoon light through blinds",
+  "watchers": false,
+  "wear": "wears only an open thin white patient gown and nothing else",
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on"
+ },
+ "lose_onani_e1": {
+  "char": "e1",
+  "scene": "{P} sits on the white sofa with his shirt pulled up, {A} kneels beside him pinching one nipple with gloved fingers and pressing the stethoscope chest piece on the other, small tally counter dropped on the floor, {P} climax, cum staining the front of his trousers, hips jerking, blushing, tears, trembling, untouched crotch, from side, no penetration",
+  "place": "clinic waiting room after hours, white sofa, stacked magazines, dark reception window, wall clock, dim fluorescent light",
+  "watchers": false,
+  "wear": "wears only a shirt pulled up above his chest and loose trousers",
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on, penis grab"
+ },
+ "lose_inochi_e1": {
+  "char": "e1",
+  "scene": "{P} lies on the hospital bed in the dark with his gown untied and chest bared, {A} leans over him in the dark tracing around his nipples with gloved fingertips, patient wristband on his wrist, nurse call red lamp glowing, {P} arching his chest toward her, blushing, trembling, biting lip, erect nipples, night, from above, no penetration",
+  "place": "private hospital room at night, white bed with side rails, nurse call button on a cord, small reading lamp, white curtain, dark window",
+  "watchers": false,
+  "wear": "wears only an open thin white patient gown and nothing else",
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on"
+ },
+ "lose_onedari_e1": {
+  "char": "e1",
+  "scene": "{P} sits on the examination table with his shirt open, {A} sits in front of him holding a small clear ruler against his erect nipple, a small silver voice recorder with a red light held near his mouth, stethoscope on his chest, {P} speaking, blushing, trembling, swollen erect nipples, morning light through blinds, from front, no penetration",
+  "place": "clinic first examination room, examination table with white paper sheet, box of medical gloves, blank medical chart, cold fluorescent lighting, wall clock, blinds",
+  "watchers": false,
+  "wear": "wears only an open shirt and nothing else",
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on"
+ },
+ "lose_btl_e2": {
+  "char": "e2",
+  "scene": "{P} reclines on the white examination chair with electrode pads on both nipples and his perineum, {A} beside him with two lube-coated gloved fingers inside his anus pressing his prostate, clipboard and stopwatch on the arm of the chair, {P} climax, arched back, tears, drooling, trembling, cum, electric sparks effect, from side",
+  "place": "windowless examination room B, three monitors with glowing screens without text, gray measuring device, reclined white examination chair with thin electrode cords, fluorescent light",
+  "watchers": false,
+  "neg": "strap-on, dildo, urethral insertion, sounding, catheter"
+ },
+ "lose_onani_e2": {
+  "char": "e2",
+  "scene": "{P} lies back on the white sofa with his gown open and electrode pads on his nipples, {A} sits beside him touching a pen-shaped electrode device tip to his nipple while stopping a stopwatch, small silver case open on the sofa, {P} frozen on the edge, trembling, tears, open mouth, blushing, twitching erection, from side, no penetration",
+  "place": "clinic waiting room after hours, white sofa, stacked magazines, dark reception window, wall clock, dim fluorescent light",
+  "watchers": false,
+  "wear": "wears only an open thin white patient gown and nothing else",
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on, urethral insertion, sounding, catheter"
+ },
+ "lose_inochi_e2": {
+  "char": "e2",
+  "scene": "{P} lies on the hospital bed with electrode pads on both nipples and his perineum, a small monitor hanging from an IV stand with a glowing green line and no text, {P} gripping a white round button on a cord, climax, arched back, trembling, tears, {A} sitting beside the bed with a stopwatch and clipboard, reading lamp, night, from side, no penetration",
+  "place": "private hospital room at night, white bed with side rails, nurse call button on a cord, small reading lamp, white curtain, dark window",
+  "watchers": false,
+  "wear": "wears only an open thin white patient gown and nothing else",
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on, urethral insertion, sounding, catheter"
+ },
+ "lose_onedari_e2": {
+  "char": "e2",
+  "scene": "{P} sits on the examination table with electrode pads on his nipples and perineum, holding a ballpoint pen over a blank application form on a clipboard, {A} standing beside him watching a stopwatch, finger on the device dial, {P} blushing, trembling, tears, open mouth, erection twitching, morning light, from front, no penetration",
+  "place": "clinic first examination room, examination table with white paper sheet, box of medical gloves, blank medical chart, cold fluorescent lighting, wall clock, blinds",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, fingering, dildo, strap-on, urethral insertion, sounding, catheter"
+ },
+ "lose_btl_e3": {
+  "char": "e3",
+  "scene": "{P} lies on the tilted table with his hips raised, {A} standing at his hips with two lube-coated gloved fingers inside his anus gently tapping his prostate, thin empty syringe on the tray, glistening warm jelly dripping, {P} clutching the table, arched back, tears, open mouth, precum dripping in threads from his untouched penis, from side",
+  "place": "dispensing room, tilted white treatment table with head lower than hips, shelves of medicine bottles glowing amber, warm water bath with small jelly jar, sunset light through blinds",
+  "watchers": false,
+  "neg": "strap-on, dildo"
+ },
+ "lose_onani_e3": {
+  "char": "e3",
+  "scene": "{P} lies on his side on the hospital bed with his knee drawn up, {A} sits on the bed edge pushing the thin nozzle of a small syringe of warm jelly into his loosened anus while two gloved fingers hold him open, tube of hand cream confiscated on her lap, {P} blushing, tears, clutching the pillow, trembling, green nurse call lamp, night, from behind",
+  "place": "private hospital room at night, white bed with side rails, nurse call button on a cord, small reading lamp, white curtain, dark window",
+  "watchers": false,
+  "wear": "wears only an open thin white patient gown and nothing else",
+  "neg": "strap-on, dildo"
+ },
+ "lose_inochi_e3": {
+  "char": "e3",
+  "scene": "{P} sits back on the reclined table hugging his knees with feet on metal leg rests, {A} sits between his legs pressing two gloved fingers inside his anus on his prostate, deep crimson glass jelly bottle and thin syringe on the tray, {P} untouched erection twitching with threads of precum, blushing, tears, open mouth, trembling, morning light through frosted glass, from side",
+  "place": "clinic procedure room, special reclined table with metal leg rests, tray with lube bottle and gloves, frosted glass window, fluorescent lighting",
+  "watchers": false,
+  "neg": "strap-on, dildo"
+ },
+ "lose_onedari_e3": {
+  "char": "e3",
+  "scene": "{P} lies on his side on the examination table with his upper knee pulled to his chest, holding a clipboard with a blank prescription form and a pen, {A} sits behind his hips with her gloved middle finger inside his lubed anus, {P} blushing, tears, trembling hand writing, dazed, sunset light through curtains, from side",
+  "place": "clinic first examination room, examination table with white paper sheet, box of medical gloves, blank medical chart, cold fluorescent lighting, wall clock, blinds",
+  "watchers": false,
+  "neg": "strap-on, dildo"
+ },
+ "lose_btl_boss": {
+  "char": "boss",
+  "scene": "{P} strapped in the leather procedure chair with legs spread on leg rests, {A} holds the slender white prostate stimulator inside his lubed anus with one black-gloved hand and presses his perineum with her black-gloved thumb, pinching from inside and outside, prostate milking, cum oozing from his untouched penis, {P} eyes rolled up under his bangs, drooling, tears, trembling, surgical light glare, from side",
+  "place": "windowless first procedure room, reclining procedure chair with black leather straps and leg rests, round surgical light overhead, steel instrument tray",
+  "watchers": false,
+  "neg": "strap-on"
+ },
+ "lose_onani_boss": {
+  "char": "boss",
+  "scene": "{P} lies on his back on the white sofa with knees up, the slender white prostate stimulator inside his lubed anus, his own hand pressing his perineum and {A}'s black-gloved thumb pressing down over the back of his hand, her other hand turning the base of the stimulator, {P} blushing, tears, trembling, untouched erection leaking precum on his belly, small red camera light in the ceiling corner, from side",
+  "place": "clinic waiting room after hours, white sofa, stacked magazines, dark reception window, wall clock, dim fluorescent light",
+  "watchers": false,
+  "wear": "wears only an open thin white patient gown and nothing else",
+  "neg": "strap-on, penis grab"
+ },
+ "lose_inochi_boss": {
+  "char": "boss",
+  "scene": "{P} lies on his back on the reclined table hugging his knees with feet on metal leg rests, the slender white prostate stimulator inside his lubed anus, {A} standing between his legs pressing his perineum with her black-gloved thumb, clipboard with a blank consent form, fountain pen and red ink pad on the side table, red thumbprint, {P} dazed, tears, trembling, cum on his belly, blue dawn light through frosted glass, from side",
+  "place": "clinic procedure room, special reclined table with metal leg rests, tray with lube bottle and gloves, frosted glass window, fluorescent lighting",
+  "watchers": false,
+  "neg": "strap-on"
+ },
+ "lose_onedari_boss": {
+  "char": "boss",
+  "scene": "{P} lies on his back on the hospital bed hugging his knees, gripping the bed rail, the slender white prostate stimulator inside his lubed anus, {A} sits on the bed edge pressing his perineum with her black-gloved thumb, small silver voice recorder in her other hand, {P} dry orgasm, back arched off the bed, open mouth, arms stiff, tears, trembling, orange night light, from side",
+  "place": "private hospital room at night, white bed with side rails, nurse call button on a cord, small reading lamp, white curtain, dark window",
+  "watchers": false,
+  "neg": "strap-on"
+ },
+ "magic_1": {
+  "char": "master",
+  "scene": "{A} holds up a plain white patient card with no text between two white-gloved fingers toward the viewer, calm faint smile, adjusting her glasses with the other hand, pov, upper body, looking at viewer",
+  "place": "clinic first examination room, examination table with white paper sheet, box of medical gloves, blank medical chart, cold fluorescent lighting, wall clock, blinds"
+ },
+ "magic_2": {
+  "char": "master",
+  "scene": "{A} opens the lid of a silver tray holding medical gloves, a jar of lubricant jelly and slender instruments, pulling on a white latex glove with a snap, cool gaze, pov, upper body, looking at viewer",
+  "place": "clinic first examination room, examination table with white paper sheet, box of medical gloves, blank medical chart, cold fluorescent lighting, wall clock, blinds"
+ },
+ "magic_3": {
+  "char": "master",
+  "scene": "{A} draws back a white curtain revealing an empty examination table with restraint belts on its legs, one gloved hand holding the curtain, calm inviting expression, pov, looking at viewer",
+  "place": "clinic procedure room, special reclined table with metal leg rests, tray with lube bottle and gloves, frosted glass window, fluorescent lighting"
+ },
+ "magic_4": {
+  "char": "master",
+  "scene": "{A} seals a white envelope of a referral letter with no text and holds it out toward the viewer, fountain pen in her other hand, calm expression, seated at the desk, pov, upper body, looking at viewer",
+  "place": "director's office, heavy wooden desk, large black leather chair, bookshelves of chart binders, blank documents, window"
+ },
+ "magic_5": {
+  "char": "master",
+  "scene": "{A} holds a single pink capsule between gloved fingertips toward the viewer, small blank pill bottle in her other hand, faint knowing smile, pov, upper body, close-up of the capsule, looking at viewer",
+  "place": "clinic first examination room, examination table with white paper sheet, box of medical gloves, blank medical chart, cold fluorescent lighting, wall clock, blinds"
+ }
+}

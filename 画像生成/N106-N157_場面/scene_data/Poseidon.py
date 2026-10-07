@@ -1,0 +1,131 @@
+# N110 海底神殿と外海（Poseidon）画像データ。登場人物は全員20歳以上。5人とも女性（ふたなり・NH・女装なし）。
+# 見た目は設計メモ・brief の文章の目印から作成（作品名・キャラ名は tags に書かない）。筋肉の線は描かない。
+# リヴァイアサン娘：原作は青い長髪・青い竜の体 → 髪は pale lavender、竜の体は deep violet scales に置き換え（瞳は黄色のまま）。
+# 挿入扱いは 触手の先（ポセイドネス・スキュラ）・竜の尾の先（リヴァイアサン）・蛇の髪の一本（メデューサ）＝体の一部なので pen なし。セイレーンは挿入なし。
+# メデューサはふだん目を閉じている（★の場面だけ金の目を開く）。主人公は石にしない（固まって動けないだけ）。石像は穏やかな顔でひびなし。
+# 触手・蛇・締めつけは怖くしない（牙なし・痛みなし）。どの絵にも海の要素（波・泡・海の光・首の真珠）を入れる。
+PEARL = "a white pearl necklace around his neck"
+SOFT_NEG = "muscular female, abs, broad shoulders on the woman, scary, fangs, monster face, slime gore"
+SNAKE_NEG = SOFT_NEG + ", open-mouthed snake, scary snake, venom, cracks, cracked stone, broken statue, fully petrified man, stone body on the man, grey skin on the man"
+DATA = {
+ "code": "Poseidon",
+ "world": "open northern sea and a sunken temple of a sea goddess, waves, drifting bubbles, soft deep-sea glow, shells and coral, detailed background",
+ "bg": "throne hall of an undersea temple, a giant seashell throne, coral and shell columns, pale glowing light from above, red tentacles spread over the floor, a golden trident standing beside the throne, rising bubbles, no humans",
+ "josou": None,
+ "chars": {
+   "m": {"type": "woman", "jp": "ポセイドネス",
+         "tags": "adult woman, mature female, mature face, sharp adult features, 32 years old, adult proportions, beautiful detailed eyes, very tall, red hair, very long wavy hair, golden eyes, gold tiara, giant scallop shell behind her back, shell bikini top, gold armlets, golden trident, many thick smooth red tentacles below the waist, soft voluptuous feminine body, huge breasts, wide hips, sea goddess",
+         "name": "the red-haired sea goddess with red tentacles",
+         "pose": "holding a golden trident upright in one hand, the other hand held out palm up, calm majestic smile, looking down at viewer",
+         "height_note": "she is very tall and much taller than him",
+         "neg": SOFT_NEG},
+   "e1": {"type": "woman", "jp": "メデューサ",
+          "tags": "adult woman, mature female, mature face, sharp adult features, 28 years old, adult proportions, beautiful detailed eyes, tall, long legs, green hair made of thin cute sleepy snakes, long snake hair, closed eyes, black dress, purple and grey striped thighhighs, black high heels, soft curvy feminine body, large breasts, gorgon",
+          "name": "the snake-haired gorgon in a black dress",
+          "pose": "arms crossed under her breasts, chin raised, eyes closed, haughty smirk, facing viewer",
+          "neg": SNAKE_NEG},
+   "e2": {"type": "woman", "jp": "スキュラ",
+          "tags": "adult woman, mature female, mature face, 27 years old, adult proportions, beautiful detailed eyes, tall, blonde hair, long wavy hair, violet eyes, black detached collar, black bikini top, many smooth pink tentacles below the waist with round suckers, scylla, soft curvy feminine body, large breasts",
+          "name": "the blonde scylla with pink tentacles",
+          "pose": "one finger on her lips, a pink tentacle tip curling beside her cheek, sultry sly smile, looking at viewer",
+          "neg": SOFT_NEG},
+   "e3": {"type": "woman", "jp": "セイレーン",
+          "tags": "adult woman, mature female, mature face, 25 years old, adult proportions, beautiful detailed eyes, tall, long legs, white hair, long hair, flower crown, green eyes, large yellow feathered wings, green bikini, yellow bird legs, soft curvy feminine body, large breasts, siren, harpy",
+          "name": "the white-haired siren with yellow wings",
+          "pose": "one hand on her chest singing with her mouth open, yellow wings spread wide, cheerful bright smile, looking at viewer",
+          "neg": SOFT_NEG},
+   "boss": {"type": "woman", "jp": "リヴァイアサン娘",
+            "tags": "adult woman, mature female, mature face, sharp adult features, 30 years old, adult proportions, beautiful detailed eyes, very tall, pale lavender hair, very long straight hair, fin ears, yellow eyes, slit pupils, white scale breastplate, gold pauldrons, golden trident, long sea dragon tail with deep violet scales and a smooth slender tip, snake lower body, soft curvy feminine body, large breasts",
+            "name": "the lavender-haired sea dragon woman",
+            "pose": "upright on her coiled violet dragon tail, golden trident held at her side, stern proud expression, looking down at viewer",
+            "height_note": "she is much taller than him",
+            "neg": SOFT_NEG},
+ },
+ "places": {
+   "deck":     "ship deck in a night storm, big waves, flapping sails, salt spray, wet planks, a mast wound with thick rope",
+   "hold":     "ship hold, barrels and coiled ropes, a swaying oil lamp, gaps between the floorboards, a round porthole showing the sea",
+   "reef":     "black rocky reef in the open sea, white breaking waves, sea birds, wet glistening rocks",
+   "ghost":    "deck of an old ghost ship, tattered sails, thick sea fog, an unmanned ship's wheel, damp wood",
+   "beach":    "white sand beach under strong sunlight, washed-up seaweed, gentle surf, a parasol",
+   "cave":     "sea cave on the coast, tide pools, slick rocks, echoing waves, a faintly glowing heap of pearls deep inside",
+   "garden":   "seaside ruin garden of smooth stone statues of men with peaceful faces without cracks, empty stone pedestals, dry wind, the sea behind",
+   "tidepool": "shallow sunny tide pool among rocks, clear water, swaying seaweed with round suckers, warm light",
+   "opensea":  "open sea, endless horizon, slow great swells, no land in sight, drifting sea mist",
+   "undersea": "underwater in the deep sea, soft glowing light from above, rising bubbles, floating hair",
+   "gate":     "entrance of the undersea temple, shell and coral columns, pale glow, swaying kelp",
+   "corridor": "water-filled temple corridor, cold stone, glowing fish, lamps at even intervals",
+   "abyss":    "dragon's abyss, a deep vertical underwater shaft, slow whirlpool, cold dark water, jutting rock ledges",
+   "throne":   "sea goddess's hall underwater, a giant seashell throne, red tentacles spread over the floor, a shell bed beside the throne, rising bubbles",
+   "nest":     "soft bed woven of red tentacles underwater, warm bubbles, gentle current, a huge seashell roof above",
+ },
+ "atk": {
+   "m1": ("throne", "he stands swaying before the shell throne, the sea goddess leans down blowing a pale glowing mist over his face, her hand under his chin, a red tentacle loosely around his waist, he steps toward her dazed, " + PEARL + ", bubbles"),
+   "m2": ("throne", "he floats lifted in the water, thick red tentacles of the sea goddess wrapped around his wrists, ankles and waist, two thin tentacle tips stroking his nipples, a warm slender tentacle tip in his anus, anal, his own penis separate, " + PEARL + ", bubbles"),
+   "m3": ("throne", "from side, the sea goddess holds him against her huge breasts and kisses him deeply, tongues, a bubble between their lips, red tentacles stroking his nipple and inner thigh, a thin tentacle tip rubbing his anus, " + PEARL),
+   "e1": ("garden", "he stands frozen still on a stone pedestal, unable to move, the gorgon stands close with her gold eyes open and glowing, thin sleepy hair snakes licking his nipple and his ear, one thin hair snake in his anus, anal, " + PEARL),
+   "e2": ("cave", "he is lifted over a tide pool wrapped in pink tentacles, round suckers of the scylla sucking both his nipples, a slender pink tentacle tip in his anus, anal, the scylla smiling close to his face, his own penis separate, " + PEARL),
+   "e3": ("reef", "he sits limp on a wet black rock, the siren kneels behind him singing into his ear, her tongue on the rim of his ear, yellow wings folded around his shoulders, his body weightless and dazed, waves, " + PEARL),
+   "boss": ("abyss", "from side, he is wound in the coils of the sea dragon woman's violet tail from ankles to chest, the sea dragon woman pinching his nipple with one hand, the smooth slender tip of her tail in his anus, anal, his own penis separate, cold bubbles, " + PEARL),
+ },
+ "atk_desc": {
+   "m1": "the sea goddess clouds his mind with a deep-sea mist and tells him he belongs to the sea.",
+   "m2": "the sea goddess binds his whole body in red tentacles and teases his nipples and rear.",
+   "m3": "the sea goddess embraces and kisses him while her tentacles caress him everywhere.",
+   "e1": "the gorgon freezes his body with her open gold eyes and lets her hair snakes lick him.",
+   "e2": "the scylla sucks his nipples with her suckers while a tentacle works inside him.",
+   "e3": "the siren sings into his ear and licks it until he cannot move.",
+   "boss": "the sea dragon woman coils him in her tail and presses inside with its tip.",
+ },
+ "lose": {
+   # ポセイドネス 技1（深海の霧）
+   "btl_m1":     ("throne", "he walks dazed into the red tentacles on the floor, a pale glowing mist around his head, the sea goddess seated on the shell throne opening her arms, tentacles wrapping his waist and thighs, a slender tentacle tip in his anus, anal, a glass orb of mist in her hand, " + PEARL + ", cum drifting in the water"),
+   "onani_m1":   ("hold", "sitting alone on the floor of the ship hold in lamp smoke, dazed, one hand rubbing his own nipple, the other hand reaching behind to stroke his own anus, penis untouched, " + PEARL + " glowing faintly, the sea goddess watches far away through the porthole"),
+   "inochi_m1":  ("opensea", "he sits on a raft of red tentacles on the open sea in thick mist, sinking waist-deep into the water, the sea goddess behind him holding his shoulders, tentacles around his chest stroking his nipples, a faint guiding light glowing below the surface, " + PEARL),
+   "onedari_m1": ("nest", "he lies on the bed of red tentacles with his whole body wrapped, the sea goddess leans over him breathing a pale mist into his open mouth, tentacle tips on his nipples, a slender tentacle tip in his anus, anal, warm bubbles, " + PEARL + ", cum drifting"),
+   # ポセイドネス 技2（★テンタクルバインド）
+   "btl_m2":     ("throne", "he floats lifted before the shell throne, thick red tentacles of the sea goddess around his wrists, ankles and waist, thin tentacle tips circling both his nipples, a warm slender tentacle tip deep in his anus, anal, a woven red bracelet on his wrist, his own penis separate, " + PEARL + ", cum drifting"),
+   "onani_m2":   ("deck", "sitting alone against the mast on the stormy deck, ship rope looped loosely around his own wrists and ankles, one hand rubbing his nipple, a finger of the other hand at his own anus, penis untouched, " + PEARL + " glowing, the sea goddess watches far away from the waves"),
+   "inochi_m2":  ("corridor", "he drifts in the water-filled corridor carried by four red tentacles around his wrists and ankles, the sea goddess swimming behind him, a thin tentacle tip stroking his nipple, rows of lamps and glowing fish, " + PEARL + ", bubbles"),
+   "onedari_m2": ("nest", "he lies on the tentacle bed under the shell roof, seven red tentacles of the sea goddess wound around his arms, legs and chest, rocking him, a slender tentacle tip deep in his anus, anal, the sea goddess smiling down, " + PEARL + ", cum drifting"),
+   # ポセイドネス 技3（海神の抱擁）
+   "btl_m3":     ("throne", "from side, the sea goddess holds him to her huge breasts and kisses him deeply, tongues, warm bubbles spilling from their lips, red tentacles stroking his nipples and inner thighs, a slender tentacle tip in his anus, anal, " + PEARL + ", cum drifting"),
+   "onani_m3":   ("undersea", "floating alone in the glowing water, sucking two of his own fingers as if kissing, the other hand moving between his nipple and his own anus, penis untouched, bubbles from his lips, " + PEARL + ", the sea goddess watches far away in the deep"),
+   "inochi_m3":  ("abyss", "the sea goddess descends the cold shaft holding him in her arms against her breasts, kissing him, tentacles wrapped around his legs, a tentacle tip stroking his nipple, the shell throne faintly visible below, " + PEARL + ", bubbles"),
+   "onedari_m3": ("nest", "from side, under the huge shell roof, the sea goddess lies holding him in her arms, kissing him deeply, tongues, red tentacles around his waist, a slender tentacle tip in his anus, anal, his arms limp, " + PEARL + ", cum drifting"),
+   # メデューサ（★石化の魔眼）
+   "btl_e1":     ("garden", "he stands frozen still on a stone pedestal among the statues, unable to move, the gorgon holds his chin with her gold eyes open and glowing, hair snakes licking his nipples and ear, one thin hair snake in his anus, anal, " + PEARL + ", cum dripping"),
+   "onani_e1":   ("beach", "kneeling alone at the edge of the surf, staring motionless at his own reflection in the water, one hand rubbing his nipple, a finger of the other hand at his own anus, penis untouched, " + PEARL + " glowing, the gorgon watches far away under the parasol"),
+   "inochi_e1":  ("garden", "he stands frozen in the act of looking back over his shoulder on an empty pedestal, the gorgon behind him with her gold eyes open, her hand on his chest pinching his nipple, a hair snake licking his ear, the sea beyond, " + PEARL),
+   "onedari_e1": ("garden", "he lies on his back on a stone slab with his arms and legs frozen still, the gorgon stands over him with gold eyes open, pressing the toe of her black high heel gently on his lower belly, hair snakes licking his nipples, " + PEARL + ", cum dripping"),
+   # スキュラ（★触手の全身責め）
+   "btl_e2":     ("cave", "he is held up in the sea cave wrapped in pink tentacles, round suckers of the scylla sucking both his nipples, a slender pink tentacle in his anus, anal, faint pink ring marks on his chest, the scylla whispering at his ear, his own penis separate, " + PEARL + ", cum dripping"),
+   "onani_e2":   ("tidepool", "sitting alone in the warm tide pool, pressing a strand of seaweed with round suckers to his own nipple, a finger of the other hand in his own anus, penis untouched, " + PEARL + " glowing, the scylla watches far away from the water"),
+   "inochi_e2":  ("cave", "deep in the cave he lies on a glowing heap of pearls, the scylla coiled around him with pink tentacles, suckers on both his nipples, a slender tentacle tip in his anus, anal, the scylla dropping a pearl onto the heap, " + PEARL),
+   "onedari_e2": ("cave", "he spins slowly in a whirl of water in a deep tide pool, pink tentacles of the scylla circling around him, two suckers latched on his nipples, the scylla laughing softly with a finger on her lips, bubbles, " + PEARL + ", cum drifting"),
+   # セイレーン（★誘惑の歌）挿入なし
+   "btl_e3":     ("reef", "he sits limp on the black reef wearing a flower crown, the siren kneels behind him singing into his ear, her tongue in his ear, yellow feathers brushing his nipples, her wing covering his lap, waves breaking, " + PEARL + ", cum dripping"),
+   "onani_e3":   ("ghost", "sitting alone by the wheel of the ghost ship in the fog, tracing his own ear with a fingertip, head tilted as if listening to a distant song, hips shifting, penis untouched, " + PEARL + " glowing, the siren watches far away on the mast"),
+   "inochi_e3":  ("reef", "he lies with his head on the siren's lap on the reef at dawn, the siren bending down singing a lullaby into his ear, her lips at his ear, yellow wings wrapped around him, a wrecked ship far away, calm sea, " + PEARL),
+   "onedari_e3": ("reef", "he sits on a flat rock like a seat, the siren beside him singing into his right ear, licking it, the tip of a yellow feather stroking his left nipple, his head leaning to her, sea spray, " + PEARL + ", cum dripping"),
+   # リヴァイアサン娘（★竜の締め上げ）
+   "btl_boss":   ("abyss", "from side, he is wound in the coils of the sea dragon woman's violet tail, the sea dragon woman pinching his nipple, the smooth slender tip of her tail in his anus, anal, a violet scale pendant on his chest, his own penis separate, cold bubbles, " + PEARL + ", cum drifting"),
+   "onani_boss": ("tidepool", "kneeling alone in the tide pool, pinching his own nipple with fingers wet with cold seawater, a wet finger of the other hand in his own anus, shivering, penis untouched, " + PEARL + " glowing, the sea dragon woman watches far away from the open water"),
+   "inochi_boss":("abyss", "he lies on a rock ledge in the abyss using the sea dragon woman's violet coils as a pillow, one coil squeezing his chest and waist, the sea dragon woman looking down with her hand on his nipple, slow whirlpool, " + PEARL + ", bubbles"),
+   "onedari_boss":("abyss", "from side, he is wound tightly in violet coils up to his shoulders, the sea dragon woman breathing a cold white breath on his neck, her tongue on his nape, the slender tip of her tail deep in his anus, anal, held still, " + PEARL + ", cum drifting"),
+ },
+ "lose_desc": "takes him down to the undersea temple forever as the sea goddess's cherished offering, a necklace of twelve white pearls around his neck.",
+ "onanie": {
+   "master": ("deck", "sitting against the mast, ship rope looped loosely around his own wrists and ankles, one hand rubbing his nipple, a finger at his own anus, penis untouched, " + PEARL),
+   "e1": ("beach", "kneeling at the edge of the surf, staring motionless at his own reflection in the water, rubbing his own nipple, a finger at his own anus, penis untouched, " + PEARL),
+   "e2": ("tidepool", "sitting in the tide pool, pressing seaweed with round suckers to his own nipple, a finger in his own anus, penis untouched, " + PEARL),
+   "e3": ("ghost", "sitting on the foggy deck, tracing his own ear with a fingertip as if listening to a distant song, penis untouched, " + PEARL),
+   "boss": ("tidepool", "kneeling in cold seawater, pinching his own nipple with wet cold fingers, a wet finger in his own anus, shivering, penis untouched, " + PEARL),
+ },
+ "magic": {
+   "1": (None, "cave", "a single white pearl resting in an open seashell, soft glow, a drop of seawater, close-up"),
+   "2": (None, "undersea", "a column of warm glowing bubbles rising from the dark sea floor toward the light, empty water"),
+   "3": ("e3", "reef", "singing on a black rock with one hand cupped to her mouth, yellow wings half spread, faint sound ripples over the waves, playful smile"),
+   "4": ("e1", "garden", "opening one glowing gold eye just a little, hair snakes swaying, a finger raised to her lips, haughty smirk"),
+   "5": (None, "throne", "a necklace of white pearls laid on a giant seashell throne, pale glow, a golden trident leaning beside it, rising bubbles"),
+ },
+}

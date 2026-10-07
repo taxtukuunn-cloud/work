@@ -1,0 +1,2 @@
+月紋神殿（淫紋の神官　ヴェルミナ）,Card/Inmon_master,クエストイベント
+月紋神殿【回想バトル】,Card/Inmon_master,回想バトル,$$Inmon_挑戦回数,>=,1

@@ -1,0 +1,2 @@
+深夜の取調室（警部　ヒムロ）,Card/Police_master,クエストイベント
+深夜の取調室【回想バトル】,Card/Police_master,回想バトル,$$Police_挑戦回数,>=,1

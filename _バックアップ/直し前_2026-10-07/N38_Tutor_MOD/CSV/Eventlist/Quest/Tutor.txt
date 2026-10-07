@@ -1,0 +1,2 @@
+補習室の家庭教師（塾長　キョウコ）,Card/Tutor_master,クエストイベント
+補習室の家庭教師【回想バトル】,Card/Tutor_master,回想バトル,$$Tutor_挑戦回数,>=,1

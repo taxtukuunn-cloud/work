@@ -1,0 +1,79 @@
+{
+ "Nekomata_master": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 30 years old, tall, long legs, both eyes clearly visible, nekomata, cat ears, two tails, white hair, long hair, gold eyes, loose kimono, bell pattern, lazy seductive smile, large breasts, standing, confident, looking down at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Nekomata_e1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 21 years old, both eyes clearly visible, cat ears, black cat tail, black hair, short hair, gold eyes, short black kimono, paw gloves, shy, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Nekomata_e2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 24 years old, both eyes clearly visible, calico cat ears, calico tail, multicolored hair, green eyes, calico kimono, tasuki, caring smile, medium breasts, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Nekomata_e3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 22 years old, both eyes clearly visible, cat ears, orange tabby tail, orange hair, messy hair, amber eyes, jinbei, barefoot, grin, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Nekomata_boss": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 37 years old, tall, long legs, both eyes clearly visible, nekomata, cat ears, two tails, blonde hair, long hair, red eyes, black uchikake, gold embroidery, large bell collar, tall, mature, large breasts, standing, confident, looking down at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Nekomata_bg": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, japanese mansion, engawa veranda and tatami room, sunset through shoji, zabuton cushions, cat bed, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, 1girl, people",
+  "width": 1216,
+  "height": 832,
+  "rmbg": false
+ },
+ "Nekomata_magic_1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 30 years old, tall, long legs, both eyes clearly visible, nekomata, cat ears, two tails, white hair, long hair, gold eyes, loose kimono, bell pattern, lazy seductive smile, large breasts, holding a sprig of silvervine, lazy smile, looking at viewer, cowboy shot, japanese mansion, engawa veranda and tatami room, sunset through shoji, zabuton cushions, cat bed, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Nekomata_magic_2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 21 years old, both eyes clearly visible, cat ears, black cat tail, black hair, short hair, gold eyes, short black kimono, paw gloves, shy, waving a foxtail cat teaser toy, looking at viewer, cowboy shot, japanese mansion, engawa veranda and tatami room, sunset through shoji, zabuton cushions, cat bed, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Nekomata_magic_3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 24 years old, both eyes clearly visible, calico cat ears, calico tail, multicolored hair, green eyes, calico kimono, tasuki, caring smile, medium breasts, many cats gathered around her on the veranda, looking at viewer, cowboy shot, japanese mansion, engawa veranda and tatami room, sunset through shoji, zabuton cushions, cat bed, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Nekomata_magic_4": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 22 years old, both eyes clearly visible, cat ears, orange tabby tail, orange hair, messy hair, amber eyes, jinbei, barefoot, grin, lying on the engawa veranda, sunbathing, grin, looking at viewer, cowboy shot, japanese mansion, engawa veranda and tatami room, sunset through shoji, zabuton cushions, cat bed, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Nekomata_magic_5": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 37 years old, tall, long legs, both eyes clearly visible, nekomata, cat ears, two tails, blonde hair, long hair, red eyes, black uchikake, gold embroidery, large bell collar, tall, mature, large breasts, sitting in the center of the mansion hall, cats everywhere, looking at viewer, cowboy shot, japanese mansion, engawa veranda and tatami room, sunset through shoji, zabuton cushions, cat bed, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ }
+}

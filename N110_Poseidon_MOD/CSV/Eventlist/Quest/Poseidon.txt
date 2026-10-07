@@ -1,0 +1,2 @@
+海底神殿と外海（海神　ポセイドネス）,Card/Poseidon_master,クエストイベント
+海底神殿と外海【回想バトル】,Card/Poseidon_master,回想バトル,$$Poseidon_挑戦回数,>=,1

@@ -1,0 +1,2 @@
+最上階の秘書室（社長　リリアン）,Card/Office_master,クエストイベント
+最上階の秘書室【回想バトル】,Card/Office_master,回想バトル,$$Office_挑戦回数,>=,1

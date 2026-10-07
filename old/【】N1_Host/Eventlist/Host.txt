@@ -1,0 +1,4 @@
+default
+
+@フィールドイベント
+外部イベント実行,Card/Host_master,フィールドイベント

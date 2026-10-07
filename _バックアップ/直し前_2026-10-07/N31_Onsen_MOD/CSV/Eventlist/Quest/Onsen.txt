@@ -1,0 +1,2 @@
+湯守の宿（女将　ミヤコ）,Card/Onsen_master,クエストイベント
+湯守の宿【回想バトル】,Card/Onsen_master,回想バトル,$$Onsen_挑戦回数,>=,1

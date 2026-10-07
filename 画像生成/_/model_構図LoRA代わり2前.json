@@ -1,0 +1,1264 @@
+{
+  "note": "使う画像モデル。wai＝waiIllustriousSDXL_v170（SDXL・出力 <MOD>_WAI）／anima＝waiANIMA_v10Base10（従来・sdduel LoRAあり・出力 <MOD>_自作）。wai の中の値で上書きできる。artist に好みの絵師名タグ（1〜2個）を入れると先頭に付く。loras は SDXL 用の LoRA（重ねる順）。strength を 0 にすると外れる",
+  "model": "wai",
+  "wai": {
+    "steps": 28,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "clip_skip": -2,
+    "style_pos": "",
+    "artist": "",
+    "style_neg": "realistic, photorealistic, 3d, semi-realistic",
+    "neg_remove": [],
+    "loras": [
+      {
+        "lora_name": "anime_screencap-IL-NOOB_v3.safetensors",
+        "strength": 0.8,
+        "clip_strength": 0.8,
+        "trigger": "",
+        "enabled": false,
+        "memo": "2026-09-29 停止：アニメ調を外すため（絵柄はモデル側に合わせる）。戻すときは true"
+      },
+      {
+        "lora_name": "sdduel_style_xl-000008.safetensors",
+        "strength": 0.5,
+        "clip_strength": 0.5,
+        "trigger": "sdduel style",
+        "enabled": false,
+        "memo": "本編の絵柄（SDXL用）。2026-09-29 停止：学習データ156枚中17枚に自動タグ shota／onee-shota（うち3枚は loli・child on child）が付いていたため使わない。17枚を除いた sdduel_style_xl_v2 を学習し直して、絵柄比較で成人に見えることを確かめてから差し替える（Lora用\u0003_学習_SDXL_v2.bat）"
+      },
+      {
+        "lora_name": "sdduel_hero_xl-000008.safetensors",
+        "strength": 0.8,
+        "clip_strength": 0.8,
+        "trigger": "sdduel_hero",
+        "when_text_contains": "navy",
+        "role": "hero",
+        "enabled": false,
+        "memo": "主人公LoRA（SDXL用）。2026-09-28 停止：学習画像が「15歳・teenage boy」の指定で撮られていたため使わない。成人の指定で H1 から撮り直し→学習し直すまで enabled は false のまま",
+        "scene_strength": 0
+      }
+    ],
+    "anime_memo": "2026-09-29 アニメ調を外した（絵柄はモデル＝絵柄LoRAに合わせる）。元の値: style_pos='anime screencap, anime coloring, cel shading, flat color' / style_neg='realistic, photorealistic, 3d, semi-realistic, lips, nose shine, detailed skin, skin texture' / neg_remove=['flat color', 'thick outline']。anime_screencap-IL-NOOB_v3 は enabled を false に"
+  },
+  "hero_face": {
+    "show": true,
+    "eyes": "aqua eyes",
+    "bangs": "short bangs above the eyes",
+    "memo": "主人公の顔を描く（2026-09-28）。show を false にすると旧方式（前髪で目を隠す）。build／build_neg は体つきの細さ（ごつい時は足す・細すぎる時は減らす）。skin／skin_neg は肌の色（白すぎる時は skin を強める、焼けすぎる時は弱める）",
+    "build": "slim adult male build, adult male body, not muscular",
+    "build_neg": "muscular, abs, pectorals, toned body, thick arms, thick neck, stocky, bulky muscles, bara",
+    "skin": "natural healthy skin tone, warm skin color",
+    "skin_neg": "pale skin on the navy-haired man, pasty white skin on the navy-haired man",
+    "age_memo": "2026-09-29 主人公は 160cm・19歳の成人（ユーザー決定）。プロンプトに年齢の数字・身長の数字は書かない。裸の場面で子どもの体型に寄ったため、大人の顔・骨格（mature adult face, defined jawline, adam's apple, adult male body）をはっきり書き、細さの重ね書き（slender・narrow shoulders・slim waist）と大人の骨格を消すネガ（manly・square jaw 等）をやめた。小柄さは場面の『相手より少し背が低い』で表す。同日「筋肉質すぎ」→ 体は slim・not muscular に戻し、muscular・abs・pectorals をネガへ（大人の顔立ちの指定と子どもの体型を避けるネガはそのまま）"
+  },
+  "role_fix": true,
+  "role_fix_memo": "相手が攻め・主人公が受けになるよう、場面の先頭に femdom 等の短いタグを入れる（2026-09-28）。false で外す",
+  "solo_onanie": true,
+  "solo_onanie_memo": "オナニー場面は主人公ひとりの構図（相手が遠くで見ている構図をやめる・2026-09-28）。false で旧方式",
+  "pose_lora": {
+    "enabled": true,
+    "max_action": 1,
+    "allow_look_extra": true,
+    "apply_to": [
+      "scene"
+    ],
+    "override": {}
+  },
+  "pose_lora_memo": "構図LoRA（2026-09-28）。場面（2人の絵）の最終プロンプトを pose_loras の when（正規表現・全部に当てはまったら候補）で判定し、action は上から最初の1つ、look は別に1つまで足す。override に {\"画像名\": \"id\"} か {\"画像名\": \"none\"} で個別指定。enabled を false で全部外す。gen.py の --no-pose／--pose-scale／--pose-report／--pose-sample",
+  "pose_loras": [
+    {
+      "id": "lamia",
+      "kind": "look",
+      "file": "構図\\Lamia_Sex.safetensors",
+      "trigger": "lamia sex",
+      "strength": 0.5,
+      "when": [
+        "\\blamia\\b"
+      ]
+    },
+    {
+      "id": "slime",
+      "kind": "look",
+      "file": "構図\\slime sex_illustrious_V1.0.safetensors",
+      "trigger": "slime",
+      "strength": 0.4,
+      "when": [
+        "slime girl|slime woman|slime monster girl"
+      ],
+      "neg": "woman engulfed by slime, girl trapped in slime, female victim, slime girl victim, 2girls, female on bottom",
+      "enabled": false,
+      "memo": "2026-09-29 停止（ユーザー決定）：学習タグに子どもを示すタグあり。判定条件（when）は残し、pose_control.by_pose の 3D の下書き（depth3d_girl_on_top_straddle）で構図を決める"
+    },
+    {
+      "id": "arachne",
+      "kind": "look",
+      "file": "構図\\Arache_sex_illus-000037.safetensors",
+      "trigger": "arachnesex",
+      "strength": 0.4,
+      "when": [
+        "arachne|spider girl|drider"
+      ],
+      "neg": "yuri, 2girls, female on bottom"
+    },
+    {
+      "id": "succubus_tail",
+      "kind": "look",
+      "file": "構図\\succubus_tail.safetensors",
+      "trigger": "succubus tail",
+      "strength": 0.5,
+      "when": [
+        "succubus tail|spade tail|heart-shaped tail|demon tail"
+      ]
+    },
+    {
+      "id": "energy_drain",
+      "kind": "action",
+      "file": "構図\\Energy_Drain_Femdom_IL_epoch_20.safetensors",
+      "trigger": "energy drain, femdom",
+      "strength": 0.6,
+      "when": [
+        "drains? his energy|life force|sucking (?:out )?his (?:energy|essence|life)|absorb\\w* his (?:energy|essence)",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "memo": "2026-09-29 追加。淫魔が精気を吸う構図。年齢系タグなし"
+    },
+    {
+      "id": "lamia_coil",
+      "kind": "action",
+      "file": "構図\\Femdom_Lamia_Sex.safetensors",
+      "trigger": "lamia, snake tail around male, dominant female, submissive male, male restrained",
+      "strength": 0.6,
+      "when": [
+        "\\blamia\\b|snake tail|snake girl|naga",
+        "(?:tail|coil)\\w*[^,]{0,30}(?:around|wrapped)[^,]{0,20}(?:him|his)|coils? (?:around|wrapped) (?:him|his)",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "memo": "2026-09-29 追加。ラミアが男に巻きつく構図。学習タグは boy 表記なのでトリガーは male に言い換え。年齢系タグなし"
+    },
+    {
+      "id": "toes_nipple",
+      "kind": "action",
+      "file": "構図\\toes-nipple_tweak-fotnip-IL.safetensors",
+      "trigger": "fotnip",
+      "strength": 0.6,
+      "when": [
+        "(?:toes?|foot|feet|sole|boot)[^,]{0,40}nipple|nipple[^,]{0,40}(?:toes?|foot|feet)",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "memo": "2026-09-29 追加。足の指で乳首をつまむ構図。年齢系タグなし"
+    },
+    {
+      "id": "nipple_lick_hj",
+      "kind": "action",
+      "file": "構図\\nai_nipple_licking_handjob_IL.safetensors",
+      "trigger": "nai_nipple_licking_handjob",
+      "strength": 0.6,
+      "when": [
+        "(?:licking|sucking) his nipple",
+        "stroking his (?:penis|cock|shaft|erection)|handjob|hand (?:wrapped )?around his (?:penis|erection)|grip\\w* his (?:penis|erection)",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "memo": "2026-09-29 追加。乳首舐め＋手コキ。年齢系タグなし（学習タグに score_9 が混ざる）"
+    },
+    {
+      "id": "armpit",
+      "kind": "action",
+      "enabled": false,
+      "file": "構図\\Armpit_Fetish_Femdom_Pony__Illustrious.safetensors",
+      "trigger": "armpit fetish, face in armpit",
+      "strength": 0.6,
+      "when": [
+        "armpit",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "memo": "2026-09-29 追加。ファイル名は Illustrious だが学習元は Pony（290640）→ 効き方が怪しいので enabled は false。試すときは true に"
+    },
+    {
+      "id": "peg_nipple",
+      "kind": "action",
+      "file": "構図\\pose_pegging_nipple_tweak.safetensors",
+      "trigger": "pose_pegging_nipple_tweak, nipple tweak",
+      "strength": 0.7,
+      "when": [
+        "strap-on|pegging",
+        "nipple",
+        "pegg|\\banus\\b|\\banal\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "enabled": false,
+      "memo": "2026-09-29 停止（ユーザー決定）：学習タグに子どもを示すタグあり。判定条件（when）は残し、pose_control.by_pose の 3D の下書き（depth3d_all_fours_behind_reach）で構図を決める"
+    },
+    {
+      "id": "peg_pov",
+      "kind": "action",
+      "file": "構図\\PoV_Pegging_Another_Femdom.safetensors",
+      "trigger": "femdom pov, anal pegging, male lying on back",
+      "strength": 0.7,
+      "when": [
+        "strap-on|pegging",
+        "lying on (his )?back|on his back|from above",
+        "pegg|\\banus\\b|\\banal\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "peg_chair",
+      "kind": "action",
+      "file": "構図\\Pegging_Bondage_Chair.safetensors",
+      "trigger": "dominant girl, submissive man, adult male, male bound",
+      "strength": 0.7,
+      "when": [
+        "strap-on|pegging",
+        "chair",
+        "pegg|\\banus\\b|\\banal\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "suspension",
+      "kind": "action",
+      "file": "構図\\Male_Suspension_Femdom_Handjob__Pegging_Pony__Illustrious (1).safetensors",
+      "trigger": "male suspension, male bound wrists",
+      "strength": 0.6,
+      "when": [
+        "\\bsuspended\\b|suspension(?! bridge)|\\bhe hangs (?:in|from)\\b|\\b(?:he is|him) hanging\\b|\\bhanging alone\\b"
+      ]
+    },
+    {
+      "id": "inverted",
+      "kind": "action",
+      "file": "構図\\Inverted_Male_Femdom_Illustrious.safetensors",
+      "trigger": "femdom_invert, upside_down_male",
+      "strength": 0.5,
+      "when": [
+        "upside[- ]down"
+      ],
+      "neg": "motion lines"
+    },
+    {
+      "id": "peg_spoon",
+      "kind": "action",
+      "file": "構図\\Spooning_Femdom_Handjob__Pegging_Pony__Illustrious-000058.safetensors",
+      "trigger": "spooning, larger female",
+      "strength": 0.6,
+      "when": [
+        "spooning|lying on (his |her )?side",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "peg_doggy",
+      "kind": "action",
+      "file": "構図\\DoggyStylePegging_Illustrios.safetensors",
+      "trigger": "doggy_style_pegging, strap-on",
+      "strength": 0.6,
+      "when": [
+        "strap-on|pegging",
+        "doggy|all fours|from behind",
+        "pegg|\\banus\\b|\\banal\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "neg": "white border, padding, plain grey background"
+    },
+    {
+      "id": "peg_strapon",
+      "kind": "action",
+      "file": "構図\\IL_Lesbian_anal_strap-on.safetensors",
+      "trigger": "lestraabed, strap-on, anal",
+      "strength": 0.6,
+      "when": [
+        "strap-on|pegging",
+        "pegg|\\banus\\b|\\banal\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "neg": "2girls, yuri, female on bottom, girl on bottom",
+      "memo": "2026-09-29 追加。学習は女性同士のペニバン → 責める側＝相手の女性、受ける側＝主人公に読み替え（ネガに 2girls, yuri）。年齢系タグなし"
+    },
+    {
+      "id": "peg",
+      "kind": "action",
+      "file": "構図\\Pegging_Illustrious.safetensors",
+      "trigger": "pegging",
+      "strength": 0.7,
+      "when": [
+        "strap-on|pegging",
+        "pegg|\\banus\\b|\\banal\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "enabled": false,
+      "memo": "2026-09-29 停止（ユーザー決定）：学習タグに子どもを示すタグあり。判定条件（when）は残し、pose_control.by_pose の 3D の下書き（depth3d_all_fours_behind）で構図を決める"
+    },
+    {
+      "id": "futa",
+      "kind": "action",
+      "file": "構図\\Futa_on_male-000055.safetensors",
+      "trigger": "futa on male",
+      "strength": 0.7,
+      "when": [
+        "futanari|newhalf|otoko no ko",
+        "(?:penis|cock)[^,]{0,40}(?:(?<!never )(?<!no )penetrat|in(?:to|side) his anus|thrust)|(?<!never )(?<!no )penetrat\\w* (?:his anus|him)[^,]{0,40}(?:penis|cock)|thrusts? (?:up )?into his anus|\\banal sex\\b|\\bfucking\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "extra": [
+        {
+          "when": "otoko no ko",
+          "pos": "flat chest",
+          "neg": "large breasts, huge breasts"
+        }
+      ]
+    },
+    {
+      "id": "alt_futadom",
+      "kind": "action",
+      "enabled": false,
+      "file": "構図\\Futadom(Illustrious).safetensors",
+      "trigger": "futadom, futa on male",
+      "strength": 0.6,
+      "when": [
+        "futanari|newhalf|otoko no ko",
+        "(?:penis|cock)[^,]{0,40}(?:(?<!never )(?<!no )penetrat|in(?:to|side) his anus|thrust)|(?<!never )(?<!no )penetrat\\w* (?:his anus|him)[^,]{0,40}(?:penis|cock)|thrusts? (?:up )?into his anus|\\banal sex\\b|\\bfucking\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "memo": "2026-09-29 追加。futa（Futa_on_male）の別版。974枚の混合データで 18 years old 3枚・petite 95（成人は18歳から＝ユーザー判断で可）。試すときは true に"
+    },
+    {
+      "id": "close_hug",
+      "kind": "action",
+      "file": "構図\\close_hug_sex_IL.safetensors",
+      "trigger": "close hug sex",
+      "strength": 0.6,
+      "when": [
+        "kiss",
+        "girl on top|straddl|embrac|hug",
+        "(?<!never )(?<!no )penetrat|riding|\\banal\\b|\\bsex\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "enabled": false,
+      "memo": "2026-09-29 停止（ユーザー決定）：学習タグに子どもを示すタグあり。判定条件（when）は残し、pose_control.by_pose の 3D の下書き（depth3d_girl_on_top_kiss）で構図を決める"
+    },
+    {
+      "id": "bloodsuck",
+      "kind": "action",
+      "file": "構図\\Femdom_Bloodsucking_IL.safetensors",
+      "trigger": "fd_bs, biting the man's neck",
+      "strength": 0.7,
+      "when": [
+        "vampire",
+        "bit(e|es|ing)|suck|drink|blood",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "enabled": false,
+      "memo": "2026-09-29 停止（ユーザー決定）：学習タグに子どもを示すタグあり。判定条件（when）は残し、pose_control.by_pose の 3D の下書き（depth3d_neck_bite）で構図を決める"
+    },
+    {
+      "id": "whisper",
+      "kind": "action",
+      "file": "構図\\whispering_in_ear_IL.safetensors",
+      "trigger": "ear_whisperil, female whispering to male",
+      "strength": 0.7,
+      "when": [
+        "whisper\\w* (?:into|in|to) (?:his|him)|(?:ear|earlobe)[^,]{0,12}whisper|licking his ear|ear licking|(?<!earphone )\\bin his ear\\b|nibbling (on )?his ear",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "lap_finger",
+      "kind": "action",
+      "file": "構図\\POVLapLyingBlowjob_Handjob_Fingering_Illustrious.safetensors",
+      "trigger": "laply1ngp0v",
+      "strength": 0.6,
+      "when": [
+        "on (her|the woman's) lap|lap pillow|lying on (her )?lap",
+        "finger",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "prostate",
+      "kind": "action",
+      "file": "構図\\ProstateMilking_IL_V1_0.safetensors",
+      "trigger": "finger stimulate prostate, anal fingering",
+      "strength": 0.7,
+      "when": [
+        "prostate",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "neg": "mosaic censoring",
+      "enabled": false,
+      "memo": "2026-09-29 停止（ユーザー決定）：学習タグに子どもを示すタグあり。判定条件（when）は残し、pose_control.by_pose の 3D の下書き（depth3d_legs_up_front）で構図を決める"
+    },
+    {
+      "id": "fingering",
+      "kind": "action",
+      "file": "構図\\pose_anal_fingering_2-000020.safetensors",
+      "trigger": "anal_fingering",
+      "strength": 0.7,
+      "when": [
+        "anal fingering|finger(s|ing)? (in|into) his (anus|ass)|fingering his (anus|ass)|loosen(?:ed|ing) (?:his )?anus",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "enabled": false,
+      "memo": "2026-09-29 停止（ユーザー決定）：学習タグに子どもを示すタグあり。判定条件（when）は残し、pose_control.by_pose の 3D の下書き（depth3d_all_fours_behind）で構図を決める"
+    },
+    {
+      "id": "rusty",
+      "kind": "action",
+      "file": "構図\\RustyTrombone_IL_V1_0.safetensors",
+      "trigger": "anilingus, rusty trombone",
+      "strength": 0.6,
+      "when": [
+        "anilingus|rimming|licking his anus|tongue in his anus",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "kiss",
+      "kind": "action",
+      "file": "構図\\malepassivekiss_il_v1.safetensors",
+      "trigger": "malepassivekiss",
+      "strength": 0.7,
+      "when": [
+        "kiss",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "enabled": false,
+      "memo": "2026-09-29 停止（ユーザー決定）：学習タグに子どもを示すタグあり。判定条件（when）は残し、pose_control.by_pose の 3D の下書き（depth3d_girl_on_top_kiss）で構図を決める"
+    },
+    {
+      "id": "chastity",
+      "kind": "action",
+      "file": "構図\\POV_CHASTITY_CAGE.safetensors",
+      "trigger": "povcage, chastity cage",
+      "strength": 0.7,
+      "when": [
+        "chastity"
+      ]
+    },
+    {
+      "id": "xcross",
+      "kind": "action",
+      "file": "構図\\X_Cross_Femdom_Bondage__BDSM_Pony__Illustrious-000055.safetensors",
+      "trigger": "x-cross \\(bdsm\\), restrained male",
+      "strength": 0.7,
+      "when": [
+        "x-cross|spread-eagle|restrained against (the|a) wall"
+      ]
+    },
+    {
+      "id": "collar",
+      "kind": "action",
+      "file": "構図\\Male_Slave_Collar_Leash_Pet_Play_Femdom_Illustrious.safetensors",
+      "trigger": "male slave, male wearing animal collar",
+      "strength": 0.7,
+      "when": [
+        "leash|animal collar|dog collar|pet collar|slave collar"
+      ]
+    },
+    {
+      "id": "facesit",
+      "kind": "action",
+      "file": "構図\\FSFJ_1300845.safetensors",
+      "trigger": "femdom facesitting, sitting on face",
+      "strength": 0.7,
+      "when": [
+        "facesitting|sitting on his face|face ?sit",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "step",
+      "kind": "action",
+      "file": "構図\\Steped_On_POV-000008.safetensors",
+      "trigger": "steppovv1, trampling",
+      "strength": 0.7,
+      "when": [
+        "stepp(ing|ed) on|\\bsteps on (?:him|his)|trampl|foot on his|stomp|heel[^,]{0,30}(?:penis|erection)",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "footjob",
+      "kind": "action",
+      "file": "構図\\fumichin_illustrious_V1.0.safetensors",
+      "trigger": "fumichin, footjob",
+      "strength": 0.7,
+      "when": [
+        "foot ?job|soles? on his|\\bsoles?\\b[^,]{0,40}(?:penis|erection)|(?:penis|erection)[^,]{0,25}(?:with|between) (?:the sole|her (?:bare |stockinged )?(?:feet|foot|soles?))",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "neg": "mosaic censoring",
+      "enabled": false,
+      "memo": "2026-09-29 停止（ユーザー決定）：学習タグに子どもを示すタグあり。判定条件（when）は残し、pose_control.by_pose の 3D の下書き（depth3d_standing_foot）で構図を決める"
+    },
+    {
+      "id": "thigh",
+      "kind": "action",
+      "file": "構図\\Illustrious_thigh_job_Intercrural_Poses_Standing__Lying_Control_Lying_On_Top_standing_2.safetensors",
+      "trigger": "thigh_job",
+      "strength": 0.6,
+      "when": [
+        "thigh ?job|intercrural|between her thighs|thigh sex",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "rah",
+      "kind": "action",
+      "file": "構図\\RAH_G2.safetensors",
+      "trigger": "rah",
+      "strength": 0.7,
+      "when": [
+        "reach-around|reaching around",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "rah_behind",
+      "kind": "action",
+      "file": "構図\\RAH_G2.safetensors",
+      "trigger": "rah",
+      "strength": 0.7,
+      "when": [
+        "from behind|behind him|hugging him from behind",
+        "handjob|stroking his (?:penis|cock|shaft|erection)|nipple",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "headlock",
+      "kind": "action",
+      "file": "構図\\headlock-handjob-hedockhj-IL.safetensors",
+      "trigger": "hedockhj",
+      "strength": 0.6,
+      "when": [
+        "headlock|holding his head|arm around his neck",
+        "handjob|stroking",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "paizuri",
+      "kind": "action",
+      "file": "構図\\paizuri_twistedbreasts_v1.safetensors",
+      "trigger": "paizuri",
+      "strength": 0.6,
+      "when": [
+        "paizuri|titjob|between her breasts",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "xray",
+      "kind": "action",
+      "file": "構図\\Love_Button.safetensors",
+      "trigger": "love_button, prostate_xray",
+      "strength": 0.6,
+      "when": [
+        "x-ray|cross-section|internal view"
+      ]
+    },
+    {
+      "id": "handjob",
+      "kind": "action",
+      "file": "構図\\handjob_from_side_v3-000014.safetensors",
+      "trigger": "handjob_from_side",
+      "strength": 0.6,
+      "when": [
+        "handjob|(?:her|she|hand|fingers?)[^,]{0,40}strok\\w* his (?:penis|cock)|hand (?:wrapped )?around his (?:penis|erection|shaft)|grip(?:s|ping)? his (?:penis|erection)|strok\\w* (?:the underside of )?his (?:shaft|erection)|palm cupping his penis",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "neg": "mosaic censoring",
+      "enabled": false,
+      "memo": "2026-09-29 停止（ユーザー決定）：学習タグに子どもを示すタグあり。判定条件（when）は残し、pose_control.by_pose の 3D の下書き（depth3d_side_handjob）で構図を決める"
+    },
+    {
+      "id": "figure_four",
+      "kind": "action",
+      "file": "構図\\figure-four-neck-lockv4-il-Kari_corn-f4nefj.safetensors",
+      "trigger": "f4nefj",
+      "strength": 0.6,
+      "when": [
+        "figure[- ]four|head ?scissor|thighs around his (neck|head)|leg lock"
+      ]
+    },
+    {
+      "id": "bondage",
+      "kind": "action",
+      "file": "構図\\Femdom Bondage Conquest.safetensors",
+      "trigger": "fd_bd_cq",
+      "strength": 0.7,
+      "when": [
+        "(?:his (?:wrists|hands|arms|ankles|legs|body)|\\bhim)[^,]{0,30}(?<!as if )\\b(?:tied|bound|chained|cuffed)\\b(?! book)|(?<!as if )\\b(?:tied|bound|chained|cuffed|strapped)\\b(?! book)[^,]{0,20}(?:his (?:wrists|hands|arms|ankles|legs)|\\bhim\\b)|restrain|shackle|handcuffed|rope bondage|shibari|\\bhe (?:lies |is |sits |stands |kneels )?(?:bound|tied|strapped|cuffed|chained)\\b|\\b(?:hands|wrists?|ankles?) (?:cuffed|tied|bound|chained)\\b|\\brope (?:wound|wrapped|tied)(?: tight)? around his (?!own)"
+      ],
+      "enabled": false,
+      "memo": "2026-09-29 停止（ユーザー決定）：学習タグに子どもを示すタグあり。判定条件（when）は残し、pose_control.by_pose の 3D の下書き（depth3d_arms_up_bound）で構図を決める"
+    },
+    {
+      "id": "alt_ashikoki",
+      "kind": "action",
+      "enabled": false,
+      "file": "構図\\ashikokistep-000030.safetensors",
+      "trigger": "ashikokistep",
+      "strength": 0.7,
+      "when": [
+        "foot ?job|\\bsoles?\\b[^,]{0,40}(?:penis|erection)"
+      ]
+    },
+    {
+      "id": "alt_thigh_top",
+      "kind": "action",
+      "enabled": false,
+      "file": "構図\\POV_Thighjob_on_Top_ILLUSTRIOUS.safetensors",
+      "trigger": "p0vth1ghj0b",
+      "strength": 0.6,
+      "when": [
+        "thigh ?job|thigh sex"
+      ]
+    },
+    {
+      "id": "alt_strapon",
+      "kind": "action",
+      "enabled": false,
+      "file": "構図\\Strap-onpegging(min2).safetensors",
+      "trigger": "strapon_pegging",
+      "strength": 0.6,
+      "when": [
+        "strap-on|pegging",
+        "pegg|\\banus\\b|\\banal\\b"
+      ]
+    },
+    {
+      "id": "alt_anilingus",
+      "kind": "action",
+      "enabled": false,
+      "file": "構図\\pose_anilingus_handjob.safetensors",
+      "trigger": "pose_anilingus_handjob",
+      "strength": 0.6,
+      "when": [
+        "anilingus"
+      ]
+    },
+    {
+      "id": "ctl_nipple",
+      "kind": "action",
+      "enabled": false,
+      "file": "",
+      "trigger": "",
+      "strength": 0,
+      "when": [
+        "(?:pinch|tweak|lick|suck|rub|roll|pull|flick|twist|squeez|tease|teasing|circl|knead|nibbl|bit)\\w*[^,]{0,45}\\bnipples?\\b|\\bnipples?\\b[^,]{0,25}(?:play|pinch|tweak|suck|lick)",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "memo": "2026-09-29 下書きだけの判定項目（乳首責め：乳首を責める動作があるときだけ。主人公が主語の姿勢で下書きを選ぶ・2026-09-29 絞り込み）"
+    },
+    {
+      "id": "ctl_straddle",
+      "kind": "action",
+      "enabled": false,
+      "file": "",
+      "trigger": "",
+      "strength": 0,
+      "when": [
+        "cowgirl|straddl|rides him|riding him|on top of him|sits on his (?:hips|waist|lap)",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "memo": "2026-09-29 下書きだけの判定項目（構図LoRAなし・file なし）。当たったら pose_control.by_pose の 3D の下書きを使う（騎乗位・跨がる）"
+    },
+    {
+      "id": "ctl_lap",
+      "kind": "action",
+      "enabled": false,
+      "file": "",
+      "trigger": "",
+      "strength": 0,
+      "when": [
+        "lap pillow|on her lap|in her lap|head on her (?:lap|thighs)|cradl|in her arms|head (?:resting |pillowed )?on (?:her|the [\\w-]+(?: [\\w-]+)?'s) (?:lap|thighs)",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "memo": "2026-09-29 下書きだけの判定項目（構図LoRAなし・file なし）。当たったら pose_control.by_pose の 3D の下書きを使う（膝枕・抱きかかえ）"
+    },
+    {
+      "id": "ctl_handjob",
+      "kind": "action",
+      "enabled": false,
+      "file": "",
+      "trigger": "",
+      "strength": 0,
+      "when": [
+        "milking|strok\\w* his (?:penis|erection|shaft|cock)|hand (?:wrapped )?around his (?:penis|erection)|handjob",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "memo": "2026-09-29 下書きだけの判定項目（構図LoRAなし・file なし）。当たったら pose_control.by_pose の 3D の下書きを使う（手コキの別の書き方。主人公が座る／寝る で下書きを選ぶ）"
+    },
+    {
+      "id": "ctl_hero_pose",
+      "kind": "action",
+      "enabled": false,
+      "file": "",
+      "trigger": "",
+      "strength": 0,
+      "when": [
+        "[\\s\\S]"
+      ],
+      "memo": "2026-09-29 下書きだけの判定項目（最後の受け皿）。ほかのどれにも当たらない場面で、主人公の姿勢が書いてあるときだけ主人公1人の下書きを使う（相手・触手・道具はプロンプト任せ）。姿勢が書いてなければ下書きなし"
+    }
+  ],
+  "mod_style": {
+    "hero_lora": "sdduel_hero_xl_{style}-000008.safetensors",
+    "hero_trigger": "sdduel_hero",
+    "hero_strength": 0.8,
+    "hero_scene_strength": 0.5,
+    "styles": {},
+    "chara_lora": "キャラ\\chr_{mod}_{char}_{style}-000008.safetensors",
+    "chara_trigger": "chr_{mod}_{char}",
+    "chara_scene_strength": 0.6,
+    "chara_enabled": true
+  },
+  "mod_style_memo": "MODごとの絵柄（2026-09-29）。MODへの割当は 絵柄割当.csv（絵柄割当.bat）。絵柄の一覧は gen.py の STYLE_CANDS（絵柄比較と同じ）。絵柄を割り当てたMODは、本編の絵柄LoRA・共通の主人公LoRAの代わりに その絵柄LoRA と その絵柄で学習した主人公LoRA（hero_lora の {style} が絵柄名）を使い、output\\<MOD>_WAI_<絵柄>\\ に撮る。主人公LoRAがまだ無い絵柄は主人公LoRAなし。hero_scene_strength は2人の場面での主人公LoRAの強さ（2026-09-29 ユーザー決定で 0→0.5。場面の強さ比較.bat で調整）。styles で絵柄ごとに上書き：例 \"ATRex\": {\"strength\": 0.7, \"hero_lora\": \"sdduel_hero_xl_ATRex-000006.safetensors\", \"hero_strength\": 0.7}。新しい絵柄も \"lora\" を書けば足せる。【LoRAの使い分け 2026-09-29】立ち絵＝絵柄LoRA。イベント（2人の場面）＝絵柄LoRA＋主人公LoRA＋相手の敵キャラLoRA（chara_lora：{mod}=MODコード {char}=master/e1/e2/e3/boss {style}=絵柄名・未割当は std、Lora用\\chara の C1〜C3 で作る。chara_scene_strength が強さ、chara_enabled false で全部外す）＋構図LoRA",
+  "face_detail": {
+    "enabled": true,
+    "model": "bbox/face_yolov8m.pt",
+    "denoise": 0.4,
+    "steps": 20,
+    "guide_size": 512,
+    "max_size": 1024,
+    "bbox_threshold": 0.5,
+    "bbox_dilation": 10,
+    "bbox_crop_factor": 3.0,
+    "feather": 5,
+    "memo": "顔の描き直し（FaceDetailer・2026-09-29 目元の崩れ対策）。enabled を false で外す。denoise は描き直しの強さ（上げると目元はきれいになるが顔が変わりやすい。0.3〜0.5）"
+  },
+  "pose_control": {
+    "enabled": true,
+    "model": "noob_openpose.safetensors",
+    "union_type": "",
+    "strength": 0.6,
+    "start": 0.0,
+    "end": 0.6,
+    "scenes": {},
+    "by_pose": {
+      "kiss": [
+        [
+          "\\blying\\b|on (?:his|her|their) backs?|\\bon (?:the|a) bed\\b|\\bbed\\b|futon|lies\\b",
+          "depth3d_girl_on_top_kiss"
+        ],
+        [
+          "",
+          "depth3d_standing_embrace"
+        ]
+      ],
+      "close_hug": [
+        [
+          "\\blying\\b|on (?:his|her|their) backs?|\\bbed\\b|futon|lies\\b",
+          "depth3d_girl_on_top_kiss"
+        ],
+        [
+          "",
+          "depth3d_standing_embrace"
+        ]
+      ],
+      "fingering": "depth3d_all_fours_behind",
+      "peg": "depth3d_all_fours_behind",
+      "peg_nipple": "depth3d_all_fours_behind_reach",
+      "prostate": "depth3d_legs_up_front",
+      "footjob": "depth3d_standing_foot",
+      "handjob": "depth3d_side_handjob",
+      "bondage": "depth3d_arms_up_bound",
+      "bloodsuck": "depth3d_neck_bite",
+      "ctl_nipple": [
+        [
+          "\\bhe (?:lies|is lying|lays)\\b|\\bhe is on his back\\b|lying on his back",
+          "depth3d_lying_leanover"
+        ],
+        [
+          "\\bhe (?:sits|is sitting|is seated|sat)\\b|\\bhe is (?:on|in) (?:a|the) (?:chair|throne|sofa|bench|stool)\\b",
+          "depth3d_seated_front_chest"
+        ],
+        [
+          "\\bhe (?:kneels|is kneeling)\\b",
+          "depth3d_kneel_front_chest"
+        ],
+        [
+          "\\bhe (?:stands|is standing)\\b",
+          "depth3d_standing_front_chest"
+        ]
+      ],
+      "ctl_straddle": "depth3d_girl_on_top_straddle",
+      "ctl_lap": "depth3d_lap_pillow",
+      "ctl_handjob": [
+        [
+          "\\bhe (?:sits|is sitting|is seated|sat)\\b|\\bhe is (?:on|in) (?:a|the) (?:chair|throne|sofa|bench|stool)\\b",
+          "depth3d_side_handjob"
+        ],
+        [
+          "\\bhe (?:lies|is lying|lays)\\b|\\bhe is on his back\\b|lying on his back",
+          "depth3d_lying_leanover"
+        ]
+      ],
+      "ctl_hero_pose": [
+        [
+          "^(?![\\s\\S]*(?:tentacl|machine|robotic arm|mechanical arm|device|suction cup|\\bvines?\\b|\\broots?\\b|slime|\\btails? (?:wrap|coil)))(?=[\\s\\S]*\\bsits behind (?:him|the [\\w -]{0,40}man)[^,]{0,40}(?:embrac|hug|holding))",
+          "depth3d_seated_behind"
+        ],
+        [
+          "^(?![\\s\\S]*(?:tentacl|machine|robotic arm|mechanical arm|device|suction cup|\\bvines?\\b|\\broots?\\b|slime|\\btails? (?:wrap|coil)))(?=[\\s\\S]*\\b(?:hugs?|hugging|embraces?|embracing|holds?|holding|wraps?|wrapping) (?:him|his (?:body|chest|waist))(?: tightly| tight)? from behind\\b)[\\s\\S]*(?:\\bhe (?:sits|is sitting|is seated|sat)\\b|\\bhe is (?:on|in) (?:a|the) (?:chair|throne|sofa|bench|stool)\\b|\\bseated\\b|\\bsitting\\b|\\btied to (?:a|the) chair|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:sits|is sitting|is seated)\\b|(?:^|,)\\s*(?:sitting|seated)\\b|\\bsits alone\\b)",
+          "depth3d_seated_behind"
+        ],
+        [
+          "^(?![\\s\\S]*(?:tentacl|machine|robotic arm|mechanical arm|device|suction cup|\\bvines?\\b|\\broots?\\b|slime|\\btails? (?:wrap|coil)))(?![\\s\\S]*(?:\\bhe (?:lies|is lying|lays|is laid|is pinned|is sprawled)\\b|\\bhe is on his back\\b|lying on his back|\\bon his back\\b|\\bspread-eagle|\\bsprawled\\b|\\bstrapped (?:to|on) (?:a|the) (?:table|bed|bench)|\\blying on (?:a|the) (?:bed|floor|table|ground)|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:lies|lays|sleeps|is lying|is sleeping|is laid|is strapped|is tied down)\\b|(?:^|,)\\s*(?:lying|sleeping|curled up|sprawled)\\b|\\blying (?:alone|face (?:down|up)|on his)|(?:\\bhe|\\bman)\\s+(?:\\w+\\s+){0,2}curls up\\b|\\bcurled up\\b|\\bsinks? (?:onto|into)|\\bfloats?\\b|\\bnaps?\\b|\\bsleeps?\\b|\\bfuton\\b))(?=[\\s\\S]*\\b(?:hugs?|hugging|embraces?|embracing|holds?|holding|wraps?|wrapping) (?:him|his (?:body|chest|waist))(?: tightly| tight)? from behind\\b)",
+          "depth3d_standing_behind_hug"
+        ],
+        [
+          "^(?![\\s\\S]*(?:tentacl|machine|robotic arm|mechanical arm|device|suction cup|\\bvines?\\b|\\broots?\\b|slime|\\btails? (?:wrap|coil)))(?=[\\s\\S]*(?:face (?:is )?(?:buried|pressed|in)[^,]{0,40}(?:cleavage|breasts|bosom|chest)|(?:holds?|hugs?|presses) his (?:face|head)[^,]{0,30}(?:cleavage|breasts|bosom|chest)|his face (?:in|against) her (?:cleavage|breasts|bosom|chest)|\\bbetween her (?:huge |large )?breasts\\b|(?:hugs?|embraces?) him (?:tightly |tight )?(?:from the front|against her)|wraps him in a full-body embrace|chest (?:pressed|crushed) into her breasts))[\\s\\S]*(?:\\bhe (?:sits|is sitting|is seated|sat)\\b|\\bhe is (?:on|in) (?:a|the) (?:chair|throne|sofa|bench|stool)\\b|\\bseated\\b|\\bsitting\\b|\\btied to (?:a|the) chair|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:sits|is sitting|is seated)\\b|(?:^|,)\\s*(?:sitting|seated)\\b|\\bsits alone\\b|\\bon (?:her|the \\w+'s) lap\\b)",
+          "depth3d_seated_front_chest"
+        ],
+        [
+          "^(?![\\s\\S]*(?:tentacl|machine|robotic arm|mechanical arm|device|suction cup|\\bvines?\\b|\\broots?\\b|slime|\\btails? (?:wrap|coil)))(?![\\s\\S]*(?:\\bhe (?:lies|is lying|lays|is laid|is pinned|is sprawled)\\b|\\bhe is on his back\\b|lying on his back|\\bon his back\\b|\\bspread-eagle|\\bsprawled\\b|\\bstrapped (?:to|on) (?:a|the) (?:table|bed|bench)|\\blying on (?:a|the) (?:bed|floor|table|ground)|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:lies|lays|sleeps|is lying|is sleeping|is laid|is strapped|is tied down)\\b|(?:^|,)\\s*(?:lying|sleeping|curled up|sprawled)\\b|\\blying (?:alone|face (?:down|up)|on his)|(?:\\bhe|\\bman)\\s+(?:\\w+\\s+){0,2}curls up\\b|\\bcurled up\\b|\\bsinks? (?:onto|into)|\\bfloats?\\b|\\bnaps?\\b|\\bsleeps?\\b|\\bfuton\\b))(?=[\\s\\S]*(?:face (?:is )?(?:buried|pressed|in)[^,]{0,40}(?:cleavage|breasts|bosom|chest)|(?:holds?|hugs?|presses) his (?:face|head)[^,]{0,30}(?:cleavage|breasts|bosom|chest)|his face (?:in|against) her (?:cleavage|breasts|bosom|chest)|\\bbetween her (?:huge |large )?breasts\\b|(?:hugs?|embraces?) him (?:tightly |tight )?(?:from the front|against her)|wraps him in a full-body embrace|chest (?:pressed|crushed) into her breasts))",
+          "depth3d_standing_embrace"
+        ],
+        [
+          "^(?![\\s\\S]*(?:tentacl|machine|robotic arm|mechanical arm|device|suction cup|\\bvines?\\b|\\broots?\\b|slime|\\btails? (?:wrap|coil)))(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))(?=[\\s\\S]*\\b(?:she|her|hers|the woman|the girl)\\b[^.]{0,60}\\b(?:touch|grab|grip|hold|press|strok|caress|pin|straddl|kiss|lick|rub|squeez|pull|push|fondl|teas|pinch|stroke|cup|wrap|mount|embrac|hug|slap|spank|bit|suck))[\\s\\S]*(?:\\b(?:he is|he's|he hangs|hangs|hanging|is hung|dangling|dangles)\\b[^,.]{0,30}\\b(?:suspended|in the air|from the ceiling|off the ground|by his wrists)|\\bsuspended\\b|\\bhis (?:arms|wrists|hands) (?:are )?(?:bound|tied|chained|restrained|pinned|held|shackled)[^,.]{0,20}(?:above|over) his head|\\barms (?:raised|stretched|pulled) (?:above|over)(?: his)? head)",
+          "depth3d_arms_up_bound"
+        ],
+        [
+          "\\bhe (?:lies|is lying|lays|is laid|is pinned|is sprawled)\\b|\\bhe is on his back\\b|lying on his back|\\bon his back\\b|\\bspread-eagle|\\bsprawled\\b|\\bstrapped (?:to|on) (?:a|the) (?:table|bed|bench)|\\blying on (?:a|the) (?:bed|floor|table|ground)|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:lies|lays|sleeps|is lying|is sleeping|is laid|is strapped|is tied down)\\b|(?:^|,)\\s*(?:lying|sleeping|curled up|sprawled)\\b|\\blying (?:alone|face (?:down|up)|on his)|(?:\\bhe|\\bman)\\s+(?:\\w+\\s+){0,2}curls up\\b|\\bcurled up\\b",
+          "depth3d_hero_only_lie"
+        ],
+        [
+          "\\bon (?:his )?all fours\\b|\\bon his hands and knees\\b|\\bhe crawls\\b",
+          "depth3d_hero_only_fours"
+        ],
+        [
+          "\\bhe (?:kneels|is kneeling|knelt)\\b|\\bkneeling\\b|(?<!hands )(?<!hand )(?<!palms )\\bon his knees\\b|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:kneels|crouches|squats|is kneeling|is crouching|is squatting)\\b|(?:^|,)\\s*(?:kneeling|crouching|squatting)\\b",
+          "depth3d_hero_only_kneel"
+        ],
+        [
+          "^(?![\\s\\S]*(?:tentacl|machine|robotic arm|mechanical arm|device|suction cup|\\bvines?\\b|\\broots?\\b|slime|\\btails? (?:wrap|coil)))(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))(?=[\\s\\S]*(?:\\b(?:touch|brush|strok|rub|pinch|squeez|suck|lick|kiss|hug|hold|press|palpat|pok|trac|paint|polish|wash|tickl|fondl|caress|grip|grab|pull|spread|nibbl|bit|blow|whisper|spank|slap|trap|milk|teas|flick|circl|knead|massag|cup|wrap|strap|insert|finger|nuzzl|sniff|lap|nips?)\\w*[^,]{0,40}?\\b(?:him|his(?! own)|the (?:[\\w-]+ ){0,4}man's)\\b|doing everything to))(?=[\\s\\S]*(?:\\b(?:sits|stands|kneels|is) behind him\\b|\\bfrom behind\\b|leaning back against (?:the|her) [\\w' -]{0,30}(?:chest|breasts|body)|behind him (?:hugging|holding|with)))[\\s\\S]*(?:\\bhe (?:sits|is sitting|is seated|sat)\\b|\\bhe is (?:on|in) (?:a|the) (?:chair|throne|sofa|bench|stool)\\b|\\bseated\\b|\\bsitting\\b|\\btied to (?:a|the) chair|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:sits|is sitting|is seated)\\b|(?:^|,)\\s*(?:sitting|seated)\\b|\\bsits alone\\b)",
+          "depth3d_seated_behind"
+        ],
+        [
+          "^(?![\\s\\S]*(?:tentacl|machine|robotic arm|mechanical arm|device|suction cup|\\bvines?\\b|\\broots?\\b|slime|\\btails? (?:wrap|coil)))(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))(?=[\\s\\S]*(?:\\b(?:touch|brush|strok|rub|pinch|squeez|suck|lick|kiss|hug|hold|press|palpat|pok|trac|paint|polish|wash|tickl|fondl|caress|grip|grab|pull|spread|nibbl|bit|blow|whisper|spank|slap|trap|milk|teas|flick|circl|knead|massag|cup|wrap|strap|insert|finger|nuzzl|sniff|lap|nips?)\\w*[^,]{0,40}?\\b(?:him|his(?! own)|the (?:[\\w-]+ ){0,4}man's)\\b|doing everything to))[\\s\\S]*(?:\\bhe (?:sits|is sitting|is seated|sat)\\b|\\bhe is (?:on|in) (?:a|the) (?:chair|throne|sofa|bench|stool)\\b|\\bseated\\b|\\bsitting\\b|\\btied to (?:a|the) chair|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:sits|is sitting|is seated)\\b|(?:^|,)\\s*(?:sitting|seated)\\b|\\bsits alone\\b)",
+          "depth3d_seated_front_chest"
+        ],
+        [
+          "^(?=[\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him|far in the background|stands? far away|watches from|watching from|more than two meters))[\\s\\S]*(?:\\bhe (?:sits|is sitting|is seated|sat)\\b|\\bhe is (?:on|in) (?:a|the) (?:chair|throne|sofa|bench|stool)\\b|\\bseated\\b|\\bsitting\\b|\\btied to (?:a|the) chair|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:sits|is sitting|is seated)\\b|(?:^|,)\\s*(?:sitting|seated)\\b|\\bsits alone\\b)",
+          "depth3d_hero_only_sit"
+        ],
+        [
+          "^(?![\\s\\S]*(?:tentacl|machine|robotic arm|mechanical arm|device|suction cup|\\bvines?\\b|\\broots?\\b|slime|\\btails? (?:wrap|coil)))(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))(?=[\\s\\S]*(?:\\b(?:touch|brush|strok|rub|pinch|squeez|suck|lick|kiss|hug|hold|press|palpat|pok|trac|paint|polish|wash|tickl|fondl|caress|grip|grab|pull|spread|nibbl|bit|blow|whisper|spank|slap|trap|milk|teas|flick|circl|knead|massag|cup|wrap|strap|insert|finger|nuzzl|sniff|lap|nips?)\\w*[^,]{0,40}?\\b(?:him|his(?! own)|the (?:[\\w-]+ ){0,4}man's)\\b|doing everything to))(?![\\s\\S]*(?:\\b(?:stands|is|kneels) behind him\\b|\\bfrom behind\\b))[\\s\\S]*(?:\\bhe (?:stands|is standing)\\b|\\bstanding\\b|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:stands|is standing|walks|is walking|leans|is leaning)\\b|(?:^|,)\\s*(?:standing|leaning|walking)\\b)",
+          "depth3d_standing_front_chest"
+        ]
+      ]
+    },
+    "memo": "構図の下書き（ControlNet OpenPose・2026-09-29）。下書きは pose_templates.py（成人の頭身）→ ComfyUI\\input\\pose_<id>.png。scenes に {\"画像名\": \"下書きid\"}、by_pose に {\"構図LoRAのid\": \"下書きid\"} を書いた場面だけ使う。予備の union 版に切り替えるときは model を xinsir_union_sdxl_promax.safetensors、union_type を openpose に",
+    "per_image": {
+      "standing_embrace": {
+        "model": "noob_openpose.safetensors",
+        "union_type": "",
+        "strength": 0.6,
+        "end": 0.6
+      },
+      "seated_behind": {
+        "model": "noob_openpose.safetensors",
+        "union_type": "",
+        "strength": 0.6,
+        "end": 0.6
+      },
+      "standing_foot": {
+        "model": "noob_openpose.safetensors",
+        "union_type": "",
+        "strength": 0.6,
+        "end": 0.6
+      },
+      "neck_bite": {
+        "model": "noob_openpose.safetensors",
+        "union_type": "",
+        "strength": 0.6,
+        "end": 0.6
+      },
+      "girl_on_top_kiss": {
+        "model": "noob_openpose.safetensors",
+        "union_type": "",
+        "strength": 0.6,
+        "end": 0.6
+      },
+      "depth3d_standing_embrace": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_seated_behind": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_lying_leanover": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_all_fours_behind": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_all_fours_behind_reach": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_girl_on_top_kiss": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_girl_on_top_straddle": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_legs_up_front": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_standing_foot": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_side_handjob": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_arms_up_bound": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_neck_bite": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_standing_behind_hug": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_kneel_behind": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_lap_pillow": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_standing_front_chest": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_seated_front_chest": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_kneel_front_chest": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_hero_only_lie": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.55,
+        "end": 0.4
+      },
+      "depth3d_hero_only_kneel": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.55,
+        "end": 0.4
+      },
+      "depth3d_hero_only_fours": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.55,
+        "end": 0.4
+      },
+      "depth3d_hero_only_sit": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.55,
+        "end": 0.4
+      },
+      "depth3d_lying_stepped": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_lying_spoon": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_bent_over_behind": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_stand_kneel_behind": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_x_cross": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_inverted_hang": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      },
+      "depth3d_chair_legs_up": {
+        "model": "xinsir_union_sdxl_promax.safetensors",
+        "union_type": "depth",
+        "strength": 0.7,
+        "end": 0.5
+      }
+    },
+    "候補_memo": "2026-09-29 3D の人体（Blender＋MPFB）で作った奥行きの下書き（depth3d_*・union 版 depth・強さ 0.7）。着衣の2人で12構図すべて下書きどおり。2026-09-29 置き換えを確定：年齢系タグのある構図LoRA 11個は enabled=false、by_pose で 3D の下書きに置き換え済み。性的な場面での仕上がりは未確認（Claude は撮らない）。髪色が主人公と相手で入れ替わることがある（主人公LoRA で抑える見込み）",
+    "by_pose_memo": "値は下書きid、または [[正規表現, 下書きid], ...]（上から最初に当たったもの。空の正規表現は無条件）。kiss・close_hug は寝ている描写があれば覆いかぶさる、なければ立って抱き合う。slime は見た目の LoRA なので対象外。ctl_nipple は、相手が後ろにいる下書き（seated_behind・kneel_behind・standing_behind_hug）を『behind him』等の描写があるときだけ使う（2026-09-29）。ctl_nipple は前から責める下書き（*_front_chest）に変更：後ろから責める乳首の場面は、年齢系なしの構図LoRA rah_behind が先に当たるため（2026-09-29） / 2026-09-29 ctl_hero_pose：主人公1人の下書き（吊り・寝る・四つん這い・膝立ち・座る・立つ）。相手や触手の入る余地を残すため強さ0.55・終わり0.4と弱め / 座る・立つ・吊りは主人公1人の下書きだと相手が消える（0.55）か効かない（0.4）ので、相手が触れている場面だけ既存の2人の下書き（seated_front_chest・standing_front_chest・arms_up_bound）にした。見ているだけの場面は下書きなし / 2026-09-29 夕：主語が he 以外（the ... man sits、lying alone など）も拾う。見ているだけ（相手が遠くに立つ）で座る・立つは主人公1人の下書き / 立つ（見ているだけ）の主人公1人の下書きは試し撮りで髪色が入れ替わったので外した（下書きなしの方がよい） / 2026-09-29 A：触れている判定を「触れる動詞＋him/his/the ○○ man's」に広げた（相手が役職名で書かれている場面）。座って相手が後ろ → seated_behind / A修正：触手・機械・つる・スライムが触れている場面には2人の下書きを当てない。curls up は寝る / 2026-09-29 B：後ろから抱く → standing_behind_hug（座る → seated_behind）、胸に顔をうずめる・前から抱く → standing_embrace（座る → seated_front_chest）。寝ている・触手などは除く",
+    "tags": {
+      "ctl_nipple": "nipple play, nipple tweak, pinching nipples, licking nipple, hands on his chest",
+      "kiss": "kiss, french kiss, face to face",
+      "close_hug": "hug, kiss, close embrace",
+      "fingering": "anal fingering, fingering from behind",
+      "peg": "pegging, strap-on, sex from behind",
+      "peg_nipple": "pegging, strap-on, sex from behind, reaching around, nipple tweak",
+      "prostate": "anal fingering, prostate massage, legs up",
+      "footjob": "footjob, foot on penis",
+      "handjob": "handjob, hand on penis",
+      "ctl_handjob": "handjob, hand on penis",
+      "bondage": "bound wrists, arms up, restrained",
+      "bloodsuck": "vampire, neck biting, biting neck",
+      "ctl_straddle": "girl on top, straddling",
+      "ctl_lap": "lap pillow"
+    },
+    "tags_memo": "下書きが当たった場面に入れる行為のタグ（キーは by_pose の項目 id）。受け攻めタグの直後に入る。2026-09-29『構図は合うが描写が弱い』対策。あわせて depth3d_* の end を 0.7→0.5（下書きは前半だけ）",
+    "lora_alt": {
+      "step": [
+        [
+          "",
+          "depth3d_lying_stepped"
+        ]
+      ],
+      "toes_nipple": [
+        [
+          "",
+          "depth3d_lying_stepped"
+        ]
+      ],
+      "peg_spoon": [
+        [
+          "",
+          "depth3d_lying_spoon"
+        ]
+      ],
+      "peg_pov": [
+        [
+          "",
+          "depth3d_legs_up_front"
+        ]
+      ],
+      "peg_doggy": [
+        [
+          "",
+          "depth3d_all_fours_behind"
+        ]
+      ],
+      "peg_chair": [
+        [
+          "",
+          "depth3d_chair_legs_up"
+        ]
+      ],
+      "suspension": [
+        [
+          "",
+          "depth3d_arms_up_bound"
+        ]
+      ],
+      "inverted": [
+        [
+          "",
+          "depth3d_inverted_hang"
+        ]
+      ],
+      "xcross": [
+        [
+          "",
+          "depth3d_x_cross"
+        ]
+      ],
+      "lap_finger": [
+        [
+          "",
+          "depth3d_lap_pillow"
+        ]
+      ],
+      "paizuri": [
+        [
+          "\\bhe (?:lies|is lying|lays|is laid|is pinned|is sprawled)\\b|\\bhe is on his back\\b|lying on his back|\\bon his back\\b|\\bspread-eagle|\\bsprawled\\b|\\bstrapped (?:to|on) (?:a|the) (?:table|bed|bench)|\\blying on (?:a|the) (?:bed|floor|table|ground)|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:lies|lays|sleeps|is lying|is sleeping|is laid|is strapped|is tied down)\\b|(?:^|,)\\s*(?:lying|sleeping|curled up|sprawled)\\b|\\blying (?:alone|face (?:down|up)|on his)|(?:\\bhe|\\bman)\\s+(?:\\w+\\s+){0,2}curls up\\b|\\bcurled up\\b|on his back",
+          "depth3d_legs_up_front"
+        ],
+        [
+          "\\bhe (?:sits|is sitting|is seated|sat)\\b|\\bhe is (?:on|in) (?:a|the) (?:chair|throne|sofa|bench|stool)\\b|\\bseated\\b|\\bsitting\\b|\\btied to (?:a|the) chair|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:sits|is sitting|is seated)\\b|(?:^|,)\\s*(?:sitting|seated)\\b|\\bsits alone\\b",
+          "depth3d_seated_front_chest"
+        ]
+      ],
+      "thigh": [
+        [
+          "\\bhe (?:lies|is lying|lays|is laid|is pinned|is sprawled)\\b|\\bhe is on his back\\b|lying on his back|\\bon his back\\b|\\bspread-eagle|\\bsprawled\\b|\\bstrapped (?:to|on) (?:a|the) (?:table|bed|bench)|\\blying on (?:a|the) (?:bed|floor|table|ground)|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:lies|lays|sleeps|is lying|is sleeping|is laid|is strapped|is tied down)\\b|(?:^|,)\\s*(?:lying|sleeping|curled up|sprawled)\\b|\\blying (?:alone|face (?:down|up)|on his)|(?:\\bhe|\\bman)\\s+(?:\\w+\\s+){0,2}curls up\\b|\\bcurled up\\b|on his back",
+          "depth3d_girl_on_top_straddle"
+        ]
+      ],
+      "rah": [
+        [
+          "\\bhe (?:sits|is sitting|is seated|sat)\\b|\\bhe is (?:on|in) (?:a|the) (?:chair|throne|sofa|bench|stool)\\b|\\bseated\\b|\\bsitting\\b|\\btied to (?:a|the) chair|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:sits|is sitting|is seated)\\b|(?:^|,)\\s*(?:sitting|seated)\\b|\\bsits alone\\b",
+          "depth3d_seated_behind"
+        ],
+        [
+          "\\bhe (?:lies|is lying|lays|is laid|is pinned|is sprawled)\\b|\\bhe is on his back\\b|lying on his back|\\bon his back\\b|\\bspread-eagle|\\bsprawled\\b|\\bstrapped (?:to|on) (?:a|the) (?:table|bed|bench)|\\blying on (?:a|the) (?:bed|floor|table|ground)|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:lies|lays|sleeps|is lying|is sleeping|is laid|is strapped|is tied down)\\b|(?:^|,)\\s*(?:lying|sleeping|curled up|sprawled)\\b|\\blying (?:alone|face (?:down|up)|on his)|(?:\\bhe|\\bman)\\s+(?:\\w+\\s+){0,2}curls up\\b|\\bcurled up\\b",
+          "depth3d_lying_spoon"
+        ],
+        [
+          "\\bhe (?:kneels|is kneeling|knelt)\\b|\\bkneeling\\b|(?<!hands )(?<!hand )(?<!palms )\\bon his knees\\b|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:kneels|crouches|squats|is kneeling|is crouching|is squatting)\\b|(?:^|,)\\s*(?:kneeling|crouching|squatting)\\b",
+          "depth3d_kneel_behind"
+        ],
+        [
+          "",
+          "depth3d_standing_behind_hug"
+        ]
+      ],
+      "rah_behind": [
+        [
+          "\\bhe (?:sits|is sitting|is seated|sat)\\b|\\bhe is (?:on|in) (?:a|the) (?:chair|throne|sofa|bench|stool)\\b|\\bseated\\b|\\bsitting\\b|\\btied to (?:a|the) chair|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:sits|is sitting|is seated)\\b|(?:^|,)\\s*(?:sitting|seated)\\b|\\bsits alone\\b",
+          "depth3d_seated_behind"
+        ],
+        [
+          "\\bhe (?:lies|is lying|lays|is laid|is pinned|is sprawled)\\b|\\bhe is on his back\\b|lying on his back|\\bon his back\\b|\\bspread-eagle|\\bsprawled\\b|\\bstrapped (?:to|on) (?:a|the) (?:table|bed|bench)|\\blying on (?:a|the) (?:bed|floor|table|ground)|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:lies|lays|sleeps|is lying|is sleeping|is laid|is strapped|is tied down)\\b|(?:^|,)\\s*(?:lying|sleeping|curled up|sprawled)\\b|\\blying (?:alone|face (?:down|up)|on his)|(?:\\bhe|\\bman)\\s+(?:\\w+\\s+){0,2}curls up\\b|\\bcurled up\\b",
+          "depth3d_lying_spoon"
+        ],
+        [
+          "\\bhe (?:kneels|is kneeling|knelt)\\b|\\bkneeling\\b|(?<!hands )(?<!hand )(?<!palms )\\bon his knees\\b|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:kneels|crouches|squats|is kneeling|is crouching|is squatting)\\b|(?:^|,)\\s*(?:kneeling|crouching|squatting)\\b",
+          "depth3d_kneel_behind"
+        ],
+        [
+          "",
+          "depth3d_standing_behind_hug"
+        ]
+      ],
+      "whisper": [
+        [
+          "\\bhe (?:sits|is sitting|is seated|sat)\\b|\\bhe is (?:on|in) (?:a|the) (?:chair|throne|sofa|bench|stool)\\b|\\bseated\\b|\\bsitting\\b|\\btied to (?:a|the) chair|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:sits|is sitting|is seated)\\b|(?:^|,)\\s*(?:sitting|seated)\\b|\\bsits alone\\b",
+          "depth3d_seated_behind"
+        ],
+        [
+          "\\bhe (?:lies|is lying|lays|is laid|is pinned|is sprawled)\\b|\\bhe is on his back\\b|lying on his back|\\bon his back\\b|\\bspread-eagle|\\bsprawled\\b|\\bstrapped (?:to|on) (?:a|the) (?:table|bed|bench)|\\blying on (?:a|the) (?:bed|floor|table|ground)|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:lies|lays|sleeps|is lying|is sleeping|is laid|is strapped|is tied down)\\b|(?:^|,)\\s*(?:lying|sleeping|curled up|sprawled)\\b|\\blying (?:alone|face (?:down|up)|on his)|(?:\\bhe|\\bman)\\s+(?:\\w+\\s+){0,2}curls up\\b|\\bcurled up\\b",
+          "depth3d_lying_spoon"
+        ],
+        [
+          "\\bhe (?:kneels|is kneeling|knelt)\\b|\\bkneeling\\b|(?<!hands )(?<!hand )(?<!palms )\\bon his knees\\b|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:kneels|crouches|squats|is kneeling|is crouching|is squatting)\\b|(?:^|,)\\s*(?:kneeling|crouching|squatting)\\b",
+          "depth3d_kneel_behind"
+        ],
+        [
+          "",
+          "depth3d_standing_behind_hug"
+        ]
+      ],
+      "rusty": [
+        [
+          "\\bon (?:his )?all fours\\b|\\bon his hands and knees\\b|\\bhe crawls\\b",
+          "depth3d_all_fours_behind"
+        ],
+        [
+          "",
+          "depth3d_stand_kneel_behind"
+        ]
+      ],
+      "peg_strapon": [
+        [
+          "\\bon (?:his )?all fours\\b|\\bon his hands and knees\\b|\\bhe crawls\\b|doggy",
+          "depth3d_all_fours_behind"
+        ],
+        [
+          "on his back|lying on (?:his )?back|legs (?:up|raised|spread wide|held up)|missionary|mating press|\\bhe (?:lies|is lying|lays|is laid|is pinned|is sprawled)\\b|\\bhe is on his back\\b|lying on his back|\\bon his back\\b|\\bspread-eagle|\\bsprawled\\b|\\bstrapped (?:to|on) (?:a|the) (?:table|bed|bench)|\\blying on (?:a|the) (?:bed|floor|table|ground)|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:lies|lays|sleeps|is lying|is sleeping|is laid|is strapped|is tied down)\\b|(?:^|,)\\s*(?:lying|sleeping|curled up|sprawled)\\b|\\blying (?:alone|face (?:down|up)|on his)|(?:\\bhe|\\bman)\\s+(?:\\w+\\s+){0,2}curls up\\b|\\bcurled up\\b",
+          "depth3d_legs_up_front"
+        ],
+        [
+          "\\bbent over\\b|\\bbends? over\\b|\\bbending over\\b|\\bleans? (?:over|forward) (?:the|a) (?:table|desk|bed|counter|bench|railing|barrel)|hands (?:on|against) the (?:table|desk|wall|bed)",
+          "depth3d_bent_over_behind"
+        ],
+        [
+          "\\bhe (?:stands|is standing)\\b|\\bstanding\\b|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:stands|is standing|walks|is walking|leans|is leaning)\\b|(?:^|,)\\s*(?:standing|leaning|walking)\\b|from behind",
+          "depth3d_bent_over_behind"
+        ]
+      ],
+      "futa": [
+        [
+          "\\bon (?:his )?all fours\\b|\\bon his hands and knees\\b|\\bhe crawls\\b|doggy",
+          "depth3d_all_fours_behind"
+        ],
+        [
+          "on his back|lying on (?:his )?back|legs (?:up|raised|spread wide|held up)|missionary|mating press|\\bhe (?:lies|is lying|lays|is laid|is pinned|is sprawled)\\b|\\bhe is on his back\\b|lying on his back|\\bon his back\\b|\\bspread-eagle|\\bsprawled\\b|\\bstrapped (?:to|on) (?:a|the) (?:table|bed|bench)|\\blying on (?:a|the) (?:bed|floor|table|ground)|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:lies|lays|sleeps|is lying|is sleeping|is laid|is strapped|is tied down)\\b|(?:^|,)\\s*(?:lying|sleeping|curled up|sprawled)\\b|\\blying (?:alone|face (?:down|up)|on his)|(?:\\bhe|\\bman)\\s+(?:\\w+\\s+){0,2}curls up\\b|\\bcurled up\\b",
+          "depth3d_legs_up_front"
+        ],
+        [
+          "\\bbent over\\b|\\bbends? over\\b|\\bbending over\\b|\\bleans? (?:over|forward) (?:the|a) (?:table|desk|bed|counter|bench|railing|barrel)|hands (?:on|against) the (?:table|desk|wall|bed)",
+          "depth3d_bent_over_behind"
+        ],
+        [
+          "\\bhe (?:stands|is standing)\\b|\\bstanding\\b|(?:\\bhe|\\bman|\\bhimself)\\s+(?:\\w+\\s+){0,2}(?:stands|is standing|walks|is walking|leans|is leaning)\\b|(?:^|,)\\s*(?:standing|leaning|walking)\\b|from behind",
+          "depth3d_bent_over_behind"
+        ]
+      ]
+    },
+    "lora_alt_on": false,
+    "lora_alt_memo": "2026-09-29 構図LoRA の代わりの下書き（比べる用）。lora_alt_on を true にするか gen.py --lora-to-control で、当たった場面は構図LoRA を外して下書き＋その LoRA のトリガー語で撮る。[正規表現, 下書き] の上から最初に当たったもの（空は無条件）。当たらなければ構図LoRA のまま。chastity・collar・energy_drain・lamia_coil・見た目系はポーズではないので無し"
+  },
+  "skip_onanie": true,
+  "skip_onanie_memo": "2026-09-29 ユーザー決定：オナニー場面（画像名に onani を含む・約1246件）は当面撮らない。撮るときは false"
+}

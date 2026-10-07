@@ -1,0 +1,2 @@
+花嫁修業（校長　オルタンス）,Card/Bride_master,クエストイベント
+花嫁修業【回想バトル】,Card/Bride_master,回想バトル,$$Bride_挑戦回数,>=,1

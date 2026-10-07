@@ -1,0 +1,92 @@
+# N48 最上階の秘書室（Office）場面データ。登場人物は全員20歳以上。女性とニューハーフの混合（エリカ・ナツメ・セレナ＝NH）。
+DATA = {
+ "code": "Office",
+ "world": "top floor of a corporate headquarters skyscraper at night, glass walls, city night view, modern luxury office, detailed background",
+ "chars": {
+   "m":    {"type": "woman", "tags": "adult woman, mature female, mature face, sharp adult features, 39 years old, adult proportions, beautiful detailed eyes, long legs, red hair, bob cut, gold eyes, white tight business suit, pencil skirt, high heels, large breasts",
+            "name": "the red-bob president in a white business suit"},
+   "e1":   {"type": "woman", "tags": "adult woman, mature female, mature face, sharp adult features, 23 years old, adult proportions, beautiful detailed eyes, long legs, brown hair, loose curls, brown eyes, red vest, tight skirt, pantyhose, large breasts",
+            "name": "the brown-haired receptionist in a red vest"},
+   "e2":   {"type": "nh", "tags": "adult woman, mature female, mature face, sharp adult features, 26 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, blonde hair, chignon, green eyes, glasses, black business suit, medium breasts",
+            "name": "the blonde secretary with glasses in a black suit"},
+   "e3":   {"type": "nh", "tags": "adult woman, mature female, mature face, sharp adult features, 29 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, black hair, long straight hair, purple eyes, grey pant suit, white gloves, medium breasts",
+            "name": "the black-haired HR manager in a grey pant suit and white gloves"},
+   "boss": {"type": "nh", "tags": "adult woman, mature female, mature face, sharp adult features, 35 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, silver hair, long hair, metallic sheen, gold eyes, black three-piece skirt suit, plain badge on chest, large breasts",
+            "name": "the silver-haired vice president in a black three-piece suit",
+            "height_note": "she is much taller than him, a head taller"},
+ },
+ "places": {
+   "president": "president's office, glass wall with a night city skyline, large black executive desk with a cleared glossy top, leather chair",
+   "pantry":    "office pantry, stainless sink, coffee maker, cups on a shelf, round wall clock without numbers, thin floor mat",
+   "meeting":   "meeting room next to the president's office, long table, blank whiteboard without text, night view",
+   "reception": "top floor reception, white marble reception counter, potted plants, the floor space under the counter",
+   "lobby":     "reception lobby, visitor sofa and armchair, low table, elevator doors",
+   "secretary": "secretary office, three desks in a row, tablet, copy machine, window with night view",
+   "hr":        "windowless white HR interview room, desk, clipboard, narrow white examination bed",
+   "vp":        "dim vice president's office, heavy wooden door, black leather sofa, large armchair, desk lamp",
+ },
+ "atk": {
+   "m1": ("president", "he stands before the glass wall with his knees trembling, the president bends down from behind whispering into his ear, her lips at his ear, no hands on him, hips thrusting forward, dazed"),
+   "m2": ("president", "he sits on the edge of the black desk leaning back, the president traces his nipple with the tip of a black fountain pen as if signing, his other nipple red and swollen, precum"),
+   "m3": ("president", "from side, he lies on his back on the black executive desk with his knees folded to his chest, the president stands between his legs pegging his anus with her strap-on, kissing him deeply, anal, his own penis separate", {"pen": "strapon"}),
+   "e1": ("reception", "he lies on his back on the floor under the reception counter, the receptionist sits on her chair with her high heels off, her pantyhose sole pressing his erection, footjob, toes teasing the tip"),
+   "e2": ("secretary", "he sits on an office chair with his chest out, pink nipple rotors taped to both of his nipples, the secretary stands beside him holding a tablet, adjusting her glasses, trembling, precum"),
+   "e3": ("hr", "he lies face down on the white examination bed with his hips raised, the HR manager stands behind him with white gloves holding a purple anal vibrator inside his anus, a clipboard in her other hand", {"pen": "toy"}),
+   "boss": ("vp", "from side, he lies on his back on the black leather sofa with his legs around the vice president, the vice president leans over him kissing him deeply while penetrating his anus with her own penis, anal, his own penis separate", {"pen": "penis"}),
+ },
+ "atk_desc": {
+   "m1": "the president whispers new company rules into his ear.",
+   "m2": "the president signs her name on his nipple with a fountain pen.",
+   "m3": "the president takes him on top of her executive desk.",
+   "e1": "the receptionist gives him an acceptance check with her pantyhose feet.",
+   "e2": "the secretary controls his nipple rotors by her schedule.",
+   "e3": "the HR manager performs a physical inspection with an anal vibrator.",
+   "boss": "the vice president hands him his appointment with a kiss and her own body.",
+ },
+ "lose": {
+   # 2026-10-03 onani_* は「自慰を見つかったあと、相手に責められている場面」に書き換え（{"partner": True}）。元は主人公ひとり＋相手が遠くで見ている絵
+   # 社長 技1（決裁の囁き）
+   "btl_m1":     ("president", "he stands before the glass wall with his chin lifted by the president's fingertip, the tall president whispers into his left ear, his hips swaying by themselves, cum dripping down his thigh, city lights, no other hands on him"),
+   "onani_m1":   ("pantry", "he stands at the pantry sink gripping its edge with both hands, the tall president stands close behind him whispering into his right ear, her lips at his ear, no hands on him, his hips pushing forward against the sink cabinet by themselves, knees trembling, precum dripping", {"partner": True}),
+   "inochi_m1":  ("president", "he stands with both hands on the glass wall and his hips pushed out, the president sits in her chair behind him snapping her fingers, a blank document without text on the desk, cum on the glass, trembling"),
+   "onedari_m1": ("meeting", "he stands with his back against the blank whiteboard without text, the president looks down at him with her fingers ready to snap, whispering into his ear, cum dripping, knees buckling"),
+   # 社長 技2（万年筆の先で）
+   "btl_m2":     ("president", "he sits on the black desk with his chest out, the president kneels before him tracing his swollen nipple with the tip of a black fountain pen, blowing on the other nipple, back arched, trembling"),
+   "onani_m2":   ("pantry", "he sits on the stainless pantry counter, the president stands in front of him pressing the capped round end of a black fountain pen onto his nipple, his other nipple red and swollen, both of his hands covering his mouth, trembling", {"partner": True}),
+   "inochi_m2":  ("president", "he lies back on the leather chair, a black binder clip on his left nipple, the president flicks his right nipple with her fingernail, a blank document without text on the desk, trembling"),
+   "onedari_m2": ("president", "he clings to the edge of the black desk with his chest out, the president flicks his left nipple rapidly with the tip of a black fountain pen, a blank document without text on the desk, knees trembling, flushed"),
+   # 社長 技3（社長デスクの上で・ペニバン）
+   "btl_m3":     ("president", "from side, he lies on his back on the black executive desk with his knees folded to his chest, the president pegging his anus with her strap-on, kissing him deeply, anal, his own penis separate, cum on his belly", {"pen": "strapon"}),
+   "onani_m3":   ("president", "from side, he sits on the edge of the black executive desk leaning back on his elbows, the president stands between his legs pegging his anus with her strap-on, kissing him deeply, anal, his own penis separate, cum on the glossy desk top", {"pen": "strapon", "partner": True}),
+   "inochi_m3":  ("president", "from side, he sits astride the president on the black desk sinking onto her strap-on, anal, the president holds his hips and kisses him, his own penis separate, cum on her white blouse, city night view", {"pen": "strapon"}),
+   "onedari_m3": ("president", "from side, he lies on his back on the black desk with his legs wrapped around the president, the president pegging his anus with her strap-on, kissing him, anal, his own penis separate, a blank document without text under him", {"pen": "strapon"}),
+   # 受付 マイ（ストッキングの）
+   "btl_e1":     ("reception", "he lies on his back on the floor under the reception counter, the receptionist sits on her chair, her pantyhose soles squeezing his penis, footjob, a red high heel shoe beside his face, cum on her toes"),
+   "onani_e1":   ("pantry", "he lies on his back on the thin floor mat, the receptionist sits on a round stool with her red high heels off, both of her pantyhose soles squeezing his penis, footjob, cum on her pantyhose toes", {"partner": True}),
+   "inochi_e1":  ("lobby", "he slumps on the visitor sofa with his legs open, the receptionist sits in the armchair opposite with her legs extended, her pantyhose sole rubbing his penis, footjob, a blank document without text on the table"),
+   "onedari_e1": ("reception", "he lies on the floor under the reception counter covering his mouth with both hands, the receptionist sits on her chair smiling toward the counter, her pantyhose foot pressing his penis, footjob, precum"),
+   # 第一秘書 エリカ（スケジュール管理）
+   "btl_e2":     ("secretary", "he sits at the edge of an office chair with his legs spread, pink rotors taped to both of his nipples, the secretary kneels with one finger in his anus, holding a tablet, back arched, trembling"),
+   "onani_e2":   ("pantry", "he stands gripping the edge of the sink, pink rotors taped to both of his nipples, the secretary stands beside him holding the rotor remote and a tablet, looking up at the round wall clock, knees trembling, precum", {"partner": True}),
+   "inochi_e2":  ("secretary", "he kneels clinging to the edge of a desk, pink rotors taped to both of his nipples, the secretary sits typing on a tablet, her other hand holding the rotor remote, trembling, drool"),
+   "onedari_e2": ("secretary", "he leans against the running copy machine, pink rotors taped to his nipples, the secretary stands behind him with one finger in his anus, fingering, holding a tablet, trembling, precum"),
+   # 人事部長 ナツメ（身体検査）
+   "btl_e3":     ("hr", "he lies face down on the white examination bed with his hips raised, the HR manager with white gloves holds a purple anal vibrator in his anus, whispering into his ear, a clipboard on the bed, trembling", {"pen": "toy"}),
+   "onani_e3":   ("pantry", "he kneels face down on the tile floor with his hips raised, holding a ballpoint pen over a clipboard on the floor, the HR manager crouches behind him with white gloves moving a slim black beaded anal vibrator in his anus, cum dripping on the tiles", {"pen": "toy", "partner": True}),
+   "inochi_e3":  ("hr", "he sits on a chair with his legs over the armrests, a purple anal vibrator in his anus, the HR manager stands behind him pressing the base with a gloved finger, whispering into his ear, cum dripping", {"pen": "toy"}),
+   "onedari_e3": ("hr", "he lies on his back on the white examination bed holding his own knees, the HR manager inserts a thick purple anal vibrator into his anus, a silver tray with three vibrators beside, cum on his belly", {"pen": "toy"}),
+   # 副社長 セレナ（辞令の口づけ・NH）
+   "btl_boss":   ("vp", "from side, he lies on his back on the black leather sofa, the tall vice president over him penetrating his anus with her own penis, anal, kissing him deeply, stroking his hair, his own penis separate, cum inside", {"pen": "penis"}),
+   "onani_boss": ("pantry", "from side, he stands on one leg with his back pressed against the pantry wall beside the refrigerator, the tall vice president lifts his other knee and penetrates his anus with her own penis, anal, bending down to kiss him deeply, her silver hair falling over his chest, his own penis separate", {"pen": "penis", "partner": True}),
+   "inochi_boss":("vp", "from side, he sits on the black leather sofa bent forward, the vice president behind him penetrating his anus with her own penis, anal, turning his face back into a deep kiss, a silver key in her vest pocket", {"pen": "penis", "cage": True}),
+   "onedari_boss":("vp", "from side, he sits astride the vice president seated in the large armchair, the vice president holds his hips and penetrates his anus with her own penis from below, anal, kissing him deeply, his own penis separate", {"pen": "penis"}),
+ },
+ "lose_desc": "keeps him as equipment of the top floor office.",
+ "onanie": {
+   "master": ("president", "standing before the glass wall with his hands at his sides, lips moving as if repeating whispered rules, hips pushing forward by themselves, knees trembling, penis untouched"),
+   "e1": ("reception", "lying face down on the floor under the reception counter, rubbing his chest against the floor, hips raised, penis untouched"),
+   "e2": ("secretary", "sitting on an office chair looking at a clock, fingertips trembling fast on both of his own nipples as if vibrating, penis untouched"),
+   "e3": ("hr", "lying face down on the white examination bed with his hips raised, one arm reaching behind with two fingers in his own anus, penis untouched"),
+   "boss": ("vp", "kneeling on the black leather sofa, sucking two of his own fingers deeply as if kissing, the other hand reaching behind with fingers in his own anus, penis untouched"),
+ },
+}

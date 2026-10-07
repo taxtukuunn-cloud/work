@@ -1,0 +1,23 @@
+{
+ "server": "127.0.0.1:8188",
+ "ckpt_name": "waiANIMA_v10Base10.safetensors",
+ "template": "",
+ "width": 832,
+ "height": 1216,
+ "steps": 36,
+ "cfg": 4.5,
+ "sampler": "er_sde",
+ "scheduler": "simple",
+ "clip_skip": 0,
+ "use_rembg": true,
+ "rembg_node": "InspyrenetRembg",
+ "seed_base": 20260926,
+ "fixed_seeds": {},
+ "out_dir": "output",
+ "prompts": "gym_prompts.json",
+ "timeout_sec": 900,
+ "unet_name": "waiANIMA_v10Base10.safetensors",
+ "clip_name": "qwen_3_06b_base.safetensors",
+ "clip_type": "qwen_image",
+ "vae_name": "qwen_image_vae.safetensors"
+}

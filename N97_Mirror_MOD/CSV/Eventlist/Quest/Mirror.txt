@@ -1,0 +1,2 @@
+鏡の館（鏡の魔女　スペクラ）,Card/Mirror_master,クエストイベント
+鏡の館【回想バトル】,Card/Mirror_master,回想バトル,$$Mirror_挑戦回数,>=,1

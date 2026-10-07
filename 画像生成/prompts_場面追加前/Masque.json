@@ -1,0 +1,79 @@
+{
+ "Masque_master": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 38 years old, adult proportions, beautiful detailed eyes, long legs, black hair, updo, red eyes, deep red ball gown, black lace half mask with eyes visible, large breasts, offering her gloved hand for a dance, decadent elegant smile, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Masque_e1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 24 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, blonde hair, long hair, green eyes, gold slit dress, gold half mask with eyes visible, long slender legs, medium breasts, dancing a step, lively smile, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Masque_e2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 23 years old, adult proportions, beautiful detailed eyes, long legs, brown hair, chignon, amber eyes, black maid-like serving dress, white half mask with eyes visible, silver tray with champagne glasses, medium breasts, holding the tray, shy small smile, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Masque_e3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 27 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, grey hair, long hair, purple eyes, grey feminine tailcoat dress with cinched waist, violin, medium breasts, playing the violin, languid expression, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Masque_boss": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 42 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, silver hair, long hair, metallic sheen, gold eyes, silver and black gown, silver half mask with eyes visible, large breasts, standing tall with a hand raised, absolute master smile, looking down at viewer, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Masque_bg": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, grand ballroom of an old castle at night, crystal chandeliers, polished marble floor, tall arched windows, moonlit balcony, candlelight, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, 1girl, person, people",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Masque_magic_1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 27 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, grey hair, long hair, purple eyes, grey feminine tailcoat dress with cinched waist, violin, medium breasts, violin music notes floating in the ballroom, looking at viewer, grand ballroom of an old castle in the forest, chandeliers, masked guests silhouettes, marble floor, moonlit balcony, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Masque_magic_2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 38 years old, adult proportions, beautiful detailed eyes, long legs, black hair, updo, red eyes, deep red ball gown, black lace half mask with eyes visible, large breasts, holding out a black invitation card without text, looking at viewer, grand ballroom of an old castle in the forest, chandeliers, masked guests silhouettes, marble floor, moonlit balcony, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Masque_magic_3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 38 years old, adult proportions, beautiful detailed eyes, long legs, black hair, updo, red eyes, deep red ball gown, black lace half mask with eyes visible, large breasts, leaning on a balcony rail under a full moon, looking at viewer, grand ballroom of an old castle in the forest, chandeliers, masked guests silhouettes, marble floor, moonlit balcony, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Masque_magic_4": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 24 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, blonde hair, long hair, green eyes, gold slit dress, gold half mask with eyes visible, long slender legs, medium breasts, spinning and switching partners, silhouettes of dancers, looking at viewer, grand ballroom of an old castle in the forest, chandeliers, masked guests silhouettes, marble floor, moonlit balcony, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Masque_magic_5": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 42 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, silver hair, long hair, metallic sheen, gold eyes, silver and black gown, silver half mask with eyes visible, large breasts, dawn light entering the ballroom through tall windows, looking at viewer, grand ballroom of an old castle in the forest, chandeliers, masked guests silhouettes, marble floor, moonlit balcony, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ }
+}

@@ -1,0 +1,2 @@
+女権帝国の街角（ドリル団頭領　ベルナ）,Card/Dominia2_master,クエストイベント
+女権帝国の街角【回想バトル】,Card/Dominia2_master,回想バトル,$$Dominia2_挑戦回数,>=,1

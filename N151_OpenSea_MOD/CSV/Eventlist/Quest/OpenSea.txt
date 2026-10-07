@@ -1,0 +1,2 @@
+外海の魔物（外海の主　水龍娘）,Card/OpenSea_master,クエストイベント
+外海の魔物【回想バトル】,Card/OpenSea_master,回想バトル,$$OpenSea_挑戦回数,>=,1

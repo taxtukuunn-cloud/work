@@ -1,0 +1,2 @@
+夏の海の家（店長　カイリ）,Card/Beach_master,クエストイベント
+夏の海の家【回想バトル】,Card/Beach_master,回想バトル,$$Beach_挑戦回数,>=,1

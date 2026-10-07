@@ -1,0 +1,121 @@
+# N104 巫女の神社（Shrine）画像データ。登場人物は全員20歳以上。女性のみ・女装あり（主人公は白衣に萌黄の袴・白足袋、ウィッグなし）。
+# 挿入はなし。お札は文字のない白い紙の札（blank paper talisman without text）。女性の巫女は緋袴、宮司アマネは紫の袴で、主人公の萌黄と見分ける。
+MIKO = "a white kimono top with wide sleeves, a light green hakama tied with a tight white obi, white tabi socks, no wig"
+MIKO_OPEN = MIKO + ", the white collar loosened open showing his flat chest"
+MIKO_HEM = MIKO + ", the light green hakama hem lifted up to his thighs"
+FUDA = "blank white paper talismans without text stuck on his skin"
+
+DATA = {
+ "code": "Shrine",
+ "world": "quiet mountain shinto shrine surrounded by tall cedar trees, vermilion torii, stone lanterns, shimenawa rope with white paper streamers, incense, detailed background",
+ "bg": "mountain shrine at dusk, vermilion torii gate at the top of long mossy stone steps, gravel approach, stone lanterns, empty komainu pedestal, tall cedar trees, shimenawa rope with white paper streamers, no text",
+ "josou": "white kimono top with wide sleeves, light green hakama, tight white obi, white tabi socks, no wig, holding a bamboo broom",
+ "chars": {
+   "m": {"type": "woman", "jp": "アマネ",
+         "tags": "adult woman, mature female, mature face, sharp adult features, 35 years old, adult proportions, beautiful detailed eyes, tall, long legs, black hair, very long straight hair tied low at the back, red eyes, white kimono top, purple hakama, white tabi socks, holding an onusa purification wand with white paper streamers, shinto priestess, huge breasts, calm gentle smile",
+         "name": "the black-haired shrine priestess in a purple hakama",
+         "pose": "holding a purification wand with white paper streamers in both hands, calm gentle smile, looking at viewer"},
+   "e1": {"type": "woman", "jp": "スズカ",
+          "tags": "adult woman, mature female, mature face, 23 years old, adult proportions, beautiful detailed eyes, long legs, brown hair, very long straight hair tied low, brown eyes, miko, white kimono top, red hakama, sheer white chihaya, holding a kagura suzu bell wand, large breasts, soft smile",
+          "name": "the brown-haired miko holding a kagura bell",
+          "pose": "raising a kagura suzu bell wand beside her face, soft dreamy smile, looking at viewer"},
+   "e2": {"type": "woman", "jp": "ヒイラギ",
+          "tags": "adult woman, mature female, mature face, 26 years old, adult proportions, beautiful detailed eyes, long legs, red hair, short bob, green eyes, miko, white kimono top, red hakama, tasuki cord tying back her sleeves, obi sashes and cords draped over her arm, large breasts, brisk confident smile",
+          "name": "the red-bobbed dresser miko with a tasuki cord",
+          "pose": "holding a white obi sash taut between her hands, brisk confident smile, looking at viewer"},
+   "e3": {"type": "woman", "jp": "シシバ",
+          "tags": "adult woman, mature female, mature face, 25 years old, adult proportions, beautiful detailed eyes, long legs, dog girl, komainu, orange hair, long wavy hair, dog ears, curled fluffy tail, gold eyes, short white kariginu-style robe, vermilion braided cord around her neck, large breasts, cheerful fang smile",
+          "name": "the orange-haired komainu girl with dog ears and a curled tail",
+          "pose": "leaning forward with arms spread wide as if to hug, cheerful fang smile, tail up, looking at viewer"},
+   "boss": {"type": "woman", "jp": "トヨヒメ",
+            "tags": "adult woman, mature female, mature face, sharp adult features, 34 years old, adult proportions, beautiful detailed eyes, tall, long legs, goddess, purple hair, very long flowing hair, gold eyes, layered white and gold kimono robes, flower crown, gentle divine aura, huge breasts, loving smile",
+            "name": "the purple-haired goddess in white and gold robes with a flower crown",
+            "pose": "opening her arms and robes in welcome, loving motherly smile, soft glow, looking at viewer"},
+ },
+ "places": {
+   "steps": "long mossy stone steps between tall cedar trees, vermilion torii at the top",
+   "torii": "under a vermilion torii gate, thick shimenawa rope with white paper streamers, cool shade",
+   "sando": "gravel shrine approach, white pebbles, stone lanterns, empty komainu stone pedestal",
+   "chozu": "chozuya purification fountain, bamboo spout, wooden ladles on a stone basin, dripping water",
+   "haiden": "shrine worship hall interior, polished wooden floor, bamboo misu blinds, white paper streamers, incense smoke",
+   "honden": "inner sanctuary, single oil lamp flame, hinoki wood walls, heavy wooden doors, white bedding",
+   "kagura": "kagura dance stage, wooden boards, purple and white curtain, bell wands on a stand",
+   "office": "shrine office, tatami, low writing desk with blank white paper and ink without text, brazier",
+   "dress": "dressing room, kimono stands with white kimono tops and red hakama, obi and cords, tall standing mirror",
+   "shinsen": "offering room, large sake jars, unglazed clay cups on a tray, wooden shelves",
+   "forest": "sacred cedar and camphor grove, huge sacred tree with shimenawa, moss, dappled sunlight",
+   "spring": "misogi purification spring, clear shallow water, wet stones, morning mist",
+   "engawa": "wooden veranda corridor at night, hanging lanterns, dark garden, creaking floorboards",
+   "matsuri": "shrine grounds during a night festival, bonfire baskets, orange paper lanterns without text",
+ },
+ "atk": {
+   "m1": ("haiden", "he lies on his back on the wooden floor, the priestess stands over him pressing her white tabi sole on his chest, her toes pinching his nipple, " + FUDA + " on his chest, calm smile"),
+   "m2": ("haiden", "he sits in seiza, the priestess presses a blank white paper talisman without text onto his nipple with her fingertip, more talismans on his forehead and collarbone, paper streamers of her wand brushing his skin, trembling"),
+   "m3": ("haiden", "he kneels before the priestess, the priestess cups his face and kisses him deeply, tongues, saliva trail, pinching his nipple, a blank paper talisman without text just below his lip"),
+   "e1": ("sando", "he kneels on the gravel, the miko leans behind him shaking the kagura bell beside his ear and whispering into it, her lips at his earlobe, his shoulders shivering"),
+   "e2": ("dress", "he stands before the tall mirror, the dresser miko stands behind him tightening the white obi around his waist, her hand slipped into his collar stroking his chest, flushed, trembling", {"hero_outfit": MIKO}),
+   "e3": ("steps", "the komainu girl leaps onto him on the stone steps and hugs him tight with her whole body, her curled tail wrapped around his waist, rubbing her dog ear against his cheek"),
+   "boss": ("honden", "the goddess holds his face buried deep in her cleavage, swaying her breasts against his cheeks, pressing a blank paper talisman without text onto his nipple with her fingertip, lamp glow"),
+ },
+ "atk_desc": {
+   "m1": "the priestess strokes him with her white tabi feet.",
+   "m2": "the priestess seals him with blank paper talismans.",
+   "m3": "the priestess seals the vow with a kiss.",
+   "e1": "the miko whispers into his ear under the sound of the kagura bell.",
+   "e2": "the dresser miko dresses him in miko robes with a light green hakama.",
+   "e3": "the komainu girl leaps on him and hugs him like a guard dog.",
+   "boss": "the goddess buries his face in her divine bosom.",
+ },
+ "lose": {
+   # アマネ 技1（白足袋の＋封じの札）
+   "btl_m1":     ("haiden", "he lies on his back on the wooden floor, the priestess stands over him, her white tabi toes pressing a talisman on his chest, her other tabi sole rubbing his crotch through the hakama, " + FUDA + ", cum stain on the hakama", {"hero_outfit": MIKO_OPEN}),
+   "onani_m1":   ("office", "sitting alone before the low desk with the hakama hem lifted, pressing a small blank paper slip on his inner thigh with the top of his own foot, trembling, penis untouched, the priestess watches from the doorway", {"hero_outfit": MIKO_HEM}),
+   "inochi_m1":  ("steps", "he sits halfway down the mossy stone steps, the priestess stands one step above him pressing her white tabi sole on a talisman on his chest, " + FUDA + ", his knees weak, trembling", {"hero_outfit": MIKO_OPEN}),
+   "onedari_m1": ("engawa", "he sits on the veranda offering his bare sole with a blank paper talisman without text on it, the priestess sits beside him rubbing her white tabi foot against his sole, lanterns, flushed, cum stain on the hakama", {"hero_outfit": MIKO}),
+   # アマネ 技2（封じの札）
+   "btl_m2":     ("haiden", "he kneels on the wooden floor with his collar open, " + FUDA + " on forehead neck collarbones and nipples, the priestess brushes the paper streamers of her wand over the talismans, his back arched, cum soaking the hakama", {"hero_outfit": MIKO_OPEN}),
+   "onani_m2":   ("honden", "kneeling alone under the single lamp with his collar open, small blank paper slips stuck on his chest and side, pressing them with his fingertips, penis untouched, the priestess watches from the heavy doors", {"hero_outfit": MIKO_OPEN}),
+   "inochi_m2":  ("office", "he sits in seiza on the tatami beside a tall stack of blank white talismans without text, the priestess kneels before him pressing a new talisman onto his chest, " + FUDA + ", trembling", {"hero_outfit": MIKO_OPEN}),
+   "onedari_m2": ("spring", "he stands ankle-deep in the misty spring with the hakama cords loosened, the priestess presses a wet blank paper talisman without text below his navel, water droplets on his skin, knees shaking", {"hero_outfit": MIKO_OPEN}),
+   # アマネ 技3（誓いの口づけ＋封じの札）
+   "btl_m3":     ("haiden", "he kneels facing the priestess, the priestess kisses him deeply, tongues, saliva trail, pinching both his nipples through the talismans, a blank paper talisman without text below his lip, cum stain on the hakama", {"hero_outfit": MIKO_OPEN}),
+   "onani_m3":   ("kagura", "kneeling alone on the dance stage, licking a small paper slip stuck below his own lip, one hand pressing a paper slip on his own nipple, penis untouched, the priestess watches from the curtain", {"hero_outfit": MIKO_OPEN}),
+   "inochi_m3":  ("torii", "under the vermilion torii, the priestess holds his chin and kisses him deeply, saliva trail, pressing a blank paper talisman without text onto his chest, his legs trembling, unable to step through the gate", {"hero_outfit": MIKO}),
+   "onedari_m3": ("honden", "he kneels under the single lamp with lips parted, the priestess licks a blank paper talisman without text stuck below his lip and kisses him, her fingers pinching his nipple, flushed", {"hero_outfit": MIKO_OPEN}),
+   # スズカ（神楽鈴の囁き／緋袴の）
+   "btl_e1":     ("sando", "he kneels on the gravel, the miko sits behind him with his head between her red hakama thighs, shaking the kagura bell beside his ear, licking his ear, his knees collapsing, cum stain on the hakama", {"hero_outfit": MIKO}),
+   "onani_e1":   ("kagura", "kneeling alone on the dance stage, ringing a tiny bell beside his own ear, tracing the rim of his ear with a wet finger, eyes hidden, penis untouched, the miko watches from the curtain", {"hero_outfit": MIKO}),
+   "inochi_e1":  ("chozu", "he sits on the edge of the stone basin, the miko stands behind him ringing the kagura bell beside his ear and whispering, water dripping from the bamboo spout, his shoulders trembling", {"hero_outfit": MIKO}),
+   "onedari_e1": ("matsuri", "he stands by the bonfire lifting his hair to show a blank paper talisman without text behind his ear, the miko rings the kagura bell right above it, his knees buckling", {"hero_outfit": MIKO}),
+   # ヒイラギ（巫女装束の着付け／帯を締める手で）
+   "btl_e2":     ("dress", "he stands before the tall mirror, the dresser miko behind him pulls the white obi tight around his waist, her other hand slipped inside the hakama side slit stroking his penis, cum stain on the light green hakama", {"hero_outfit": MIKO}),
+   "onani_e2":   ("dress", "standing alone before the mirror in the tight obi, stroking his own thighs and bottom over the light green hakama, knees trembling, penis untouched, the dresser miko watches from beside the kimono stands", {"hero_outfit": MIKO}),
+   "inochi_e2":  ("office", "he stands with arms raised, the dresser miko wraps the hakama cord around his waist, an open chest of drawers full of folded light green hakama behind them, flushed", {"hero_outfit": MIKO}),
+   "onedari_e2": ("engawa", "he stands on the veranda before a standing mirror, the dresser miko presses a blank paper talisman without text under his obi and pulls the obi tight, lantern light, knees wobbling", {"hero_outfit": MIKO}),
+   # シシバ（番犬の抱きつき／前足で）
+   "btl_e3":     ("steps", "at the top of the stone steps, the komainu girl hugs him tight from the front, her curled tail wrapped around his waist, her foot rubbing his crotch through the hakama, cum stain on the hakama", {"hero_outfit": MIKO}),
+   "onani_e3":   ("office", "lying alone on his back on the tatami under a big heavy pile of folded blankets, hands under the pile rubbing his own chest, penis untouched, the komainu girl watches from the doorway, tail wagging", {"hero_outfit": MIKO}),
+   "inochi_e3":  ("sando", "he lies on the gravel beside the empty komainu pedestal, the komainu girl lies on top of him hugging him tight, her tail wrapped around his waist, rubbing her dog ear against his cheek", {"hero_outfit": MIKO}),
+   "onedari_e3": ("forest", "he leans with both hands on the sacred tree, a blank paper talisman without text on his bared upper back, the komainu girl hugs him from behind, her tail wrapped around his waist, dappled light", {"hero_outfit": MIKO_OPEN}),
+   # トヨヒメ（神の懐／神酒の口移し）
+   "btl_boss":   ("honden", "the goddess sits on the white bedding holding his face buried in her cleavage, pressing a blank paper talisman without text onto his nipple with her finger pad, " + FUDA + ", cum stain on the hakama, lamp glow", {"hero_outfit": MIKO_OPEN}),
+   "onani_boss": ("haiden", "kneeling alone with his face buried in a large soft cushion, sticking small paper slips on his own nipples and pressing them, penis untouched, the goddess watches from behind the bamboo blinds", {"hero_outfit": MIKO_OPEN}),
+   "inochi_boss":("shinsen", "the goddess holds him in her lap and feeds him sweet sake mouth to mouth, a clay cup in her hand, his face against her bosom, " + FUDA + ", sake jars behind", {"hero_outfit": MIKO_OPEN}),
+   "onedari_boss":("matsuri", "by the festival bonfire, the goddess embraces him with his face in her cleavage, pressing a blank paper talisman without text onto the center of his chest, lanterns glowing, his body limp", {"hero_outfit": MIKO_OPEN}),
+ },
+ "lose_desc": "keeps him at the shrine as a servant in a light green hakama, sealed with new talismans every morning.",
+ "onanie": {
+   "master": ("office", "kneeling on the tatami with his collar open, small blank paper slips stuck on his chest and side, pressing them one by one with a fingertip, penis untouched", {"hero_outfit": MIKO_OPEN}),
+   "e1": ("kagura", "kneeling on the stage, ringing a tiny bell beside his own ear, tracing his ear rim with a wet finger, penis untouched"),
+   "e2": ("dress", "standing before the mirror in a tight obi, stroking his own thighs and bottom over the light green hakama, penis untouched", {"hero_outfit": MIKO}),
+   "e3": ("office", "lying under a heavy pile of folded blankets, hugging it, rubbing his own chest underneath, penis untouched"),
+   "boss": ("honden", "face buried in a soft cushion, pressing small paper slips stuck on his own nipples, penis untouched"),
+ },
+ "magic": {
+   "1": ("boss", "shinsen", "the goddess pours sweet sacred sake from a white ceramic flask into an unglazed clay cup, offering it forward, gentle smile"),
+   "2": (None, "office", "a small wooden omikuji box with folded blank white paper fortune slips without text spilling onto a low desk"),
+   "3": ("m", "torii", "the priestess raises a blank white paper talisman without text between two fingers, a faint glowing barrier of light spreading across the torii gate"),
+   "4": ("e2", "dress", "the dresser miko holds out a neatly folded white kimono top and light green hakama on a tray, brisk smile"),
+   "5": (None, "forest", "sacred grove of giant cedar trees with a shimenawa-wrapped sacred tree, shafts of light, moss, white paper streamers swaying"),
+ },
+}

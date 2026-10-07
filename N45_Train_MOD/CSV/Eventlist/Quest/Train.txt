@@ -1,0 +1,2 @@
+夜行寝台列車（車掌　ミチル）,Card/Train_master,クエストイベント
+夜行寝台列車【回想バトル】,Card/Train_master,回想バトル,$$Train_挑戦回数,>=,1

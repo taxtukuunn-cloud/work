@@ -1,0 +1,324 @@
+{
+ "atk_m1": {
+  "char": "master",
+  "scene": "{A} holds {P}'s face with both hands and gives him a long slow deep kiss, from side, close-up, tongues entwined, thick saliva trail between their lips, saliva dripping down {P}'s chin, glowing magenta crest tattoo on his lower abdomen glowing brighter with the kiss, {P} blushing heavily, half-closed teary eyes, trembling, knees giving way, gold holy emblem on {A}'s chest swaying, no penetration",
+  "place": "main hall of the moon crest temple, black stone altar, countless candlesticks, stone pillars, sandalwood incense smoke, night",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "atk_m2": {
+  "char": "master",
+  "scene": "{P} lies on a white sheet, {A} kneels beside him tracing the glowing crest lines from his lower belly up to his chest with one fingertip, other hand pinching and rolling his nipple circled by a crest ring, glowing magenta crest tattoo on his lower abdomen, vine-like crest lines on his hips and chest, {P} blushing, arched back, biting lip, trembling, from above, no penetration",
+  "place": "crest painting room, white floor sheet, inkstone with red ink, rack of calligraphy brushes on the wall, shoji screen, candlelight",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "atk_m3": {
+  "char": "master",
+  "scene": "{P} lies on a black stone altar, {A} presses a small ringing silver bell against his lower belly and rolls a string of sandalwood prayer beads across his chest, a holy staff with a crescent moon head in her other hand, glowing magenta crest tattoo on his lower abdomen glowing, {P} blushing, open mouth, trembling, arched back, sweat, from above, no penetration",
+  "place": "main hall of the moon crest temple, black stone altar, countless candlesticks, stone pillars, sandalwood incense smoke, night",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "atk_e1": {
+  "char": "e1",
+  "scene": "{P} lies on his back on a white sheet, {A} kneels beside him and paints thin crest lines on his lower belly with a calligraphy brush dipped in red ink, brush tip tickling his skin, red crest lines spreading toward his hips, inkstone beside her, {P} blushing, squirming, biting lip, trembling, goosebumps, from above, no penetration, pale pink braid falling over her shoulder, gentle devoted smile, cold wet ink",
+  "place": "crest painting room, white floor sheet, inkstone with red ink, rack of calligraphy brushes on the wall, shoji screen, candlelight",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "atk_e2": {
+  "char": "e2",
+  "scene": "{A} sits close behind {P} holding a small silver censer under his nose, sweet purple smoke drifting into his face, her lips at his ear whispering and counting, lips tracing his earlobe, {P} with dazed hypnotized expression, half-closed eyes, drooling slightly, blushing, relaxed limp body, glowing magenta crest tattoo on his lower abdomen glowing, from side, close-up, no penetration",
+  "place": "incense room, layered bamboo blinds, tatami floor, small censer with thin smoke, single candlestick, dim light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "atk_e3": {
+  "char": "e3",
+  "scene": "{P} is on all fours on the black ebony kneeling stand, {A} kneels behind him and slowly pushes two holy-oil slick fingers into his anus after loosening him, oil dripping, small oil jar beside her, silver key swaying on her neck chain, {P} blushing, tears, open mouth, trembling, arched back, glowing magenta crest tattoo on his lower abdomen, from side, anal fingering",
+  "place": "discipline room, wall shelves of keys and locks, black ebony kneeling stand, candlesticks, stone floor, night",
+  "watchers": false,
+  "neg": "dildo, sex toy, penis in anus, anal sex with penis",
+  "wear": "wears only a small flat silver metal chastity cage and nothing else"
+ },
+ "atk_boss": {
+  "char": "boss",
+  "scene": "{A} embraces {P} with her whole body, wrapping him in her layered white and gold robes, his face pressed against her chest, her palms pressing his back and waist, her thigh against his, glowing crest lines spreading across his whole body like fire, {P} blushing, eyes rolling half closed, trembling, limp, sweat, from side, full body, no penetration, bells on her wrists, platinum hair spilling over him",
+  "place": "inner sanctum, many layered white curtains, white platinum altar, twelve candlesticks, round window with full moon light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_btl_m1": {
+  "char": "master",
+  "scene": "{P} lies on his back on the black stone altar, {A} leans over him holding his cheeks and kissing him deeply, saliva between their lips, deep purple crest lines covering his whole body from fingertips to lower belly, all glowing, {P} climaxing, back arching off the altar, trembling, teary eyes, cum on stomach, burnt-out candles with thin smoke, from side",
+  "place": "main hall of the moon crest temple, black stone altar, countless candlesticks, stone pillars, sandalwood incense smoke, night",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onani_m1": {
+  "char": "master",
+  "scene": "{P} lies on a thin futon with his sleeping robe open, {A} kneels beside him and kisses his raised fingertip, lips around his finger, glowing magenta crest tattoo on his lower abdomen glowing, {P} blushing, trembling, half-closed teary eyes, open mouth, a prayer book with blank pages and a brush on the small desk, pale dawn light through the shoji, from side, no penetration",
+  "place": "small temple lodging room, thin futon on tatami, small writing desk, shoji screen, dim dawn light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus",
+  "wear": "wears only an open white sleeping yukata"
+ },
+ "lose_inochi_m1": {
+  "char": "master",
+  "scene": "{P} leans back on the white stone steps half submerged in the moonlit spring, {A} in her soaked robe kneels over him kissing him deeply, saliva, tears on his cheeks, dark crest lines spreading over his belly, chest and neck, {P} blushing, eyes half closed, dazed, limp, moon reflection in the rippling water, stone lanterns, from side, no penetration, her dark purple hair wet, gold emblem glinting",
+  "place": "sacred purification spring, moonlit water, white stone steps descending into the water, stone lanterns, moss, night",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onedari_m1": {
+  "char": "master",
+  "scene": "{P} leans against the vermilion railing on the wooden floor, {A} kneels before him kissing him deeply, not touching his body, {P} climaxing hands-free, arched back, toes curling, cum, crest rings on his chest and glowing magenta crest tattoo on his lower abdomen glowing deep purple, blank white wooden plaques hanging with red cords on the pillars, huge full moon, from side",
+  "place": "moon-viewing corridor, wooden floor, vermilion railing, hanging lanterns, night garden with pond and pampas grass, full moon",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_btl_m2": {
+  "char": "master",
+  "scene": "{P} lies on his back on the white sheet, {A} kneels over him closing the glowing crest ring around his nipple with her fingertip while pinching the other nipple, crest lines flowing from his lower belly up to his chest and circling both nipples, all glowing purple, {P} climaxing, chest arched, blushing, tears, open mouth, sweat, brush rack shadows like bars, from above, no penetration",
+  "place": "crest painting room, white floor sheet, inkstone with red ink, rack of calligraphy brushes on the wall, shoji screen, candlelight",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onani_m2": {
+  "char": "master",
+  "scene": "{P} lies on a thin futon with his robe open and knees raised, {A} kneels beside him measuring the crest lines on his chest with her finger widths, her lips pressing a kiss at the end of a crest line near his nipple, crest half rings around his nipples, a small hand mirror on the futon, {P} blushing, trembling, biting lip, pale blue dawn light, from above, no penetration",
+  "place": "small temple lodging room, thin futon on tatami, small writing desk, shoji screen, dim dawn light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus",
+  "wear": "wears only an open white sleeping yukata"
+ },
+ "lose_inochi_m2": {
+  "char": "master",
+  "scene": "{P} stands waist-deep in the moonlit spring, {A} sits on the stone step above him in her wet robe, sucking one of his nipples while pinching the other, crest rings around his nipples glowing deep purple, a thin amber glowing line on his solar plexus, {P} climaxing, head thrown back, blushing, tears, full moon reflection breaking in ripples, from side, no penetration",
+  "place": "sacred purification spring, moonlit water, white stone steps descending into the water, stone lanterns, moss, night, full moon",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onedari_m2": {
+  "char": "master",
+  "scene": "{P} sits on a white cushion on the corridor floor with his robe open, {A} kneels before him pressing a thin sheet of blank washi paper over his chest with her palm, red ink crest lines shining on his skin beneath, crest rings around his nipples, {P} blushing, squirming, trembling, lantern light glowing through the paper, rising moon over the pond, from side, no penetration",
+  "place": "moon-viewing corridor, wooden floor, vermilion railing, hanging lanterns, night garden with pond and pampas grass, dusk",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus",
+  "wear": "wears only an open white robe"
+ },
+ "lose_btl_m3": {
+  "char": "master",
+  "scene": "{P} lies on his back on a low black stone table with a white sheet, sandalwood prayer beads laid across his chest over his nipples, {A} stands beside pulling a cord that rings countless silver bells hanging from the beams, {P} climaxing hands-free, arched back, blushing, tears, open mouth, cum, crest lines glowing deep purple from lower belly to chest, from side, no penetration",
+  "place": "small inner shrine room, countless silver bells hanging on strings from high beams, candlesticks, dark night",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onani_m3": {
+  "char": "master",
+  "scene": "{P} crouches behind a pillar with his shirt open, a long string of sandalwood prayer beads wrapped around his waist, {A} kneels beside him pulling the tassel so the beads roll over his crest, glowing magenta crest tattoo on his lower abdomen and crest rings on his chest glowing, {P} blushing, trembling, teary eyes, embarrassed, open mouth, a notebook with blank pages and a brush on the floor, dusk sky, lanterns being lit, from side, no penetration",
+  "place": "moon-viewing corridor, wooden floor, vermilion railing, hanging lanterns, night garden with pond and pampas grass, dusk",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus",
+  "wear": "wears only an open white shirt and loose trousers"
+ },
+ "lose_inochi_m3": {
+  "char": "master",
+  "scene": "{P} kneels on the white stone step in the cave spring with both hands in a prayer shape on his knees, a holy staff with bell tassels leaning against his chest, {A} rings a small silver bell beside him, the first sunbeam piercing the cave, {P} climaxing hands-free, blushing, tears, trembling, crest lines covering his whole body glowing gold and purple, from front, no penetration",
+  "place": "cave purification spring, white stone steps into dark water, crack in the rock ceiling, first sunbeam, sandalwood incense between rocks, dawn",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onedari_m3": {
+  "char": "master",
+  "scene": "{P} kneels on a white cushion with his robe open, a small silver bell on a thin cord around his neck, {A} kneels before him kissing him while flicking the bell with her fingertip, crest ring around his neck and crest lines on his chest glowing, {P} blushing, tears, trembling, dazed, rain and hydrangeas outside the latticed window, from side, no penetration",
+  "place": "small bell room, wooden floor, shelves of many silver bells, latticed window with rain and hydrangeas",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus",
+  "wear": "wears only an open white robe and a small silver bell on a thin cord around his neck"
+ },
+ "lose_btl_e1": {
+  "char": "e1",
+  "scene": "{P} lies on his back on the white sheet, deep red-purple crest patterns covering his whole body, {A} kneels beside him adding the final stroke on his lower belly with a fine brush tip, open lacquered brush case on her lap, {P} climaxing, arched back, blushing, tears, open mouth, trembling, afternoon light through the shoji, from above, no penetration",
+  "place": "crest painting room, white floor sheet, inkstone with red ink, rack of calligraphy brushes on the wall, shoji screen, candlelight, afternoon light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onani_e1": {
+  "char": "e1",
+  "scene": "{P} lies on a thin futon with his robe open, his own index fingertip resting on the glowing crest below his navel, {A} kneels beside him touching his fingernail with the red-inked tip of her brush, red crest lines leading up to his nipples, {P} climaxing, blushing, teary eyes, trembling, a notebook with blank pages on the desk, dawn light, from above, no penetration",
+  "place": "small temple lodging room, thin futon on tatami, small writing desk, shoji screen, dim dawn light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus",
+  "wear": "wears only an open white sleeping yukata"
+ },
+ "lose_inochi_e1": {
+  "char": "e1",
+  "scene": "{P} sits on the white stone step chest-deep in the moonlit spring, {A} in her wet white and scarlet outfit lifts his chin with her fingers and paints his lower lip with a thick pink-tinged brush, red ink clouds swirling in the water, red crest lines on his chest and belly, {P} blushing, half-closed eyes, trembling lips, from side, close-up, no penetration",
+  "place": "sacred purification spring, moonlit water, white stone steps descending into the water, stone lanterns, moss, night, midnight",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onedari_e1": {
+  "char": "e1",
+  "scene": "{P} sits on a wooden bench on the corridor with his robe open, {A} sits beside him painting a red butterfly crest pattern on his chest with a fine brush, a large open pattern book with red crest drawings and no text on his lap, inkstone on the bench, {P} blushing, trembling, biting lip, lantern light, deep blue evening sky, from side, no penetration",
+  "place": "moon-viewing corridor, wooden floor, vermilion railing, hanging lanterns, night garden with pond and pampas grass, evening",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus",
+  "wear": "wears only an open white robe"
+ },
+ "lose_btl_e2": {
+  "char": "e2",
+  "scene": "{P} lies on the tatami behind bamboo blinds, {A} kneels beside his head with her tongue deep in his ear and her lips at his ear counting, silver censer on her lap, sweet smoke swirling, glowing crest lines from lower belly up to behind his ear, {P} climaxing limp, eyes rolled half closed, drooling, trembling, cum, from side, close-up, no penetration",
+  "place": "incense room, layered bamboo blinds, tatami floor, small censer with thin smoke, single candlestick, dim light, night",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onani_e2": {
+  "char": "e2",
+  "scene": "{P} kneels on the floor with his face buried in {A}'s sleeve, {A} sits beside him and holds his head against her sleeve, her lips near his ear counting, four incense sticks smoking in a burner, {P} blushing, trembling, eyes closed, crest rings on his chest glowing pink, a small notebook tucked in her sleeve, from side, no penetration",
+  "place": "small temple lodging room, thin futon on tatami, small writing desk, shoji screen, dim dawn light, night, incense smoke",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus",
+  "wear": "wears an open white robe"
+ },
+ "lose_inochi_e2": {
+  "char": "e2",
+  "scene": "{P} lies on the white stone step with his head on {A}'s lap and his feet in the spring, {A} leans down whispering into his ear, fingertip on the crest behind his ear, {P} climaxing just after waking, back arched, feet kicking the water, blushing, tears, open mouth, ripples spreading, a sunken silver censer glinting under the water, sunrise colors, from side, no penetration",
+  "place": "sacred purification spring, moonlit water, white stone steps descending into the water, stone lanterns, moss, night, dawn",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onedari_e2": {
+  "char": "e2",
+  "scene": "{P} leans against the vermilion railing hugging a small silver censer to his chest with both arms, thick white smoke rising into his face, {A} kneels beside him with her lips on the crest behind his ear, {P} climaxing, arched back, blushing, tears, open mouth, crest lines glowing white-hot, full moon reflected in the pond, from side, no penetration",
+  "place": "moon-viewing corridor, wooden floor, vermilion railing, hanging lanterns, night garden with pond and pampas grass, full moon",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_btl_e3": {
+  "char": "e3",
+  "scene": "{P} is on all fours on the black ebony kneeling stand, {A} kneels behind him with two holy-oil slick fingers inserted in his anus pressing one spot, oil dripping down his thighs, {P} climaxing from behind only, back arched, blushing, tears, open mouth, trembling, crest lines glowing violet up to his neck, silver key on her neck chain, from side, anal fingering",
+  "place": "discipline room, wall shelves of keys and locks, black ebony kneeling stand, candlesticks, stone floor, night",
+  "watchers": false,
+  "neg": "dildo, sex toy, penis in anus, anal sex with penis",
+  "wear": "wears only a small flat silver metal chastity cage and nothing else"
+ },
+ "lose_onani_e3": {
+  "char": "e3",
+  "scene": "{P} lies on his side on a thin futon hugging his knees, {A} kneels behind him with one oiled finger inserted in his anus for inspection, a handheld candle lamp set on the floor, oil lamp dish beside the futon, a notebook with blank pages hanging from the pillar, {P} blushing, tears, biting the pillow, trembling, glowing magenta crest tattoo on his lower abdomen, dawn light, from side, anal fingering",
+  "place": "small temple lodging room, thin futon on tatami, small writing desk, shoji screen, dim dawn light",
+  "watchers": false,
+  "neg": "dildo, sex toy, penis in anus, anal sex with penis",
+  "wear": "wears only a small flat silver metal chastity cage and an open sleeping yukata"
+ },
+ "lose_inochi_e3": {
+  "char": "e3",
+  "scene": "{P} kneels on a submerged stone step leaning forward onto the step above, hips in the moonlit water, {A} stands in the spring behind him with her sleeves tied back, two oiled fingers inserted in his anus, {P} climaxing, head thrown back, blushing, tears, open mouth, ripples breaking the moon reflection, blank wooden plaques hanging on a stone lantern, from side, anal fingering",
+  "place": "sacred purification spring, moonlit water, white stone steps descending into the water, stone lanterns, moss, night, midnight",
+  "watchers": false,
+  "neg": "dildo, sex toy, penis in anus, anal sex with penis",
+  "wear": "wears only a small flat silver metal chastity cage and nothing else"
+ },
+ "lose_onedari_e3": {
+  "char": "e3",
+  "scene": "{P} is on all fours on a round straw cushion on the corridor floor, {A} kneels behind him with two holy-oil slick fingers inserted in his anus, a low writing desk with an indigo notebook with blank pages, inkstone and oil jar beside them, {P} blushing, tears, trembling, begging expression, crest lines glowing to his neck, moon rising over the garden, lanterns, from side, anal fingering",
+  "place": "moon-viewing corridor, wooden floor, vermilion railing, hanging lanterns, night garden with pond and pampas grass, evening",
+  "watchers": false,
+  "neg": "dildo, sex toy, penis in anus, anal sex with penis",
+  "wear": "wears only a small flat silver metal chastity cage and an open robe"
+ },
+ "lose_btl_boss": {
+  "char": "boss",
+  "scene": "{A} lies on the white platinum altar holding {P} on top of her chest, wrapping him in a cocoon of her layered white and gold robes, her arms around his back, {P}'s face buried in her chest, glowing deep purple crest lines connecting over his whole body with a crest ring around his neck, {P} climaxing, trembling, blushing, tears, full moon light from the round window, from above, no penetration",
+  "place": "inner sanctum, many layered white curtains, white platinum altar, twelve candlesticks, round window with full moon light, midnight",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onani_boss": {
+  "char": "boss",
+  "scene": "{A} sits on the thin futon embracing {P} from behind, her long arms wrapped around him, one palm pressed on his lower belly crest and the other on his chest, her platinum hair falling over his shoulder, a small silver bell on his wrist, {P} limp in her arms, climaxing quietly, eyes half closed, blushing, trembling, crest glowing deep purple, dawn light through the shoji, from side, no penetration",
+  "place": "small temple lodging room, thin futon on tatami, small writing desk, shoji screen, dim dawn light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_inochi_boss": {
+  "char": "boss",
+  "scene": "{A} stands waist-deep in the spring in her soaked white and gold robes and holds {P} tightly against her chest, his face buried in her bosom, her palm pressing his back, glowing magenta crest tattoo on his lower abdomen glowing under the water, {P} trembling, eyes closed, blushing, tears, clinging expression, half moon reflected in the water, candlesticks on the stone edge, twilight, from side, no penetration",
+  "place": "sacred purification spring, moonlit water, white stone steps descending into the water, stone lanterns, moss, night, twilight, half moon",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "lose_onedari_boss": {
+  "char": "boss",
+  "scene": "{A} sits on white silk bedding inside the layered curtains and holds {P} in a full-body embrace on her lap, her robes wrapping around him, his hips pressed against her thigh, her arms tightening around his back, {P} climaxing, head thrown back, blushing, tears, open mouth, crest ring around his neck and crest lines over his whole body glowing, a burnt-down candle, from side, no penetration",
+  "place": "inner sanctum, many layered white curtains, white platinum altar, twelve candlesticks, round window with full moon light, night, white silk bedding",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus"
+ },
+ "onanie_master": {
+  "char": "master",
+  "scene": "{P} lies alone on a thin futon with his sleeping robe open, pressing his wet index finger to his own lips, saliva string, his other wet fingertip on the glowing crest below his navel, blushing, half-closed dreamy eyes, trembling, open mouth, heavy breathing, lonely aroused expression, pale dawn light through the shoji, from above, legs pressed together, sweat on neck, shoji screen behind",
+  "place": "small temple lodging room, thin futon on tatami, small writing desk, shoji screen, dim dawn light",
+  "watchers": false,
+  "neg": "penetration",
+  "wear": "wears only an open white sleeping yukata"
+ },
+ "onanie_e1": {
+  "char": "e1",
+  "scene": "{P} lies alone on a thin futon with his robe open, tracing the glowing crest lines with one fingertip like a brush from his navel up toward his nipple, other hand holding his robe open, blushing, biting lip, half-closed eyes, trembling, erect nipples, glowing crest lines on his hip, heavy breathing, dawn light, from above, legs pressed together, sweat, embarrassed lonely expression",
+  "place": "small temple lodging room, thin futon on tatami, small writing desk, shoji screen, dim dawn light",
+  "watchers": false,
+  "neg": "penetration",
+  "wear": "wears only an open white sleeping yukata"
+ },
+ "onanie_e2": {
+  "char": "e2",
+  "scene": "{P} kneels alone on the floor with his nose pressed into the collar of his robe, inhaling a lingering sweet incense scent, one fingertip lightly on his own earlobe, other hand resting on his thigh, eyes closed, lips moving as he counts, blushing, trembling, hands-free, faint smoke in the air, crest glowing pink, from front, swaying slightly, dreamy dazed expression, sweat on neck, drooling slightly",
+  "place": "small temple lodging room, thin futon on tatami, small writing desk, shoji screen, dim dawn light, night",
+  "watchers": false,
+  "neg": "penetration",
+  "wear": "wears a loosely open white robe"
+ },
+ "onanie_e3": {
+  "char": "e3",
+  "scene": "{P} lies alone on his side on a thin futon hugging his knees, one oiled hand reaching behind with one finger inserted into his own anus, oil lamp dish beside the pillow, blushing, tears, biting lip, trembling, glowing magenta crest tattoo on his lower abdomen glowing, lamp shadow on the wall, from behind, from side, sweat on back, heavy breathing, embarrassed lonely expression, legs apart",
+  "place": "small temple lodging room, thin futon on tatami, small writing desk, shoji screen, dim dawn light, night, oil lamp",
+  "watchers": false,
+  "neg": "",
+  "wear": "wears only an open sleeping yukata pushed up to his waist"
+ },
+ "onanie_boss": {
+  "char": "boss",
+  "scene": "{P} lies alone curled on a thin futon hugging himself tightly, arms crossed over his chest, palms pressing his chest and belly crest hard, blushing, eyes squeezed shut, trembling, lonely aching expression, crest lines glowing purple on his chest and belly, heavy breathing, dawn light, from above, legs pressed together, sweat on neck, shoji screen behind, thin blanket kicked aside, lonely aroused expression",
+  "place": "small temple lodging room, thin futon on tatami, small writing desk, shoji screen, dim dawn light",
+  "watchers": false,
+  "neg": "penetration"
+ },
+ "magic_1": {
+  "char": "master",
+  "scene": "{A} presses a glowing magenta crest seal of light toward the viewer with her palm, pink light and floating crest patterns, pov, serene seductive smile, looking at viewer, upper body, long dark purple wavy hair, gold holy emblem necklace glinting, candles and incense smoke behind her, dramatic lighting, bokeh, mystical atmosphere, black and purple priestess robe with open chest, purple eyes glowing, one hand raised",
+  "place": "main hall of the moon crest temple, black stone altar, countless candlesticks, stone pillars, sandalwood incense smoke, night"
+ },
+ "magic_2": {
+  "char": "e2",
+  "scene": "{A} lifts a small smoking silver incense burner toward the viewer with both hands, sweet purple smoke drifting forward, pov, sleepy half-closed pale purple eyes, faint smile, looking at viewer, upper body, grey purple hair loosely tied, bamboo blinds behind her, dim candlelight, dreamy hazy atmosphere, bokeh, pale purple shrine maiden outfit, smoke curling around her fingers, candle flame, soft light",
+  "place": "incense room, layered bamboo blinds, tatami floor, small censer with thin smoke, single candlestick, dim light"
+ },
+ "magic_3": {
+  "char": "master",
+  "scene": "{A} kneels in prayer before the black stone altar with her hands clasped, receiving an oracle, beams of moonlight falling from above, eyes closed, serene expression, floating glowing particles, candles around, holy mystical atmosphere, from side, full body, long dark purple wavy hair flowing, black and purple priestess robe spread on the stone floor, gold emblem glinting, rose petals on the altar, incense smoke curling, dramatic lighting",
+  "place": "main hall of the moon crest temple, black stone altar, countless candlesticks, stone pillars, sandalwood incense smoke, night"
+ },
+ "magic_4": {
+  "char": "e3",
+  "scene": "{A} holds up a small silver key on a thin chain and an old iron padlock toward the viewer, stern face, pov, indigo eyes looking down at viewer, upper body, neatly tied up indigo black hair, shelves of keys and locks behind her, candlelight, strict solemn atmosphere, dramatic shadow, dark indigo shrine maiden outfit, key glinting in candlelight, other hand raised as a warning, silver chain on her neck",
+  "place": "discipline room, wall shelves of keys and locks, black ebony kneeling stand, candlesticks, stone floor, night"
+ },
+ "magic_5": {
+  "char": "master",
+  "scene": "{A} pours sparkling holy water from a silver ewer at the edge of the sacred spring, glittering droplets, moonlight on the water, pov, gentle seductive smile, looking at viewer, upper body, long dark purple wavy hair, gold holy emblem necklace, white stone steps, stone lanterns, mystical atmosphere, black and purple priestess robe, water splashing on the stones, sparkles, soft moonlit glow, bokeh, candles on the stone edge",
+  "place": "sacred purification spring, moonlit water, white stone steps descending into the water, stone lanterns, moss, night"
+ }
+}

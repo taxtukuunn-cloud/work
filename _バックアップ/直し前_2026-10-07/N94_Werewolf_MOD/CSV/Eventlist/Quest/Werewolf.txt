@@ -1,0 +1,2 @@
+満月の群れ（群れの長　フェンリエ）,Card/Werewolf_master,クエストイベント
+満月の群れ【回想バトル】,Card/Werewolf_master,回想バトル,$$Werewolf_挑戦回数,>=,1

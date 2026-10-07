@@ -1,0 +1,309 @@
+{
+ "atk_m1": {
+  "char": "master",
+  "scene": "{A} bends over {P} seated on the high-backed wooden chair and kisses him mouth to mouth, feeding him sweet pink potion with her tongue, mouth-to-mouth feeding, pink liquid trickling from the corner of {P}'s lips, {A} holding his chin up with one finger, small empty pink vial in her other hand, {P} blushing, half-closed teary eyes, throat swallowing, trembling hands on the armrests, close-up, from side, no penetration",
+  "place": "brewing room of a witch's apothecary, large copper cauldron with rising steam, high-backed wooden chair, glassware on the workbench, lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on"
+ },
+ "atk_m2": {
+  "char": "master",
+  "scene": "{A} stands behind {P} in front of the tall mirror, tying the ribbon of a cursed frilly dress on him, her hands stroking his thigh and waist over the skirt fabric, corset tightening around his slim waist, {A} whispering into his ear with a sly smile, {P} blushing, embarrassed, trembling knees, hands clutching the skirt, reflection of both in the mirror, no penetration",
+  "place": "dressing room of a witch's shop, tall standing mirror, rows of frilly dresses hanging on racks, ribbons and lace, warm lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a light green frilly dress with a corset, lace gloves and white thigh-high stockings"
+ },
+ "atk_m3": {
+  "char": "master",
+  "scene": "{A} sits beside {P} on the wooden bench and licks his nipple coated with glossy coral potion, tongue out, her other fingertip drawing slow circles around his other shiny nipple, small coral potion vial on the bench, {P} blushing, biting lip, arched back, erect swollen nipples, trembling, from side, no penetration, her braid falling over his chest, sunlight through the glass roof, sweat on his chest, heavy breathing",
+  "place": "herb garden greenhouse, glass roof, lush medicinal herbs and flowers, wooden bench, dew drops on leaves, soft daylight",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears only an unbuttoned white shirt open at the chest and trousers"
+ },
+ "atk_e1": {
+  "char": "e1",
+  "scene": "{A} leans over {P} lying on the wooden counter, scooping thick glossy orange ointment from a small jar and rubbing it onto both of {P}'s nipples with circling fingertips, glistening nipples, {A} cheerful smile, jars and a notebook beside them, {P} blushing, arched back, open mouth, trembling, from above, no penetration, orange ointment dripping down his chest, sweat, toes curling, colored light through potion bottles",
+  "place": "front room of a witch's apothecary shop, wooden counter with brass scale, shelves of colorful potion bottles, hanging dried herbs, warm lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on"
+ },
+ "atk_e2": {
+  "char": "e2",
+  "scene": "{A} stands behind {P} in front of the tall mirror, pulling a white lace glove onto his hand and fastening the tiny button at his wrist, ribbon tightening around his waist, {A} expressionless, doll joints visible, {P} blushing, embarrassed, trembling, reflection of both in the mirror, frilly dresses on racks, no penetration, lace and ribbons, corset laces pulled tight, soft rounded thighs in stockings, knees together, lamp light on the lace",
+  "place": "dressing room of a witch's shop, tall standing mirror, rows of frilly dresses hanging on racks, ribbons and lace, warm lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a frilly light blue dress, white lace gloves and white stockings"
+ },
+ "atk_e3": {
+  "char": "e3",
+  "scene": "{A} lies beside {P} among the cushions and blows sweet purple smoke from her lips into his open mouth, long kiseru pipe in her hand, purple smoke curling around his body, {P} flushed red, dazed half-closed eyes, drooling, sweat, trembling, heavy breathing, close-up, from side, no penetration, her grey hair spreading over the cushions like smoke, purple smoke curling around his body, sweat on his chest, lamp light",
+  "place": "smoke room, drifting purple smoke, floor covered with many colorful cushions, single dim lamp, dark cozy room",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on"
+ },
+ "atk_boss": {
+  "char": "boss",
+  "scene": "{P} lies on his back on the black stone altar with legs spread and lifted, {A} standing between his legs with two long oiled fingers inside his anus, pouring cold translucent purple jelly from a small glass flask into him along her fingers, fingering, jelly dripping, {A} stern face under her large hat, {P} blushing, tears, open mouth, arched back, toes curling, candlelight, from side",
+  "place": "underground magic circle chamber, stone floor with a glowing purple magic circle, many lit candlesticks, stone walls, waist-high black stone altar with velvet cover",
+  "watchers": false,
+  "neg": "strap-on, dildo, huge insertion, penis in anus",
+  "wear": "wears a black and purple frilly dress with the skirt lifted up to his waist, lace gloves and thigh-high stockings, nothing under the skirt"
+ },
+ "lose_btl_m1": {
+  "char": "master",
+  "scene": "{A} leans over {P} seated on the high-backed wooden chair and kisses him mouth to mouth, feeding the last pearl-colored potion with her tongue, milky liquid on his lips, her hand cupping his cheek, four small empty vials in pink, coral, violet and pearl colors lined up on the workbench, {P} with smooth skin and slim soft waist, blushing, dazed teary eyes, arched back, trembling, steam from the cauldron, from side, no penetration",
+  "place": "brewing room of a witch's apothecary, large copper cauldron with rising steam, high-backed wooden chair, glassware on the workbench, lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on"
+ },
+ "lose_onani_m1": {
+  "char": "master",
+  "scene": "{P} leans back against a tall potion shelf, {A} kisses him mouth to mouth pouring cold violet potion onto his tongue, her fingers tucking his hair behind his ear and pinching his earlobe, {P}'s own wet fingers still near his lips, blushing, eyes closed, trembling knees, colored light from bottles, dawn, from side, no penetration, her braid brushing his chest, her witch hat tilted, sweat, heavy breathing, dust in the light",
+  "place": "dim potion storage room, tall shelves crowded with potion bottles, dusty air, faint dawn light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears an unbuttoned shirt and trousers"
+ },
+ "lose_inochi_m1": {
+  "char": "master",
+  "scene": "{P} lies on the canopy bed, {A} on top of him cupping his cheeks with both hands and kissing him mouth to mouth, her cheeks puffed with potion, pale blue liquid overflowing from their lips, a large pale blue bottle on the bedside table, thin green ivy mark on {P}'s wrist, {P} blushing, tears, arched back, trembling, rainy night, from side, no penetration",
+  "place": "attic bedroom, slanted wooden ceiling, small round window, canopy bed, candle light, rain on the window",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears an unbuttoned white shirt"
+ },
+ "lose_onedari_m1": {
+  "char": "master",
+  "scene": "{P} sits on the wooden counter clinging to {A}'s robe while she kisses him mouth to mouth, pink potion dripping from his chin, an open notebook with blank pages on his lap, brass scale beside them, closed shop at dusk, {P} blushing, dazed eyes, arched back, trembling legs, from side, no penetration, her braid falling over her shoulder, witch hat tilted, lamp light, sweat, heavy breathing",
+  "place": "front room of a witch's apothecary shop, wooden counter with brass scale, shelves of colorful potion bottles, hanging dried herbs, warm lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears an unbuttoned white shirt and trousers"
+ },
+ "lose_btl_m2": {
+  "char": "master",
+  "scene": "{P} stands with both hands on the tall mirror, {A} pressed against his back, her lips at his ear, her hand stroking his thigh over the skirt, the choker and corset tightening, {P} blushing, open mouth, trembling legs, knees bending, damp spot on the skirt, reflection in the mirror, from side, no penetration, her sly smile in the reflection, ribbons and lace, sweat on his neck, heavy breathing, lamp light",
+  "place": "dressing room of a witch's shop, tall standing mirror, rows of frilly dresses hanging on racks, ribbons and lace, warm lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a light green frilly dress with a corset, a velvet choker, white lace gloves, garters and white thigh-high stockings"
+ },
+ "lose_onani_m2": {
+  "char": "master",
+  "scene": "{P} stands behind a fitting curtain in front of a small mirror holding up his skirt hem with gloved hands, {A} kneeling and tying a violet ribbon tightly around his thigh at the stocking edge, the ribbon biting into his skin, {A} looking up with a sly smile, {P} blushing, trembling knees, embarrassed, from side, no penetration, her witch hat tilted, lace and ribbons, sweat, heavy breathing, rain outside the window",
+  "place": "front room of a witch's apothecary shop, wooden counter with brass scale, shelves of colorful potion bottles, hanging dried herbs, warm lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a navy apron dress, black thigh-high stockings, lace gloves and a choker"
+ },
+ "lose_inochi_m2": {
+  "char": "master",
+  "scene": "{P} sits on the edge of the canopy bed with knees together, {A} kissing him mouth to mouth feeding violet potion, her fingers stroking ribbons tied on his wrist, thigh and throat, ribbons tightening, {P} blushing, eyes closed, trembling hands on his lap, candlestick on the side table, from side, no penetration, violet potion on his lips, her braid on his shoulder, sweat, heavy breathing, rain on the window",
+  "place": "attic bedroom, slanted wooden ceiling, small round window, canopy bed, candle light, rain on the window",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a white frilly blouse, a light blue jumper skirt, white stockings, and ribbons tied at wrist, thigh, throat and waist"
+ },
+ "lose_onedari_m2": {
+  "char": "master",
+  "scene": "{P} sits on the greenhouse bench with knees together holding a crumpled blank paper to his chest, {A} sitting beside him kissing him mouth to mouth, one hand combing his hair, the other hand stroking his thigh under the skirt hem over the lace socks, {P} blushing, trembling, morning light through the glass, from side, no penetration, her witch hat tilted, pink potion on his lips, dew on the leaves, sweat, heavy breathing",
+  "place": "herb garden greenhouse, glass roof, lush medicinal herbs and flowers, wooden bench, dew drops on leaves, soft daylight",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a white blouse, a strawberry red skirt, a light green apron and white lace thigh-high socks"
+ },
+ "lose_btl_m3": {
+  "char": "master",
+  "scene": "{A} sits behind {P} on the wooden bench embracing him, her fingers coated with coral potion pinching and rolling both of his swollen nipples, her lips at his ear, {P} leaning back against her, blushing, open mouth, tears, arched back, trousers slipping down his narrow hips, shiny wet nipples, from front, no penetration, her braid over his shoulder, sunlight through the glass roof, sweat, heavy breathing, toes curling",
+  "place": "herb garden greenhouse, glass roof, lush medicinal herbs and flowers, wooden bench, dew drops on leaves, soft daylight",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears an open white shirt and loose trousers slipping below his hips"
+ },
+ "lose_onani_m3": {
+  "char": "master",
+  "scene": "{P} sits on the high-backed wooden chair, {A} stands behind him holding his wrist and guiding his own coral-potion-wet fingertip in a slow spiral around his nipple, her other hand on his shoulder, {A} sly smile, {P} blushing, embarrassed teary eyes, arched back, trembling, coral potion vial on the workbench, from front, no penetration, her braid over his shoulder, lamp light, steam from the cauldron, sweat, heavy breathing",
+  "place": "brewing room of a witch's apothecary, large copper cauldron with rising steam, high-backed wooden chair, glassware on the workbench, lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears an open shirt and trousers"
+ },
+ "lose_inochi_m3": {
+  "char": "master",
+  "scene": "{P} lies on the canopy bed, {A} bending over sucking his nipple through the wet lace of his nightgown, her fingers rolling his other nipple over the lace, saliva soaking the fabric, {P} blushing, tears, arched back, clutching the sheets, candle light, night, from side, no penetration, her witch hat on the bedpost, her braid on his chest, sweat, heavy breathing, rain on the window, toes curling",
+  "place": "attic bedroom, slanted wooden ceiling, small round window, canopy bed, candle light, rain on the window",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a white lace nightgown"
+ },
+ "lose_onedari_m3": {
+  "char": "master",
+  "scene": "{P} sits on the wooden counter with his shirt open, {A} painting mixed pink, coral, violet and pearl potion onto his nipple with her fingertip and licking the other, four open jars on the counter, a small corked vial with a blank paper tag, {P} blushing, begging face, arched back, trembling, morning light, from side, no penetration, her braid over her shoulder, colored light through potion bottles, sweat, heavy breathing",
+  "place": "front room of a witch's apothecary shop, wooden counter with brass scale, shelves of colorful potion bottles, hanging dried herbs, warm lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears an open white shirt and trousers"
+ },
+ "lose_btl_e1": {
+  "char": "e1",
+  "scene": "{P} lies on his back on the wooden counter, {A} leaning over him smearing pearl-white shimmering ointment onto both of his nipples with circling fingertips, three small ointment jars with wax seals lined up, an open notebook, {A} cheerful grin, {P} blushing, open mouth, arched back, shiny swollen nipples, trembling, sunset light through potion bottles, from above, no penetration, ointment dripping down his sides, sweat, toes curling, heavy breathing",
+  "place": "front room of a witch's apothecary shop, wooden counter with brass scale, shelves of colorful potion bottles, hanging dried herbs, warm lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on"
+ },
+ "lose_onani_e1": {
+  "char": "e1",
+  "scene": "{P} sits on a wooden chair, {A} leaning in front of him painting orange ointment onto his nipples with a small soft brush, his own ointment-wet fingertips resting on his chest, open notebook on the workbench, {A} excited smile, {P} blushing, drooling, arched back, heels lifted, shiny nipples, from side, no penetration, ointment smeared on his chest, sweat, heavy breathing, lamp light",
+  "place": "brewing room of a witch's apothecary, large copper cauldron with rising steam, high-backed wooden chair, glassware on the workbench, lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears an open shirt pulled off his shoulders and trousers"
+ },
+ "lose_inochi_e1": {
+  "char": "e1",
+  "scene": "{P} kneels on the greenhouse bench pressing his ointment-coated chest against a sheet of blank parchment, {A} standing behind him with one hand on his back pressing him down, her other hand holding the parchment, small ointment jar beside, {A} smiling with tear stains on cheeks, {P} blushing, trembling, eyes squeezed shut, morning light, from side, no penetration, her apron tied at the back, dew on the leaves, sweat, heavy breathing",
+  "place": "herb garden greenhouse, glass roof, lush medicinal herbs and flowers, wooden bench, dew drops on leaves, soft daylight",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on"
+ },
+ "lose_onedari_e1": {
+  "char": "e1",
+  "scene": "{P} lies on the canopy bed with his shirt open, {A} kneeling beside him dripping glossy ointment from a small golden jar onto his nipple and circling it with her fingertip, an open notebook on the pillow, {P} blushing, covering his face with softly curled hands, arched back, trembling, rain on the window, from above, no penetration, ointment dripping, sweat, heavy breathing, toes curling, candle light",
+  "place": "attic bedroom, slanted wooden ceiling, small round window, canopy bed, candle light, rain on the window",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears an open white shirt"
+ },
+ "lose_btl_e2": {
+  "char": "e2",
+  "scene": "{P} stands in front of the tall mirror, {A} standing behind him holding his wrists and moving his gloved hands to rub his flat chest over the dress, the corset tightening, {A} expressionless, glass-like eyes, doll joints visible, {P} blushing, open mouth, trembling knees, reflection of both in the mirror, from side, no penetration, lace and ribbons, frilly dresses hanging behind, sweat, heavy breathing, lamp light",
+  "place": "dressing room of a witch's shop, tall standing mirror, rows of frilly dresses hanging on racks, ribbons and lace, warm lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a light blue frilly dress with a corset, white lace gloves, white thigh-high stockings and a choker with a tiny lock"
+ },
+ "lose_onani_e2": {
+  "char": "e2",
+  "scene": "{P} sits on the edge of the bed, rubbing small circles on his chest over the apron bib, a tiny bell on his wrist, {A} standing behind him stroking his back and waist over the fabric with white-gloved hands, small open notebook in her hand, expressionless, {P} blushing, embarrassed, trembling, pale dawn light from the skylight, from side, no penetration",
+  "place": "attic bedroom, slanted wooden ceiling, small round window, canopy bed, candle light, rain on the window",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a frilly blouse, a small apron, a skirt, white lace gloves and white thigh-high stockings"
+ },
+ "lose_inochi_e2": {
+  "char": "e2",
+  "scene": "{P} sits on a white wicker chair, {A} kneeling in front of him stitching the blouse fabric over his nipple with a needle and thread, the fabric pulled tight and rubbing his nipple, {A} expressionless, doll joints, {P} blushing, arched back, gloved hands clawing the armrests, tears, climbing roses around, from side, no penetration, lace and ribbons, sweat, heavy breathing, sunlight through the glass",
+  "place": "herb garden greenhouse, glass roof, lush medicinal herbs and flowers, wooden bench, dew drops on leaves, soft daylight",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a frilly white blouse, a white corset, a three-tiered light blue frilly skirt, white lace gloves and white stockings"
+ },
+ "lose_onedari_e2": {
+  "char": "e2",
+  "scene": "{P} stands on a display pedestal in front of a large shop window at night, {A} standing beside him with one arm around his waist pulling the corset laces tight, {P} blushing, embarrassed, knees together, holding a small blank order slip, trembling, lamp light, dark forest outside the glass, from front, no penetration, lace and ribbons, a wooden mannequin set aside on the floor, sweat, heavy breathing",
+  "place": "front room of a witch's apothecary shop, wooden counter with brass scale, shelves of colorful potion bottles, hanging dried herbs, warm lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a lilac frilly dress over a black corset, white lace gloves and white stockings"
+ },
+ "lose_btl_e3": {
+  "char": "e3",
+  "scene": "{P} lies sinking into the cushions, {A} lying half on top of him blowing a thick stream of purple smoke from her lips into his mouth, kiseru pipe in her hand, purple smoke tendrils creeping under his dress and along his thighs, {P} flushed, dazed half-closed eyes, drooling, arched back, trembling, from above, no penetration, her grey hair spreading like smoke, lamp light, sweat, heavy breathing",
+  "place": "smoke room, drifting purple smoke, floor covered with many colorful cushions, single dim lamp, dark cozy room",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a sheer pale purple negligee-like frilly dress"
+ },
+ "lose_onani_e3": {
+  "char": "e3",
+  "scene": "{P} stands behind the shop counter covering his mouth with both hands, holding his breath, {A} crouching beside him blowing purple smoke under his skirt hem, smoke tendrils crawling up his thighs, a small empty glass bottle in her hand, {P} blushing, teary eyes, trembling legs, knees together, afternoon light, from side, no penetration, colored potion bottles on the shelves, curtain half open, sweat, heavy breathing",
+  "place": "front room of a witch's apothecary shop, wooden counter with brass scale, shelves of colorful potion bottles, hanging dried herbs, warm lamp light",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a frilly blouse and a frilly skirt"
+ },
+ "lose_inochi_e3": {
+  "char": "e3",
+  "scene": "{P} sits on a stone bench under purple glowing glass lamps at night, {A} lifting the hem of the flower lace veil over his head and blowing purple smoke inside it, kiseru in her hand, purple smoke trapped inside the veil, a ring glowing on his gloved finger, {P} flushed, dazed, trembling, from side, no penetration, her grey hair drifting like smoke, dark night sky over the glass roof, sweat, heavy breathing",
+  "place": "herb garden greenhouse, glass roof, lush medicinal herbs and flowers, wooden bench, dew drops on leaves, soft daylight",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a lilac flower-pattern lace veil over his head, a thin blouse with a chest ribbon, a lilac frilly skirt and lace gloves"
+ },
+ "lose_onedari_e3": {
+  "char": "e3",
+  "scene": "{P} lies on the canopy bed, {A} sitting on the edge lifting his nightgown hem slightly and blowing purple smoke up along his inner thighs, kiseru in her hand, small leather notebook open on her lap, smoke curling over the stocking lace, {P} blushing, trembling thighs, dazed eyes, moonlight, from side, no penetration, her grey hair drifting like smoke, sweat on his thighs, heavy breathing, toes curling",
+  "place": "attic bedroom, slanted wooden ceiling, small round window, canopy bed, candle light, rain on the window",
+  "watchers": false,
+  "neg": "penetration, anal sex, insertion, penis in anus, strap-on",
+  "wear": "wears a deep violet nightgown with white lace trim and white lace thigh-high stockings"
+ },
+ "lose_btl_boss": {
+  "char": "boss",
+  "scene": "{P} lies on his back on the black stone altar with legs spread, {A} standing between his legs with two oiled fingers inside his anus stirring translucent pink jelly, fingering, jelly dripping, her other hand holding a lock of his hair, five small glass flasks of colored jelly on a side table, glowing magic circle on the floor, {P} blushing, tears of pleasure, open mouth, arched back, soft rounded thighs, candlelight, from side",
+  "place": "underground magic circle chamber, stone floor with a glowing purple magic circle, many lit candlesticks, stone walls, waist-high black stone altar with velvet cover",
+  "watchers": false,
+  "neg": "strap-on, dildo, huge insertion, penis in anus",
+  "wear": "wears a black and purple frilly dress with the skirt lifted up to his waist, lace gloves and thigh-high stockings, nothing under the skirt"
+ },
+ "lose_onani_boss": {
+  "char": "boss",
+  "scene": "{P} sits on the high-backed wooden chair with his dress skirt lifted and legs spread, {A} standing over him with one long oiled finger pushing deep inside his anus beside his own fingers, fingering, amber oil dripping, amber oil bottle on his knee, an hourglass on the workbench, {A} stern face, {P} blushing, tears, open mouth, trembling, from side, her large hat casting a shadow, steam from the cauldron, sweat, heavy breathing, toes curling",
+  "place": "brewing room of a witch's apothecary, large copper cauldron with rising steam, high-backed wooden chair, glassware on the workbench, lamp light",
+  "watchers": false,
+  "neg": "strap-on, dildo, huge insertion, penis in anus",
+  "wear": "wears a black and purple frilly dress with the skirt lifted up to his waist, lace gloves and thigh-high stockings, nothing under the skirt"
+ },
+ "lose_inochi_boss": {
+  "char": "boss",
+  "scene": "{P} lies face down on a low moss-covered stone bed covered with chamomile flowers inside a white chalk circle, {A} kneeling beside him with two oiled fingers inside his anus, pouring cold jelly from a glass bottle, fingering, jelly glistening, glowing gold lines on the circle, {P} blushing, tears, cheek on the flowers, trembling, rain on the glass roof, from side",
+  "place": "herb garden greenhouse, glass roof, lush medicinal herbs and flowers, wooden bench, dew drops on leaves, soft daylight",
+  "watchers": false,
+  "neg": "strap-on, dildo, huge insertion, penis in anus",
+  "wear": "wears a black and purple frilly dress with the skirt lifted up to his waist, lace gloves and thigh-high stockings, nothing under the skirt"
+ },
+ "lose_onedari_boss": {
+  "char": "boss",
+  "scene": "{P} lies face down on the canopy bed with his hips raised, {A} sitting on the bed edge with two oiled fingers inside his anus, holding a silver spoon of cold translucent jelly above, fingering, jelly glistening, an open notebook with a quill on the bed, moonlight from the round window, {P} blushing, looking back with begging teary eyes, trembling, from side",
+  "place": "attic bedroom, slanted wooden ceiling, small round window, canopy bed, candle light, rain on the window",
+  "watchers": false,
+  "neg": "strap-on, dildo, huge insertion, penis in anus",
+  "wear": "wears a black and purple frilly dress with the skirt lifted up to his waist, lace gloves and thigh-high stockings, nothing under the skirt"
+ },
+ "onanie": {
+  "char": "master",
+  "scene": "{P} sits alone on the high-backed wooden chair, sucking two of his own fingers with his tongue wrapped around them, saliva dripping, his other wet fingertip drawing small circles around his own nipple through the opened dress, faint purple smoke drifting, small pink potion vial on the workbench, blushing, half-closed dreamy eyes, trembling, knees pressed together, sweat, from front, lamp light, steam from the cauldron, lonely aroused expression",
+  "place": "brewing room of a witch's apothecary, large copper cauldron with rising steam, high-backed wooden chair, glassware on the workbench, lamp light",
+  "watchers": false,
+  "neg": "penetration",
+  "wear": "wears a frilly dress pulled open at the chest, lace gloves and white stockings"
+ },
+ "magic_1": {
+  "char": "master",
+  "scene": "{A} holds out a small pink potion vial toward the viewer between two fingers, winking, sly smile, other hand on her hat brim, sparkles around the vial, pov, upper body, looking at viewer, long braid over her shoulder, colored light through potion bottles, glowing pink liquid, dramatic lighting, fantasy atmosphere, detailed hands",
+  "place": "front room of a witch's apothecary shop, wooden counter with brass scale, shelves of colorful potion bottles, hanging dried herbs, warm lamp light"
+ },
+ "magic_2": {
+  "char": "master",
+  "scene": "{A} holds up a frilly lace dress with ribbons toward the viewer as if to dress them, magical pink ribbons floating in the air, teasing smile, pov, looking at viewer, long braid over her shoulder, lace and frills sparkling, rows of frilly dresses behind her, dramatic lighting, fantasy atmosphere",
+  "place": "dressing room of a witch's shop, tall standing mirror, rows of frilly dresses hanging on racks, ribbons and lace, warm lamp light"
+ },
+ "magic_3": {
+  "char": "master",
+  "scene": "{A} stirs a large bubbling copper cauldron with a long wooden ladle, purple steam rising and swirling toward the viewer, sly smile, looking at viewer, pov, purple steam swirling around her, glowing bubbles, long braid swaying, lamp light, dramatic lighting, fantasy atmosphere, upper body",
+  "place": "brewing room of a witch's apothecary, large copper cauldron with rising steam, high-backed wooden chair, glassware on the workbench, lamp light"
+ },
+ "magic_4": {
+  "char": "master",
+  "scene": "{A} holds a folded blank order letter sealed with wax, a small familiar bird carrying a parcel flying beside her, cheerful wink, pov, upper body, looking at viewer, long braid over her shoulder, the bird flapping its wings, colored light through potion bottles, fantasy atmosphere, dramatic lighting",
+  "place": "front room of a witch's apothecary shop, wooden counter with brass scale, shelves of colorful potion bottles, hanging dried herbs, warm lamp light"
+ },
+ "magic_5": {
+  "char": "master",
+  "scene": "{A} offers a small bottle with a blank label toward the viewer, hiding a mischievous smile behind her other hand, amber eyes glinting, pov, upper body, looking at viewer, long braid over her shoulder, the liquid in the bottle glowing pink, colored light through potion bottles, fantasy atmosphere, dramatic lighting",
+  "place": "front room of a witch's apothecary shop, wooden counter with brass scale, shelves of colorful potion bottles, hanging dried herbs, warm lamp light"
+ }
+}

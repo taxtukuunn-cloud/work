@@ -1,0 +1,2 @@
+巫女の神社（宮司　アマネ）,Card/Shrine_master,クエストイベント
+巫女の神社【回想バトル】,Card/Shrine_master,回想バトル,$$Shrine_挑戦回数,>=,1

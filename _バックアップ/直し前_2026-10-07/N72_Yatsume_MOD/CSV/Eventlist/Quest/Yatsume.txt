@@ -1,0 +1,2 @@
+モルゲン牢獄（ヤツメ）,Card/Yatsume_master,クエストイベント
+モルゲン牢獄【回想バトル】,Card/Yatsume_master,回想バトル,$$Yatsume_挑戦回数,>=,1

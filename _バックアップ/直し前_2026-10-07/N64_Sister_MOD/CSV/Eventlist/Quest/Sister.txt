@@ -1,0 +1,2 @@
+女神教の告解室（シスター）,Card/Sister_master,クエストイベント
+女神教の告解室【回想バトル】,Card/Sister_master,回想バトル,$$Sister_挑戦回数,>=,1

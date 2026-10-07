@@ -1,0 +1,2 @@
+百器使いの道場（ムサシ）,Card/Musashi_master,クエストイベント
+百器使いの道場【回想バトル】,Card/Musashi_master,回想バトル,$$Musashi_挑戦回数,>=,1

@@ -1,0 +1,1 @@
+妖狐の廃神社【回想バトル】,Card/Kitsune_master,回想バトル,$$Kitsune_挑戦回数,>=,1

@@ -1,0 +1,2 @@
+ヤマタイの妖（オロチ様　ヤマタノオロチ）,Card/Yamatai_master,クエストイベント
+ヤマタイの妖【回想バトル】,Card/Yamatai_master,回想バトル,$$Yamatai_挑戦回数,>=,1

@@ -1,0 +1,2 @@
+天狗の山（大天狗　アマギリ）,Card/Tengu_master,クエストイベント
+天狗の山【回想バトル】,Card/Tengu_master,回想バトル,$$Tengu_挑戦回数,>=,1

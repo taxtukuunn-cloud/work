@@ -1,0 +1,2 @@
+闘技場の控室（オクタ）,Card/Octa_master,クエストイベント
+闘技場の控室【回想バトル】,Card/Octa_master,回想バトル,$$Octa_挑戦回数,>=,1

@@ -1,0 +1,2 @@
+会員制ランジェリー（デザイナー　ヴィオレ）,Card/Lingerie_master,クエストイベント
+会員制ランジェリー【回想バトル】,Card/Lingerie_master,回想バトル,$$Lingerie_挑戦回数,>=,1

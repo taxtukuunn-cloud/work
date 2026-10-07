@@ -1,0 +1,1 @@
+cd /home/claude/lab && python3 tools/mk.py && python3 tools/assemble.py >/dev/null && rm -f /mnt/user-data/outputs/N10_Lab_MOD.zip && zip -q -r /mnt/user-data/outputs/N10_Lab_MOD.zip README_N10_Lab_設計メモ.md Card EventList tools scenarios src && echo saved

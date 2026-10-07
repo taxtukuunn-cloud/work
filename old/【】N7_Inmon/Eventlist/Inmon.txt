@@ -1,0 +1,4 @@
+default
+
+@フィールドイベント
+外部イベント実行,Card/Inmon_master,フィールドイベント

@@ -1,0 +1,2 @@
+西の鉱山の守護者（守護者　ジェミニ）,Card/Gemini_master,クエストイベント
+西の鉱山の守護者【回想バトル】,Card/Gemini_master,回想バトル,$$Gemini_挑戦回数,>=,1

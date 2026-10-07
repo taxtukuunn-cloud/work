@@ -1,0 +1,174 @@
+===== Eroquis  ([EROQUIS! (Butcha-U)] GAME OVERS-RE (Resident Evil) ArtistCG Style V2 Illustrious.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = illustriousXL20_v20.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora_fa
+  ss_output_name = None
+  学習フォルダ: 5_Artist_Style(69枚)
+  よく出るタグ: bchure 69, short hair 66, 1girl 64, hetero 61, blush 57, solo focus 53, large breasts 48, blonde hair 41, open mouth 40, sweat 40, cum in pussy 38, multiple boys 36, bob cut 36, rape 34, testicles 34, spread legs 33, group sex 31, vaginal 31, nipples 30, penis 28, sleeveless turtleneck 28, facial 28, cumdrip 28, no bra 27, cum on body 27
+  年齢に関わるタグ: なし
+    1boy 26
+    1girl 64
+===== Giga  (giga.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora
+  ss_output_name = giga
+  学習フォルダ: 2_nuo(411枚)
+  よく出るタグ: hetero 380, 1girl 370, 1boy 369, breasts 331, censored 297, penis 290, bar censor 280, dark-skinned male 265, dark skin 257, large breasts 238, blush 196, interracial 187, nude 180, nipples 169, long hair 168, comic 148, tongue 146, speech bubble 136, open mouth 134, short hair 131, tongue out 122, sweat 121, ass 116, black hair 114, pussy 107
+  年齢に関わるタグ: なし
+    1boy 369
+    1girl 370
+    monochrome 12
+    greyscale 12
+===== MdaStarou  (m-da_s-tarou_style_IL.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = 889818.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora
+  ss_output_name = m-da_s-tarou_style_IL
+  学習フォルダ: img(127枚)
+  よく出るタグ: blush 124, 1girl 121, long hair 120, breasts 100, nipples 87, bangs 79, hetero 75, nude 71, 1boy 68, open mouth 66, small breasts 65, looking at viewer 62, sweat 61, penis 59, pussy 53, navel 52, solo 51, cum 50, tongue 44, white hair 42, completely nude 42, sex 41, tongue out 37, thighs 35, ass 34
+  年齢に関わるタグ: なし
+    1boy 68
+    1girl 121
+    monochrome 4
+===== Michiking  (michiking.safetensors)
+  ss_sd_model_name = model.safetensors
+  ss_network_module = networks.lora
+  ss_output_name = michiking
+  学習フォルダ: 15_michiking(32枚)
+  よく出るタグ: 1girl 32, looking_at_viewer 32, breasts 31, solo 29, long_hair 28, nipples 21, blush 19, bangs 19, large_breasts 18, blue_eyes 16, open_mouth 15, bare_shoulders 12, smile 12, underwear 11, tongue 10, collarbone 10, gloves 9, ribbon 9, panties 9, dress 8, medium_breasts 8, upper_body 8, mole 8, sitting 8, hair_ornament 7
+  年齢に関わるタグ: なし
+    1boy 1
+    1girl 32
+===== Mikage  (mikage.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = waiNSFWIllustrious_v150.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora
+  ss_output_name = mikage
+  学習フォルダ: 4_ankoman artist(41枚)
+  よく出るタグ: 1girl 38, breasts 38, blush 35, sweat 29, long hair 26, 1boy 26, hetero 26, large breasts 25, looking at viewer 23, nude 23, huge breasts 22, penis 21, censored 20, completely nude 16, nipples 15, thighs 15, virtual youtuber 15, solo focus 14, open mouth 14, ass 13, bar censor 13, red eyes 13, short hair 12, hair ornament 12, erection 12
+  年齢に関わるタグ: なし
+    1boy 26
+    1girl 38
+    monochrome 4
+    greyscale 4
+===== Mikzn  (mikzn-illustrious-ty_lee.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = 889818.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora
+  ss_output_name = mikzn_WOWOWOWWOOW
+  学習フォルダ: img(369枚)
+  よく出るタグ: mikzn 369, 1girl 356, blush 353, breasts 299, simple background 296, long hair 275, white background 266, solo 243, looking at viewer 241, sweat 225, upper body 221, bangs 192, nipples 156, large breasts 151, halo 140, open mouth 124, animal ears 122, 1boy 113, hair between eyes 110, hetero 108, black hair 95, blue eyes 93, solo focus 87, hair ornament 84, closed mouth 84
+  年齢に関わるタグ: なし
+    1boy 113
+    1girl 356
+    monochrome 1
+===== Oekakizuki  (Oekakizuki_Style_v1----r10.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = illustriousXLV20_v20Stable.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora
+  ss_output_name = Oekakizuki_Style_v1----r10
+  学習フォルダ: oekakizuki(47枚)
+  よく出るタグ: oekak1style 47, blush 44, looking at viewer 43, huge breasts 38, 1girl 38, bangs 34, cleavage 33, smile 32, skindentation 27, thick thighs 26, long hair 24, bare shoulders 24, open mouth 22, navel 21, swimsuit 18, collarbone 18, blonde hair 17, thighs 17, simple background 17, black thighhighs 16, blue eyes 16, closed mouth 15, twintails 15, underwear 14, indoors 14
+  年齢に関わるタグ: なし
+    1boy 1
+    1girl 38
+===== Saiougausi  (saiougausi.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = waiNSFWIllustrious_v150.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora
+  ss_output_name = saiougausi
+  学習フォルダ: 4_ankoman artist(49枚)
+  よく出るタグ: 1girl 48, breasts 48, long hair 43, hetero 43, nude 43, censored 43, bar censor 43, blush 43, 1boy 40, sweat 36, penis 35, halo 35, large breasts 34, solo focus 34, completely nude 34, nipples 32, navel 28, pussy 27, cum 27, lying 23, looking at viewer 23, wings 22, hat 21, blue hair 20, braid 20
+  年齢に関わるタグ: なし
+    1boy 40
+    1girl 48
+===== SatouKuuki  (Satou Kuuki[style]-Illus.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = EMS-544361-EMS.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora
+  ss_output_name = lora
+  学習フォルダ: image_dir(582枚)
+  よく出るタグ: satou kuuki style 1164, breasts 559, blush 558, 1girl 520, looking at viewer 453, solo 415, long hair 385, large breasts 375, smile 353, thighhighs 335, gloves 323, sweat 298, bare shoulders 296, open mouth 274, elbow gloves 242, white background 230, simple background 221, cleavage 205, brown hair 199, underwear 180, covered nipples 179, panties 175, skirt 175, small breasts 174, leotard 171
+  年齢に関わるタグ: なし
+    1boy 5
+    1girl 520
+    monochrome 5
+    greyscale 5
+===== ShinjiroKoto  (shinjiro-koto-illustrious no text.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = illustriousXL_v10.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = lycoris.kohya
+  ss_output_name = shinjiro-koto-illustrious no text
+  学習フォルダ: 4_shinjiro(43枚)
+  よく出るタグ: hetero 36, 1boy 35, sweat 34, blush 28, large breasts 26, 1girl 25, open mouth 24, long hair 24, multiple girls 20, lying 20, 2girls 16, sex from behind 15, short hair 15, from side 13, grey hair 12, dark-skinned male 12, duel monster 11, ass ripple 11, swimsuit 11, on back 11, motion lines 11, solo focus 10, heart 10, long sleeves 10, vaginal 10
+  年齢に関わるタグ: なし
+    1boy 35
+    1girl 25
+===== Shiwudesu  (shiwudesu.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = waiNSFWIllustrious_v150.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora
+  ss_output_name = shiwudesu
+  学習フォルダ: 4_ankoman artist(43枚)
+  よく出るタグ: long hair 41, breasts 38, 1girl 34, english text 33, blush 31, 1boy 25, purple eyes 25, looking at viewer 24, animal ears 24, nipples 23, grey hair 23, ass 22, open mouth 21, pussy 21, white background 21, hetero 19, large breasts 18, simple background 17, jewelry 17, small breasts 17, navel 17, thighs 16, halo 16, uncensored 16, purple hair 15
+  年齢に関わるタグ: なし
+    1boy 25
+    1girl 34
+===== TerasuMC  (Terasu_MC_Illustrious_2.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = 889818.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora
+  ss_output_name = Terasu_MC
+  学習フォルダ: img(134枚)
+  よく出るタグ: terasu mc 134, 1girl 94, sweat 91, 1boy 87, large breasts 79, bar censor 75, blush 73, looking at viewer 65, censored 62, open mouth 59, nipples 56, steaming body 54, solo focus 49, smile 48, heavy breathing 48, nude 46, navel 46, completely nude 45, long hair 45, black hair 42, sidelocks 42, hetero 42, medium hair 39, breasts 38, half-closed eyes 35
+  年齢に関わるタグ: なし
+    1boy 87
+    1girl 94
+    monochrome 13
+    greyscale 12
+===== TerasuMC2  (tarasu_mc-000018.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = 889818.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora
+  ss_output_name = tarasu_mc
+  学習フォルダ: img(20枚)
+  よく出るタグ: breasts 20, hetero 17, nipples 13, censored 13, large breasts 12, 1boy 11, 1girl 10, multiple girls 10, penis 10, nude 9, bar censor 9, long hair 8, 2girls 7, brown hair 6, blush 6, swimsuit 5, bikini 5, completely nude 4, blue eyes 4, piercing 4, condom 4, twintails 3, korean text 3, pink hair 3, pussy 3
+  年齢に関わるタグ: なし
+    1boy 11
+    1girl 10
+===== TomohiroKai  (Tomohiro_Kai_v2 illlustrious.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = 889818.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = networks.lora
+  ss_output_name = Tomohiro_Kai_v2
+  学習フォルダ: img(307枚)
+  よく出るタグ: 1girl 295, solo 272, breasts 254, looking at viewer 221, tomohirokai 209, large breasts 179, blush 162, long hair 158, simple background 143, smile 142, bangs 133, white background 124, navel 117, cleavage 104, collarbone 74, monochrome 73, greyscale 71, shirt 70, short hair 68, black hair 59, skirt 58, blue eyes 56, nipples 53, parted lips 51, swimsuit 51
+  年齢に関わるタグ: なし
+    1boy 20
+    1girl 295
+    monochrome 73
+    greyscale 71
+===== Ttosom  (ttosom.safetensors)
+  ss_base_model_version = sdxl_base_v1-0
+  ss_sd_model_name = waiNSFWIllustrious_v130.safetensors
+  modelspec.prediction_type = epsilon
+  ss_network_module = lycoris.kohya
+  ss_output_name = ttosom
+  学習フォルダ: 1_zkz(189枚)
+  よく出るタグ: looking at viewer 179, 1girl 168, breasts 166, long hair 165, solo 164, dress 101, bare shoulders 100, smile 100, blush 100, large breasts 85, hair ornament 81, jewelry 80, very long hair 80, cleavage 78, open mouth 75, medium breasts 72, long sleeves 71, commentary 68, blue eyes 67, holding 66, hair between eyes 62, symbol-only commentary 57, earrings 54, collarbone 54, bad id 54
+  年齢に関わるタグ: なし
+    1girl 168

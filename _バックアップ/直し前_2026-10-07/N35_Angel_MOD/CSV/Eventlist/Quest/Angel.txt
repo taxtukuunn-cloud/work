@@ -1,0 +1,2 @@
+堕天使の礼拝堂（堕天使　ルシエル）,Card/Angel_master,クエストイベント
+堕天使の礼拝堂【回想バトル】,Card/Angel_master,回想バトル,$$Angel_挑戦回数,>=,1

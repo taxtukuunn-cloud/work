@@ -1,0 +1,2 @@
+アルラウネの温室,Card/Alraune_master,クエストイベント
+アルラウネの温室【回想バトル】,Card/Alraune_master,回想バトル,$$Alraune_挑戦回数,>=,1

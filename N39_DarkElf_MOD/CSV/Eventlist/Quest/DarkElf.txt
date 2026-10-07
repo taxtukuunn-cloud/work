@@ -1,0 +1,2 @@
+黒森のダークエルフ（狩人長　ヴェイラ）,Card/DarkElf_master,クエストイベント
+黒森のダークエルフ【回想バトル】,Card/DarkElf_master,回想バトル,$$DarkElf_挑戦回数,>=,1

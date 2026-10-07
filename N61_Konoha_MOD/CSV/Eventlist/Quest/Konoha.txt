@@ -1,0 +1,2 @@
+師匠の再修行（コノハ）,Card/Konoha_master,クエストイベント
+師匠の再修行【回想バトル】,Card/Konoha_master,回想バトル,$$Konoha_挑戦回数,>=,1

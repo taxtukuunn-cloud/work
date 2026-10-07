@@ -1,0 +1,2 @@
+default
+#Inma/Inma_master.png,Card/Inma_master,フィールドイベント,場所,==,&&場所モルゲン,

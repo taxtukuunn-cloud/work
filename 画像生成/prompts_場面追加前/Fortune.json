@@ -1,0 +1,79 @@
+{
+ "Fortune_master": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 39 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, purple hair, long wavy hair, gold eyes, purple veil, dress with star embroidery, gold bracelets, large breasts, hands over a glowing crystal ball, mysterious gentle smile, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Fortune_e1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 25 years old, adult proportions, beautiful detailed eyes, long legs, red hair, medium hair, green eyes, black cape, red dress, holding picture cards without text, large breasts, fanning out cards, mischievous smile, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Fortune_e2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 28 years old, adult proportions, beautiful detailed eyes, long legs, black hair, hime cut, red eyes, white kimono, purple hakama, small breasts, holding up an open palm, calm sharp gaze, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Fortune_e3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 23 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, pink hair, long hair, amber eyes, light pink sheer eastern robe, incense burner, medium breasts, holding an incense burner with smoke, dreamy smile, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Fortune_boss": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 43 years old, adult proportions, beautiful detailed eyes, long legs, blonde hair, long hair, red eyes, night-sky black and gold robe, star chart necklace, large breasts, raising a hand with stars around it, solemn cold gaze, looking down at viewer, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Fortune_bg": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, interior of a fortune teller's parlor, crystal ball on a purple velvet table, curtains with star patterns, candles, incense smoke, tarot cards without text, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, 1girl, person, people",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Fortune_magic_1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 25 years old, adult proportions, beautiful detailed eyes, long legs, red hair, medium hair, green eyes, black cape, red dress, holding picture cards without text, large breasts, drawing a card from a deck, sparkles, looking at viewer, fortune teller's parlor, crystal ball on velvet table, star-patterned curtains, candles, incense smoke, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Fortune_magic_2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 25 years old, adult proportions, beautiful detailed eyes, long legs, red hair, medium hair, green eyes, black cape, red dress, holding picture cards without text, large breasts, an upside-down card glowing ominously, looking at viewer, fortune teller's parlor, crystal ball on velvet table, star-patterned curtains, candles, incense smoke, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Fortune_magic_3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 43 years old, adult proportions, beautiful detailed eyes, long legs, blonde hair, long hair, red eyes, night-sky black and gold robe, star chart necklace, large breasts, pointing at a shining star in the night sky, looking at viewer, fortune teller's parlor, crystal ball on velvet table, star-patterned curtains, candles, incense smoke, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Fortune_magic_4": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 39 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, purple hair, long wavy hair, gold eyes, purple veil, dress with star embroidery, gold bracelets, large breasts, golden threads of fate stretched across the room, looking at viewer, fortune teller's parlor, crystal ball on velvet table, star-patterned curtains, candles, incense smoke, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Fortune_magic_5": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 43 years old, adult proportions, beautiful detailed eyes, long legs, blonde hair, long hair, red eyes, night-sky black and gold robe, star chart necklace, large breasts, constellations lighting up across the ceiling, looking at viewer, fortune teller's parlor, crystal ball on velvet table, star-patterned curtains, candles, incense smoke, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ }
+}

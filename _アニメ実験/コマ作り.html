@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>コマ作り台</title>
+<style>
+:root{
+  --paper:#e9eef1; --sheet:#f8fafb; --glass:#33414c; --ink:#22303a; --sub:#5b6b77;
+  --blue:#2f6fb0; --red:#c4472f; --peg:#d9a520; --line:#c3ced6;
+  --font:"BIZ UDPGothic","Yu Gothic UI","Hiragino Sans","Meiryo",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.6}
+header{display:flex;align-items:baseline;gap:16px;padding:14px 20px 10px;border-bottom:2px solid var(--ink)}
+h1{margin:0;font-size:22px;font-weight:700;letter-spacing:.06em}
+header p{margin:0;color:var(--sub);font-size:13px}
+main{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:18px;padding:18px 20px;align-items:start}
+@media (max-width:900px){main{grid-template-columns:1fr}}
+
+/* 作業台（ライトテーブル） */
+#stageWrap{background:var(--glass);border-radius:6px;padding:14px;min-height:320px;display:flex;justify-content:center;align-items:center;position:relative}
+#stage{max-width:100%;max-height:78vh;display:none;touch-action:none;cursor:crosshair;background:#000}
+#drop{color:#dfe7ec;text-align:center;border:2px dashed #7f93a3;border-radius:6px;padding:48px 24px;cursor:pointer;width:100%}
+#drop strong{display:block;font-size:18px;margin-bottom:6px}
+#drop.over{border-color:var(--peg);background:#3d4d59}
+#drop:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--peg);outline-offset:2px}
+
+/* フィルム */
+#strip{display:flex;gap:6px;margin-top:12px;padding:8px;background:var(--ink);border-radius:4px;overflow-x:auto;min-height:20px}
+#strip:empty{display:none}
+.cell{flex:0 0 auto;border:3px solid transparent;border-radius:2px;position:relative;line-height:0}
+.cell canvas{height:112px;width:auto;display:block}
+.cell span{position:absolute;left:4px;top:4px;background:var(--ink);color:#fff;font-size:12px;line-height:1;padding:3px 5px;border-radius:2px}
+.cell.now{border-color:var(--red)}
+#order{margin:8px 0 0;color:var(--sub);font-size:13px}
+
+/* 右の帳面 */
+aside{background:var(--sheet);border:1px solid var(--line);border-radius:6px}
+section{padding:14px 16px;border-bottom:1px solid var(--line)}
+section:last-child{border-bottom:0}
+h2{margin:0 0 8px;font-size:15px}
+#pv{width:100%;height:auto;background:var(--glass);border-radius:4px;display:block}
+.row{display:flex;align-items:center;gap:8px;margin:6px 0}
+.row label{flex:0 0 108px;font-size:13px;color:var(--sub)}
+.row input[type=number]{width:76px}
+.row input[type=range]{flex:1;min-width:0;accent-color:var(--blue)}
+input[type=number],input[type=text]{font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:4px;background:#fff;color:var(--ink)}
+input[type=text]{flex:1;min-width:0}
+button{font:inherit;padding:7px 12px;border:1px solid var(--ink);border-radius:4px;background:#fff;color:var(--ink);cursor:pointer}
+button:hover{background:#eef3f6}
+button.main{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:700;width:100%;padding:11px}
+button.main:hover{background:#285f97}
+button:disabled{opacity:.45;cursor:not-allowed}
+ul#list{list-style:none;margin:0 0 8px;padding:0}
+ul#list li{display:flex;align-items:center;gap:8px;padding:6px 8px;border:1px solid var(--line);border-radius:4px;margin-bottom:5px;cursor:pointer;background:#fff}
+ul#list li.sel{border-color:var(--red);box-shadow:inset 3px 0 0 var(--red)}
+ul#list li b{flex:1;font-weight:400;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ul#list li small{color:var(--sub)}
+ul#list li button{padding:2px 8px;border-color:var(--line)}
+.btns{display:flex;gap:8px;flex-wrap:wrap}
+#warn{color:var(--red);font-size:13px;margin:6px 0 0;min-height:1em}
+#msg{font-size:13px;color:var(--sub);margin:8px 0 0}
+.hint{font-size:13px;color:var(--sub);margin:6px 0 0}
+.key{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:4px;vertical-align:-1px}
+</style>
+</head>
+<body>
+<header>
+  <h1>コマ作り台</h1>
+  <p>1枚の絵を少しずつ引っぱって、連番のコマにします。絵はこのPCの中だけで処理され、どこにも送られません。</p>
+</header>
+
+<main>
+  <div>
+    <div id="stageWrap">
+      <div id="drop" tabindex="0" role="button">
+        <strong>始まりの絵をここに置く</strong>
+        クリックして選ぶこともできます（PNG・JPEG）
+      </div>
+      <canvas id="stage"></canvas>
+      <input id="file" type="file" accept="image/*" hidden>
+    </div>
+    <p class="hint" id="legend" hidden>
+      <span class="key" style="background:var(--red)"></span>だ円の中心をつまむと移動
+      　<span class="key" style="background:#fff;border:2px solid var(--red)"></span>ふちの丸で範囲の大きさ
+      　<span class="key" style="background:var(--peg)"></span>黄色い丸で動かす向きと量（4倍に伸ばして表示）
+    </p>
+    <div id="strip"></div>
+    <p id="order"></p>
+  </div>
+
+  <aside>
+    <section>
+      <h2>動きの見本</h2>
+      <canvas id="pv" width="320" height="200"></canvas>
+      <div class="row"><label for="ms">見本の速さ</label><input id="ms" type="range" min="30" max="300" step="10" value="90"><span id="msv">90</span></div>
+      <p class="hint">見本の速さはこの画面だけのものです。ゲームでの速さは下の「時間」で決まります。</p>
+    </section>
+
+    <section>
+      <h2>動かす範囲</h2>
+      <ul id="list"></ul>
+      <div class="btns">
+        <button id="addR" disabled>範囲を足す</button>
+        <button id="addM" disabled>モザイクを足す</button>
+      </div>
+      <div id="edit" hidden>
+        <div class="row" id="rowName"><label for="nm">名前</label><input id="nm" type="text"></div>
+        <div id="editR">
+          <div class="row"><label for="dx">横にずらす</label><input id="dx" type="range" min="-40" max="40" step="1"><input id="dxn" type="number" step="1"></div>
+          <div class="row"><label for="dy">縦にずらす</label><input id="dy" type="range" min="-40" max="40" step="1"><input id="dyn" type="number" step="1"></div>
+          <p class="hint">横は右が＋、縦は下が＋。腰なら 10〜20、つられて揺れる体や指先は 3〜6 が目安です。</p>
+        </div>
+        <div id="editM">
+          <div class="row"><label for="blk">四角の大きさ</label><input id="blk" type="range" min="4" max="48" step="1"><span id="blkv"></span></div>
+          <p class="hint">全部のコマに同じ位置・同じ粗さでかかります。四角の中をつまむと移動、右下の丸で大きさ。</p>
+        </div>
+        <p id="warn"></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>コマの数とゲームでの時間</h2>
+      <div class="row"><label for="fr">作る絵の枚数</label><input id="fr" type="number" min="2" max="8" value="4"></div>
+      <div class="row"><label for="sec">時間</label><input id="sec" type="number" min="0.05" max="5" step="0.05" value="0.3"></div>
+      <div class="row"><label for="ease">動きの緩急</label><input id="ease" type="checkbox" checked><span class="hint" style="margin:0">始めと終わりをゆっくり</span></div>
+      <div class="row" id="bgrow" hidden><label for="bgc">透明な所の色</label><input id="bgc" type="color" value="#ffffff"><span class="hint" style="margin:0">この絵は背景が透明です</span></div>
+    </section>
+
+    <section>
+      <button class="main" id="save" disabled>コマと試し用カードを保存する</button>
+      <div class="btns" style="margin-top:8px">
+        <button id="load">前の設定を読み込む</button>
+        <input id="cfg" type="file" accept=".json,application/json" hidden>
+      </div>
+      <p id="msg">out.zip が保存されます。「_アニメ実験」フォルダに置いて「すべて展開」すると out フォルダができ、「3_ゲームに入れる.bat」がそのまま使えます。</p>
+    </section>
+  </aside>
+</main>
+
+<script>
+/* ==== CORE START（計算の中身。画面とは切り離してある） ==== */
+const CODE = "AnimeTest";
+
+// 各画素を最大でどれだけ動かすかの地図。だ円の中心で1、ふちで0になるなめらかな重みを掛ける。
+function buildField(w, h, regions, k) {
+  const fx = new Float32Array(w * h), fy = new Float32Array(w * h);
+  for (const r of regions) {
+    const cx = r.cx * k, cy = r.cy * k, rx = Math.max(1, r.rx * k), ry = Math.max(1, r.ry * k);
+    const dx = r.dx * k, dy = r.dy * k;
+    const x0 = Math.max(0, Math.floor(cx - rx)), x1 = Math.min(w - 1, Math.ceil(cx + rx));
+    const y0 = Math.max(0, Math.floor(cy - ry)), y1 = Math.min(h - 1, Math.ceil(cy + ry));
+    for (let y = y0; y <= y1; y++) for (let x = x0; x <= x1; x++) {
+      const u = (x - cx) / rx, v = (y - cy) / ry, rr = Math.sqrt(u * u + v * v);
+      if (rr >= 1) continue;
+      const wt = 0.5 * (1 + Math.cos(Math.PI * rr));
+      fx[y * w + x] += wt * dx; fy[y * w + x] += wt * dy;
+    }
+  }
+  return { fx, fy };
+}
+
+// t（0〜1）の分だけ引っぱった絵を作る。できあがりの各画素について
+// 「元の絵のどこから色を持ってくるか」を逆算し、まわり4画素をなめらかに混ぜる。
+function warp(src, w, h, f, t) {
+  const out = new Uint8ClampedArray(src.length);
+  const { fx, fy } = f;
+  for (let y = 0, i = 0; y < h; y++) for (let x = 0; x < w; x++, i++) {
+    const o = i * 4, ax = fx[i] * t, ay = fy[i] * t;
+    if (ax === 0 && ay === 0) { out[o] = src[o]; out[o + 1] = src[o + 1]; out[o + 2] = src[o + 2]; out[o + 3] = 255; continue; }
+    let sx = x - ax, sy = y - ay;
+    sx = sx < 0 ? 0 : sx > w - 1 ? w - 1 : sx; sy = sy < 0 ? 0 : sy > h - 1 ? h - 1 : sy;
+    const xa = Math.floor(sx), ya = Math.floor(sy), xb = Math.min(xa + 1, w - 1), yb = Math.min(ya + 1, h - 1);
+    const px = sx - xa, py = sy - ya;
+    const a = (ya * w + xa) * 4, b = (ya * w + xb) * 4, c = (yb * w + xa) * 4, d = (yb * w + xb) * 4;
+    for (let ch = 0; ch < 3; ch++) {
+      const top = src[a + ch] * (1 - px) + src[b + ch] * px, bot = src[c + ch] * (1 - px) + src[d + ch] * px;
+      out[o + ch] = top * (1 - py) + bot * py + 0.5;
+    }
+    out[o + 3] = 255;
+  }
+  return out;
+}
+
+// 全部のコマに同じ格子でモザイクをかける。
+function mosaic(px, w, h, rects, k) {
+  for (const m of rects) {
+    const X0 = Math.max(0, Math.round(m.x * k)), Y0 = Math.max(0, Math.round(m.y * k));
+    const X1 = Math.min(w, Math.round((m.x + m.w) * k)), Y1 = Math.min(h, Math.round((m.y + m.h) * k));
+    const b = Math.max(2, Math.round(m.block * k));
+    for (let by = Y0; by < Y1; by += b) for (let bx = X0; bx < X1; bx += b) {
+      const ex = Math.min(bx + b, X1), ey = Math.min(by + b, Y1);
+      let r = 0, g = 0, bl = 0, n = 0;
+      for (let y = by; y < ey; y++) for (let x = bx; x < ex; x++) { const o = (y * w + x) * 4; r += px[o]; g += px[o + 1]; bl += px[o + 2]; n++; }
+      r = r / n; g = g / n; bl = bl / n;
+      for (let y = by; y < ey; y++) for (let x = bx; x < ex; x++) { const o = (y * w + x) * 4; px[o] = r; px[o + 1] = g; px[o + 2] = bl; }
+    }
+  }
+  return px;
+}
+
+function progress(k, n, ease) { const t = k / (n - 1); return ease ? 0.5 - 0.5 * Math.cos(Math.PI * t) : t; }
+function pingpong(n) { const a = []; for (let i = 1; i <= n; i++) a.push(i); for (let i = n - 1; i > 1; i--) a.push(i); return a; }
+
+// 試し用カード（メスイキMODと同じ書き方）
+function cardText(n, sec) {
+  const name = i => `#${CODE}/anime/${CODE} (${i}).png`;
+  const one = []; for (let i = 1; i <= n; i++) one.push(i);
+  const pong = pingpong(n);
+  const koma = s => s.map(i => "&コマ" + i).join(",");
+  const se = s => s.map(i => i === n ? "&&行為SE" : "").concat([""]).join(",");
+  const s4 = Math.round(sec * 4 * 1000) / 1000;
+  const L = ["default", "@初期設定",
+    "    &カード名,アニメ実験", "    &カード画像," + name(1),
+    "    レベル設定,1", "    攻撃力設定,0", "    最大HP設定,100",
+    "    属性設定,闇属性", "    タイプ設定,悪魔", "    性別設定,女", "    レアリティ設定,UR",
+    "    攻撃エフェクト設定,&&セクシーエフェクト", "    &背景,&&豪華な寝室背景",
+    ...one.map(i => `    &コマ${i},${name(i)}`),
+    `    &試し一方向,(${sec},(${koma(one)}),(${se(one)}))`,
+    `    &試し往復,(${sec},(${koma(pong)}),(${se(pong)}))`,
+    `    &試し往復4倍,(${s4},(${koma(pong)}),(${se(pong)}))`,
+    "    効果設定,0,explain,アニメ再生の実験用カード", "",
+    "@クエストイベント", "話者,自分", "背景,&背景",
+    "説明,【アニメ実験】これから3種類の動きを順番に再生します。",
+    "アニメ,&試し一方向,",
+    `説明,①一方向（${n} コマ・時間 ${sec}）を再生中。\\n1周の速さと、音の鳴る間隔を見てください。`,
+    "説明,①のまま、文章を送っても動き続けていますか？",
+    "アニメ削除,", "アニメ,&試し往復,",
+    `説明,②往復（${pong.length} コマ・時間 ${sec}）を再生中。\\n①よりなめらかに見えますか？`,
+    "アニメ加速,0.5", "説明,②に アニメ加速 0.5 を1回かけました。",
+    "アニメ加速,0.5", "説明,②に アニメ加速 0.5 をもう1回かけました。\\nさっきよりさらに速くなりましたか？（足し算かどうかの確認）",
+    "アニメ加速,-0.5", "説明,②に アニメ加速 -0.5 をかけました。少し遅くなりましたか？",
+    "アニメ停止,", "説明,アニメ停止 をしました。絵は残っていますか？ 止まっていますか？",
+    "アニメ削除,", "説明,アニメ削除 をしました。絵は消えましたか？",
+    "アニメ,&試し往復4倍,",
+    `説明,③往復（時間 ${s4}＝②の4倍）を再生中。\\n②の4倍ゆっくりなら、時間の数字が大きいほど遅い、で確定です。`,
+    "アニメ削除,", "説明,実験はここまでです。おつかれさまでした。", ""];
+  return L.join("\r\n");
+}
+const questText = () => `【実験】アニメ再生テスト,Card/${CODE}_master,クエストイベント`;
+
+// 無圧縮の zip を作る（外部の部品を使わない）
+const CRC = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(u8) { let c = 0xFFFFFFFF; for (let i = 0; i < u8.length; i++) c = CRC[(c ^ u8[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+function makeZip(files) {
+  const enc = new TextEncoder(), parts = [], cen = []; let off = 0;
+  for (const f of files) {
+    const nm = enc.encode(f.name), crc = crc32(f.data), h = new DataView(new ArrayBuffer(30));
+    h.setUint32(0, 0x04034b50, true); h.setUint16(4, 20, true); h.setUint16(6, 0x0800, true); h.setUint16(8, 0, true);
+    h.setUint16(10, 0, true); h.setUint16(12, 0x21, true); h.setUint32(14, crc, true);
+    h.setUint32(18, f.data.length, true); h.setUint32(22, f.data.length, true); h.setUint16(26, nm.length, true); h.setUint16(28, 0, true);
+    parts.push(new Uint8Array(h.buffer), nm, f.data);
+    const c = new DataView(new ArrayBuffer(46));
+    c.setUint32(0, 0x02014b50, true); c.setUint16(4, 20, true); c.setUint16(6, 20, true); c.setUint16(8, 0x0800, true); c.setUint16(10, 0, true);
+    c.setUint16(12, 0, true); c.setUint16(14, 0x21, true); c.setUint32(16, crc, true);
+    c.setUint32(20, f.data.length, true); c.setUint32(24, f.data.length, true); c.setUint16(28, nm.length, true);
+    c.setUint32(42, off, true);
+    cen.push(new Uint8Array(c.buffer), nm);
+    off += 30 + nm.length + f.data.length;
+  }
+  const csz = cen.reduce((s, a) => s + a.length, 0), e = new DataView(new ArrayBuffer(22));
+  e.setUint32(0, 0x06054b50, true); e.setUint16(8, files.length, true); e.setUint16(10, files.length, true);
+  e.setUint32(12, csz, true); e.setUint32(16, off, true);
+  return [...parts, ...cen, new Uint8Array(e.buffer)];
+}
+/* ==== CORE END ==== */
+
+if (typeof document !== "undefined") (() => {
+const $ = id => document.getElementById(id);
+const stage = $("stage"), sg = stage.getContext("2d"), pv = $("pv"), pg = pv.getContext("2d");
+const AR = 4;                       // 向きの線は4倍に伸ばして描く
+let img = null, W = 0, H = 0, full = null;      // full＝元の絵の画素
+let small = null, pw = 0, ph = 0, pk = 1;       // 見本用に縮めた絵
+let regions = [], mos = [], sel = null, drag = null;
+let frames = [], seq = [], tick = 0, timer = null, dirty = false;
+
+let rawImg = null;
+function setImage(im) {
+  rawImg = im; W = im.naturalWidth; H = im.naturalHeight;
+  stage.width = W; stage.height = H; stage.style.display = "block"; $("drop").style.display = "none"; $("legend").hidden = false;
+  // 透明な所は、選んだ色で塗りつぶした土台に重ねる（透明のままだと、隠れていた色のごみが出る）
+  const base = document.createElement("canvas"); base.width = W; base.height = H; const bg = base.getContext("2d");
+  bg.fillStyle = $("bgc").value; bg.fillRect(0, 0, W, H); bg.drawImage(im, 0, 0);
+  img = base; full = bg.getImageData(0, 0, W, H).data;
+  let clear = false; { const t = document.createElement("canvas"); t.width = W; t.height = H; const tg = t.getContext("2d"); tg.drawImage(im, 0, 0);
+    const a = tg.getImageData(0, 0, W, H).data; for (let i = 3; i < a.length; i += 4 * 97) if (a[i] < 250) { clear = true; break; } }
+  $("bgrow").hidden = !clear;
+  pk = Math.min(1, 360 / W); pw = Math.round(W * pk); ph = Math.round(H * pk); pv.width = pw; pv.height = ph;
+  const c = document.createElement("canvas"); c.width = pw; c.height = ph; const g = c.getContext("2d");
+  g.drawImage(base, 0, 0, pw, ph); small = g.getImageData(0, 0, pw, ph).data;
+  if (!regions.length) regions = [{ name: "腰", cx: Math.round(W * .4), cy: Math.round(H * .66), rx: Math.round(W * .2), ry: Math.round(H * .13), dx: 14, dy: -4 }];
+  sel = regions.length ? { t: "r", i: 0 } : null;
+  for (const id of ["addR", "addM", "save"]) $(id).disabled = false;
+  refresh();
+}
+function readFile(f) {
+  if (!f || !f.type.startsWith("image/")) { $("msg").textContent = "絵のファイル（PNG・JPEG）を選んでください。"; return; }
+  const im = new Image(); im.onload = () => setImage(im);
+  im.onerror = () => { $("msg").textContent = "この絵は開けませんでした。PNG か JPEG で試してください。"; };
+  im.src = URL.createObjectURL(f);
+}
+const drop = $("drop");
+drop.onclick = () => $("file").click();
+drop.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); $("file").click(); } };
+$("file").onchange = e => readFile(e.target.files[0]);
+for (const el of [drop, $("stageWrap")]) {
+  el.addEventListener("dragover", e => { e.preventDefault(); drop.classList.add("over"); });
+  el.addEventListener("dragleave", () => drop.classList.remove("over"));
+  el.addEventListener("drop", e => { e.preventDefault(); drop.classList.remove("over"); readFile(e.dataTransfer.files[0]); });
+}
+
+/* ---- 作業台の描画 ---- */
+function scr() { return W / stage.getBoundingClientRect().width; }   // 画面1px が絵の何pxか
+function dot(x, y, r, fill, stroke) { sg.beginPath(); sg.arc(x, y, r, 0, 7); if (fill) { sg.fillStyle = fill; sg.fill(); } if (stroke) { sg.strokeStyle = stroke; sg.stroke(); } }
+function draw() {
+  if (!img) return;
+  const s = scr(), hs = 8 * s;
+  sg.drawImage(img, 0, 0); sg.lineWidth = 2 * s; sg.font = `${15 * s}px sans-serif`; sg.textBaseline = "top";
+  mos.forEach((m, i) => {
+    const on = sel && sel.t === "m" && sel.i === i;
+    sg.setLineDash([8 * s, 5 * s]); sg.strokeStyle = on ? "#c4472f" : "#7fd3e6"; sg.strokeRect(m.x, m.y, m.w, m.h); sg.setLineDash([]);
+    if (on) dot(m.x + m.w, m.y + m.h, hs, "#fff", "#c4472f");
+  });
+  regions.forEach((r, i) => {
+    const on = sel && sel.t === "r" && sel.i === i, col = on ? "#c4472f" : "#6fa8dc";
+    sg.strokeStyle = col; sg.beginPath(); sg.ellipse(r.cx, r.cy, r.rx, r.ry, 0, 0, 7); sg.stroke();
+    const tx = r.cx + r.dx * AR, ty = r.cy + r.dy * AR;
+    sg.strokeStyle = "#d9a520"; sg.lineWidth = 4 * s; sg.beginPath(); sg.moveTo(r.cx, r.cy); sg.lineTo(tx, ty); sg.stroke(); sg.lineWidth = 2 * s;
+    dot(r.cx, r.cy, hs * .8, col);
+    const lb = `${i + 1} ${r.name}`, tw = sg.measureText(lb).width;
+    sg.fillStyle = "rgba(34,48,58,.85)"; sg.fillRect(r.cx - r.rx, r.cy - r.ry - 22 * s, tw + 10 * s, 20 * s);
+    sg.fillStyle = "#fff"; sg.fillText(lb, r.cx - r.rx + 5 * s, r.cy - r.ry - 20 * s);
+    if (on) { dot(r.cx + r.rx, r.cy, hs, "#fff", col); dot(r.cx, r.cy + r.ry, hs, "#fff", col); dot(tx, ty, hs, "#d9a520", "#22303a"); }
+  });
+}
+
+/* ---- つまんで動かす ---- */
+function pos(e) { const b = stage.getBoundingClientRect(); return { x: (e.clientX - b.left) * W / b.width, y: (e.clientY - b.top) * H / b.height }; }
+const near = (p, x, y, d) => Math.hypot(p.x - x, p.y - y) <= d;
+stage.addEventListener("pointerdown", e => {
+  if (!img) return; const p = pos(e), d = 14 * scr(); drag = null;
+  if (sel && sel.t === "r") { const r = regions[sel.i];
+    if (near(p, r.cx + r.dx * AR, r.cy + r.dy * AR, d)) drag = { k: "tip" };
+    else if (near(p, r.cx + r.rx, r.cy, d)) drag = { k: "rx" };
+    else if (near(p, r.cx, r.cy + r.ry, d)) drag = { k: "ry" }; }
+  if (sel && sel.t === "m") { const m = mos[sel.i]; if (near(p, m.x + m.w, m.y + m.h, d)) drag = { k: "msize" }; }
+  if (!drag) {
+    let hit = null;
+    regions.forEach((r, i) => { if (near(p, r.cx, r.cy, d * 1.3)) hit = { t: "r", i }; });
+    if (!hit) mos.forEach((m, i) => { if (p.x >= m.x && p.x <= m.x + m.w && p.y >= m.y && p.y <= m.y + m.h) hit = { t: "m", i }; });
+    if (!hit) regions.forEach((r, i) => { if (((p.x - r.cx) / r.rx) ** 2 + ((p.y - r.cy) / r.ry) ** 2 <= 1) hit = hit || { t: "r", i }; });
+    if (hit) { sel = hit; const o = hit.t === "r" ? regions[hit.i] : mos[hit.i];
+      drag = hit.t === "r" ? { k: "move", ox: p.x - o.cx, oy: p.y - o.cy } : { k: "mmove", ox: p.x - o.x, oy: p.y - o.y }; }
+  }
+  if (drag) stage.setPointerCapture(e.pointerId);
+  refresh(false);
+});
+stage.addEventListener("pointermove", e => {
+  if (!drag || !sel) return; const p = pos(e), R = Math.round;
+  if (sel.t === "r") { const r = regions[sel.i];
+    if (drag.k === "move") { r.cx = R(p.x - drag.ox); r.cy = R(p.y - drag.oy); }
+    if (drag.k === "rx") r.rx = Math.max(10, R(Math.abs(p.x - r.cx)));
+    if (drag.k === "ry") r.ry = Math.max(10, R(Math.abs(p.y - r.cy)));
+    if (drag.k === "tip") { r.dx = Math.max(-40, Math.min(40, R((p.x - r.cx) / AR))); r.dy = Math.max(-40, Math.min(40, R((p.y - r.cy) / AR))); }
+  } else { const m = mos[sel.i];
+    if (drag.k === "mmove") { m.x = R(p.x - drag.ox); m.y = R(p.y - drag.oy); }
+    if (drag.k === "msize") { m.w = Math.max(16, R(p.x - m.x)); m.h = Math.max(16, R(p.y - m.y)); } }
+  refresh();
+});
+const endDrag = () => { drag = null; };
+stage.addEventListener("pointerup", endDrag); stage.addEventListener("pointercancel", endDrag);
+
+/* ---- 右の帳面 ---- */
+function list() {
+  const ul = $("list"); ul.innerHTML = "";
+  const add = (t, i, title, sub) => { const li = document.createElement("li"), on = sel && sel.t === t && sel.i === i;
+    if (on) li.className = "sel";
+    const b = document.createElement("b"); b.textContent = title; const sm = document.createElement("small"); sm.textContent = sub;
+    const x = document.createElement("button"); x.textContent = "消す"; x.setAttribute("aria-label", title + " を消す");
+    x.onclick = ev => { ev.stopPropagation(); (t === "r" ? regions : mos).splice(i, 1); sel = null; refresh(); };
+    li.onclick = () => { sel = { t, i }; refresh(false); };
+    li.append(b, sm, x); ul.append(li); };
+  regions.forEach((r, i) => add("r", i, `${i + 1} ${r.name}`, `横${r.dx} 縦${r.dy}`));
+  mos.forEach((m, i) => add("m", i, `モザイク ${i + 1}`, `${m.w}×${m.h}`));
+  if (img && !regions.length && !mos.length) { const li = document.createElement("li"); li.style.cursor = "default"; li.textContent = "範囲がありません。「範囲を足す」で始めます。"; ul.append(li); }
+}
+function panel() {
+  const e = $("edit"); if (!sel) { e.hidden = true; return; } e.hidden = false;
+  const isR = sel.t === "r"; $("editR").hidden = !isR; $("editM").hidden = isR; $("rowName").hidden = !isR; $("warn").textContent = "";
+  if (isR) { const r = regions[sel.i];
+    if (document.activeElement !== $("nm")) $("nm").value = r.name;
+    $("dx").value = r.dx; $("dy").value = r.dy;
+    if (document.activeElement !== $("dxn")) $("dxn").value = r.dx; if (document.activeElement !== $("dyn")) $("dyn").value = r.dy;
+    if (Math.hypot(r.dx, r.dy) > Math.min(r.rx, r.ry) * .35) $("warn").textContent = "ずらす量が範囲に対して大きく、絵が伸びて見えるかもしれません。範囲を広げるか、量を減らしてください。";
+  } else { $("blk").value = mos[sel.i].block; $("blkv").textContent = mos[sel.i].block; }
+}
+const cur = () => sel && sel.t === "r" ? regions[sel.i] : null;
+$("nm").oninput = e => { const r = cur(); if (r) { r.name = e.target.value.replace(/[,\r\n]/g, ""); refresh(false); } };
+for (const [a, k] of [["dx", "dx"], ["dxn", "dx"], ["dy", "dy"], ["dyn", "dy"]])
+  $(a).oninput = e => { const r = cur(), v = parseFloat(e.target.value); if (r && !isNaN(v)) { r[k] = Math.max(-80, Math.min(80, Math.round(v))); refresh(); } };
+$("blk").oninput = e => { if (sel && sel.t === "m") { mos[sel.i].block = +e.target.value; refresh(); } };
+$("addR").onclick = () => { regions.push({ name: "範囲" + (regions.length + 1), cx: Math.round(W / 2), cy: Math.round(H / 2), rx: Math.round(W * .15), ry: Math.round(W * .15), dx: 5, dy: 0 }); sel = { t: "r", i: regions.length - 1 }; refresh(); };
+$("addM").onclick = () => { mos.push({ x: Math.round(W * .4), y: Math.round(H * .6), w: Math.round(W * .2), h: Math.round(W * .2), block: Math.max(8, Math.round(W / 60)) }); sel = { t: "m", i: mos.length - 1 }; refresh(); };
+for (const id of ["fr", "sec", "ease"]) $(id).oninput = () => refresh();
+$("bgc").oninput = () => { if (rawImg) setImage(rawImg); };
+$("ms").oninput = e => { $("msv").textContent = e.target.value; play(); };
+const nFrames = () => Math.max(2, Math.min(8, parseInt($("fr").value) || 4));
+
+/* ---- 見本とフィルム ---- */
+function rebuild() {
+  dirty = false; if (!img) return;
+  const n = nFrames(), f = buildField(pw, ph, regions, pk); frames = [];
+  for (let k = 0; k < n; k++) frames.push(new ImageData(mosaic(warp(small, pw, ph, f, progress(k, n, $("ease").checked)), pw, ph, mos, pk), pw, ph));
+  seq = pingpong(n);
+  const st = $("strip"); st.innerHTML = "";
+  seq.forEach((no, j) => { const d = document.createElement("div"); d.className = "cell"; d.dataset.j = j;
+    const c = document.createElement("canvas"); c.width = pw; c.height = ph; c.getContext("2d").putImageData(frames[no - 1], 0, 0);
+    const s = document.createElement("span"); s.textContent = no; d.append(c, s); st.append(d); });
+  $("order").textContent = `作る絵は ${n} 枚。ゲームでは ${seq.join("→")} の順に ${seq.length} コマで繰り返します。`;
+  play();
+}
+function play() {
+  clearInterval(timer); if (!frames.length) return;
+  const show = () => { const j = tick % seq.length; pg.putImageData(frames[seq[j] - 1], 0, 0);
+    for (const c of $("strip").children) c.classList.toggle("now", +c.dataset.j === j); tick++; };
+  show(); timer = setInterval(show, +$("ms").value);
+}
+function refresh(recalc = true) { draw(); list(); panel(); if (recalc && !dirty) { dirty = true; requestAnimationFrame(rebuild); } }
+window.addEventListener("resize", draw);
+
+/* ---- 保存 ---- */
+const config = () => ({ input: "start.png", frames: nFrames(), seconds: parseFloat($("sec").value) || 0.3, ease: $("ease").checked,
+  regions: regions.map(r => ({ memo: r.name, cx: r.cx, cy: r.cy, rx: r.rx, ry: r.ry, dx: r.dx, dy: r.dy })), mosaic: mos });
+$("save").onclick = async () => {
+  const btn = $("save"); btn.disabled = true; $("msg").textContent = "コマを作っています…";
+  await new Promise(r => setTimeout(r, 30));
+  try {
+    const cf = config(), n = cf.frames, f = buildField(W, H, regions, 1), enc = new TextEncoder(), files = [];
+    const c = document.createElement("canvas"); c.width = W; c.height = H; const g = c.getContext("2d");
+    for (let k = 0; k < n; k++) {
+      g.putImageData(new ImageData(mosaic(warp(full, W, H, f, progress(k, n, cf.ease)), W, H, mos, 1), W, H), 0, 0);
+      const blob = await new Promise(r => c.toBlob(r, "image/png"));
+      files.push({ name: `Picture/${CODE}/anime/${CODE} (${k + 1}).png`, data: new Uint8Array(await blob.arrayBuffer()) });
+    }
+    files.push({ name: `CSV/Card/${CODE}_master.txt`, data: enc.encode(cardText(n, cf.seconds)) });
+    files.push({ name: `CSV/EventList/Quest/${CODE}.txt`, data: enc.encode(questText()) });
+    files.push({ name: "anime_config.json", data: enc.encode(JSON.stringify(cf, null, 2)) });
+    const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob(makeZip(files), { type: "application/zip" }));
+    a.download = "out.zip"; document.body.append(a); a.click(); a.remove();
+    $("msg").textContent = `out.zip を保存しました（コマ ${n} 枚・試し用カード・クエスト登録・設定の控え）。「_アニメ実験」フォルダに置いて「すべて展開」し、「3_ゲームに入れる.bat」へ。前の out フォルダが残っていたら先に消してください。`;
+  } catch (err) { $("msg").textContent = "保存できませんでした：" + err.message; }
+  btn.disabled = false;
+};
+$("load").onclick = () => $("cfg").click();
+$("cfg").onchange = async e => {
+  const f = e.target.files[0]; if (!f) return;
+  try { const c = JSON.parse((await f.text()).replace(/^\uFEFF/, ""));
+    regions = (c.regions || []).map((r, i) => ({ name: (r.memo || "範囲" + (i + 1)).replace(/,/g, ""), cx: +r.cx, cy: +r.cy, rx: +r.rx, ry: +r.ry, dx: +r.dx || 0, dy: +r.dy || 0 }));
+    mos = (c.mosaic || []).map(m => ({ x: +m.x, y: +m.y, w: +m.w, h: +m.h, block: +m.block || 16 }));
+    if (c.frames) $("fr").value = c.frames; if (c.seconds) $("sec").value = c.seconds; $("ease").checked = c.ease !== false;
+    sel = regions.length ? { t: "r", i: 0 } : null; refresh();
+    $("msg").textContent = img ? "設定を読み込みました。" : "設定を読み込みました。続けて始まりの絵を置いてください。";
+  } catch (err) { $("msg").textContent = "設定を読み込めませんでした。anime_config.json を選んでください。"; }
+  e.target.value = "";
+};
+list();
+})();
+</script>
+</body>
+</html>

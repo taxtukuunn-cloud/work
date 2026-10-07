@@ -1,0 +1,32 @@
+﻿2026-09-26　画像生成前の修正（N21 蜂の女王の巣で見つかった問題への対策。N24〜N30 と同じ直し）
+
+N22 の主人公タグ「androgynous, feminine body, petite, short, slender, narrow shoulders, narrow waist, thin arms, no muscles, soft body」は、
+N21 で幼く見える体つきの原因になった組み合わせと同じだったため、build_prompts.py を直した。
+
+■ 主人公
+  削除：androgynous / feminine body / petite / short / slender / narrow shoulders / narrow waist / thin arms / no muscles / soft body
+  追加：adult man, mature male, 25 years old, adult male body, adult proportions, long legs, slim adult build, lean,
+        not muscular, defined jawline, adam's apple, collarbones, flat male chest, ordinary human man,
+        he is a head shorter than the woman
+  （小柄さは「相手より頭ひとつ低い」で表す。150cm・非筋肉質の設定は変えない）
+  オナニーCGの「young man」は「adult man」に。
+
+■ 責め手（女性5人）
+  追加：mature face, sharp adult features, adult proportions, long legs（ケイ・ドーラ・ヴィオラには 25 years old も）
+  ケイの呼び名「young woman guard」「young guard」から young を外した。
+
+■ ネガティブ（全画像）
+  追加：childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi,
+        small body, petite male, young boy, kid
+  オナニーCG：hand on crotch, hand near penis, touching penis を追加し、
+             場面文に「both of his hands are clearly away from his penis」を追加。
+
+■ 元の版
+  build_prompts_旧.py ／ prison_prompts_旧.json（直す前）。51枚のキー（ファイル名）は同じ。
+
+■ 撮り直し
+  gen_prison_成人修正.bat をダブルクリック。
+  今の output\Prison（前回の51枚）は output\Prison_旧_2026-09-24 に名前を変えて残し、新しいプロンプトで51枚を作り直す。
+  comfy_batch.py は本編絵柄LoRA対応版（別の作業で更新済み。外すときは run_prison.bat ... --no-lora）。
+  生成後は必ず1枚ずつ目で確認し、幼く見えるもの・髪色が入れ替わったものは run_prison.bat <キー> --random --batch 4 で撮り直す。
+  MODフォルダの Picture\Prison\（前回の完成版51枚）は、新しい版を選び終わるまでそのまま残す。

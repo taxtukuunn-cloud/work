@@ -1,0 +1,2 @@
+夢魔の揺りかご（夢魔　ソムニア）,Card/Dream_master,クエストイベント
+夢魔の揺りかご【回想バトル】,Card/Dream_master,回想バトル,$$Dream_挑戦回数,>=,1

@@ -1,0 +1,209 @@
+# -*- coding: utf-8 -*-
+"""N26 妖狐（Kitsune）画像プロンプト生成 → kitsune_prompts.json（51枚）
+N23 Heels の build_prompts.py を元に作成。登場人物は全員20歳以上の成人。個人利用のみ。
+責め手は男の娘の妖狐（胸は平ら・装束は着たまま）。主人公は場面では裸（紺髪・顔なし・150cm・非筋肉質）。
+"""
+import json, os
+
+Q = "masterpiece, best quality, amazing quality, very aesthetic, absurdres"
+NEG_BASE = ("lowres, worst quality, low quality, bad anatomy, bad hands, bad feet, extra toes, watermark, signature, text, letters, sign, logo, numbers, "
+            "child, loli, shota, young, teenage, underage, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, "
+            "1girl, girl, female, woman, breasts, large breasts, medium breasts, cleavage, pussy, vagina, "
+            "twins, same face, same hair color, extra legs, three legs, four legs, extra arms, extra tails on the small man, "
+            "eyes visible on the small man, futanari, vaginal, penetration by the small man, merged bodies, "
+            "blood, injury, crying in pain, animal, real fox, wolf")
+NEG_SCENE = (", 3boys, navy hair on the fox, blue hair, fox ears on the small man, tail on the small man, fox tail on the small man, "
+             "nude fox, naked fox, the fox undressed, kimono on the small man, clothes on the small man")
+NEG_INSERT = ", merged, fused, overlapping penises, penis touching penis, dildo, strap-on"
+NEG_NOPENIS_FOX = ", fox's penis visible, erect fox, strap-on, dildo"
+NEG_ONANI = (", fox touching him, hand on penis, holding penis, stroking penis, handjob, penis grab, "
+             "fox masturbating, fox in foreground")
+
+SHRINE = "abandoned inari shrine deep in the mountains at night, rows of weathered red torii gates, pale blue fox fire floating in the air, moonlight"
+
+PROT_BODY = ("1boy, male, adult male, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, androgynous, "
+             "petite, short, slender, narrow shoulders, narrow waist, thin legs, flat chest, smooth pale skin, no muscles, blush, height difference, "
+             "completely nude, no fox ears, no tail")
+
+FOX_COMMON = "adult male, otoko no ko, trap, androgynous, very feminine face, girlish, delicate features, soft face, slim waist, flat chest, no breasts, both eyes clearly visible"
+
+CH = {
+    "m": dict(seed="HAKUEN",
+              tags="kitsune, " + FOX_COMMON + ", tall, long blonde hair, golden fox ears, nine fluffy golden fox tails, red eyes, calm smile, "
+                   "white and red kariginu, traditional japanese court robe, hakama",
+              name="the tall blonde nine-tailed fox in a white and red kariginu"),
+    "e1": dict(seed="KUDA",
+               tags="kitsune, " + FOX_COMMON + ", short grey hair, small grey fox ears, one very long thin grey fox tail, gold eyes, expressionless, "
+                    "white kimono, slim",
+               name="the grey short-haired fox in a white kimono with one very long thin tail"),
+    "e2": dict(seed="SHIRAYUKI",
+               tags="kitsune, " + FOX_COMMON + ", long white hair, white fox ears, one white fluffy fox tail, purple eyes, graceful smile, "
+                    "miko outfit, red hakama, white haori",
+               name="the white long-haired fox in a red and white miko outfit"),
+    "e3": dict(seed="AKANE",
+               tags="kitsune, " + FOX_COMMON + ", short red hair, red fox ears, one red fox tail, gold eyes, grin, "
+                    "short red kimono, bare feet, barefoot",
+               name="the red short-haired fox in a short red kimono with bare feet"),
+    "boss": dict(seed="GINKA",
+                 tags="kitsune, " + FOX_COMMON + ", very tall, long silver hair, silver fox ears, one large silver fox tail, gold eyes, divine, solemn, "
+                      "shiromuku, white wedding kimono, white wataboshi hood",
+                 name="the very tall silver-haired fox in a white shiromuku wedding kimono"),
+}
+
+PL = {
+    "honden": "inner sanctum of the shrine, bamboo blinds, white futon on tatami, paper lanterns, fox fire, detailed background",
+    "haiden": "worship hall of the shrine, wooden floor, offering box, bell rope, fox fire, detailed background",
+    "torii":  "path of many red torii gates at night, stone lanterns, fox fire floating, detailed background",
+    "pond":   "shrine garden pond at night, moon reflected on the water, floating paper lanterns, fox fire, detailed background",
+    "kagura": "kagura dance stage of the shrine, wooden stage, hanging kagura bells, taiko drum, fox fire, detailed background",
+    "office": "shrine office room, tatami, brazier, shelves of charms, dim lamp, detailed background",
+    "tree":   "base of a giant sacred tree with a shimenawa rope, hollow in the trunk, moss, fox fire, detailed background",
+    "kodo":   "small wooden retreat hut, closed wooden doors, a single candle, darkness, detailed background",
+    "shinsen": "offering room of the shrine, shelves with sake bottles and rice ears, folded clothes, detailed background",
+    "fox_mounds": "rows of small stone fox statues and tiny shrines, moss, fox fire, detailed background",
+    "chozuya": "stone water basin pavilion of the shrine, mossy stone, ladles, moonlight, detailed background",
+    "steps":  "long stone stairway between red torii gates at night, fox fire, detailed background",
+    "engawa": "wooden veranda of the shrine office, tatami room behind, moonlit garden, detailed background",
+    "onsen":  "outdoor rock hot spring by the shrine, steam, moonlight, lanterns, detailed background",
+    "ema":    "ema board rack of the shrine with many hanging wooden plaques without writing, fox fire, detailed background",
+    "corridor": "wooden corridor of the shrine, red pillars, paper lanterns, fox fire, detailed background",
+    "bamboo": "bamboo grove behind the shrine at night, fox fire lanterns floating in a line, detailed background",
+    "teahouse": "old mountain path teahouse with a red cloth bench, lanterns, fog, fox fire, detailed background",
+    "kagura_back": "behind the kagura stage, wooden wall, hanging bells, fox fire, detailed background",
+    "wedding": "shrine wedding hall, red carpet, sake cups on a tray, candles, fox fire, detailed background",
+    "shrine_deep": "small stone fox shrine at the back of the fox mounds, candles, fox fire, detailed background",
+}
+
+CLOTHED = "the fox keeps his robe on, fully clothed fox, only the small navy-haired man is nude"
+
+images = []
+
+
+def add(key, seed, pos, neg, rembg=False):
+    images.append({"key": "Kitsune_" + key, "seed_char": seed, "rembg": rembg, "positive": pos, "negative": neg})
+
+
+def scene(key, who, place, action, desc, insert=False, onani=False, fox_penis=False, extra=""):
+    c = CH[who]
+    if onani:
+        pos = ", ".join([Q, "explicit", "1boy, solo focus, male focus", PROT_BODY,
+                         "the small navy-haired nude man is the main subject in the foreground, he pleasures himself without touching his penis, " + action,
+                         "a small distant figure in the background watching him: " + c["name"] + ", fully clothed, tiny in frame, not touching him",
+                         SHRINE, PL[place], desc])
+        neg = NEG_BASE + NEG_SCENE + NEG_ONANI + NEG_NOPENIS_FOX
+    else:
+        fox = c["tags"] + (", his robe parted at the front, his large erect penis exposed" if fox_penis else "")
+        duo = "" if extra else "2boys, yaoi, duo, two people, "
+        pos = ", ".join([Q, "explicit", duo + "THE FOX (taller, dominant): " + fox + extra,
+                         "THE SMALL MAN (smaller, submissive, clearly visible in the picture): " + PROT_BODY, action, CLOTHED, SHRINE, PL[place], desc])
+        neg = NEG_BASE + NEG_SCENE + (NEG_INSERT if insert else NEG_NOPENIS_FOX)
+    add(key, c["seed"], pos, neg)
+
+
+# ---- 立ち絵
+STAND = {
+    "master": ("m", "standing, nine tails fanned out behind him, one hand raised with a small blue fox fire floating above his palm, looking down at viewer, from below, calm smile"),
+    "e1": ("e1", "standing, his very long thin tail wrapped once around his own neck like a scarf, arms at his sides, expressionless stare"),
+    "e2": ("e2", "standing, hands folded in front, slight bow, graceful smile, tongue slightly visible"),
+    "e3": ("e3", "standing on one bare foot, other foot raised, holding a string of large red lacquered beads, grin, winking"),
+    "boss": ("boss", "standing tall, hands folded in wide sleeves, wataboshi hood, looking down at viewer, from below, divine, imposing, fox fire around him"),
+}
+for k, (w, pose) in STAND.items():
+    c = CH[w]
+    add(k, c["seed"], ", ".join([Q, "safe, solo", c["tags"], pose, "full body, simple background, white background"]), NEG_BASE, rembg=True)
+
+# ---- 背景
+add("bg", "BG", ", ".join([Q, "safe, no humans, scenery", "abandoned inari shrine deep in the mountains at night, rows of red torii gates, "
+                           "worship hall, stone fox statues, pale blue fox fire floating everywhere, moonlight, mist, detailed background"]), NEG_BASE)
+
+# ---- 技CG
+scene("atk_m1", "m", "honden",
+      "the fox stands over the small man who kneels on the futon, three blue fox fires float in front of the small man's face, the small man's back arched, hands-free orgasm, trembling, "
+      "two of the nine tails brushing the small man's nipples",
+      "the nine-tailed fox bewitches him with fox fire.")
+scene("atk_m2", "m", "kagura",
+      "the small man lies on his back on the wooden stage, the fox sits beside him, nine golden tails wrapping around the small man's chest, tail tips teasing both nipples, tentacle-like tails, "
+      "hanging bells above",
+      "the nine tails caress his chest.")
+scene("atk_m3", "m", "honden",
+      "from side, the small man lies on his back on the white futon with legs raised, the fox kneels between his legs and penetrates his anus with his large penis, anal sex, "
+      "nine tails wrapping the small man's chest and stroking his nipples at the same time",
+      "the fox takes him while his tails caress his chest.", insert=True, fox_penis=True)
+scene("atk_e1", "e1", "fox_mounds",
+      "the small man sits on the ground among stone fox statues, the fox stands behind him with the long thin grey tail wrapped around the small man's neck, "
+      "the glowing thin tip of the tail slides into the small man's urethra, urethral insertion, the fox's lips at the small man's ear",
+      "the pipe fox enters him from inside.")
+scene("atk_e2", "e2", "onsen",
+      "from behind, the small man is on all fours on the edge of the rock bath, the fox kneels behind him and licks his anus with a long tongue, anilingus, "
+      "the fox's hands holding the small man's hips, graceful face, steam",
+      "the white fox serves him with his tongue.")
+scene("atk_e3", "e3", "bamboo",
+      "from side, the small man kneels on all fours on the ground, the fox squats behind him grinning and pulls a string of large red lacquered anal beads out of the small man's anus, anal beads, "
+      "several beads still inside, bare feet",
+      "the wild fox counts the beads.")
+scene("atk_boss", "boss", "wedding",
+      "from side, the small man lies on his back on the red carpet, a glowing red fox-shaped womb tattoo on his lower belly, pubic tattoo glowing, the fox in shiromuku leans over him licking his nipple, "
+      "the fox's hand pressing the glowing mark, the small man arches and climaxes",
+      "the heavenly fox lights the mark while licking his chest.")
+
+# ---- 敗北28
+L = [
+ ("btl_m1", "m", "honden", "the small man lies on the white futon, three blue fox fires floating above his face, hands-free orgasm, cum on his belly, the fox sits beside him with nine tails brushing the small man's nipples, a small lantern with a blue fox fire at the pillow", {}),
+ ("onani_m1", "m", "haiden", "the small man kneels on the wooden floor rubbing his own nipples with a white sleeve cloth, the fox stands over him holding a blue fox fire above his head, the small man's eyes closed and trembling", {}),
+ ("inochi_m1", "m", "torii", "the small man stands naked under a red torii gate on hands and knees, a blue fox fire floating in front of his face, the fox behind him with nine tails stroking the small man's chest, a red cord tied around the small man's wrist", {}),
+ ("onedari_m1", "m", "pond", "the small man kneels at the edge of the pond begging, three blue fox fires in front of his right eye, his chest and his lower belly, the fox sits on a rock beside him smiling, paper lanterns floating on the water", {}),
+ ("btl_m2", "m", "kagura", "the small man lies on his back on the kagura stage, all nine golden tails wrapped around his chest and both nipples, tentacle-like tails, cum on his belly, hanging bells ringing, the fox sits at his head", {}),
+ ("onani_m2", "m", "office", "in the tatami room by the brazier the small man kneels holding a hand towel to his own chest, the fox behind him with one golden tail sliding under the towel onto the small man's nipple, a thin cord of fox fur tied around the small man's nipple", {}),
+ ("inochi_m2", "m", "tree", "in the hollow at the base of the giant tree, the small man curls up on a bed of nine golden tails, the tails wrapping his whole body and both nipples, the fox sitting at the hollow's edge, shimenawa rope", {}),
+ ("onedari_m2", "m", "honden", "the small man kneels on the futon begging with his chest pushed out, nine tails wrapping his chest, two tails on the right nipple and five on the left, a bracelet of nine red beads on the small man's wrist, the fox smiling", {}),
+ ("btl_m3", "m", "honden", "from side, the small man lies on his back on the white futon, the fox penetrates his anus with his large penis, anal sex, nine tails stroking both nipples, cum, a small second futon laid beside the white futon", {"insert": True, "fox_penis": True}),
+ ("onani_m3", "m", "kodo", "from side, in the dark hut with a single candle, the small man on all fours, the fox kneels behind him penetrating his anus with his large penis, anal sex, tails wrapping the small man's chest, a red wax fox seal on the small man's lower belly", {"insert": True, "fox_penis": True}),
+ ("inochi_m3", "m", "shinsen", "from side, the small man stands bent over the offering shelf wearing only a loose white wedding kimono open at the front and hem, the fox stands behind him penetrating his anus, anal sex, nine tails under the kimono on the small man's nipples, sake bottles", {"insert": True, "fox_penis": True}),
+ ("onedari_m3", "m", "honden", "from side, in front of the bamboo blind the small man sits on the fox's lap facing away, penetrated by the fox's large penis, anal sex, nine tails wrapping the small man's chest, a red cord with three knots tied to the blind", {"insert": True, "fox_penis": True}),
+ ("btl_e1", "e1", "fox_mounds", "the small man sits leaning against a stone fox statue, the long thin grey tail wrapped around his neck, the glowing tail tip inserted deep into his urethra, urethral insertion, hands-free orgasm, the fox crouching beside him whispering into his ear, a tuft of grey fur tied on a cord around the small man's neck", {}),
+ ("onani_e1", "e1", "chozuya", "the small man sits on the edge of the stone water basin with legs spread, the glowing thin tail tip inserted into his urethra, urethral insertion, the fox standing beside him holding a wooden ladle, the small man's reflection on the water", {}),
+ ("inochi_e1", "e1", "steps", "on the stone stairway between torii gates the small man sits on a step with legs spread, the fox one step above with the long tail half withdrawn from the small man's urethra, urethral insertion, glowing thread of light, the fox's lips at the small man's ear", {}),
+ ("onedari_e1", "e1", "engawa", "on the wooden veranda the small man lies back on the tatami edge begging, the fox kneeling over him with the glowing tail tip inserted into the small man's urethra, urethral insertion, the fox whispering into his ear, moonlit garden", {}),
+ ("btl_e2", "e2", "onsen", "from behind, the small man kneels on all fours at the edge of the rock bath, the fox licks his anus with a long tongue, anilingus, a red fox-shaped mark glowing faintly on the small man's lower belly, steam, a folded hand towel on a rock", {}),
+ ("onani_e2", "e2", "shinsen", "from side, the small man kneels on the floor of the offering room with one wet finger at his own anus, the fox kneels behind him and licks the small man's anus with a long tongue, anilingus, a small sake bottle on the floor", {}),
+ ("inochi_e2", "e2", "ema", "under the rack of blank wooden plaques the small man kneels on all fours holding a blank wooden plaque, the fox behind him licking his anus, anilingus, one plaque hanging high on the rack", {}),
+ ("onedari_e2", "e2", "corridor", "on the wooden corridor the small man kneels bent forward begging, the fox kneels behind him licking his anus with a long tongue, anilingus, a red cord tied around the small man's waist, an incense stick burning", {}),
+ ("btl_e3", "e3", "bamboo", "from side, the small man kneels on all fours under bamboo, the fox squats behind him grinning and pulls a string of large red lacquered anal beads from the small man's anus, anal beads, cum, one red bead on a cord around the small man's waist", {}),
+ ("onani_e3", "e3", "pond", "from side, at the edge of the pond the small man on all fours with anal beads inserted, anal beads, the fox squatting behind him holding the string and counting on his fingers, grin, moon on the water", {}),
+ ("inochi_e3", "e3", "teahouse", "from side, the small man sits on the red cloth bench of the teahouse with legs spread and a string of red anal beads half inside him, anal beads, straw sandals on his feet, the fox standing over him pulling the string, grin, fog", {}),
+ ("onedari_e3", "e3", "kagura_back", "from side, behind the kagura stage the small man kneels on all fours begging, the fox pushes a string of red anal beads into his anus, anal beads, the fox's bare foot resting on the small man's back, a red cord with many knots hanging from the fox's hand", {}),
+ ("btl_boss", "boss", "wedding", "from side, the small man lies on his back on the red carpet, a bright glowing red fox-shaped mark on his lower belly, pubic tattoo glowing, the fox in shiromuku kneels between his legs penetrating his anus, anal sex, while licking his nipple, a sake cup in the small man's hand", {"insert": True, "fox_penis": True}),
+ ("onani_boss", "boss", "shrine_deep", "the small man kneels in front of the tiny stone shrine with one hand on his own glowing red fox mark on his lower belly, pubic tattoo glowing, the fox leaning down licking the small man's nipple, a white cloth scrap on the ground", {}),
+ ("inochi_boss", "boss", "bamboo", "the small man walks on hands and knees at the head of a line of floating blue fox fire lanterns in the bamboo grove, his fox mark glowing, the fox in shiromuku walking behind him holding a paper lantern with blue fox fire, the small man trembling", {}),
+ ("onedari_boss", "boss", "honden", "from side, on a red futon the small man lies on his back with legs raised, the fox in shiromuku penetrates his anus, anal sex, licking his nipple, the fox mark glowing brightly, a ring of braided silver fur on the small man's left hand", {"insert": True, "fox_penis": True}),
+]
+for key, who, place, action, opt in L:
+    scene("lose_" + key, who, place, action, CH[who]["name"] + " spirits him away forever.", **opt)
+
+# ---- オナニーCG（その責め手の★得意技に合わせた自慰。ペニスには触れない）
+ON = {
+    "master": ("m", "haiden", "kneeling on the wooden floor, rubbing both of his own nipples with the ends of a soft white cloth as if they were tails, not touching his penis, flushed, eyes closed"),
+    "e1": ("e1", "fox_mounds", "sitting with legs spread, one finger pressing and tracing his own perineum below his testicles, not touching his penis, head thrown back, flushed"),
+    "e2": ("e2", "onsen", "from behind, kneeling on all fours at the edge of the rock bath, reaching back and stroking his own anus with a wet finger, not touching his penis"),
+    "e3": ("e3", "bamboo", "from side, kneeling on all fours, reaching back with two fingers inserted into his own anus, anal fingering, counting, not touching his penis"),
+    "boss": ("boss", "wedding", "kneeling, one hand tracing a glowing red fox-shaped mark on his own lower belly, pubic tattoo glowing, other wet finger rubbing his own nipple, not touching his penis, drooling"),
+}
+for k, (who, place, act) in ON.items():
+    scene("onanie_" + k, who, place, act, "he pleasures himself alone in the fox's style while the fox watches from afar.", onani=True)
+
+# ---- 魔法・罠
+MG = [
+    ("magic_1", "m", "holding out one hand with a large pale blue fox fire floating above the palm, looking at viewer, nine tails behind", "torii"),
+    ("magic_2", "e3", "holding a single green leaf on his fingertip toward viewer, grin, other hand on his hip, bare feet", "haiden"),
+    ("magic_3", "e2", "kneeling gracefully placing a plate of fried tofu offering in front of a small stone fox shrine, looking at viewer, gentle smile", "fox_mounds"),
+    ("magic_4", "m", "standing in the middle of the path of red torii gates, arms spread, fox fire lining the gates, looking at viewer, from below", "torii"),
+    ("magic_5", "m", "sitting at the head of a long banquet in a phantom great hall, rows of lacquered trays and lanterns, raising a sake cup toward viewer, nine tails spread", "honden"),
+]
+for key, who, act, place in MG:
+    c = CH[who]
+    add(key, c["seed"], ", ".join([Q, "safe, solo", c["tags"], act, "looking at viewer", SHRINE, PL[place]]), NEG_BASE)
+
+here = os.path.dirname(os.path.abspath(__file__))
+json.dump({"code": "Kitsune", "images": images}, open(os.path.join(here, "kitsune_prompts.json"), "w", encoding="utf-8"),
+          ensure_ascii=False, indent=1)
+print(len(images), "images")

@@ -1,0 +1,2 @@
+入江の森の魔女（羽衣の　堕天女）,Card/Witches_master,クエストイベント
+入江の森の魔女【回想バトル】,Card/Witches_master,回想バトル,$$Witches_挑戦回数,>=,1

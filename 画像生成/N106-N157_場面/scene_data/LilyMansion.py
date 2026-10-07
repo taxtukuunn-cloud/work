@@ -1,0 +1,130 @@
+# N157 魔導の塔とリリィの館（LilyMansion）画像データ。登場人物は全員20歳以上。5人とも女性（ふたなり・NH・女装なし）。
+# 見た目は設計メモ・brief の文章の目印から作成（作品名・キャラ名は tags に書かない）。原作に青・水色の髪や瞳のキャラはいない。
+# リリィとルシアはどちらも緑の髪なので、被らないよう リリィ＝dark green の長髪／ルシア＝light yellow-green のボブ に書き分ける。
+# 挿入はリリィ（m2・m3 と m1 の一部）とワームビレッジャの「細い触手の先」だけ＝pen なし。ルシア・ウーストレル・サックボアは後ろに触れない。
+# 触手は柔らかく艶のあるもの（歯・棘・目なし）。黒い塊は噛まない（歯を描かない）。怖い・グロテスクにしない。主人公の手首にピンクの触手の輪。
+RING = "thin pink tentacle rings coiled around his wrist like bracelets"
+SOFT_NEG = "muscular female, abs, broad shoulders on the woman, scary, grotesque, fangs, teeth, eyes on tentacles, thorns, slime monster face"
+RED = "glossy red tentacles"
+PINK = "smooth pink tentacles"
+DATA = {
+ "code": "LilyMansion",
+ "world": "old gothic mansion and a stone mage tower in a dark forest, red roses, candlelight, soft glossy tentacles as living decorations, mysterious and elegant, detailed background",
+ "bg": "bedroom of the lady of an old mansion at night, green canopy bed, a bed woven of glossy red tentacles with silk sheets, candles, tall window with red roses and a distant stone mage tower outside, no humans",
+ "josou": None,
+ "chars": {
+   "m": {"type": "woman", "jp": "リリィ",
+         "tags": "adult woman, mature female, mature face, sharp adult features, 30 years old, adult proportions, beautiful detailed eyes, tall, long legs, dark green hair, very long hair, gold crown, golden eyes, elegant long green dress, bare shoulders, glossy red tentacles rising around her from under the hem of her dress, soft curvy feminine body, huge breasts, wide hips",
+         "name": "the green-haired lady in a crown and green dress",
+         "pose": "one hand holding a teacup, the other hand lifted with a red tentacle curled around her fingers, proud elegant smile, looking down at viewer",
+         "neg": SOFT_NEG},
+   "e1": {"type": "woman", "jp": "ウーストレル",
+          "tags": "adult woman, mature female, mature face, 28 years old, adult proportions, beautiful detailed eyes, tall, red hair, short hair, black wide-brimmed hat, amber eyes, elegant black dress, black bat wings, scylla, her lower body is a large smooth black velvety mass with a soft opening instead of legs, thin black tentacles, soft curvy feminine body, large breasts",
+          "name": "the red-haired lady in a black hat and black dress",
+          "pose": "hands folded in front of her, looking down from under the brim of her hat, calm quiet smile, looking at viewer",
+          "neg": SOFT_NEG + ", human legs"},
+   "e2": {"type": "woman", "jp": "ワームビレッジャ",
+          "tags": "adult woman, mature female, mature face, 24 years old, adult proportions, beautiful detailed eyes, long legs, brown hair, medium hair, hazel eyes, green apron dress, white blouse, many smooth pink tentacles spreading from behind her back like a fan, soft curvy feminine body, large breasts",
+          "name": "the brown-haired village woman in a green apron dress",
+          "pose": "waving one hand cheerfully, pink tentacles spread behind her like a fan, bright friendly smile, looking at viewer",
+          "neg": SOFT_NEG},
+   "e3": {"type": "woman", "jp": "サックボア",
+          "tags": "adult woman, mature female, mature face, 26 years old, adult proportions, beautiful detailed eyes, pale pink hair, long hair, red tube-shaped organ on top of her head like a headdress, amber eyes, pale skin, bandeau top, scylla, octopus lower body, pink octopus tentacles with soft suckers from the waist down, soft curvy feminine body, large breasts",
+          "name": "the pink octopus-bodied woman with a red tube on her head",
+          "pose": "arms loosely open as if to hug, pink tentacles curling on the floor, sleepy quiet smile, looking at viewer",
+          "neg": SOFT_NEG + ", human legs"},
+   "boss": {"type": "woman", "jp": "ルシア",
+            "tags": "adult woman, mature female, mature face, 29 years old, adult proportions, beautiful detailed eyes, tall, long legs, light yellow-green hair, bob cut, violet eyes, pale white skin, faintly glowing arcane pattern markings on her skin, long green cloak, white robe dress, smooth pink tentacles peeking from under her cloak, soft curvy feminine body, large breasts",
+            "name": "the bob-haired mage in a green cloak with glowing skin markings",
+            "pose": "holding a smoking incense burner in one hand, the other hand touching her chin as if observing, gentle polite smile, looking at viewer",
+            "neg": SOFT_NEG},
+ },
+ "places": {
+   "gate_tower": "entrance of an old stone mage tower, door carved with arcane patterns, a wooden hut beside it, forest edge",
+   "hut":        "inside a wooden hut by the tower, straw bed, basket, warm lantern light",
+   "library":    "tower library, tall bookshelves, ladder, dust in candlelight, reading desk with a candlestick",
+   "lab":        "tower laboratory, glass flasks, an alchemy furnace, gems, incense smoke, a high-backed chair",
+   "lucia_room": "room of the tower master, floor painted with faintly glowing arcane patterns, incense burner, green cloak on a stand, bedding on the floor",
+   "forest":     "dark forest path, rose hedge, a tree stump, moonlight between the trees",
+   "mgate":      "iron gate of the mansion covered in red roses, shadows of tentacles on the gate, night",
+   "hall":       "mansion entrance hall, old chandelier, red carpet, a tall grandfather clock",
+   "parlor":     "mansion parlor, soft sofa, tea set on a low table, fireplace with fire, tentacle-shaped ornaments",
+   "cellar":     "mansion cellar of cold stone, a warm nest of pink tentacles in the corner, stone stairs, dim light",
+   "stairs":     "stone staircase going down to the cellar, dim candle on the wall, shadows",
+   "black_room": "room with black curtains, a hat stand, a black bed, a single candle",
+   "garden":     "mansion garden at night, red roses, a stone fountain, a bench under a rose arch",
+   "study":      "mansion study, bookshelves, notebooks without text on a desk, a sofa, tea cups",
+   "bedroom":    "bedroom of the lady of the mansion, green canopy bed, a bed woven of glossy red tentacles with silk sheets, candles",
+   "nest":       "innermost chamber of the mansion, a soft wide bed woven of pink and red tentacles, warm sweet haze, dim rosy light",
+ },
+ "atk": {
+   "m1": ("parlor", "he sits on the soft sofa, the lady in the green dress sits beside him holding a teacup to his lips, a thin red tentacle stroking his neck, another carrying the saucer, she whispers into his ear, his shoulders going limp, " + RING),
+   "m2": ("bedroom", "he lies on his back on the tentacle bed, wrapped from feet to chest in " + RED + ", his face free, soft lip-tipped tentacles sucking both his nipples and his penis, a thin red tentacle tip in his anus, anal, the lady in the green dress sits beside him stroking his cheek, " + RING),
+   "m3": ("bedroom", "from side, he lies on the silk sheets, the lady in the green dress leans over him kissing him deeply, tongues, saliva trail, her hand between his legs with two wet fingers in his anus, fingering, red tentacles holding his thighs open, " + RING),
+   "e1": ("black_room", "he stands held against the lady in the black hat, her black dress open at the chest, his lower body swallowed up to the waist inside her soft black velvety mass, thin black tentacles rolling his nipples, she looks down at him from under her hat brim, " + RING),
+   "e2": ("gate_tower", "he is lifted off the ground wrapped in dozens of " + PINK + " from the village woman's back, tentacle tips stroking his nipples, neck and inner thighs, one thin pink tentacle in his anus, anal, the village woman hugs him from the front smiling, " + RING),
+   "e3": ("cellar", "he lies back in the warm nest, the octopus-bodied woman on top hugging him, her breasts pressed on his chest, pink octopus tentacles clinging all over his body, sucker tips sucking both his nipples and wrapped around his penis, " + RING),
+   "boss": ("lucia_room", "on the glowing patterned floor, he is wrapped up to the neck inside a big soft pink sack-like tentacle, only his head outside, the mage in the green cloak kneels beside him holding an incense burner near his face, sweet smoke, observing him with a gentle smile"),
+ },
+ "atk_desc": {
+   "m1": "the lady entertains him with tea and caressing tentacles, repeating that he is a guest of her mansion.",
+   "m2": "the lady wraps him in her red tentacles, sucking his nipples and stroking deep inside.",
+   "m3": "the lady seals his lips with a kiss while her fingers loosen him.",
+   "e1": "the lady in black wraps his lower body in her soft black mass and looks down at him quietly.",
+   "e2": "the village woman covers his whole body with her spreading pink tentacles and strokes him slowly inside.",
+   "e3": "the octopus-bodied woman clings to his whole body and sucks with her soft suckers.",
+   "boss": "the mage warms him with incense and wraps him whole in an enveloping tentacle.",
+ },
+ "lose": {
+   # リリィ 技1（女主人のもてなし）
+   "btl_m1":     ("parlor", "he sits on the sofa wrapped in " + RED + ", the lady in the green dress holds a teacup to his lips, lip-tipped tentacles sucking his nipples, a thin red tentacle tip in his anus, anal, a jewel from her crown on a ribbon around his neck, cum dripping, " + RING),
+   "onani_m1":   ("study", "sitting alone on the study sofa, a teacup in one hand, the other hand inside his open shirt stroking his own nipple, penis untouched, " + RING + ", the lady in the green dress watches far away from the doorway"),
+   "inochi_m1":  ("hall", "under the tall grandfather clock, he sits on a chair wrapped in " + RED + ", the lady in the green dress stands over him pouring tea, a red tentacle offering him another cup, three empty cups on a side table, lip-tipped tentacles on his nipples, cum dripping, " + RING),
+   "onedari_m1": ("nest", "he lies back on the tentacle bed with arms open, the lady in the green dress sits beside him stroking his hair, " + RED + " wrapping his whole body and sucking his nipples, a teacup held by a tentacle, blissful limp body, cum on his stomach, " + RING),
+   # リリィ 技2（★ヘブンズドレイン）
+   "btl_m2":     ("bedroom", "he lies on the tentacle bed, wrapped in " + RED + ", lip-tipped tentacles sucking both nipples and his penis, a thin red tentacle tip in his anus, anal, the lady in the green dress leans over him, a red tentacle ring on his finger, cum, " + RING),
+   "onani_m2":   ("garden", "sitting alone on the bench under the rose arch, shirt open, skin shiny with lotion, one hand stroking his own nipple, the other hand reaching behind to rub his own anus, penis untouched, the lady in the green dress watches far away by the fountain"),
+   "inochi_m2":  ("bedroom", "under the closed green canopy, he lies cocooned in " + RED + " with only his face free, the lady in the green dress lies beside him holding his head to her chest, lip-tipped tentacles on his nipples, a thin tentacle in his anus, anal, candles burned low, cum dripping"),
+   "onedari_m2": ("nest", "in the middle of the tentacle bed, he lies with legs held open by " + RED + ", three lip-tipped tentacles sucking his nipples and chest, a thin red tentacle deep in his anus, anal, the lady in the green dress kneels between his legs smiling, cum on his stomach, " + RING),
+   # リリィ 技3（女主人の口づけ）
+   "btl_m3":     ("bedroom", "from side, he lies on the silk sheets wrapped in " + RED + ", the lady in the green dress over him kissing him deeply, tongues, saliva, a thin red tentacle tip in his anus, anal, a lip-tipped tentacle on his nipple, a green ribbon tied on his wrist, cum dripping"),
+   "onani_m3":   ("parlor", "kneeling alone on the rug before the fireplace, sucking two of his own fingers as if kissing, the other hand reaching behind pressing a finger into his own anus, penis untouched, the lady in the green dress watches far away from the sofa"),
+   "inochi_m3":  ("mgate", "he stands with his back against the rose-covered iron gate held shut by red tentacles, the lady in the green dress holds his face and kisses him deeply, tongues, " + RED + " wrapping his waist and legs, his knees giving way, cum dripping, " + RING),
+   "onedari_m3": ("nest", "from side, he lies on the tentacle bed, the lady in the green dress lies half over him kissing him long and deep, saliva trail, a thin red tentacle in his anus, anal, lip-tipped tentacles on his nipples, dawn light through a curtain, cum on his stomach"),
+   # ウーストレル（★触手吸精）
+   "btl_e1":     ("black_room", "he is held upright against the lady in the black hat, his body swallowed up to the waist in her soft black velvety mass, thin black tentacles rolling his nipples, she looks down from under her hat brim, a black feather ornament pinned on his collar, flushed, limp arms, " + RING),
+   "onani_e1":   ("stairs", "crouching alone in the dark by the cellar stairs with a black cloth draped over his head and shoulders, both hands under the cloth stroking his own nipples, penis untouched, the lady in the black hat watches far away from the shadows"),
+   "inochi_e1":  ("black_room", "he stands facing the lady in the black hat, her soft black velvety mass rising from his feet up to his thighs, her hand on his cheek, thin black tentacles around his wrists, a single candle, a door behind her, his knees weak, " + RING),
+   "onedari_e1": ("black_room", "on the black bed, he sits wrapped up to his chest inside the closed black velvety mass, the lady in the black hat holds him against her open dress chest, a thin black tentacle rolling his nipple, she whispers looking down, blissful, cum unseen inside, " + RING),
+   # ワームビレッジャ（★スプレッドワーム）
+   "btl_e2":     ("gate_tower", "he is lifted before the tower door covered in dozens of " + PINK + ", tips stroking his nipples, neck and inner thighs, a thin pink tentacle in his anus, anal, the village woman hugs him from the front, a green button on a cord around his neck, cum dripping untouched, " + RING),
+   "onani_e2":   ("forest", "kneeling alone behind a tree stump, a cord wound around his chest and waist, one hand pulling the cord, a finger of the other hand in his own anus, penis untouched, the village woman watches far away on the forest path"),
+   "inochi_e2":  ("mgate", "before the mansion gate, he hangs limp wrapped in " + PINK + " carried by the village woman, tentacle tips on his nipples and inner thighs, a thin pink tentacle in his anus, anal, she smiles brightly pointing at the gate, cum dripping, " + RING),
+   "onedari_e2": ("hut", "inside the hut on the straw bed, he lies covered by countless " + PINK + ", only his face and chest showing, tips circling his nipples, a thin tentacle slowly in his anus, anal, the village woman kneels beside him patting his head, cum on his stomach"),
+   # サックボア（★全身吸精）
+   "btl_e3":     ("cellar", "he lies in the warm tentacle nest, the octopus-bodied woman hugging him from the front, breasts pressed to his chest, pink octopus tentacles clinging to his thighs, belly and neck, sucker tips on both nipples and around his penis, a pink tentacle charm on his neck, cum"),
+   "onani_e3":   ("stairs", "sitting alone halfway down the stone stairs, shirt open, pressing a soft suction-cup toy onto his own nipple and pulling it off, penis untouched, " + RING + ", the octopus-bodied woman watches far away from the bottom of the stairs"),
+   "inochi_e3":  ("stairs", "he lies on the stone stairs reaching one hand toward the top step, pink octopus tentacles wrapped around his ankles and thighs pulling him gently back, the octopus-bodied woman below hugging his waist, a sucker tip on his nipple, cum dripping, " + RING),
+   "onedari_e3": ("cellar", "deep in the pink tentacle nest, he lies with arms open, the octopus-bodied woman lying on top of him cheek to cheek, tentacles clinging over his whole body, sucker tips sucking both nipples, quiet smile, blissful limp body, cum on his stomach"),
+   # ルシア（★ボアワーム）
+   "btl_boss":   ("lucia_room", "on the glowing patterned floor, he is wrapped to the neck in a big soft pink sack-like tentacle, his flushed face outside, the mage in the green cloak kneels holding an incense burner to his nose, sweet smoke, a patterned gem on a cord at his neck, drooling"),
+   "onani_boss": ("lab", "curled up alone on the high-backed chair wrapped in a blanket up to his neck, an incense stick smoking beside him, his hands inside the blanket stroking his own nipples, penis untouched, the mage in the green cloak watches far away by the furnace"),
+   "inochi_boss":("library", "he sits at the reading desk with an open book without text, soft pink tentacles holding his wrists on the pages, a big pink sack-like tentacle wrapping him from the legs up to his chest, the mage in the green cloak stands behind him with a hand on his shoulder, candlelight"),
+   "onedari_boss":("lucia_room", "on the bedding on the glowing floor, he lies wrapped to the neck in the soft pink sack-like tentacle, the mage with her cloak open holds his head against her patterned chest, incense burner by the pillow, sweet smoke, blissful, cum unseen inside"),
+ },
+ "lose_desc": "keeps him in the mansion forever as its eternal guest, twelve pink tentacle rings coiled around his wrist.",
+ "onanie": {
+   "master": ("garden", "sitting on the bench, shirt open, skin shiny with lotion, one hand stroking his own nipple, the other hand rubbing his own anus, penis untouched"),
+   "e1": ("stairs", "crouching with a black cloth over his head, stroking his own nipples under the cloth, penis untouched"),
+   "e2": ("forest", "kneeling behind a tree stump, a cord wound around his chest, a finger in his own anus, penis untouched"),
+   "e3": ("stairs", "sitting on the stairs, pressing a soft suction-cup toy onto his own nipple, penis untouched"),
+   "boss": ("lab", "curled on a chair wrapped in a blanket, incense smoke, stroking his own nipples inside the blanket, penis untouched"),
+ },
+ "magic": {
+   "1": (None, "parlor", "two thin smooth pink tentacles with soft brush-like tips curling up from a velvet cushion, gentle glow, close-up"),
+   "2": (None, "hall", "a tall old grandfather clock with a blank dial without numbers, a brass pendulum, faint sound ripples in the air, red carpet"),
+   "3": (None, "garden", "a hedge of red roses at night, thin soft pink tentacles peeking out between the leaves, moonlight, no thorns visible"),
+   "4": ("m", "bedroom", "holding up a thin tentacle whose tip drips glistening golden nectar onto her fingertip, alluring smile"),
+   "5": (None, "cellar", "a warm nest of many entwined pink tentacles in the corner of a cold stone cellar, thin tentacles creeping out over the floor, soft rosy glow"),
+ },
+}

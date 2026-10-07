@@ -1,0 +1,2 @@
+雪女の氷城（雪女　シラネ）,Card/Snow_master,クエストイベント
+雪女の氷城【回想バトル】,Card/Snow_master,回想バトル,$$Snow_挑戦回数,>=,1

@@ -1,0 +1,79 @@
+{
+ "Snow_master": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 32 years old, tall, long legs, both eyes clearly visible, yuki-onna, pure white hair, long hair, purple eyes, pale skin, white kimono, light purple obi, cold breath, snowflakes, gentle cold smile, large breasts, standing, confident, looking down at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Snow_e1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 21 years old, both eyes clearly visible, black hair, bob cut, red eyes, white padded jacket, red hood, innocent smile, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Snow_e2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 26 years old, both eyes clearly visible, ice spirit, light purple hair, long straight hair, icy hair tips, silver eyes, ice crystal hair ornament, slim light purple dress, sharp expression, medium breasts, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Snow_e3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 23 years old, both eyes clearly visible, rabbit ears, white rabbit ears, pink hair, short hair, red eyes, white fluffy jacket, short pants, sweet smile, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Snow_boss": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 39 years old, tall, long legs, both eyes clearly visible, ice queen, silver hair, metallic hair, long hair, gold eyes, ice crown, silver dress, white fur cape, tall, mature, stern, large breasts, standing, confident, looking down at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Snow_bg": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, ice castle hall, hanging icicles, bed of ice covered with white fur, white and pale purple light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, 1girl, people, blue theme, blue light",
+  "width": 1216,
+  "height": 832,
+  "rmbg": false
+ },
+ "Snow_magic_1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 32 years old, tall, long legs, both eyes clearly visible, yuki-onna, pure white hair, long hair, purple eyes, pale skin, white kimono, light purple obi, cold breath, snowflakes, gentle cold smile, large breasts, breathing a cold wind of snowflakes, looking at viewer, cowboy shot, ice castle hall, hanging icicles, bed of ice covered with white fur, white and pale purple light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Snow_magic_2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 26 years old, both eyes clearly visible, ice spirit, light purple hair, long straight hair, icy hair tips, silver eyes, ice crystal hair ornament, slim light purple dress, sharp expression, medium breasts, floor turning to ice around her, looking at viewer, cowboy shot, ice castle hall, hanging icicles, bed of ice covered with white fur, white and pale purple light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Snow_magic_3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 32 years old, tall, long legs, both eyes clearly visible, yuki-onna, pure white hair, long hair, purple eyes, pale skin, white kimono, light purple obi, cold breath, snowflakes, gentle cold smile, large breasts, pouring sake while looking at falling snow, moon, looking at viewer, cowboy shot, ice castle hall, hanging icicles, bed of ice covered with white fur, white and pale purple light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Snow_magic_4": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 21 years old, both eyes clearly visible, black hair, bob cut, red eyes, white padded jacket, red hood, innocent smile, many small snow spirits around him, looking at viewer, cowboy shot, ice castle hall, hanging icicles, bed of ice covered with white fur, white and pale purple light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Snow_magic_5": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 39 years old, tall, long legs, both eyes clearly visible, ice queen, silver hair, metallic hair, long hair, gold eyes, ice crown, silver dress, white fur cape, tall, mature, stern, large breasts, midnight sun, pale white sky, ice crown shining, looking at viewer, cowboy shot, ice castle hall, hanging icicles, bed of ice covered with white fur, white and pale purple light, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs, blue theme, blue light",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ }
+}

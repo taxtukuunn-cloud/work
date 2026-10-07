@@ -1,0 +1,79 @@
+{
+ "GhostShip_master": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 36 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, red hair, long wavy hair, gold eyes, black and gold captain coat, tricorne hat, open chest blouse, large breasts, hand on hip, holding a spyglass, bold grin, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "GhostShip_e1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, monster girl, mature female, mature face, sharp adult features, 25 years old, adult proportions, beautiful detailed eyes, pink hair, very long hair, purple eyes, mermaid, pink scaled fish tail, seashell and pearl chest ornament, large breasts, sitting on a rock, singing with eyes half closed, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, legs, feet",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "GhostShip_e2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 26 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, blonde hair, dreadlocks in one ponytail, green eyes, striped shirt, short vest, rope over shoulder, medium breasts, tugging a rope, cheerful rough grin, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "GhostShip_e3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, monster girl, mature female, mature face, sharp adult features, 23 years old, adult proportions, beautiful detailed eyes, white hair, short curly hair, red eyes, mermaid, white and green scaled fish tail, seaweed hair ornament, medium breasts, blowing bubbles, innocent adult smile, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, legs, feet",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "GhostShip_boss": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, monster girl, mature female, mature face, sharp adult features, 38 years old, adult proportions, beautiful detailed eyes, black hair, very long hair with pearls, red eyes, mermaid queen, large black and gold scaled fish tail, coral crown, pearl necklace, very large breasts, floating calmly, deep calm gaze, looking down at viewer, full body, standing, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, legs, feet",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "GhostShip_bg": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, deck of an old ghost pirate ship in thick fog at night, tattered sails, ropes and wooden barrels, pale green lanterns, dark calm sea, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, 1girl, person, people",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "GhostShip_magic_1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 36 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, red hair, long wavy hair, gold eyes, black and gold captain coat, tricorne hat, open chest blouse, large breasts, blowing a fog horn at the ship's bow, looking at viewer, deck of a ghost pirate ship in thick fog at night, tattered sails, pale green lantern light, dark sea, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "GhostShip_magic_2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, monster girl, mature female, mature face, sharp adult features, 25 years old, adult proportions, beautiful detailed eyes, pink hair, very long hair, purple eyes, mermaid, pink scaled fish tail, seashell and pearl chest ornament, large breasts, sitting on a sea rock in moonlight, singing, looking at viewer, deck of a ghost pirate ship in thick fog at night, tattered sails, pale green lantern light, dark sea, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, legs, feet",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "GhostShip_magic_3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 26 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, blonde hair, dreadlocks in one ponytail, green eyes, striped shirt, short vest, rope over shoulder, medium breasts, a huge wave crashing over the deck, holding the mast, looking at viewer, deck of a ghost pirate ship in thick fog at night, tattered sails, pale green lantern light, dark sea, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "GhostShip_magic_4": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, mature face, sharp adult features, 36 years old, adult proportions, beautiful detailed eyes, tall, elegant, feminine body, long legs, red hair, long wavy hair, gold eyes, black and gold captain coat, tricorne hat, open chest blouse, large breasts, spreading an old sea chart without text on a table, looking at viewer, deck of a ghost pirate ship in thick fog at night, tattered sails, pale green lantern light, dark sea, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, masculine, manly, male face, square jaw, broad shoulders, facial hair, beard, stubble, flat chest",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "GhostShip_magic_5": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, monster girl, mature female, mature face, sharp adult features, 38 years old, adult proportions, beautiful detailed eyes, black hair, very long hair with pearls, red eyes, mermaid queen, large black and gold scaled fish tail, coral crown, pearl necklace, very large breasts, calm moonlit sea, rising from the water, looking at viewer, deck of a ghost pirate ship in thick fog at night, tattered sails, pale green lantern light, dark sea, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, petite female, muscular, abs, pectorals, bara, hairy, twins, same face, extra legs, extra arms, 1boy, 2girls, multiple girls, futanari, penis, nude, nipples, nsfw, topless, merged bodies, blood, injury, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, young boy, kid, legs, feet",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ }
+}

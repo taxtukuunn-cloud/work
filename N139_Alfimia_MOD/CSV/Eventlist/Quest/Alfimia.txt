@@ -1,0 +1,2 @@
+神のゲームの塔4層（ゲームの女神　フレイ）,Card/Alfimia_master,クエストイベント
+神のゲームの塔4層【回想バトル】,Card/Alfimia_master,回想バトル,$$Alfimia_挑戦回数,>=,1

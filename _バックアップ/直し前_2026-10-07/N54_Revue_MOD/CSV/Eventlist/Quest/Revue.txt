@@ -1,0 +1,2 @@
+白薔薇歌劇団（トップスター　ルシア）,Card/Revue_master,クエストイベント
+白薔薇歌劇団【回想バトル】,Card/Revue_master,回想バトル,$$Revue_挑戦回数,>=,1

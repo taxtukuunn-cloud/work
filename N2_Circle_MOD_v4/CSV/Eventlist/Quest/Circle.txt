@@ -1,0 +1,2 @@
+部室棟三階（サークルの先輩　ハルカ）,Card/Circle_master,クエストイベント
+部室棟三階【回想バトル】,Card/Circle_master,回想バトル,$$Circle_挑戦回数,>=,1

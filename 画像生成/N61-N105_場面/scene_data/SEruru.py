@@ -1,0 +1,127 @@
+# N75 淫魔化したギルド（SEruru）画像データ。登場人物は全員20歳以上。全員女性。台帳・同意書・証文・黒板は文字なし。
+# 本編キャラ（サキュバスエルル・道化師・淫魔化シャドー・サキュバスコノハ）は本編の立ち絵を見ずに決めた見た目。
+#  サキュバスエルル＝N62 Eruru.py のエルル（金髪ツインテール・赤いリボン・紫の瞳）に、角・翼・尻尾・下腹部の淫紋を足した（魔眼の時だけ瞳が紅く光る）。
+#  サキュバスコノハ＝N61 Konoha.py の師匠（黒髪ロングの低いポニーテール・紅の瞳・紫の羽織）に、角・翼・尻尾を足した（胸は本文どおり以前より大きく）。
+#  主人公の下腹には、エルルが一画ずつ描き足す淫紋（桃色に光る線）がある。
+ST = {"pen": "strapon"}      # サキュバスコノハ（弟子の卒業のペニバン）
+CREST = "a glowing pink lewd crest tattoo on his lower belly"
+
+DATA = {
+ "code": "SEruru",
+ "world": "adventurers guild building taken over by succubi at night, stone walls, wooden floors, pink magic lamps, faint pink haze, detailed background",
+ "bg": "underground passage beneath an adventurers guild, stone walls and arched ceiling, pink magic lamps, faint glowing pink crest patterns on the floor stones",
+ "josou": None,
+ "chars": {
+   "m": {"type": "woman", "jp": "サキュバスエルル", "canon": True, "canon_img": "F27.png",
+         "tags": "adult woman, mature female, mature face, 20 years old, adult proportions, beautiful detailed eyes, long legs, succubus, blonde hair, long hair, twintails, red hair ribbons, violet eyes, large curved black demon horns, black bat wings, demon tail, glowing pink womb tattoo on her bare lower belly, black and crimson succubus outfit, black corset top, detached sleeves, black thighhighs, smug seductive smirk, huge breasts",
+         "name": "the blonde-twintailed succubus with black horns",
+         "pose": "wings spread, one hand on her hip, the other fingertip tracing the womb tattoo on her belly, smug seductive smirk, looking down at viewer"},
+   "e1": {"type": "woman", "jp": "道化師", "canon": True, "canon_img": "EU57.png",
+          "tags": "adult woman, mature female, mature face, 24 years old, adult proportions, beautiful detailed eyes, long legs, jester, pink hair, twintails, gold eyes, harlequin outfit with red and black diamond pattern, jester hat with bells, frilled collar, white gloves, playful grin, large breasts",
+          "name": "the pink-haired jester in a harlequin outfit",
+          "pose": "bowing theatrically with one hand spread wide and the other hand at her lips as if whispering a secret, playful grin, looking at viewer"},
+   "e2": {"type": "woman", "jp": "淫魔化シャドー", "canon": True, "canon_img": "EU72.png",
+          "tags": "adult woman, mature female, mature face, 22 years old, adult proportions, beautiful detailed eyes, long legs, shadow succubus, dusky grey skin, dark purple hair, short messy hair, glowing yellow eyes, small demon horns, black skin-tight shadow bodysuit whose edges melt into black smoke, curvy body, cheerful grin, huge breasts",
+          "name": "the grey-skinned shadow succubus",
+          "pose": "arms spread wide as if asking for a hug, black smoke curling from her feet, cheerful grin, looking at viewer"},
+   "e3": {"type": "woman", "jp": "受付嬢 リネット",
+          "tags": "adult woman, mature female, mature face, 24 years old, adult proportions, beautiful detailed eyes, long legs, chestnut hair, updo, red eyes, guild receptionist uniform, white blouse, black vest, red ribbon tie, black pencil skirt, small demon horns, thin demon tail, polite business smile, large breasts",
+          "name": "the chestnut-haired receptionist with small horns",
+          "pose": "standing with hands folded in front of her, slight polite bow, business smile, demon tail curling behind her, looking at viewer"},
+   "boss": {"type": "woman", "jp": "サキュバスコノハ", "canon": True, "canon_img": "F31.png",
+            "tags": "adult woman, mature female, mature face, 25 years old, adult proportions, beautiful detailed eyes, long legs, tall, succubus, black hair, long hair, loose low ponytail, red eyes, curved black demon horns, black bat wings, demon tail, purple haori over a white kimono with a loose open collar, dark red obi, sorceress, mentor, bewitching smile, huge breasts",
+            "name": "the black-haired succubus mentor in a purple haori",
+            "pose": "one hand on her hip, the other raising a finger as if giving a lesson, wings half spread, bewitching big-sister smile, looking at viewer"},
+ },
+ "places": {
+   "underpass": "dead end of the underground passage beneath the guild, cold stone floor, arched stone ceiling, pink magic lamps",
+   "lounge":    "guild staff break room on the second floor, old worn sofa, tea cups, window at night",
+   "clinic":    "guild treatment room, examination bed with white sheets, potion shelves, long wooden bench, glass bottles",
+   "lobby":     "guild lobby on the first floor, quest boards covered with blank papers without text, wooden benches, lamplight",
+   "storage":   "dark supply storeroom in the guild basement, stacked wooden crates, thick shadows, a single faint lamp",
+   "counter":   "guild reception counter after closing, wooden counter with a small bell, lamps turned low, waiting bench, blank forms without text",
+   "training":  "guild training hall, worn training mats on the floor, wooden dummies, straw targets, lanterns",
+   "duel":      "dueling platform in the guild basement lit by pink magic lamps, stone table for card games",
+   "ritual":    "old ritual chamber in the guild basement, a large glowing pink magic circle drawn on the floor, candles",
+   "attic":     "guild attic archive, dusty shelves stacked with old rolled papers, small round window, dim light",
+   "office":    "guildmaster's office on the top floor, heavy wooden desk, tall leather chair, bookcases, night window",
+   "stage":     "small performers' stage in the guild tavern, red curtains, striped circus tent fabric, spotlight",
+   "inn":       "guest bedroom on the third floor of the guild, single bed with a pillow and blanket, curtains drawn",
+   "eruru_room": "the succubus's private bedroom in the guild, large bed with crimson sheets, pink lamp, mirror",
+   "mirror":    "mirror room in the guild basement, walls covered in tall mirrors, polished stone floor",
+   "bath":      "old bathhouse in the guild basement, steaming stone bath, wet tiles, white steam",
+   "canteen":   "guild dining hall at night, long wooden tables and benches, lamps turned low, blank blackboard without text",
+   "clocktower": "gear room of the guild clock tower, huge gears and deep overlapping shadows, dim light through a small window",
+   "meditation": "quiet meditation room facing the courtyard, low daybed with cushions, paper lamp, moonlight",
+ },
+ "atk": {
+   "m1": ("underpass", "he kneels on the stone floor, the succubus lifts his chin with one finger and stares into his face, her violet eyes glowing crimson, no other touch, his whole body frozen, trembling"),
+   "m2": ("lounge", "he sits on the old sofa, the succubus kisses him deeply, tongues, saliva trail, her fingertip drawing a new glowing line on " + CREST.replace("a glowing", "the glowing")),
+   "m3": ("clinic", "he sits on the examination bed, the succubus presses her palm on " + CREST.replace("a glowing", "the glowing") + " and pinches his nipple with her other hand, smug smirk, wings spread"),
+   "e1": ("lobby", "he slumps on the floor before the quest board, the jester kneels beside him and whispers a sweet breath into his ear with her hand cupped around her lips, no other touch, dazed"),
+   "e2": ("storage", "he sits among the crates, the shadow succubus hugs him tightly from the front, black shadows crawling up his legs and wrapping his body, soft darkness, cheerful grin"),
+   "e3": ("counter", "he stands at the reception counter, the receptionist leans over the counter and whispers into his ear with her lips at his ear, polite business smile, blank forms without text"),
+   "boss": ("training", "he lies on his back on the worn mat, the succubus mentor presses his face between her breasts and pinches both of his nipples, her wings folded around them"),
+ },
+ "atk_desc": {
+   "m1": "the succubus freezes him with her charming magic eyes.",
+   "m2": "the succubus draws a new line of the lewd crest with a kiss.",
+   "m3": "the succubus touches his crest and nipple as proof of servitude.",
+   "e1": "the jester whispers a charming breath into his ear.",
+   "e2": "the shadow succubus wraps him in her shadow embrace.",
+   "e3": "the receptionist whispers new rules into his ear.",
+   "boss": "the succubus mentor re-educates her disciple with her chest.",
+ },
+ "lose": {
+   # サキュバスエルル 技1（魔眼）
+   "btl_m1":     ("underpass", "he kneels on the cold stone floor, the succubus bends down holding his chin and stares into his face with glowing crimson eyes, no other touch, cum dribbling, " + CREST),
+   "onani_m1":   ("duel", "standing alone by the stone dueling table, sucking his own index finger, the other fingertip tracing the glowing lines of " + CREST.replace("a glowing", "the glowing") + ", penis untouched, the succubus watches from across the platform"),
+   "inochi_m1":  ("ritual", "he kneels in the middle of the glowing pink magic circle, the succubus lifts his chin and stares into his face with glowing crimson eyes, no other touch, cum on the circle, " + CREST),
+   "onedari_m1": ("mirror", "he sits on the polished floor before the tall mirrors, the succubus kneels in front of him holding his cheeks and stares into his face with glowing crimson eyes, cum dribbling, " + CREST),
+   # サキュバスエルル 技2（淫紋の口づけ）
+   "btl_m2":     ("lounge", "he lies back on the old sofa, the succubus bends down and kisses " + CREST.replace("a glowing", "the glowing") + ", her tongue drawing the last line, no hands on his penis, cum dribbling"),
+   "onani_m2":   ("attic", "standing alone between the dusty shelves, sucking two of his own fingers with his tongue wrapped around them, the other hand tracing " + CREST.replace("a glowing", "the glowing") + ", penis untouched, the succubus watches from the attic stairs"),
+   "inochi_m2":  ("clinic", "he sits on the long wooden bench with his tongue stuck out, the succubus holds his face and sucks his tongue in a deep kiss, saliva trail, " + CREST + " shining, cum dribbling"),
+   "onedari_m2": ("bath", "he leans against the edge of the steaming stone bath, the succubus leans over him kissing him deeply, tongues, saliva trail, " + CREST + ", white steam"),
+   # サキュバスエルル 技3（しもべの証・淫紋＋乳首）
+   "btl_m3":     ("clinic", "he sits on the examination bed, the succubus strokes " + CREST.replace("a glowing", "the glowing") + " with her palm and pinches his nipple with her other hand, cum on the white sheets, smug smirk"),
+   "onani_m3":   ("office", "standing alone before the heavy desk, one wet fingertip tracing " + CREST.replace("a glowing", "the glowing") + " and the other hand pinching his own nipple, penis untouched, the succubus watches from the tall leather chair"),
+   "inochi_m3":  ("eruru_room", "he lies on the crimson sheets, the succubus sits beside him stroking " + CREST.replace("a glowing", "the glowing") + " with her palm, his nipples stiff, no hands on his penis, cum dribbling"),
+   "onedari_m3": ("canteen", "he sits on a long bench, the succubus stands beside him stroking " + CREST.replace("a glowing", "the glowing") + " with her palm and pinching his nipple, cum dribbling, a blank blackboard without text"),
+   # 道化師（ごにょごにょ・魅了の吐息）
+   "btl_e1":     ("lobby", "he slumps against the quest board, the jester kneels close with her hand cupped around her lips, breathing a sweet whisper into his ear, no other touch, cum dribbling, " + CREST),
+   "onani_e1":   ("stage", "sitting alone on the edge of the stage, both palms cupped before his own mouth, whispering into them and breathing the air back in, dazed, penis untouched, the jester watches from behind the curtain"),
+   "inochi_e1":  ("stage", "he kneels on the stage, the jester whispers into his ear with a long sweet breath, a blank contract paper without text with a pink fingerprint beside him, cum dribbling, " + CREST),
+   "onedari_e1": ("stage", "he kneels under the spotlight in the striped tent, the jester bends to his ear breathing a long whisper, no other touch, his head swaying, cum on the stage, " + CREST),
+   # 淫魔化シャドー（影で包んで・ハグ）
+   "btl_e2":     ("storage", "he sits in the dark among the crates, the shadow succubus hugs him tightly and strokes his back, black shadows wrapping his legs and waist, no hands on his penis, cum dribbling, " + CREST),
+   "onani_e2":   ("inn", "curled up alone on the bed under a blanket pulled over his head, one hand stroking his own chest inside the blanket, penis untouched, the shadow succubus watches from the dark corner"),
+   "inochi_e2":  ("clocktower", "he sleeps in the deep shadow of the huge gears, the shadow succubus holds him in her arms, black shadows rising from the floor wrapping them both, cum dribbling, " + CREST),
+   "onedari_e2": ("clocktower", "he lies in the darkest corner, the shadow succubus hugs him from the front with his face on her chest, black smoke wrapping them like a blanket, cum dribbling, " + CREST),
+   # 受付嬢 リネット（受付の囁き・常識改変）
+   "btl_e3":     ("counter", "he kneels before the reception counter, the receptionist leans over the counter whispering his name into his ear, polite business smile, no hands on him, cum dribbling, " + CREST),
+   "onani_e3":   ("counter", "standing alone with both hands on the counter, mouthing the same words over and over, hips trembling, penis untouched, the receptionist watches from behind the counter far away"),
+   "inochi_e3":  ("counter", "he sits on the waiting bench, the receptionist bends to his ear whispering, a blank consent form without text and a pen on the bench, no hands on him, cum dribbling, " + CREST),
+   "onedari_e3": ("counter", "he clings to the small registration window, the receptionist leans out over the counter whispering his name into his ear, polite smile, his knees buckling, cum dribbling, " + CREST),
+   # サキュバスコノハ（師匠の再教育・ぱふぱふ＋乳首／弟子の卒業・ペニバン）
+   "btl_boss":   ("training", "he lies on his back on the worn mat, the succubus mentor presses his face between her breasts and pinches both of his nipples, her wings folded around them, cum on his belly, " + CREST),
+   "onani_boss": ("inn", "lying alone face down on the bed with his face buried in the pillow, pinching his own nipple under his chest, penis untouched, the succubus mentor watches from the doorway"),
+   "inochi_boss":("training", "from side, he lies on his back on the worn mat with legs lifted, the succubus mentor kneels between his legs pegging his anus with her strap-on, anal, pinching his nipple, his own penis separate, cum dribbling, " + CREST, ST),
+   "onedari_boss":("meditation", "from side, he lies on his back on the low daybed with legs lifted, the succubus mentor pegs his anus with her strap-on, anal, leaning forward to press her breasts onto his face, his own penis separate, cum dribbling", ST),
+ },
+ "lose_desc": "makes him a servant with a completed lewd crest in the succubus guild.",
+ "onanie": {
+   "master": ("duel", "standing, sucking his own index finger, the other fingertip tracing the glowing lines of " + CREST.replace("a glowing", "the glowing") + ", penis untouched"),
+   "e1": ("stage", "sitting, both palms cupped before his own mouth, whispering into them and breathing the air back in, dazed, penis untouched"),
+   "e2": ("inn", "curled up on the bed under a blanket over his head, stroking his own chest, penis untouched"),
+   "e3": ("counter", "standing with both hands on the counter, repeating words to himself, hips trembling, penis untouched"),
+   "boss": ("inn", "lying face down with his face buried in a pillow, pinching his own nipple, penis untouched"),
+ },
+ "magic": {
+   "1": ("m", "underpass", "holding out one palm as pink glowing energy wisps flow into it, licking her lips, wings spread, smug smirk"),
+   "2": (None, "office", "a single blank card without text glowing with pink light on the heavy desk, pink sparkles around it"),
+   "3": (None, "ritual", "a large glowing pink magic circle with heart-shaped crest patterns on the stone floor, candles around it, pink light rising"),
+   "4": ("m", "mirror", "close-up, leaning toward the viewer with her violet eyes glowing crimson, magic crest in her pupils, fingertip under her eye, seductive smirk"),
+   "5": (None, "underpass", "long underground stone passage stretching into pink-lit darkness, pink magic lamps along the walls, crest patterns glowing on the floor"),
+ },
+}

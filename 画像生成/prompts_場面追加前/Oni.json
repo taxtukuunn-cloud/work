@@ -1,0 +1,79 @@
+{
+ "Oni_master": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 33 years old, tall, long legs, both eyes clearly visible, oni, single horn, red hair, long hair, gold eyes, vermilion kimono, off shoulder, large red sake cup, tall, slender, cheerful grin, large breasts, standing, confident, looking down at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Oni_e1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 25 years old, both eyes clearly visible, oni, small horns, white hair, long hair, red eyes, white and vermilion kimono, sake bottle, sultry smile, large breasts, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Oni_e2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 21 years old, both eyes clearly visible, oni, small single horn, blonde hair, short hair, red eyes, short kimono, plum blossom pattern, barefoot, smug, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Oni_e3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 26 years old, both eyes clearly visible, oni, two horns, green hair, long hair, low ponytail, amber eyes, white brewer outfit, apron, calm smile, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Oni_boss": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 38 years old, tall, long legs, both eyes clearly visible, oni, two long horns, black hair, long hair, red eyes, black kimono, gold thorn pattern, gold sake cup, tall, mature, sultry, huge breasts, standing, confident, looking down at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Oni_bg": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, great hall of a mountain fortress, bonfires, rows of big sake barrels, vermilion sake cups and trays, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, 1girl, people",
+  "width": 1216,
+  "height": 832,
+  "rmbg": false
+ },
+ "Oni_magic_1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 33 years old, tall, long legs, both eyes clearly visible, oni, single horn, red hair, long hair, gold eyes, vermilion kimono, off shoulder, large red sake cup, tall, slender, cheerful grin, large breasts, drinking from a huge red sake cup in one gulp, looking at viewer, cowboy shot, great hall of a mountain fortress, bonfires, rows of big sake barrels, vermilion sake cups and trays, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Oni_magic_2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 25 years old, both eyes clearly visible, oni, small horns, white hair, long hair, red eyes, white and vermilion kimono, sake bottle, sultry smile, large breasts, pouring sake from a bottle, sultry smile, looking at viewer, cowboy shot, great hall of a mountain fortress, bonfires, rows of big sake barrels, vermilion sake cups and trays, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Oni_magic_3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 26 years old, both eyes clearly visible, oni, two horns, green hair, long hair, low ponytail, amber eyes, white brewer outfit, apron, calm smile, floating orange will-o-wisps around a banquet, looking at viewer, cowboy shot, great hall of a mountain fortress, bonfires, rows of big sake barrels, vermilion sake cups and trays, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Oni_magic_4": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 21 years old, both eyes clearly visible, oni, small single horn, blonde hair, short hair, red eyes, short kimono, plum blossom pattern, barefoot, smug, standing on top of a sake barrel, smug, looking at viewer, cowboy shot, great hall of a mountain fortress, bonfires, rows of big sake barrels, vermilion sake cups and trays, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Oni_magic_5": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 38 years old, tall, long legs, both eyes clearly visible, oni, two long horns, black hair, long hair, red eyes, black kimono, gold thorn pattern, gold sake cup, tall, mature, sultry, huge breasts, endless banquet, raising a gold sake cup, looking at viewer, cowboy shot, great hall of a mountain fortress, bonfires, rows of big sake barrels, vermilion sake cups and trays, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ }
+}

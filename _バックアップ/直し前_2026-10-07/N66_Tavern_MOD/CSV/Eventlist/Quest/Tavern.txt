@@ -1,0 +1,2 @@
+妖精の酒場（ミレーヌ）,Card/Tavern_master,クエストイベント
+妖精の酒場【回想バトル】,Card/Tavern_master,回想バトル,$$Tavern_挑戦回数,>=,1

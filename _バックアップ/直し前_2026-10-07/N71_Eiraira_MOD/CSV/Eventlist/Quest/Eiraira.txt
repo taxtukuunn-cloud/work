@@ -1,0 +1,2 @@
+学園の特別講義（エイライラ）,Card/Eiraira_master,クエストイベント
+学園の特別講義【回想バトル】,Card/Eiraira_master,回想バトル,$$Eiraira_挑戦回数,>=,1

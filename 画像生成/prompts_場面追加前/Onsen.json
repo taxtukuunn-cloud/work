@@ -1,0 +1,79 @@
+{
+ "Onsen_master": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 34 years old, tall, long legs, both eyes clearly visible, black hair, updo, red eyes, wisteria kimono, white apron, okami, gentle dominant smile, large breasts, standing, confident, looking down at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Onsen_e1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 22 years old, both eyes clearly visible, brown hair, short bob, amber eyes, green kimono, tasuki, nakai, cheerful, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Onsen_e2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 29 years old, both eyes clearly visible, pink hair, tied back, green eyes, white samue, long fingers, expressionless, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Onsen_e3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 24 years old, both eyes clearly visible, blonde hair, short hair, tenugui headband, brown eyes, grey happi coat, barefoot, smirk, standing, looking at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Onsen_boss": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 38 years old, tall, long legs, both eyes clearly visible, white hair, long hair, updo, gold eyes, black tomesode kimono, gold obi, tall, mature, large breasts, standing, confident, looking down at viewer, full body, simple background, white background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": true
+ },
+ "Onsen_bg": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, rocky open-air hot spring with rising steam, cypress indoor bath, paper lanterns, japanese inn at night, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, 1girl, people",
+  "width": 1216,
+  "height": 832,
+  "rmbg": false
+ },
+ "Onsen_magic_1": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 34 years old, tall, long legs, both eyes clearly visible, black hair, updo, red eyes, wisteria kimono, white apron, okami, gentle dominant smile, large breasts, pouring hot spring water from a wooden bucket, steam, looking at viewer, cowboy shot, rocky open-air hot spring with rising steam, cypress indoor bath, paper lanterns, japanese inn at night, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Onsen_magic_2": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 29 years old, both eyes clearly visible, pink hair, tied back, green eyes, white samue, long fingers, expressionless, fanning herself with a round fan, dizzy steam around, flushed, looking at viewer, cowboy shot, rocky open-air hot spring with rising steam, cypress indoor bath, paper lanterns, japanese inn at night, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Onsen_magic_3": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 22 years old, both eyes clearly visible, brown hair, short bob, amber eyes, green kimono, tasuki, nakai, cheerful, holding up a paper lantern at the inn entrance, welcoming gesture, looking at viewer, cowboy shot, rocky open-air hot spring with rising steam, cypress indoor bath, paper lanterns, japanese inn at night, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Onsen_magic_4": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1boy, adult male, otoko no ko, trap, very feminine, beautiful feminine face, pretty face, long eyelashes, soft jawline, light makeup, glossy lips, narrow shoulders, slender, elegant adult beauty, adult proportions, long legs, androgynous, delicate features, slim waist, flat chest, no breasts, 24 years old, both eyes clearly visible, blonde hair, short hair, tenugui headband, brown eyes, grey happi coat, barefoot, smirk, thick steam cloud rising around him, sly smirk, looking at viewer, cowboy shot, rocky open-air hot spring with rising steam, cypress indoor bath, paper lanterns, japanese inn at night, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, muscular, abs, pectorals, bara, hairy, broad shoulders, manly, masculine face, square jaw, thick eyebrows, facial hair, stubble, breasts, large breasts, medium breasts, cleavage, 1girl, female, woman, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ },
+ "Onsen_magic_5": {
+  "positive": "masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, adult woman, mature female, beautiful detailed eyes, adult proportions, 38 years old, tall, long legs, both eyes clearly visible, white hair, long hair, updo, gold eyes, black tomesode kimono, gold obi, tall, mature, large breasts, sitting at the edge of a private outdoor bath, beckoning, moon, looking at viewer, cowboy shot, rocky open-air hot spring with rising steam, cypress indoor bath, paper lanterns, japanese inn at night, detailed background",
+  "negative": "lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, numbers, child, loli, shota, young, teenage, underage, childlike, child body, youthful body, baby face, round face, chubby cheeks, short limbs, big head, chibi, small body, petite, young boy, young girl, kid, blood, gore, injury, nude, nipples, nsfw, extra arms, bad feet, extra toes, multiple views, twins, same face, 1boy, male, muscular, abs, masculine face, facial hair, extra legs, three legs",
+  "width": 832,
+  "height": 1216,
+  "rmbg": false
+ }
+}

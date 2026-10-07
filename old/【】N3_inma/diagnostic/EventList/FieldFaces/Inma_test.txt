@@ -1,0 +1,2 @@
+default
+F15.png,Card/Inma_test,フィールドイベント,場所,==,&&場所モルゲン,

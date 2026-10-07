@@ -1,0 +1,2 @@
+路地裏の猫使い（ネネコ）,Card/Neneko_master,クエストイベント
+路地裏の猫使い【回想バトル】,Card/Neneko_master,回想バトル,$$Neneko_挑戦回数,>=,1

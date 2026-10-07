@@ -1,0 +1,2 @@
+草原の騎馬の民（族長　サラントヤ）,Card/Centaur_master,クエストイベント
+草原の騎馬の民【回想バトル】,Card/Centaur_master,回想バトル,$$Centaur_挑戦回数,>=,1

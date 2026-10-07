@@ -1,0 +1,2 @@
+豪華客船のカジノ（オーナー　ヴィクトリア）,Card/Casino_master,クエストイベント
+豪華客船のカジノ【回想バトル】,Card/Casino_master,回想バトル,$$Casino_挑戦回数,>=,1

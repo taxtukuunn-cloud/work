@@ -1,0 +1,59 @@
+{
+  "note": "使う画像モデル。wai＝waiIllustriousSDXL_v170（SDXL・出力 <MOD>_WAI）／anima＝waiANIMA_v10Base10（従来・sdduel LoRAあり・出力 <MOD>_自作）。wai の中の値で上書きできる。artist に好みの絵師名タグ（1〜2個）を入れると先頭に付く。loras は SDXL 用の LoRA（重ねる順）。strength を 0 にすると外れる",
+  "model": "wai",
+  "wai": {
+    "steps": 28,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "clip_skip": -2,
+    "style_pos": "anime screencap, anime coloring, cel shading, flat color",
+    "artist": "",
+    "style_neg": "realistic, photorealistic, 3d, semi-realistic, lips, nose shine, detailed skin, skin texture",
+    "neg_remove": [
+      "flat color",
+      "thick outline"
+    ],
+    "loras": [
+      {
+        "lora_name": "anime_screencap-IL-NOOB_v3.safetensors",
+        "strength": 0.8,
+        "clip_strength": 0.8,
+        "trigger": ""
+      },
+      {
+        "lora_name": "sdduel_style_xl-000008.safetensors",
+        "strength": 0.5,
+        "clip_strength": 0.5,
+        "trigger": "sdduel style",
+        "enabled": true,
+        "memo": "本編の絵柄（SDXL用）。2026-09-28 試しに e08・強さ0.5。戻すときは enabled を false に"
+      },
+      {
+        "lora_name": "sdduel_hero_xl-000008.safetensors",
+        "strength": 0.8,
+        "clip_strength": 0.8,
+        "trigger": "sdduel_hero",
+        "when_text_contains": "navy",
+        "role": "hero",
+        "enabled": false,
+        "memo": "主人公LoRA（SDXL用）。2026-09-28 停止：学習画像が「15歳・teenage boy」の指定で撮られていたため使わない。成人の指定で H1 から撮り直し→学習し直すまで enabled は false のまま",
+        "scene_strength": 0
+      }
+    ]
+  },
+  "hero_face": {
+    "show": true,
+    "eyes": "aqua eyes",
+    "bangs": "short bangs above the eyes",
+    "memo": "主人公の顔を描く（2026-09-28）。show を false にすると旧方式（前髪で目を隠す）。build／build_neg は体つきの細さ（ごつい時は足す・細すぎる時は減らす）。skin／skin_neg は肌の色（白すぎる時は skin を強める、焼けすぎる時は弱める）",
+    "build": "bishounen, delicate features, slender, narrow shoulders, thin arms, slim waist",
+    "build_neg": "broad shoulders on the navy-haired man, thick arms, thick neck, manly, masculine build, stocky, square jaw",
+    "skin": "natural healthy skin tone, warm skin color",
+    "skin_neg": "pale skin on the navy-haired man, pasty white skin on the navy-haired man"
+  },
+  "role_fix": true,
+  "role_fix_memo": "相手が攻め・主人公が受けになるよう、場面の先頭に femdom 等の短いタグを入れる（2026-09-28）。false で外す",
+  "solo_onanie": true,
+  "solo_onanie_memo": "オナニー場面は主人公ひとりの構図（相手が遠くで見ている構図をやめる・2026-09-28）。false で旧方式"
+}

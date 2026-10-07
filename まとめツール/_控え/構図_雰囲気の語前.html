@@ -1,0 +1,924 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>構図の元絵と下書き</title>
+<style>
+:root{--bg:#f4f2ee;--card:#fff;--ink:#22242a;--sub:#6b6f7a;--line:#dcd8d0;--acc:#8a3b5c;--acc2:#f3e4ea;--ok:#2f7d4f;--ng:#b3402e;--warn:#a86a00;--blue:#2856c8;--red:#c8323a;--mono:Consolas,"BIZ UDGothic",monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181c;--card:#212329;--ink:#e8e6e1;--sub:#9a9eaa;--line:#363943;--acc:#e08fb0;--acc2:#3a2530;--ok:#6cc48c;--ng:#f08a78;--warn:#e0b060;--blue:#7ea2ff;--red:#ff8a8a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 "Yu Gothic UI","Meiryo",sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);padding:6px 12px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.tabs{display:flex;gap:2px;flex-wrap:wrap}
+.tabs button{border:1px solid transparent;background:none;color:var(--sub);padding:4px 10px;border-radius:6px}
+.tabs button.on{background:var(--acc2);color:var(--acc);border-color:var(--acc);font-weight:600}
+.sp{flex:1}
+.chip{font-size:12px;padding:1px 9px;border-radius:99px;border:1px solid var(--line);color:var(--sub);white-space:nowrap}
+.chip.ok{color:var(--ok);border-color:var(--ok)}.chip.ng{color:var(--ng);border-color:var(--ng)}.chip.run{color:var(--warn);border-color:var(--warn)}
+main{padding:12px;max-width:1500px;margin:0 auto}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:12px}
+h2{font-size:15px;margin:0 0 8px}h3{font-size:13px;margin:12px 0 6px;color:var(--sub)}
+button{font:inherit;font-size:13px;padding:4px 10px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+button:hover{border-color:var(--acc)}button.pri{background:var(--acc);color:#fff;border-color:var(--acc);font-weight:600}
+button:disabled{opacity:.45;cursor:default}
+button.sm{padding:1px 7px;font-size:12px}
+td button{white-space:nowrap}
+input,select,textarea{font:inherit;font-size:13px;padding:3px 7px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);max-width:100%}
+textarea{width:100%;min-height:60px}
+.row{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:5px 0}
+.note{color:var(--sub);font-size:12.5px}
+.warnbox{border:1px solid var(--warn);color:var(--warn);border-radius:8px;padding:6px 10px;font-size:13px;margin:6px 0}
+.ngbox{border:1px solid var(--ng);color:var(--ng);border-radius:8px;padding:6px 10px;font-size:13px;margin:6px 0}
+.okc{color:var(--ok)}.ngc{color:var(--ng)}.warnc{color:var(--warn)}
+.hide{display:none!important}
+.mono{font-family:var(--mono);font-size:12.5px}
+table{border-collapse:collapse;width:100%}
+th,td{padding:3px 7px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:12px;color:var(--sub);position:sticky;top:0;background:var(--card);cursor:pointer;white-space:nowrap}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{max-height:520px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.grid.big{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
+#cGrid.mmode img{pointer-events:none}#cGrid.mmode .cell:has(.mck:checked){outline:3px solid var(--ng)}
+.cell{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--bg);font-size:12px;position:relative}
+.cell.sel{outline:3px solid var(--acc)}
+.cell img{width:100%;display:block;aspect-ratio:832/1216;object-fit:contain;background:#000;cursor:zoom-in}
+.cell .nm{padding:2px 6px;font-family:var(--mono);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cell .rd{padding:0 6px 3px;color:var(--sub);font-size:11.5px;line-height:1.35}
+.cell .bt{display:flex;gap:3px;flex-wrap:wrap;padding:3px 5px 5px}
+.tag{display:inline-block;font-size:11px;padding:0 6px;border-radius:99px;border:1px solid var(--line);margin:1px 2px 1px 0;white-space:nowrap}
+.tag.ng{color:var(--ng);border-color:var(--ng)}.tag.warn{color:var(--warn);border-color:var(--warn)}.tag.ok{color:var(--ok);border-color:var(--ok)}
+.st{position:absolute;top:3px;left:3px;font-size:11px;padding:0 6px;border-radius:99px;background:rgba(0,0,0,.7);color:#fff}
+body.blur img.c{filter:blur(26px) saturate(.5)}
+.two{display:grid;grid-template-columns:minmax(300px,1fr) minmax(380px,1.25fr);gap:12px;align-items:start}
+.three{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(360px,1.4fr) 300px;gap:12px;align-items:start}
+@media (max-width:1200px){.three{grid-template-columns:1fr 1.3fr}.three>.crit{grid-column:1/-1}}
+@media (max-width:860px){.two,.three{grid-template-columns:1fr}}
+.crit{font-size:12.5px;line-height:1.55}
+.crit h4{margin:8px 0 2px;font-size:12.5px}
+.crit ul{margin:0;padding-left:18px}
+.bigimg{position:relative;display:inline-block;max-width:100%;user-select:none;touch-action:none}
+.bigimg img{max-width:100%;max-height:62vh;display:block;background:#000}
+.bigimg .box{position:absolute;border:2px dashed #ff3b6b;background:rgba(255,59,107,.12);pointer-events:none}
+.name{font:600 17px var(--mono);color:var(--acc);word-break:break-all}
+.items{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px 10px}
+.items label{display:flex;flex-direction:column;font-size:12px;color:var(--sub)}
+.strip{display:flex;gap:4px;overflow-x:auto}
+.strip figure{margin:0;flex:0 0 120px}
+.strip figcaption{font-size:11px;color:var(--sub);text-align:center}
+.strip img{width:120px;aspect-ratio:832/1216;object-fit:contain;background:#000;cursor:zoom-in;display:block}
+.strip .none{width:120px;aspect-ratio:832/1216;display:flex;align-items:center;justify-content:center;color:var(--sub);border:1px dashed var(--line);font-size:11px}
+.scene{display:grid;grid-template-columns:1fr;gap:6px;border-top:1px solid var(--line);padding:8px 0}
+.scene>*{min-width:0}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:1px 10px;font-size:12.5px}
+.kv b{color:var(--sub);font-weight:600;white-space:nowrap}
+dialog{border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);width:min(1100px,96vw);max-height:92vh;padding:0}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+.dh{position:sticky;top:0;background:var(--card);padding:8px 14px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap;z-index:2}
+.db{padding:10px 14px}
+#lb{width:auto;max-width:96vw;background:#000;border:0}
+#lb img{max-width:94vw;max-height:88vh;display:block}
+#toast{position:fixed;top:50px;right:14px;background:var(--ink);color:var(--bg);padding:7px 13px;border-radius:8px;display:none;z-index:30;max-width:520px;white-space:pre-wrap}
+.line{font-size:13px;padding:1px 0}
+.line .k{color:var(--sub);font-size:11.5px;margin-right:6px}
+.line.here{background:var(--acc2);font-weight:600}
+.guide{outline:4px solid #ff2d55!important;outline-offset:2px;position:relative}
+.gtip{position:absolute;z-index:40;background:#ff2d55;color:#fff;font-weight:700;padding:3px 9px;border-radius:6px;font-size:13px;white-space:nowrap;pointer-events:none}
+.pager{margin-top:8px;text-align:center}
+.cnt{display:flex;gap:8px;flex-wrap:wrap}
+.cnt div{border:1px solid var(--line);border-radius:8px;padding:6px 12px;min-width:120px}
+.cnt b{display:block;font-size:20px}
+.cnt span{font-size:12px;color:var(--sub)}
+</style>
+</head>
+<body>
+<header>
+  <div class="tabs" id="tabs">
+    <button data-t="pick" class="on">採用</button>
+    <button data-t="new">新しい構図</button>
+    <button data-t="region">範囲の確認</button>
+    <button data-t="dc">奥行きの点検</button>
+    <button data-t="tr">下書きの項目</button>
+    <button data-t="reg">構図の登録</button>
+    <button data-t="check">確認撮影</button>
+    <button data-t="use">当たり具合</button>
+    <button data-t="assign">MODごとの割り当て</button>
+    <button data-t="names">構図名と語</button>
+    <button data-t="memo">メモ・予定</button>
+    <button data-t="bak">model.json の控え</button>
+  </div>
+  <span class="sp"></span>
+  <button id="bWords" onclick="showWords()">語の早見表</button>
+  <label class="note"><input type="checkbox" id="blur"> 絵をぼかす</label>
+  <span class="chip" id="cBusy">…</span>
+</header>
+<div id="toast"></div>
+<main>
+<div id="testbar" class="warnbox hide">試しの起動です（--test）。書き込みは まとめツール\_試し\ の写しに入り、本物の表と model.json は変わりません。作業（撮影・下見など）は動きません。</div>
+
+<!-- ======================= 採用（A1・A6・A2・A5） ======================= -->
+<div id="t-pick">
+  <div class="three">
+    <section id="candBox">
+      <h2>元絵の候補</h2>
+      <div class="row">
+        <select id="cState"><option value="未定">未定</option><option value="採用（取り込み待ち）">採用（取り込み待ち）</option><option value="新しい構図">新しい構図</option><option value="見送り" label="不採用（見送り）">見送り</option><option value="取り込み済み">取り込み済み</option><option value="">全部</option></select>
+        <input id="cQ" placeholder="名前で絞り込む" size="14">
+        <select id="cSort"><option value="new">新しく置いた順</option><option value="num">番号順</option></select>
+      </div>
+      <div class="note" id="cSum"></div>
+      <div class="warnbox" style="font-size:12px">「① 画像」タブの「候補を整理する」は、c で始まらない名前の絵（m・n・x で始まる絵）の名前を付け替えます。押す前に Claude に相談してください（この画面で決めた採用が外れることがあります）。</div>
+      <div class="row"><label><input type="checkbox" id="mOn" onchange="MSEL.clear();drawCands()"> まとめて選ぶ</label>
+        <span id="mBox" class="hide"><button class="sm" onclick="mAll()">表示中を全部印</button><button class="sm" onclick="MSEL.clear();drawCands()">印を消す</button>
+        <button class="sm" onclick="mReject()">印の絵を不採用（<b id="mN">0</b>）</button></span></div>
+      <div class="grid" id="cGrid"></div>
+      <div class="pager"><button id="cMore" onclick="cPage++;drawCands()">もっと見る</button></div>
+    </section>
+
+    <section id="pickBox">
+      <h2>選んだ絵を決める</h2>
+      <div id="pNone" class="note">左の候補から絵を1枚選んでください。</div>
+      <div id="pBody" class="hide">
+        <div class="kv" id="pInfo"></div>
+        <div class="row">
+          <div class="bigimg" id="pBig"><img id="pImg" class="c" draggable="false"><div class="box hide" id="pBox"></div></div>
+        </div>
+        <div class="row note">絵の上をなぞると、切り抜く範囲を選べます。</div>
+        <div class="row" id="cropRow"><label><input type="checkbox" id="pFlip"> 左右反転</label>
+          <button onclick="cropClear()">範囲を消す</button><button onclick="cropMake()" id="bCrop">切り抜き・反転した写しを作る</button>
+          <span class="note" id="pCropTxt"></span></div>
+        <div class="row"><input id="pMemo" placeholder="判定のメモ（1行。採用・不採用の理由）" style="flex:1;min-width:220px"></div>
+
+        <h3 id="sHead" style="scroll-margin-top:60px">1. 見本から選ぶ（「これと同じ形」） <button class="sm keep" onclick="$('pInfo').scrollIntoView({behavior:'smooth',block:'center'})">▲ 選んだ絵に戻る</button></h3>
+        <div class="row"><img id="sSelThumb" class="c" style="max-height:220px;max-width:220px;border:1px solid var(--line);border-radius:6px;cursor:zoom-in" title="選んでいる絵（押すと大きく）"><span class="note">← 選んでいる絵。この絵と同じ形の見本を下から選びます。</span><span class="sp"></span><button onclick="decide('見送り')">この絵は不採用</button></div>
+        <div class="row">
+          <input id="sQ" placeholder="構図名・読みで絞り込む" size="16">
+          <select id="sTech"></select><select id="sPos"></select><select id="sView"></select>
+          <label class="note"><input type="checkbox" id="sReg" checked> 登録済みだけ</label>
+          <label class="note"><input type="checkbox" id="sDepth"> 見本を白黒で出す</label>
+          <select id="sSort"><option value="sim">似ている順</option><option value="name">名前の順</option></select>
+        </div>
+        <div class="note" id="sSimNote"></div>
+        <div class="grid" id="sGrid" style="max-height:520px;overflow:auto"></div>
+        <div class="pager"><button id="sMore" onclick="sPage++;drawSamples()">もっと見る</button></div>
+
+        <h3>2. 項目を選んで名前を作る（見本に合う形が無いとき）</h3>
+        <div class="items" id="bItems"></div>
+        <div class="row">名前：<span class="name" id="bName">—</span></div>
+        <div class="row note" id="bRead"></div>
+        <div id="bSame"></div>
+        <div class="row" id="bBtns"></div>
+        <div class="row note">選択肢に無い語は <button class="sm" onclick="tab('names')">構図名と語</button> のタブで足せます。</div>
+
+        <h3>3. そのほか</h3>
+        <div class="row">
+          <button onclick="decide('見送り')">不採用（見送り）</button>
+          <button onclick="markNew()">「新しい構図」に分ける</button>
+          <input id="pNewName" placeholder="仮の名前（空欄でよい）" size="16">
+          <button onclick="decide('')">未定に戻す</button>
+        </div>
+        <div class="note">決めた内容は、撮影が終わってから「① 画像」タブの「元絵を採用する」を押すと取り込まれます（奥行きと範囲もそこで作られます）。撮影中は押さないでください。</div>
+      </div>
+    </section>
+
+    <section class="crit" id="critBox">
+      <h2>判定の基準</h2>
+      <h4 class="okc">通す絵</h4>
+      <ul><li>相手が画面の主役で、大人の体つき（顔ではなく体で見る）</li><li>主人公が映らない目線の絵か、映っていても相手より小さいか同じくらい</li><li>2人の体がはっきり分かれて見える</li><li>主人公の顔が写っている（主人公目線の構図は除く）</li><li>裸の場面用なら、主人公にあたる人物が裸</li><li>長辺 800px 以上</li></ul>
+      <h4 class="ngc">外す絵</h4>
+      <ul><li>受け側が筋肉質で大柄。受け側が女性の体に見える。男側が相手より大柄</li><li>主人公の体が画面の真ん中を占める。主人公の頭が隠れる</li><li>1人だけの絵。接写（主人公目線のキスだけは可）。体が絡んで読めない絵</li><li>敵上位と逆の体勢</li><li>250〜500px の小さい絵</li></ul>
+      <h4>主人公目線のキスを通す条件</h4>
+      <ul><li>相手が大人の顔つき。見ている側の手が相手の顔を包んでいない。相手のほうから迫る形</li></ul>
+      <h4>幼さの見方の注意</h4>
+      <ul><li>主人公目線や寄りの絵では、遠近で頭が大きく見える。頭の大きさだけで幼いと決めない</li><li>真横からなど、カメラから同じ距離の絵で体が小さいものは外す</li></ul>
+      <h4>奥行きの点検で見ること</h4>
+      <ul><li>2人の体が別々の形として読めるか</li><li>窓枠・黒い余白・小物・線が形として残っていないか</li><li>頭が切れていないか</li><li>翼・尻尾・触手・大きな小物が無いか</li></ul>
+    </section>
+  </div>
+</div>
+
+<!-- ======================= 新しい構図（A2） ======================= -->
+<div id="t-new" class="hide">
+  <section>
+    <h2>「新しい構図」に分けた絵</h2>
+    <div class="note">どの見本にも合わない絵です。ここに入れた絵は登録しません。あとでまとめて、名前と当てる場面を決めます。</div>
+    <div class="grid big" id="nGrid"></div>
+  </section>
+  <section>
+    <h2>取り込み済みで、まだ登録していない構図</h2>
+    <div class="note">元絵と白黒の下書きはできていますが、model.json に登録していないので撮影には使われません。登録は撮影が終わってから（段階B）。</div>
+    <div class="row"><input id="uQ" placeholder="絞り込む" size="16"><label class="note"><input type="checkbox" id="uDepth"> 白黒で出す</label></div>
+    <div class="grid" id="uGrid"></div>
+  </section>
+</div>
+
+<!-- ======================= 範囲の確認（A3） ======================= -->
+<div id="t-region" class="hide">
+  <section>
+    <h2>人物の範囲の確認</h2>
+    <div class="note"><b style="color:var(--blue)">青＝主人公</b>／<b style="color:var(--red)">赤＝相手</b>。違っていたらボタンで直します。直した内容は、撮影が終わってから「直した分の範囲を作り直す」を押すと絵に反映されます。</div>
+    <div class="note">手で囲む＝顔がうまく見つからない絵（背中向き・顔が隠れている・相手が2人など）を、主人公・相手1・相手2 を自分で囲んで決める。顔の検出より優先される。<span style="color:#e08a00">橙＝相手2</span>。</div>
+    <div class="note">入れ替え＝青と赤が逆。主人公なし＝主人公が写らない絵（主人公目線など）。使わない＝範囲を作らず、白黒の下書きだけで撮る。</div>
+    <div class="row">
+      <select id="rRes"><option value="">結果：全部</option><option value="要確認">判定あいまい・要確認</option><option value="OK">OK</option><option value="相手だけ">相手だけ</option><option value="顔が見つからない">顔が見つからない</option><option value="顔が1つだけ">顔が1つだけ（男）</option><option value="直す">直した絵</option><option value="未反映">直してまだ反映していない</option><option value="手">手で囲んだ絵</option></select>
+      <input id="rQ" placeholder="名前で絞り込む" size="18">
+      <label class="note"><input type="checkbox" id="rReg"> 登録済みの構図だけ</label>
+      <label class="note"><input type="checkbox" id="rEx"> 外した下書きも出す</label>
+      <input id="rWhy" placeholder="直す理由（メモ・1行）" size="22">
+      <span class="sp"></span>
+      <span class="note" id="rPend"></span><button id="bRemake" onclick="remake()">直した分の範囲を作り直す</button>
+    </div>
+    <div class="grid big" id="rGrid"></div>
+    <div class="pager"><button id="rMore" onclick="rPage++;drawRegions()">もっと見る</button></div>
+  </section>
+</div>
+
+<!-- ======================= 奥行きの点検（B7） ======================= -->
+<div id="t-dc" class="hide">
+  <section>
+    <h2>白黒の下書き（奥行き）の点検</h2>
+    <div class="note">全部を目で見なくて済むように、怪しい下書きにだけ印を付けてあります。<b>計算</b>＝頭が端で切れている・黒い余白・長い直線（毎回同じ結果）。<b>目</b>＝Claude が一覧を見て付けた印（形が読めない・小物や線・1人だけ・翼や尻尾など。小さい絵で見たので確かではありません）。
+      印が無い絵が必ず大丈夫とは限りません。最後は確認撮影で確かめます。白黒からは、どちらが主人公か・筋肉質か・服の有無・技の種類は決めません（元の絵で決める）。</div>
+    <div class="row">
+      <select id="dKind"><option value="">印：全部</option><option>頭が上の端で切れている</option><option>頭が横の端で切れている</option><option>黒い余白が残っている</option><option>長い直線が残っている</option><option>形が読めない</option><option>小物や線が残っている</option><option>1人だけ</option><option>翼・尻尾・触手など</option></select>
+      <select id="dHow"><option value="">見つけ方：全部</option><option>計算</option><option>目</option></select>
+      <select id="dVer"><option value="未定">判定：まだ</option><option value="">判定：全部</option><option>問題なし</option><option>外す</option></select>
+      <input id="dQ" placeholder="名前で絞り込む" size="16">
+      <label class="note"><input type="checkbox" id="dEx"> 外した下書きも出す</label>
+      <label class="note"><input type="checkbox" id="dSrc"> 元絵も出す</label>
+      <span class="sp"></span><span class="note" id="dSum"></span><button onclick="dcRun()">点検をやり直す</button>
+    </div>
+    <div class="grid big" id="dGrid"></div>
+    <div class="pager"><button id="dMore" onclick="dPage++;drawDc()">もっと見る</button></div>
+  </section>
+</div>
+
+<!-- ======================= 下書きの項目（B8） ======================= -->
+<div id="t-tr" class="hide">
+  <section>
+    <h2>相手の種類で下書きを当て分ける</h2>
+    <div id="tSwitch"></div>
+    <div class="note">入れると：男の娘の場面には、胸が「あり」の下書きと胸を使う構図を当てません。女性・NH の場面には、胸が「平ら」の下書きを当てません。人の相手には翼・尻尾などのある下書きを当てず、翼などのある相手には同じ物のある下書きを優先します。
+      今の選び方で合っている場面はそのまま、合わない場面だけ替わります。合う下書きが1枚も無いときは替えません（下書きなしにはしません）。</div>
+    <div id="tPlan"></div>
+  </section>
+  <section>
+    <h2>下書きごとの項目</h2>
+    <div class="note">最初の印は Claude が白黒の一覧を見て付けたものです（確かではありません）。絵を見て直し、「保存」を押すと「確かめた」になります。</div>
+    <div class="note">「WD14」は、元の絵に WD14 Tagger をかけた案です（翼・尻尾・角などは Claude の目の印より多く見つけます。ラミアの胴を尻尾と読むなど、間違いもあります。胸は絵の中の胸の大きさで、白黒の下書きに写るかどうかは見ていません）。</div>
+    <div class="row"><button class="needidle" onclick="post('wd_run',{})">WD14 をかける（新しい絵だけ）</button>
+      <button onclick="wdAll()">まだ確かめていない下書きに WD14 の付属物を足す</button>
+      <label class="note"><input type="checkbox" id="tDiff"> WD14 と付属物が違う下書きだけ</label></div>
+    <div class="row">
+      <select id="tChest"><option value="">胸：全部</option><option>平ら</option><option>小さめ</option><option>あり</option><option>写らない</option></select>
+      <select id="tPart"><option value="">付属物：全部</option><option value="*">付属物あり</option><option value="-">付属物なし</option></select>
+      <label class="note"><input type="checkbox" id="tUn"> まだ確かめていないものだけ</label>
+      <label class="note"><input type="checkbox" id="tEx"> 外した下書きも出す</label>
+      <label class="note"><input type="checkbox" id="tSrc"> 元絵も出す</label>
+      <input id="tQ" placeholder="名前で絞り込む" size="16"><span class="note" id="tSum"></span>
+    </div>
+    <div class="grid big" id="tGrid"></div>
+    <div class="pager"><button id="tMore" onclick="tPage++;drawTr()">もっと見る</button></div>
+  </section>
+</div>
+
+<!-- ======================= 構図の登録（B2） ======================= -->
+<div id="t-reg" class="hide">
+  <div class="two">
+    <section>
+      <h2>まだ登録していない構図</h2>
+      <div class="note">取り込み済みで、model.json に登録していない構図です。登録するまでは撮影に使われません。</div>
+      <div class="row"><input id="gQ" placeholder="構図名・読みで絞り込む" size="18"><label class="note"><input type="checkbox" id="gAll"> 登録済みも出す</label></div>
+      <div class="grid" id="gGrid" style="max-height:900px;overflow:auto"></div>
+    </section>
+    <section id="gBox">
+      <h2>登録する</h2>
+      <div id="gNone" class="note">左の構図を選んでください。</div>
+      <div id="gBody" class="hide">
+        <div class="row"><span class="name" id="gName"></span><span class="note" id="gRead"></span></div>
+        <div id="gRegNow"></div>
+        <h3>下書き</h3><div class="strip" id="gDrafts"></div>
+        <h3>1. 項目（構図名と語の表と同じ。直すと表も直ります）</h3>
+        <div class="items" id="gItems"></div>
+        <h3>2. 当てる組（どの技の、どんな場面に使うか）</h3>
+        <div class="note">おすすめの組を上に出し、姿勢の合う行に印を付けてあります。行の中の構図の名前を見て、同じ仲間の行を選んでください。<b>合う組が無いときは登録しません</b>（「新しい構図」に残して Claude に頼む）。</div>
+        <div id="gSets"></div>
+        <h3>3. 視点・役の文・姿勢</h3>
+        <div class="items">
+          <label>視点（英語のタグ）<input id="gTags" placeholder="例 from side"></label>
+          <label>主人公の姿勢（姿勢合わせに使う）<select id="gPos"><option value="">決めない（主人公目線・寄りなど）</option><option value="lie">寝る（lie）</option><option value="fours">四つんばい・前かがみ（fours）</option><option value="sit">座る（sit）</option><option value="stand">立つ（stand）</option><option value="kneel">ひざまずく（kneel）</option></select></label>
+        </div>
+        <label class="note" style="display:block;margin-top:6px">役の文（誰がどこにいるか・英語。項目から自動で作ってあります。必要なら直す）<textarea id="gRole"></textarea></label>
+        <div class="row"><label><input type="checkbox" id="gExtra" checked> 替え専用にする（おすすめ。同じMODで下書きが重なったときだけ使うので、撮り済みの絵の割り当てがほとんど動かない）</label></div>
+        <h3>4. 確かめて登録</h3>
+        <div class="row"><button onclick="regPlan()">変わる所を見る</button></div>
+        <div id="gPlan"></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ======================= 確認撮影（B3） ======================= -->
+<div id="t-check" class="hide">
+  <section>
+    <h2>確認撮影</h2>
+    <div class="note">選んだ下書きで数枚撮り、下書き「あり」と「なし」を同じシードで並べて見比べます（ComfyUI を使います。撮影中は押せません）。構図名を入れるとその構図の全部の下書き、下書き名（例 kiss_lap_5）を入れるとその1枚だけです。</div>
+    <div class="row"><input id="kIds" placeholder="構図名・下書き名（, で区切る）" size="40"><button onclick="checkPlan()">当たる場面を数える</button>
+      1つにつき <select id="kN"><option>1</option><option selected>2</option><option>3</option><option>4</option></select> 場面
+      <label class="note"><input type="checkbox" id="kSimple"> 当たる場面が無いときは簡易で撮る（同じ組の場面に当てる・範囲は使わない）</label>
+      <button class="pri" id="bCheck" onclick="checkRun()">撮る</button></div>
+    <div id="kPlan"></div>
+  </section>
+  <section>
+    <h2>見るところ</h2>
+    <ul id="kPoints"></ul>
+    <div class="note">だめだったら、その下書きを「この下書きを外す…」で外します。範囲がおかしいときは「範囲の確認」で直します。</div>
+  </section>
+  <section>
+    <h2>撮った確認の絵</h2>
+    <div class="row"><button onclick="checkList()">一覧を読み直す</button><span class="note">撮影が終わると、ここに並びます（新しい順）。</span></div>
+    <div class="scroll" style="max-height:260px"><table id="kTbl"><thead><tr><th>下書き</th><th>読み</th><th class="num">枚数</th><th>撮った日時</th></tr></thead><tbody></tbody></table></div>
+    <h3 id="kTitle"></h3>
+    <div id="kPairs"></div>
+  </section>
+</div>
+
+<!-- ======================= 当たり具合（A4） ======================= -->
+<div id="t-use" class="hide">
+  <section>
+    <h2>下見の結果（今の割り当て）</h2>
+    <div id="uAge"></div>
+    <div class="row"><button id="bPreview" onclick="runPreview()">下見をやり直す（約3分）</button>
+      <button id="bPoseRep" onclick="runPoseRep()">構図LoRAの割当を作り直す</button><span class="note">撮影中は押せません。</span></div>
+    <div class="cnt" id="uCnt"></div>
+  </section>
+  <section>
+    <h2>構図ごとの当たり具合</h2>
+    <div class="row"><input id="ucQ" placeholder="構図名・読みで絞り込む" size="20"><span class="note">行を押すと、当たった場面の一覧が開きます。「場面を見る」で MOD ごとの割り当ての画面へ。</span></div>
+    <div class="scroll"><table id="ucTbl"><thead><tr><th data-k="comp">構図名</th><th data-k="reading">読み</th><th class="num" data-k="n">場面</th><th class="num" data-k="mods">MOD</th><th data-k="sets">組</th><th>下書きごとの数</th><th></th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section><h2>本文と下書きの姿勢の食い違い <span class="note" id="umN"></span></h2><div class="scroll" style="max-height:300px"><table id="umTbl"><thead><tr><th>MOD</th><th>画像名</th><th>下書き</th><th>本文の姿勢</th><th>下書きの姿勢</th></tr></thead><tbody></tbody></table></div></section>
+  <section><h2>1つの MOD の中での下書きの重複 <span class="note" id="udN"></span></h2><div class="scroll" style="max-height:260px"><table id="udTbl"><thead><tr><th>MOD</th><th>下書き</th><th class="num">回数</th></tr></thead><tbody></tbody></table></div></section>
+  <section><h2>下書きの割り当てが動いた場面 <span class="note" id="uvN"></span></h2><div class="scroll" style="max-height:300px"><table id="uvTbl"><thead><tr><th>MOD</th><th>画像名</th><th>前の下書き</th><th>今の下書き</th></tr></thead><tbody></tbody></table></div></section>
+  <section><h2>登録してあるのに、一度も当たっていない構図</h2><div id="uUnused" class="note"></div></section>
+  <section><h2>3Dの下書きなど（元絵でない下書き）</h2><div id="uOther" class="note"></div></section>
+  <section>
+    <h2>構図LoRA の割当（--pose-report の結果） <span class="note" id="prT"></span></h2>
+    <div class="row"><input id="prQ" placeholder="MOD・画像名・下書きで絞り込む" size="26"></div>
+    <div class="scroll"><table id="prTbl"><thead></thead><tbody></tbody></table></div>
+  </section>
+</div>
+
+<!-- ======================= MODごとの割り当て（A7） ======================= -->
+<div id="t-assign" class="hide">
+  <section>
+    <div class="row"><b>見方：</b><label><input type="radio" name="aMode" value="mod" checked> MOD から見る</label>
+      <label><input type="radio" name="aMode" value="comp"> 構図から見る</label>
+      <span class="sp"></span><span id="aAge" class="note"></span><button id="bPreview2" onclick="runPreview()">下見をやり直す</button></div>
+  </section>
+  <div class="two">
+    <section id="aLeft">
+      <div id="aModBox">
+        <h2>MOD の一覧</h2>
+        <div class="row"><label class="note"><input type="checkbox" id="aOnlyMarked"> 印のある MOD だけ</label><span class="note">見出しを押すと並べ替え</span></div>
+        <div class="scroll" style="max-height:640px"><table id="aSumTbl"><thead><tr><th data-k="n" class="num">番号</th><th data-k="code">MOD</th><th data-k="scenes" class="num">場面</th><th data-k="drafts" class="num">下書きあり</th><th data-k="marked" class="num">印あり</th><th data-k="m_下書きなし" class="num">下書きなし</th><th data-k="m_姿勢の食い違い" class="num">食い違い</th><th data-k="m_同じMODで重複" class="num">重複</th><th data-k="m_撮った時と違う" class="num">撮った時と違う</th><th data-k="m_範囲なし" class="num">範囲なし</th><th data-k="m_主人公の範囲なし" class="num">主人公の範囲なし</th></tr></thead><tbody></tbody></table></div>
+      </div>
+      <div id="aCompBox" class="hide">
+        <h2>構図・下書きを選ぶ</h2>
+        <div class="row"><input id="acQ" placeholder="構図名で絞り込む" size="18"></div>
+        <div class="scroll" style="max-height:640px"><table id="acTbl"><thead><tr><th>構図名</th><th>読み</th><th class="num">場面</th></tr></thead><tbody></tbody></table></div>
+      </div>
+    </section>
+    <section>
+      <h2 id="aTitle">場面</h2>
+      <div class="row">
+        <select id="aMark"><option value="">印：全部</option><option>下書きなし</option><option>姿勢の食い違い</option><option>同じMODで重複</option><option>撮った時と違う</option><option>範囲なし</option><option>主人公の範囲なし</option><option>組み立て失敗</option><option>下見にまだ無い</option></select>
+        <select id="aTech"><option value="">技：全部</option></select>
+        <input id="aQ" placeholder="構図名・MOD・キャラ・技名で絞り込む" size="24">
+        <label class="note"><input type="checkbox" id="aOnlyM"> 印のある場面だけ</label>
+        <label class="note"><input type="checkbox" id="aOnlyScene" checked> 2人の場面だけ</label>
+        <select id="aSort"><option value="">並び：ファイルの順</option><option value="marks">印の多い順</option><option value="comp">構図名の順</option></select>
+      </div>
+      <div id="aNote" class="note"></div>
+      <div id="aList"></div>
+    </section>
+  </div>
+</div>
+
+<!-- ======================= 構図名と語（A6 の表） ======================= -->
+<div id="t-names" class="hide">
+  <section>
+    <h2>語の一覧（英字と日本語訳）</h2>
+    <div class="note">構図名に使う英字の語と、その日本語訳です。画面の読み・選択肢・一覧はすべてこの表を使います。「選択肢に出す」に ○ がある語だけが、名前を作るときの選択肢に出ます。「まとめる先」は同じ意味の語（lying → lie など）。</div>
+    <div class="row"><select id="wCat"><option value="">項目：全部</option><option>人数</option><option>技</option><option>姿勢</option><option>視点</option><option>位置</option><option>そのほか</option></select><input id="wQ" placeholder="絞り込む" size="14"></div>
+    <div class="row"><b>語を足す：</b><select id="waCat"><option>技</option><option>姿勢</option><option>視点</option><option>位置</option><option>人数</option><option>そのほか</option></select>
+      <input id="waEn" placeholder="英字（例 kiss）" size="12"><input id="waJa" placeholder="日本語（例 キス）" size="14"><input id="waCanon" placeholder="まとめる先（空欄でよい）" size="14"><button onclick="wordAdd()">足す</button></div>
+    <div class="scroll" style="max-height:420px"><table id="wTbl"><thead><tr><th>項目</th><th>英字</th><th>日本語</th><th>選択肢に出す</th><th>まとめる先</th><th>メモ</th><th></th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section>
+    <h2>今ある構図名と項目の対応</h2>
+    <div class="note">今ある構図名は変えません。代わりに、名前ごとの項目（人数・技・姿勢・視点・位置）をこの表に持ちます。最初は名前と model.json から機械で埋めてあります。分からない所は空欄です。直したら「保存」。</div>
+    <div class="row"><input id="iQ" placeholder="構図名・読みで絞り込む" size="18"><label class="note"><input type="checkbox" id="iBlank"> 空欄のある行だけ</label><label class="note"><input type="checkbox" id="iReg"> 登録済みだけ</label></div>
+    <div class="scroll" style="max-height:620px"><table id="iTbl"><thead><tr><th>見本</th><th>構図名・読み</th><th>人数</th><th>技</th><th>姿勢</th><th>視点</th><th>位置</th><th>同時の技</th><th>メモ</th><th></th></tr></thead><tbody></tbody></table></div>
+    <div class="pager"><button id="iMore" onclick="iPage++;drawItems()">もっと見る</button></div>
+  </section>
+</div>
+
+<!-- ======================= メモ・予定（A5・A7） ======================= -->
+<div id="t-memo" class="hide">
+  <section>
+    <h2>判定のメモ</h2>
+    <div class="row"><select id="mKind"><option value="">種類：全部</option></select><input id="mQ" placeholder="絞り込む" size="16"></div>
+    <div class="scroll" style="max-height:340px"><table id="mTbl"><thead><tr><th>日時</th><th>種類</th><th>対象</th><th>判定</th><th>理由</th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section>
+    <h2>撮り直しの予定</h2>
+    <div class="note">「MODごとの割り当て」で「撮り直しの予定に入れる」を押した場面です。撮り直すかどうかは、ここで決めます。今の割り当て（同じシード）で撮り直します。前の絵は消えません。</div>
+    <div class="row"><button id="bResRun" onclick="reshootRun()">予定の場面を撮り直す</button><button onclick="reshootDel()">印の行を予定から外す</button><span class="note">撮影中は押せません。</span></div>
+    <div class="scroll" style="max-height:300px"><table id="rsTbl"><thead><tr><th></th><th>日時</th><th>MOD</th><th>画像名</th><th>理由</th><th>並べた日時</th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <section>
+    <h2>本文を後で直す候補</h2>
+    <div class="note">絵（下書き）は合っていて、本文の方を直したい場面です。本文の直しは別の作業で行います。</div>
+    <div class="row"><button onclick="textfixText()">文章で出す</button><button onclick="textfixDel()">印の行を外す</button></div>
+    <div class="scroll" style="max-height:300px"><table id="tfTbl"><thead><tr><th></th><th>日時</th><th>MOD</th><th>画像名</th><th>下書き</th><th>メモ</th></tr></thead><tbody></tbody></table></div>
+    <textarea id="tfOut" class="hide" readonly style="min-height:160px;margin-top:8px"></textarea>
+  </section>
+</div>
+
+<!-- ======================= model.json の控え（3章） ======================= -->
+<div id="t-bak" class="hide">
+  <section>
+    <h2>model.json の控えから戻す</h2>
+    <div class="note">model.json を書き換えるたびに、画像生成\_控え\ に控えができます。ここで選んで、その時点の pose_control（構図の選び方）に戻せます。年齢に関わる設定と人物の範囲の文（region）はそのままです。戻す前の状態も控えに取ります。撮影中は押せません。</div>
+    <div class="scroll" style="max-height:380px"><table id="bTbl"><thead><tr><th>控え</th><th>日時</th><th></th></tr></thead><tbody></tbody></table></div>
+    <div id="bDiff"></div>
+  </section>
+  <section><h2>変更の記録（新しい順）</h2><pre id="bLog" class="mono" style="white-space:pre-wrap"></pre></section>
+</div>
+</main>
+
+<dialog id="hd" style="width:min(1300px,98vw)"><div class="dh"><b id="hdT">手で囲む</b>
+  <label><input type="radio" name="hdRole" value="hero" checked> <b style="color:var(--blue)">主人公</b></label>
+  <label><input type="radio" name="hdRole" value="partner1"> <b style="color:var(--red)">相手1</b></label>
+  <label><input type="radio" name="hdRole" value="partner2"> <b style="color:#e08a00">相手2</b></label>
+  <span class="note">｜</span><label><input type="radio" name="hdKind" value="ellipse" checked> 楕円</label><label><input type="radio" name="hdKind" value="rect"> 四角</label>
+  <span class="note">｜大きさ</span><select id="hdZoom"><option value="fit">画面に合わせる</option><option value="0.5">50%</option><option value="1">100%</option><option value="1.5">150%</option><option value="2">200%</option></select>
+  <span class="sp"></span><button onclick="hdUndo()">1つ戻す</button><button onclick="hdClear()">全部消す</button><button class="pri" onclick="hdSave()">保存</button><button onclick="$('hd').close()">閉じる</button></div>
+  <div class="db"><div class="note">絵の上をなぞって囲みます。顔の検出より、ここで囲んだ範囲が優先されます。重なる所は主人公になります。相手が2人なら相手1・相手2 を別々に囲みます（相手1＝画面の左の人を目安に）。保存したあと、撮影していないときに「直した分の範囲を作り直す」を押すと絵に反映されます。</div>
+  <div class="row"><input id="hdWhy" placeholder="メモ（1行・空欄でよい）" style="flex:1"><span class="note" id="hdList"></span></div>
+  <div style="overflow:auto;max-height:74vh;border:1px solid var(--line);border-radius:8px"><div id="hdWrap" style="position:relative;display:inline-block;touch-action:none;user-select:none"><img id="hdImg" class="c" draggable="false" style="display:block"><div id="hdLayer" style="position:absolute;inset:0"></div></div></div></div></dialog>
+<dialog id="lb" onclick="this.close()"><img id="lbImg"></dialog>
+<dialog id="dlg"><div class="dh"><b id="dlgT"></b><span class="sp"></span><button onclick="$('dlg').close()">閉じる</button></div><div class="db" id="dlgB"></div></dialog>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const Q=new URLSearchParams(location.search);
+let ST={busy:[],test:false,age:{}},WORDS=[],COMPS=[],CANDS=[],SEL=null,cPage=1,sPage=1,rPage=1,iPage=1,REG=[],ITEMS=[],USE=null,SUMS=[],AROWS=[],ACODE='',sumSort={k:'n',d:1},ucSort={k:'n',d:-1};
+function toast(m,bad){const t=$('toast');t.textContent=m;t.style.background=bad?'var(--ng)':'';t.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>t.style.display='none',bad?8000:3000)}
+async function api(p,q){const u='/api/kozu/'+p+(q?'?'+new URLSearchParams(q):'');const r=await fetch(u);const j=await r.json();if(j.error){toast(j.error,true);throw new Error(j.error)}return j}
+async function post(p,b){const r=await fetch('/api/kozu/'+p,{method:'POST',headers:{'Content-Type':'application/json','X-Tool':'1'},body:JSON.stringify(b||{})});const j=await r.json();
+  if(j.error){toast(j.error,true);throw new Error(j.error)}if(j.msg)toast(j.msg);return j}
+function im(k,n,w,extra){return '/kimg?'+new URLSearchParams(Object.assign({k,n,w:w==null?240:w},extra||{}))}
+function zoom(src){$('lbImg').src=src;$('lb').showModal()}
+const COLOR={cand:1,src:1,region:1,shot:1};
+function thumb(k,n,w,extra,cap){const big=im(k,n,0,extra);return `<img loading="lazy" class="${COLOR[k]?'c':''}" src="${im(k,n,w,extra)}" onclick="event.stopPropagation();zoom('${big}')" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'none',textContent:'なし'}))" title="${esc(cap||n)}">`}
+function isBusy(){return ST.busy.length&&!ST.test}
+function setBusyUI(){const b=isBusy();
+  ['bPreview','bPreview2','bPoseRep','bRemake','bResRun','bCheck'].forEach(id=>{const e=$(id);if(e){e.disabled=b;e.title=b?'撮影中は押せません：'+ST.busy.join(' ／ '):''}});
+  document.querySelectorAll('.needidle').forEach(e=>{e.disabled=b;e.title=b?'撮影中は押せません':''})}
+async function tickState(){try{ST=await api('state');const c=$('cBusy');
+  if(ST.busy.length){c.className='chip run';c.textContent='撮影中（書き込みのボタンの一部は押せません）';c.title=ST.busy.join('\n')}else{c.className='chip ok';c.textContent='撮影していません';c.title=''}
+  const tb=$('testbar');if(tb)tb.classList.toggle('hide',!ST.test);setBusyUI()}catch(e){}}
+setInterval(tickState,8000);
+
+/* ---------- タブ ---------- */
+const LOADED={};
+function tab(t){document.querySelectorAll('#tabs button').forEach(x=>x.classList.toggle('on',x.dataset.t===t));
+  ['pick','new','region','dc','tr','reg','check','use','assign','names','memo','bak'].forEach(x=>$('t-'+x).classList.toggle('hide',x!==t));
+  const f={pick:loadPick,new:loadNew,region:loadRegions,dc:loadDc,tr:loadTr,reg:loadReg,check:checkList,use:loadUse,assign:loadAssign,names:loadNames,memo:loadMemo,bak:loadBak}[t];
+  if(f&&(!LOADED[t]||t==='memo'||t==='bak')){LOADED[t]=1;return f()}}
+document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>tab(b.dataset.t));
+$('blur').onchange=()=>document.body.classList.toggle('blur',$('blur').checked);
+
+/* ---------- 語 ---------- */
+async function loadWords(){const d=await api('words');WORDS=d.words;return WORDS}
+function wordOpts(cat,cur){const ws=WORDS.filter(w=>w['項目']===cat&&w['選択肢に出す']==='○');
+  let h='<option value="">（なし）</option>'+ws.map(w=>`<option value="${esc(w['英字'])}" ${w['英字']===cur?'selected':''}>${esc(w['日本語'])}（${esc(w['英字'])}）</option>`).join('');
+  if(cur&&!ws.some(w=>w['英字']===cur))h+=`<option value="${esc(cur)}" selected>${esc(jaOf(cur))}（${esc(cur)}）</option>`;return h}
+function jaOf(en){const w=WORDS.find(w=>w['英字']===en);return w?w['日本語']:en}
+function readName(n){if(!n)return '';let s=n.replace(/^depthref_/,'');const t=s.split('_');let num='';if(t.length>1&&/^\d+$/.test(t[t.length-1]))num=t.pop();
+  return t.map(x=>{const w=WORDS.find(w=>w['英字']===x);return w&&w['日本語']?w['日本語']:'（'+x+'）'}).join('・')+(num?'（'+num+'枚目）':'')}
+async function showWords(){if(!WORDS.length)await loadWords();
+  const cats=['人数','技','姿勢','視点','位置','そのほか'];
+  $('dlgT').textContent='語の早見表（英字と日本語訳）';
+  $('dlgB').innerHTML='<div class="note">名前の読み方の例：hj_stand_side ＝ 手・立つ・横から／peg_bent_side_back_nipple ＝ ペニバン・前かがみ・横から・後ろから・乳首／two_ear_sit_front ＝ 相手2人・耳・座る・前から。末尾の _2・_3 は同じ構図の2枚目・3枚目、_b・_c は同じ項目で形が違う構図。</div>'+
+   cats.map(c=>`<h3>${c}</h3><div>`+WORDS.filter(w=>w['項目']===c).map(w=>`<span class="tag ${w['選択肢に出す']==='○'?'ok':''}">${esc(w['日本語'])}（${esc(w['英字'])}${w['まとめる先']?' → '+esc(w['まとめる先']):''}）</span>`).join('')+'</div>').join('')+
+   '<div class="note" style="margin-top:8px">緑の枠＝名前を作るときの選択肢に出る語。</div>';
+  $('dlg').showModal()}
+
+/* ---------- 採用 ---------- */
+async function loadPick(){await loadWords();const [c,s]=await Promise.all([api('cands'),api('comps')]);CANDS=c.cands;COMPS=s.comps;
+  fillSampleFilters();drawCands();if(SEL){const x=CANDS.find(c=>c.file===SEL.file);if(x)selectCand(x.file,true)}}
+['cState','cQ','cSort'].forEach(id=>$(id).oninput=()=>{cPage=1;drawCands()});
+function candList(){const st=$('cState').value,q=$('cQ').value.trim().toLowerCase();
+  let a=CANDS.filter(c=>(!st||c.state===st)&&(!q||c.file.toLowerCase().includes(q)||(c.pick||'').includes(q)));
+  if($('cSort').value==='new')a.sort((x,y)=>y.mt-x.mt);else a.sort((x,y)=>(x.num||x.file).localeCompare(y.num||y.file,'ja',{numeric:true}));return a}
+function drawCands(){const a=candList(),n=cPage*60;
+  const cnt={};CANDS.forEach(c=>cnt[c.state]=(cnt[c.state]||0)+1);
+  $('cSum').textContent=`${a.length} 枚（全部 ${CANDS.length}：`+Object.entries(cnt).map(([k,v])=>k+' '+v).join('・')+'）';
+  const mo=$('mOn').checked;$('mBox').classList.toggle('hide',!mo);$('cGrid').classList.toggle('mmode',mo);$('mN').textContent=MSEL.size;
+  $('cGrid').innerHTML=a.slice(0,n).map(c=>`<div class="cell ${SEL&&SEL.file===c.file?'sel':''}" onclick="${mo?(c.done?'':`const b=this.querySelector('.mck');b.checked=!b.checked;mToggle('${esc(c.file)}',b.checked)`):`selectCand('${esc(c.file)}')`}" style="cursor:pointer">
+    ${mo&&!c.done?`<input type="checkbox" class="mck" style="position:absolute;right:6px;top:6px;width:20px;height:20px;z-index:2" ${MSEL.has(c.file)?'checked':''} onclick="event.stopPropagation();mToggle('${esc(c.file)}',this.checked)">`:''}<span class="st">${esc(c.state)}</span>${thumb('cand',c.file,200,{where:c.where},c.file)}
+    <div class="nm" title="${esc(c.file)}">${esc(c.num||'')} ${esc(c.file)}</div><div class="rd">${esc(c.pick&&c.pick!=='見送り'?c.pick+'：'+readName(c.pick):c.pick)}${c.note?'　'+esc(c.note):''}</div></div>`).join('')||'<div class="note">ありません</div>';
+  $('cMore').classList.toggle('hide',a.length<=n)}
+function selectCand(f,keep){SEL=CANDS.find(c=>c.file===f);if(!SEL)return;drawCands();$('pNone').classList.add('hide');$('pBody').classList.remove('hide');
+  const c=SEL;$('pInfo').innerHTML=`<b>番号</b><span>${esc(c.num||'（なし）')}</span><b>ファイル名</b><span class="mono">${esc(c.file)}</span><b>状態</b><span>${esc(c.state)}</span>
+   <b>採用</b><span>${esc(c.pick||'—')}${c.pick&&c.pick!=='見送り'?'　<span class="note">'+esc(readName(c.pick))+'</span>':''}</span><b>備考</b><span>${esc(c.note||'—')}</span>${c.done?'<b>取り込んだ名前</b><span>'+esc(c.done)+'</span>':''}${c.crop?'<b>切り抜き</b><span>'+esc(c.crop)+'</span>':''}<b>大きさ</b><span id="pSize">…</span>`;
+  $('pImg').src=im('cand',c.file,0,{where:c.where});$('pImg').onload=()=>{$('pSize').textContent=$('pImg').naturalWidth+'×'+$('pImg').naturalHeight+'px'+(Math.max($('pImg').naturalWidth,$('pImg').naturalHeight)<800?'（長辺が 800px より小さい）':'')};
+  if(!keep){$('pMemo').value='';cropClear();$('pFlip').checked=false;$('pNewName').value=c.new_name||''}
+  const locked=!!c.done;document.querySelectorAll('#pBody button').forEach(b=>{if(!b.classList.contains('keep'))b.disabled=locked});
+  if(locked)toast('この絵はもう取り込み済みなので、ここでは変えられません');
+  $('sSelThumb').src=im('cand',c.file,240,{where:c.where});$('sSelThumb').onclick=()=>zoom(im('cand',c.file,0,{where:c.where}));
+  buildItems();drawSamples();if(!keep||!SIM)loadSim(c.file);
+  if(!keep)setTimeout(()=>$('sHead').scrollIntoView({behavior:'smooth',block:'start'}),50)}
+/* 切り抜き */
+let crop=null,drag=null;
+/* まとめて不採用（2026-10-05） */
+const MSEL=new Set();
+function mToggle(f,on){on?MSEL.add(f):MSEL.delete(f);$('mN').textContent=MSEL.size}
+function mAll(){candList().slice(0,cPage*60).forEach(c=>{if(!c.done)MSEL.add(c.file)});drawCands()}
+async function mReject(){const a=CANDS.filter(c=>MSEL.has(c.file)&&!c.done);if(!a.length)return toast('絵に印を付けてください',true);
+  const memo=prompt(a.length+' 枚を不採用（見送り）にします。理由（判定のメモ・空欄でもよい）を書いて OK を押してください。','');if(memo===null)return;
+  let n=0;for(const c of a){try{await fetch('/api/kozu/pick',{method:'POST',headers:{'Content-Type':'application/json','X-Tool':'1'},body:JSON.stringify({file:c.file,where:c.where,num:c.num,pick:'見送り',note:memo.trim()||c.note||'',memo_kind:'採用'})}).then(r=>r.json()).then(j=>{if(j.error)throw new Error(j.error)});n++;$('mN').textContent=(a.length-n)+' 残り'}catch(e){toast(c.file+'：'+e.message,true);break}}
+  MSEL.clear();toast(n+' 枚を不採用にしました');await loadPick()}
+(function(){const B=$('pBig'),I=$('pImg');
+  const pt=e=>{const r=I.getBoundingClientRect();return [Math.max(0,Math.min(r.width,e.clientX-r.left)),Math.max(0,Math.min(r.height,e.clientY-r.top))]};
+  B.addEventListener('pointerdown',e=>{if(e.button)return;drag=pt(e);B.setPointerCapture(e.pointerId);e.preventDefault()});
+  B.addEventListener('pointermove',e=>{if(!drag)return;const p=pt(e);showBox(drag,p)});
+  B.addEventListener('pointerup',e=>{if(!drag)return;const p=pt(e),r=I.getBoundingClientRect(),sx=I.naturalWidth/r.width,sy=I.naturalHeight/r.height;
+    const l=Math.min(drag[0],p[0]),t=Math.min(drag[1],p[1]),w=Math.abs(p[0]-drag[0]),h=Math.abs(p[1]-drag[1]);drag=null;
+    if(w<10||h<10){return}crop=[Math.round(l*sx),Math.round(t*sy),Math.round((l+w)*sx),Math.round((t+h)*sy)];$('pCropTxt').textContent='切り抜く範囲 '+(crop[2]-crop[0])+'×'+(crop[3]-crop[1])+'px'})})();
+function showBox(a,b){const x=$('pBox');x.classList.remove('hide');x.style.left=Math.min(a[0],b[0])+'px';x.style.top=Math.min(a[1],b[1])+'px';x.style.width=Math.abs(b[0]-a[0])+'px';x.style.height=Math.abs(b[1]-a[1])+'px'}
+function cropClear(){crop=null;$('pBox').classList.add('hide');$('pCropTxt').textContent=''}
+async function cropMake(){if(!SEL)return;if(!crop&&!$('pFlip').checked)return toast('絵の上をなぞって範囲を選ぶか、左右反転に印を付けてください',true);
+  const r=await post('crop',{file:SEL.file,where:SEL.where,box:crop,flip:$('pFlip').checked});await loadPick();selectCand(r.file)}
+/* 見本 */
+function fillSampleFilters(){const mk=(cat,lab)=>`<option value="">${lab}：全部</option>`+WORDS.filter(w=>w['項目']===cat&&w['選択肢に出す']==='○').map(w=>`<option value="${esc(w['英字'])}">${esc(w['日本語'])}（${esc(w['英字'])}）</option>`).join('');
+  $('sTech').innerHTML=mk('技','技');$('sPos').innerHTML=mk('姿勢','姿勢');$('sView').innerHTML=mk('視点','視点')}
+['sQ','sTech','sPos','sView','sReg','sDepth','sSort'].forEach(id=>$(id).oninput=()=>{sPage=1;drawSamples()});
+let SIM=null;
+async function loadSim(f){SIM=null;$('sSimNote').textContent='似ている順を調べています…';try{SIM=await api('similar',{file:f})}catch(e){SIM={ready:false,why:String(e)}}
+  $('sSimNote').innerHTML=SIM.ready?'似ている順：形の近さの目安です（上位3つに同じ構図が入るのは約7割・同じ技なら約8割）。数字が大きいほど近い。':
+   esc(SIM.why)+' <button class="sm needidle" onclick="post(\'similar_run\',{})">下ごしらえをする</button>';sPage=1;drawSamples();setBusyUI()}
+function drawSamples(){const q=$('sQ').value.trim().toLowerCase(),t=$('sTech').value,p=$('sPos').value,v=$('sView').value,dep=$('sDepth').checked;
+  const useSim=$('sSort').value==='sim'&&SIM&&SIM.ready;
+  let a=COMPS.filter(c=>(!$('sReg').checked||c.registered)&&(!q||c.comp.includes(q)||c.reading.includes(q))&&(!t||c.items['技']===t||c.items['同時の技']===t)&&(!p||c.items['姿勢']===p)&&(!v||c.items['視点']===v));
+  if(useSim)a=a.slice().sort((x,y)=>((SIM.comps[y.comp]||{}).score||-9)-((SIM.comps[x.comp]||{}).score||-9));
+  const n=sPage*40;
+  $('sGrid').innerHTML=a.slice(0,n).map(c=>{const sm=useSim&&SIM.comps[c.comp];const smp=sm?sm.sample:c.sample;return `<div class="cell">${sm?`<span class="st">近さ ${sm.score.toFixed(2)}</span>`:''}${smp?(dep?thumb('depth','depthref_'+smp,200):thumb('src',smp,200)):'<div class="none">見本なし</div>'}
+    <div class="nm" title="${esc(c.comp)}">${esc(c.comp)}</div><div class="rd">${esc(c.reading)}<br>${c.n_use}枚${c.registered?'':'・<span class="warnc">未登録</span>'}${c.extra?'・替え専用':''}</div>
+    <div class="bt"><button class="sm pri" onclick="decide('${esc(c.comp)}')">これと同じ形</button><button class="sm" onclick="showComp('${esc(c.comp)}')">全部の絵</button></div></div>`}).join('')||'<div class="note">合う見本がありません</div>';
+  $('sMore').classList.toggle('hide',a.length<=n)}
+function showComp(comp){const c=COMPS.find(x=>x.comp===comp);if(!c)return;$('dlgT').textContent=comp+'　'+c.reading;
+  $('dlgB').innerHTML=`<div class="note">組：${esc(c.sets.join('・')||'未登録')}　姿勢：${esc(c.posture||'—')}　視点：${esc(c.tags||'—')}</div><div class="grid">`+c.drafts.map(d=>`<div class="cell">${thumb('src',d,200)}<div class="nm">${esc(d)}</div></div><div class="cell">${thumb('depth','depthref_'+d,200)}<div class="nm">白黒</div></div><div class="cell">${thumb('region',d,200)}<div class="nm">範囲</div></div>`).join('')+'</div>';$('dlg').showModal()}
+async function decide(val,extra){if(!SEL)return;const memo=$('pMemo').value.trim();
+  if(val==='見送り'&&!memo&&!confirm('不採用の理由（判定のメモ）が空です。このまま不採用（見送り）にしますか？'))return;
+  await post('pick',Object.assign({file:SEL.file,where:SEL.where,num:SEL.num,pick:val,note:memo||SEL.note||'',memo_kind:'採用'},extra||{}));await loadPick()}
+async function markNew(){if(!SEL)return;await post('new',{file:SEL.file,num:SEL.num,on:true,name:$('pNewName').value,note:$('pMemo').value});await loadPick()}
+/* 名前を作る */
+const IT=[['人数','人数（2人以上のときだけ）'],['技','技'],['姿勢','主人公の姿勢'],['視点','視点'],['位置','相手の位置（必要なときだけ）'],['同時の技','同時の技・道具（必要なときだけ）']];
+function buildItems(){$('bItems').innerHTML=IT.map(([k,lab])=>`<label>${lab}<select id="bi_${k}" onchange="buildName()">${wordOpts(k==='同時の技'?'技':k,'')}</select></label>`).join('');buildName()}
+function curItems(){const o={};IT.forEach(([k])=>o[k]=$('bi_'+k).value);return o}
+function buildName(){const it=curItems();const parts=[it['人数'],it['技'],it['姿勢'],it['視点'],it['位置'],it['同時の技']].filter(x=>x);
+  const name=parts.join('_');$('bName').textContent=name||'—';$('bRead').textContent=name?'読み：'+parts.map(jaOf).join('・'):'';
+  const same=name?COMPS.filter(c=>['人数','技','姿勢','視点','位置','同時の技'].every(k=>(c.items[k]||'')===(it[k]||''))||c.comp===name):[];
+  const taken=new Set(COMPS.map(c=>c.comp).concat(CANDS.map(c=>c.pick)));
+  let alt=name;if(taken.has(name)){for(const ch of 'bcdefghijklmnopqrstuvwxyz'){if(!taken.has(name+'_'+ch)){alt=name+'_'+ch;break}}}
+  $('bSame').innerHTML=same.length?`<div class="warnbox">同じ項目の構図がもうあります。見本と比べて選んでください。</div><div class="grid">`+same.map(c=>`<div class="cell">${c.sample?thumb('src',c.sample,200):'<div class="none">見本なし</div>'}<div class="nm">${esc(c.comp)}</div><div class="rd">${esc(c.reading)}・${c.n}枚</div>
+     <div class="bt"><button class="sm pri" onclick="decide('${esc(c.comp)}')">同じ形なので足す</button></div></div>`).join('')+'</div>':'';
+  $('bBtns').innerHTML=!name?'':same.length?`<button onclick="decideNew('${esc(alt)}')">形が違うので別の構図にする（${esc(alt)}）</button>`:`<button class="pri" onclick="decideNew('${esc(alt)}')">この名前で採用する（${esc(alt)}）</button>`}
+async function decideNew(name){const it=curItems();await decide(name,{items:it})}
+
+/* ---------- 新しい構図 ---------- */
+async function loadNew(){await loadWords();const [c,s]=await Promise.all([api('cands'),api('comps')]);CANDS=c.cands;COMPS=s.comps;drawNew()}
+['uQ','uDepth'].forEach(id=>$(id).oninput=drawNew);
+function drawNew(){const a=CANDS.filter(c=>c.new);
+  $('nGrid').innerHTML=a.map(c=>`<div class="cell">${thumb('cand',c.file,240,{where:c.where})}<div class="nm">${esc(c.file)}</div><div class="rd">仮の名前：${esc(c.new_name||'—')}${c.new_name?'（'+esc(readName(c.new_name))+'）':''}</div>
+    <div class="bt"><button class="sm" onclick="openInPick('${esc(c.file)}')">採用の画面で開く</button><button class="sm" onclick="unNew('${esc(c.file)}')">印を外す</button></div></div>`).join('')||'<div class="note">まだありません。採用の画面で「新しい構図に分ける」を押すと、ここに入ります。</div>';
+  const q=$('uQ').value.trim(),dep=$('uDepth').checked;
+  const u=COMPS.filter(c=>!c.registered&&(!q||c.comp.includes(q)||c.reading.includes(q)));
+  $('uGrid').innerHTML=u.map(c=>`<div class="cell">${c.sample?(dep?thumb('depth','depthref_'+c.sample,200):thumb('src',c.sample,200)):''}<div class="nm">${esc(c.comp)}</div><div class="rd">${esc(c.reading)}・${c.n}枚</div><div class="bt"><button class="sm" onclick="showComp('${esc(c.comp)}')">全部の絵</button><button class="sm pri" onclick="gotoReg('${esc(c.comp)}')">登録する</button></div></div>`).join('')}
+async function unNew(f){await post('new',{file:f,on:false});loadNew()}
+async function openInPick(f){tab('pick');await loadPick();$('cState').value='';$('cQ').value=f;drawCands();selectCand(f)}
+
+/* ---------- 範囲 ---------- */
+let RROWS=[];
+async function loadRegions(){await loadWords();RROWS=(await api('regions')).rows;drawRegions()}
+['rRes','rQ','rReg','rEx'].forEach(id=>$(id).oninput=()=>{rPage=1;drawRegions()});
+function drawRegions(){const res=$('rRes').value,q=$('rQ').value.trim();
+  const a=RROWS.filter(r=>(!res||(res==='直す'?r.fix:res==='未反映'?r.pending:res==='手'?r.hand:r.result.startsWith(res)||r.result.includes(res)))&&(!q||r.name.includes(q))&&(!$('rReg').checked||r.registered)&&($('rEx').checked||!r.excluded));
+  const n=rPage*48,pend=RROWS.filter(r=>r.pending).length;
+  $('rPend').textContent=pend?`直してまだ反映していない絵 ${pend} 枚`:'';
+  $('rGrid').innerHTML=a.slice(0,n).map(r=>`<div class="cell" id="rg_${esc(r.name)}">${thumb('region',r.name,260)}
+    <div class="nm" title="${esc(r.name)}">${esc(r.name)}</div><div class="rd">${esc(readName(r.name))}<br>顔 ${esc(r.faces)}・男らしさ ${esc(r.score||'—')}<br>結果：<b>${esc(r.result)}</b>${r.fix?'<br>直す：<b class="warnc">'+esc(r.fix)+'</b>':''}${r.pending?' <span class="tag warn">未反映</span>':''}${r.registered?'':' <span class="tag">未登録</span>'}${r.excluded?' <span class="tag ng">外した</span>':''}</div>
+    <div class="bt">${['入れ替え','主人公なし','使わない'].map(f=>`<button class="sm ${r.fix===f?'pri':''}" onclick="setFix('${esc(r.name)}','${f}')">${f}</button>`).join('')}${r.fix?`<button class="sm" onclick="setFix('${esc(r.name)}','')">直しを消す</button>`:''}<button class="sm ${r.hand?'pri':''}" onclick="hdOpen('${esc(r.name)}')">手で囲む${r.hand?'（'+r.hand+'）':''}</button></div></div>`).join('')||'<div class="note">ありません</div>';
+  $('rMore').classList.toggle('hide',a.length<=n);setBusyUI()}
+async function setFix(n,f){await post('fix',{name:n,fix:f,why:$('rWhy').value});RROWS=(await api('regions')).rows;drawRegions()}
+/* 手で囲む（B1） */
+let HD={name:'',w:0,h:0,shapes:[],z:1},hdDrag=null;
+const HDC={hero:'#2856c8',partner1:'#c8323a',partner2:'#e08a00'},HDN={hero:'主人公',partner1:'相手1',partner2:'相手2'};
+async function hdOpen(n){const d=await api('manual',{name:n});HD={name:n,w:d.w,h:d.h,shapes:d.shapes||[],z:1};$('hdT').textContent='手で囲む：'+n;$('hdWhy').value='';
+  $('hdImg').onload=()=>{hdZoom()};$('hdImg').src=im('src',n,0);$('hd').showModal()}
+$('hdZoom').onchange=hdZoom;
+function hdZoom(){const v=$('hdZoom').value;HD.z=v==='fit'?Math.min(1,(innerWidth*0.94)/HD.w,(innerHeight*0.7)/HD.h):+v;$('hdImg').style.width=Math.round(HD.w*HD.z)+'px';hdDraw()}
+function hdDraw(){$('hdLayer').innerHTML=HD.shapes.map(s=>{const [x0,y0,x1,y1]=s.box,z=HD.z;return `<div style="position:absolute;left:${x0*z}px;top:${y0*z}px;width:${(x1-x0)*z}px;height:${(y1-y0)*z}px;border:3px solid ${HDC[s.role]};background:${HDC[s.role]}33;border-radius:${s.kind==='ellipse'?'50%':'0'}"><span style="background:${HDC[s.role]};color:#fff;font-size:12px;padding:0 4px">${HDN[s.role]}</span></div>`}).join('');
+  const c={};HD.shapes.forEach(s=>c[s.role]=(c[s.role]||0)+1);$('hdList').textContent=HD.shapes.length?Object.entries(c).map(([k,v])=>HDN[k]+' '+v).join('・'):'まだ囲んでいません'}
+(function(){const W=$('hdWrap');const pt=e=>{const r=W.getBoundingClientRect();return [Math.max(0,Math.min(r.width,e.clientX-r.left))/HD.z,Math.max(0,Math.min(r.height,e.clientY-r.top))/HD.z]};
+  W.addEventListener('pointerdown',e=>{if(e.button)return;hdDrag=pt(e);W.setPointerCapture(e.pointerId);e.preventDefault()});
+  W.addEventListener('pointermove',e=>{if(!hdDrag)return;const p=pt(e);const role=document.querySelector('input[name=hdRole]:checked').value,kind=document.querySelector('input[name=hdKind]:checked').value;
+    hdDraw();$('hdLayer').insertAdjacentHTML('beforeend',`<div style="position:absolute;left:${Math.min(hdDrag[0],p[0])*HD.z}px;top:${Math.min(hdDrag[1],p[1])*HD.z}px;width:${Math.abs(p[0]-hdDrag[0])*HD.z}px;height:${Math.abs(p[1]-hdDrag[1])*HD.z}px;border:3px dashed ${HDC[role]};border-radius:${kind==='ellipse'?'50%':'0'}"></div>`)});
+  W.addEventListener('pointerup',e=>{if(!hdDrag)return;const p=pt(e),a=hdDrag;hdDrag=null;if(Math.abs(p[0]-a[0])<8||Math.abs(p[1]-a[1])<8){hdDraw();return}
+    HD.shapes.push({role:document.querySelector('input[name=hdRole]:checked').value,kind:document.querySelector('input[name=hdKind]:checked').value,box:[Math.min(a[0],p[0]),Math.min(a[1],p[1]),Math.max(a[0],p[0]),Math.max(a[1],p[1])].map(Math.round)});hdDraw()})})();
+function hdUndo(){HD.shapes.pop();hdDraw()}
+function hdClear(){if(HD.shapes.length&&!confirm('囲みを全部消しますか？（保存すると、この絵は顔の検出の結果に戻ります）'))return;HD.shapes=[];hdDraw()}
+async function hdSave(){await post('manual_save',{name:HD.name,shapes:HD.shapes,why:$('hdWhy').value});$('hd').close();RROWS=(await api('regions')).rows;drawRegions()}
+async function remake(){if(!confirm('直した絵の人物の範囲を作り直します（グラフィックボードを使います）。よろしいですか？'))return;await post('remake_regions',{})}
+
+/* ---------- 奥行きの点検（B7） ---------- */
+let DC=null,dPage=1;
+async function loadDc(){await loadWords();DC=await api('depth_check');drawDc()}
+['dKind','dHow','dVer','dQ','dEx','dSrc'].forEach(id=>$(id).oninput=()=>{dPage=1;drawDc()});
+function drawDc(){if(!DC)return;const k=$('dKind').value,h=$('dHow').value,v=$('dVer').value,q=$('dQ').value.trim();
+  const a=DC.rows.filter(r=>r.flags.length&&(!k||r.flags.some(f=>f.kind===k))&&(!h||r.flags.some(f=>f.how===h))&&(v===''||(v==='未定'?!r.verdict:r.verdict===v))&&(!q||r.draft.includes(q))&&($('dEx').checked||!r.excluded));
+  const flagged=DC.rows.filter(r=>r.flags.length).length,done=DC.rows.filter(r=>r.flags.length&&r.verdict).length;
+  $('dSum').textContent=`点検 ${DC.time}・下書き ${DC.total} 枚のうち印 ${flagged} 枚（判定済み ${done}）／表示 ${a.length} 枚`;
+  const n=dPage*40;
+  $('dGrid').innerHTML=a.slice(0,n).map(r=>{const id=r.draft.replace(/[^a-z0-9_]/g,'');return `<div class="cell"><div class="strip">${thumb('depth',r.draft,260)}${$('dSrc').checked?thumb('src',r.src,260):''}</div>
+    <div class="nm" title="${esc(r.draft)}">${esc(r.src)}</div><div class="rd">${esc(r.reading)}<br>${r.flags.map(f=>`<span class="tag ${f.how==='計算'?'warn':'ng'}" title="${esc(f.memo)}">${esc(f.kind)}（${f.how}）</span>`).join('')}
+    ${r.flags.some(f=>f.memo)?'<br>'+esc(r.flags.map(f=>f.memo).filter(x=>x).join('／')):''}${r.excluded?'<br><span class="tag ng">外した</span>':''}${r.verdict?'<br>判定：<b>'+esc(r.verdict)+'</b>':''}${r.kinds?'<br>相手の種類：<b>'+esc(r.kinds)+'</b>':''}</div>
+    <div class="bt"><button class="sm ${r.verdict==='問題なし'?'pri':''}" onclick="dcSet('${esc(r.draft)}','問題なし')">問題なし</button><button class="sm" onclick="dcEx('${esc(r.draft)}')">外す…</button>
+     <button class="sm" onclick="$('dk_${id}').classList.toggle('hide')">相手の種類を付ける</button>${r.verdict?`<button class="sm" onclick="dcSet('${esc(r.draft)}','')">未定に戻す</button>`:''}</div>
+    <div class="bt hide" id="dk_${id}">${DC.part_kinds.map(p=>`<label class="note"><input type="checkbox" value="${p}" ${(r.kinds||'').split('・').includes(p)?'checked':''}> ${p}</label>`).join('')}<button class="sm pri" onclick="dcKinds('${esc(r.draft)}','${id}')">保存</button></div></div>`}).join('')||'<div class="note">ありません</div>';
+  $('dMore').classList.toggle('hide',a.length<=n)}
+async function dcSet(d,v){await post('depth_decide',{draft:d,verdict:v});DC=await api('depth_check');drawDc()}
+async function dcKinds(d,id){const kinds=[...document.querySelectorAll('#dk_'+id+' input:checked')].map(i=>i.value);await post('depth_decide',{draft:d,kinds});DC=await api('depth_check');drawDc()}
+async function dcEx(d){window.DC_AFTER=d;await excludeDlg(d)}
+async function dcRun(){await post('depth_run',{})}
+
+/* ---------- 下書きの項目（B8） ---------- */
+let TR=null,tPage=1;
+async function loadTr(){await loadWords();TR=await api('traits');drawSwitch();drawTr()}
+function drawSwitch(){const b=TR.busy.length&&!TR.test;
+  $('tSwitch').innerHTML=`<div class="row">今：<b class="${TR.on?'okc':''}">${TR.on?'入っています':'切ってあります'}</b>
+   <button ${b?'disabled title="撮影中は押せません"':''} onclick="trPlan(${!TR.on})">${TR.on?'切る…':'入れる…'}</button><span class="note">撮影中は押せません。切り替えると下見が自動で動きます。</span></div>`}
+async function trPlan(on){const p=await post('trait_switch_plan',{on});
+  $('tPlan').innerHTML=`<ul>${p.diff.map(x=>`<li class="mono">${esc(x)}</li>`).join('')}</ul><div class="note">${esc(p.note)}</div><div class="note">model.json を書き換える前に控えを取ります。「model.json の控え」タブから戻せます。</div>
+   <div class="row"><button class="pri" ${(p.busy.length&&!p.test)||!p.diff.length?'disabled':''} onclick="trDo(${on})">確認した。${on?'入れる':'切る'}</button></div>`}
+async function trDo(on){if(!confirm('相手の種類での当て分けを'+(on?'入れ':'切り')+'ます。よろしいですか？'))return;await post('trait_switch',{on,confirmed:true});$('tPlan').innerHTML='';TR=await api('traits');drawSwitch()}
+['tChest','tPart','tUn','tEx','tSrc','tQ','tDiff'].forEach(id=>$(id).oninput=()=>{tPage=1;drawTr()});
+function drawTr(){if(!TR)return;const c=$('tChest').value,pt=$('tPart').value,q=$('tQ').value.trim();
+  const a=TR.rows.filter(r=>(!c||r.chest===c)&&(!pt||(pt==='*'?r.parts.length:pt==='-'?!r.parts.length:true))&&(!$('tUn').checked||!r.checked)&&($('tEx').checked||!r.excluded)&&(!q||r.name.includes(q))&&(!$('tDiff').checked||(r.wd&&r.wd.parts.slice().sort().join()!==r.parts.slice().sort().join())));
+  const cnt={};TR.rows.forEach(r=>cnt[r.chest||'未']=(cnt[r.chest||'未']||0)+1);
+  $('tSum').textContent=`${a.length} 枚（全部 ${TR.rows.length}：`+Object.entries(cnt).map(([k,v])=>k+' '+v).join('・')+`・確かめた ${TR.rows.filter(r=>r.checked).length}）`;
+  const n=tPage*40,id=s=>s.replace(/[^a-z0-9_]/g,'');
+  $('tGrid').innerHTML=a.slice(0,n).map(r=>`<div class="cell"><div class="strip">${thumb('depth','depthref_'+r.name,240)}${$('tSrc').checked?thumb('src',r.name,240):''}</div>
+    <div class="nm">${esc(r.name)}${r.checked?' <span class="tag ok">確かめた</span>':''}${r.excluded?' <span class="tag ng">外した</span>':''}</div><div class="rd">${esc(r.reading)}</div>
+    <div class="bt">胸 <select id="tc_${id(r.name)}">${TR.breasts.map(x=>`<option ${x===r.chest?'selected':''}>${x}</option>`).join('')}</select>
+     体つき <select id="tb_${id(r.name)}">${TR.bodies.map(x=>`<option value="${x}" ${x===r.body?'selected':''}>${x||'—'}</option>`).join('')}</select></div>
+    <div class="bt">${TR.parts.map(p=>`<label class="note"><input type="checkbox" data-p="${p}" class="tp_${id(r.name)}" ${r.parts.includes(p)?'checked':''}>${p}</label>`).join('')}</div>
+    ${r.wd?`<div class="rd">WD14：付属物 <b>${esc(r.wd.parts.join('・')||'なし')}</b>／胸 ${esc(r.wd.chest)}<br><span class="mono">${esc(r.wd.tags.join(', '))}</span> <button class="sm" onclick="wdOne('${esc(r.name)}')">WD14 の付属物を足す</button></div>`:''}
+    <div class="bt"><label class="note"><input type="checkbox" id="tu_${id(r.name)}" ${r.use?'checked':''}> 胸を使う構図</label><button class="sm pri" onclick="trSave('${esc(r.name)}')">保存</button></div></div>`).join('')||'<div class="note">ありません</div>';
+  $('tMore').classList.toggle('hide',a.length<=n)}
+async function wdOne(n){await post('wd_apply',{name:n});TR=await api('traits');drawTr()}
+async function wdAll(){if(!confirm('まだ確かめていない下書きに、WD14 が見つけた付属物を足します（今の印は消しません。胸と、確かめた下書きは変えません）。よろしいですか？'))return;await post('wd_apply_all',{});TR=await api('traits');drawTr()}
+async function trSave(n){const i=n.replace(/[^a-z0-9_]/g,'');await post('trait_save',{name:n,chest:$('tc_'+i).value,body:$('tb_'+i).value,use:$('tu_'+i).checked,
+  parts:[...document.querySelectorAll('.tp_'+i+':checked')].map(x=>x.dataset.p)});const r=TR.rows.find(x=>x.name===n);
+  Object.assign(r,{chest:$('tc_'+i).value,body:$('tb_'+i).value,use:$('tu_'+i).checked,parts:[...document.querySelectorAll('.tp_'+i+':checked')].map(x=>x.dataset.p),checked:true});drawTr()}
+
+/* ---------- 構図の登録（B2） ---------- */
+let GI=null;
+async function loadReg(){await loadWords();COMPS=(await api('comps')).comps;drawReg();setBusyUI()}
+['gQ','gAll'].forEach(id=>$(id).oninput=drawReg);
+function drawReg(){const q=$('gQ').value.trim();const a=COMPS.filter(c=>($('gAll').checked||!c.registered)&&(!q||c.comp.includes(q)||c.reading.includes(q)));
+  $('gGrid').innerHTML=a.map(c=>`<div class="cell ${GI&&GI.comp===c.comp?'sel':''}" style="cursor:pointer" onclick="regOpen('${esc(c.comp)}')">${c.sample?thumb('depth','depthref_'+c.sample,180):'<div class="none">下書きなし</div>'}<div class="nm">${esc(c.comp)}</div><div class="rd">${esc(c.reading)}・${c.n}枚${c.registered?'・<span class="okc">登録済み</span>':''}</div></div>`).join('')||'<div class="note">ありません</div>'}
+async function gotoReg(comp){tab('reg');if(!COMPS.length)await loadReg();await regOpen(comp)}
+async function regOpen(comp){GI=await api('reg_info',{comp});drawReg();$('gNone').classList.add('hide');$('gBody').classList.remove('hide');
+  $('gName').textContent=GI.comp;$('gRead').textContent=GI.reading;$('gPlan').innerHTML='';
+  $('gRegNow').innerHTML=GI.registered?`<div class="warnbox">もう登録してあります（組：${esc(GI.reg_sets.join('・'))}）。ここでは、ほかの組に足すことと、視点・役の文・姿勢・替え専用を直すことができます。</div>`:'';
+  $('gDrafts').innerHTML=GI.drafts.length?GI.drafts.map(d=>{const n=d.d.slice(9);return `<figure>${thumb('depth',d.d,240)}<figcaption>${esc(n)}${d.ex?'（外した）':''}</figcaption></figure><figure>${thumb('region',n,240)}<figcaption>範囲</figcaption></figure>`}).join(''):'<div class="ngbox">白黒の下書きがまだありません。先に「① 画像」の「元絵を採用する」で取り込んでください。</div>';
+  $('gItems').innerHTML=IT.map(([k,lab])=>`<label>${lab}<select id="gi_${k}" onchange="regItems()">${wordOpts(k==='同時の技'?'技':k,GI.items[k]||'')}</select></label>`).join('');
+  drawSets();$('gTags').value=GI.tags||'';$('gRole').value=GI.role||'';$('gPos').value=GI.posture||'';$('gExtra').checked=!!GI.extra;setBusyUI()}
+function drawSets(){$('gSets').innerHTML=GI.sets.map((st,si)=>`<details ${st.suggest?'open':''} style="border:1px solid var(--line);border-radius:8px;padding:4px 8px;margin:4px 0"><summary><b>${esc(st.name)}</b>${st.suggest?' <span class="tag ok">おすすめ</span>':''}${st.rows.some(r=>r.has)?' <span class="tag">登録済み</span>':''}</summary>`+
+  st.rows.map(r=>`<div style="border-top:1px solid var(--line);padding:4px 0"><label><input type="checkbox" data-s="${esc(st.name)}" data-i="${r.i}" ${r.has?'checked disabled':r.suggest?'checked':''}> <b>${r.i+1}行目：${esc(r.label)}</b>${r.has?'（もう入っています）':''}</label>
+   <div class="note">${r.comps.map(c=>`<span class="tag" title="${esc(c.r)}">${esc(c.c)}</span>`).join('')||'（まだ無し）'}</div></div>`).join('')+'</details>').join('')}
+async function regItems(){const it={};IT.forEach(([k])=>it[k]=$('gi_'+k).value);GI.items=it;
+  // 項目を変えたら、項目の表を直し、おすすめの組と役の文を作り直す
+  const keepChecked=[...document.querySelectorAll('#gSets input:checked:not(:disabled)')].map(i=>i.dataset.s+'|'+i.dataset.i);
+  await post('items',{comp:GI.comp,items:it,how:'登録画面'});const r2=await api('reg_info',{comp:GI.comp});
+  GI=Object.assign(r2,{items:it});drawSets();keepChecked.forEach(k=>{const [s,i]=k.split('|');const e=document.querySelector(`#gSets input[data-s="${s}"][data-i="${i}"]`);if(e)e.checked=true});
+  if(!r2.registered){$('gTags').value=r2.tags||'';$('gRole').value=r2.role||'';$('gPos').value=r2.posture||''}}
+function regBody(){return {comp:GI.comp,rows:[...document.querySelectorAll('#gSets input:checked:not(:disabled)')].map(i=>[i.dataset.s,+i.dataset.i]),
+  tags:$('gTags').value,role:$('gRole').value,posture:$('gPos').value,extra:$('gExtra').checked,items:GI.items}}
+async function regPlan(){const p=await post('reg_plan',regBody());
+  $('gPlan').innerHTML=(p.diff.length?'<ul>'+p.diff.map(x=>`<li class="mono">${esc(x)}</li>`).join('')+'</ul>':'<div class="note">変わる所がありません</div>')+`<div class="note">${esc(p.note)}</div>`+
+   (p.busy.length&&!p.test?'<div class="ngbox">撮影中なので登録できません：'+esc(p.busy.join(' ／ '))+'</div>':'')+
+   `<div class="row"><button class="pri" ${(p.busy.length&&!p.test)||!p.diff.length?'disabled':''} onclick="regDo()">確認した。登録する</button></div>`}
+async function regDo(){if(!confirm(GI.comp+' を model.json に登録します。よろしいですか？'))return;await post('reg_do',Object.assign(regBody(),{confirmed:true}));
+  COMPS=(await api('comps')).comps;await regOpen(GI.comp);$('gPlan').innerHTML=`<div class="warnbox">登録しました。続けて下見が動きます（画面の下の記録）。終わったら「当たり具合」タブで、割り当てが動いた場面を確かめてください。</div><div class="row"><button onclick="gotoCheck('${esc(GI.comp)}')">この構図で確認撮影へ</button></div>`;LOADED.use=0;USE=null}
+
+/* ---------- 確認撮影（B3） ---------- */
+async function gotoCheck(id){tab('check');$('kIds').value=id;await checkPlan()}
+async function checkPlan(){const p=await api('check_plan',{ids:$('kIds').value});
+  $('kPoints').innerHTML=p.points.map(x=>`<li>${esc(x)}</li>`).join('');
+  $('kPlan').innerHTML=(p.age.stale?`<div class="warnbox">下見が古いので、数が今と違うかもしれません（${esc(p.age.why.join('／'))}）</div>`:'')+'<table><tr><th>下書き</th><th>読み</th><th class="num">今当たっている場面</th><th class="num">MOD</th><th>撮り方</th></tr>'+
+   p.rows.map(r=>`<tr><td class="mono">${esc(r.id)}</td><td>${esc(r.reading)}</td><td class="num">${r.hits}</td><td class="num">${r.mods}</td><td>${r.hits?'今の割り当ての場面から撮る':(r.sib?'<span class="warnc">当たる場面が無い（替え専用など）→ 簡易なら撮れる（同じ組の場面 '+r.sib+'）</span>':'<span class="ngc">撮れない（登録してから）</span>')}</td></tr>`).join('')+'</table>';setBusyUI()}
+async function checkRun(){const ids=$('kIds').value.split(/[,\s、]+/).filter(x=>x);if(!ids.length)return toast('下書きを入れてください',true);
+  if(!confirm('確認撮影をします（ComfyUI を使います）。よろしいですか？'))return;await post('check_run',{ids,n:+$('kN').value,allow_simple:$('kSimple').checked})}
+async function checkList(){const d=await api('check_list');$('kPoints').innerHTML=d.points.map(x=>`<li>${esc(x)}</li>`).join('');
+  $('kTbl').tBodies[0].innerHTML=d.dirs.map(x=>`<tr style="cursor:pointer" onclick="checkShow('${esc(x.dir)}')"><td class="mono">${esc(x.name)}</td><td>${esc(x.reading)}</td><td class="num">${x.n}</td><td>${esc(x.time)}</td></tr>`).join('')||'<tr><td colspan="4" class="note">まだありません</td></tr>';setBusyUI()}
+async function checkShow(dir){const d=await api('check_imgs',{dir});$('kTitle').textContent=dir+'（左＝下書きあり／右＝下書きなし・同じシード）';
+  const draft=dir.startsWith('ref_')?dir.slice(4):dir.startsWith('簡易_')?dir.slice(3):dir;
+  $('kPairs').innerHTML=(dir.startsWith('相手ごと_')?'<div class="note">左＝相手ごとの文あり／右＝なし（同じシード）。髪色・服が相手どうしで混ざっていないか、主人公に移っていないかを見ます。</div>':'')+`<div class="row ${dir.startsWith('相手ごと_')?'hide':''}"><button class="sm" onclick="excludeDlg('${esc(draft.startsWith('depthref_')?draft:'depthref_'+draft)}')">この下書きを外す…</button><span class="note">構図ごとの確認のときは、外すのは1枚ずつです（構図の「全部の絵」から選ぶ）。</span></div>`+
+   d.pairs.map(p=>`<div class="scene"><div><b class="mono">${esc(p.key)}</b></div><div class="strip">`+[['あり',p.yes],['なし',p.no]].map(([sub,f])=>`<figure style="flex:0 0 300px">${f?`<img class="c" style="width:300px" loading="lazy" src="${im('check',f,600,{dir,sub,f})}" onclick="zoom('${im('check',f,0,{dir,sub,f})}')">`:'<div class="none" style="width:300px">なし</div>'}<figcaption>下書き${sub}</figcaption></figure>`).join('')+'</div></div>').join('')||'<div class="note">絵がありません</div>'}
+
+/* ---------- 当たり具合 ---------- */
+function ageHtml(a){if(!a||!a.time)return '<div class="ngbox">下見がまだありません。「下見をやり直す」を押してください（撮影中は押せません）。</div>';
+  return `<div class="${a.stale?'warnbox':'note'}">下見：${esc(a.time)}（${a.mods} MOD）${a.stale?'　<b>下見が古い</b>：'+esc(a.why.join('／')):'　最新です'}</div>`}
+async function loadUse(){await loadWords();USE=await api('usage');const c=USE.counts;$('uAge').innerHTML=ageHtml(USE.age);
+  $('uCnt').innerHTML=[['場面',c.scenes],['組み立て失敗',c.fail],['本文と下書きの姿勢の食い違い',c.mismatch],['同じMODの中での重複',c.dup],['下書きなしの場面',c.nodraft],['割り当てが動いた場面',c.moved==null?'—':c.moved]].map(([k,v])=>`<div><b>${v}</b><span>${k}</span></div>`).join('');
+  drawUse();
+  $('umN').textContent=USE.mismatch.length+' 件';$('umTbl').tBodies[0].innerHTML=USE.mismatch.map(r=>`<tr><td>${r[0]}</td><td><a href="#" onclick="return gotoScene('${r[0]}','${r[1]}')">${r[1]}</a></td><td class="mono">${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`).join('');
+  $('udN').textContent=USE.dup.length+' 件';$('udTbl').tBodies[0].innerHTML=USE.dup.map(r=>`<tr><td><a href="#" onclick="return gotoMod('${r[0]}')">${r[0]}</a></td><td class="mono">${r[1]}</td><td class="num">${r[2]}</td></tr>`).join('');
+  $('uvN').textContent=USE.moved_from?`${USE.moved.length} 件（${USE.moved_from} の下見と比べて）`:'前の下見が無いので比べられません（次に下見をやり直すと比べられます）';
+  $('uvTbl').tBodies[0].innerHTML=USE.moved.map(r=>`<tr><td>${r[0]}</td><td><a href="#" onclick="return gotoScene('${r[0]}','${r[1]}')">${r[1]}</a></td><td class="mono">${r[2]||'なし'}</td><td class="mono">${r[3]||'なし'}</td></tr>`).join('');
+  $('uUnused').innerHTML=USE.unused.map(u=>`<span class="tag" title="${esc(u.sets.join('・'))}">${esc(u.comp)}（${esc(u.reading)}）</span>`).join('')||'ありません';
+  $('uOther').innerHTML=USE.others.map(o=>`<span class="tag">${esc(o.draft)}：${o.n}</span>`).join('')||'ありません';
+  const pr=await api('pose_report');$('prT').textContent=pr.time?'（'+pr.time+' に作ったもの）':'（まだありません）';
+  window.PR=pr;$('prTbl').tHead.innerHTML='<tr>'+pr.head.map(h=>`<th>${esc(h)}</th>`).join('')+'</tr>';drawPR();setBusyUI()}
+$('prQ').oninput=drawPR;
+function drawPR(){const pr=window.PR;if(!pr)return;const q=$('prQ').value.trim().toLowerCase();const a=pr.rows.filter(r=>!q||Object.values(r).join(' ').toLowerCase().includes(q));
+  $('prTbl').tBodies[0].innerHTML=a.slice(0,800).map(r=>'<tr>'+pr.head.map(h=>`<td class="${h==='当てはまった語'?'note':''}">${esc(r[h])}</td>`).join('')+'</tr>').join('')+(a.length>800?`<tr><td colspan="9" class="note">ほか ${a.length-800} 行（絞り込んでください）</td></tr>`:'')}
+$('ucQ').oninput=drawUse;
+$('ucTbl').tHead.onclick=e=>{const k=e.target.dataset.k;if(!k)return;ucSort={k,d:ucSort.k===k?-ucSort.d:(k==='n'||k==='mods'?-1:1)};drawUse()};
+function drawUse(){if(!USE)return;const q=$('ucQ').value.trim();let a=USE.comps.filter(c=>!q||c.comp.includes(q)||c.reading.includes(q));
+  a=a.slice().sort((x,y)=>{const k=ucSort.k;const vx=k==='sets'?x.sets.join():x[k],vy=k==='sets'?y.sets.join():y[k];return (typeof vx==='number'?vx-vy:String(vx).localeCompare(String(vy),'ja'))*ucSort.d});
+  $('ucTbl').tBodies[0].innerHTML=a.map((c,i)=>`<tr onclick="toggleUse(this,'${esc(c.comp)}')" style="cursor:pointer"><td class="mono">${esc(c.comp)}</td><td>${esc(c.reading)}</td><td class="num">${c.n}</td><td class="num">${c.mods}</td><td class="note">${esc(c.sets.join('・'))}</td>
+    <td class="note">${Object.entries(c.drafts).map(([d,n])=>esc(d.replace('depthref_',''))+' '+n).join('・')}</td><td><button class="sm" onclick="event.stopPropagation();gotoComp('${esc(c.comp)}')">場面を見る</button></td></tr>`).join('')}
+function toggleUse(tr,comp){const nx=tr.nextElementSibling;if(nx&&nx.classList.contains('sub')){nx.remove();return}const c=USE.comps.find(x=>x.comp===comp);
+  const by={};c.scenes.forEach(([m,n,d])=>(by[m]=by[m]||[]).push(n.replace(m+'_','')+'（'+d.replace('depthref_','')+'）'));
+  tr.insertAdjacentHTML('afterend',`<tr class="sub"><td colspan="7" class="note">${Object.entries(by).map(([m,l])=>`<b>${m}</b>：${esc(l.join('、'))}`).join('<br>')}</td></tr>`)}
+async function runPreview(){if(!confirm('下見をやり直します（数分。撮影はしません）。よろしいですか？'))return;await post('preview',{})}
+async function runPoseRep(){await post('pose_report',{})}
+
+/* ---------- MODごとの割り当て ---------- */
+document.querySelectorAll('input[name=aMode]').forEach(r=>r.onchange=()=>{const m=document.querySelector('input[name=aMode]:checked').value;$('aModBox').classList.toggle('hide',m!=='mod');$('aCompBox').classList.toggle('hide',m!=='comp');if(m==='comp')drawCompPick()});
+async function loadAssign(){await loadWords();$('aList').innerHTML='<div class="note">読み込み中…（はじめは少し時間がかかります）</div>';
+  const d=await api('assign_sum');SUMS=d.mods;$('aAge').innerHTML=ageHtml(d.age).replace(/<div class="(\w+)">/,'<span class="$1">').replace('</div>','</span>');drawSums();
+  if(!USE)USE=await api('usage');drawCompPick();
+  if(Q.get('mod')&&!ACODE)openMod(Q.get('mod'));else if(!ACODE)$('aList').innerHTML='<div class="note">左の一覧から MOD を選んでください。</div>';setBusyUI()}
+$('aOnlyMarked').onchange=drawSums;
+$('aSumTbl').tHead.onclick=e=>{const k=e.target.dataset.k;if(!k)return;sumSort={k,d:sumSort.k===k?-sumSort.d:(['code','n'].includes(k)?1:-1)};drawSums()};
+function sv(m,k){return k.startsWith('m_')?(m.marks[k.slice(2)]||0):m[k]}
+function drawSums(){let a=SUMS.filter(m=>!$('aOnlyMarked').checked||m.marked);a=a.slice().sort((x,y)=>{const vx=sv(x,sumSort.k),vy=sv(y,sumSort.k);return (typeof vx==='number'?vx-vy:String(vx).localeCompare(String(vy)))*sumSort.d});
+  const K=['下書きなし','姿勢の食い違い','同じMODで重複','撮った時と違う','範囲なし','主人公の範囲なし'];
+  $('aSumTbl').tBodies[0].innerHTML=a.map(m=>`<tr onclick="openMod('${m.code}')" style="cursor:pointer;${m.code===ACODE?'background:var(--acc2)':''}"><td class="num">${m.n?'N'+m.n:''}</td><td>${m.code}${m.inpv?'':' <span class="tag warn">下見なし</span>'}</td><td class="num">${m.scenes}</td><td class="num">${m.drafts}</td><td class="num ${m.marked?'warnc':''}">${m.marked||''}</td>`+K.map(k=>`<td class="num">${m.marks[k]||''}</td>`).join('')+'</tr>').join('')}
+$('acQ').oninput=drawCompPick;
+function drawCompPick(){if(!USE)return;const q=$('acQ').value.trim();
+  $('acTbl').tBodies[0].innerHTML=USE.comps.filter(c=>!q||c.comp.includes(q)||c.reading.includes(q)).map(c=>`<tr style="cursor:pointer" onclick="openComp('${esc(c.comp)}')"><td class="mono">${esc(c.comp)}</td><td>${esc(c.reading)}</td><td class="num">${c.n}</td></tr>`+
+   Object.entries(c.drafts).map(([d,n])=>`<tr style="cursor:pointer" onclick="openComp('','${esc(d)}')"><td class="mono note">　└ ${esc(d.replace('depthref_',''))}</td><td class="note">下書き1枚</td><td class="num note">${n}</td></tr>`).join('')).join('')}
+async function openMod(code){ACODE=code;drawSums();$('aTitle').textContent=code+' の場面';$('aList').innerHTML='<div class="note">読み込み中…</div>';
+  const d=await api('assign',{code});AROWS=d.rows;$('aNote').innerHTML=d.readable?'':'<span class="warnc">このMODのカードの文は読めません（セリフ・本文は出せません）</span>';fillTech();drawScenes();scrollTo(0,0)}
+async function openComp(comp,draft){ACODE='';$('aTitle').textContent=(draft||comp)+' が当たっている場面（MOD をまたいで）';$('aList').innerHTML='<div class="note">読み込み中…</div>';
+  const d=await api('assign_by',{comp:comp||'',draft:draft||''});AROWS=d.rows;$('aNote').textContent='';fillTech();drawScenes()}
+function fillTech(){const t=[...new Set(AROWS.map(r=>r.tech).filter(x=>x))].sort();$('aTech').innerHTML='<option value="">技：全部</option>'+t.map(x=>`<option>${esc(x)}</option>`).join('')}
+['aMark','aTech','aQ','aOnlyM','aOnlyScene','aSort'].forEach(id=>$(id).oninput=drawScenes);
+const MK={'下書きなし':'ng','姿勢の食い違い':'ng','同じMODで重複':'warn','撮った時と違う':'warn','範囲なし':'warn','主人公の範囲なし':'warn','組み立て失敗':'ng','下見にまだ無い':''};
+function drawScenes(){const mk=$('aMark').value,te=$('aTech').value,q=$('aQ').value.trim();
+  let a=AROWS.filter(r=>(!$('aOnlyScene').checked||r.scene)&&(!mk||r.marks.includes(mk))&&(!te||r.tech===te)&&(!q||(r.comp||'').includes(q)||(r.draft||'').includes(q)||(r.game&&(r.game.chara+' '+r.game.kind+' '+r.game.skills.join(' ')).includes(q))||r.code.includes(q))&&(!$('aOnlyM').checked||r.marks.length));
+  if($('aSort').value==='marks')a=a.slice().sort((x,y)=>y.marks.length-x.marks.length);if($('aSort').value==='comp')a=a.slice().sort((x,y)=>(x.comp||'~').localeCompare(y.comp||'~'));
+  const tbl=!ACODE&&a.length?`<div class="scroll" style="max-height:360px;margin-bottom:10px"><table><thead><tr><th>MOD</th><th>キャラ</th><th>絵の種類</th><th>ゲームの中の技の名前</th><th>技の判定（構図）</th><th>下書き</th><th></th></tr></thead><tbody>${a.map(r=>{const g=r.game||{skills:[]};return `<tr><td>${esc(r.code)}</td><td>${esc(g.chara||'')}</td><td>${esc(g.kind||r.type||'')}</td><td>${g.skills.length?g.skills.map(x=>esc(x)+(x===g.fav?' ★':'')).join('、'):'<span class="note">—</span>'}</td><td>${esc(r.tech?(r.tech.startsWith('alt:')?'構図LoRA '+r.tech.slice(4):((r.why.find(w=>w.startsWith('技の判定：'))||r.tech).replace('技の判定：',''))):'')}</td><td class="mono note">${esc((r.draft||'').replace('depthref_',''))}</td><td><a href="#" onclick="document.getElementById('sc_${esc(r.code)}_${esc(r.name)}').scrollIntoView();return false">絵を見る</a></td></tr>`}).join('')}</tbody></table></div>`:'';
+  $('aList').innerHTML=`<div class="note">${a.length} 件</div>`+tbl+a.map(sceneHtml).join('')}
+function sceneHtml(r){const src=r.draft.startsWith('depthref_')?r.draft.slice(9):'';const P={lie:'寝る',fours:'四つんばい',kneel:'ひざまずく',sit:'座る',stand:'立つ'};
+  const fig=(cap,h)=>`<figure>${h}<figcaption>${cap}</figcaption></figure>`;const none='<div class="none">なし</div>';
+  return `<div class="scene" id="sc_${esc(r.code)}_${esc(r.name)}"><div class="strip">${fig('元絵',src?thumb('src',src,240):none)}${fig('白黒の下書き',r.draft?thumb('depth',r.draft,240):none)}${fig('範囲',src?thumb('region',src,240):none)}${fig('撮った絵',r.shot?thumb('shot',r.shot,240,{code:r.code}):none)}</div>
+   <div><div><b class="mono">${esc(r.name)}</b>　<span class="note">${esc(r.type)}</span>　${r.marks.map(m=>`<span class="tag ${MK[m]||''}">${esc(m)}</span>`).join('')}</div>
+   <div class="kv">${r.game&&(r.game.kind||r.game.chara)?`<b>ゲームの中</b><span>${esc(r.code)}　${esc(r.game.chara||'')}　<span class="tag">${esc(r.game.kind||'')}</span>${r.game.skills.length?'　技：'+r.game.skills.map(x=>esc(x)+(x===r.game.fav?' <span class="tag ok">★得意技</span>':'')).join('、'):''}</span>`:''}
+    <b>構図</b><span>${r.comp?esc(r.comp)+'　'+esc(readName(r.comp)):(r.draft?esc(r.draft):'<span class="note">下書きなし</span>')}</span>
+    <b>下書き</b><span class="mono">${esc(r.draft||'—')}</span>
+    ${r.scene?`<b>姿勢</b><span>本文：${esc(P[r.sp]||'読めない')}　／　下書き：${esc(P[r.dp]||'決まっていない')}</span>`:''}
+    ${r.why.length?`<b>選ばれた理由</b><span>${esc(r.why.join('／'))}</span>`:''}
+    ${r.scene?`<b>相手の種類</b><span>${esc(r.kind)}${r.parts.length?'（'+esc(r.parts.join('・'))+'）':''}${r.cross?'　<span class="tag">女装の場面</span>':''}</span>`:''}
+    ${src?`<b>範囲</b><span>${esc(r.region||'なし')}　<span class="note">${esc(r.region_result)}${r.region_fix?'・直す：'+esc(r.region_fix):''}</span></span>`:''}
+    ${r.shot?`<b>撮った絵</b><span class="mono">${esc(r.shot)}　<span class="note">撮った時の下書き：${esc(r.shot_draft==null?'読めない':r.shot_draft||'なし')}</span></span>`:''}
+    ${r.note?`<b>注意</b><span class="note">${esc(r.note)}</span>`:''}</div>
+   <div class="row"><button class="sm pri" onclick="sceneDetail('${esc(r.code)}','${esc(r.name)}')">くわしく（シチュエーション）</button>
+    ${r.draft.startsWith('depthref_')?`<button class="sm" onclick="gotoCheck('${esc(r.draft.slice(9))}')">確認撮影へ</button><button class="sm" onclick="excludeDlg('${esc(r.draft)}')">この下書きを外す…</button><button class="sm" onclick="gotoRegion('${esc(src)}')">範囲の確認へ</button>`:''}
+    ${r.scene?`<button class="sm" onclick="reshootAdd('${esc(r.code)}','${esc(r.name)}')">撮り直しの予定に入れる</button><button class="sm" onclick="textfixAdd('${esc(r.code)}','${esc(r.name)}','${esc(r.draft)}')">本文を後で直す（メモ）</button>`:''}</div></div></div>`}
+function gotoMod(code){tab('assign');document.querySelector('input[name=aMode][value=mod]').click();openMod(code);return false}
+async function gotoScene(code,name){tab('assign');document.querySelector('input[name=aMode][value=mod]').click();await openMod(code);$('aOnlyScene').checked=false;drawScenes();const e=document.getElementById('sc_'+code+'_'+name);if(e){e.scrollIntoView();e.style.background='var(--acc2)'}return false}
+function gotoComp(comp){tab('assign');document.querySelector('input[name=aMode][value=comp]').click();openComp(comp)}
+async function gotoRegion(n){tab('region');if(!RROWS.length)await loadRegions();$('rRes').value='';$('rQ').value=n;$('rEx').checked=true;drawRegions()}
+async function sceneDetail(code,name){$('dlgT').textContent=name;$('dlgB').innerHTML='<div class="note">読み込み中…</div>';$('dlg').showModal();
+  const d=await api('scene',{code,name});const r=d.row||{};let h='';
+  if(d.profile){const p=d.profile;h+=`<h3>相手</h3><div class="kv"><b>名前</b><span>${esc(p.name||'—')}</span><b>性別</b><span>${esc(p.gender||'—')}</span><b>タイプ</b><span>${esc(p.type||'—')}</span><b>得意技</b><span>${esc(p.fav||'—')}</span>
+    ${p.input?Object.entries(p.input).map(([k,v])=>`<b>${esc({title:'肩書き',name:'名前',gender:'性別',height:'身長',b:'B',w:'W',h:'H',look:'外見',persona:'性格'}[k]||k)}</b><span>${esc(v)}</span>`).join(''):''}</div>`+
+    (p.explain.length?'<div class="note" style="margin-top:4px">'+p.explain.map(esc).join('<br>')+'</div>':'')}
+  if(d.read)h+=`<div class="warnbox">${esc(d.read)}</div>`;
+  const s=d.situation;
+  if(s&&s.attacks.length){h+='<h3>技とセリフ（攻撃の絵）</h3>'+s.attacks.map(a=>`<div style="margin-bottom:8px"><b>${esc(a.name||'（技名なし）')}</b> ${a.fav?'<span class="tag ok">★得意技</span>':''} <span class="note">${esc(a.atype)}</span>`+
+     a.lines.map(l=>`<div class="line"><span class="k">${esc([l.target,l.stage].filter(x=>x).join('・')||l.kind)}</span>${nl(l.text)}</div>`).join('')+'</div>').join('')+'<div class="note">「段階」は累積スタックの段階（数字が大きいほど進んでいる）。「味方モンスターへ」は主人公の味方のモンスターが受けたときのセリフ。</div>'}
+  if(s&&s.lose.length){h+='<h3>この絵が出る所の前後の本文</h3>'+(s.recall?'<div class="note">回想バトルでも出る絵です。</div>':'')+s.lose.map((x,i)=>`<div class="note">${esc(x.file)}</div><div id="ls_${i}">${x.short.map(lineHtml).join('')}</div><div id="ll_${i}" class="hide">${x.long.map(lineHtml).join('')}</div><button class="sm" onclick="$('ls_${i}').classList.toggle('hide');$('ll_${i}').classList.toggle('hide')">続きを読む／短くする</button>`).join('')}
+  h+='<h3>絵の指示から読み取った内容</h3><div class="kv">'+d.gen.map(([k,v])=>`<b>${esc(k)}</b><span>${esc(v)}</span>`).join('')+'</div>';
+  h+=`<h3>絵の指示（英語のまま）</h3><div class="mono note" style="white-space:pre-wrap">${esc(d.prompt)}</div>`;
+  if(r.scene){const sp=await api('split',{code,name});
+    h+=`<h3>相手が2人のとき：相手ごとの文</h3><div class="note">相手1（画面の左の人を目安）と相手2 の見た目を、英語のタグで書きます（例：red hair, twin tails, red eyes, black dress）。両方を書き、下書きに相手ごとの範囲（「範囲の確認」の「手で囲む」で相手1・相手2 を囲んで作り直したもの）があるときだけ使われます。今の絵の指示（prompts）は変えません。</div>
+     <div class="${sp.masks?'note':'warnbox'}">下書き ${esc(sp.draft||'なし')}：${sp.masks?'相手ごとの範囲があります':'相手ごとの範囲がまだありません（「範囲の確認」で相手1・相手2 を手で囲み、作り直してください）'}</div>
+     <label class="note">相手1 の見た目<textarea id="spA">${esc(sp.a)}</textarea></label><label class="note">相手2 の見た目<textarea id="spB">${esc(sp.b)}</textarea></label>
+     <div class="row"><button class="pri" onclick="splitSave('${esc(code)}','${esc(name)}')">保存</button>
+      <button class="needidle" ${sp.busy.length&&!sp.test?'disabled':''} onclick="splitTry('${esc(code)}','${esc(name)}')">この場面を試しに撮る（相手ごとの文 あり／なし）</button>
+      ${sp.draft&&sp.draft.startsWith('depthref_')?`<button onclick="$('dlg').close();gotoRegion('${esc(sp.draft.slice(9))}')">範囲の確認へ</button>`:''}</div>`}
+  h+=`<h3>下書きが合わないと思ったとき</h3><div class="row">${(r.draft||'').startsWith('depthref_')?`<button onclick="excludeDlg('${esc(r.draft)}')">本文に下書きを合わせる（この下書きを外す…）</button>`:''}<button onclick="textfixAdd('${esc(code)}','${esc(name)}','${esc(r.draft||'')}')">後で本文を直す対象としてメモ</button><button onclick="reshootAdd('${esc(code)}','${esc(name)}')">撮り直しの予定に入れる</button></div>`;
+  $('dlgB').innerHTML=h}
+const nl=t=>esc(t).replace(/\\n/g,'<br>');
+async function splitSave(code,name){await post('split_save',{code,name,a:$('spA').value,b:$('spB').value})}
+async function splitTry(code,name){if(!confirm('この場面を、相手ごとの文あり／なしで1枚ずつ試しに撮ります（ComfyUI を使います）。よろしいですか？'))return;await post('split_try',{code,name})}
+function lineHtml(l){return `<div class="line ${l.here?'here':''}"><span class="k">${esc(l.kind)}</span>${nl(l.text)}</div>`}
+async function excludeDlg(draft){const p=await post('exclude_plan',{draft});$('dlgT').textContent='下書きを外す：'+draft;
+  const by={};p.scenes.forEach(([m,n])=>(by[m]=by[m]||[]).push(n.replace(m+'_','')));
+  $('dlgB').innerHTML=(p.already?'<div class="warnbox">もう外してあります。</div>':'')+
+   `<div class="row">${thumb('src',draft.slice(9),220)}${thumb('depth',draft,220)}${thumb('region',draft.slice(9),220)}</div>
+   <h3>影響を受ける場面（今の下見で、この下書きが当たっている場面 ${p.scenes.length} 件）</h3><div class="note">${Object.entries(by).map(([m,l])=>`<b>${m}</b>：${esc(l.join('、'))}`).join('<br>')||'なし'}</div>
+   <div class="note">同じ構図（${esc(p.comp)}）の残りの下書き：${esc(p.left.join('、')||'なし（この構図は使われなくなります）')}</div>
+   <h3>model.json の変わるところ</h3><div class="mono">${esc(p.change)}</div>
+   <div class="note">書き換える前に、画像生成\\_控え\\ に model.json の控えを取ります。下書きのファイルは消しません。あとで「model.json の控え」タブから戻せます。外したあとは、下見をやり直すと割り当てに反映されます。</div>
+   ${p.busy.length&&!p.test?'<div class="ngbox">撮影中なので外せません：'+esc(p.busy.join(' ／ '))+'</div>':''}
+   <div class="row"><input id="exWhy" placeholder="外す理由（1行）" style="flex:1"><button class="pri" ${p.already||(p.busy.length&&!p.test)?'disabled':''} onclick="doExclude('${esc(draft)}')">確認した。外す</button></div>`;
+  if(!$('dlg').open)$('dlg').showModal()}
+async function doExclude(draft){await post('exclude',{draft,why:$('exWhy').value,confirmed:true});$('dlg').close();USE=null;LOADED.use=0;
+  if(window.DC_AFTER===draft){window.DC_AFTER=null;await post('depth_decide',{draft,verdict:'外す'});DC=await api('depth_check');drawDc()}}
+async function reshootAdd(code,name){const why=prompt('撮り直す理由（1行・空欄でよい）','');if(why===null)return;await post('reshoot_add',{code,names:[name],why})}
+async function textfixAdd(code,name,draft){const memo=prompt('本文のどこを直したいか（1行）','');if(memo===null)return;await post('textfix_add',{code,name,draft,memo})}
+
+/* ---------- 構図名と語 ---------- */
+async function loadNames(){await loadWords();const d=await api('items');ITEMS=d.rows;REG=new Set(d.registered);drawWords();drawItems()}
+['wCat','wQ'].forEach(id=>$(id).oninput=drawWords);
+function drawWords(){const c=$('wCat').value,q=$('wQ').value.trim().toLowerCase();
+  $('wTbl').tBodies[0].innerHTML=WORDS.map((w,i)=>[w,i]).filter(([w])=>(!c||w['項目']===c)&&(!q||(w['英字']+w['日本語']).toLowerCase().includes(q))).map(([w,i])=>`<tr><td>${esc(w['項目'])}</td><td class="mono">${esc(w['英字'])}</td>
+   <td><input id="wj_${i}" value="${esc(w['日本語'])}" size="14"></td><td><input type="checkbox" id="wo_${i}" ${w['選択肢に出す']==='○'?'checked':''}></td><td><input id="wc_${i}" value="${esc(w['まとめる先'])}" size="8"></td><td><input id="wm_${i}" value="${esc(w['メモ'])}" size="18"></td>
+   <td><button class="sm" onclick="wordSave(${i})">保存</button></td></tr>`).join('')}
+async function wordSave(i){const w=WORDS[i];await post('word_save',{en:w['英字'],cat:w['項目'],'日本語':$('wj_'+i).value,'選択肢に出す':$('wo_'+i).checked?'○':'','まとめる先':$('wc_'+i).value,'メモ':$('wm_'+i).value});await loadWords();drawWords()}
+async function wordAdd(){await post('word_add',{cat:$('waCat').value,en:$('waEn').value,ja:$('waJa').value,canon:$('waCanon').value});$('waEn').value=$('waJa').value=$('waCanon').value='';await loadWords();drawWords();fillSampleFilters()}
+['iQ','iBlank','iReg'].forEach(id=>$(id).oninput=()=>{iPage=1;drawItems()});
+function drawItems(){const q=$('iQ').value.trim();const K=['人数','技','姿勢','視点','位置','同時の技'];
+  const a=ITEMS.filter(r=>(!q||r['構図名'].includes(q)||(r['読み']||'').includes(q))&&(!$('iBlank').checked||['技','姿勢','視点'].some(k=>!r[k]))&&(!$('iReg').checked||REG.has(r['構図名'])));
+  const n=iPage*60;
+  $('iTbl').tBodies[0].innerHTML=a.slice(0,n).map((r,j)=>{const i=ITEMS.indexOf(r);return `<tr><td style="width:70px">${thumb('depth','depthref_'+r['構図名'],80)}</td><td><span class="mono">${esc(r['構図名'])}</span>${REG.has(r['構図名'])?'':' <span class="tag">未登録</span>'}<br><span class="note">${esc(r['読み'])}</span><br><span class="note">作り方：${esc(r['作り方'])}</span></td>`+
+   K.map(k=>`<td><select id="it_${i}_${k}">${wordOpts(k==='同時の技'?'技':k,r[k])}</select></td>`).join('')+`<td><input id="it_${i}_m" value="${esc(r['メモ'])}" size="16"></td><td><button class="sm" onclick="itemSave(${i})">保存</button></td></tr>`}).join('');
+  $('iMore').classList.toggle('hide',a.length<=n)}
+async function itemSave(i){const r=ITEMS[i],it={};['人数','技','姿勢','視点','位置','同時の技'].forEach(k=>it[k]=$(`it_${i}_${k}`).value);it['メモ']=$(`it_${i}_m`).value;
+  await post('items',{comp:r['構図名'],items:it,how:'手'});Object.assign(r,it,{'作り方':'手'})}
+
+/* ---------- メモ・予定 ---------- */
+async function loadMemo(){const d=await api('memos');window.MEMO=d;
+  const kinds=[...new Set(d.memo.map(m=>m['種類']))];const cur=$('mKind').value;$('mKind').innerHTML='<option value="">種類：全部</option>'+kinds.map(k=>`<option ${k===cur?'selected':''}>${esc(k)}</option>`).join('');drawMemo();
+  $('rsTbl').tBodies[0].innerHTML=d.reshoot.map(r=>`<tr><td>${r['並べた日時']?'':`<input type="checkbox" data-k="${esc(r.MOD)}|${esc(r['画像名'])}">`}</td><td>${esc(r['日時'])}</td><td>${esc(r.MOD)}</td><td><a href="#" onclick="return gotoScene('${esc(r.MOD)}','${esc(r['画像名'])}')">${esc(r['画像名'])}</a></td><td>${esc(r['理由'])}</td><td>${esc(r['並べた日時'])}</td></tr>`).join('')||'<tr><td colspan="6" class="note">ありません</td></tr>';
+  $('tfTbl').tBodies[0].innerHTML=d.textfix.map((r,i)=>`<tr><td><input type="checkbox" data-i="${i}"></td><td>${esc(r['日時'])}</td><td>${esc(r.MOD)}</td><td><a href="#" onclick="return gotoScene('${esc(r.MOD)}','${esc(r['画像名'])}')">${esc(r['画像名'])}</a></td><td class="mono">${esc(r['下書き'])}</td><td>${esc(r['メモ'])}</td></tr>`).join('')||'<tr><td colspan="6" class="note">ありません</td></tr>';setBusyUI()}
+['mKind','mQ'].forEach(id=>$(id).oninput=drawMemo);
+function drawMemo(){const d=window.MEMO;if(!d)return;const k=$('mKind').value,q=$('mQ').value.trim();
+  $('mTbl').tBodies[0].innerHTML=d.memo.slice().reverse().filter(m=>(!k||m['種類']===k)&&(!q||Object.values(m).join(' ').includes(q))).map(m=>`<tr><td>${esc(m['日時'])}</td><td>${esc(m['種類'])}</td><td class="mono">${esc(m['対象'])}</td><td>${esc(m['判定'])}</td><td>${esc(m['理由'])}</td></tr>`).join('')||'<tr><td colspan="5" class="note">ありません</td></tr>'}
+async function reshootRun(){if(!confirm('予定の場面を、今の割り当てで撮り直します（ComfyUI を使います）。よろしいですか？'))return;await post('reshoot_run',{});loadMemo()}
+async function reshootDel(){const keys=[...document.querySelectorAll('#rsTbl input:checked')].map(i=>i.dataset.k.split('|'));if(!keys.length)return toast('外す行に印を付けてください',true);await post('reshoot_del',{keys});loadMemo()}
+async function textfixDel(){const idx=[...document.querySelectorAll('#tfTbl input:checked')].map(i=>+i.dataset.i);if(!idx.length)return toast('外す行に印を付けてください',true);await post('textfix_del',{idx});loadMemo()}
+async function textfixText(){const r=await post('textfix_text',{});$('tfOut').classList.remove('hide');$('tfOut').value=r.text;toast('文章にしました（記録\\本文を直す候補.txt にも保存）')}
+
+/* ---------- model.json の控え ---------- */
+async function loadBak(){const d=await api('backups');
+  $('bTbl').tBodies[0].innerHTML=d.files.map(f=>`<tr><td class="mono">${esc(f.name)}</td><td>${esc(f.time)}</td><td><button class="sm" onclick="bakPlan('${esc(f.name)}')">変わる内容を見る</button></td></tr>`).join('');
+  $('bLog').textContent=d.log.join('\n')||'（まだありません）'}
+async function bakPlan(name){const p=await post('restore_plan',{name});
+  $('bDiff').innerHTML=`<h3>${esc(name)} に戻すと変わるところ</h3>`+(p.diff.length?'<ul>'+p.diff.map(x=>`<li class="mono">${esc(x)}</li>`).join('')+'</ul>':'<div class="note">今と同じです（戻しても変わりません）</div>')+
+   `<div class="note">${esc(p.note)}</div>${p.busy.length&&!p.test?'<div class="ngbox">撮影中なので戻せません：'+esc(p.busy.join(' ／ '))+'</div>':''}
+   <div class="row"><button class="pri" ${(p.busy.length&&!p.test)||!p.diff.length?'disabled':''} onclick="bakDo('${esc(name)}')">確認した。この控えに戻す</button></div>`}
+async function bakDo(name){if(!confirm(name+' の pose_control に戻します。よろしいですか？'))return;await post('restore',{name,confirmed:true});$('bDiff').innerHTML='';loadBak()}
+
+/* ---------- はじめ ---------- */
+(async function(){await tickState();
+  if(Q.get('blur')==='1'){$('blur').checked=true;document.body.classList.add('blur')}
+  await tab(Q.get('tab')||'pick');
+  if(Q.get('cand')){$('cState').value='';$('cQ').value=Q.get('cand');drawCands();selectCand(Q.get('cand'))}
+  if(Q.get('rq')){$('rQ').value=Q.get('rq');drawRegions()}
+  if(Q.get('shot'))$('testbar').remove();
+  if(Q.get('items')){const v=Q.get('items').split(',');['人数','技','姿勢','視点','位置','同時の技'].forEach((k,i)=>{if(v[i])$('bi_'+k).value=v[i]});buildName()}
+  if(Q.get('reg')){await regOpen(Q.get('reg'))}
+  if(Q.get('dk')){$('dKind').value=Q.get('dk');drawDc()}
+  if(Q.get('tab')==='check'&&Q.get('shot')){$('kIds').value='kiss_lap_5';await checkPlan()}
+  if(Q.get('hd')){await loadRegions();await hdOpen(Q.get('hd'));if(Q.get('hdz')){$('hdZoom').value=Q.get('hdz');hdZoom()}}
+  if(Q.get('scene')){const [c,n]=Q.get('scene').split('/');await sceneDetail(c,n)}
+  if(Q.get('guide'))setTimeout(()=>guide(Q.get('guide'),Q.get('gt')||''),1500)})();
+function guide(sel,text){document.querySelectorAll(sel).forEach((e,i)=>{e.classList.add('guide');if(i===0){if(!Q.get('shot')||e.closest('dialog'))e.scrollIntoView({block:'center'});const rr=e.getBoundingClientRect();document.body.dataset.grect=JSON.stringify([Math.round(rr.left+scrollX),Math.round(rr.top+scrollY),Math.round(rr.width),Math.round(rr.height)]);if(text){const r=e.getBoundingClientRect(),t=document.createElement('div');t.className='gtip';t.textContent=text;t.style.left=Math.max(4,r.left+scrollX)+'px';t.style.top=Math.max(4,r.top+scrollY-30)+'px';document.body.appendChild(t)}}})}
+</script>
+</body>
+</html>

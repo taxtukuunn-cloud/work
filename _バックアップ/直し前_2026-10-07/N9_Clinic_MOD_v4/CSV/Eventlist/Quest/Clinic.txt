@@ -1,0 +1,2 @@
+白樺前立腺クリニック（院長　ミヤビ）,Card/Clinic_master,クエストイベント
+白樺前立腺クリニック【回想バトル】,Card/Clinic_master,回想バトル,$$Clinic_挑戦回数,>=,1

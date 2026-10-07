@@ -1,0 +1,2 @@
+地下オークションハウス,Card/Auction_master,クエストイベント
+地下オークションハウス【回想バトル】,Card/Auction_master,回想バトル,$$Auction_挑戦回数,>=,1

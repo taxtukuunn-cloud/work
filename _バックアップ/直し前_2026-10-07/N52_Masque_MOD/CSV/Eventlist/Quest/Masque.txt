@@ -1,0 +1,2 @@
+古城の仮面舞踏会（伯爵夫人　ヴェロニカ）,Card/Masque_master,クエストイベント
+古城の仮面舞踏会【回想バトル】,Card/Masque_master,回想バトル,$$Masque_挑戦回数,>=,1

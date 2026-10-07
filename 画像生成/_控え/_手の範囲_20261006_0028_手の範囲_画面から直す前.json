@@ -1,0 +1,32 @@
+{
+ "bound_stand_leg_up_peg": {
+  "shapes": [
+   {
+    "role": "hero",
+    "kind": "ellipse",
+    "box": [
+     509,
+     75,
+     678,
+     357
+    ]
+   },
+   {
+    "role": "partner1",
+    "kind": "ellipse",
+    "box": [
+     226,
+     62,
+     538,
+     373
+    ]
+   }
+  ],
+  "updated": 1791214095.452525,
+  "size": [
+   818,
+   1200
+  ],
+  "when": "2026-10-06 00:28"
+ }
+}

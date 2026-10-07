@@ -1,0 +1,2 @@
+淫魔化したギルド（サキュバスエルル）,Card/SEruru_master,クエストイベント
+淫魔化したギルド【回想バトル】,Card/SEruru_master,回想バトル,$$SEruru_挑戦回数,>=,1

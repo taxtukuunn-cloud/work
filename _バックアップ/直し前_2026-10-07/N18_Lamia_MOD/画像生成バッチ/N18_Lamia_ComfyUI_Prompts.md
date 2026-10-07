@@ -1,0 +1,626 @@
+# N18 Lamia ComfyUI プロンプト一覧（52枚）
+
+## Lamia_master
+- seed_char: SHESKA　背景除去: あり
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, full body, the whole long snake tail visible and coiled on the ground, holding a gold staff, looking at viewer, forked tongue slightly out, simple background, white background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, nipples, nude, naked, topless, penis, 1boy
+```
+
+## Lamia_e1
+- seed_char: VIPERA　背景除去: あり
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, yellow snake tail, yellow scales, adult woman, yellow hair, short hair, green eyes, slit pupils, light bronze armor, stern expression, forked tongue, medium breasts, full body, the whole snake tail visible, holding a spear upright, looking down at viewer, arms crossed, simple background, white background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, nipples, nude, naked, topless, penis, 1boy
+```
+
+## Lamia_e2
+- seed_char: COBRA　背景除去: あり
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, black snake tail, black scales, adult woman, black hair, hime cut, long hair, red eyes, slit pupils, cobra hood ornament behind her neck, small fangs, black silk dress, seductive smirk, medium breasts, full body, the whole snake tail visible and coiled, cobra hood spread, finger on her lips, looking at viewer, simple background, white background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, nipples, nude, naked, topless, penis, 1boy
+```
+
+## Lamia_e3
+- seed_char: LINGUA　背景除去: あり
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, red snake tail, red scales, adult woman, red hair, hair bun, gold eyes, slit pupils, black and white maid outfit, very long tongue, polite smile, medium breasts, full body, the whole snake tail visible, hands folded in front, bowing slightly, long tongue out, looking at viewer, simple background, white background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, nipples, nude, naked, topless, penis, 1boy
+```
+
+## Lamia_boss
+- seed_char: UROBORA　背景除去: あり
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, solo, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, giant snake lower body, extremely long white snake tail, white scales, mature female, very tall, platinum blonde hair, absurdly long hair, crimson eyes, slit pupils, gold crown, gold scale armor dress, regal, large breasts, full body, the enormous white snake tail coiled in a huge ring around her, from below, looking down at viewer, simple background, white background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, nipples, nude, naked, topless, penis, 1boy
+```
+
+## Lamia_bg
+- seed_char: BG　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, deep inside an ancient temple in a desert ruin, tall sandstone pillars, huge carved snake statues with gold eyes, torchlight, sand on the floor, incense smoke, a dark doorway leading deeper, detailed background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, 1girl, 1boy, people
+```
+
+## Lamia_atk_m1
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, her green snake tail coils around his legs and waist and lifts his hips up, he is on all fours, she bends down behind him and licks his anus with her long forked tongue, anilingus, saliva, erection, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, inside an ancient desert temple, sandstone pillars, snake statues and carvings, warm torchlight, detailed background, the green-haired lamia priestess with a long green snake tail coils her tail around him and licks him from behind with her long forked tongue.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_atk_m2
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, her snake tail coils around his arms and waist and holds him up in front of her chest, she bends down and licks both of his nipples at once with the two tips of her forked tongue, nipple licking, saliva, erection, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, inside an ancient desert temple, sandstone pillars, snake statues and carvings, warm torchlight, detailed background, the green-haired lamia priestess with a long green snake tail holds him in her coils and licks both of his nipples with the two tips of her forked tongue.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_atk_m3
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, futanari, the lamia has a penis, her penis penetrates his anus from behind, anal, his own penis is separate and visible, side view, from side, he is held from behind inside her green coils, she turns his face and kisses him deeply with her long forked tongue in his mouth, tongue kiss, saliva, his legs spread, erection, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, inside an ancient desert temple, sandstone pillars, snake statues and carvings, warm torchlight, detailed background, the green-haired lamia priestess with a long green snake tail seals his mouth with a deep kiss of her long tongue while entering him from behind.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, merged, fused, overlapping penises, penis inside the woman, the man penetrating
+```
+
+## Lamia_atk_e1
+- seed_char: VIPERA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, yellow snake tail, yellow scales, adult woman, yellow hair, short hair, green eyes, slit pupils, light bronze armor, stern expression, forked tongue, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, her yellow tail coils around his legs, she holds his face and stares into his eyes with glowing green slit pupils, hypnosis, he stands frozen, her forked tongue flicks at his nipple, erection, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, guard room in a watchtower at a temple entrance, a spear leaning on the wall, an hourglass on a table, detailed background, the yellow-haired lamia guard in bronze armor with a yellow snake tail freezes him with her stare and flicks his nipple with her tongue.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_atk_e2
+- seed_char: COBRA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, black snake tail, black scales, adult woman, black hair, hime cut, long hair, red eyes, slit pupils, cobra hood ornament behind her neck, small fangs, black silk dress, seductive smirk, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, her black tail coils around his waist, she gently bites the side of his neck with small fangs, no blood, the thin tip of her tail teases his anus, dazed, drooling, erection, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, rock ledge bed with burning incense burners, thin purple smoke, dim light, detailed background, the black-haired cobra lamia in a black silk dress with a black snake tail gently bites his neck and teases him with the thin tip of her tail.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_atk_e3
+- seed_char: LINGUA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, red snake tail, red scales, adult woman, red hair, hair bun, gold eyes, slit pupils, black and white maid outfit, very long tongue, polite smile, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, her red tail coils tightly around his chest and squeezes, the coils rub his nipples, she kneels behind him and licks his anus with her very long tongue, anilingus, erection, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, temple bathhouse with a warm sand bath, steam, bottles of fragrant oil, detailed background, the red-haired lamia maid with a red snake tail and a very long tongue coils around his chest and licks deep into him from behind.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_atk_boss
+- seed_char: UROBORA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, giant snake lower body, extremely long white snake tail, white scales, mature female, very tall, platinum blonde hair, absurdly long hair, crimson eyes, slit pupils, gold crown, gold scale armor dress, regal, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, he is held in the middle of her huge white coils, she licks his anus with her long forked tongue from behind, anilingus, the thin tip of her tail curls around his nipples at the same time, erection, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, vast underground cavern, torches, the lamia's white snake body coiled into a huge ring like a throne, detailed background, the huge white-scaled lamia queen with platinum hair and a gold crown licks him from behind while the tip of her tail plays with his nipples at the same time.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_magic_1
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, her snake tail forming a large inviting ring on the floor, arms open toward viewer, pov, gentle smile, inside an ancient desert temple, sandstone pillars, snake statues and carvings, warm torchlight, detailed background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, nipples, nude, naked, topless, penis, 1boy
+```
+
+## Lamia_magic_2
+- seed_char: BG2　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, a translucent shed snake skin lying on a sandstone temple floor, torchlight, shadows of a large snake behind a pillar, detailed background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, 1girl, 1boy, people
+```
+
+## Lamia_magic_3
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, close-up of her face, glowing gold slit-pupil eyes staring at viewer, hypnotic, pov, meditation hall with countless carved snake eyes on the walls glowing gold, detailed background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, nipples, nude, naked, topless, penis, 1boy
+```
+
+## Lamia_magic_4
+- seed_char: BG3　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, white snake eggs half buried in warm sand, one egg starting to crack with soft light, warm sand chamber with rows of white snake eggs half buried in the sand, amber light, detailed background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, 1girl, 1boy, people
+```
+
+## Lamia_magic_5
+- seed_char: BG　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, safe, no humans, scenery, grand hall of a desert snake temple, sand flowing down steps like a waterfall, huge snake statue, torchlight, detailed background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, 1girl, 1boy, people
+```
+
+## Lamia_inochigoi
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, he stands holding a card raised to strike but his hand stops, she looks up at him with teary pleading eyes, her snake tail quietly curling around his ankle, erection, dazed, trembling, giving in, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, inside an ancient desert temple, sandstone pillars, snake statues and carvings, warm torchlight, detailed background, the green-haired lamia priestess with a long green snake tail pretends to plead for mercy, and his hand stops.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_onanie_m
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, male masturbation, solo focus, the naked man is the main subject, large in the center foreground, 1boy, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, he has two normal human legs and bare feet, no tail, no scales on him, he kneels on all fours, one wet finger only tracing the rim of his own anus from behind, not inserting, his other hand on the floor, teasing himself, hands away from his penis, erection, embarrassed, blush, far away in the background stands a green-haired woman in a white robe whose lower body is a green snake tail, very small in the frame, only watching him, not touching, temple hall whose floor is covered by shallow still water like a mirror, a shaft of light from a hole in the ceiling, detailed background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman, hand on penis, stroking penis, handjob, lamia boy, male lamia, snake tail on the man, man with snake lower body, 2boys, merged bodies, woman in the foreground
+```
+
+## Lamia_onanie_e1
+- seed_char: VIPERA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, male masturbation, solo focus, the naked man is the main subject, large in the center foreground, 1boy, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, he has two normal human legs and bare feet, no tail, no scales on him, he sits on the floor pinching his own nipple between two wet fingers like a forked tongue, flicking it, both hands on his chest, hands away from his penis, erection, embarrassed, blush, far away in the background stands a yellow-haired woman in bronze armor whose lower body is a yellow snake tail, very small in the frame, only watching him, not touching, barred cell room in a guard post at night, torchlight, detailed background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman, hand on penis, stroking penis, handjob, lamia boy, male lamia, snake tail on the man, man with snake lower body, 2boys, merged bodies, woman in the foreground
+```
+
+## Lamia_onanie_e2
+- seed_char: COBRA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, male masturbation, solo focus, the naked man is the main subject, large in the center foreground, 1boy, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, he has two normal human legs and bare feet, no tail, no scales on him, he sits on warm sand with no hands on his body except fingertips touching two small bite marks on the side of his neck, head tilted back, dazed, eyes hidden, trembling, hands-free, erection, embarrassed, blush, far away in the background stands a black-haired woman in a black dress whose lower body is a black snake tail, very small in the frame, only watching him, not touching, warm sand chamber with rows of white snake eggs half buried in the sand, amber light, detailed background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman, hand on penis, stroking penis, handjob, lamia boy, male lamia, snake tail on the man, man with snake lower body, 2boys, merged bodies, woman in the foreground
+```
+
+## Lamia_onanie_e3
+- seed_char: LINGUA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, male masturbation, solo focus, the naked man is the main subject, large in the center foreground, 1boy, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, he has two normal human legs and bare feet, no tail, no scales on him, he lies on his side on a narrow bed with one wet finger deep in his own anus from behind, searching inside, hands away from his penis, erection, embarrassed, blush, far away in the background stands a red-haired maid whose lower body is a red snake tail, peeking from the doorway, very small in the frame, only watching him, not touching, small servants room with a narrow bed and a candlestick, door slightly open, detailed background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman, hand on penis, stroking penis, handjob, lamia boy, male lamia, snake tail on the man, man with snake lower body, 2boys, merged bodies, woman in the foreground
+```
+
+## Lamia_onanie_boss
+- seed_char: UROBORA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, male masturbation, solo focus, the naked man is the main subject, large in the center foreground, 1boy, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, he has two normal human legs and bare feet, no tail, no scales on him, he lies face down with his chest pressed and rubbing on the stone floor, one wet finger stroking his own anus from behind, hips slightly raised, hands away from his penis, erection, embarrassed, blush, far away in the background stands a platinum-haired queen with a crown whose lower body is a huge white snake tail, on a distant throne, very small in the frame, only watching him, not touching, round stone floor ringed by torches in front of a throne in a vast underground cavern, detailed background
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman, hand on penis, stroking penis, handjob, lamia boy, male lamia, snake tail on the man, man with snake lower body, 2boys, merged bodies, woman in the foreground
+```
+
+## Lamia_lose_btl_m1
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, on silk sheets he lies inside her green coils with only his hips raised, three coils around his waist, a thin gold chain around his waist, she licks his anus with her long forked tongue, anilingus, ejaculation, defeated, exhausted, limp body, tears of pleasure, cum, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, priestess bedchamber in a desert temple, silk sheets spread over soft sand, oil lamps, snake carvings, detailed background, the green-haired lamia priestess with a long green snake tail licks him deep from behind while her tail coils him tighter.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_onani_m1
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, he kneels in shallow mirror-like water and pushes his own finger into his anus, a gold ring on that finger, his reflection in the water, she beside him slowly extends her very long forked tongue to show its length, ejaculation, deeply embarrassed, flustered, sweat, being watched, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, temple hall whose floor is covered by shallow still water like a mirror, a shaft of light from a hole in the ceiling, detailed background, the green-haired lamia priestess with a long green snake tail shows him how much deeper her tongue reaches than his finger.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_inochi_m1
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from behind, he lies face down on the stone steps reaching toward the light, her green tail wraps his ankle and pulls him back, she licks his anus with her long tongue, anilingus, snake scale marks on his ankle, dazed, trembling, giving in, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, long sandstone stairway leading up out of a desert temple, bright daylight at the top, detailed background, the green-haired lamia priestess with a long green snake tail pulls him back down the stairs by the ankle and licks him.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_onedari_m1
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, he kneels on all fours in front of a snake god statue with his hips raised to her, a small gold hourglass pendant on his neck, she licks his anus with her long forked tongue, anilingus, hourglass on the altar, erection, begging, eager, submissive posture, open mouth, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, in front of a giant snake god statue, a golden hourglass on a stone altar, oil lamps, detailed background, He offers himself to the green-haired lamia priestess with a long green snake tail while the hourglass runs.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_btl_m2
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, on a round moonlit altar her tail binds his arms behind him so his chest sticks out, she licks both of his nipples at once with the two tips of her forked tongue, gold oil shining on his chest, ejaculation, defeated, exhausted, limp body, tears of pleasure, cum, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, round stone altar under moonlight in a ruined desert temple, detailed background, the green-haired lamia priestess with a long green snake tail licks both nipples at once under the moonlight.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_onani_m2
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, he sits among hanging shed snake skins pinching his own nipple with his fingers, a thin translucent snake skin over his chest, she beside him flicks the two tips of her forked tongue in the air, ejaculation, deeply embarrassed, flustered, sweat, being watched, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, dim temple room with translucent shed snake skins hanging on the walls, detailed background, the green-haired lamia priestess with a long green snake tail shows him her forked tongue while he tries with his fingers.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_inochi_m2
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, by a sand fountain her tail suddenly coils around his waist and chest as he turns back, she licks his nipple, thin gold rings on his nipples, nipple licking, erection, dazed, trembling, giving in, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, temple courtyard with a fountain of flowing sand, palm trees, sunlight, detailed background, the green-haired lamia priestess with a long green snake tail catches him as he turns back and licks his chest again.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_onedari_m2
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, he sits before a bronze mirror holding his chest out, gold bracelet on his wrist, she leans over his shoulder from behind and licks his nipple with her forked tongue, their reflection in the mirror, nipple licking, erection, begging, eager, submissive posture, open mouth, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, priestess dressing room with a large bronze mirror and gold jewelry boxes, detailed background, the green-haired lamia priestess with a long green snake tail licks his nipple in front of the mirror as many times as he asked.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_btl_m3
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, futanari, the lamia has a penis, her penis penetrates his anus from behind, anal, his own penis is separate and visible, side view, on the great altar he lies on his side with legs spread inside her coils, gold lipstick on his lips, she kisses him deeply with her long forked tongue, tongue kiss, saliva, ejaculation, defeated, exhausted, limp body, tears of pleasure, cum, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, great altar at the feet of a colossal snake god statue, incense smoke, detailed background, the green-haired lamia priestess with a long green snake tail keeps his mouth sealed with her long tongue while she takes him on the altar.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, merged, fused, overlapping penises, penis inside the woman, the man penetrating
+```
+
+## Lamia_lose_onani_m3
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, futanari, the lamia has a penis, her penis penetrates his anus from behind, anal, his own penis is separate and visible, side view, he sits in her coils with gold powder on his eyelids, she holds him from behind and kisses him deeply with her long forked tongue, tongue kiss, saliva, dazed, ejaculation, deeply embarrassed, flustered, sweat, being watched, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, meditation hall with countless carved snake eyes on the walls glowing gold, detailed background, the green-haired lamia priestess with a long green snake tail takes over from his own fingers, kissing him and entering him.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, merged, fused, overlapping penises, penis inside the woman, the man penetrating
+```
+
+## Lamia_lose_inochi_m3
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, futanari, the lamia has a penis, her penis penetrates his anus from behind, anal, his own penis is separate and visible, side view, he is pressed against a pillar with legs spread, her tail around his waist, a gold snake necklace on his neck, she forces a deep kiss with her long forked tongue, tongue kiss, erection, dazed, trembling, giving in, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, long colonnade corridor of a desert temple, rows of sandstone pillars, detailed background, the green-haired lamia priestess with a long green snake tail pries his lips open with her tongue and takes him against the pillar.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, merged, fused, overlapping penises, penis inside the woman, the man penetrating
+```
+
+## Lamia_lose_onedari_m3
+- seed_char: SHESKA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, long green snake tail, green scales, mature female, adult woman, tall, green hair, long braided hair, gold hair ornaments, gold eyes, slit pupils, priestess, sheer white priestess robe, gold jewelry, long forked tongue, calm smile, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, futanari, the lamia has a penis, her penis penetrates his anus from behind, anal, his own penis is separate and visible, side view, on a veiled canopy bed he lies on his side and spreads his legs for her by himself, she kisses him deeply with her long forked tongue, tongue kiss, saliva, her coils around him, erection, begging, eager, submissive posture, open mouth, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, bed with a canopy of sheer golden veils in a temple bedchamber, detailed background, He asks the green-haired lamia priestess with a long green snake tail for a kiss and opens his legs as she enters him.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, merged, fused, overlapping penises, penis inside the woman, the man penetrating
+```
+
+## Lamia_lose_btl_e1
+- seed_char: VIPERA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, yellow snake tail, yellow scales, adult woman, yellow hair, short hair, green eyes, slit pupils, light bronze armor, stern expression, forked tongue, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, in the guard room he is pinned against the wall by her yellow tail, a small wooden tag hanging on his neck, she stares into his eyes and licks his nipple with her forked tongue, nipple licking, hourglass on the table, ejaculation, defeated, exhausted, limp body, tears of pleasure, cum, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, guard room in a watchtower at a temple entrance, a spear leaning on the wall, an hourglass on a table, detailed background, the yellow-haired lamia guard in bronze armor with a yellow snake tail interrogates him with her stare and her tongue.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_onani_e1
+- seed_char: VIPERA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, yellow snake tail, yellow scales, adult woman, yellow hair, short hair, green eyes, slit pupils, light bronze armor, stern expression, forked tongue, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, he sits on the floor of a barred cell stroking his penis and pinching his nipple, she watches through the bars with a closed notebook in her hand, ejaculation, deeply embarrassed, flustered, sweat, being watched, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, barred cell room in a guard post at night, torchlight, detailed background, the yellow-haired lamia guard in bronze armor with a yellow snake tail watches him through the bars on night watch.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_inochi_e1
+- seed_char: VIPERA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, yellow snake tail, yellow scales, adult woman, yellow hair, short hair, green eyes, slit pupils, light bronze armor, stern expression, forked tongue, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, at the temple gate with sand dunes outside, her yellow tail coils around his ankles and waist, she holds his chin and stares into his eyes, hypnosis, yellow scale marks on his ankles, erection, dazed, trembling, giving in, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, temple gate opening onto desert sand dunes, bright daylight, detailed background, the yellow-haired lamia guard in bronze armor with a yellow snake tail catches him at the gate the moment he turns his back.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_onedari_e1
+- seed_char: VIPERA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, yellow snake tail, yellow scales, adult woman, yellow hair, short hair, green eyes, slit pupils, light bronze armor, stern expression, forked tongue, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, on top of the watchtower at night he kneels and holds his chest out to her, a small bell on a cord at his neck, she bends down and licks his nipple with her forked tongue, nipple licking, stars, erection, begging, eager, submissive posture, open mouth, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, top of a stone watchtower at night overlooking the desert, starry sky, detailed background, He asks the yellow-haired lamia guard in bronze armor with a yellow snake tail for his duty at every change of the watch.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_btl_e2
+- seed_char: COBRA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, black snake tail, black scales, adult woman, black hair, hime cut, long hair, red eyes, slit pupils, cobra hood ornament behind her neck, small fangs, black silk dress, seductive smirk, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, on a rock ledge bed among incense smoke, her black tail coils around him, she gently bites the side of his neck, two tiny fang marks, no blood, dazed, eyes hidden, drooling, hands-free ejaculation, defeated, exhausted, limp body, tears of pleasure, cum, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, rock ledge bed with burning incense burners, thin purple smoke, dim light, detailed background, the black-haired cobra lamia in a black silk dress with a black snake tail bites his neck softly and her sweet venom makes him come.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_onani_e2
+- seed_char: COBRA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, black snake tail, black scales, adult woman, black hair, hime cut, long hair, red eyes, slit pupils, cobra hood ornament behind her neck, small fangs, black silk dress, seductive smirk, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, he sits on warm sand among snake eggs pushing his wet fingers into his anus, a small vial beside him, she lies coiled nearby and waves the thin tip of her black tail in front of him, masturbation, ejaculation, deeply embarrassed, flustered, sweat, being watched, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, warm sand chamber with rows of white snake eggs half buried in the sand, amber light, detailed background, the black-haired cobra lamia in a black silk dress with a black snake tail dangles the tip of her tail while his fingers cannot reach.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_inochi_e2
+- seed_char: COBRA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, black snake tail, black scales, adult woman, black hair, hime cut, long hair, red eyes, slit pupils, cobra hood ornament behind her neck, small fangs, black silk dress, seductive smirk, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, at the spring he holds a black cup, her black tail coils around his body as he turns away, the thin tip of her tail slides into his anus, anal, dazed, erection, dazed, trembling, giving in, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, small underground spring in a temple, still clear water, a black cup on the stone edge, detailed background, the black-haired cobra lamia in a black silk dress with a black snake tail's antidote cup was another dose of venom.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_onedari_e2
+- seed_char: COBRA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, black snake tail, black scales, adult woman, black hair, hime cut, long hair, red eyes, slit pupils, cobra hood ornament behind her neck, small fangs, black silk dress, seductive smirk, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, he lies face down in a black silk hammock, a black scale ring on his finger, the thin tip of her black tail enters his anus, anal, she bites his neck gently, no blood, erection, begging, eager, submissive posture, open mouth, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, private chamber with a black silk hanging hammock bed, dim red lamps, detailed background, He asks the black-haired cobra lamia in a black silk dress with a black snake tail for his daily dose in her hammock.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_btl_e3
+- seed_char: LINGUA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, red snake tail, red scales, adult woman, red hair, hair bun, gold eyes, slit pupils, black and white maid outfit, very long tongue, polite smile, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, in a warm sand bath her red tail coils around his body, she licks his anus with her very long tongue, anilingus, steam, oil shining on his skin, ejaculation, defeated, exhausted, limp body, tears of pleasure, cum, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, temple bathhouse with a warm sand bath, steam, bottles of fragrant oil, detailed background, the red-haired lamia maid with a red snake tail and a very long tongue cleanses every part of him with her tongue in the sand bath.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_onani_e3
+- seed_char: LINGUA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, red snake tail, red scales, adult woman, red hair, hair bun, gold eyes, slit pupils, black and white maid outfit, very long tongue, polite smile, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, he lies on a narrow bed with white gloves on his hands touching his anus, she has entered from the door and licks deep into his anus with her very long tongue, anilingus, candlelight, ejaculation, deeply embarrassed, flustered, sweat, being watched, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, small servants room with a narrow bed and a candlestick, door slightly open, detailed background, the red-haired lamia maid with a red snake tail and a very long tongue helps him with her tongue where his gloved fingers cannot reach.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_inochi_e3
+- seed_char: LINGUA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, red snake tail, red scales, adult woman, red hair, hair bun, gold eyes, slit pupils, black and white maid outfit, very long tongue, polite smile, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from front, beside his packed bags her red tail coils tightly around his chest and arms, the coils squeeze and rub his nipples, a red braided cord tied to his bag, erection, dazed, trembling, giving in, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, temple guest room with packed travel bags and a backpack on the floor, detailed background, the red-haired lamia maid with a red snake tail and a very long tongue coils around him as he reaches for his bags.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_onedari_e3
+- seed_char: LINGUA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, snake lower body, red snake tail, red scales, adult woman, red hair, hair bun, gold eyes, slit pupils, black and white maid outfit, very long tongue, polite smile, medium breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, he bends over a serving table with hips raised, a small silver bell beside him, she licks his anus with her very long tongue, anilingus, polite smile, erection, begging, eager, submissive posture, open mouth, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, serving room beside a temple kitchen, silver trays and a small silver bell, detailed background, He places his morning order with the red-haired lamia maid with a red snake tail and a very long tongue.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_btl_boss
+- seed_char: UROBORA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, giant snake lower body, extremely long white snake tail, white scales, mature female, very tall, platinum blonde hair, absurdly long hair, crimson eyes, slit pupils, gold crown, gold scale armor dress, regal, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, futanari, the lamia has a penis, her penis penetrates his anus from behind, anal, his own penis is separate and visible, side view, in the center of her huge white coiled ring he lies on his side, a single white scale on his chest, the tip of her tail curls around his nipple, ejaculation, defeated, exhausted, limp body, tears of pleasure, cum, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, vast underground cavern, torches, the lamia's white snake body coiled into a huge ring like a throne, detailed background, the huge white-scaled lamia queen with platinum hair and a gold crown takes him in the center of her ring throne.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, merged, fused, overlapping penises, penis inside the woman, the man penetrating
+```
+
+## Lamia_lose_onani_boss
+- seed_char: UROBORA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, giant snake lower body, extremely long white snake tail, white scales, mature female, very tall, platinum blonde hair, absurdly long hair, crimson eyes, slit pupils, gold crown, gold scale armor dress, regal, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, he sits on a round floor in the foreground stroking himself, her huge white coils encircle the floor, she looks down from far above with her long tongue out and the tip of her tail moving, a platinum braided bracelet on his wrist, ejaculation, deeply embarrassed, flustered, sweat, being watched, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, round stone floor ringed by torches in front of a throne in a vast underground cavern, detailed background, the huge white-scaled lamia queen with platinum hair and a gold crown watches from her throne as her coils close around him.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+
+## Lamia_lose_inochi_boss
+- seed_char: UROBORA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, giant snake lower body, extremely long white snake tail, white scales, mature female, very tall, platinum blonde hair, absurdly long hair, crimson eyes, slit pupils, gold crown, gold scale armor dress, regal, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, futanari, the lamia has a penis, her penis penetrates his anus from behind, anal, his own penis is separate and visible, side view, in a circular passage her white snake body coils around him as he turns back, a gold ring of a snake biting its own tail on his ankle, erection, dazed, trembling, giving in, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, circular stone passage running around the edge of a vast underground cavern, torches, detailed background, the huge white-scaled lamia queen with platinum hair and a gold crown catches him when the circle leads him back to her.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, merged, fused, overlapping penises, penis inside the woman, the man penetrating
+```
+
+## Lamia_lose_onedari_boss
+- seed_char: UROBORA　背景除去: なし
+
+**positive**
+```
+masterpiece, best quality, amazing quality, very aesthetic, absurdres, explicit, 1girl, lamia, snake girl, no legs, her whole body below the waist is one thick snake tail, giant snake lower body, extremely long white snake tail, white scales, mature female, very tall, platinum blonde hair, absurdly long hair, crimson eyes, slit pupils, gold crown, gold scale armor dress, regal, large breasts, 1boy, faceless male, navy blue hair, short hair, hair over eyes, bangs covering eyes, adult male, petite, short, slender, narrow shoulders, thin arms, smooth pale skin, no muscles, blush, height difference, he is much shorter than her, nude male, completely naked man, penis, from side, on a bed of white scales he lies on his stomach wearing a small gold crown, she licks his anus with her long forked tongue, anilingus, the tip of her tail curls around his nipple, erection, begging, eager, submissive posture, open mouth, cfnm, clothed female, the woman keeps all her clothes on and her breasts covered, only the man is naked, queen's bedchamber in an underground cavern, a round bed of white scales and gold ornaments, detailed background, He swears to be the huge white-scaled lamia queen with platinum hair and a gold crown's mate and offers himself.
+```
+**negative**
+```
+lowres, worst quality, low quality, bad anatomy, bad hands, watermark, signature, text, letters, sign, logo, speech bubble, comic, english text, child, loli, shota, young, teenage, underage, flat chest female, muscular, abs, pectorals, bara, hairy, collar, choker, leash, twins, same face, same hair color, extra legs, three legs, four legs, extra arms, human legs on the lamia, eyes visible on the man, 2boys, vaginal, penetration by male, nude female, female nudity, topless female, exposed female breasts, breasts out, female nipples, merged bodies, vore, swallowing, eating, blood, injury, the man touching the woman, groping, human legs on the woman, female legs, female feet, barefoot woman, thighs on the woman, pantyhose, stockings, kneeling woman, futanari, pussy, vagina, breasts on the man, long hair on the man, snake tail on the man, scales on the man, green hair on the man, yellow hair on the man, black hair on the man, red hair on the man, blonde hair on the man, dildo, sex toy, strap-on, penis on the woman
+```
+

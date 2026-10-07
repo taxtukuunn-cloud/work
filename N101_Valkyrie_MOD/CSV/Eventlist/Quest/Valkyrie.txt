@@ -1,0 +1,2 @@
+戦乙女の選定（戦乙女の長　ヘルヴォラ）,Card/Valkyrie_master,クエストイベント
+戦乙女の選定【回想バトル】,Card/Valkyrie_master,回想バトル,$$Valkyrie_挑戦回数,>=,1

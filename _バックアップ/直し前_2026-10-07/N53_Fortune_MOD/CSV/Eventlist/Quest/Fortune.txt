@@ -1,0 +1,2 @@
+星見堂の占い師（占い師　マダム・ステラ）,Card/Fortune_master,クエストイベント
+星見堂の占い師【回想バトル】,Card/Fortune_master,回想バトル,$$Fortune_挑戦回数,>=,1

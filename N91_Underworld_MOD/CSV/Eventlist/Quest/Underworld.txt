@@ -1,0 +1,2 @@
+冥府の審判（冥府の女王　ヘルヴィア）,Card/Underworld_master,クエストイベント
+冥府の審判【回想バトル】,Card/Underworld_master,回想バトル,$$Underworld_挑戦回数,>=,1

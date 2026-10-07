@@ -1,0 +1,2 @@
+炎の鍛冶場（親方　グンヒルダ）,Card/Smith_master,クエストイベント
+炎の鍛冶場【回想バトル】,Card/Smith_master,回想バトル,$$Smith_挑戦回数,>=,1

@@ -1,0 +1,2 @@
+恒星間航行船（艦長　アストレア）,Card/Starship_master,クエストイベント
+恒星間航行船【回想バトル】,Card/Starship_master,回想バトル,$$Starship_挑戦回数,>=,1

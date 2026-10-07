@@ -1,0 +1,2 @@
+default
+外部イベント実行,Card/Circle_master,フィールドイベント

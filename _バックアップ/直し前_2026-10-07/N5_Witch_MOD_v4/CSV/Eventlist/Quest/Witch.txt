@@ -1,0 +1,2 @@
+薬屋「翠の瓶」（魔女　ミルティ）,Card/Witch_master,クエストイベント
+薬屋「翠の瓶」【回想バトル】,Card/Witch_master,回想バトル,$$Witch_挑戦回数,>=,1

@@ -1,0 +1,1508 @@
+===== Akagi_Azur_Lane.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Akagi_Azur_Lane
+  modelspec.title = Akagi_Azur_Lane
+  学習フォルダ: img(700枚)
+  トリガー候補: animal_ears, tail, fox_ears, long_hair, fox_tail, red_eyes, multiple_tails, large_breasts
+  よく出るタグ: animal_ears 700, tail 700, fox_ears 700, long_hair 700, fox_tail 700, red_eyes 700, multiple_tails 700, large_breasts 700, bangs 700, brown_hair 700, blunt_bangs 700, fox_girl 700, kitsune 700, black_hair 700, eyeliner 700, makeup 700, very_long_hair 700, sidelocks 700, straight_hair 700, animal_ear_fluff 700, collarbone 600, hair_ornament 600, japanese_clothes 500, wide_sleeves 500, kimono 500, gloves 400, bare_shoulders 400, choker 400, black_gloves 300, long_sleeves 300, sash 300, obi 300, socks 300, tabi 300, jewelry 300
+  年齢に関わるタグ: なし
+===== AugustVonParsevalILSTCAMEq3v2 AL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = AugustVonParsevalILSTCAMEq3v2 AL
+  modelspec.title = AugustVonParsevalILSTCAMEq3v2 AL
+  学習フォルダ: SD(70枚), maid(105枚), Naked clothes(18枚)
+  トリガー候補: absurdly long hair, hair ribbon, purple eyes, hair over one eye, mechanical curled horns, mechanical cat ears, strap between breasts
+  よく出るタグ: absurdly long hair 193, hair ribbon 193, purple eyes 191, hair over one eye 191, mechanical curled horns 191, mechanical cat ears 191, looking at viewer 182, strap between breasts 173, cross 107, bowtie 106, avpmd 105, frills 105, maid 105, maid headdress 104, frilled collar 104, black bows 104, cleavage cutout 104, underbust 104, frilled armband 104, garter belt 104, apron 103, laced white thighhigh 103, high-low skirt 101, sitting 85, avpsd 70, black collar 69, black microdress 69, iron cross brooch 69, red crest 68, underboob cutout 67, white gloves 67, indoors 67, wide sleeves 66, white feather boa 63, white background 61
+  年齢に関わるタグ: なし
+===== BD2_Eclipse_nyraen_v2.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  学習タグの記録なし（メタデータなし）
+===== BD2_Luvencia_nyraen_v2.5.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  学習タグの記録なし（メタデータなし）
+===== BD2_Nebris_nyraen_v2.5.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  学習タグの記録なし（メタデータなし）
+===== BD2_Wilhelmina_nyraen_v2.2.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  学習タグの記録なし（メタデータなし）
+===== BD2_Zenith_nyraen_v2.2.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  学習タグの記録なし（メタデータなし）
+===== Baltimore-AIO-initiumtest-000016.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = initiumFinetuneNoobai_v10.safetensors
+  ss_output_name = Baltimore-AIO-initiumtest
+  modelspec.title = Baltimore-AIO-initiumtest
+  学習フォルダ: 3_Evening Breeze Minuet(14枚), 3_OG(16枚), 4_after school ace(10枚), 4_Finish Line flagbearer(9枚), 5_Ace's Travel Journal(4枚), 5_Baltimore Muse(6枚), 5_Black ace(5枚)
+  トリガー候補: short hair, brown hair, yellow eyes, braid
+  よく出るタグ: 1girl 64, breasts 64, short hair 64, brown hair 63, yellow eyes 62, large breasts 61, looking at viewer 60, braid 59, solo 56, hair between eyes 55, ahoge 52, blush 41, smile 35, navel 33, french braid 32, cleavage 30, standing 30, gloves 30, simple background 28, long sleeves 27, collarbone 23, closed mouth 23, thighs 23, sidelocks 23, underboob 23, clothing cutout 22, stomach 22, stomach cutout 22, underboob cutout 22, white background 21, open clothes 21, thighhighs 21, white skirt 21, full body 20, center opening 20
+  年齢に関わるタグ: なし
+===== Char-HonkaiSR-Aglaea-V2-IL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v2.0.safetensors
+  ss_output_name = Char-HonkaiSR-Aglaea-V2-IL
+  modelspec.title = Char-HonkaiSR-Aglaea-V2-IL
+  学習フォルダ: aglaea-nude(286枚), aglaea-other(415枚), aglaea-3d(302枚), aglaea-default(231枚)
+  トリガー候補: aglaea \(honkai: star rail\), 3d
+  よく出るタグ: 1girl 1234, aglaea \(honkai: star rail\) 1234, solo 1211, simple background 971, white background 967, 3d 933, looking at viewer 563, breast tattoo 492, gold choker 478, laurel crown 431, hair flower 411, peplos 410, detached sleeves 400, full body 391, bracelet 330, single lace glove 316, completely nude 281, thigh strap 277, smile 242, from behind 230, ass 219, gladiator sandals 207, open mouth 182, skirt 130, shawl 129, nail polish 122, standing 117, back 115, underwear 114, panties 111, parted lips 94, closed mouth 92, cowboy shot 88, blush 77, bra 75
+  年齢に関わるタグ: なし
+===== Char-ZZZ-JaneDoe-V3-IL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v2.0.safetensors
+  ss_output_name = Char-ZZZ-JaneDoe-V3-IL
+  modelspec.title = Char-ZZZ-JaneDoe-V3-IL
+  学習フォルダ: jane-nude(390枚), jane-other(544枚), jane-default-3d(291枚), jane-default(499枚), jane-sw-3d(272枚), jane-sw(90枚)
+  トリガー候補: jane doe \(zenless zone zero\), tail, 3d
+  よく出るタグ: 1girl 2086, jane doe \(zenless zone zero\) 2086, solo 2068, tail 1571, simple background 1516, white background 1456, looking at viewer 1332, 3d 1272, smile 1015, black high-waist shorts 766, black single leg pantyhose 711, black single thighhigh 710, fur-trimmed cropped jacket 701, single garter strap 631, full body 596, black fingerless gloves 587, nail polish 495, black crop top 474, ass 465, two-tone necktie 461, from behind 395, red nails 360, parted lips 357, platform boots 331, completely nude 326, two-tone one-piece swimsuit 320, detached fishnet sleeves 317, o-ring choker 309, thighlet 284, black sarong 282, blush 272, cowboy shot 266, standing 261, open mouth 255, silver bracelet 233
+  年齢に関わるタグ: なし
+===== Darian_ilxl_v2.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  学習タグの記録なし（メタデータなし）
+===== Fate T. HarlaownNEW_ILLUS_c-000010.safetensors
+  形式: SDXL / epsilon / -
+  modelspec.title = Fate T. HarlaownNEW_ILLUS_c
+  学習タグの記録なし（メタデータなし）
+===== Franklin_(Clothing)_ILXL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_smoothftSOLID.safetensors
+  ss_output_name = Franklin_(Clothing)_ILXL
+  modelspec.title = Franklin_(Clothing)_ILXL
+  学習フォルダ: 1_franklin(115枚)
+  トリガー候補: hat, bare shoulders, nurse cap, nurse, pink hair
+  よく出るタグ: long hair 115, breasts 115, hat 115, bare shoulders 115, nurse cap 115, nurse 115, blush 114, pink hair 114, hair between eyes 113, looking at viewer 112, dress 111, ponytail 110, very long hair 109, multicolored hair 109, gloves 109, elbow gloves 109, white gloves 109, thighs 108, sidelocks 107, white headwear 107, large breasts 106, streaked hair 106, white dress 105, cleavage 104, white hair 104, thighhighs 103, white thighhighs 102, smile 101, purple eyes 100, mole 100, garter straps 98, red hair 94, mole on breast 92, huge breasts 88, two-tone hair 85
+  年齢に関わるタグ: なし
+===== FriedrichCarlILSTCAMEq2v1 AL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = FriedrichCarlILSTCAMEq2v1 AL
+  modelspec.title = FriedrichCarlILSTCAMEq2v1 AL
+  学習フォルダ: SD(17枚), Casual(17枚)
+  トリガー候補: curled horns, mole under mouth, semi-rimless eyewear, breast cutout, mole on breast
+  よく出るタグ: curled horns 34, mole under mouth 34, semi-rimless eyewear 34, breast cutout 33, looking at viewer 33, mole on breast 30, smile 25, fdclsd 17, fdclcs 17, red ribbed sweater 17, cape 16, black long dress 16, red gemstone 16, breast strap 16, black long sleeves 16, bodystocking 16, open mouth 16, backless 16, black apron 16, black pantyhose 14, simple background 10, white background 9, closed mouth 8, huge breasts 8, sitting 7, full body 6, heart 6, indoors 6, tongue 5, panty straps 5, black high heels 4, tongue out 4, sideboob 4, window 4, no shoes 4
+  年齢に関わるタグ: なし
+===== Granblue_Fantasy_-_Fediel.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Granblue_Fantasy_-_Fediel
+  modelspec.title = Granblue_Fantasy_-_Fediel
+  学習フォルダ: img(141枚)
+  トリガー候補: dark skin, dark-skinned female, draph, grey hair
+  よく出るタグ: 1girl 111, dark skin 110, dark-skinned female 110, draph 106, grey hair 106, simple background 97, white background 92, large breasts 87, looking at viewer 85, jewelry 78, bare shoulders 77, smile 74, dragon horns 73, earrings 71, cleavage 61, detached sleeves 55, hair between eyes 51, purple eyes 50, pointy ears 49, long hair 47, hair ornament 46, fedielbase (granblue fantasy) 44, horn ornament 39, full body 38, wide sleeves 38, horns 37, navel 34, open mouth 33, closed mouth 30, official alternate costume 30, scenery 30, red eyes 29, no humans 29, outdoors 28, day 28
+  年齢に関わるタグ: なし
+===== Granblue_Fantasy_-_Galleon.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Granblue_Fantasy_-_Galleon
+  modelspec.title = Granblue_Fantasy_-_Galleon
+  学習フォルダ: img(118枚)
+  トリガー候補: pointy ears, animal ears, brown hair, extra ears, multicolored hair, streaked hair
+  よく出るタグ: 1girl 88, pointy ears 88, animal ears 88, brown hair 88, extra ears 88, multicolored hair 86, streaked hair 85, simple background 83, white background 80, horns 77, large breasts 67, closed mouth 60, hair between eyes 58, thigh strap 52, bare shoulders 46, galleonbase (granblue fantasy) 44, jewelry 44, brown eyes 43, long sleeves 43, blue hair 43, smile 42, frills 42, long hair 41, detached sleeves 40, black dress 40, hair ornament 39, full body 38, looking at viewer 37, frilled sleeves 36, white gloves 31, scenery 30, no humans 29, asymmetrical hair 28, outdoors 28, day 28
+  年齢に関わるタグ: なし
+===== Granblue_Fantasy_-_Tweyen.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Grandblue_Fantasy_-_Tweyen
+  modelspec.title = Grandblue_Fantasy_-_Tweyen
+  学習フォルダ: img(100枚)
+  トリガー候補: hair ornament, head wings, brown hair
+  よく出るタグ: long hair 67, 1girl 65, hair ornament 65, head wings 64, simple background 56, white background 52, brown hair 45, looking at viewer 43, smile 41, full body 36, no humans 33, large breasts 31, open mouth 30, brown eyes 30, scenery 30, navel 29, outdoors 28, tweyenbase (grandblue fantasy) 27, day 26, white gloves 24, official alternate costume 22, jewelry 22, cloud 22, midriff 21, hair flower 21, sandals 21, bracelet 20, hairband 19, blush 18, green eyes 17, armor 17, wide sleeves 17, blue sky 17, landscape 17, tree 17
+  年齢に関わるタグ: なし
+===== HecateILSTCAMEv1.1 GBF.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = HecateILSTCAMEv1.1 GBF
+  modelspec.title = HecateILSTCAMEv1.1 GBF
+  学習フォルダ: New folder(24枚), Bikini(17枚)
+  トリガー候補: hetsd, medium hair, animal ears, ahoge
+  よく出るタグ: hetsd 41, medium hair 39, animal ears 36, ahoge 36, looking at viewer 31, black fur trim 24, hair ornament 23, black detached collar 23, red brooch 23, gradient halter dress 23, halo 21, vambraces 21, black elbow sleeves 21, smile 20, holding 16, shell bikini 16, tongue out 14, open mouth 13, tongue 13, hair flower 13, frilled sarong 13, flower 12, bracelet 12, frills 12, simple background 11, upper body 10, staff 10, pelvic ornament 10, pelvic curtain 10, white background 10, black scrunchie 10, between breasts 8, licking lips 8, sitting 8, toes 8
+  年齢に関わるタグ: なし
+===== Hoseki_AzurLane_Formidable_IllustriousXL_v1.safetensors
+  形式: SDXL / ? / -
+  学習タグの記録なし（メタデータなし）
+===== Hoseki_AzurLane_FriedrichDerGrosse_IllustriousXL_v1.safetensors
+  形式: SDXL / ? / -
+  学習タグの記録なし（メタデータなし）
+===== Hoseki_AzurLane_GrafZeppelin_IllustriousXL_v1.safetensors
+  形式: SDXL / ? / -
+  学習タグの記録なし（メタデータなし）
+===== Hoseki_AzurLane_SouthDakota_IllustriousXL_v1.safetensors
+  形式: SDXL / ? / -
+  学習タグの記録なし（メタデータなし）
+===== Hoseki_ZenlessZoneZero_AstraYao_IllustriousXL_v2.safetensors
+  形式: SDXL / ? / -
+  学習タグの記録なし（メタデータなし）
+===== Hoseki_ZenlessZoneZero_EvelynChevalier_IllustriousXL_v2.safetensors
+  形式: SDXL / ? / -
+  学習タグの記録なし（メタデータなし）
+===== Hoseki_ZenlessZoneZero_YanagiTsukishiro_IllustriousXL_v1.safetensors
+  形式: SDXL / ? / -
+  学習タグの記録なし（メタデータなし）
+===== Kafka.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Kafka
+  modelspec.title = Kafka
+  学習フォルダ: img(79枚)
+  トリガー候補: kaf-mom, purple hair, ponytail, default, white shirt
+  よく出るタグ: kaf-mom 79, long hair 79, purple hair 79, 1girl 79, solo 70, ponytail 65, default 48, white shirt 48, collared shirt 45, coat on shoulders 43, black coat 42, long white sleeves 42, purple straps 38, black shorts 32, high-waist shorts 31, sunglasses on head 29, chest harness 28, purple gloves 27, detached sleeves 27, purple eyes 26, purple pantyhose 26, from behind 26, single earring 23, asymmetrical footwear 23, single thigh boot 22, swim leotard 20, gold trim 19, sleeves train 17, breasts 15, side view 15, sleeves bow 13, gloves 12, purple outfit 11, spider design glove 10, sandals 10
+  年齢に関わるタグ: なし
+===== Kaga_Azur_Lane.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Kaga_Azur_Lane
+  modelspec.title = Kaga_Azur_Lane
+  学習フォルダ: img(800枚)
+  トリガー候補: animal_ears, tail, fox_ears, blue_eyes, fox_tail, short_hair, white_hair, multiple_tails
+  よく出るタグ: animal_ears 800, tail 800, fox_ears 800, blue_eyes 800, fox_tail 800, short_hair 800, white_hair 800, multiple_tails 800, bangs 800, blunt_bangs 800, makeup 800, medium_breasts 800, large_breasts 800, kitsune 800, fox_girl 800, long_sleeves 600, japanese_clothes 500, wide_sleeves 400, kimono 400, white_kimono 400, skirt 300, white_socks 300, sash 300, obi 300, socks 200, eyeliner 200, boots 200, collarbone 200, tassel 200, tabi 200, sandals 200, mask 200, fox_mask 200, mask_on_head 200, navel 200
+  年齢に関わるタグ: なし
+===== KearsargeILSTCAMEq3v1 AL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = KearsargeILSTCAMEq3v1 AL
+  modelspec.title = KearsargeILSTCAMEq3v1 AL
+  学習フォルダ: SD(58枚), bunny(49枚), CH(22枚)
+  トリガー候補: absurdly long hair, hair between eyes, multicolored hair
+  よく出るタグ: absurdly long hair 129, hair between eyes 126, looking at viewer 119, multicolored hair 107, kearsd 58, headgear 57, white highleg leotard 56, kearbn 49, bunny ears 49, star hair ornament 49, detached collar 49, white playboy bunny 49, purple bra 49, white elbow gloves 49, black gloves 49, black fishnet pantyhose 48, mechanical hands 47, ponytail 46, purple thigh strap 46, closed mouth 45, shrug \(clothing\) 39, mismatched thighhigh 38, single white thighhigh 38, sitting 29, single mechanical thighhigh 28, standing 27, white background 27, simple background 24, kearcn 22, print cheongsam 22, twintails 21, hair ornament 21, blue tassels 21, center opening 21, smile 20
+  年齢に関わるタグ: なし
+===== Lion_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = NoobAI-XL-v1.1.safetensors
+  ss_output_name = Lion_XL_illustrious-noob_v1
+  modelspec.title = Lion_XL_illustrious-noob_v1
+  学習フォルダ: 1_Lion1(11枚), 1_Lion2(11枚)
+  トリガー候補: lion \(azur lane\)
+  よく出るタグ: lion \(azur lane\) 44, open mouth 26, military uniform 22, white bikini 22, see-through jacket 18, arm up 12, arms up 12, arm support 8, sitting 8, beach 8, hand up 6, full body 6, crossed legs 6, from side 6, hand on table 4, indoors 4, from below 4, hand on own hip 4, outstretched arm 4, leaning forward 4, on back 4, lying 4, cosmetics 4, dutch angle 4, ocean 4, tongue out 4, w arms 4, shield 2, sword 2, weapon 2, queen elizabeth \(azur lane\) 2, belfast \(azur lane\) 2, maid 2, 3girls 2, multiple girls 2
+  年齢に関わるタグ: なし
+===== MaggioreBaraccaILSTCAMEq2v1 AL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = MaggioreBaraccaILSTCAMEq2v1 AL
+  modelspec.title = MaggioreBaraccaILSTCAMEq2v1 AL
+  学習フォルダ: SD(13枚), PHARAOH(14枚)
+  トリガー候補: purple eyes, twintails, green hair, sidelocks
+  よく出るタグ: purple eyes 27, twintails 27, green hair 27, sidelocks 27, looking at viewer 24, smile 20, mgbaph 14, jackal ears 14, circlet 14, hoop earrings 14, usekh collar 14, ancient egyptian clothes 14, breast curtains 14, revealing clothes 14, armlet 14, mgbasd 13, headgear 13, multicolored swimsuit 13, bracelet 13, off-shoulder jacket 11, lying 11, food 10, ass 10, tongue 9, tongue out 9, thigh strap 9, pelvic curtain 9, anklet 8, black legwears 8, holding 8, open mouth 8, full body 8, gloves 7, holding food 7, thighs 7
+  年齢に関わるタグ: なし
+===== MusashiILSTCAMEq6v3.2 AL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = MusashiILSTCAMEq6v3.2 AL
+  modelspec.title = MusashiILSTCAMEq6v3.2 AL
+  学習フォルダ: New folder(36枚), Bunny(29枚), chinese(17枚), race queen(11枚), wed(25枚), Maid(25枚)
+  トリガー候補: whisker markings, fox girl, fox ears
+  よく出るタグ: whisker markings 116, looking at viewer 110, fox girl 109, fox ears 88, smile 53, long hair 53, multicolored hair 49, huge breasts 38, holding 38, mhsd 36, large breasts 36, hair ornament 35, parted lips 35, fox tail 34, gloves 34, tail 33, magamata necklace 32, fur trim 31, purple gemstone 29, mhsbn 29, ponytail 29, animal ears 29, detached collar 29, heart tattoo 29, playboy bunny 29, fox ears down 29, brown pantyhose 29, short kimono 28, fishnet pantyhose 28, sash 27, full body 27, bare shoulders 26, wide sleeves 26, sitting 25, mhswd 25
+  年齢に関わるタグ: なし
+===== Musashi_Illus.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Musashi_Illus
+  modelspec.title = Musashi_Illus
+  学習フォルダ: img(149枚)
+  トリガー候補: blue eyes, grey hair, single sidelock
+  よく出るタグ: 1girl 149, blue eyes 149, long hair 149, grey hair 149, breasts 147, single sidelock 145, solo 143, large breasts 132, looking at viewer 124, pink hair 117, bangs 114, asymmetrical hair 100, smile 98, thighhighs 89, weapon 80, swimsuit 75, ponytail 73, japanese clothes 73, single hair bun 72, bun cover 72, sword 72, kimono 70, holding 67, detached sleeves 67, wide sleeves 67, sash 66, jewelry 65, hair bun 63, swept bangs 60, katana 57, blush 56, detached collar 51, magatama 51, earrings 51, cleavage 51
+  年齢に関わるタグ: なし
+===== Olivier_ilxl_v2.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  学習タグの記録なし（メタデータなし）
+===== PeterStrasserILSTCAMEq4v1 AL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = PeterStrasserILSTCAMEq4v1 AL
+  modelspec.title = PeterStrasserILSTCAMEq4v1 AL
+  学習フォルダ: SD(23枚), kimono(24枚), white dress(23枚), cheongsam(15枚)
+  トリガー候補: black hair, sidelocks, purple eyes, twintails
+  よく出るタグ: black hair 83, long hair 83, sidelocks 83, purple eyes 72, twintails 60, looking at viewer 48, smile 47, white elbow gloves 36, underbust 33, holding 31, sitting 29, white background 25, simple background 24, ptkm 24, ptsd 23, fur-trimmed capelette 23, off shoulder 23, cross necklace 23, black kimono 23, fur-trimmed wide sleeves 23, ptwd 23, lace 23, white peaked cap 22, white gloves 22, cropped 22, cleavage cutout 22, sash 22, detached collar 22, chest harness 22, two-tone cape 21, military dress 21, two-tone dress 21, double-breasted 21, long black sleeves 21, full body 21
+  年齢に関わるタグ: なし
+===== PittsburghILSTCAMEq2v1.2 AL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = PittsburghILSTCAMEq2v1.2 AL
+  modelspec.title = PittsburghILSTCAMEq2v1.2 AL
+  学習フォルダ: SD(24枚), cowgirl(28枚)
+  トリガー候補: star hair ornament, red eyes, purple hair, medium hair, tied hair over shoulder, side ponytail
+  よく出るタグ: star hair ornament 49, red eyes 48, purple hair 48, medium hair 46, tied hair over shoulder 46, side ponytail 44, looking at viewer 41, smile 36, pttbcg 28, frills 28, white dress 28, cleavage 26, detached sleeves 26, pttbsd 24, brown corset 24, two-tone leotard 23, latex gloves 23, navel cutout 22, sitting 22, coat over shoulder 21, hair ribbon 21, two-sided jacket 21, thigh holster 21, sleeveless 20, cowboy hat 20, hat string on neck 20, turtleneck 19, cropped 17, garter straps 17, simple background 16, holding 16, indoors 15, latex thighhighs 15, white background 15, closed mouth 15
+  年齢に関わるタグ: なし
+===== ShinanoILSTCAMEq5v1 AL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = ShinanoILSTCAMEq5v1 AL
+  modelspec.title = ShinanoILSTCAMEq5v1 AL
+  学習フォルダ: Race Queen(57枚), SD(43枚), Evening Gown(35枚), bikini(51枚), Bunny(21枚)
+  トリガー候補: grey hair, fox ears, blue eyes, fox tails, multiple tails
+  よく出るタグ: grey hair 205, long hair 205, fox ears 205, blue eyes 204, looking at viewer 192, fox tails 139, multiple tails 139, halterneck 108, parted lips 75, sitting 69, detached collar 67, white thighhighs 59, choker 58, shnnrq 57, race queen 57, leotard 57, black elbow gloves 56, multiple fox tails 55, string panties 55, thighhighs under boots 53, knee boots 53, bug 53, butterfly 51, shnnbk 51, white choker 51, frills 51, white collar 51, lace front-tie bikini top 51, white detached sleeves 51, frilled bikini bottom 49, black microskirt 48, blue butterfly 47, shnsd 43, two-tone kimono 43, large bow 43
+  年齢に関わるタグ: なし
+===== SovetskySoyuzILSTCAMEq2v1.1 AL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = SovetskySoyuzILSTCAMEq2v1.1 AL
+  modelspec.title = SovetskySoyuzILSTCAMEq2v1.1 AL
+  学習フォルダ: SD(25枚), Dress(18枚)
+  トリガー候補: svysd, fur hat, necktie
+  よく出るタグ: looking at viewer 38, svysd 25, fur hat 24, necktie 23, military dress 22, black gloves 22, fur-trimmed coat 21, long sleeves 20, svydr 18, glitter dress 18, side slit 18, thong 18, closed mouth 17, holding 16, thigh holster 13, smile 12, bare shoulders 11, sitting 9, panties 9, gun 9, black jacket 9, weapon 8, stiletto heels 8, upper body 7, handgun 7, blush 6, holding weapon 6, holding gun 6, full body 5, black panties 5, simple background 4, monochrome 4, greyscale 4, standing 4, floating hair 4
+  年齢に関わるタグ: なし
+===== Sylvia_ilxl_v2.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  学習タグの記録なし（メタデータなし）
+===== TamamoRaceQueen.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = downloaded_model.safetensors
+  ss_output_name = TamamoRaceQueen
+  modelspec.title = TamamoRaceQueen
+  学習フォルダ: dataset(22枚)
+  トリガー候補: t4m4r4ce, animal ears, pink hair, twintails, hair bow, yellow eyes, cropped jacket, open jacket
+  よく出るタグ: t4m4r4ce 22, animal ears 22, pink hair 22, twintails 22, hair bow 22, yellow eyes 22, cropped jacket 22, open jacket 22, multicolored jacket 22, 1girl 22, animal ear fluff 22, looking at viewer 22, smile 22, large breasts 21, long hair 21, hair between eyes 20, sidelocks 20, white crop top 19, cleavage cutout 19, tail 19, blush 16, midriff 15, multicolored bow 14, grey short shorts 14, navel 14, checkered bow 13, open mouth 13, high heel boots 12, thighs 12, white gloves 12, grey knee boots 11, blue bow 11, white background 11, fox shadow puppet 10, simple background 10
+  年齢に関わるタグ: なし
+===== ZuikakuILSTCAMEq3v1 AL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = ZuikakuILSTCAMEq3v1 AL
+  modelspec.title = ZuikakuILSTCAMEq3v1 AL
+  学習フォルダ: SD(85枚), black kimono(24枚), race queen(59枚)
+  トリガー候補: brown eyes, red eyeshadow, brown hair, side ponytail
+  よく出るタグ: brown eyes 165, red eyeshadow 165, brown hair 165, looking at viewer 133, side ponytail 105, smile 88, zkksd 85, red hair flower 80, large breasts 79, ribbon-trimmed choker 77, red halter dress 77, pleated dress 77, black thighhighs 71, wide sleeves 68, white open kimono 66, grey sash 64, long hair 60, closed mouth 59, zkkrq 59, race queen 59, criss-cross halter 57, center opening 57, black armband 57, black choker 56, one side up 55, ear piercing 55, navel cutout 53, holding 52, thigh straps 50, wrist cuffs 50, garter strap 50, weapon 48, sword 48, katana 47, open mouth 45
+  年齢に関わるタグ: なし
+===== _europa_gbf-elesico-ilxl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = _europa_gbf-elesico-ilxlB
+  modelspec.title = _europa_gbf-elesico-ilxlB
+  学習フォルダ: __rnd(20枚), Nova pasta(22枚), holiday(20枚), Nova pasta (2)(20枚)
+  トリガー候補: blonde hair, short hair, blue eyes, hair ornament
+  よく出るタグ: 1girl 81, blonde hair 81, breasts 80, short hair 79, looking at viewer 78, blue eyes 77, bangs 76, hair ornament 75, solo 74, flower 69, tiara 69, hair between eyes 68, hair flower 64, large breasts 63, smile 59, blush 59, bare shoulders 59, cleavage 57, collarbone 56, blue ribbon 44, thighs 41, white dress 40, closed mouth 35, strapless 33, medium breasts 31, white background 28, simple background 27, strapless dress 27, open mouth 25, butterfly ornament 25, navel 24, rose 23, blue dress 22, eurodef 22, ribbon 21
+  年齢に関わるタグ: なし
+===== _monika_weisswind-elesico-ilxl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = _monika_weisswind-elesico-ilxl-rev1
+  modelspec.title = _monika_weisswind-elesico-ilxl-rev1
+  学習フォルダ: img(77枚)
+  トリガー候補: blonde hair, twintails
+  よく出るタグ: long hair 77, blonde hair 77, twintails 77, 1girl 76, solo 73, looking at viewer 67, bangs 66, blush 62, breasts 61, large breasts 45, peaked cap 44, white shirt 43, thighhighs 39, bare shoulders 39, smile 38, weapon 35, sword 34, holding 33, pleated skirt 32, open mouth 32, blue skirt 31, black headwear 29, closed mouth 28, green eyes 28, brown eyes 28, white background 26, navel 26, thighs 25, simple background 25, long sleeves 25, bandaid on face 24, bandaid 23, miniskirt 23, elbow gloves 22, blue collar 22
+  年齢に関わるタグ: なし
+===== _silva_gbf-elesico-ilxl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = _silva_gbf-elesico-ilxlB
+  modelspec.title = _silva_gbf-elesico-ilxlB
+  学習フォルダ: __rnd(30枚), _def(14枚), swim(13枚), gentian blue(20枚), light(20枚), summer(19枚), yukata(10枚)
+  トリガー候補: ahoge, yellow eyes, braid
+  よく出るタグ: long hair 124, 1girl 119, breasts 118, ahoge 113, yellow eyes 109, solo 106, large breasts 106, braid 105, hair between eyes 101, looking at viewer 98, twin braids 94, very long hair 88, cleavage 80, navel 75, bangs 72, bare shoulders 68, blush 66, collarbone 58, smile 57, belt 42, ponytail 40, weapon 38, grey hair 37, white background 36, midriff 34, simple background 33, gun 33, white crop top 33, brown eyes 32, holding 31, gbfsilv 30, official alternate costume 29, wavy hair 28, rifle 28, sky 26
+  年齢に関わるタグ: なし
+===== ade-nikke-richy-v2_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = ade-nikke-richy-v2_ixl
+  modelspec.title = ade-nikke-richy-v2_ixl
+  学習フォルダ: 1_Ade rnd(26枚), 3_Ade bunny(50枚), 3_Ade casual(21枚), 3_Ade def(41枚)
+  トリガー候補: green eyes, blonde hair, long sleeves
+  よく出るタグ: green eyes 128, looking at viewer 120, large breasts 118, blonde hair 117, long sleeves 117, long hair 113, smile 105, blush 103, glasses 101, braid 100, hair bun 75, cleavage 68, sidelocks 67, simple background 64, maid 60, maid headdress 60, white background 57, white apron 56, rabbit ears 51, playboy bunny 51, black leotard 51, closed mouth 50, fake animal ears 50, adeab 50, black jacket 49, puffy sleeves 48, white bowtie 46, huge breasts 45, black necktie 44, black dress 43, white gloves 43, brown hair 42, fishnet pantyhose 42, adedf 41, navel 40
+  年齢に関わるタグ: なし
+===== admiral_nakhimov_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = admiral_nakhimov_IL_v1.0
+  modelspec.title = admiral_nakhimov_IL_v1.0
+  学習フォルダ: 4_a_fresh_green_day(5枚), 4_cheerleading_mechanic(18枚), 4_first_time_in_the_limelight(23枚), 4_original(24枚), 5_other(16枚)
+  トリガー候補: 
+  よく出るタグ: 1girl 86, looking at viewer 83, solo 82, blush 44, admiral nakhimov \(azur lane\) 24, sitting 23, admiral nakhimov \(first time in the limelight\) \(azur lane\) 23, smile 22, admiral nakhimov \(cheerleading mechanic\) \(azur lane\) 18, simple background 16, admiral nakhimov 16, breasts 16, green hair 16, short hair 15, large breasts 15, manjuu \(azur lane\) 13, white background 13, animal ears 13, open mouth 12, ass 12, yellow eyes 12, outdoors 11, tongue out 11, from below 11, lying 11, toes 11, tongue 10, spread legs 10, cleavage 10, cat ears 10, sky 9, on back 9, holding 8, champagne bottle 8, from behind 8
+  年齢に関わるタグ: なし
+===== aegir_azurlaneIL_scarxzys.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = EMS-602128-EMS.safetensors
+  ss_output_name = lora
+  modelspec.title = lora
+  学習フォルダ: image_dir(68枚)
+  トリガー候補: very long hair, white hair, streaked hair, yellow eyes, demon horns, hair between eyes, bare shoulders, breast curtains
+  よく出るタグ: very long hair 194, white hair 136, streaked hair 135, yellow eyes 135, demon horns 134, hair between eyes 128, bare shoulders 125, breast curtains 124, bodystocking 123, iron cross 122, cross-laced clothes 118, underbust 117, earrings 115, cross earrings 114, black cape 112, black gloves 109, elbow gloves 105, bangs 89, knee boots 85, asymmetrical footwear 74, high heel boots 74, black footwear 73, armored boots 70, aegir (azur lane) 68, long hair 68, breasts 68, horns 68, 1girl 67, large breasts 67, red hair 67, multicolored hair 67, looking at viewer 65, solo 63, cross 55, two-tone hair 52
+  年齢に関わるタグ: なし
+===== anis-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = anis-nikke-richy-v1_ixl
+  modelspec.title = anis-nikke-richy-v1_ixl
+  学習フォルダ: 1_Anis def(200枚), 1_Anis rnd(110枚), 1_Anis swim(262枚)
+  トリガー候補: short hair, brown hair, ahoge, cleavage, brown eyes
+  よく出るタグ: short hair 569, brown hair 564, looking at viewer 540, ahoge 518, large breasts 502, cleavage 492, blush 478, brown eyes 474, smile 448, collarbone 410, thighs 390, open jacket 386, navel 383, hair ornament 382, bare shoulders 364, long sleeves 360, open mouth 298, yellow eyes 291, anssw 262, white bikini 259, eyepatch bikini 257, sunglasses 256, eyewear on head 255, off shoulder 244, simple background 240, yellow jacket 240, pink-tinted eyewear 230, stomach 229, jewelry 222, necklace 219, huge breasts 215, white background 212, holding 201, ansdf 200, black jacket 191
+  年齢に関わるタグ: なし
+===== argus_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = argus_XL_illustrious-noob_v1
+  modelspec.title = argus_XL_illustrious-noob_v1
+  学習フォルダ: 1_argus1(15枚), 1_argus2(9枚), 1_argus3(9枚), 1_argus4(2枚)
+  トリガー候補: argus (azur lane)
+  よく出るタグ: argus (azur lane) 70, thighhighs 40, military uniform 32, white background 32, sitting 24, full body 22, arm up 22, school uniform 18, evening gown 18, skirt lift 16, indoors 16, dutch angle 14, from above 12, spread legs 10, skirt hold 10, manjuu \(azur lane\) 10, nipples 9, on ground 8, unworn shoes 8, on couch 8, mirror 8, outstretched arm 6, upper body 6, toilet 6, human toilet 6, no headwear 6, from side 6, pantyshot 6, on bed 6, fitting room 6, hand between legs 4, looking at another 4, bedroom 4, holding own arm 4, sex 4
+  年齢に関わるタグ: なし
+===== atago_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = atago_IL_v1.0
+  modelspec.title = atago_IL_v1.0
+  学習フォルダ: 4_full_moon's_feral_wolf(21枚), 4_hallmarks_of_winter(12枚), 4_lily-white_vow(13枚), 4_original(13枚), 4_school_traumerei(12枚), 4_stunning_speedster(12枚), 4_summer_march(12枚), 5_other(25枚)
+  トリガー候補: 
+  よく出るタグ: looking at viewer 110, solo 106, blush 91, smile 73, thighhighs 56, open mouth 39, atago \(azur lane\) 38, white background 35, black thighhighs 34, simple background 31, closed mouth 28, ribbon 27, atago \(full moon's feral wolf\) \(azur lane\) 21, paw gloves 21, hair flower 20, sitting 19, outdoors 18, flower 18, upper body 18, nipples 17, tongue 16, tongue out 15, bridal gauntlets 15, garter straps 15, bridal veil 14, military uniform 14, white gloves 14, nude 14, ass 13, panties 13, atago \(lily-white vow\) \(azur lane\) 13, wedding dress 13, serafuku 13, wolf tail 12, underwear 12
+  年齢に関わるタグ: なし
+===== bay-nikke-richy-v2_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = bay-nikke-richy-v2_ixl
+  modelspec.title = bay-nikke-richy-v2_ixl
+  学習フォルダ: 1_bay def(229枚), 1_bay rnd(33枚), 3_bay bunny(38枚)
+  トリガー候補: ponytail, black hair, dark-skinned female, mole
+  よく出るタグ: long hair 296, ponytail 281, black hair 281, blush 271, large breasts 268, looking at viewer 259, dark-skinned female 249, mole 233, nkbydf 229, navel 229, streaked hair 218, thighs 217, hair intakes 214, cheerleader 210, red hair 205, bare shoulders 203, crop top 197, pleated skirt 196, red skirt 196, hairband 186, sweat 185, panties 183, underwear 182, underboob 180, pom pom (cheerleading) 176, miniskirt 175, thigh strap 163, holding 160, very long hair 158, thighhighs 149, spiked collar 141, brown eyes 139, holding pom poms 139, open mouth 137, midriff 128
+  年齢に関わるタグ: なし
+===== blanc-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = blanc-nikke-richy-v1_ixl
+  modelspec.title = blanc-nikke-richy-v1_ixl
+  学習フォルダ: 1_blanc_def(144枚), 1_blanc_rnd(18枚), 3_blanc_hs(42枚)
+  トリガー候補: white hair, yellow eyes, fake animal ears, leotard
+  よく出るタグ: looking at viewer 191, white hair 182, yellow eyes 177, breasts 172, smile 159, open mouth 155, fake animal ears 148, leotard 148, blancdef 144, playboy bunny 144, white leotard 134, detached collar 125, very long hair 123, pantyhose 118, wrist cuffs 118, fishnets 113, short necktie 102, cleavage 90, blush 90, tail 82, rabbit tail 82, highleg 70, ass 59, highleg leotard 56, white background 53, simple background 51, fang 48, holding 46, high heels 45, hair bow 43, frills 43, fake tail 42, blanchs 42, japanese clothes 42, cleavage cutout 41
+  年齢に関わるタグ: なし
+===== bremerton_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = bremerton_IL_v1.0
+  modelspec.title = bremerton_IL_v1.0
+  学習フォルダ: 4_day-off_date(40枚), 4_joyride_of_love(17枚), 4_kung_fu_cruiser(30枚), 4_origen(59枚), 4_origen2(42枚), 4_other(55枚), 4_pillowed_counseling(27枚), 4_pink_bikini(14枚), 4_relaxation_consultation(24枚), 4_scorching-hot_training(24枚)
+  トリガー候補: 
+  よく出るタグ: 1girl 332, solo 315, looking at viewer 300, blush 265, smile 207, bremerton \(azur lane\) 170, pink bikini 113, simple background 109, open mouth 104, white background 98, crop top 97, short shorts 88, bikini under clothes 87, cowboy shot 85, standing 79, tongue 73, tongue out 73, sitting 65, jacket 64, eyewear on head 59, holding 55, goggles on head 54, underwear 53, goggles 49, teeth 48, thighhighs 47, open jacket 46, skindentation 42, mole 42, bremerton \(day-off date\) \(azur lane\) 40, ass 38, nail polish 36, sweat 36, sky 34, one eye closed 32
+  年齢に関わるタグ: なし
+===== brest_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = brest_XL_illustrious-noob_v1
+  modelspec.title = brest_XL_illustrious-noob_v1
+  学習フォルダ: 1_brest1(17枚), 1_brest2(3枚), 1_brest3(14枚)
+  トリガー候補: brest (azur lane)
+  よく出るタグ: brest (azur lane) 68, fatigues 34, white bikini 28, full body 18, sitting 18, arm up 14, feathered wings 12, dutch angle 12, arms up 10, hand in own hair 8, spread legs 8, outstretched arm 6, outstretched arms 6, from side 6, nipples 6, sex 6, 1boy 6, completely nude 6, school of fish 6, underwater 6, no skirt 6, falling feathers 4, breast suppress 4, grabbing own breast 4, indoors 4, sex from behind 4, bedroom 4, leaning forward 4, on bed 4, bar censor 4, one eye closed 4, on side 4, skirt lift 4, wet 4, sway back 2
+  年齢に関わるタグ: なし
+===== burnice_white_zzz_illustrious_goofy.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = burnice_white_zzz_illustrious_goofy
+  学習タグの記録なし（メタデータなし）
+===== chen_hai_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = chen_hai_XL_illustrious-noob_v1
+  modelspec.title = chen_hai_XL_illustrious-noob_v1
+  学習フォルダ: 1_chen_hai1(14枚), 1_chen_hai2(19枚), 1_chen_hai3(19枚), 1_chen_hai4(9枚), 1_chen_hai5(13枚), 1_chen_hai6(4枚), 1_chen_hai7(15枚)
+  トリガー候補: chen hai \(azur lane\), china dress, chinese clothes
+  よく出るタグ: chen hai \(azur lane\) 186, china dress 148, chinese clothes 148, white background 112, brown thighhighs 68, zettai ryouiki 64, full body 58, lace-trimmed legwear 58, lace trim 58, thighhighs 46, retrofit \(azur lane\) 44, thighs 44, cocktail dress 40, pantyhose 38, bodystocking 38, black dress 38, garter straps 38, garter belt 38, thighband pantyhose 38, evening gown 38, no legwear 38, bare legs 38, cleavage 38, cleavage cutout 38, military uniform 36, no shirt 32, nude 32, lace-trimmed thighhighs 28, black thighhighs 28, indoors 26, thigh boots 26, on bed 22, holding 22, blush 20, sitting 20
+  年齢に関わるタグ: なし
+===== cheshire_tcitmh_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = cheshire_tcitmh_IL_v1.0
+  modelspec.title = cheshire_tcitmh_IL_v1.0
+  学習フォルダ: 4_other(16枚), 4_the_cat_in_the_magic_hat(43枚)
+  トリガー候補: cheshire \(the cat in the magic hat\) \(azur lane\), see-through clothes, leotard, tail
+  よく出るタグ: solo 57, looking at viewer 55, large breasts 55, cheshire \(the cat in the magic hat\) \(azur lane\) 43, see-through clothes 43, leotard 43, smile 37, tail 35, open mouth 32, cleavage 30, blush 19, holding 18, fang 18, cheshire \(azur lane\) 16, 1girl 16, navel 16, simple background 16, breasts 15, multicolored hair 15, streaked hair 14, white background 14, black hair 12, card 11, night 11, sitting 10, one eye closed 10, frills 9, heart 9, ass 8, ribbon 8, manjuu \(azur lane\) 8, official alternate costume 7, bare shoulders 7, dress 7, blue eyes 7
+  年齢に関わるタグ: なし
+===== cinderella-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = cinderella-nikke-richy-v1_ixl
+  modelspec.title = cinderella-nikke-richy-v1_ixl
+  学習フォルダ: 1_cinderella def(155枚), 1_cinderella rnd(59枚), 2_cinderella dress(52枚)
+  トリガー候補: twintails, hair over one eye, very long hair, white hair, cleavage
+  よく出るタグ: long hair 266, twintails 259, hair over one eye 253, looking at viewer 248, large breasts 240, very long hair 220, white hair 208, cleavage 200, red eyes 187, hair ornament 170, white bodysuit 158, blush 156, cindef 155, clothing cutout 153, see-through skirt 144, navel 139, gloves 135, see-through 128, thighs 125, huge breasts 98, closed mouth 96, smile 92, leotard 89, parted lips 85, white gloves 83, bare shoulders 79, blue eyes 77, official alternate costume 76, white background 76, simple background 71, navel cutout 68, sitting 61, cinrnd 59, collarbone 56, white dress 56
+  年齢に関わるタグ: なし
+===== cleopatra_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = cleopatra_IL_v1.0
+  modelspec.title = cleopatra_IL_v1.0
+  学習フォルダ: 5_original(7枚), 5_stars_and_rose(10枚)
+  トリガー候補: 
+  よく出るタグ: solo 17, looking at viewer 16, cleopatra \(stars and roses\) \(azur lane\) 10, highleg 10, smile 9, cleopatra \(azur lane\) 7, maid 7, black gloves 7, blush 7, earrings 6, arms up 6, armpits 6, white thighhighs 5, open mouth 5, arms behind head 5, simple background 4, closed mouth 4, upper body 3, holding 3, thighhighs 3, white background 3, skindentation 2, apron 2, twitter username 2, kneeling 2, full body 2, sitting 2, areola slip 2, from side 2, barefoot 2, parted lips 2, from above 2, symbol-shaped pupils 1, o-ring 1, skirt hold 1
+  年齢に関わるタグ: なし
+===== cowpens_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = cowpens_IL_v1.0
+  modelspec.title = cowpens_IL_v1.0
+  学習フォルダ: 2_body(61枚), 4_milky_ministrations(12枚), 4_original(13枚), 5_other(5枚)
+  トリガー候補: huge breasts
+  よく出るタグ: 1girl 88, blush 82, looking at viewer 77, huge breasts 66, solo 66, long hair 54, nipples 48, smile 47, open mouth 44, navel 37, sweat 30, thighs 28, nude 22, black hair 21, hetero 21, thighhighs 20, collarbone 20, 1boy 19, underwear 18, panties 18, sitting 18, completely nude 18, closed mouth 17, spread legs 17, lying 16, simple background 16, pubic hair 15, mole under eye 15, brown hair 14, shirt 14, female pubic hair 14, indoors 13, hair ornament 13, cowpens \(azur lane\) 13, mole 12
+  年齢に関わるタグ: なし
+===== demonmge2-000013.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = demonmge2
+  modelspec.title = demonmge2
+  学習フォルダ: 5_demon(60枚)
+  トリガー候補: demonmge, colored skin, demon girl, black sclera, colored sclera
+  よく出るタグ: demonmge 60, 1girl 60, breasts 60, long hair 60, colored skin 60, demon girl 60, black sclera 60, colored sclera 60, horns 59, pointy ears 59, red eyes 59, demon horns 59, blue skin 58, smile 57, solo 56, large breasts 56, wings 55, purple hair 55, demon wings 55, dark purple wings 55, looking at viewer 53, tail 50, spade-tipped tail 50, dark purple tail 50, prehensile tail 50, demon tail 49, hair between eyes 43, navel 39, thighhighs 38, jewelry 36, blush 36, earrings 34, gloves 34, bare shoulders 31, tattoo 28
+  年齢に関わるタグ: なし
+===== dorothy-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = dorothy-nikke-richy-v1_ixl
+  modelspec.title = dorothy-nikke-richy-v1_ixl
+  学習フォルダ: 2_dorothy def(135枚), 1_dorothy rnd(91枚), 3_dorothy alt(52枚), 2_dorothy nostalgiapink(47枚), 3_dorothy nostalgiablack(11枚)
+  トリガー候補: pink hair, purple eyes, bare shoulders, single hair bun
+  よく出るタグ: long hair 335, pink hair 330, purple eyes 313, bare shoulders 285, looking at viewer 284, large breasts 277, single hair bun 275, blush 220, smile 210, very long hair 209, white dress 197, hair ribbon 188, cleavage 180, hair between eyes 143, frilled dress 138, drthdf 135, center frills 132, purple ribbon 131, frilled choker 125, neck ribbon 125, parted lips 124, hair ornament 120, frilled sleeves 116, closed mouth 116, simple background 114, braid 111, see-through sleeves 111, thighs 105, white thighhighs 105, white background 101, frills 92, drthrd 91, collarbone 90, hair intakes 89, thighhighs 87
+  年齢に関わるタグ: なし
+===== elegg-swimsuit-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = elegg-swimsuit-nikke-richy-v1_ixl
+  modelspec.title = elegg-swimsuit-nikke-richy-v1_ixl
+  学習フォルダ: 1_elegg summer(180枚)
+  トリガー候補: elggsm, slingshot swimsuit, yellow bikini, short hair, blonde hair, see-through, clothing cutout, heart cutout
+  よく出るタグ: elggsm 180, slingshot swimsuit 180, yellow bikini 180, short hair 179, blonde hair 179, see-through 179, clothing cutout 179, heart cutout 179, hair intakes 172, smile 169, cleavage 167, blush 158, colored inner hair 156, yellow hair 156, choker 150, navel 145, open mouth 143, hair over eyes 139, ahoge 137, bare shoulders 128, huge breasts 120, black choker 117, breasts 115, 1girl 112, fang 110, collarbone 109, solo 105, yellow thigh straps 100, armband 99, looking at viewer 98, large breasts 95, black glove 88, single glove 88, rubber glove 88, two-tone hair 83
+  年齢に関わるタグ: なし
+===== enterprise_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = NoobAI-XL-v1.1.safetensors
+  ss_output_name = enterprise_XL_illustrious-noob_v1
+  modelspec.title = enterprise_XL_illustrious-noob_v1
+  学習フォルダ: 1_enterprise1(13枚), 1_enterprise10(9枚), 1_enterprise2(16枚), 1_enterprise3(11枚), 1_enterprise4(12枚), 1_enterprise5(11枚), 1_enterprise6(11枚), 1_enterprise7(15枚), 1_enterprise9(15枚), 2_enterprise8(6枚)
+  トリガー候補: enterprise \(azur lane\)
+  よく出るタグ: enterprise \(azur lane\) 238, white background 72, arm up 62, full body 54, sitting 46, holding 46, race queen 32, casual 30, santa costume 30, military uniform 26, dutch angle 26, outdoors 24, goggles 24, wedding dress 24, hand on own hip 22, goggles on head 22, from side 22, diving suit 22, bird 22, china dress 22, evening gown 22, eagle 20, open mouth 20, no headwear 18, blue sky 18, ocean 16, feather coat 16, upper body 14, bouquet 14, holding bouquet 14, black jacket 12, arm support 12, from above 12, hand in own hair 12, holding cup 12
+  年齢に関わるタグ: なし
+===== fftifa-illu-nvwls-v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = fftifa-illu-nvwls-v1
+  modelspec.title = fftifa-illu-nvwls-v1
+  学習フォルダ: 3_7rtf(48枚), 3_actf(37枚), 3_cgtf(32枚), 3_deftf(42枚), 3_exdtf(23枚), 3_lfgtf(31枚), 3_mgtf(24枚), 3_mhstf(25枚), 3_pstf(23枚), 3_rdtf(42枚), 3_sdtf(30枚), 3_shntf(35枚), 3_xmstf(29枚), 4_amrtf(16枚), 4_bdtf(19枚), 4_bhtf(22枚), 4_bnntf(19枚), 4_featf(21枚), 4_hbeetf(20枚), 4_mtltf(21枚), 4_pmtf(24枚), 5_libtf(13枚), 6_krtf(12枚)
+  トリガー候補: black hair, swept bangs, red eyes
+  よく出るタグ: 1girl 608, black hair 608, swept bangs 608, solo 605, breasts 576, red eyes 492, looking at viewer 487, large breasts 480, bare shoulders 399, smile 397, navel 319, low-tied long hair 308, midriff 286, simple background 253, cleavage 229, white background 220, closed mouth 217, long hair 215, black gloves 211, standing 197, cowboy shot 197, fingerless gloves 196, full body 188, miniskirt 178, blush 174, earrings 162, collarbone 161, brown eyes 158, black skirt 138, single earring 131, lips 123, parted lips 116, black suspenders 111, suspender skirt 109, hair flower 109
+  年齢に関わるタグ: なし
+===== gbfanila-illu-nvwls-v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = gbfanila-illu-nvwls-v1_1
+  modelspec.title = gbfanila-illu-nvwls-v1_1
+  学習フォルダ: 2_defgbani(43枚), 2_defgbani_misc(21枚), 2_slpgbani(33枚), 2_sumgbani(45枚), 3_yktgbani(19枚), 4_evtgbani(13枚)
+  トリガー候補: blonde hair, sheep horns, very long hair, wavy hair, blunt bangs
+  よく出るタグ: 1girl 174, breasts 174, blonde hair 174, sheep horns 174, very long hair 174, wavy hair 174, blunt bangs 174, solo 173, ahoge 170, large breasts 167, looking at viewer 163, cleavage 163, thick eyebrows 162, blush 159, yellow eyes 155, smile 137, bare shoulders 104, open mouth 91, collarbone 84, navel 81, pleated skirt 80, black skirt 72, miniskirt 72, white thighhighs 68, defgbani 64, white background 58, white gloves 57, simple background 57, thighs 55, white bikini 47, :d 46, black bikini 46, sumgbani 45, layered bikini 45, sleeveless 44
+  年齢に関わるタグ: なし
+===== gbfbeatrix-illu-nvwls-v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = gbfbeatrix-illu-nvwls-v1
+  modelspec.title = gbfbeatrix-illu-nvwls-v1
+  学習フォルダ: 3_basebtx(34枚), 3_hwnbtx(24枚), 4_summerbtx(23枚), 5_racebtx(7枚)
+  トリガー候補: brown hair, asymmetrical bangs
+  よく出るタグ: 1girl 88, long hair 88, brown hair 88, asymmetrical bangs 88, solo 87, breasts 87, looking at viewer 82, large breasts 82, navel 74, ponytail 70, blush 62, smile 62, brown eyes 55, cleavage 51, detached collar 47, black gloves 45, midriff 45, open mouth 45, bare shoulders 45, simple background 41, medium breasts 39, white background 37, basebtx 34, cleavage cutout 34, blue shrug top 34, hair ribbon 34, black armor 33, green eyes 32, short shorts 29, stomach 28, black shorts 27, gauntlets 27, blue waist cape 26, weapon 26, brown belt 25
+  年齢に関わるタグ: なし
+===== gbfbk-illu-nvwls-v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = gbfbk-illu-nvwls-v1
+  modelspec.title = gbfbk-illu-nvwls-v1
+  学習フォルダ: 3_blkt(31枚), 4_blkt_armor(14枚), 4_blkt_misc(7枚)
+  トリガー候補: blkt, brown hair, hair between eyes, short hair
+  よく出るタグ: blkt 52, 1girl 52, solo 50, brown hair 45, hair between eyes 45, short hair 44, looking at viewer 41, breasts 35, large breasts 33, standing 32, white leotard 32, gold trim 31, green eyes 27, weapon 26, simple background 25, bare shoulders 23, sword 23, gold choker 22, white thighhighs 21, black gauntlets 21, holding 20, full body 18, covered navel 17, hand on own hip 16, blue eyes 16, white background 16, torn clothes 15, shoulder armor 14, gauntlets 14, pauldrons 14, breastplate 14, black armor 14, cowboy shot 13, holding weapon 13, black pants 13
+  年齢に関わるタグ: なし
+===== gbfrosetta-illu-nvwls-v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = gbfrosetta-illu-nvwls-v1
+  modelspec.title = gbfrosetta-illu-nvwls-v1
+  学習フォルダ: 3_baserse(31枚), 3_smrrse(22枚), 4_bnnrse(15枚), 4_hwnrse(13枚), 4_xmasrse(13枚)
+  トリガー候補: hair between eyes, brown hair
+  よく出るタグ: 1girl 94, long hair 94, hair between eyes 94, solo 93, breasts 93, brown hair 93, looking at viewer 85, smile 82, large breasts 82, cleavage 81, bare shoulders 63, hair flower 52, blue eyes 49, purple rose 45, purple eyes 44, black gloves 43, rose 42, hair ornament 38, white background 38, necklace 34, simple background 32, baserse 31, off-shoulder dress 31, black gown 31, frilled dress 31, flower 28, petals 26, blush 25, collarbone 24, argyle thighhighs 23, black thighhighs 23, sitting 22, navel 22, holding 22, smrrse 22
+  年齢に関わるタグ: なし
+===== gbfyuel-illu-nvwls-v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = gbfyuel-illu-nvwls-v1
+  modelspec.title = gbfyuel-illu-nvwls-v1
+  学習フォルダ: 3_altgbyu(24枚), 3_defgbyu(38枚), 3_smgbyu(23枚), 3_versgbyu(41枚), 4_evntgbyu(17枚), 5_grgbyu(7枚)
+  トリガー候補: fox ears, very long hair, black hair, sidelocks, blunt bangs
+  よく出るタグ: 1girl 150, solo 150, fox ears 150, very long hair 150, black hair 150, sidelocks 150, blunt bangs 150, breasts 149, smile 142, looking at viewer 137, bare shoulders 135, fox tail 134, hair bell 134, hair ribbon 134, red eyes 117, large breasts 104, black gloves 101, medium breasts 92, cleavage 89, blush 87, open mouth 81, navel 71, fang 71, fur trim 69, fox shadow puppet 66, black panties 64, simple background 63, collarbone 61, black thighhighs 54, white background 51, :d 47, purple eyes 46, elbow gloves 42, versgbyu 41, white dress 41
+  年齢に関わるタグ: なし
+===== gouden leeuw(ilv1)-000018.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = gouden leeuw(ilv1)
+  modelspec.title = gouden leeuw(ilv1)
+  学習フォルダ: 5_zkz(11枚)
+  トリガー候補: gouden_leeuw_(azur_lane), blonde hair, jewelry, very long hair
+  よく出るタグ: 1girl 11, gouden_leeuw_(azur_lane) 11, blonde hair 11, long hair 11, solo 11, jewelry 8, very long hair 8, breasts 7, pointy ears 7, elf 7, navel 7, cleavage 7, blush 7, huge breasts 7, earrings 7, bare shoulders 7, hair between eyes 6, (braid:0.3) 6, thighs 5, purple eyes 5, looking at viewer 5, pelvic curtain 5, pubic tattoo 5, large breasts 5, ahoge 5, parted lips 4, white background 3, sitting 3, simple background 3, underwear 3, tattoo 3, thighlet 3, hand on own face 3, head out of frame 3, revealing clothes 3
+  年齢に関わるタグ: なし
+===== guam-al-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = guam-al-richy-v1_ixl
+  modelspec.title = guam-al-richy-v1_ixl
+  学習フォルダ: 1_Guam rnd(27枚), 2_Guam charm(74枚), 2_Guam def(67枚)
+  トリガー候補: blonde hair, star-shaped pupils, heart
+  よく出るタグ: long hair 167, blonde hair 167, looking at viewer 163, large breasts 154, star-shaped pupils 151, smile 149, blush 128, heart 125, blue eyes 109, twintails 108, very long hair 104, open mouth 92, cleavage 88, leotard 86, bare shoulders 80, purple eyes 77, guamssc 74, thighs 73, simple background 72, hairclip 70, long sleeves 70, heart facial mark 69, choker 68, headgear 67, guamdef 67, blue coat 67, playboy bunny 65, blue leotard 64, animal ears 63, sidelocks 62, top hat 62, white background 61, rabbit ears 61, fingerless gloves 59, white gloves 59
+  年齢に関わるタグ: なし
+===== hakuho_IL_v2.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = novaAnimeXL_ilV110.safetensors
+  ss_output_name = hakuho
+  modelspec.title = hakuho
+  学習フォルダ: 10_body(8枚)
+  トリガー候補: bare shoulders, hair ornament
+  よく出るタグ: solo 16, 1girl 14, looking at viewer 13, bare shoulders 12, hair ornament 10, blush 10, smile 8, hakuho 8, open mouth 6, sitting 6, ribbon 6, breasts 6, long hair 6, kimono 5, spread legs 5, ahoge 4, pantyhose 4, large breasts 4, bangs 4, feet 3, sash 3, one eye closed 3, black legwear 3, torn legwear 3, detached collar 3, white legwear 3, thighband pantyhose 3, black hair 3, cleavage 3, red eyes 3, dress 3, eyebrows visible through hair 3, very long hair 3, bamboo 2, bluefl 2
+  年齢に関わるタグ: なし
+===== hakuhou_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = hakuhou_XL_illustrious-noob_v1
+  modelspec.title = hakuhou_XL_illustrious-noob_v1
+  学習フォルダ: 1_hakuhou1(14枚), 1_hakuhou2(11枚), 1_hakuhou3(12枚)
+  トリガー候補: hakuhou \(azur lane\)
+  よく出るタグ: hakuhou \(azur lane\) 74, main clothes 42, open mouth 42, thighhighs 26, ninja 24, taihou \(azur lane\) 24, 2girls 24, multiple girls 24, arm up 18, indoors 18, dutch angle 16, leotard 14, from side 14, arm support 14, full body 12, tatami 12, 3girls 12, sitting 10, spread legs 10, blush 10, squatting 8, arms up 8, from above 8, weapon 8, sword 8, hand on own chest 6, manjuu \(azur lane\) 6, upper body 6, kneeling 6, katana 6, cherry blossoms 6, tongue out 6, symmetrical docking 6, leaning forward 4, adjusting clothes 4
+  年齢に関わるタグ: なし
+===== helm-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = helm-nikke-richy-v1_ixl
+  modelspec.title = helm-nikke-richy-v1_ixl
+  学習フォルダ: 1_Helm rnd(111枚), 1_Helm swim bikini(83枚), 1_Helm swim shirt(154枚), 2_Helm def(70枚), 2_Helm dress(72枚)
+  トリガー候補: blue hair, blue eyes, thighs, braid
+  よく出るタグ: long hair 490, blue hair 490, blue eyes 479, large breasts 441, looking at viewer 427, blush 402, thighs 352, braid 328, official alternate costume 295, cleavage 249, ponytail 241, string bikini 238, headgear 237, hlmswm 237, long sleeves 233, blue bikini 226, white gloves 225, closed mouth 202, swimsuit 197, bare shoulders 192, wet 186, collarbone 179, gloves 175, hair between eyes 174, huge breasts 161, white shirt 160, see-through 160, navel 154, simple background 153, white background 149, bikini under clothes 139, wet clothes 138, see-through shirt 131, hair intakes 128, standing 124
+  年齢に関わるタグ: なし
+===== hindenburg_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = hindenburg_IL_v1.0
+  modelspec.title = hindenburg_IL_v1.0
+  学習フォルダ: 1_delirious_duel(25枚), 4_b(61枚), 4_original(21枚), 4_other(29枚)
+  トリガー候補: 
+  よく出るタグ: 1girl 132, looking at viewer 118, solo 103, long hair 75, blush 74, huge breasts 72, open mouth 51, nipples 50, smile 48, navel 47, sitting 32, thighs 32, sweat 29, red hair 29, horns 29, hindenburg 29, hetero 28, thighhighs 26, nude 26, pointy ears 26, breasts 26, hindenburg \(delirious duel\) \(azur lane\) 25, 1boy 25, red eyes 23, lying 21, spread legs 21, black hair 21, very long hair 21, completely nude 21, hindenburg \(azur lane\) 21, ass 20, collarbone 20, solo focus 19, underwear 19, panties 19
+  年齢に関わるタグ: なし
+===== hindenburg_azurlaneIL_scarxzys.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = EMS-602128-EMS.safetensors
+  ss_output_name = lora
+  modelspec.title = lora
+  学習フォルダ: image_dir(59枚)
+  トリガー候補: pointy ears, elbow gloves, black gloves, very long hair, demon horns, hairband, underboob, red eyes
+  よく出るタグ: pointy ears 115, elbow gloves 111, black gloves 110, very long hair 106, demon horns 106, hairband 105, underboob 102, red eyes 97, wings 95, ahoge 94, demon wings 88, black pantyhose 86, covered navel 84, demon tail 81, frills 81, mole 70, low wings 67, mole under eye 66, clothing cutout 62, curled horns 60, hindenburg (azur lane) 59, slit pupils 59, frilled gloves 59, center frills 59, 1girl 59, long hair 59, breasts 59, red hair 59, horns 59, bangs 57, solo 56, looking at viewer 56, large breasts 55, gloves 52, bare shoulders 52
+  年齢に関わるタグ: なし
+===== hood_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = hood_XL_illustrious-noob_v1
+  modelspec.title = hood_XL_illustrious-noob_v1
+  学習フォルダ: 1_hood1(21枚), 1_hood10(4枚), 1_hood2(10枚), 1_hood3(8枚), 1_hood4(11枚), 1_hood5(10枚), 1_hood6(13枚), 1_hood7(7枚)
+  トリガー候補: hood (azur lane)
+  よく出るタグ: hood (azur lane) 168, full body 52, holding 46, military uniform 42, sitting 30, outdoors 28, arm up 26, from side 26, 1boy 26, riding outfit 26, indoors 22, one-piece swimsuit 22, unworn headwear 20, dutch angle 20, evening gown 20, wedding dress 20, sex 16, from behind 16, completely nude 16, on back 14, blue kimono 14, on bed 12, outstretched arm 12, 3d 10, 3d (artwork) 10, mikumikudance (medium) 10, upper body 10, nude 10, bar censor 10, holding bag 10, handbag 10, holding cup 10, eyewear on head 10, bouquet 10, holding bouquet 10
+  年齢に関わるタグ: なし
+===== il-grablu-narmaya.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = anynoobaiForLora_11Epsilon.safetensors
+  ss_output_name = il-grablu-narmaya
+  modelspec.title = il-grablu-narmaya
+  学習フォルダ: 10_narmaya(23枚), 5_narswim(6枚), 5_naryukata(5枚)
+  トリガー候補: narmaya \(granblue fantasy\), granblue fantasy, official art, draph, narmaya (granblue fantasy), horns, pointy ears
+  よく出るタグ: narmaya \(granblue fantasy\) 34, granblue fantasy 34, official art 34, 1girl 34, draph 34, narmaya (granblue fantasy) 34, horns 34, pointy ears 34, long hair 34, hair over one eye 34, hair ornament 33, solo 32, blue eyes 30, looking at viewer 25, breasts 24, braid 24, large breasts 24, official alternate costume 18, open mouth 18, smile 16, pink hair 16, gloves 14, black gloves 14, very long hair 13, bare shoulders 12, blush 12, weapon 11, sword 11, single braid 11, fingerless gloves 11, cleavage 11, face focus 11, katana 10, hair bun 10, full body 9
+  年齢に関わるタグ: なし
+===== il-grabluzeta.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = anynoobaiForLora_11Epsilon.safetensors
+  ss_output_name = il-grabluzeta
+  modelspec.title = il-grabluzeta
+  学習フォルダ: 15_zera(18枚)
+  トリガー候補: zeta \(granblue fantasy\), granblue fantasy, zeta (granblue fantasy), blonde hair, twintails
+  よく出るタグ: zeta \(granblue fantasy\) 18, granblue fantasy 18, 1girl 18, zeta (granblue fantasy) 18, blonde hair 18, solo 18, long hair 18, twintails 17, blue eyes 16, looking at viewer 14, braid 14, hair intakes 13, breasts 12, open mouth 12, hairband 11, armor 10, smile 10, face focus 10, weapon 9, red armor 9, cleavage 8, polearm 8, spear 8, medium breasts 7, eyewear on head 7, sunglasses 7, jewelry 7, hair ornament 7, swimsuit 6, official alternate costume 6, bikini 6, v 6, bracelet 6, hair flower 6, flower 6
+  年齢に関わるタグ: なし
+===== implacable_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = implacable_IL_v1.0
+  modelspec.title = implacable_IL_v1.0
+  学習フォルダ: 3_original(37枚), 4_nipples(31枚), 4_reg(11枚), 4_shepherd of the lost(28枚)
+  トリガー候補: blonde hair, red eyes
+  よく出るタグ: 1girl 107, breasts 107, long hair 101, looking at viewer 96, solo 94, large breasts 79, blonde hair 77, red eyes 69, very long hair 62, hair between eyes 62, blush 55, implacable \(azur lane\) 47, cleavage 44, gloves 42, habit 41, huge breasts 41, bare shoulders 41, veil 38, white thighhighs 37, horn 37, nipples 37, white shirt 34, halo 33, white background 32, simple background 31, navel 31, thighs 30, choker 30, pencil skirt 30, pantyhose 30, black skirt 28, implacable \(shepherd of the lost\) \(azur lane\) 28, sitting 25, black choker 25, long sleeves 25
+  年齢に関わるタグ: なし
+===== independence_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = independence_XL_illustrious-noob_v1
+  modelspec.title = independence_XL_illustrious-noob_v1
+  学習フォルダ: 1_independence1(13枚), 1_independence2(12枚), 1_independence3(7枚), 1_independence4(6枚), 1_independence5(10枚), 1_independence6(12枚), 1_independence7(7枚)
+  トリガー候補: independence (azur lane)
+  よく出るタグ: independence (azur lane) 134, full body 58, blue background 36, 3d 34, 3d (artwork) 34, holding 30, sitting 28, military uniform 26, school uniform 24, retrofit 24, casual 20, manjuu (azur lane) 18, arm up 16, arrow (projectile) 14, evening gown 14, outdoors 12, bird 12, petals 12, loungewear 12, holding arrow 10, from above 10, bow (weapon) 10, on bed 10, holding bow (weapon) 8, ocean 8, blush 8, dutch angle 8, bag 8, from below 8, hand on own hip 8, hand in own hair 6, weapon 6, quiver 6, from side 6, hugging own legs 6
+  年齢に関わるタグ: なし
+===== indomitable_(azur_lane)_2_il_3-000012.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL10_v10_2a7c1649.safetensors
+  ss_output_name = indomitable_(azur_lane)_2_il_3
+  modelspec.title = indomitable_(azur_lane)_2_il_3
+  学習フォルダ: 4_indomitable (azur lane)(18枚), 4_indomitable (ms. motivationless maid) (azur lane)(18枚), 4_indomitable (the laid-back navigator) (azur lane)(16枚)
+  トリガー候補: 
+  よく出るタグ: looking at viewer 40, blush 23, simple background 20, indomitable\(azur_lane\) 18, horn 18, hair_on_horn 18, indomitable\(ms._motivationless_maid)\(azur_lane\) 18, underboob 18, white_shrug 18, maid headdress 18, maid_apron 18, black pleated_skirt 18, white arm_garter 18, white hair_flower 17, white background 17, white_dress 17, cloak 17, white elbow_gloves 17, white thighhighs 17, white frilled_bra 17, white_crotchless_pantyhose 17, indomitable\(the_laid-back_navigator)\(azur_lane\) 16, white hair_bow 16, black necktie 15, open mouth 15, black latex bikini 15, stomach cutout 14, sitting 14, pink_jacket 14, black see-through clothes 14, off shoulder 13, white_choker 12, leaning forward 10, closed mouth 9, lying 9
+  年齢に関わるタグ: なし
+===== label-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = label-nikke-richy-v1_ixl
+  modelspec.title = label-nikke-richy-v1_ixl
+  学習フォルダ: 1_label def(33枚), 1_label rnd(8枚)
+  トリガー候補: lbl, purple eyes, purple hair, colored inner hair, black hair, glasses
+  よく出るタグ: lbl 41, long hair 41, purple eyes 41, purple hair 41, colored inner hair 41, black hair 40, looking at viewer 39, glasses 39, hair over one eye 37, blush 36, black-framed eyewear 36, large breasts 35, cleavage 35, bare shoulders 34, mole 34, off shoulder 33, two-tone hair 33, mole on breast 33, sweat 31, black cardigan 31, simple background 28, huge breasts 27, spaghetti strap 24, upper body 22, black dress 22, smile 21, white background 20, streaked hair 19, tank top 17, collarbone 17, jacket 16, very long hair 16, long sleeves 15, book 15, holding 14
+  年齢に関わるタグ: なし
+===== leonardo_da_vinci_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = leonardo_da_vinci_XL_illustrious-noob_v1
+  modelspec.title = leonardo_da_vinci_XL_illustrious-noob_v1
+  学習フォルダ: 1_leonardo_da_vinci1(17枚), 1_leonardo_da_vinci2(7枚), 1_leonardo_da_vinci3(4枚)
+  トリガー候補: leonardo da vinci \(azur lane\), military uniform
+  よく出るタグ: leonardo da vinci \(azur lane\) 56, military uniform 34, bare arms 18, coat 16, open coat 16, arm up 16, ballerina 14, hand on own hip 12, full body 10, contrapposto 8, water 6, school uniform 6, dutch angle 4, looking back 4, from behind 4, on back 4, spread legs 4, barefoot 4, on bed 4, knee up 4, heart-shaped pupils 4, pointing 4, double v 4, salute 4, bird 4, standing on one leg 4, forest 4, pond 4, see-through shirt 4, stretching 2, arms up 2, v 2, sex 2, stomach bulge 2, mosaic censoring 2
+  年齢に関わるタグ: なし
+===== maiden-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = maiden-nikke-richy-v1_ixl
+  modelspec.title = maiden-nikke-richy-v1_ixl
+  学習フォルダ: 1_maiden rnd(28枚), 2_maiden sum(51枚), 3_maiden def(34枚), 3_maiden nrs(18枚), 3_maiden winter(35枚)
+  トリガー候補: black hair, red eyes, very long hair, cleavage
+  よく出るタグ: long hair 166, black hair 163, red eyes 159, large breasts 152, looking at viewer 137, very long hair 110, cleavage 109, blush 88, thighs 88, hair ornament 79, hair flower 74, jewelry 67, rose 66, parted bangs 65, thigh strap 62, black belt 61, mouth mask 58, bare shoulders 58, nail polish 55, swimsuit 55, smile 53, black nails 53, harness 53, o-ring swimsuit 52, lock collar 52, red flower 51, mdnsum 51, black swimsuit 51, criss-cross halter 51, key necklace 51, open mouth 49, sunglasses 49, eyewear on head 49, holding 48, white gloves 48
+  年齢に関わるタグ: なし
+===== mavuika_genshin_impact_ilxl_goofy.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = mavuika_genshin_impact_ilxl_goofy
+  学習タグの記録なし（メタデータなし）
+===== mogador_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = mogador_XL_illustrious-noob_v1
+  modelspec.title = mogador_XL_illustrious-noob_v1
+  学習フォルダ: 1_mogador1(10枚), 1_mogador2(10枚), 1_mogador3(1枚), 1_mogador4(13枚)
+  トリガー候補: mogador \(azur lane\)
+  よく出るタグ: mogador \(azur lane\) 68, white background 38, nurse 26, full body 24, military uniform 20, swimsuit 20, black one-piece swimsuit 20, simple background 16, no headwear 12, indoors 12, heart-shaped pupils 12, kneeling 10, spread legs 8, arms up 8, black mask 8, hospital 8, pov 8, holding 6, holding polearm 6, polearm 6, beach 6, from side 6, dutch angle 6, outstretched arm 6, arms behind back 6, wariza 6, arms behind head 6, arm up 6, drooling 6, 3d 6, grey background 6, heart 6, hands on own stomach 4, riding 4, leaning forward 4
+  年齢に関わるタグ: なし
+===== napoli_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = napoli_XL_illustrious-noob_v1
+  modelspec.title = napoli_XL_illustrious-noob_v1
+  学習フォルダ: 1_Napoli1(13枚), 1_Napoli2(8枚)
+  トリガー候補: napoli (azur lane), fatigues
+  よく出るタグ: napoli (azur lane) 42, white background 28, fatigues 26, full body 18, sitting 16, playboy bunny 16, lying 12, finger to mouth 10, from side 8, arm up 6, card 6, on side 4, bird 4, wariza 4, knee up 4, indoors 4, dutch angle 4, blush 4, v 2, hand up 2, sample watermark 2, yokozuwari 2, high heels 2, water 2, forest 2, monochrome 2, breast suppress 2, from below 2, greyscale 2, leg up 2, on chair 2, crossed legs 2, hand in own hair 2, grabbing own breast 2, dakimakura \(medium\) 2
+  年齢に関わるタグ: なし
+===== noir-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = noir-nikke-richy-v1_ixl
+  modelspec.title = noir-nikke-richy-v1_ixl
+  学習フォルダ: 1_noir_def(126枚), 1_noir_rnd(44枚), 2_noir_hs(49枚)
+  トリガー候補: brown hair, dark skin, fake animal ears, bare shoulders, playboy bunny
+  よく出るタグ: brown hair 211, dark skin 186, looking at viewer 180, blush 176, fake animal ears 152, bare shoulders 148, large breasts 147, playboy bunny 140, detached collar 134, cleavage 133, black leotard 132, noirdef 126, wrist cuffs 108, bowtie 106, very long hair 105, strapless 105, huge breasts 102, fishnet pantyhose 98, official alternate costume 97, open mouth 75, smile 65, tail 56, rabbit tail 54, noirhs 49, japanese clothes 49, fur collar 49, closed mouth 48, asymmetrical clothes 48, thighs 47, white background 44, ass 44, noirrnd 44, karin (blue archive) 41, hair ornament 41, hair flower 41
+  年齢に関わるタグ: なし
+===== owari_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = owari_XL_illustrious-noob_v1
+  modelspec.title = owari_XL_illustrious-noob_v1
+  学習フォルダ: 1_owari1(14枚), 1_owari2(14枚), 1_owari3(14枚), 1_owari4(4枚)
+  トリガー候補: owari (azur lane)
+  よく出るタグ: owari (azur lane) 92, white background 62, fatigues 28, white one-piece swimsuit 28, dark lord 28, sitting 26, arm up 24, full body 24, v 16, unworn jacket 12, holding 12, leaning forward 12, throne 12, sitting on throne 12, from side 10, shawl 8, unworn skirt 8, completely nude 8, rolling eyes 8, outstretched arms 6, spread legs 6, arms up 6, ahegao 6, bent over 4, backlighting 4, from behind 4, hand on own hip 4, hand on own chest 4, standing on one leg 4, dutch angle 4, kneeling 4, finger to mouth 4, seiza 4, outdoors 4, arms behind head 4
+  年齢に関わるタグ: なし
+===== p5tae-ill.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = p5tae-ill
+  modelspec.title = p5tae-ill
+  学習フォルダ: 8_tae woman(122枚)
+  トリガー候補: choker, jewelry, p5tae, tae takemi, short hair, black hair
+  よく出るタグ: choker 133, jewelry 130, p5tae 122, tae takemi 122, short hair 122, 1girl 121, black hair 116, solo 110, necklace 104, cleavage 94, studded collar 84, labcoat 68, black jacket 58, bangs 54, breasts 54, dress 53, looking at viewer 51, black footwear 46, jacket 45, black pantyhose 43, p5taecasual 42, bracelet 42, pantyhose 41, full body 39, blue hair 39, medium breasts 38, leather jacket 38, lips 37, ripped pantyhose 37, standing 35, open jacket 34, high heels 33, collar 32, bag 32, black bag 32
+  年齢に関わるタグ: なし
+===== pamiat_merkuria_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = pamiat_merkuria_IL_v1.0
+  modelspec.title = pamiat_merkuria_IL_v1.0
+  学習フォルダ: 6_caged_minx(12枚), 6_chic_and_cheeky(13枚), 6_mercurial_chocolate_love(16枚), 6_meta(15枚), 6_original(12枚), 6_pick_and_choose!(14枚), 6_playboy_bunny(15枚), 6_retrofit(15枚), 6_sweet_cherry_memories(15枚), 8_other(14枚)
+  トリガー候補: 
+  よく出るタグ: 1girl 140, solo 132, looking at viewer 130, smile 112, blush 92, open mouth 80, simple background 45, white background 43, sitting 28, manjuu \(azur lane\) 24, cowboy shot 19, food 18, holding 17, heart 16, pamiat merkuria \(mercurial chocolate love\) \(azur lane\) 16, standing 15, closed mouth 15, pamiat merkuria \(meta\) \(azur lane\) 15, pamiat merkuria \(playboy bunny\) \(azur lane\) 15, pamiat merkuria \(retrofit\) \(azur lane\) 15, pamiat merkuria \(sweet cherry memories\) \(azur lane\) 15, full body 14, from below 14, tongue 14, pamiat merkuria \(pick and choose!\) \(azur lane\) 14, pamiat merkuria 14, long hair 14, pamiat merkuria \(chic and cheeky\) \(azur lane\) 13, tongue out 13, chocolate 13, :d 13, breasts 13, purple eyes 13, pamiat merkuria \(caged minx\) \(azur lane\) 12, pamiat merkuria \(azur lane\) 12
+  年齢に関わるタグ: なし
+===== plymouth_IL_v1.0.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = plymouth_IL_v1.0
+  学習タグの記録なし（メタデータなし）
+===== privaty-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = privaty-nikke-richy-v1_ixl
+  modelspec.title = privaty-nikke-richy-v1_ixl
+  学習フォルダ: 1_priv maid(220枚), 1_priv rnd(48枚), 2_priv def(84枚), 3_priv dress(37枚), 5_priv casual(12枚)
+  トリガー候補: twintails, yellow eyes, aqua hair, very long hair
+  よく出るタグ: long hair 401, twintails 383, yellow eyes 369, aqua hair 357, blush 337, looking at viewer 314, large breasts 310, very long hair 283, hair ribbon 241, black ribbon 222, maid headdress 221, privmd 220, gloves 219, cleavage 217, cat ears 217, maid 217, white gloves 206, elbow gloves 203, white apron 176, black dress 176, maid apron 176, open mouth 170, hairclip 169, bell 164, frills 148, white thighhighs 143, simple background 130, bare shoulders 127, white background 121, bow 120, thighs 120, white garter straps 104, cat tail 101, huge breasts 94, neck ribbon 89
+  年齢に関わるタグ: なし
+===== rapi-nikke-richy-v3_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = rapi-nikke-richy-v3_ixl
+  modelspec.title = rapi-nikke-richy-v3_ixl
+  学習フォルダ: 1_Rapi def(206枚), 1_Rapi rnd(100枚), 1_Rapi ssr rnd(30枚), 1_Rapi ssr swim(146枚), 1_Rapi swim(125枚), 2_Rapi ssr(82枚), 3_Rapi ssr pjs(33枚)
+  トリガー候補: red eyes, thighs
+  よく出るタグ: long hair 721, large breasts 615, looking at viewer 610, red eyes 544, thighs 460, blush 454, brown hair 356, cleavage 327, red hair 292, closed mouth 288, choker 274, long sleeves 273, black jacket 268, smile 254, bangs 249, beret 248, black gloves 240, white shirt 227, red necktie 226, black thighhighs 212, black choker 211, simple background 209, rapidef 206, two-tone gloves 205, cropped jacket 204, white background 192, cowboy shot 192, bare shoulders 190, standing 182, open clothes 180, breasts 175, open jacket 167, very long hair 163, black headwear 163, swimsuit 162
+  年齢に関わるタグ: なし
+===== redhood-nikke-richy-v2_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = redhood-nikke-richy-v2_ixl
+  modelspec.title = redhood-nikke-richy-v2_ixl
+  学習フォルダ: 1_redhood def(216枚), 1_redhood dress(110枚), 1_redhood rnd(60枚), 1_redhood retro(65枚)
+  トリガー候補: red hair, yellow eyes, cleavage, headgear, navel
+  よく出るタグ: red hair 443, large breasts 411, looking at viewer 390, yellow eyes 371, cleavage 367, smile 362, headgear 314, navel 293, very long hair 283, fingerless gloves 251, blush 238, rdhddf 216, red scarf 205, shrug (clothing) 203, zipper 200, long hair 197, hair between eyes 183, suspenders 178, open mouth 178, holding 168, sidelocks 152, bare shoulders 147, white background 142, belt 134, midriff 132, simple background 132, horns 129, thighs 127, sitting 124, jewelry 111, rdhddr 110, cropped jacket 109, mechanical horns 109, red dress 109, underwear 104
+  年齢に関わるタグ: なし
+===== regensburg_illust_scarxzys.safetensors
+  形式: SDXL / ? / -
+  学習タグの記録なし（メタデータなし）
+===== richelieu_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = richelieu_XL_illustrious-noob_v1
+  modelspec.title = richelieu_XL_illustrious-noob_v1
+  学習フォルダ: 1_riche1(25枚), 1_riche2(12枚), 1_riche4(6枚), 2_riche3(10枚)
+  トリガー候補: richelieu \(azur lane\), thigh strap
+  よく出るタグ: richelieu \(azur lane\) 106, thigh strap 88, military uniform 50, thighhighs 46, o-ring thigh strap 44, bare legs 36, holding 32, frilled thigh strap 25, blush 24, swimsuit 24, upper body 20, sitting 20, haregi 20, book 18, full body 18, black footwear 18, holding book 16, from side 16, flag 14, holding flag 14, indoors 12, open mouth 12, sun hat 12, arm up 12, red footwear 11, no headwear 10, on bed 10, bed 10, outdoors 8, completely nude 8, chaise longue 8, bag 8, no gloves 8, arms up 6, on back 6
+  年齢に関わるタグ: なし
+===== roma_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = roma_XL_illustrious-noob_v1
+  modelspec.title = roma_XL_illustrious-noob_v1
+  学習フォルダ: 1_roma1(10枚), 1_roma2(6枚), 1_roma3(9枚), 1_roma4(4枚)
+  トリガー候補: roma \(azur lane\)
+  よく出るタグ: roma \(azur lane\) 58, white background 22, military uniform 20, heterochromia 20, white bikini 18, arm up 16, no heterochromia 15, outdoors 14, full body 14, ballerina 14, dutch angle 10, holding 10, ocean 10, traditional media 9, petals 8, indoors 8, colosseum 6, holding polearm 6, polearm 6, on side 6, lying 6, completely nude 6, outstretched arms 4, blue sky 4, upper body 4, from side 4, arms up 4, arms behind head 4, garden 4, night sky 4, yokozuwari 4, one eye closed 4, arm support 4, sitting 4, bath 4
+  年齢に関わるタグ: なし
+===== roon_XL_illustrious_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = roon_XL_illustrious_v1
+  modelspec.title = roon_XL_illustrious_v1
+  学習フォルダ: 1_roon1(12枚), 1_roon2(9枚), 1_roon3(10枚), 1_roon4(7枚), 1_roon5(11枚), 1_roon6(10枚), 1_roon7(11枚), 1_roon8(5枚), 1_roon9(3枚)
+  トリガー候補: roon \(azur lane\)
+  よく出るタグ: roon \(azur lane\) 154, white background 98, military uniform 24, full body 24, idol 22, music dress 22, evening gown 20, school uniform 20, frilled bikini 18, sitting 14, grey background 12, halloween costume 12, feather boa 12, see-through jacket 10, scrunchie 10, holding microphone stand 10, holding 10, microphone stand 10, completely nude 10, open shirt 8, skirt lift 8, on bed 8, upper body 6, blue sky 6, wariza 6, ghost pose 6, hand in own hair 6, arm support 6, gradient background 4, nipples 4, window 4, room 4, from behind 4, looking back 4, ocean 4
+  年齢に関わるタグ: なし
+===== rupee-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = rupee-nikke-richy-v1_ixl
+  modelspec.title = rupee-nikke-richy-v1_ixl
+  学習フォルダ: 1_Rupee bunny(84枚), 1_Rupee def(118枚), 1_Rupee rnd(88枚), 1_Rupee winter(84枚)
+  トリガー候補: blonde hair, green eyes
+  よく出るタグ: long hair 373, blonde hair 372, breasts 371, looking at viewer 355, green eyes 355, large breasts 344, smile 337, blush 321, hair between eyes 315, hair ornament 301, open mouth 297, cleavage 297, thighs 222, fake animal ears 200, jewelry 193, fang 187, ponytail 173, animal print 158, leopard print 157, nail polish 154, choker 150, :d 141, bare shoulders 138, underwear 138, earrings 136, official alternate costume 135, very long hair 135, white shirt 134, holding 132, hairclip 124, huge breasts 121, bra 119, rpdf 118, highleg 116, collarbone 114
+  年齢に関わるタグ: なし
+===== scylla_XL_illustrious-noob_v2.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = scylla_XL_illustrious-noob_v2
+  modelspec.title = scylla_XL_illustrious-noob_v2
+  学習フォルダ: 1_Scylla1(12枚), 1_Scylla2(13枚), 1_Scylla3(9枚), 1_Scylla4(7枚), 1_Scylla5(3枚), 1_Scylla6(20枚), 2_Scylla7(6枚)
+  トリガー候補: scylla \(azur lane\)
+  よく出るタグ: scylla \(azur lane\) 140, white background 92, simple background 92, thighhighs 78, holding 66, dress 66, sleeve cuffs 52, shirt 42, skirt 42, full body 42, ancient egyptian clothes 40, black dress 40, sitting 38, duffel bag 38, bookbag 38, bag 38, messenger bag 38, garter straps 36, garter belt 36, satchel 36, shoulder cutout 30, holding bag 28, belt 26, school uniform 26, high-waist skirt 26, school bag 26, neck ribbon 26, maid 24, crotch cutout 24, framed breasts 20, bad hands 20, from side 18, arm up 18, spread legs 18, evening gown 18
+  年齢に関わるタグ: なし
+===== shimanto_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = shimanto_IL_v1.0
+  modelspec.title = shimanto_IL_v1.0
+  学習フォルダ: 5_original(22枚), 5_the_comfy_dragon_god(16枚), 5_the_relaxing_dragon_god(19枚)
+  トリガー候補: dragon girl, dragon tail
+  よく出るタグ: dragon girl 57, solo 55, looking at viewer 53, dragon tail 35, shimanto \(azur lane\) 22, japanese clothes 21, blush 20, shimanto \(the relaxing dragon god\) \(azur lane\) 19, crop top 19, halterneck 19, white thighhighs 18, tail 18, white background 17, shimanto \(the comfy dragon god\) \(azur lane\) 16, maid 16, bow 16, thighhighs 15, gloves 14, white gloves 14, apron 14, smile 13, sitting 12, simple background 11, black thighhighs 11, black bow 10, armpits 8, parted lips 8, lying 7, water 7, black dress 7, outdoors 6, from below 6, feet 6, full body 5, open mouth 5
+  年齢に関わるタグ: なし
+===== shoukaku_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = shoukaku_XL_illustrious-noob_v1
+  modelspec.title = shoukaku_XL_illustrious-noob_v1
+  学習フォルダ: 1_shoukaku1(19枚), 1_shoukaku10(4枚), 1_shoukaku3(10枚), 2_shoukaku2(12枚), 2_shoukaku4(8枚)
+  トリガー候補: shoukaku \(azur lane\)
+  よく出るタグ: shoukaku \(azur lane\) 106, military uniform 38, full body 28, holding 26, evening gown 24, from side 20, race queen 20, arm up 18, petals 18, sitting 16, shiromuku 16, holding flute 14, flute 14, floating clothes 10, from behind 10, looking back 10, upper body 10, arm support 8, yokozuwari 8, open mouth 8, on side 8, arm under breasts 8, flag 8, dutch angle 8, standing on one leg 6, no shoes 6, hand on own chest 6, from above 6, holding own arm 6, completely nude 6, hand up 6, checkered flag 6, crane \(animal\) 6, water 6, folding fan 6
+  年齢に関わるタグ: なし
+===== soda-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = soda-nikke-richy-v1_ixl
+  modelspec.title = soda-nikke-richy-v1_ixl
+  学習フォルダ: 1_soda bunny(42枚), 1_soda def(169枚), 1_soda rnd(39枚)
+  トリガー候補: green hair, purple eyes, antenna hair, detached collar, cleavage
+  よく出るタグ: long hair 249, bangs 245, green hair 243, purple eyes 236, antenna hair 223, detached collar 217, blush 213, cleavage 206, looking at viewer 203, open mouth 200, maid headdress 194, double bun 189, maid 182, mole on breast 175, sddf 169, black hair bow 169, huge breasts 166, armband 165, green ascot 158, hairclip 153, smile 150, chest strap 148, large breasts 145, frills 141, multicolored gloves 139, maid apron 125, mole 124, dress 114, thighhighs 93, white thighhighs 88, very long hair 85, bare shoulders 81, upper body 61, hair ornament 55, heart 55
+  年齢に関わるタグ: なし
+===== sora-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = sora-nikke-richy-v1_ixl
+  modelspec.title = sora-nikke-richy-v1_ixl
+  学習フォルダ: 1_sora def(24枚), 1_sora rnd(23枚)
+  トリガー候補: srnk, twintails, black hair, white shirt
+  よく出るタグ: srnk 47, twintails 45, looking at viewer 44, large breasts 42, black hair 42, white shirt 41, smile 39, blush 38, jewelry 34, ear piercing 33, long hair 29, simple background 29, red eyes 29, black choker 29, open clothes 28, blue bow 28, open mouth 26, black jacket 26, collarbone 26, teeth 25, white background 24, blunt bangs 23, open jacket 22, piercing 22, pencil skirt 20, id card 18, belt 16, bra 16, underwear 16, white pantyhose 14, bra visible through clothes 14, huge breasts 13, upper body 13, brown eyes 12, mole 12
+  年齢に関わるタグ: なし
+===== sovetsky_soyuz_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = sovetsky_soyuz_IL_v1.0
+  modelspec.title = sovetsky_soyuz_IL_v1.0
+  学習フォルダ: 4_original(16枚), 4_skyfall_agent(18枚), 4_stringed_interrogation(16枚), 6_other(15枚)
+  トリガー候補: 
+  よく出るタグ: 1girl 65, solo 60, looking at viewer 51, simple background 19, blush 19, sovetsky soyuz \(skyfall agent\) \(azur lane\) 18, holding 17, sovetsky soyuz \(azur lane\) 16, sovetsky soyuz \(stringed interrogation\) \(azur lane\) 16, white background 15, weapon 14, smile 11, open coat 11, sovetsky_soyuz 11, animal ears 10, rabbit ears 9, holding weapon 9, gun 9, ass 9, sitting 8, from below 7, full body 7, handgun 7, holding gun 7, parted lips 6, closed mouth 6, manjuu \(azur lane\) 5, open mouth 5, thighhighs 5, playboy bunny 5, leotard 5, ice 4, upper body 4, bottle 4, underwear 4
+  年齢に関わるタグ: なし
+===== st._louis_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = st._louis_IL_v1.0
+  modelspec.title = st._louis_IL_v1.0
+  学習フォルダ: 3_luxurious_wheels(60枚), 3_original(51枚), 4_an_afternoon_on_the_lido_deck(35枚), 4_blue_and_white_pottery(37枚), 4_penetration gesture(57枚), 4_spirits_in_the_snow(20枚)
+  トリガー候補: cleavage
+  よく出るタグ: 1girl 256, solo 244, looking at viewer 242, breasts 241, large breasts 202, blush 196, cleavage 175, smile 158, thighs 97, thighhighs 81, garter straps 68, jewelry 64, sitting 61, st. louis \(luxurious wheels\) \(azur lane\) 60, revealing clothes 60, hair between eyes 59, open mouth 59, penetration gesture 57, simple background 54, ass 52, earrings 52, elbow gloves 52, nail polish 51, st. louis \(azur lane\) 51, taut dress 51, holding 49, white background 49, closed mouth 48, necklace 47, underwear 46, panties 46, long hair 42, ribbon 42, heart 40, white thighhighs 40
+  年齢に関わるタグ: なし
+===== taihou-initium-2.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = initiumFinetuneNoobai_v10.safetensors
+  ss_output_name = taihou-initium-2
+  modelspec.title = taihou-initium-2
+  学習フォルダ: Academy(10枚), Base(10枚), Bikini(8枚), Idol(8枚), Promo Kimono(2枚), Qipao(10枚), Race Queen(10枚), Red Party Dress(10枚), Wedding SKin(10枚)
+  トリガー候補: huge breasts, cleavage, bare shoulders
+  よく出るタグ: huge breasts 78, smile 55, cleavage 55, bare shoulders 52, collarbone 44, blush 43, black thighhighs 42, crossed bangs 40, looking at viewer 38, thighs 38, hair ornament 36, hair between eyes 33, thighhighs 32, one side up 32, long sleeves 31, parted lips 30, garter straps 25, open mouth 23, long hair 22, sitting 22, sleeveless dress 22, full body 21, hair ribbon 21, off shoulder 20, open clothes 20, choker 20, red eyes 19, breasts 18, solo 18, navel 17, thigh strap 17, skindentation 17, white shirt 16, red ribbon 15, open jacket 15
+  年齢に関わるタグ: なし
+===== takao_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = takao_IL_v1.0
+  modelspec.title = takao_IL_v1.0
+  学習フォルダ: 3_beach_rhapsody(26枚), 3_origen(29枚), 4_full_throttle_charmer(21枚), 4_reg(21枚), 4_school_romanza(23枚), 4_the_lessons_of_spring(18枚), 5_divine exorcist's blade(12枚)
+  トリガー候補: ponytail
+  よく出るタグ: ponytail 147, 1girl 144, solo 140, looking at viewer 134, large breasts 128, breasts 102, blush 92, bow 64, simple background 57, white background 50, takao \(azur lane\) 50, hair flaps 48, underwear 45, panties 43, long hair 39, ass 37, navel 33, sitting 33, closed mouth 31, very long hair 30, cowboy shot 29, military uniform 29, flower 28, takao \(beach rhapsody\) \(azur lane\) 26, swimsuit 26, looking back 26, panties under pantyhose 26, open mouth 25, sword 24, weapon 24, school uniform 24, from behind 23, white panties 23, holding 23, takao \(school romanza\) \(azur lane\) 23
+  年齢に関わるタグ: なし
+===== ting_an_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = ting_an_XL_illustrious-noob_v1
+  modelspec.title = ting_an_XL_illustrious-noob_v1
+  学習フォルダ: 1_ting_an1(11枚), 1_ting_an2(8枚), 1_ting_an3(3枚)
+  トリガー候補: ting an (azur lane)
+  よく出るタグ: ting an (azur lane) 44, military uniform 22, arm up 16, white background 16, black bikini 16, dutch angle 10, full body 10, open jacket 10, bare arms 8, green background 6, 3d 6, double v 4, outdoors 4, sitting 4, grey background 4, spread legs 4, fitting room 4, heart-shaped pupils 4, on bed 4, school uniform 4, indoors 2, room 2, contrapposto 2, head rest 2, standing on one leg 2, outstretched arm 2, hand on own chest 2, floral background 2, hand in own hair 2, blue background 2, abstract background 2, barefoot 2, sitting on desk 2, crossed legs 2, black background 2
+  年齢に関わるタグ: なし
+===== trafalgar_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = NoobAI-XL-v1.1.safetensors
+  ss_output_name = trafalgar_XL_illustrious-noob_v1
+  modelspec.title = trafalgar_XL_illustrious-noob_v1
+  学習フォルダ: 1_croupier(10枚), 1_figure_skating(7枚), 1_harem_outfit(6枚), 1_miko(6枚), 1_playboy_bunny(5枚), 1_Trafalgar1(14枚), 1_Trafalgar2(10枚), 1_Trafalgar3(1枚)
+  トリガー候補: headless, trafalgar\(azur lane\)
+  よく出るタグ: headless 68, white background 62, 1girl 59, full body 56, trafalgar\(azur lane\) 50, military uniform 28, holding 26, croupier 20, cleavage cutout 20, cleavage 20, breasts out 20, breast 20, gold bikini 20, large breasts 18, from side 18, thighhighs 17, card 16, leaning forward 16, holding card 14, figure skating dress 14, pool 14, medium breasts 12, harem outfit 12, miko 12, flat chest 10, small breasts 10, sitting 10, pantyhose 10, playboy bunny 10, no headwear 10, blush 10, wet 10, standing on one leg 8, outstretched arm 8, arm support 8
+  年齢に関わるタグ: なし
+===== viper-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = viper-nikke-richy-v1_ixl
+  modelspec.title = viper-nikke-richy-v1_ixl
+  学習フォルダ: 1_viper bny(127枚), 1_viper def(182枚), 1_viper rnd(61枚), 1_viper sum(148枚)
+  トリガー候補: pink eyes, cleavage, light brown hair
+  よく出るタグ: long hair 518, looking at viewer 495, pink eyes 451, large breasts 450, cleavage 410, smile 391, blush 352, light brown hair 336, bangs 320, bare shoulders 310, pink horns 301, open mouth 275, thighs 198, hair ornament 191, holding 186, off shoulder 184, open clothes 183, vprdef 182, mole 178, very long hair 164, long sleeves 164, pink ornament 162, jewelry 161, vprsm 148, underwear 145, pink jacket 143, iridescent skirt 143, white bikini 142, mole under eye 140, huge breasts 138, white shirt 137, phone 132, navel 132, white background 130, pink leotard 128
+  年齢に関わるタグ: なし
+===== AL-ObserverAlpha-ILXL-V1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = AL-ObserverAlpha-ILXL-V1
+  modelspec.title = AL-ObserverAlpha-ILXL-V1
+  学習フォルダ: 6_observeralpha azl 1girl(29枚)
+  トリガー候補: observeralpha azl, dress, bare shoulders, ribbon choker, choker
+  よく出るタグ: observeralpha azl 29, 1girl 29, solo 29, looking at viewer 28, dress 25, bare shoulders 24, ribbon choker 24, choker 24, detached collar 24, smile 23, black dress 23, headgear 21, collar 21, anime screencap 21, blurry 18, pale skin 18, breasts 18, open mouth 17, simple background 17, parted lips 16, fake animal ears 16, glowing 16, colored skin 15, white skin 15, glowing eyes 15, frills 14, depth of field 14, close-up 14, tentacles 14, strapless 14, suction cups 14, closed mouth 13, navel 13, babydoll 13, bare arms 12
+  年齢に関わるタグ: なし
+===== Alma_Elma-20 (1).safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = OnomaAIResearch/Illustrious-xl-early-release-v0
+  ss_output_name = Alma_Elma
+  学習フォルダ: dataset(57枚)
+  トリガー候補: alma_elma, purple hair, horns, pointy ears, demon girl, red eyes
+  よく出るタグ: alma_elma 57, 1girl 57, purple hair 57, horns 57, pointy ears 55, demon girl 54, long hair 53, red eyes 52, large breasts 51, wings 49, solo 41, tattoo 32, smile 30, cleavage 30, tail 30, blush 29, demon wings 26, looking at viewer 25, demon horns 23, thighhighs 20, hair between eyes 18, nipples 18, demon tail 17, hetero 16, nude 16, monster girl 16, 1boy 15, tongue 15, navel 15, very long hair 15, penis 14, tongue out 14, bridal gauntlets 13, cape 12, cum 11
+  年齢に関わるタグ: なし
+===== ArtoriaPendragon-Lancer-FGO-ILXL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = ArtoriaPendragon-Lancer-FGO-ILXL
+  modelspec.title = ArtoriaPendragon-Lancer-FGO-ILXL
+  学習フォルダ: img(705枚)
+  トリガー候補: artoriapendragonmdfdver, blonde hair, green eyes, lancertoria
+  よく出るタグ: artoriapendragonmdfdver 705, 1girl 704, solo 685, blonde hair 667, green eyes 519, large breasts 489, looking at viewer 469, lancertoria 435, braid 404, long hair 398, cleavage 348, leotard 345, sidelocks 312, bangs 284, french braid 271, animal ears 270, bunnytoria 270, hair between eyes 265, rabbit ears 260, ponytail 239, ahoge 236, playboy bunny 229, navel 226, pantyhose 209, blush 204, detached collar 189, fishnets 185, necktie 179, crown 177, blue pantyhose 177, wrist cuffs 173, turtleneck 151, sleeveless turtleneck 149, white leotard 145, highleg 139
+  年齢に関わるタグ: なし
+===== Astaroth-19.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = OnomaAIResearch/Illustrious-xl-early-release-v0
+  ss_output_name = Astaroth
+  学習フォルダ: dataset(25枚)
+  トリガー候補: astaroth, red hair, horns, demon girl, red eyes
+  よく出るタグ: astaroth 25, long hair 25, red hair 25, horns 25, 1girl 24, demon girl 24, red eyes 23, solo 22, pointy ears 21, smile 21, wings 15, demon wings 15, large breasts 14, demon horns 14, gloves 14, looking at viewer 12, tail 10, demon tail 10, simple background 9, ahoge 9, blush 9, nipples 9, navel 8, bare shoulders 8, white background 7, very long hair 7, underwear 7, tattoo 7, choker 7, thighhighs 7, sweater 6, black gloves 6, panties 6, topless 6, elbow gloves 6
+  年齢に関わるタグ: なし
+===== Carmilla_Illus.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Carmilla_Illus
+  modelspec.title = Carmilla_Illus
+  学習フォルダ: img(82枚)
+  トリガー候補: grey hair, curly hair, yellow eyes
+  よく出るタグ: 1girl 82, long hair 82, grey hair 82, curly hair 82, yellow eyes 82, breasts 81, looking at viewer 69, large breasts 69, solo 68, cleavage 65, white hair 49, jewelry 48, navel 42, bangs 39, swimsuit 38, smile 38, fingernails 36, harness 33, ascot 33, detached sleeves 33, hair ornament 32, showgirl skirt 32, bikini 31, nail polish 29, long fingernails 29, braid 27, black bikini 27, see-through jacket 27, white background 27, bare shoulders 27, holding 27, eyewear on head 24, choker 23, simple background 23, hat 21
+  年齢に関わるタグ: なし
+===== Char-HonkaiSR-BlackSwan-V2-IL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = Char-HonkaiSR-BlackSwan-V2-IL
+  modelspec.title = Char-HonkaiSR-BlackSwan-V2-IL
+  学習フォルダ: black_swan-3d(127枚), black_swan-default(168枚), black_swan-nude(160枚), black_swan-other(232枚)
+  トリガー候補: black swan \(honkai: star rail\)
+  よく出るタグ: 1girl 687, black swan \(honkai: star rail\) 687, solo 684, simple background 521, white background 509, looking at viewer 496, smile 411, veil 306, purple halter dress 293, black gloves 289, detached sleeves 289, full body 288, standing 283, 3d 282, pantyhose 266, detached collar 250, thigh boots 249, open mouth 222, closed mouth 210, short shorts 180, transparent background 148, completely nude 147, medium breasts 139, pubic hair 124, ass 111, cowboy shot 98, underwear 90, bra 87, from behind 86, panties 86, skirt 83, card 76, sitting 72, underwear only 72, shirt 72
+  年齢に関わるタグ: なし
+===== Char-HonkaiSR-Robin-V2-IL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = Char-HonkaiSR-Robin-V2-IL
+  modelspec.title = Char-HonkaiSR-Robin-V2-IL
+  学習フォルダ: robin-nude(246枚), robin-other(520枚), robin-3d(274枚), robin-default(356枚)
+  トリガー候補: robin \(honkai: star rail\), head wings
+  よく出るタグ: 1girl 1396, robin \(honkai: star rail\) 1396, solo 1390, head wings 1353, simple background 982, looking at viewer 974, white background 967, smile 872, standing 805, halo 778, full body 732, open mouth 590, detached collar 569, 3d 534, earrings 523, sleeveless dress 517, detached sleeves 513, white gloves 498, blush 486, closed mouth 386, hand up 271, hair bun 258, from side 250, parted lips 245, completely nude 242, from behind 211, transparent background 203, blue pumps 199, ass 191, facing away 189, pantyhose 186, shirt 181, holding 180, cowboy shot 167, white legwear 162
+  年齢に関わるタグ: なし
+===== Char-HonkaiSR-RuanMei-V3-IL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v2.0.safetensors
+  ss_output_name = Char-HonkaiSR-RuanMei-V3-IL
+  modelspec.title = Char-HonkaiSR-RuanMei-V3-IL
+  学習フォルダ: Ruanmei-default-3d(230枚), Ruanmei-default(258枚), Ruanmei-nude(256枚), Ruanmei-other(300枚)
+  トリガー候補: ruan mei \(honkai: star rail\)
+  よく出るタグ: 1girl 1044, ruan mei \(honkai: star rail\) 1044, solo 1031, white background 746, simple background 737, looking at viewer 644, chinese hairpin 541, detached mandarin collar 462, strapless china dress 456, teal elbow gloves 425, pearl necklace 396, capelet 376, full body 358, thigh strap 336, 3d 309, smile 282, completely nude 255, standing 247, closed mouth 242, teal pumps 227, short shorts 202, open mouth 202, cowboy shot 174, sitting 167, pubic hair 157, holding 139, parted lips 135, flower 134, from behind 121, skirt 108, ass 106, blush 100, earrings 98, hand on hip 97, shirt 97
+  年齢に関わるタグ: なし
+===== Char-HonkaiSR-Tingyun-V1-IL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = Char-HonkaiSR-Tingyun-V1-IL
+  modelspec.title = Char-HonkaiSR-Tingyun-V1-IL
+  学習フォルダ: 3D-new(231枚), 3D-old(250枚), new(106枚), old(120枚), other(571枚), nude(471枚)
+  トリガー候補: tingyun \(honkai: star rail\), 3d
+  よく出るタグ: 1girl 1749, tingyun \(honkai: star rail\) 1749, solo 1743, white background 1504, simple background 1494, 3d 1446, looking at viewer 871, ponytail 844, half updo 782, full body 679, smile 581, completely nude 471, open mouth 385, chinese hairpin 344, floral print hanfu 337, from behind 330, neck ribbon 282, sleeveless dress 269, detached sleeves 263, hair jewelry 259, red nails 249, waist sash 248, tail 244, bracelet 225, ass 222, shoulder tattoo 216, standing 209, underwear 193, large breasts 180, panties 179, thighhighs 170, black pumps 165, portrait 159, skirt 152, high heels 140
+  年齢に関わるタグ: なし
+===== Chien Wu (azur lane).safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = chosen-mix_XL.safetensors
+  ss_output_name = Chien Wu (azur lane)
+  modelspec.title = Chien Wu (azur lane)
+  学習フォルダ: 10_Chien Wu (azur lane)(27枚), 10_Chien Wu (azur lane)_face(9枚)
+  トリガー候補: black hair, red eyes, hair ornament, short hair
+  よく出るタグ: 1girl 36, black hair 36, solo 35, red eyes 33, hair ornament 33, looking at viewer 32, bangs 30, short hair 29, breasts 28, large breasts 28, dress 28, chien wu \(azur lane\) 27, bare shoulders 26, earrings 23, smile 20, cleavage 19, jewelry 19, thighs 17, flower 17, red dress 16, chinese clothes 16, china dress 16, detached sleeves 15, blush 15, hair flower 15, gloves 14, high heels 13, black gloves 12, thighhighs 12, wide sleeves 12, ass 12, official alternate costume 11, blue dress 11, black thighhighs 10, black footwear 9
+  年齢に関わるタグ: なし
+===== Erubetie-17.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = OnomaAIResearch/Illustrious-xl-early-release-v0
+  ss_output_name = Erubetie
+  学習フォルダ: dataset(26枚)
+  トリガー候補: erubetie, colored skin, monster girl, blue skin, slime girl, red eyes, blue hair
+  よく出るタグ: erubetie 26, colored skin 26, monster girl 26, blue skin 26, slime girl 26, 1girl 25, red eyes 25, blue hair 25, hair over one eye 25, long hair 22, large breasts 20, nude 19, solo 18, pointy ears 17, looking at viewer 14, tattoo 13, navel 11, nipples 10, 1boy 8, white background 8, blush 8, simple background 7, smile 7, horns 7, hetero 7, penis 7, open mouth 6, solo focus 5, censored 4, mosaic censoring 4, upper body 3, parted lips 3, blue theme 3, very long hair 3, cum 3
+  年齢に関わるタグ: なし
+===== Fate伊吹童子Ibuki_DoujiFateGrand_OrderFGO-000009.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Fate伊吹童子Ibuki_DoujiFateGrand_OrderFGO
+  modelspec.title = Fate伊吹童子Ibuki_DoujiFateGrand_OrderFGO
+  学習フォルダ: img(26枚)
+  トリガー候補: pointy ears, red eyes, tail, colored skin, oni horns, grey skin
+  よく出るタグ: 1girl 52, pointy ears 43, red eyes 41, tail 38, colored skin 36, oni horns 35, grey skin 35, breasts 26, multicolored hair 26, ibukidouji 26, horns 25, sidelocks 25, pink hair 23, blue hair 21, colored eyelashes 21, blue nails 19, sharp fingernails 19, dark skin 17, dark-skinned female 13, body markings 12, harem pants 11, pink pants 11, white panties 11, thighs 11, fgo art 11, swimsuit 10, one-piece swimsuit 10, two-tone swimsuit 9, belt 9, solo 8, oni 8, white shirt 7, open shirt 7, short sleeves 7, magatama 7
+  年齢に関わるタグ: なし
+===== Hoseki_Nikke_Arcana_IllustriousXL_v2.safetensors
+  形式: SDXL / ? / -
+  学習タグの記録なし（メタデータなし）
+===== Hoseki_Nikke_Rouge_IllustriousXL_v1.safetensors
+  形式: SDXL / ? / -
+  学習タグの記録なし（メタデータなし）
+===== Ilias-20 (1).safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = OnomaAIResearch/Illustrious-xl-early-release-v0
+  ss_output_name = Ilias
+  学習フォルダ: dataset(56枚)
+  トリガー候補: ilias, blonde hair, blue eyes, wings, pointy ears
+  よく出るタグ: ilias 56, long hair 56, blonde hair 56, 1girl 55, blue eyes 55, wings 50, solo 46, pointy ears 43, jewelry 42, angel wings 42, smile 41, feathered wings 38, circlet 36, very long hair 27, dress 25, open mouth 23, large breasts 23, bracelet 23, blush 22, looking at viewer 22, cleavage 18, bare shoulders 18, necklace 16, forehead jewel 15, barefoot 13, medium breasts 12, navel 11, simple background 10, angel 10, white wings 9, white dress 8, solo focus 8, nipples 8, nude 8, upper body 7
+  年齢に関わるタグ: なし
+===== IrisvielVonEinzbern_IXL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = OnomaAIResearch/Illustrious-xl-early-release-v0
+  ss_output_name = IrisvielVonEinzbern_IXL
+  modelspec.title = IrisvielVonEinzbern_IXL
+  学習フォルダ: IrisvielVonEinzbern_IXL(36枚)
+  トリガー候補: cciris, dress, crown, thighhighs, hat, detached sleeves, bbiris
+  よく出るタグ: smile 15, cciris 15, dress 15, crown 15, thighhighs 15, hat 14, detached sleeves 13, bbiris 12, fur coat 12, large breasts 12, coat 12, fur hat 12, looking at viewer 12, white dress 11, blush 10, boots 10, thigh boots 10, pantyhose 10, very long hair 10, bare shoulders 9, aairis 9, white background 8, cleavage 8, sleeves past wrists 7, skirt 7, navel 7, long sleeves 6, wide sleeves 6, open mouth 6, white thighhighs 6, simple background 5, closed mouth 5, underboob 5, fur trim 4, ribbon 4
+  年齢に関わるタグ: なし
+===== JadeHSR_IL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = JadeHSR
+  modelspec.title = JadeHSR
+  学習フォルダ: dataset(154枚)
+  トリガー候補: jadehsr, pink hair, grey eyes, jewelry, hat
+  よく出るタグ: jadehsr 153, pink hair 153, grey eyes 153, long hair 150, 1girl 149, looking at viewer 140, jewelry 132, hat 120, solo 119, single glove 116, smile 115, bra peak 107, detached sleeves 107, two-tone dress 107, cleavage 106, large breasts 104, purple hair 97, witch hat 91, necklace 90, blue eyes 89, gloves 77, bracelet 76, dress 75, black gloves 70, earrings 69, black headwear 63, holding 55, upper body 47, simple background 40, hair between eyes 39, underwear 38, sitting 38, white background 37, parted lips 37, thigh strap 34
+  年齢に関わるタグ: なし
+===== Kanon-20.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = OnomaAIResearch/Illustrious-xl-early-release-v0
+  ss_output_name = Kanon
+  学習フォルダ: dataset(16枚)
+  トリガー候補: kanon, hair ornament, flower, green hair, hair flower
+  よく出るタグ: kanon 16, 1girl 16, solo 16, hair ornament 16, flower 16, green hair 16, hair flower 15, long hair 13, blue eyes 13, twintails 12, plant girl 12, smile 11, large breasts 11, colored skin 11, plant 11, monster girl 11, vines 11, looking at viewer 9, nipples 9, blush 7, eyes visible through hair 6, navel 6, nude 6, white background 5, sitting 5, very long hair 5, barefoot 5, thorns 5, collarbone 5, green skin 5, sweater 4, turtleneck 4, blush stickers 4, ribbed sweater 4, huge breasts 3
+  年齢に関わるタグ: なし
+===== Kazan_azur_lane-IL-a2.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Kazan_azur_lane_IL_a2
+  modelspec.title = Kazan_azur_lane_IL_a2
+  学習フォルダ: img(33枚)
+  トリガー候補: kazanal
+  よく出るタグ: kazanal 66, 1girl 33, breasts 33, blue eyes 32, solo 29, pink hair 29, bangs 29, looking at viewer 28, blush 27, cleavage 26, long hair 22, smile 21, large breasts 20, huge breasts 20, kazannightgown 16, thighs 15, collarbone 14, kazandef 12, navel 12, nightgown 11, bare shoulders 11, hood 10, hood up 10, underwear 10, open mouth 9, gloves 9, black gloves 9, coat 9, see-through 9, simple background 8, panties 8, closed mouth 8, fur trim 7, red hair 6, sweat 6
+  年齢に関わるタグ: なし
+===== Lilith-20.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = OnomaAIResearch/Illustrious-xl-early-release-v0
+  ss_output_name = Lilith
+  学習フォルダ: dataset(22枚)
+  トリガー候補: lilith, purple hair, horns, demon girl
+  よく出るタグ: lilith 22, 1girl 22, purple hair 22, horns 22, demon girl 21, solo 20, long hair 20, smile 20, pointy ears 19, looking at viewer 19, demon horns 17, wings 14, large breasts 13, bare shoulders 13, demon wings 13, blush 12, sweater 12, hairband 12, red eyes 11, cleavage 11, demon tail 11, tail 10, ribbed sweater 9, pink eyes 9, huge breasts 8, off-shoulder sweater 8, open mouth 8, simple background 7, thighhighs 7, off shoulder 7, tongue 6, black thighhighs 5, black background 5, heart 5, glowing eyes 5
+  年齢に関わるタグ: なし
+===== MHXXX.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = MHXXX
+  modelspec.title = MHXXX
+  学習フォルダ: img(115枚)
+  トリガー候補: blonde hair, blue eyes, sidelocks, medium hair, ahoge
+  よく出るタグ: 1girl 115, blonde hair 101, blue eyes 101, sidelocks 100, medium hair 100, ahoge 100, small breasts 52, medium breasts 48, age progression 48, shorts 47, blue baseball cap 32, cropped jacket 32, white bikini 32, side-tie swimsuit 32, mechanical arms 31, mechanical legs 31, helmet 31, jacket 25, baseball cap 23, bodysuit 23, long sleeves 23, thighhighs 23, black baseball cap 23, scarf 23, unzipped 22, coat over shoulders 21, power armor 17, mecha musume 17, humanoid robot 14, robot joints 14, white baseball cap 5, white jacket 5, white scarf 5, open clothes 5, buruma 5
+  年齢に関わるタグ: なし
+===== Medusa illustxl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = Medusa illustxl
+  modelspec.title = Medusa illustxl
+  学習フォルダ: 28_ju girl(49枚)
+  トリガー候補: medusa (fate), medusa (rider) (fate), purple hair, forehead mark, facial mark, very long hair
+  よく出るタグ: medusa (fate) 49, medusa (rider) (fate) 49, long hair 49, purple hair 49, 1girl 48, forehead mark 48, facial mark 48, very long hair 44, dress 42, solo 42, bare shoulders 38, breasts 38, strapless 37, strapless dress 35, collar 34, blindfold 33, detached sleeves 32, cleavage 30, black dress 23, thighhighs 19, large breasts 19, collarbone 19, anime coloring 18, medium breasts 17, chain 16, purple eyes 15, weapon 15, holding 13, black sleeves 12, short dress 12, facing viewer 12, upper body 11, zettai ryouiki 11, thigh boots 10, boots 10
+  年齢に関わるタグ: なし
+===== MrKeb_AzurCleopatra_IL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = MrKeb_AzurCleopatra_IL
+  modelspec.title = MrKeb_AzurCleopatra_IL
+  学習フォルダ: 7_bikini(5枚), 7_main(5枚)
+  トリガー候補: tanlines, black hair, dark-skinned female, jackal ears
+  よく出るタグ: bangs 10, tanlines 10, black hair 10, breasts 10, dark-skinned female 10, jackal ears 10, large breasts 10, long hair 10, looking at viewer 10, multicolored hair 10, purple eyes 10, purple hair 10, 1girl 9, blush 9, solo 9, two-tone hair 9, cleavage 9, very long hair 9, star-shaped pupils 9, blunt bangs 8, skindentation 8, thighs 7, armpits 6, arms up 6, smile 6, azbcleo 5, stomach 5, golden necklace 5, golden armlet 5, breast pads 5, topless 5, strapless 5, navel 5, azmcleo 5, black dress 5
+  年齢に関わるタグ: なし
+===== Saja-19.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = OnomaAIResearch/Illustrious-xl-early-release-v0
+  ss_output_name = Saja
+  学習フォルダ: dataset(12枚)
+  トリガー候補: saja, black hair, yellow eyes, pointy ears, wings, hair tubes, monster girl
+  よく出るタグ: saja 12, long hair 12, black hair 12, yellow eyes 12, pointy ears 12, wings 11, hair tubes 11, monster girl 11, 1girl 10, large breasts 9, horns 9, open mouth 8, snake 8, lamia 8, solo 8, slit pupils 5, navel 5, jewelry 5, smile 4, cleavage 4, simple background 4, white background 4, looking at viewer 3, purple hair 3, fangs 3, egyptian 3, snake hair 3, nipples 3, multiple girls 2, 2girls 2, sidelocks 2, nude 2, brown hair 2, sweatdrop 2, orange eyes 2
+  年齢に関わるタグ: なし
+===== Scathach-FGO-ILXL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Scathach-FGO-ILXL
+  modelspec.title = Scathach-FGO-ILXL
+  学習フォルダ: img(987枚)
+  トリガー候補: scathach-fgo-ilxl, purple hair, red eyes
+  よく出るタグ: scathach-fgo-ilxl 987, 1girl 987, purple hair 975, solo 974, long hair 973, red eyes 943, large breasts 890, looking at viewer 843, bangs 444, smile 351, cleavage 351, blush 298, weapon 283, holding 258, gae bolg (fate) 255, navel 252, polearm 243, bodysuit 226, spear 223, white background 221, simple background 215, purple bodysuit 213, swimsuit 211, armor 209, pantyhose 207, hair between eyes 207, shoulder armor 196, flower 196, bikini 195, pauldrons 191, hair ornament 176, animal ears 166, hair flower 165, rabbit ears 163, leotard 158
+  年齢に関わるタグ: なし
+===== Sigrid_de_L_Azur_V2 .safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = urn:air:sdxl:checkpoint:civitai:795765@889818
+  ss_output_name = training_797839-20260629053517349
+  学習フォルダ: dataset(200枚)
+  トリガー候補: 
+  よく出るタグ:  1
+  年齢に関わるタグ: なし
+===== THEHEITA_28.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred11Version.safetensors
+  ss_output_name = kanami_hua
+  modelspec.title = kanami_hua
+  学習フォルダ: 1_a(59枚), 1_b(84枚)
+  トリガー候補: theheita_\(honkai_star_rail\), witch hat, dress, detached sleeves
+  よく出るタグ: theheita_\(honkai_star_rail\) 143, 1girl 140, solo 140, long hair 132, witch hat 125, dress 121, detached sleeves 95, purple eyes 81, looking at viewer 68, breasts 66, black dress 64, blue background 63, bare shoulders 59, black footwear 56, high heels 53, asymmetrical boots 51, very long hair 43, full body 36, grey hair 35, pantyhose 33, purple nails 29, smile 28, upper body 23, brown hair 21, long sleeves 19, small breasts 19, green background 19, closed mouth 18, holding 15, from behind 15, key necklace 13, purple hair 13, frills 12, sitting 11, white background 10
+  年齢に関わるタグ: なし
+===== Unfading_Smile_Prinz_Eugen_Azur_Lane_IL.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = Unfading_Smile_Prinz_Eugen_Azur_Lane_IL
+  modelspec.title = Unfading_Smile_Prinz_Eugen_Azur_Lane_IL
+  学習フォルダ: img(73枚)
+  トリガー候補: us_prinzy
+  よく出るタグ: us_prinzy 73, 1girl 70
+  年齢に関わるタグ: なし
+===== Verthandi_V0.15.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = anyillustriousXLFor_200.safetensors
+  ss_output_name = Verthandi_V0.15
+  modelspec.title = Verthandi_V0.15
+  学習フォルダ: 01_Verthandi(15枚)
+  トリガー候補: verthandi, pink hair, straight hair, ahoge, white leotard, highleg leotard
+  よく出るタグ: verthandi 15, 1girl 15, pink hair 15, long hair 15, straight hair 15, ahoge 15, white leotard 15, highleg leotard 15, white armlet 15, gold bracelet 13, hair intakes 12, hair between eyes 12, red eyes 12, tsurime 12, ver-armor 8, white headgear 8, white frame pauldrons 8, gold strings 8, white see-through capelet 8, white thighhighs 7, high heels 7, skull visor 6, upper body 4, from side 4, orange wings 3, from behind 3, portrait 2
+  年齢に関わるタグ: なし
+===== Zenobia_Illu_Dwnsty.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = Zenobia_Illu_Dwnsty
+  modelspec.title = Zenobia_Illu_Dwnsty
+  学習フォルダ: dataset(40枚)
+  トリガー候補: zenobia_fgo, blue eyes, grey hair, swimsuit, thighs, bare shoulders
+  よく出るタグ: zenobia_fgo 40, blue eyes 40, grey hair 40, swimsuit 35, thighs 34, looking at viewer 33, solo 33, bare shoulders 33, navel 30, cleavage 26, thighhighs 22, abs 17, ass 10, back 9, open mouth 8, blush 7, hetero 6, 1boy 6, censored 6, looking back 6, nipples 5, penis 5, armpits 5, arms up 5, nude 4, mosaic censoring 4, sex 3, muscular 3, lying 3, cum 3, smile 3, vaginal 2, cowgirl position 2, sweat 2, collarbone 2
+  年齢に関わるタグ: なし
+===== _echidna_gbf-elesico-ilxl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = _echidna_gbf-elesico-ilxl-1
+  modelspec.title = _echidna_gbf-elesico-ilxl-1
+  学習フォルダ: _echidna_gbf(15枚)
+  トリガー候補: gbfechid, closed eyes, elbow gloves, harem outfit
+  よく出るタグ: gbfechid 15, 1girl 15, long hair 15, breasts 15, bangs 15, closed eyes 15, elbow gloves 15, harem outfit 14, jewelry 14, dancer 14, detached sleeves 14, gold collar 14, bare shoulders 13, very long hair 13, veil 13, navel 13, solo 12, smile 12, blunt bangs 12, gloves 12, white gloves 12, large breasts 11, lamia 11, cleavage 11, monster girl 10, midriff 9, blush 8, white hair 8, facing viewer 8, pelvic curtain 8, scales 7, closed mouth 7, stomach 7, medium breasts 5, simple background 4
+  年齢に関わるタグ: なし
+===== _europa_fgo-elesico-ilxl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = _europa_fgo-elesico-ilxlC
+  modelspec.title = _europa_fgo-elesico-ilxlC
+  学習フォルダ: ___rnd(10枚), asc01(10枚), asc02(10枚), asc03(10枚)
+  トリガー候補: blonde hair, very long hair, purple eyes, crown
+  よく出るタグ: blonde hair 40, 1girl 39, smile 38, very long hair 38, purple eyes 38, solo 37, crown 36, looking at viewer 35, red collar 34, cleavage 32, red bra 31, large breasts 29, bare shoulders 24, jewelry 24, blush 22, long sleeves 22, closed mouth 21, parted bangs 20, red panties 20, underwear 20, medium breasts 20, headdress 20, gold 20, white dress 19, detached collar 18, thighs 18, wide sleeves 17, navel 16, off shoulder 16, bracelet 15, white thighhighs 15, white background 14, lingerie 14, garter belt 14, garter straps 13
+  年齢に関わるタグ: なし
+===== acheron-hsr-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = acheron-hsr-richy-v1_ixl
+  modelspec.title = acheron-hsr-richy-v1_ixl
+  学習フォルダ: 1_acheron def(164枚), 1_acheron rnd(59枚), 2_acheron alt(62枚)
+  トリガー候補: hair over one eye, navel, hair ornament, purple hair, purple eyes, halterneck
+  よく出るタグ: long hair 285, hair over one eye 270, looking at viewer 263, navel 238, hair ornament 228, purple hair 218, purple eyes 216, halterneck 211, single shoulder pad 209, asymmetrical clothing 209, crop top 204, cleavage 203, midriff 202, bare shoulders 194, black gloves 172, large breasts 170, acherondef 164, coat 161, black shorts 161, belt 159, closed mouth 156, wide sleeve 154, holding 151, weapon 145, sword 143, elbow glove 141, holding weapon 133, holding sword 131, thigh boot 116, asymmetrical legwear 116, thighhighs 101, knee boot 97, leg tattoo 81, choker 80, short shorts 80
+  年齢に関わるタグ: なし
+===== aesc_(fate)_ilxl_v1.safetensors
+  形式: SDXL / epsilon / -
+  modelspec.title = h_madoka
+  学習タグの記録なし（メタデータなし）
+===== asama_(azur_lane)_3_il-000012.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL10_v10_2a7c1649.safetensors
+  ss_output_name = asama_(azur_lane)_3_il
+  modelspec.title = asama_(azur_lane)_3_il
+  学習フォルダ: 4_asama_(azur_lane)(14枚), 4_asama_(blooming_upon_bewitching_night)_(azur_lane)(14枚)
+  トリガー候補: asama\(azur_lane\), bandaged on head, black nails, off shoulder, asama\(blooming_upon_bewitching_night)\(azur_lane\)
+  よく出るタグ: looking at viewer 20, simple background 15, asama\(azur_lane\) 14, bandaged on head 14, smile 14, black nails 14, off shoulder 14, asama\(blooming_upon_bewitching_night)\(azur_lane\) 14, black_ribbon_bow as bra 14, red_silk 14, black print_kimono 13, black multi-strapped panties 13, fur-trimmed_coat 13, bandaged_necklace 12, white background 11, sitting 7, see-through back_bow 6, blush 5, petals 4, closed mouth 4, azur lane style 3, upper body 3, black background 3, string of fate 3, oriue_wato style 3, sakazuki 3, indoors 3, transparent background 3, cowboy shot 3, azur_lane style 2, standing 2, night 2, ping_zhong_yu style 2, looking back 2, from behind 2
+  年齢に関わるタグ: なし
+===== belfast_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = belfast_XL_illustrious-noob_v1
+  modelspec.title = belfast_XL_illustrious-noob_v1
+  学習フォルダ: 1_bell1(15枚), 1_bell2(9枚), 1_bell3(9枚), 1_bell4(10枚), 1_bell5(10枚), 1_bell6(11枚), 1_bell7(7枚), 1_bell8(10枚), 1_bell9(9枚)
+  トリガー候補: belfast (azur lane)
+  よく出るタグ: belfast (azur lane) 180, white background 132, full body 64, holding 58, sitting 36, maid 30, indoors 30, dutch angle 22, casual 22, from side 20, china dress 20, evening gown 20, haregi 20, fatigues 18, arm up 18, wedding dress 18, side slit 18, shop manager 18, petals 16, red shawl 16, sideboob 15, cleavage 15, breasts 15, skirt lift 14, swimsuit 14, holding cup 12, hand fan 12, holding fan 12, hand on own hip 12, crossed legs 12, from behind 10, bouquet 10, holding bouquet 10, cup 10, convenient breasts 9
+  年齢に関わるタグ: なし
+===== bennington_(azur_lane)_il-000013.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL10_v10_2a7c1649.safetensors
+  ss_output_name = bennington_(azur_lane)_il
+  modelspec.title = bennington_(azur_lane)_il
+  学習フォルダ: 4_bennington (azur lane)(14枚), 4_bennington (sunshine chaser) (azur lane)(14枚)
+  トリガー候補: navel_piercing, eyewear on head, bennington\(azur_lane\), breast_curtains, yellow necktie, bennington\(sunshine_chaser)\(azur_lane\)
+  よく出るタグ: looking at viewer 21, navel_piercing 17, smile 17, eyewear on head 15, bennington\(azur_lane\) 14, breast_curtains 14, yellow necktie 14, bennington\(sunshine_chaser)\(azur_lane\) 14, green_string_bikini 14, white_shirt 14, pink sunglasses 13, fingerless_gloves 13, black_belt 13, green sunglasses 13, green neck_ribbon 13, heart_earrings 12, blue_jacket 12, sky 12, green single_thigh_strap 12, heart_necklace 12, black thigh_strap 11, ring_choker 10, blue micro_shorts 10, blush 10, outdoors 10, blue sky 9, bracelet 9, ear_piercing 9, black_boots 8, open mouth 8, cloud 8, day 8, sitting 7, yunsang style 6, white background 6
+  年齢に関わるタグ: なし
+===== chang_wu-000032.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01_9cc4745d.safetensors
+  ss_output_name = chang_wu
+  modelspec.title = chang_wu
+  学習フォルダ: 4_chang_wu(32枚)
+  トリガー候補: long_hair, grey_hair, hair_over_one_eye, brown_eyes, blunt_sidelocks
+  よく出るタグ: 1girl 32, solo 32, long_hair 32, grey_hair 32, hair_over_one_eye 32, brown_eyes 31, breasts 31, blunt_sidelocks 28, cleavage 27, revealing_clothes 23, bare shoulders 21, wide_sleeves 21, chang_wu_(in_full_glory_spring's_branch_blooms)_(azur_lane) 20, qixiong_ruqun 20, black hair_flower 20, ribbon 20, underwear 20, open_clothes 20, see-through_sleeves 19, white_panties 19, bare_legs 19, side-tie_panties 19, see-through_robe 18, collarbone 16, peacock_feathers 13, chang_wu_(azur_lane) 12, breast_curtains 12, bare_shoulders 12, blue hair flower 12, sideboob 12, black bridal_gauntlets 12, detached_sleeves 12, earrings 12, smile 12, sitting 12
+  年齢に関わるタグ: なし
+===== diesel-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = diesel-nikke-richy-v1_ixl
+  modelspec.title = diesel-nikke-richy-v1_ixl
+  学習フォルダ: 1_diesel rnd(16枚), 2_diesel def(64枚), 4_diesel blk(14枚), 5_diesel drs(9枚), 5_diesel pnk(9枚)
+  トリガー候補: brown eyes, coat on shoulders, black hair, white shirt
+  よく出るタグ: long hair 110, bangs 95, brown eyes 88, coat on shoulders 87, looking at viewer 82, breasts 80, black hair 76, white shirt 74, smile 72, long sleeves 72, collared shirt 72, gloves 69, peaked cap 69, white gloves 68, brown hair 65, jewelry 65, earrings 65, dsldef 64, blue coat 64, black jacket 64, military uniform 63, blue necktie 60, blush 52, open mouth 49, white skirt 49, pleated skirt 48, large breasts 45, holding 45, yellow eyes 36, simple background 33, thigh strap 33, black footwear 26, white background 25, belt 23, high-waist skirt 23
+  年齢に関わるタグ: なし
+===== fgolilith_IL1-600008.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v1.0.safetensors
+  ss_output_name = fgolilith_IL1
+  modelspec.title = fgolilith_IL1
+  学習フォルダ: 1_main(82枚), 2_fgolilith(90枚), 2_sub(19枚), 3_retro artstyle(47枚)
+  トリガー候補: fgolilith
+  よく出るタグ: fgolilith 238, 1girl 220, solo 214, breasts 203, looking at viewer 149, very long hair 137, simple background 126, grey hair 118, white hair 116, navel 112, hair between eyes 112, smile 109, long hair 106, large breasts 106, twintails 98, blush 93, medium breasts 92, green eyes 92, gradient hair 89, pointy ears 89, underwear 87, crossed bangs 87, fgolilith demon horns 87, white background 86, cleavage 85, fgolilith earrings 85, slit pupils 84, collarbone 82, censored face 82, black choker 81, fgolilith body markings 80, fgolilith black cloak 79, colored extremities 78, open mouth 77, panties 74
+  年齢に関わるタグ: なし
+===== ganj-i-sawai_XL_illustrious_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = anynoobaiForLora_10.safetensors
+  ss_output_name = ganj-i-sawai_XL_illustrious_v1
+  modelspec.title = ganj-i-sawai_XL_illustrious_v1
+  学習フォルダ: 1_ganj-i-sawai1(9枚), 1_ganj-i-sawai2(11枚)
+  トリガー候補: ganj-i-sawai (azur lane), underwater
+  よく出るタグ: ganj-i-sawai (azur lane) 40, underwater 24, mermaid 22, military uniform 18, full body 18, arms up 16, bondage 12, restrained 12, sitting 10, yokozuwari 8, arm up 8, from side 8, holding 8, coin 6, sword 6, holding sword 6, v 4, outstretched arm 4, armpits 4, from behind 4, ocean 4, leash 4, collar 4, legs up 2, chain 2, hand on own chest 2, torn clothes 2, water 2, lying 2, dutch angle 2, tongue out 2, one eye closed 2, finger to mouth 2, own hands together 2, upper body 2
+  年齢に関わるタグ: なし
+===== goetz_von_berlichingen_(azur_lane)_6-000033.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL10_v10_2a7c1649.safetensors
+  ss_output_name = goetz_von_berlichingen_(azur_lane)_6
+  modelspec.title = goetz_von_berlichingen_(azur_lane)_6
+  学習フォルダ: 4_goetz_von_berlichingen_(rapture_beneath_the_blood_moon)_(azur_lane)(8枚), 4_goetz_von_berlichingen_(azur_lane)(10枚)
+  トリガー候補: low_demon_wings, demon_tail, office style, azur_lane, goetz_von_berlichingen_(azur_lane), black_highleg_leotard, cross-laced clothes, breast strap
+  よく出るタグ: low_demon_wings 16, demon_tail 13, office style 11, azur_lane 10, goetz_von_berlichingen_(azur_lane) 10, black_highleg_leotard 10, cross-laced clothes 10, breast strap 10, ear_piercing 10, smile 9, hair_ornament 9, red frilled_sleeves 9, goetz_von_berlichingen_(rapture_beneath_the_blood_moon)_(azur_lane) 8, black_string_bikini 8, o-ring_bikini 8, multi-strapped bikini bottom 8, black_choker 8, heart-shaped_eyewear 8, bracelet 8, hoop earrings 8, black single_glove 7, black detached sleeves 7, black thighhighs 7, jewelry 6, heart o-ring 6, black armored boots 6, looking at viewer 5, single_thigh_strap 4, purple sky 4, simple background 4, white background 4, night 3, black high_heel_sandals 3, building 3, azur lane 3
+  年齢に関わるタグ: なし
+===== guilty-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = guilty-nikke-richy-v1_ixl
+  modelspec.title = guilty-nikke-richy-v1_ixl
+  学習フォルダ: 1_guilty def(72枚), 1_guilty rnd(48枚), 2_guilty sum(53枚)
+  トリガー候補: green hair, colored inner hair, hair between eyes, purple eyes, collar, black hair
+  よく出るタグ: long hair 173, green hair 171, colored inner hair 170, hair between eyes 158, purple eyes 157, looking at viewer 143, collar 129, black hair 124, harness 121, blush 108, very long hair 104, huge breasts 94, gltdef 72, straitjacket 71, white bodysuit 71, large breasts 71, cleavage 70, chain 65, thighs 59, white bikini 58, arms behind back 56, hair flower 56, gltsm 53, bare shoulders 52, gltrnd 48, navel 48, simple background 44, white background 43, smile 40, thigh strap 35, open mouth 32, upper body 31, closed mouth 30, tongue 26, tongue out 26
+  年齢に関わるタグ: なし
+===== himekoilxl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = himekoilxl
+  modelspec.title = LoRA@1730183329.4377348
+  学習フォルダ: himekopdxl(64枚)
+  トリガー候補: mlhimepdxl, white dress, single glove, red trim, halterneck, hair ornament, gold trim, gold bracelet
+  よく出るタグ: mlhimepdxl 64, white dress 64, single glove 64, red trim 64, halterneck 64, hair ornament 64, gold trim 64, gold bracelet 64, black high heels 64, black gloves 64, black coat 64, backless outfit 64
+  年齢に関わるタグ: なし
+===== huyan_zhuo_illus.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = huyan_zhuo_illus
+  modelspec.title = huyan_zhuo_illus
+  学習フォルダ: img(80枚)
+  トリガー候補: blue eyes, grey hair, streaked hair, body markings
+  よく出るタグ: 1girl 80, blue eyes 80, long hair 80, grey hair 80, streaked hair 80, breasts 75, body markings 74, bangs 69, solo 68, multicolored hair 65, large breasts 63, asymmetrical legwear 59, very long hair 58, thighs 55, looking at viewer 53, hair ornament 51, single hair lock 50, chinese hairpin 50, high collar 50, armored bodysuit 50, armor 50, gauntlets 50, hairpin 49, green hair 49, shoulder armor 48, pauldrons 47, blush 47, hair between eyes 46, grey bodysuit 44, white hair 41, breastplate 40, purple eyes 39, single pantsleg 38, asymmetrical clothes 36, thighhighs 28
+  年齢に関わるタグ: なし
+===== illustrious_XL_illustrious_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = illustrious_XL_illustrious_v1
+  modelspec.title = illustrious_XL_illustrious_v1
+  学習フォルダ: 1_Illustrious1(21枚), 1_Illustrious2(15枚), 1_Illustrious3(3枚)
+  トリガー候補: illustrious \(azur lane\)
+  よく出るタグ: illustrious \(azur lane\) 78, default 42, elbow gloves 42, sun hat 38, evening gown 30, hair ornament 30, side slit 22, flight deck 16, tea cup 16, holding cup 16, teapot 8, from behind 6, completely nude 6, machinery 4, from side 4, nude 2, pregnant 2, aircraft 2, airplane 2, butterfly 2, lactation 2
+  年齢に関わるタグ: なし
+===== illustrious_XL_pony_v2.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = ponyDiffusionV6XL_v6StartWithThisOne.safetensors
+  ss_output_name = illustrious_XL_pony_v2
+  modelspec.title = illustrious_XL_pony_v2
+  学習フォルダ: 1_Illustrious1(21枚), 1_Illustrious2(15枚), 1_Illustrious3(3枚), 1_Illustrious4(9枚), 1_Illustrious5(9枚)
+  トリガー候補: illustrious (azur lane)
+  よく出るタグ: illustrious (azur lane) 114, white background 64, military uniform 40, sitting 32, evening gown 30, full body 22, flight deck 20, sun hat 18, arm up 18, china dress 18, wedding dress 18, anchor 16, tea cup 16, holding cup 16, indoors 12, holding 12, from side 10, dutch angle 10, petals 10, hand fan 10, holding fan 10, from behind 8, leaning forward 8, teapot 8, finger to mouth 6, skirt lift 6, hand on own hip 6, blue sky 6, hugging own legs 6, skirt hold 6, wariza 6, on bed 6, yokozuwari 6, abstract background 6, completely nude 6
+  年齢に関わるタグ: なし
+===== kansas_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = kansas_XL_illustrious-noob_v1
+  modelspec.title = kansas_XL_illustrious-noob_v1
+  学習フォルダ: 1_kansas1(12枚)
+  トリガー候補: kansas \(azur lane\), main clothes
+  よく出るタグ: kansas \(azur lane\) 24, main clothes 22, arms up 12, holding 10, arm up 8, floating hair 8, tongue out 6, holding own hair 6, coat 6, armpits 4, grin 4, full body 4, completely nude 2, grabbing own breast 2, arms behind head 2, teeth 2, covered nipples 2, motion lines 2, pubic hair 2, bar censor 2, censored 2, steaming body 2, hand on own hip 2, straight hair 2, hand on own face 2, hand between legs 2, kneeling 2, water 2, air bubble 2, sitting 2, knee up 2, spread legs 2, manjuu \(azur lane\) 2, chain-link fence 2, open mouth 2
+  年齢に関わるタグ: なし
+===== kiara_heaven_hole.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = kiara_heaven_hole
+  modelspec.title = kiara_heaven_hole
+  学習フォルダ: img(180枚)
+  トリガー候補: yellow eyes, very long hair
+  よく出るタグ: 1girl 180, yellow eyes 173, breasts 171, large breasts 158, solo 158, looking at viewer 158, long hair 154, very long hair 143, black hair 140, forehead mark 135, smile 126, bare shoulders 122, facial mark 119, curly hair 113, long sleeves 105, cleavage 101, veil 92, wide sleeves 90, multicolored hair 78, horns 75, bangs 74, swimsuit 70, bikini 69, pink hair 63, tattoo 56, detached sleeves 56, parted bangs 55, streaked hair 54, navel 53, blush 52, necklace 51, white hood 51, horn ornament 50, thighhighs 50, wavy hair 48
+  年齢に関わるタグ: なし
+===== krasny_kavkaz_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL11_v11.safetensors
+  ss_output_name = krasny_kavkaz_XL_illustrious-noob_v1
+  modelspec.title = krasny_kavkaz_XL_illustrious-noob_v1
+  学習フォルダ: 1_bodycon(5枚), 1_evening_gown(5枚), 1_harem_outfit(7枚), 1_krasny_kavkaz1(11枚), 1_krasny_kavkaz2(10枚), 1_miko(6枚), 1_other(14枚), 1_playboy_bunny(5枚), 1_wedding_dress(5枚)
+  トリガー候補: krasny kavkaz \(azur lane\), headless
+  よく出るタグ: krasny kavkaz \(azur lane\) 136, headless 90, full body 70, china dress 26, large breasts 20, main clothes 20, own hands together 18, harem outfit 14, squatting 14, hand on own hip 12, from side 12, miko 12, wedding dress 12, bodycon 10, flat chest 10, holding 10, hand on own chest 10, evening gown 10, dutch angle 10, playboy bunny 10, no headwear 10, arm support 8, teeth 8, grin 8, open mouth 8, tongue out 8, covered eyes 8, arms behind back 8, small breasts 6, from below 6, sitting 6, standing on one leg 6, wariza 6, arm up 6, upper body 6
+  年齢に関わるタグ: なし
+===== kronshtadt_IL_v1.0.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = kronshtadt_IL_v1.0
+  modelspec.title = kronshtadt_IL_v1.0
+  学習フォルダ: 4_original(20枚), 5_begin_the_rush!(18枚), 6_other(8枚)
+  トリガー候補: kronshtadt \(azur lane\)
+  よく出るタグ: solo 40, looking at viewer 40, kronshtadt \(azur lane\) 28, elbow gloves 22, black choker 21, sleeveless dress 20, popped collar 20, kronshtadt \(begin the rush!\) \(azur lane\) 18, pencil skirt 18, collared shirt 18, gloves 17, choker 16, black gloves 16, headphones 15, pantyhose 13, open mouth 13, blush 13, low twintails 13, thigh strap 13, fur-trimmed coat 12, black pantyhose 11, simple background 11, high heels 11, panties 9, white background 9, hand on own hip 8, holding 8, belt 8, flower 7, hair flower 7, black panties 7, standing 6, 1boy 6, hetero 6, smile 6
+  年齢に関わるタグ: なし
+===== mary-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = mary-nikke-richy-v1_ixl
+  modelspec.title = mary-nikke-richy-v1_ixl
+  学習フォルダ: 1_mary bunny(128枚), 1_mary rnd(16枚), 1_mary swim(80枚), 2_mary def(36枚)
+  トリガー候補: braid, black hair, cleavage, closed eyes
+  よく出るタグ: long hair 257, bangs 228, braid 217, black hair 208, smile 194, blush 177, cleavage 175, closed eyes 166, bare shoulders 146, white gloves 140, thighs 136, hair over shoulder 133, rabbit ears 129, marybny 128, fake animal ears 128, huge breasts 125, playboy bunny 125, detached collar 121, hair ornament 120, see-through leotard 120, elbow gloves 118, bow 114, blue bowtie 111, see-through 107, blue leotard 104, white thighhighs 92, looking at viewer 88, strapless 81, marysum 80, hairband 77, dress 76, blue bow 67, purple eyes 67, sun hat 67, white background 66
+  年齢に関わるタグ: なし
+===== max immelmann (azur lane)_2-000010.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL10_v10_2a7c1649.safetensors
+  ss_output_name = max immelmann (azur lane)_2
+  modelspec.title = max immelmann (azur lane)_2
+  学習フォルダ: 4_max immelmann (azur lane)(15枚)
+  トリガー候補: max immelmann\(azur_lane\), balck bodystocking, black dress, criss-cross halter, fur_jacket, latex thigh_boots, ear piercing
+  よく出るタグ: max immelmann\(azur_lane\) 15, balck bodystocking 15, black dress 15, criss-cross halter 14, fur_jacket 14, latex thigh_boots 14, ear piercing 11, smile 10, looking at viewer 9, mole under mouth 8, white background 7, simple background 6, standing 4, blush 4, cowboy shot 3, open mouth 3, non-humanoid robot 2, from side 2, black shorts 2, white border 2, soul (dp11) style 2, closed mouth 2, grey background 2, white bird 2, imple background 2, full body 2, promotional art 1, pink sky 1, 00zanpan00 style 1, boring8 style 1, heart 1, profile 1, hoop earrings 1, black background 1, hand on own hip 1
+  年齢に関わるタグ: なし
+===== mecklenburg-000018.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01_9cc4745d.safetensors
+  ss_output_name = mecklenburg
+  modelspec.title = mecklenburg
+  学習フォルダ: 4_mecklenburg_(branding_witchcraft)_(azur_lane)(16枚), 4_mecklenburg(16枚)
+  トリガー候補: heterochromia, blue eye, pink eye, fangs, pointy ears, pink hair
+  よく出るタグ: 1girl 32, heterochromia 32, blue eye 32, pink eye 32, fangs 32, pointy ears 32, pink hair 32, long hair 32, pink horns 32, pink nails 32, breast 17, mecklenburg_\(branding witchcraft\)_\(azur_lane\) 16, (azur lane) 16, blue hair ribbon 16, pink gloves 16, revealing clothes 16, black elbow gloves 16, ring earrings 16, dominatrix 16, maid headdress 16, smile 16, mecklenburg_\(azur_lane\) 16, demon wings 16, black short dress 16, earrings 16, detached sleeves 16, halterneck 16, black thighhighs 15, sitting 15, armored boots 13, white background 12, holding whip 10, on couch 8, :d 7, spread legs 6
+  年齢に関わるタグ: なし
+===== mihara-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = mihara-nikke-richy-v1_ixl
+  modelspec.title = mihara-nikke-richy-v1_ixl
+  学習フォルダ: 1_mihara rnd(15枚), 2_mihara def(48枚), 3_mihara spu(32枚), 4_mihara wht(14枚)
+  トリガー候補: purple eyes, black hair, purple hair, o-ring, harness
+  よく出るタグ: long hair 109, purple eyes 104, black hair 97, large breasts 96, looking at viewer 90, purple hair 88, o-ring 80, harness 80, bare shoulders 76, smile 73, cleavage 73, black gloves 73, blush 69, bangs 61, thighs 57, black thigh boots 55, bondage outfit 49, chain 48, thigh strap 48, mhrdf 48, straps 46, black bra 45, navel 44, parted lips 43, spiked collar 42, garter straps 37, half gloves 36, very long hair 35, ear piercing 35, black skirt 35, elbow gloves 34, white coat 34, revealing clothes 32, mhrbc 32, huge breasts 31
+  年齢に関わるタグ: なし
+===== molay_illus.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = molay_illus
+  modelspec.title = molay_illus
+  学習フォルダ: img(80枚)
+  トリガー候補: short hair, grey hair, cleavage, glasses
+  よく出るタグ: 1girl 80, short hair 80, grey hair 80, cleavage 77, breasts 77, glasses 77, bangs 77, large breasts 75, dress 75, black dress 75, looking at viewer 71, short dress 63, smile 59, blue eyes 52, hood 50, jacket 49, open clothes 49, hooded jacket 48, open jacket 48, solo 47, long sleeves 47, belt 44, thighs 43, cropped jacket 42, black jacket 36, weapon 34, sword 34, black cropped jacket 33, cross print 33, grey skin 31, yellow eyes 31, horns 30, detached sleeves 29, monster girl 28, colored skin 28
+  年齢に関わるタグ: なし
+===== murasaki_fgo.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = murasaki_fgo
+  modelspec.title = murasaki_fgo
+  学習フォルダ: img(117枚)
+  トリガー候補: black hair, purple eyes
+  よく出るタグ: long hair 117, black hair 117, purple eyes 116, 1girl 113, bangs 104, solo 101, breasts 93, looking at viewer 92, large breasts 89, hair ornament 84, double bun 78, hair bun 78, very long hair 76, cone hair bun 74, frills 71, long sleeves 59, swimsuit 48, glasses 48, two side up 48, dress 45, puffy sleeves 45, rose 45, see-through cleavage 45, purple hair 42, black dress 40, smile 38, brown hair 37, hair ribbon 33, thighhighs 33, blush 33, holding 30, thighs 30, flower 29, bare shoulders 29, blue bikini 26
+  年齢に関わるタグ: なし
+===== na_fritz_rumey_azur_lane_r32_v1_1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaixl_v1_1.safetensors
+  ss_output_name = na_fritz_rumey_azur_lane
+  modelspec.title = na_fritz_rumey_azur_lane
+  学習フォルダ: 1_fritz_rumey_(azur_lane)(86枚)
+  トリガー候補: azur lane, eyepatch, sensitive, fritz rumey (azur lane)
+  よく出るタグ: 1girl 86, azur lane 86, eyepatch 75, sensitive 67, looking at viewer 63, fritz rumey (azur lane) 55, breasts 50, large breasts 42, one eye covered 40, closed mouth 38, weapon 36, sword 36, artist: 35, coat 35, military uniform 33, gloves 32, bare shoulders 31, uniform 31, military 31, fritz rumey (schwarzes kaninchen) (azur lane) 30, hair between eyes 28, black gloves 28, animal ears 27, holding 26, hair ornament 24, black coat 23, artist: yostar pictures 23, sideboob 21, mole 20, elbow gloves 20, jacket 18, mole under eye 18, leotard 16, black leotard 16, wrist cuffs 16
+  年齢に関わるタグ: なし
+===== omi-san_fgo_ilxl_goofy.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = omi-san_fgo_ilxl_goofy
+  学習タグの記録なし（メタデータなし）
+===== osakabehime-illu-nvwls-v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = osakabehime-illu-nvwls-v1
+  modelspec.title = osakabehime-illu-nvwls-v1
+  学習フォルダ: 2_2aohme(56枚), 2_3aohme(46枚), 3_1aohme(28枚), 3_1saohme(31枚), 3_2saohme(49枚), 3_fldohme(18枚), 5_3saohme(11枚), 5_hwnohme(11枚)
+  トリガー候補: very long hair, black hair, purple eyes
+  よく出るタグ: very long hair 250, 1girl 249, black hair 249, solo 242, breasts 241, looking at viewer 223, large breasts 223, purple eyes 222, low twintails 201, blush 189, smile 174, cleavage 133, white shirt 128, center frills 128, open mouth 108, glasses 105, hairband 104, purple skirt 97, multicolored hair 94, navel 91, hooded cloak 84, pink cloak 84, sleeveless shirt 82, hair ornament 81, arm warmers 78, underbust 75, bare shoulders 75, holding 70, goggles on head 69, sitting 68, red eyes 66, red-framed eyewear 62, hood down 59, hair bow 58, white background 57
+  年齢に関わるタグ: なし
+===== pearl_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = pearl_XL_illustrious-noob_v1
+  modelspec.title = pearl_XL_illustrious-noob_v1
+  学習フォルダ: 1_pearl1(13枚), 1_pearl2(10枚)
+  トリガー候補: pearl \(azur lane\)
+  よく出るタグ: pearl \(azur lane\) 46, main clothes 26, open mouth 26, fallen angel 20, tongue out 18, full body 16, arm up 12, sitting 12, finger to mouth 12, dutch angle 10, knee up 10, tongue 8, spread legs 8, pink liquid 8, no shoes 6, from side 6, holding 6, holding staff 6, staff 6, arms up 6, wet 6, arm support 6, upper teeth only 6, anal beads 4, twitching 4, motion lines 4, anal 4, upper body 4, monochrome 4, greyscale 4, floating object 4, hand in own hair 4, no panties 4, leg grab 4, teeth 4
+  年齢に関わるタグ: なし
+===== plymouth_(azur_lane)_il-000008.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL10_v10_2a7c1649.safetensors
+  ss_output_name = plymouth_(azur_lane)_il
+  modelspec.title = plymouth_(azur_lane)_il
+  学習フォルダ: 4_plymouth_(an angelic physical)_(azur lane)(19枚), 4_plymouth_(heart-throbbing_refreshment)_(azur_lane)(20枚), 4_plymouth_(azur_lane)(21枚)
+  トリガー候補: flower_symbol_eyes
+  よく出るタグ: flower_symbol_eyes 40, looking at viewer 32, white background 27, smile 26, simple background 24, plymouth\(azur_lane\) 21, ohisashiburi style 20, plymouth\(heart-throbbing_refreshment)\(azur_lane\) 20, plymouth\(an_angelic_physical)\(azur_lane\) 19, nurse uniform 18, nurse_cap 18, hanging pink_id_card 17, clover_hair_ornament 17, white gloves 16, white front-tie_bow_bikini 16, side-tie_bikini_bottom 16, pink string 16, white_dress 16, white wing_collar 16, red necktie 16, white half gloves 16, white_thighhighs 15, twintails 15, pink hair_ribbon 15, white garter straps 14, white wing_cloak 14, purple eyes 11, upper body 9, see-through skirt 9, open clothes 8, heart 8, sitting 8, curtains 8, water 8, :d 7
+  年齢に関わるタグ: なし
+===== queen_anne's_revenge_XL_illustrious-noob_v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = noobaiXLNAIXL_epsilonPred10Version.safetensors
+  ss_output_name = queen_anne's_revenge_XL_illustrious-noob_v1
+  modelspec.title = queen_anne's_revenge_XL_illustrious-noob_v1
+  学習フォルダ: 1_queen_anne's_revenge1(13枚), 1_queen_anne's_revenge2(15枚)
+  トリガー候補: queen anne's revenge \(azur lane\)
+  よく出るタグ: queen anne's revenge \(azur lane\) 56, nightgown 30, main clothes 26, tentacles 22, arm up 20, dutch angle 18, wet 16, full body 12, sitting 12, wet clothes 12, air bubble 12, water 12, hand up 10, from side 10, jewelry 9, gem 9, ring 9, on back 8, in water 8, leaning forward 6, hand on weapon 6, sword 6, rapier 6, no coat 6, no jacket 6, upper body 6, indoors 6, arms up 6, tongue out 6, tongue 6, 3d 6, bent over 4, no headwear 4, crossed legs 4, petals 4
+  年齢に関わるタグ: なし
+===== queenofsheba-illu-nvwls-v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = queenofsheba-illu-nvwls-v1
+  modelspec.title = queenofsheba-illu-nvwls-v1
+  学習フォルダ: 3_1aqos(30枚), 3_2aqos(29枚), 3_3aqos(25枚), 4_dssqos(14枚)
+  トリガー候補: dark-skinned female, jackal ears, very long hair, purple hair, aqua eyes
+  よく出るタグ: 1girl 98, breasts 98, large breasts 98, dark-skinned female 98, jackal ears 98, very long hair 98, purple hair 98, aqua eyes 98, solo 96, cleavage 96, looking at viewer 94, smile 87, head chain 84, red crop top 84, gold brooch 84, gem 81, gold bracer 79, bridal gauntlets 76, navel 73, ears through headwear 64, bare shoulders 59, red waist cape 55, jewelry 54, red hood 54, black horns 51, black thighhighs 43, blush 41, open mouth 34, eyeliner 32, 1aqos 30, 2aqos 29, closed mouth 25, 3aqos 25, gradient horns 25, aqua horns 25
+  年齢に関わるタグ: なし
+===== quency-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = quency-nikke-richy-v1_ixl
+  modelspec.title = quency-nikke-richy-v1_ixl
+  学習フォルダ: 1_quency pt(119枚), 1_quency rnd(15枚), 3_quency def(35枚)
+  トリガー候補: streaked hair, black hair, pink hair, qncypt, hair bun
+  よく出るタグ: streaked hair 163, black hair 148, looking at viewer 142, pink hair 142, smile 127, blush 121, qncypt 119, hair bun 119, cleavage 118, large breasts 117, black bodysuit 116, double bun 109, hair between eyes 108, huge breasts 107, red eyes 106, harness 89, navel 84, latex 69, purple hair 62, grin 60, thighs 54, long hair 54, mask on head 50, unzipped 50, goggles on head 49, goggles 48, simple background 48, ponytail 47, breasts 47, necklace 46, pink eyes 46, ass 45, collarbone 44, white background 39, sweat 39
+  年齢に関わるタグ: なし
+===== rapunzel-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = rapunzel-nikke-richy-v1_ixl
+  modelspec.title = rapunzel-nikke-richy-v1_ixl
+  学習フォルダ: 1_Rapunzel rnd(20枚), 2_Rapunzel def(52枚), 2_Rapunzel old(60枚)
+  トリガー候補: blonde hair, nun, habit, blue eyes, very long hair, braid, black dress
+  よく出るタグ: blonde hair 132, nun 122, habit 120, blue eyes 117, very long hair 101, braid 100, black dress 100, large breasts 97, gloves 91, looking at viewer 88, blush 86, smile 77, long hair 73, elbow gloves 65, open mouth 64, bangs 64, forehead mark 64, white veil 64, breast curtains 62, white shirt 60, rpnzlpre 60, black gloves 59, headgear 58, black veil 58, bodysuit 56, cross necklace 55, rpnzldef 52, white capelet 51, bodystocking 48, cross 47, white thighhighs 45, huge breasts 43, pantyhose 42, white pants 40, jewelry 39
+  年齢に関わるタグ: なし
+===== scheherazade-illu-nvwls-v1.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = illustriousXL_v01.safetensors
+  ss_output_name = scheherazade-illu-nvwls-v1
+  modelspec.title = scheherazade-illu-nvwls-v1
+  学習フォルダ: 3_1ascscz(28枚), 3_2ascscz(31枚), 3_3ascscz(26枚)
+  トリガー候補: black hair, dark-skinned female, circlet, parted bangs, very long hair
+  よく出るタグ: 1girl 85, breasts 85, black hair 85, dark-skinned female 85, circlet 85, parted bangs 85, very long hair 85, solo 84, forehead jewel 84, white hat 83, green eyes 82, large breasts 81, looking at viewer 80, arm wrap 80, armlet 79, cleavage 75, thighs 75, thumb ring 72, bracelet 62, shoulder armor 59, blue armor 59, blue leotard 59, facial mark 59, feather trim 56, bridal gauntlets 53, pelvic curtain 48, covered navel 39, scroll 36, staff 34, simple background 34, sitting 32, parted lips 31, 2ascscz 31, red ribbon 29, 1ascscz 28
+  年齢に関わるタグ: なし
+===== shiMarcianaStudyV1ill.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = 889818.safetensors
+  ss_output_name = shiMarcianaStudyV1ill
+  学習タグの記録なし（メタデータなし）
+===== tlalocsummer-10.safetensors
+  形式: SDXL / ? / -
+  ss_sd_model_name = OnomaAIResearch/Illustrious-xl-early-release-v0
+  ss_output_name = tlalocsummer
+  学習フォルダ: 1(20枚), 2(10枚), 3(20枚)
+  トリガー候補: black hair, blue hair, bare shoulders
+  よく出るタグ: 1girl 50, long hair 50, black hair 49, blue hair 48, solo 47, looking at viewer 47, smile 37, bare shoulders 32, cleavage 23, off shoulder 23, tenochsummer1 20, sum1 frilled bikini 20, tenochbunny 20, fake animal ears 20, bny leotard 20, bny pantyhose 20, bny fake rabbit ears 20, ponytail 19, bny jacket 18, navel 17, medium breasts 17, sum1 jacket 17, sum1 sunglasses 17, bny bowtie 17, blush 16, bny detached collar 16, bny gloves 16, black eyes 15, streaked hair 15, hair ornament 14, sum1 jewelry 14, sum1  hair scrunchie 14, sum1 bracelet 13, holding 12, white background 12
+  年齢に関わるタグ: なし
+===== volume-nikke-richy-v1_ixl.safetensors
+  形式: SDXL / epsilon / -
+  ss_sd_model_name = Illustrious-XL-v0.1.safetensors
+  ss_output_name = volume-nikke-richy-v1_ixl
+  modelspec.title = volume-nikke-richy-v1_ixl
+  学習フォルダ: 1_volume rnd(41枚), 2_volume def(84枚), 3_volume cowboy(37枚)
+  トリガー候補: red hair, sunglasses, eyewear on head, yellow eyes
+  よく出るタグ: long hair 161, large breasts 137, looking at viewer 137, red hair 130, sunglasses 109, eyewear on head 106, yellow eyes 106, bangs 102, jacket 98, red jacket 98, smile 97, bodystocking 92, black bikini 86, torn clothes 85, vlmdf 84, crop jacket 83, thigh strap 82, cleavage 81, thighs 80, collar 78, dark skin 73, tan 73, harness 73, dark-skinned female 71, open jacket 64, bikini 64, swimsuit 62, pantyhose 61, blush 59, open clothes 58, sitting 56, ass 50, holding 45, spread legs 42, bare shoulders 42
+  年齢に関わるタグ: なし

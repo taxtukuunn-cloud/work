@@ -1,0 +1,2 @@
+廃坑の死霊術師（ネクロ）,Card/Necro_master,クエストイベント
+廃坑の死霊術師【回想バトル】,Card/Necro_master,回想バトル,$$Necro_挑戦回数,>=,1

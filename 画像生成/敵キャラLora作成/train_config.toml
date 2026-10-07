@@ -1,0 +1,48 @@
+# 全キャラ共通の学習設定 (kohya sd-scripts / sdxl_train_network.py / Illustrious・NoobAI系)
+# ベースモデル・学習画像フォルダ・出力先・出力名は train_all.bat が渡すので、ここには書きません。
+
+save_model_as = "safetensors"
+
+# NoobAI の v-pred 版を使う場合だけ、下の2行の # を外す
+# v_parameterization = true
+# zero_terminal_snr = true
+
+network_module = "networks.lora"
+network_dim = 16
+network_alpha = 8
+
+resolution = "1024,1024"
+enable_bucket = true
+min_bucket_reso = 512
+max_bucket_reso = 1536
+bucket_reso_steps = 64
+bucket_no_upscale = true
+
+# 学習量: 1キャラあたり 画像枚数 x リピート = 60 → バッチ2で30ステップ/エポック → 30エポックで900ステップ
+train_batch_size = 2          # VRAM 8GB以下なら 1
+max_train_epochs = 30
+save_every_n_epochs = 5
+
+optimizer_type = "AdamW8bit"
+unet_lr = 1e-4
+text_encoder_lr = 5e-5
+lr_scheduler = "cosine_with_restarts"
+lr_scheduler_num_cycles = 3
+lr_warmup_steps = 50
+min_snr_gamma = 5
+noise_offset = 0.03
+
+caption_extension = ".txt"
+shuffle_caption = true
+keep_tokens = 1               # 先頭のトリガーワードを固定
+clip_skip = 2
+
+mixed_precision = "fp16"
+save_precision = "fp16"
+cache_latents = true
+cache_latents_to_disk = true
+gradient_checkpointing = true
+xformers = true
+max_data_loader_n_workers = 2
+persistent_data_loader_workers = true
+seed = 42

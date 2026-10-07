@@ -1,0 +1,2 @@
+翠の洞（スライムクイーン　ジュレア）,Card/Slime_master,クエストイベント
+翠の洞【回想バトル】,Card/Slime_master,回想バトル,$$Slime_挑戦回数,>=,1

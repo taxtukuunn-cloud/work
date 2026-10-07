@@ -1,0 +1,107 @@
+{
+ "memo": "攻撃タイプ（種類）→ 撮影の技（by_pose か lora_alt の id）と、構図の項目の語（同時の技を優先するため）。本番は family の中から指示文で決める",
+ "map": {
+  "キス": {
+   "id": "kiss",
+   "words": [
+    "kiss"
+   ]
+  },
+  "乳首責め": {
+   "id": "ctl_nipple",
+   "words": [
+    "nipple"
+   ]
+  },
+  "耳責め": {
+   "id": "whisper",
+   "words": [
+    "ear",
+    "whisper"
+   ]
+  },
+  "息": {
+   "id": "ear_soft",
+   "words": [
+    "ear",
+    "whisper"
+   ]
+  },
+  "ハグ": {
+   "id": "close_hug",
+   "words": [
+    "hug",
+    "embrace"
+   ]
+  },
+  "足コキ": {
+   "id": "footjob",
+   "words": [
+    "foot"
+   ]
+  },
+  "手コキ": {
+   "id": "handjob",
+   "words": [
+    "hj"
+   ]
+  },
+  "ぱふぱふ": {
+   "id": "smother",
+   "words": [
+    "smother",
+    "chest"
+   ]
+  },
+  "パイズリ": {
+   "id": "paizuri",
+   "words": [
+    "paizuri"
+   ]
+  },
+  "ふとももコキ": {
+   "id": "thigh",
+   "words": [
+    "thigh"
+   ]
+  },
+  "尻コキ": {
+   "id": "buttjob",
+   "words": [
+    "buttjob"
+   ]
+  },
+  "脇コキ": {
+   "id": "armpit",
+   "words": [
+    "armpit"
+   ]
+  },
+  "指": {
+   "id": "fingering",
+   "words": [
+    "finger"
+   ]
+  },
+  "本番": {
+   "id": "",
+   "family": [
+    "futa",
+    "peg",
+    "peg_strapon",
+    "peg_doggy",
+    "peg_pov",
+    "peg_chair",
+    "peg_spoon",
+    "peg_nipple",
+    "ctl_straddle",
+    "prostate"
+   ],
+   "words": [
+    "peg",
+    "straddle",
+    "futa"
+   ]
+  }
+ }
+}

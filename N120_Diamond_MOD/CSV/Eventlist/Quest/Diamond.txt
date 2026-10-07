@@ -1,0 +1,2 @@
+ダイアモンドタウンの夜（シスターと見習いシスター）,Card/Diamond_master,クエストイベント
+ダイアモンドタウンの夜【回想バトル】,Card/Diamond_master,回想バトル,$$Diamond_挑戦回数,>=,1

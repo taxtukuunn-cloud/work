@@ -1,0 +1,130 @@
+# N140 精霊の森と淫魔の屋敷（Honey）画像データ。登場人物は全員20歳以上。5人とも女性（ふたなり・NH・女装なし）。
+# 見た目は設計メモ・brief の文章の目印から作成（作品名・キャラ名は tags に書かない）。
+# 髪：シャナ＝紫／ミオ＝黒／メイド長＝銀／マジックサキュバス＝赤茶／ドライアド＝緑。瞳に青・水色は使わない。
+# クロノスジュエルの宝石は violet（青系を避ける）。挿入はシャナの指だけ（pen なし）。張形・尾などの挿入はない。
+# 責めはすべて痛みなし（メイド長の足は撫でる・擦るだけで踏まない）。帳簿・カードは文字なし（blank / without text）。
+# 絵には光る口づけの跡（KISS）か花を必ず入れる。
+KISS = "glowing pale pink lip-shaped kiss marks on his neck and chest"
+KISS_HAND = "a glowing pale pink lip-shaped kiss mark on the back of his hand"
+SOFT_NEG = "muscular female, abs, broad shoulders on the woman, scary"
+DATA = {
+ "code": "Honey",
+ "world": "enchanted spirit forest at the edge of a kingdom, dappled sunlight through leaves, sweet flowers, soft mist, faint pink glow, detailed background",
+ "bg": "enchanted spirit forest in daytime, dappled sunlight through tall trees, sweet pale pink flowers, soft mist, a ring of softly glowing flowers deep among the trees, the roof of an old mansion far away beyond the treetops, no humans",
+ "josou": None,
+ "chars": {
+   "m": {"type": "woman", "jp": "シャナ",
+         "tags": "adult woman, mature female, mature face, sharp adult features, 30 years old, adult proportions, beautiful detailed eyes, tall, long legs, very long purple hair, violet eyes, glossy softly glowing pink lips, lipstick, sheer pale lavender spirit robe, bare shoulders, flower hair ornament, soft voluptuous feminine body, huge breasts, wide hips",
+         "name": "the purple-haired spirit in a pale lavender robe",
+         "pose": "one fingertip touching her glowing lips as if about to blow a kiss, alluring mature smile, looking at viewer with half-closed violet eyes",
+         "neg": SOFT_NEG},
+   "e1": {"type": "woman", "jp": "メイド長",
+          "tags": "adult woman, mature female, mature face, sharp adult features, 28 years old, adult proportions, beautiful detailed eyes, tall, long legs, silver hair, hair bun, updo, silver-grey eyes, long black maid dress, white apron, white maid headdress, black stockings, thin black succubus tail, slender curvy feminine body, large breasts",
+          "name": "the silver-haired head maid in a long black maid dress",
+          "pose": "standing straight with her hands folded in front of her apron, cold expressionless face, looking down at viewer",
+          "neg": SOFT_NEG + ", smile"},
+   "e2": {"type": "woman", "jp": "マジックサキュバス",
+          "tags": "adult woman, mature female, mature face, 26 years old, adult proportions, beautiful detailed eyes, long legs, reddish brown hair, long curly hair, pink eyes, witch hat, dark purple witch robe, long silk gloves glowing pink, short curved succubus horns, soft curvy feminine body, large breasts",
+          "name": "the curly-haired witch in pink glowing gloves",
+          "pose": "holding up one hand in a softly glowing pink glove, the other hand patting the air gently, warm doting big-sisterly smile, looking at viewer",
+          "neg": SOFT_NEG},
+   "e3": {"type": "woman", "jp": "ドライアド",
+          "tags": "adult woman, mature female, mature face, 28 years old, adult proportions, beautiful detailed eyes, long legs, very long green hair, flowers in her hair, amber eyes, faint bark-like patterns on her skin, dress made of green leaves, open neckline, dryad, soft voluptuous feminine body, huge breasts, wide hips",
+          "name": "the green-haired dryad in a dress of leaves",
+          "pose": "both arms open wide as if to embrace, gentle easygoing smile, looking at viewer, pale pink petals drifting around her",
+          "neg": SOFT_NEG + ", wooden face, roots for legs"},
+   "boss": {"type": "woman", "jp": "ミオ",
+            "tags": "adult woman, mature female, mature face, 27 years old, adult proportions, beautiful detailed eyes, tall, long legs, long straight black hair, red eyes, black bunny suit, rabbit ears headband, white collar and cuffs, fishnet pantyhose, high heels, violet gemstone necklace, soft curvy feminine body, large breasts, wide hips",
+            "name": "the black-haired bunny in fishnet tights",
+            "pose": "holding a fan of blank playing cards without text in one hand, the other hand touching the violet gemstone at her chest, polite teasing smile, looking at viewer",
+            "neg": SOFT_NEG},
+ },
+ "places": {
+   "entrance":   "forest entrance, narrow path covered with soft fallen leaves, dappled sunlight, pale pink flowers along the path",
+   "dryad_tree": "a huge old tree with a large hollow, thick roots, soft moss between the roots, big pale pink flowers",
+   "hollow":     "inside a large tree hollow, smooth soft warm wooden walls, dim amber light, pale pink flowers, drifting pollen",
+   "midwood":    "deep green forest, a bed of thick moss, ferns, soft light",
+   "meadow":     "windy meadow of tall grass, faint pink lights swaying in the air, open sky",
+   "hut":        "cozy hut interior, shelf of magic tools and pink glowing gloves, fireplace, soft bed with cushions",
+   "foyer":      "mansion entrance hall, polished floor, chandelier, a small reception table with a tea set",
+   "corridor":   "long mansion corridor, polished floor, stone pillars, tall windows with daylight",
+   "maidroom":   "tidy study room in a mansion, a tall-backed chair, a desk with a teacup and a blank ledger without text",
+   "shop":       "strange curio shop interior, shelves of mysterious items, a softly glowing violet gemstone, a booth seat in the back",
+   "casino":     "casino table with green felt, stacks of chips, blank playing cards without text, a glass with ice, dim warm lights",
+   "deepgate":   "deep forest gate, thick mist, softly glowing flowers on the ground, tall dark trees",
+   "spring":     "clear forest spring, glowing flowers on the bank, a flat stone seat by the water, still water reflecting light",
+   "trial":      "round grass clearing in the forest surrounded by a ring of flowers, drifting petals, soft light from above",
+   "bower":      "bedchamber inside a giant flower, floor of layered petals, soft pale violet light, sweet haze",
+   "deepest":    "deepest part of the forest in full bloom, twelve softly glowing flowers in a circle, pale violet light",
+ },
+ "atk": {
+   "m1": ("trial", "he stands dazed in the flower ring taking a step forward, the spirit stands a few steps away blowing a kiss from her fingertips, a glowing pink lip-shaped light flying toward him, glowing kiss marks on his cheek and neck, his knees trembling"),
+   "m2": ("spring", "he lies on his back on the bank of the spring, the spirit kneels between his legs with her robe pulled open at the chest, his penis wrapped between her breasts, paizuri, her fingertip tracing a kiss mark on his stomach, " + KISS + ", alluring smile"),
+   "m3": ("bower", "he lies on his back on the layered petals with his knees raised, the spirit leans over him kissing him deeply with glowing lips, tongues, saliva, two wet fingers of her hand in his anus, fingering, " + KISS),
+   "e1": ("maidroom", "he sits on the floor in front of the tall-backed chair, the head maid sits in the chair with her legs crossed, the sole of her stockinged foot gently rubbing his penis, footjob, a blank ledger in her hand, cold expression, " + KISS),
+   "e2": ("hut", "he sits on a cushion before the fireplace leaning back, the witch sits behind him holding him, her pink glowing gloved fingers circling both his nipples, his nipples glowing faint pink, doting smile, " + KISS),
+   "e3": ("dryad_tree", "he sits among the mossy roots, the dryad kneels holding his head, his face buried in her cleavage, his own hands rubbing his own nipples, pink pollen haze, big flowers, the dryad smiling gently, " + KISS_HAND),
+   "boss": ("casino", "he sits on a chair at the green felt table, the bunny sits astride his lap facing him, his penis squeezed between her fishnet thighs, thigh sex, the bunny flipping a blank card without text in one hand, teasing polite smile, " + KISS),
+ },
+ "atk_desc": {
+   "m1": "the spirit blows a kiss from afar and his body walks toward her on its own.",
+   "m2": "the spirit leaves glowing kiss marks on him and wraps him between her breasts.",
+   "m3": "the spirit seals his lips with a glowing kiss while pressing deep inside with her fingers.",
+   "e1": "the head maid serves him coldly with her stockinged foot from her chair.",
+   "e2": "the witch charms his nipples with her pink glowing gloves while doting on him.",
+   "e3": "the dryad wraps his face in her fragrant cleavage until he cannot stop touching his own nipples.",
+   "boss": "the bunny advances one step per card and squeezes him between her fishnet thighs.",
+ },
+ "lose": {
+   # シャナ 技1（投げキッス＋★魅了の口紅）
+   "btl_m1":     ("trial", "he kneels in the middle of the flower ring with his shirt open, the spirit bends down over him kissing his nipple with glowing lips, her hand under his chin, all the flowers in full bloom, " + KISS + ", cum dripping untouched, a glass bottle of glowing lip rouge on the grass"),
+   "onani_m1":   ("midwood", "lying alone on the moss bed, kissing the back of his own hand, the other hand rubbing his own nipple, " + KISS_HAND + ", penis untouched, the spirit watches far away between the trees"),
+   "inochi_m1":  ("deepgate", "he kneels in the thick mist leaning forward with his lips offered, the spirit stands before him blowing a kiss from her fingertips, a glowing pink lip-shaped light touching his lips, glowing kiss marks on his cheek and neck, glowing flowers at his knees"),
+   "onedari_m1": ("bower", "he lies on the layered petals with his shirt open, the spirit lies beside him pressing her glowing lips onto a kiss mark on his neck, her finger raised as if counting, " + KISS + ", cum on his stomach"),
+   # シャナ 技2（★魅了の口紅）
+   "btl_m2":     ("spring", "he lies on his back on the bank of the spring, the spirit kneels between his legs with her robe pulled open at the chest, his penis wrapped between her breasts, paizuri, " + KISS + ", his glowing reflection in the still water, cum on her breasts"),
+   "onani_m2":   ("spring", "sitting alone on the flat stone seat by the water, tracing a glowing kiss mark on his neck with a fingertip, the other hand rubbing his own nipple, penis untouched, the spirit watches far away standing in the water"),
+   "inochi_m2":  ("trial", "he stands in the flower ring with his shirt open and his hands behind his back, the spirit leans in kissing his nipple with glowing lips, her palm on his lower belly, " + KISS + ", his legs trembling, cum dripping"),
+   "onedari_m2": ("bower", "he sits sideways across the spirit's lap on the petals, held in her arms, the spirit kisses his nipple with glowing lips, one finger raised as if counting, many glowing lip-shaped kiss marks around his nipples, cum dripping untouched"),
+   # シャナ 技3（精霊の口づけ＋★魅了の口紅）
+   "btl_m3":     ("bower", "he lies on his back on the layered petals with his knees raised, the spirit leans over him kissing him deeply with glowing lips, tongues, saliva trail, two wet fingers of her hand deep in his anus, fingering, pale violet light, " + KISS + ", cum on his stomach"),
+   "onani_m3":   ("deepgate", "kneeling alone under a tree in the mist, sucking two of his own fingers as if kissing, a finger of his other hand in his own anus, a glowing kiss mark on his lips, penis untouched, the spirit watches far away in the mist"),
+   "inochi_m3":  ("spring", "he sits on the bank of the spring held in the spirit's arm, the spirit kisses him deeply without parting, glowing lips, tongues, two wet fingers of her other hand in his anus, fingering, glowing flowers, his hands limp, cum dripping"),
+   "onedari_m3": ("bower", "he lies on the petals with his arms open, the spirit over him, her lips glowing brightly, kissing him deeply, tongues, two wet fingers of her hand deep in his anus, fingering, bright pink-violet light on their faces, cum on his stomach"),
+   # メイド長（★冷たい奉仕）
+   "btl_e1":     ("maidroom", "he sits on the floor in front of the tall-backed chair with his shirt open, the head maid sits with her legs crossed, the sole of her stockinged foot gently rubbing his penis, footjob, writing in a blank ledger without text, a white apron ribbon tied around his wrist, " + KISS + ", cum on her stocking"),
+   "onani_e1":   ("corridor", "sitting alone on the floor behind a stone pillar, one leg drawn up, the sole of his own foot stroking his own lower belly, lips moving as if muttering, a glowing kiss mark on his lips, penis untouched, the head maid watches far away down the corridor"),
+   "inochi_e1":  ("foyer", "he sits at the reception table holding a teacup with trembling hands, the head maid sits across from him pouring tea from a teapot, her stockinged foot stretched under the table gently rubbing between his legs, footjob, cold expression, " + KISS),
+   "onedari_e1": ("maidroom", "he kneels in front of the tall-backed chair looking up, the head maid sits reading aloud from a blank ledger without text, the sole of her stockinged foot resting on his lower belly, her toes stroking, cold expression, " + KISS + ", cum dripping"),
+   # マジックサキュバス（★チャームの手袋）
+   "btl_e2":     ("hut", "he sits on a cushion before the fireplace leaning back into the witch, the witch holds him from behind, her pink glowing gloved fingers circling both his nipples, his nipples glowing pink, one pink glowing glove lying on his lap, doting smile, " + KISS + ", cum dripping untouched"),
+   "onani_e2":   ("meadow", "sitting alone hidden in the tall grass, wearing his own brown leather travel gloves, rubbing both his own nipples with gloved fingertips, a glowing kiss mark on his lips, penis untouched, the witch watches far away across the meadow"),
+   "inochi_e2":  ("meadow", "he lies on his back in the tall grass with his head on the witch's lap, the witch strokes his hair with one gloved hand, the pink glowing fingertip of her other hand resting on his nipple, his shirt open, faint pink lights in the wind, " + KISS),
+   "onedari_e2": ("hut", "he lies on the soft bed with his head on the witch's lap, the witch rolls his glowing pink nipple between pink glowing gloved fingers, her other gloved hand wrapped around his penis, handjob, doting smile, " + KISS + ", cum on her glove"),
+   # ドライアド（★谷間の香り）
+   "btl_e3":     ("dryad_tree", "he sits among the mossy roots, the dryad kneels holding his head, his face buried in her cleavage, his own fingers rubbing his own nipple, the dryad gently holding his other wrist against his chest, a pale pink flower tucked on his chest, pink pollen haze, cum dripping untouched"),
+   "onani_e3":   ("entrance", "crouching alone beside the path, his face close to a pale pink flower breathing its scent, one hand inside his shirt rubbing his own nipple, a glowing kiss mark on his lips, penis untouched, the dryad watches far away beside a tree"),
+   "inochi_e3":  ("dryad_tree", "he stands in front of the huge old tree, the dryad embraces his head into her cleavage, both his own hands on his own chest rubbing his nipples, pink pollen haze, big pale pink flowers, the dryad smiling gently, his knees giving way"),
+   "onedari_e3": ("hollow", "inside the tree hollow, he sits held in the dryad's arms, his face buried in her cleavage, his own fingers rubbing both his own nipples, soft wooden walls close around them, drifting pollen, pale pink flowers, cum dripping untouched"),
+   # ミオ（★代価の誘惑）
+   "btl_boss":   ("casino", "he sits on a chair at the green felt table wearing a rabbit ears headband, the bunny sits astride his lap facing him, his penis squeezed between her fishnet thighs, thigh sex, the bunny holding up the last blank card without text, " + KISS + ", cum on her thighs"),
+   "onani_boss": ("shop", "sitting alone on the floor behind a shelf, turning over a blank playing card without text with one hand, the other hand rubbing his own nipple through his shirt, a glowing kiss mark on his lips, penis untouched, the bunny watches far away from the booth seat"),
+   "inochi_boss":("shop", "he sits on the booth seat in the back of the shop, the bunny sits on his lap dangling a glowing violet gemstone necklace in front of his face, his penis held still between her fishnet thighs, thigh sex, teasing polite smile, " + KISS + ", he trembles on the edge"),
+   "onedari_boss":("casino", "he sits on a chair at a private green felt table beside tall stacks of chips, the bunny sits on his lap with her back to the table, slowly squeezing his penis between her fishnet thighs, thigh sex, five blank cards without text laid on the felt, " + KISS + ", cum on her thighs"),
+ },
+ "lose_desc": "keeps him in the spirit forest forever as a cherished captive with twelve glowing kiss marks on his skin.",
+ "onanie": {
+   "master": ("midwood", "sitting on the moss, tracing a glowing kiss mark on his neck with a fingertip, the other hand rubbing his own nipple, penis untouched"),
+   "e1": ("corridor", "sitting behind a pillar with one leg drawn up, the sole of his own foot stroking his own lower belly, penis untouched"),
+   "e2": ("meadow", "sitting in the tall grass wearing his own leather travel gloves, rubbing his own nipples with gloved fingertips, penis untouched"),
+   "e3": ("entrance", "crouching by a pale pink flower breathing its scent, rubbing his own nipple inside his shirt, penis untouched"),
+   "boss": ("shop", "sitting behind a shelf, turning over a blank card without text, the other hand rubbing his own nipple through his shirt, penis untouched"),
+ },
+ "magic": {
+   "1": ("m", "trial", "touching her glowing lips with one fingertip, two glowing pink lip-shaped lights floating in the air beside her, alluring smile"),
+   "2": (None, "entrance", "a narrow winding forest path of soft fallen leaves leading deeper into the trees, dappled sunlight, pale pink flowers on both sides, a faint pink glow at the far end"),
+   "3": (None, "dryad_tree", "a single large pale pink flower blooming at the mossy roots of a huge tree, sweet pink pollen haze drifting from it, close-up"),
+   "4": (None, "hut", "a pair of long silk gloves softly glowing pink laid on a wooden shelf, faint pink sparkles, warm fireplace light, close-up"),
+   "5": (None, "spring", "a clear still forest spring with softly glowing flowers on the bank and an empty flat stone seat, pale pink lip-shaped lights reflected on the water"),
+ },
+}

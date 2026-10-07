@@ -1,0 +1,2 @@
+孤独の地の蜘蛛たち（蜘蛛の神　アトラク＝ナクア）,Card/Spiders_master,クエストイベント
+孤独の地の蜘蛛たち【回想バトル】,Card/Spiders_master,回想バトル,$$Spiders_挑戦回数,>=,1

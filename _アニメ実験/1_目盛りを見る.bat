@@ -1,0 +1,18 @@
+@echo off
+cd /d "%~dp0"
+set "PY=C:\Users\taku2\Downloads\ComfyUI_windows_portable\python_embeded\python.exe"
+if not exist "%PY%" goto nopy
+if "%~1"=="" goto noarg
+"%PY%" make_frames.py grid "%~1"
+goto done
+:noarg
+"%PY%" make_frames.py grid
+:done
+if exist "ñ⁄ê∑ÇË.png" start "" "ñ⁄ê∑ÇË.png"
+pause
+exit /b 0
+:nopy
+echo ComfyUI ÇÃ Python Ç™å©Ç¬Ç©ÇËÇ‹ÇπÇÒÅB
+echo %PY%
+pause
+exit /b 1

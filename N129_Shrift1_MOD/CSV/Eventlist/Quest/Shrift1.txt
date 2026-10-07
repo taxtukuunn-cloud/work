@@ -1,0 +1,2 @@
+香神市の悪魔（魔王　ローズ）,Card/Shrift1_master,クエストイベント
+香神市の悪魔【回想バトル】,Card/Shrift1_master,回想バトル,$$Shrift1_挑戦回数,>=,1

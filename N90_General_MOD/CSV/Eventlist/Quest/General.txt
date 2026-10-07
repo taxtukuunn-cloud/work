@@ -1,0 +1,2 @@
+魔王軍の女幹部（四天王　ヴェルローザ）,Card/General_master,クエストイベント
+魔王軍の女幹部【回想バトル】,Card/General_master,回想バトル,$$General_挑戦回数,>=,1

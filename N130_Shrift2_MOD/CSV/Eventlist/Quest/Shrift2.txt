@@ -1,0 +1,2 @@
+深海と造魔（深海の魔女　カリブディス）,Card/Shrift2_master,クエストイベント
+深海と造魔【回想バトル】,Card/Shrift2_master,回想バトル,$$Shrift2_挑戦回数,>=,1

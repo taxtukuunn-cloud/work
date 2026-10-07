@@ -1,0 +1,530 @@
+{
+  "note": "使う画像モデル。wai＝waiIllustriousSDXL_v170（SDXL・出力 <MOD>_WAI）／anima＝waiANIMA_v10Base10（従来・sdduel LoRAあり・出力 <MOD>_自作）。wai の中の値で上書きできる。artist に好みの絵師名タグ（1〜2個）を入れると先頭に付く。loras は SDXL 用の LoRA（重ねる順）。strength を 0 にすると外れる",
+  "model": "wai",
+  "wai": {
+    "steps": 28,
+    "cfg": 6.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "normal",
+    "clip_skip": -2,
+    "style_pos": "anime screencap, anime coloring, cel shading, flat color",
+    "artist": "",
+    "style_neg": "realistic, photorealistic, 3d, semi-realistic, lips, nose shine, detailed skin, skin texture",
+    "neg_remove": [
+      "flat color",
+      "thick outline"
+    ],
+    "loras": [
+      {
+        "lora_name": "anime_screencap-IL-NOOB_v3.safetensors",
+        "strength": 0.8,
+        "clip_strength": 0.8,
+        "trigger": ""
+      },
+      {
+        "lora_name": "sdduel_style_xl-000008.safetensors",
+        "strength": 0.5,
+        "clip_strength": 0.5,
+        "trigger": "sdduel style",
+        "enabled": false,
+        "memo": "本編の絵柄（SDXL用）。2026-09-29 停止：学習データ156枚中17枚に自動タグ shota／onee-shota（うち3枚は loli・child on child）が付いていたため使わない。17枚を除いた sdduel_style_xl_v2 を学習し直して、絵柄比較で成人に見えることを確かめてから差し替える（Lora用\u0003_学習_SDXL_v2.bat）"
+      },
+      {
+        "lora_name": "sdduel_hero_xl-000008.safetensors",
+        "strength": 0.8,
+        "clip_strength": 0.8,
+        "trigger": "sdduel_hero",
+        "when_text_contains": "navy",
+        "role": "hero",
+        "enabled": false,
+        "memo": "主人公LoRA（SDXL用）。2026-09-28 停止：学習画像が「15歳・teenage boy」の指定で撮られていたため使わない。成人の指定で H1 から撮り直し→学習し直すまで enabled は false のまま",
+        "scene_strength": 0
+      }
+    ]
+  },
+  "hero_face": {
+    "show": true,
+    "eyes": "aqua eyes",
+    "bangs": "short bangs above the eyes",
+    "memo": "主人公の顔を描く（2026-09-28）。show を false にすると旧方式（前髪で目を隠す）。build／build_neg は体つきの細さ（ごつい時は足す・細すぎる時は減らす）。skin／skin_neg は肌の色（白すぎる時は skin を強める、焼けすぎる時は弱める）",
+    "build": "bishounen, delicate features, slender, narrow shoulders, thin arms, slim waist",
+    "build_neg": "broad shoulders on the navy-haired man, thick arms, thick neck, manly, masculine build, stocky, square jaw",
+    "skin": "natural healthy skin tone, warm skin color",
+    "skin_neg": "pale skin on the navy-haired man, pasty white skin on the navy-haired man"
+  },
+  "role_fix": true,
+  "role_fix_memo": "相手が攻め・主人公が受けになるよう、場面の先頭に femdom 等の短いタグを入れる（2026-09-28）。false で外す",
+  "solo_onanie": true,
+  "solo_onanie_memo": "オナニー場面は主人公ひとりの構図（相手が遠くで見ている構図をやめる・2026-09-28）。false で旧方式",
+  "pose_lora": {
+    "enabled": true,
+    "max_action": 1,
+    "allow_look_extra": true,
+    "apply_to": [
+      "scene"
+    ],
+    "override": {}
+  },
+  "pose_lora_memo": "構図LoRA（2026-09-28）。場面（2人の絵）の最終プロンプトを pose_loras の when（正規表現・全部に当てはまったら候補）で判定し、action は上から最初の1つ、look は別に1つまで足す。override に {\"画像名\": \"id\"} か {\"画像名\": \"none\"} で個別指定。enabled を false で全部外す。gen.py の --no-pose／--pose-scale／--pose-report／--pose-sample",
+  "pose_loras": [
+    {
+      "id": "lamia",
+      "kind": "look",
+      "file": "構図\\Lamia_Sex.safetensors",
+      "trigger": "lamia sex",
+      "strength": 0.5,
+      "when": [
+        "\\blamia\\b"
+      ]
+    },
+    {
+      "id": "slime",
+      "kind": "look",
+      "file": "構図\\slime sex_illustrious_V1.0.safetensors",
+      "trigger": "slime",
+      "strength": 0.4,
+      "when": [
+        "slime girl|slime woman|slime monster girl"
+      ],
+      "neg": "woman engulfed by slime, girl trapped in slime, female victim, slime girl victim, 2girls, female on bottom"
+    },
+    {
+      "id": "arachne",
+      "kind": "look",
+      "file": "構図\\Arache_sex_illus-000037.safetensors",
+      "trigger": "arachnesex",
+      "strength": 0.4,
+      "when": [
+        "arachne|spider girl|drider"
+      ],
+      "neg": "yuri, 2girls, female on bottom"
+    },
+    {
+      "id": "succubus_tail",
+      "kind": "look",
+      "file": "構図\\succubus_tail.safetensors",
+      "trigger": "succubus tail",
+      "strength": 0.5,
+      "when": [
+        "succubus tail|spade tail|heart-shaped tail|demon tail"
+      ]
+    },
+    {
+      "id": "peg_nipple",
+      "kind": "action",
+      "file": "構図\\pose_pegging_nipple_tweak.safetensors",
+      "trigger": "pose_pegging_nipple_tweak, nipple tweak",
+      "strength": 0.7,
+      "when": [
+        "strap-on|pegging",
+        "nipple",
+        "pegg|\\banus\\b|\\banal\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "peg_pov",
+      "kind": "action",
+      "file": "構図\\PoV_Pegging_Another_Femdom.safetensors",
+      "trigger": "femdom pov, anal pegging, male lying on back",
+      "strength": 0.7,
+      "when": [
+        "strap-on|pegging",
+        "lying on (his )?back|on his back|from above",
+        "pegg|\\banus\\b|\\banal\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "peg_chair",
+      "kind": "action",
+      "file": "構図\\Pegging_Bondage_Chair.safetensors",
+      "trigger": "dominant girl, submissive man, adult male, male bound",
+      "strength": 0.7,
+      "when": [
+        "strap-on|pegging",
+        "chair",
+        "pegg|\\banus\\b|\\banal\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "suspension",
+      "kind": "action",
+      "file": "構図\\Male_Suspension_Femdom_Handjob__Pegging_Pony__Illustrious (1).safetensors",
+      "trigger": "male suspension, male bound wrists",
+      "strength": 0.6,
+      "when": [
+        "\\bsuspended\\b|suspension(?! bridge)|\\bhe hangs (?:in|from)\\b|\\b(?:he is|him) hanging\\b|\\bhanging alone\\b"
+      ]
+    },
+    {
+      "id": "inverted",
+      "kind": "action",
+      "file": "構図\\Inverted_Male_Femdom_Illustrious.safetensors",
+      "trigger": "femdom_invert, upside_down_male",
+      "strength": 0.5,
+      "when": [
+        "upside[- ]down"
+      ],
+      "neg": "motion lines"
+    },
+    {
+      "id": "peg_spoon",
+      "kind": "action",
+      "file": "構図\\Spooning_Femdom_Handjob__Pegging_Pony__Illustrious-000058.safetensors",
+      "trigger": "spooning, larger female",
+      "strength": 0.6,
+      "when": [
+        "spooning|lying on (his |her )?side",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "peg_doggy",
+      "kind": "action",
+      "file": "構図\\DoggyStylePegging_Illustrios.safetensors",
+      "trigger": "doggy_style_pegging, strap-on",
+      "strength": 0.6,
+      "when": [
+        "strap-on|pegging",
+        "doggy|all fours|from behind",
+        "pegg|\\banus\\b|\\banal\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "neg": "white border, padding, plain grey background"
+    },
+    {
+      "id": "peg",
+      "kind": "action",
+      "file": "構図\\Pegging_Illustrious.safetensors",
+      "trigger": "pegging",
+      "strength": 0.7,
+      "when": [
+        "strap-on|pegging",
+        "pegg|\\banus\\b|\\banal\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "futa",
+      "kind": "action",
+      "file": "構図\\Futa_on_male-000055.safetensors",
+      "trigger": "futa on male",
+      "strength": 0.7,
+      "when": [
+        "futanari|newhalf|otoko no ko",
+        "(?:penis|cock)[^,]{0,40}(?:(?<!never )(?<!no )penetrat|in(?:to|side) his anus|thrust)|(?<!never )(?<!no )penetrat\\w* (?:his anus|him)[^,]{0,40}(?:penis|cock)|thrusts? (?:up )?into his anus|\\banal sex\\b|\\bfucking\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "extra": [
+        {
+          "when": "otoko no ko",
+          "pos": "flat chest",
+          "neg": "large breasts, huge breasts"
+        }
+      ]
+    },
+    {
+      "id": "close_hug",
+      "kind": "action",
+      "file": "構図\\close_hug_sex_IL.safetensors",
+      "trigger": "close hug sex",
+      "strength": 0.6,
+      "when": [
+        "kiss",
+        "girl on top|straddl|embrac|hug",
+        "(?<!never )(?<!no )penetrat|riding|\\banal\\b|\\bsex\\b",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "bloodsuck",
+      "kind": "action",
+      "file": "構図\\Femdom_Bloodsucking_IL.safetensors",
+      "trigger": "fd_bs, biting the man's neck",
+      "strength": 0.7,
+      "when": [
+        "vampire",
+        "bit(e|es|ing)|suck|drink|blood",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "whisper",
+      "kind": "action",
+      "file": "構図\\whispering_in_ear_IL.safetensors",
+      "trigger": "ear_whisperil, female whispering to male",
+      "strength": 0.7,
+      "when": [
+        "whisper\\w* (?:into|in|to) (?:his|him)|(?:ear|earlobe)[^,]{0,12}whisper|licking his ear|ear licking|(?<!earphone )\\bin his ear\\b|nibbling (on )?his ear",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "lap_finger",
+      "kind": "action",
+      "file": "構図\\POVLapLyingBlowjob_Handjob_Fingering_Illustrious.safetensors",
+      "trigger": "laply1ngp0v",
+      "strength": 0.6,
+      "when": [
+        "on (her|the woman's) lap|lap pillow|lying on (her )?lap",
+        "finger",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "prostate",
+      "kind": "action",
+      "file": "構図\\ProstateMilking_IL_V1_0.safetensors",
+      "trigger": "finger stimulate prostate, anal fingering",
+      "strength": 0.7,
+      "when": [
+        "prostate",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "neg": "mosaic censoring"
+    },
+    {
+      "id": "fingering",
+      "kind": "action",
+      "file": "構図\\pose_anal_fingering_2-000020.safetensors",
+      "trigger": "anal_fingering",
+      "strength": 0.7,
+      "when": [
+        "anal fingering|finger(s|ing)? (in|into) his (anus|ass)|fingering his (anus|ass)|loosen(?:ed|ing) (?:his )?anus",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "rusty",
+      "kind": "action",
+      "file": "構図\\RustyTrombone_IL_V1_0.safetensors",
+      "trigger": "anilingus, rusty trombone",
+      "strength": 0.6,
+      "when": [
+        "anilingus|rimming|licking his anus|tongue in his anus",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "kiss",
+      "kind": "action",
+      "file": "構図\\malepassivekiss_il_v1.safetensors",
+      "trigger": "malepassivekiss",
+      "strength": 0.7,
+      "when": [
+        "kiss",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "chastity",
+      "kind": "action",
+      "file": "構図\\POV_CHASTITY_CAGE.safetensors",
+      "trigger": "povcage, chastity cage",
+      "strength": 0.7,
+      "when": [
+        "chastity"
+      ]
+    },
+    {
+      "id": "xcross",
+      "kind": "action",
+      "file": "構図\\X_Cross_Femdom_Bondage__BDSM_Pony__Illustrious-000055.safetensors",
+      "trigger": "x-cross \\(bdsm\\), restrained male",
+      "strength": 0.7,
+      "when": [
+        "x-cross|spread-eagle|restrained against (the|a) wall"
+      ]
+    },
+    {
+      "id": "collar",
+      "kind": "action",
+      "file": "構図\\Male_Slave_Collar_Leash_Pet_Play_Femdom_Illustrious.safetensors",
+      "trigger": "male slave, male wearing animal collar",
+      "strength": 0.7,
+      "when": [
+        "leash|animal collar|dog collar|pet collar|slave collar"
+      ]
+    },
+    {
+      "id": "facesit",
+      "kind": "action",
+      "file": "構図\\FSFJ_1300845.safetensors",
+      "trigger": "femdom facesitting, sitting on face",
+      "strength": 0.7,
+      "when": [
+        "facesitting|sitting on his face|face ?sit",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "step",
+      "kind": "action",
+      "file": "構図\\Steped_On_POV-000008.safetensors",
+      "trigger": "steppovv1, trampling",
+      "strength": 0.7,
+      "when": [
+        "stepp(ing|ed) on|\\bsteps on (?:him|his)|trampl|foot on his|stomp|heel[^,]{0,30}(?:penis|erection)",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "footjob",
+      "kind": "action",
+      "file": "構図\\fumichin_illustrious_V1.0.safetensors",
+      "trigger": "fumichin, footjob",
+      "strength": 0.7,
+      "when": [
+        "foot ?job|soles? on his|\\bsoles?\\b[^,]{0,40}(?:penis|erection)|(?:penis|erection)[^,]{0,25}(?:with|between) (?:the sole|her (?:bare |stockinged )?(?:feet|foot|soles?))",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "neg": "mosaic censoring"
+    },
+    {
+      "id": "thigh",
+      "kind": "action",
+      "file": "構図\\Illustrious_thigh_job_Intercrural_Poses_Standing__Lying_Control_Lying_On_Top_standing_2.safetensors",
+      "trigger": "thigh_job",
+      "strength": 0.6,
+      "when": [
+        "thigh ?job|intercrural|between her thighs|thigh sex",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "rah",
+      "kind": "action",
+      "file": "構図\\RAH_G2.safetensors",
+      "trigger": "rah",
+      "strength": 0.7,
+      "when": [
+        "reach-around|reaching around",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "rah_behind",
+      "kind": "action",
+      "file": "構図\\RAH_G2.safetensors",
+      "trigger": "rah",
+      "strength": 0.7,
+      "when": [
+        "from behind|behind him|hugging him from behind",
+        "handjob|stroking his (?:penis|cock|shaft|erection)|nipple",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "headlock",
+      "kind": "action",
+      "file": "構図\\headlock-handjob-hedockhj-IL.safetensors",
+      "trigger": "hedockhj",
+      "strength": 0.6,
+      "when": [
+        "headlock|holding his head|arm around his neck",
+        "handjob|stroking",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "paizuri",
+      "kind": "action",
+      "file": "構図\\paizuri_twistedbreasts_v1.safetensors",
+      "trigger": "paizuri",
+      "strength": 0.6,
+      "when": [
+        "paizuri|titjob|between her breasts",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ]
+    },
+    {
+      "id": "xray",
+      "kind": "action",
+      "file": "構図\\Love_Button.safetensors",
+      "trigger": "love_button, prostate_xray",
+      "strength": 0.6,
+      "when": [
+        "x-ray|cross-section|internal view"
+      ]
+    },
+    {
+      "id": "handjob",
+      "kind": "action",
+      "file": "構図\\handjob_from_side_v3-000014.safetensors",
+      "trigger": "handjob_from_side",
+      "strength": 0.6,
+      "when": [
+        "handjob|(?:her|she|hand|fingers?)[^,]{0,40}strok\\w* his (?:penis|cock)|hand (?:wrapped )?around his (?:penis|erection|shaft)|grip(?:s|ping)? his (?:penis|erection)|strok\\w* (?:the underside of )?his (?:shaft|erection)|palm cupping his penis",
+        "^(?![\\s\\S]*(?:not touching him|no hands on him|no physical contact|without touching him))"
+      ],
+      "neg": "mosaic censoring"
+    },
+    {
+      "id": "figure_four",
+      "kind": "action",
+      "file": "構図\\figure-four-neck-lockv4-il-Kari_corn-f4nefj.safetensors",
+      "trigger": "f4nefj",
+      "strength": 0.6,
+      "when": [
+        "figure[- ]four|head ?scissor|thighs around his (neck|head)|leg lock"
+      ]
+    },
+    {
+      "id": "bondage",
+      "kind": "action",
+      "file": "構図\\Femdom Bondage Conquest.safetensors",
+      "trigger": "fd_bd_cq",
+      "strength": 0.7,
+      "when": [
+        "(?:his (?:wrists|hands|arms|ankles|legs|body)|\\bhim)[^,]{0,30}(?<!as if )\\b(?:tied|bound|chained|cuffed)\\b(?! book)|(?<!as if )\\b(?:tied|bound|chained|cuffed|strapped)\\b(?! book)[^,]{0,20}(?:his (?:wrists|hands|arms|ankles|legs)|\\bhim\\b)|restrain|shackle|handcuffed|rope bondage|shibari|\\bhe (?:lies |is |sits |stands |kneels )?(?:bound|tied|strapped|cuffed|chained)\\b|\\b(?:hands|wrists?|ankles?) (?:cuffed|tied|bound|chained)\\b|\\brope (?:wound|wrapped|tied)(?: tight)? around his (?!own)"
+      ]
+    },
+    {
+      "id": "alt_ashikoki",
+      "kind": "action",
+      "enabled": false,
+      "file": "構図\\ashikokistep-000030.safetensors",
+      "trigger": "ashikokistep",
+      "strength": 0.7,
+      "when": [
+        "foot ?job|\\bsoles?\\b[^,]{0,40}(?:penis|erection)"
+      ]
+    },
+    {
+      "id": "alt_thigh_top",
+      "kind": "action",
+      "enabled": false,
+      "file": "構図\\POV_Thighjob_on_Top_ILLUSTRIOUS.safetensors",
+      "trigger": "p0vth1ghj0b",
+      "strength": 0.6,
+      "when": [
+        "thigh ?job|thigh sex"
+      ]
+    },
+    {
+      "id": "alt_strapon",
+      "kind": "action",
+      "enabled": false,
+      "file": "構図\\Strap-onpegging(min2).safetensors",
+      "trigger": "strapon_pegging",
+      "strength": 0.6,
+      "when": [
+        "strap-on|pegging",
+        "pegg|\\banus\\b|\\banal\\b"
+      ]
+    },
+    {
+      "id": "alt_anilingus",
+      "kind": "action",
+      "enabled": false,
+      "file": "構図\\pose_anilingus_handjob.safetensors",
+      "trigger": "pose_anilingus_handjob",
+      "strength": 0.6,
+      "when": [
+        "anilingus"
+      ]
+    }
+  ]
+}

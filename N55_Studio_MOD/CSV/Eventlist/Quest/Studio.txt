@@ -1,0 +1,2 @@
+深夜の撮影スタジオ（カメラマン　キリエ）,Card/Studio_master,クエストイベント
+深夜の撮影スタジオ【回想バトル】,Card/Studio_master,回想バトル,$$Studio_挑戦回数,>=,1

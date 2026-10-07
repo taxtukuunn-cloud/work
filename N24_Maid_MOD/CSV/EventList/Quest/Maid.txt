@@ -1,0 +1,2 @@
+メイド長の屋敷,Card/Maid_master,クエストイベント
+メイド長の屋敷【回想バトル】,Card/Maid_master,回想バトル,$$Maid_挑戦回数,>=,1

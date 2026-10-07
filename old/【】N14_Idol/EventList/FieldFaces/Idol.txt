@@ -1,0 +1,1 @@
+#Idol/Idol_master.png,Card/Idol_master,フィールドイベント,場所,==,&&場所モルゲン

@@ -1,0 +1,64 @@
+■ 画像モデルの切り替え（2026-09-27）  waiIllustriousSDXL_v170 を使えるようにしました
+
+【最初に1回だけ】
+  waiIllustriousSDXL_v170.safetensors が ComfyUI\models\loras に入っています。
+  これはLoRAではなくモデル本体（チェックポイント）なので、
+    ComfyUI\models\checkpoints
+  へ移動してください。移したら ComfyUI を再起動（または画面の R キーで一覧を更新）。
+  ※置き場所が違うと gen.py が「checkpoints にありません」と表示して止まります。
+
+【切り替え方】  model.json の "model"
+  "wai"   … waiIllustriousSDXL_v170（今の既定）
+  "anima" … これまでの WAI-Anima（waiANIMA_v10Base10）
+  生成.bat・一括生成_全MOD.bat など、今までの bat はそのまま使えます（model.json に従う）。
+  1回だけ変えたいときは gen.py に --model anima / --model wai を付ける。
+
+【wai にしたときの違い】
+  ・保存先：ComfyUI\output\<MODコード>_WAI\   （Anima の <MODコード>_自作\ とは別。撮り済み判定も別）
+  ・完成フォルダへ集める.bat も model.json に従って _WAI から集めます。
+  ・LoRA（sdduel_style 絵柄／sdduel_hero 主人公）は Anima で学習したものなので SDXL では使えず、自動で外します。
+    → 主人公の顔・絵柄のそろい方は Anima＋LoRA より弱くなります。気になる場合は SDXL 用に LoRA を学習し直す必要があります。
+  ・設定：Euler a（euler_ancestral）・normal・28ステップ・CFG 6・clip skip 2・832×1216
+    （作者推奨：15〜30ステップ・CFG 5〜7・Euler a）。model.json の "wai" の中で変えられます。
+  ・プロンプト（prompts\*.json は書き換えません。送る直前に直します）
+      score_9 / score_8 / score_7 を外す（Anima 用のタグ）
+      安全タグ safe → general（Illustrious の書き方）
+      先頭に masterpiece, best quality, amazing quality
+      ネガに bad quality, worst quality, worst detail, sketch, censor
+  ・長い英文の指定（「the navy-haired man is ...」など）は Anima より効きにくい可能性があります。
+
+【比較】
+  モデル比較_Anima_WAI.bat … 同じシードで Anima（LoRAあり）と WAI を4枚ずつ
+    → ComfyUI\output\<MODコード>_モデル比較\A（Anima）/ B（WAI）
+
+【同時に直したこと】
+  gen.py の主人公の年齢の言い換えが「15歳」になっていたので、決めてあったとおり 20歳（early 20s）に戻しました。
+  （登場人物は全員20歳以上の設定のため。ネガの young boy も戻しています）
+  元のファイル：gen_モデル切替前.py / collect_モデル切替前.py
+
+【追記：2.5次元っぽさ対策（2026-09-27）】 wai のときだけ
+  ポジティブ先頭（品質タグの次）: anime screencap, anime coloring, cel shading, flat color
+  ネガに追加: realistic, photorealistic, 3d, semi-realistic, lips, nose shine, detailed skin, skin texture
+  ネガから外す: flat color, thick outline（プロンプトに入っていれば）
+  絵師名タグ: model.json の "artist" に 1〜2個書くと先頭に付く（例 "artist": "〇〇, △△"）。今は空。
+  強すぎ・弱すぎのときは model.json の style_pos / style_neg を書き換える（gen.py は触らなくてよい）。
+
+【追記：アニメ調LoRAを重ねる（2026-09-27）】 wai のときだけ
+  model.json の "loras" に anime_screencap-IL-NOOB_v3.safetensors（強さ 0.8）を入れました。
+  強さを変える：model.json の "strength"（モデル側）と "clip_strength"（CLIP側）。0 で外れる。
+  LoRA を増やす："loras" の [ ] の中に同じ形で { ... } をカンマ区切りで足す（上から順に重なる）。
+  比較：アニメ調LoRA比較.bat … 同じシードで 強さ 0 / 0.6 / 0.8 / 1.0 を2枚ずつ
+        → ComfyUI\output\<MODコード>_アニメ調比較\0 / 06 / 08 / 10
+  1回だけ強さを変える：gen.py に --sdxl-lora-strength 0.6 など
+
+【追記：本編の絵柄LoRAを WAI 用に作り直す（2026-09-27）】
+  sdduel_style-000006 は Anima 用なので WAI（SDXL）では効きません。同じ学習画像で SDXL 用に学習し直します。
+  1. ComfyUI を閉じる
+  2. Lora用\3_学習_SDXL.bat（30分～1時間半。終わると自動で ComfyUI\models\loras にコピー）
+     → sdduel_style_xl-000002 / 4 / 6 / 8 と sdduel_style_xl（10エポック目）
+     out of memory で止まったら教えてください（設定を軽くします）
+  3. ComfyUI を起動して 画像生成\絵柄XL比較.bat（絵柄LoRAなし＋各エポックを同じシードで2枚ずつ）
+     → ComfyUI\output\<MODコード>_絵柄XL比較\none / e02 / e04 / e06 / e08 / e10
+  4. 良かったものを model.json の sdduel_style_xl の行に書き（lora_name・strength・clip_strength）、"enabled": true にする
+     → 以後の生成はアニメ調LoRA＋本編絵柄LoRAの2枚重ね。トリガー語 sdduel style は自動で先頭に付く。
+  1回だけ試す：gen.py に --add-lora "ファイル名:強さ:トリガー"

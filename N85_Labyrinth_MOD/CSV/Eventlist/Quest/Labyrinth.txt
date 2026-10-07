@@ -1,0 +1,2 @@
+牛頭の迷宮（迷宮の主　アステリア）,Card/Labyrinth_master,クエストイベント
+牛頭の迷宮【回想バトル】,Card/Labyrinth_master,回想バトル,$$Labyrinth_挑戦回数,>=,1

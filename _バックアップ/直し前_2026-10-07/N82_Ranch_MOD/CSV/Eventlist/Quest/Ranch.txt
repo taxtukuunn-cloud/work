@@ -1,0 +1,2 @@
+ミルク牧場（牧場主　ダリア）,Card/Ranch_master,クエストイベント
+ミルク牧場【回想バトル】,Card/Ranch_master,回想バトル,$$Ranch_挑戦回数,>=,1

@@ -1,0 +1,2 @@
+学園首席の練習台（学園首席　シルヴィア）,Card/Sylvia_master,クエストイベント
+学園首席の練習台【回想バトル】,Card/Sylvia_master,回想バトル,$$Sylvia_挑戦回数,>=,1

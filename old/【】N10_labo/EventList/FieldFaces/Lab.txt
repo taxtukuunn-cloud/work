@@ -1,0 +1,1 @@
+#Lab/Lab_master.png,Card/Lab_master,フィールドイベント,場所,==,&&場所モルゲン

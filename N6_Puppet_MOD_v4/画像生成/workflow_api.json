@@ -1,0 +1,54 @@
+{
+  "3": {
+    "class_type": "UNETLoader",
+    "inputs": { "unet_name": "waiANIMA_v10Base10.safetensors", "weight_dtype": "default" }
+  },
+  "4": {
+    "class_type": "CLIPLoader",
+    "inputs": { "clip_name": "qwen_3_06b_base.safetensors", "type": "qwen_image" }
+  },
+  "5": {
+    "class_type": "VAELoader",
+    "inputs": { "vae_name": "qwen_image_vae.safetensors" }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "inputs": { "text": "%POSITIVE%", "clip": ["4", 0] }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "inputs": { "text": "%NEGATIVE%", "clip": ["4", 0] }
+  },
+  "8": {
+    "class_type": "EmptyLatentImage",
+    "inputs": { "width": "%WIDTH%", "height": "%HEIGHT%", "batch_size": "%BATCH%" }
+  },
+  "9": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": "%SEED%",
+      "steps": 40,
+      "cfg": 4.5,
+      "sampler_name": "er_sde",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "model": ["3", 0],
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "latent_image": ["8", 0]
+    }
+  },
+  "10": {
+    "class_type": "VAEDecode",
+    "inputs": { "samples": ["9", 0], "vae": ["5", 0] }
+  },
+  "11": {
+    "class_type": "SaveImage",
+    "inputs": { "images": ["10", 0], "filename_prefix": "%FILENAME%" }
+  },
+  "12": {
+    "class_type": "InspyrenetRembg",
+    "inputs": { "image": ["10", 0], "torchscript_jit": "default" },
+    "_comment": "透過背景が必要な画像（transparent_background:true）だけ使用。ノード11のfilename_prefixに _rmbg を足して保存する運用（run_mod_batch.py側で分岐）"
+  }
+}

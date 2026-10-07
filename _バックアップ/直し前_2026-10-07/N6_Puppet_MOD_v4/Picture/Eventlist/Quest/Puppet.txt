@@ -1,0 +1,2 @@
+糸繰り館（人形師　ドロテア）,Card/Puppet_master,クエストイベント
+糸繰り館【回想バトル】,Card/Puppet_master,回想バトル,$$Puppet_挑戦回数,>=,1

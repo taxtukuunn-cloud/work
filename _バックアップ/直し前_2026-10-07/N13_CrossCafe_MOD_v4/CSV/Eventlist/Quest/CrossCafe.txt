@@ -1,0 +1,2 @@
+女装喫茶「カフェ・ミュゲ」（オーナー　マリア）,Card/CrossCafe_master,クエストイベント
+女装喫茶「カフェ・ミュゲ」【回想バトル】,Card/CrossCafe_master,回想バトル,$$CrossCafe_挑戦回数,>=,1

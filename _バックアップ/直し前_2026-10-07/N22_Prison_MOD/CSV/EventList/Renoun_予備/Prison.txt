@@ -1,0 +1,1 @@
+北塔監獄の審理【回想バトル】,Card/Prison_master,回想バトル,$$Prison_挑戦回数,>=,1

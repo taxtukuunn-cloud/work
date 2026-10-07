@@ -1,0 +1,31 @@
+主人公が老けて見える対策（2026-09-27）
+======================================================
+gen.py を更新しました（全MOD共通。prompts\*.json は書き換えていません。元の gen.py は gen_年齢調整前.py）。
+
+■ 何が変わったか（撮るときに gen.py が自動で言い換える）
+・主人公の人物タグ（全MOD共通の書き方・約2,200件）
+    adult man, mature male, 25 years old, adult male body
+  → adult man, 20 years old, fresh-faced adult man, handsome soft face, smooth clear skin, adult male body
+    defined jawline → slim smooth jawline
+・場面の最後の  adult male, 20s, mature face  → adult male, early 20s, fresh face
+・先頭に入れる主人公の説明  "grown adult man in his mid twenties" → "adult man in his early twenties with a fresh smooth handsome face"
+・女装娘の立ち絵（Oiran・Lingerie・Revue の _josou）  adult man, 20s, mature face → adult man, early 20s, fresh-faced
+・ネガティブに老け顔を追加：old man, middle-aged man, aged face, wrinkles, crow's feet, nasolabial folds, eye bags,
+  dark circles under eyes, tired face, sunken cheeks, receding hairline, 主人公の白髪・無精ひげ, beard, mustache
+・相手（女性・NH・男の娘）の年齢タグは変えていません。
+・成人であることは変わりません（幼さを防ぐネガティブは今までどおり毎回付きます）。
+
+■ 使い方
+・いつもの bat（生成.bat・生成_N31-N60.bat・一括生成_全MOD.bat など）でそのまま新方式になります。
+・主人公の年齢比較.bat … 同じシードで 新方式4枚／旧方式4枚 を撮って見比べる
+・旧方式に戻す：gen.py に --hero-age mature を付ける（例 生成.bat の代わりに手で実行）
+・撮り済みの絵を撮り直すときは、これまでどおり 生成.bat で撮り直し y（撮り済みも新しく撮る）
+
+■ まだ老けて見えるとき
+・主人公LoRA（sdduel_hero-000004）の強さを下げる：lora.json の hero の strength 0.8 → 0.6 など
+  （LoRA の学習元の顔に引っぱられている可能性。下げると主人公らしさも少し弱まる）
+・逆に幼く見えたら、gen.py の AGE_SUBS の 20 years old を 22〜24 に戻すなど
+
+■ 追記（2026-09-27）：22歳 → 20歳
+主人公の年齢指定を 20 years old にしました（プロジェクト設定の「登場人物はすべて20歳以上」の下限）。
+これより下（18歳前後に見せる方向）には寄せません。まだ老けて見える場合は、主人公LoRAの強さ（lora.json の hero strength）を下げて試してください。

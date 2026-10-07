@@ -1,0 +1,2 @@
+触手使いの魔導塔,Card/Summoner_master,クエストイベント
+触手使いの魔導塔【回想バトル】,Card/Summoner_master,回想バトル,$$Summoner_挑戦回数,>=,1

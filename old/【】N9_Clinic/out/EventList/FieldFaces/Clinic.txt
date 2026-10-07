@@ -1,0 +1,1 @@
+#Clinic/Clinic_master.png,Card/Clinic_master,フィールドイベント,場所,==,&&場所モルゲン

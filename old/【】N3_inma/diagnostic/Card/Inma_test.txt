@@ -1,0 +1,23 @@
+default
+@初期設定
+    &カード名,Inma動作テスト
+    &カード画像,F15.png
+    レベル設定,1
+    攻撃力設定,100
+    最大HP設定,1000
+    属性設定,闇属性
+    タイプ設定,悪魔
+    性別設定,女
+    レアリティ設定,N
+
+@フィールドイベント
+    背景変更,&&街背景
+    話者,自分,true
+    説明,テスト1：イベントは正しく呼ばれています。
+    画像,#Inma/Inma_master.png,1
+    説明,テスト2：いまリリムの立ち絵が見えていれば、画像の置き場所は正しいです。\n見えなければ Picture/Inma/Inma_master.png の場所を確認してください。
+    画像全削除
+    説明,テスト3：これからN3のデッキで対戦を始めます。\n対戦画面に進めばカードの読み込みは正常です。
+    デッキ設定,Inma_mons_e1,Inma_mons_e1,Inma_mons_e1,Inma_mons_e2,Inma_mons_e2,Inma_mons_e2,Inma_mons_e3,Inma_mons_e3,Inma_mons_e3,Inma_mons_boss,Inma_magic_1,Inma_magic_1,Inma_magic_2,Inma_magic_2,Inma_magic_3,Inma_magic_3,Inma_magic_4,Inma_magic_4,Inma_magic_5,Inma_magic_5
+    デッキ報酬設定,0,0,0
+    バトル開始,&&街背景,&&戦闘BGM

@@ -1,0 +1,7 @@
+{
+  "on": true,
+  "scope": "lose",
+  "pos": "dim lighting, warm lighting, soft lighting, bokeh, depth of field, blurry background, sweat, shiny skin, glistening skin, heavy breathing, visible breath, steam, blush, half-closed eyes, wet eyes, parted lips",
+  "neg": "flat lighting, harsh lighting, overexposed, white background, simple background",
+  "memo": ""
+}

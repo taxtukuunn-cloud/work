@@ -1,0 +1,1 @@
+#CrossCafe/CrossCafe_master.png,Card/CrossCafe_master,フィールドイベント,場所,==,&&場所モルゲン

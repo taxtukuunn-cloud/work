@@ -1,0 +1,4 @@
+default
+MOD：月影の夜会（メスホモ堕ち）,Card/Yakai_master,クエストイベント,$$Yakai_クリア,==,0
+MOD：月影の夜会 画像テスト,Card/Yakai_imgtest,クエストイベント,$$Yakai_クリア,==,0
+MOD：月影の夜会【回想バトル】,Card/Yakai_master,回想バトル

@@ -1,0 +1,6 @@
+{
+  "note": "この画像生成フォルダ専用のLoRA設定（Lora用\\lora_settings.json とは別）。enabled を false にすると外れる",
+  "style": {"enabled": true, "lora_name": "sdduel_style-000006.safetensors", "strength": 0.6, "trigger": "sdduel style"},
+  "hero":  {"enabled": true, "lora_name": "sdduel_hero-000004.safetensors", "strength": 0.8, "trigger": "sdduel_hero",
+            "when_text_contains": "navy"}
+}

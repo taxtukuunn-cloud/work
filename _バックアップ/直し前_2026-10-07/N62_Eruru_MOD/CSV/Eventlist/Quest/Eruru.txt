@@ -1,0 +1,2 @@
+格下のF級マスター（エルル）,Card/Eruru_master,クエストイベント
+格下のF級マスター【回想バトル】,Card/Eruru_master,回想バトル,$$Eruru_挑戦回数,>=,1

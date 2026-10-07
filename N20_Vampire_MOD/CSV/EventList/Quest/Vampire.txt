@@ -1,0 +1,2 @@
+吸血鬼の館,Card/Vampire_master,クエストイベント
+吸血鬼の館【回想バトル】,Card/Vampire_master,回想バトル,$$Vampire_挑戦回数,>=,1

@@ -1,0 +1,8 @@
+default
+@初期設定
+    &カード名,♥メス堕ち♥
+    &カード画像,#Rosetta/Rosetta_complete.png
+
+    属性設定,闇属性
+    タイプ設定,装備魔法
+    レアリティ設定,R

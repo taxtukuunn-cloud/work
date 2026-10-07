@@ -1,0 +1,2 @@
+美脚塔（双璧の貴婦人）,Card/Bikyaku_master,クエストイベント
+美脚塔【回想バトル】,Card/Bikyaku_master,回想バトル,$$Bikyaku_挑戦回数,>=,1

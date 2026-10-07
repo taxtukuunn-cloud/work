@@ -1,0 +1,18 @@
+{
+  "input": "start.png",
+  "frames": 4,
+  "seconds": 0.3,
+  "ease": true,
+  "regions": [
+    {
+      "memo": "腰",
+      "cx": 966,
+      "cy": 630,
+      "rx": 185,
+      "ry": 148,
+      "dx": 40,
+      "dy": -28
+    }
+  ],
+  "mosaic": []
+}
