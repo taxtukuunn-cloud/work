@@ -1,0 +1,2 @@
+魔の研究者たち（塔の主　アドラメレク）,Card/Research_master,クエストイベント
+魔の研究者たち【回想バトル】,Card/Research_master,回想バトル,$$Research_挑戦回数,>=,1
