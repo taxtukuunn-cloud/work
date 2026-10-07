@@ -1,0 +1,2 @@
+破戒種の島（破戒の武人　オメガ・デス）,Card/Hakai_master,クエストイベント
+破戒種の島【回想バトル】,Card/Hakai_master,回想バトル,$$Hakai_挑戦回数,>=,1
