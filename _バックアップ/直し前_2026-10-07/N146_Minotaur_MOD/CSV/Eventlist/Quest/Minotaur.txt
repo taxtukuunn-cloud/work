@@ -1,0 +1,2 @@
+ミノタウロスの迷宮（迷宮の主　牛魔王）,Card/Minotaur_master,クエストイベント
+ミノタウロスの迷宮【回想バトル】,Card/Minotaur_master,回想バトル,$$Minotaur_挑戦回数,>=,1
