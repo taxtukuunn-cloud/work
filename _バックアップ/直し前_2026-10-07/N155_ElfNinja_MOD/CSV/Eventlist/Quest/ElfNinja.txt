@@ -1,0 +1,2 @@
+エルフの里とくのいち軍団（里の姫　エルフ姫）,Card/ElfNinja_master,クエストイベント
+エルフの里とくのいち軍団【回想バトル】,Card/ElfNinja_master,回想バトル,$$ElfNinja_挑戦回数,>=,1
