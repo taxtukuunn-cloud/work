@@ -1,0 +1,2 @@
+淫界の王座（淫魔の女王　ティラミス）,Card/Daydream_master,クエストイベント
+淫界の王座【回想バトル】,Card/Daydream_master,回想バトル,$$Daydream_挑戦回数,>=,1
