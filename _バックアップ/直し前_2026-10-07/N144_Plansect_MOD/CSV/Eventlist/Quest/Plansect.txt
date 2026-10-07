@@ -1,0 +1,2 @@
+世界樹とプランセクト村（花の女王　クィーンアルラウネ）,Card/Plansect_master,クエストイベント
+世界樹とプランセクト村【回想バトル】,Card/Plansect_master,回想バトル,$$Plansect_挑戦回数,>=,1
