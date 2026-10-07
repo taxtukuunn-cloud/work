@@ -1,0 +1,2 @@
+異世界の魔王城（黒の三将筆頭　黒華）,Card/BlackCastle_master,クエストイベント
+異世界の魔王城【回想バトル】,Card/BlackCastle_master,回想バトル,$$BlackCastle_挑戦回数,>=,1
