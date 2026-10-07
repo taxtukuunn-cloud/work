@@ -1,0 +1,2 @@
+アマゾネスの部族（女族長　オルテア）,Card/Amazon_master,クエストイベント
+アマゾネスの部族【回想バトル】,Card/Amazon_master,回想バトル,$$Amazon_挑戦回数,>=,1

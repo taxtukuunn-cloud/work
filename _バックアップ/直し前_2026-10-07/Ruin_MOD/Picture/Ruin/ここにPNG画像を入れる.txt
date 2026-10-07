@@ -1,0 +1,1 @@
+tools/candidates の生成画像を、Ruin_prompts.json の name と同じ名前（.png）でここに置いてください。
