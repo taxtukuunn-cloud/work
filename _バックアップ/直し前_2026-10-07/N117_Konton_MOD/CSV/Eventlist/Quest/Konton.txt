@@ -1,0 +1,2 @@
+混沌種の劇場（プロデューサー　カーテンコール）,Card/Konton_master,クエストイベント
+混沌種の劇場【回想バトル】,Card/Konton_master,回想バトル,$$Konton_挑戦回数,>=,1
