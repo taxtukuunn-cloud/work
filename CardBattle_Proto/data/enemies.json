@@ -1,0 +1,239 @@
+[
+  {
+    "id": "milda",
+    "name": "ミルダ",
+    "title": "酒場のサキュバス",
+    "hp": 34,
+    "drain_heal": 5,
+    "shape": "succubus",
+    "color": "#e07aa8",
+    "hair": "#f4c1d9",
+    "moves": {
+      "sweet": {
+        "name": "甘い言葉",
+        "effects": [
+          {
+            "op": "arouse",
+            "val": 28
+          },
+          {
+            "op": "add_card",
+            "card": "whisper",
+            "n": 1,
+            "to": "draw"
+          }
+        ]
+      },
+      "palm": {
+        "name": "手のひらで包む",
+        "effects": [
+          {
+            "op": "arouse",
+            "val": 36
+          }
+        ]
+      },
+      "ear": {
+        "name": "耳元で囁く",
+        "effects": [
+          {
+            "op": "arouse",
+            "val": 18
+          },
+          {
+            "op": "add_card",
+            "card": "charm",
+            "n": 2,
+            "to": "discard"
+          }
+        ]
+      },
+      "pat": {
+        "name": "よしよし",
+        "effects": [
+          {
+            "op": "status",
+            "id": "sensitive",
+            "n": 1
+          },
+          {
+            "op": "arouse",
+            "val": 24
+          }
+        ]
+      }
+    },
+    "pattern": [
+      "sweet",
+      "palm",
+      "ear",
+      "palm",
+      "pat"
+    ]
+  },
+  {
+    "id": "serpena",
+    "name": "セルペナ",
+    "title": "沼のラミア",
+    "hp": 44,
+    "drain_heal": 6,
+    "shape": "lamia",
+    "color": "#5fae8b",
+    "hair": "#2e5e4e",
+    "moves": {
+      "coil": {
+        "name": "巻きつく",
+        "effects": [
+          {
+            "op": "arouse",
+            "val": 22
+          },
+          {
+            "op": "status",
+            "id": "bound",
+            "n": 1
+          }
+        ]
+      },
+      "squeeze": {
+        "name": "締めつける",
+        "effects": [
+          {
+            "op": "arouse",
+            "val": 34
+          }
+        ]
+      },
+      "tongue": {
+        "name": "舌先でなぞる",
+        "effects": [
+          {
+            "op": "arouse",
+            "val": 16
+          },
+          {
+            "op": "status",
+            "id": "sensitive",
+            "n": 2
+          }
+        ]
+      },
+      "embrace": {
+        "name": "胸に抱き込む",
+        "effects": [
+          {
+            "op": "arouse",
+            "val": 24
+          },
+          {
+            "op": "add_card",
+            "card": "fluster",
+            "n": 1,
+            "to": "draw"
+          }
+        ]
+      }
+    },
+    "pattern": [
+      "coil",
+      "tongue",
+      "squeeze",
+      "embrace",
+      "squeeze"
+    ]
+  },
+  {
+    "id": "verza",
+    "name": "ヴェルザ",
+    "title": "淫魔の女王",
+    "hp": 84,
+    "drain_heal": 8,
+    "shape": "queen",
+    "color": "#8e5bd6",
+    "hair": "#1d1630",
+    "moves": {
+      "appraise": {
+        "name": "品定め",
+        "effects": [
+          {
+            "op": "status",
+            "id": "sensitive",
+            "n": 2
+          },
+          {
+            "op": "add_card",
+            "card": "charm",
+            "n": 2,
+            "to": "draw"
+          }
+        ]
+      },
+      "caress": {
+        "name": "指先の愛撫",
+        "effects": [
+          {
+            "op": "arouse",
+            "val": 13,
+            "hits": 2
+          }
+        ]
+      },
+      "kiss": {
+        "name": "女王の口づけ",
+        "effects": [
+          {
+            "op": "arouse",
+            "val": 22
+          },
+          {
+            "op": "heal",
+            "val": 8
+          }
+        ]
+      },
+      "prepare": {
+        "name": "ベルトを締める",
+        "effects": [],
+        "telegraph": "次の一手が来る……"
+      },
+      "behind": {
+        "name": "後ろから",
+        "effects": [
+          {
+            "op": "arouse",
+            "val": 42
+          }
+        ]
+      },
+      "command": {
+        "name": "跪きなさい",
+        "effects": [
+          {
+            "op": "arouse",
+            "val": 18
+          },
+          {
+            "op": "add_card",
+            "card": "fluster",
+            "n": 2,
+            "to": "draw"
+          }
+        ]
+      }
+    },
+    "pattern": [
+      "appraise",
+      "caress",
+      "kiss",
+      "prepare",
+      "behind"
+    ],
+    "pattern2": [
+      "command",
+      "caress",
+      "prepare",
+      "behind",
+      "kiss"
+    ]
+  }
+]

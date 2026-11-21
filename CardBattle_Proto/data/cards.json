@@ -1,0 +1,27 @@
+[
+  {"id": "strike", "name": "斬撃", "cost": 1, "type": "attack", "rarity": "starter", "text": "余裕を6削る", "effects": [{"op": "damage", "val": 6}]},
+  {"id": "endure", "name": "我慢", "cost": 1, "type": "skill", "rarity": "starter", "text": "忍耐+5", "effects": [{"op": "block", "val": 5}]},
+  {"id": "breath", "name": "深呼吸", "cost": 1, "type": "skill", "rarity": "starter", "text": "興奮を10下げる", "effects": [{"op": "calm", "val": 10}]},
+  {"id": "avert", "name": "目を逸らす", "cost": 0, "type": "skill", "rarity": "starter", "text": "手札の魅了と昂ぶりを除外。忍耐+2", "effects": [{"op": "cleanse"}, {"op": "block", "val": 2}]},
+
+  {"id": "heavy", "name": "強撃", "cost": 2, "type": "attack", "rarity": "common", "text": "余裕を14削る", "effects": [{"op": "damage", "val": 14}]},
+  {"id": "double", "name": "連撃", "cost": 1, "type": "attack", "rarity": "common", "text": "余裕を3削る×2", "effects": [{"op": "damage", "val": 3, "hits": 2}]},
+  {"id": "counter", "name": "反撃の構え", "cost": 1, "type": "attack", "rarity": "common", "text": "余裕を5削る。忍耐+4", "effects": [{"op": "damage", "val": 5}, {"op": "block", "val": 4}]},
+  {"id": "prayer", "name": "祈り", "cost": 1, "type": "skill", "rarity": "common", "text": "忍耐+8。興奮を4下げる", "effects": [{"op": "block", "val": 8}, {"op": "calm", "val": 4}]},
+  {"id": "holywater", "name": "聖水", "cost": 1, "type": "skill", "rarity": "common", "exhaust": true, "text": "興奮を22下げる。使うと除外", "effects": [{"op": "calm", "val": 22}]},
+  {"id": "focus", "name": "集中", "cost": 0, "type": "skill", "rarity": "common", "text": "2枚引く", "effects": [{"op": "draw", "val": 2}]},
+  {"id": "coldwater", "name": "冷水", "cost": 0, "type": "skill", "rarity": "common", "exhaust": true, "text": "興奮を6下げ、敏感を消す。使うと除外", "effects": [{"op": "calm", "val": 6}, {"op": "clear_status", "id": "sensitive"}]},
+  {"id": "shakeoff", "name": "振り払う", "cost": 0, "type": "skill", "rarity": "common", "text": "手札の魅了と昂ぶりを除外。忍耐+4", "effects": [{"op": "cleanse"}, {"op": "block", "val": 4}]},
+  {"id": "taunt", "name": "挑発", "cost": 1, "type": "skill", "rarity": "common", "text": "相手を動揺2にする（削りが1.5倍）", "effects": [{"op": "enemy_status", "id": "shaken", "n": 2}]},
+  {"id": "cold_eyes", "name": "冷めた目", "cost": 1, "type": "skill", "rarity": "rare", "text": "相手を白け2にする（誘惑が0.6倍）。忍耐+3", "effects": [{"op": "enemy_status", "id": "weak", "n": 2}, {"op": "block", "val": 3}]},
+  {"id": "accept", "name": "受け入れる", "cost": 0, "type": "skill", "rarity": "common", "text": "気力+2。興奮+8", "effects": [{"op": "energy", "val": 2}, {"op": "arousal", "val": 8}]},
+  {"id": "gaze", "name": "見惚れる", "cost": 0, "type": "skill", "rarity": "common", "text": "気力+1。2枚引く。興奮+10", "effects": [{"op": "energy", "val": 1}, {"op": "draw", "val": 2}, {"op": "arousal", "val": 10}]},
+
+  {"id": "allout", "name": "渾身の一撃", "cost": 2, "type": "attack", "rarity": "rare", "text": "余裕を22削る。興奮+8", "effects": [{"op": "damage", "val": 22}, {"op": "arousal", "val": 8}]},
+  {"id": "iron", "name": "鋼の意志", "cost": 2, "type": "power", "rarity": "rare", "text": "この戦闘中、毎ターン忍耐+4", "effects": [{"op": "status", "id": "iron", "n": 4}]},
+  {"id": "sharpen", "name": "精神統一", "cost": 1, "type": "skill", "rarity": "rare", "text": "次の攻撃の削り+8。1枚引く", "effects": [{"op": "status", "id": "focus", "n": 8}, {"op": "draw", "val": 1}]},
+
+  {"id": "charm", "name": "魅了", "cost": 0, "type": "status", "unplayable": true, "text": "使えない。引いた時 興奮+4。ターン終了時に手札にあると興奮+2", "on_draw": [{"op": "arousal", "val": 4}], "end_in_hand": [{"op": "arousal", "val": 2}]},
+  {"id": "fluster", "name": "昂ぶり", "cost": 0, "type": "status", "unplayable": true, "ethereal": true, "text": "使えない。引いた時 気力-1。ターン終了時に消える", "on_draw": [{"op": "energy", "val": -1}]},
+  {"id": "whisper", "name": "甘い囁き", "cost": 0, "type": "status", "exhaust": true, "text": "耳を傾ける：1枚引く。興奮+6。使うと除外", "effects": [{"op": "draw", "val": 1}, {"op": "arousal", "val": 6}]}
+]
