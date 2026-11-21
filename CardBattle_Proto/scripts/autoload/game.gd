@@ -7,14 +7,16 @@ const INTENSITY_MULT := [0.75, 1.0, 1.3]
 const TEXT_SPEED_NAMES := ["ゆっくり", "ふつう", "はやい", "一瞬"]
 const TEXT_SPEED_CPS := [25.0, 50.0, 100.0, 0.0]
 
-var settings := {"intensity": 1, "text_speed": 1, "unlock_all": false, "volume": 8, "swap_ab": false}
+var settings := {"intensity": 1, "text_speed": 1, "unlock_all": false, "volume": 8, "music_volume": 6, "swap_ab": false}
 var tutorial_done := false
 var unlocked: Dictionary = {}
 var lose_count: Dictionary = {}
 
-# 今回の挑戦
+# 今回の挑戦（保存して「つづきから」で戻れる。桜井 #248 / #116）
 var deck: Array = []
 var stage := 0
+var max_reached := 0  # たどり着いたいちばん先の相手（相手を選ぶ、に使う）
+var _lock_until := 0
 
 ## 最後に触ったのがコントローラーなら true。操作の案内の表示を切り替える。
 signal input_mode_changed(joy: bool)
@@ -121,6 +123,30 @@ func _add_axis(action: String, axis: int, value: float) -> void:
 func new_run() -> void:
 	deck = DB.starter_deck.duplicate()
 	stage = 0
+	save()
+
+
+func has_run() -> bool:
+	return deck.size() > 0 and stage < DB.enemies.size()
+
+
+func advance_stage() -> void:
+	stage += 1
+	max_reached = maxi(max_reached, mini(stage, DB.enemies.size() - 1))
+	if stage >= DB.enemies.size():
+		deck = []
+	save()
+
+
+## 画面を切り替えた直後の入力を止める（連打が次の画面に流れないように）
+func lock_input(sec: float = 0.25) -> void:
+	_lock_until = Time.get_ticks_msec() + int(sec * 1000.0)
+	get_viewport().gui_disable_input = true
+	get_tree().create_timer(sec).timeout.connect(func(): get_viewport().gui_disable_input = false)
+
+
+func input_locked() -> bool:
+	return Time.get_ticks_msec() < _lock_until
 
 
 func intensity_mult() -> float:
@@ -166,7 +192,7 @@ func gallery_count() -> Vector2i:
 	for e in DB.enemies:
 		for k in ["_lose1", "_lose2", "_win"]:
 			total += 1
-			if unlocked.has(e["id"] + k):
+			if is_unlocked(e["id"] + k):
 				seen += 1
 	return Vector2i(seen, total)
 
@@ -182,6 +208,9 @@ func load_save() -> void:
 	unlocked = cf.get_value("progress", "unlocked", {})
 	lose_count = cf.get_value("progress", "lose_count", {})
 	tutorial_done = cf.get_value("progress", "tutorial_done", false)
+	deck = cf.get_value("run", "deck", [])
+	stage = cf.get_value("run", "stage", 0)
+	max_reached = cf.get_value("run", "max_reached", 0)
 
 
 func save() -> void:
@@ -193,4 +222,7 @@ func save() -> void:
 	cf.set_value("progress", "unlocked", unlocked)
 	cf.set_value("progress", "lose_count", lose_count)
 	cf.set_value("progress", "tutorial_done", tutorial_done)
+	cf.set_value("run", "deck", deck)
+	cf.set_value("run", "stage", stage)
+	cf.set_value("run", "max_reached", max_reached)
 	cf.save(SAVE_PATH)

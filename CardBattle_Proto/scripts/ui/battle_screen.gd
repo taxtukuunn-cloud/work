@@ -66,6 +66,7 @@ func _ready() -> void:
 	_refresh()
 	_focus_hand(0)
 	_update_tutorial()
+	Sfx.music("battle_%d" % battle.tier())
 	Game.input_mode_changed.connect(func(_j):
 		_update_hints()
 		_update_tutorial())
@@ -142,7 +143,7 @@ func _build() -> void:
 
 	# 主人公の情報
 	player_panel = PanelContainer.new()
-	UIKit.place(player_panel, Vector2(30, 20), Vector2(410, 214))
+	UIKit.place(player_panel, Vector2(30, 14), Vector2(410, 228))
 	root.add_child(player_panel)
 	var pv := VBoxContainer.new()
 	pv.add_theme_constant_override("separation", 4)
@@ -157,14 +158,26 @@ func _build() -> void:
 	var th := HBoxContainer.new()
 	pv.add_child(th)
 	th.add_child(UIKit.label("興奮", 14, UIKit.SUB))
-	tier_label = UIKit.label("", 16, UIKit.PINK, true)
+	tier_label = UIKit.label("", 22, UIKit.PINK, true)
 	tier_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	tier_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	th.add_child(tier_label)
 	var pb := Control.new()
 	pb.custom_minimum_size = Vector2(0, 34)
 	pv.add_child(pb)
+	# 危ない帯をひと目で（桜井 #145 / #252）：背面に3色の帯を敷き、下に倍率を書く
+	var ths: Array = DB.params["【高揚が上がる興奮】"]
+	var edges := [0.0, float(ths[0]) / battle.climax_at(), float(ths[1]) / battle.climax_at(), 1.0]
+	for i in 3:
+		var band := ColorRect.new()
+		band.color = Color(TIER_COLORS[i], 0.16 + 0.08 * i)
+		band.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		band.anchor_left = edges[i]
+		band.anchor_right = edges[i + 1]
+		band.anchor_bottom = 1.0
+		pb.add_child(band)
 	p_bar = UIKit.bar(TIER_COLORS[0])
+	p_bar.add_theme_stylebox_override("background", UIKit.box(Color(0, 0, 0, 0), UIKit.LINE, 6, 1, 0))
 	p_bar.max_value = battle.climax_at()
 	p_bar.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	pb.add_child(p_bar)
@@ -179,6 +192,15 @@ func _build() -> void:
 		tick.offset_right = 2
 		pb.add_child(tick)
 	p_bar_label = _bar_text(pb, 19)
+	var scale_row := Control.new()
+	scale_row.custom_minimum_size = Vector2(0, 16)
+	pv.add_child(scale_row)
+	for i in 3:
+		var sl := UIKit.label("×%s %s" % [str(DB.params["【高揚の削りの倍率】"][i]), DB.params["【高揚の段階の名前】"][i]], 12, TIER_COLORS[i], true)
+		sl.anchor_left = edges[i]
+		sl.anchor_right = edges[i + 1]
+		sl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		scale_row.add_child(sl)
 	var row := HBoxContainer.new()
 	row.add_theme_constant_override("separation", 24)
 	pv.add_child(row)
@@ -193,7 +215,7 @@ func _build() -> void:
 
 	# 記録
 	var lp := PanelContainer.new()
-	UIKit.place(lp, Vector2(30, 244), Vector2(410, 138))
+	UIKit.place(lp, Vector2(30, 250), Vector2(410, 132))
 	lp.clip_contents = true
 	root.add_child(lp)
 	log_box = VBoxContainer.new()
@@ -219,10 +241,11 @@ func _build() -> void:
 	# 案内（最初の戦闘だけ。桜井 #085 自然なチュートリアル）
 	tutorial_panel = PanelContainer.new()
 	tutorial_panel.add_theme_stylebox_override("panel", UIKit.box(Color(0.2, 0.14, 0.02, 0.92), UIKit.GOLD, 8, 2, 8))
-	UIKit.place(tutorial_panel, Vector2(840, 388), Vector2(410, 70))
+	# 記録欄の場所に重ねる（手札の浮き上がりと重ならないように）
+	UIKit.place(tutorial_panel, Vector2(30, 250), Vector2(410, 132))
 	tutorial_panel.visible = false
 	root.add_child(tutorial_panel)
-	tutorial_label = UIKit.label("", 16, UIKit.GOLD, true)
+	tutorial_label = UIKit.label("", 17, UIKit.GOLD, true)
 	tutorial_label.autowrap_mode = TextServer.AUTOWRAP_ARBITRARY
 	tutorial_label.custom_minimum_size = Vector2(390, 0)
 	tutorial_panel.add_child(tutorial_label)
@@ -334,6 +357,8 @@ func _refresh_player() -> void:
 	_tween_bar(p_bar, a)
 	p_bar_label.text = "%d / %d" % [a, battle.climax_at()]
 	var t := battle.tier()
+	if battle.result == "":
+		Sfx.music("battle_%d" % t)
 	p_bar.add_theme_stylebox_override("fill", UIKit.box(TIER_COLORS[t], Color(0, 0, 0, 0), 6, 0, 0))
 	tier_label.text = "高揚：%s　攻撃×%s" % [battle.tier_name(), str(battle.tier_mult())]
 	tier_label.add_theme_color_override("font_color", TIER_COLORS[t])
@@ -346,6 +371,7 @@ func _refresh_player() -> void:
 	p_status_label.text = battle.status_text(battle.p_status)
 	e_bar_label.text = "%d / %d" % [battle.e_hp, battle.e_max]
 	_tween_bar(e_bar, battle.e_hp)
+	portrait.set_hp_ratio(float(battle.e_hp) / maxf(1.0, battle.e_max))
 
 
 func _move_arouses(mv: Dictionary) -> bool:
@@ -384,8 +410,18 @@ func _refresh_hand() -> void:
 		v.set_live(_live_text(v.def))
 
 
-## 攻撃カードに「今なら何点削れるか」を出す
+## 攻撃カードに「今なら何点削れるか」、興奮が上がるカードに「どこまで上がるか」を出す
 func _live_text(d: Dictionary) -> String:
+	var up := 0
+	for eff in d.get("effects", []):
+		if eff.get("op", "") == "arousal":
+			up += int(eff["val"])
+	if up > 0:
+		var after := battle.arousal + up
+		if after >= battle.climax_at():
+			return "使うと絶頂する！"
+		if battle.tier_of(after) > battle.tier():
+			return "→ %s に上がる" % battle.tier_name(battle.tier_of(after))
 	var total := 0
 	var base := 0
 	var first := true
@@ -420,6 +456,8 @@ func _focus_hand(i: int) -> void:
 # ================================================================ 操作
 
 func _unhandled_input(event: InputEvent) -> void:
+	if Game.input_locked():
+		return
 	if OS.is_debug_build() and event is InputEventKey and event.pressed and not busy:
 		if _debug_key(event.keycode):
 			accept_event()
@@ -485,7 +523,8 @@ func _on_card_activated(view: CardView) -> void:
 	busy = true
 	focus_index = idx
 	Sfx.play("play")
-	await view.fly_away().finished
+	view.fly_away()
+	await _frames(3)
 	battle.play(idx)
 	await _play_events(battle.take_events())
 	_refresh()
@@ -528,8 +567,10 @@ func _check_end() -> bool:
 	if battle.result == "win":
 		await _win_fx()
 	elif battle.surrendered:
+		Sfx.play("arouse_big")
 		await _banner("……おねがい、します……", UIKit.PINK, 0.8)
 	else:
+		Sfx.play("arouse_big")
 		await _banner("もう……我慢できない……", UIKit.PINK, 1.0)
 	if tutorial_step >= 0:
 		Game.tutorial_done = true
@@ -550,6 +591,7 @@ func _open_confirm() -> void:
 	dialog_open = true
 	Sfx.play("confirm")
 	confirm = Control.new()
+	confirm.z_index = 20
 	confirm.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var dim := ColorRect.new()
 	dim.color = Color(0, 0, 0, 0.6)
@@ -604,7 +646,11 @@ func _close_confirm() -> void:
 func _open_deck() -> void:
 	deck_open = true
 	Sfx.play("confirm")
+	var fo := get_viewport().gui_get_focus_owner()
+	if fo:
+		fo.release_focus()
 	deck_panel = Control.new()
+	deck_panel.z_index = 20
 	deck_panel.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var dim := ColorRect.new()
 	dim.color = Color(0, 0, 0, 0.7)
@@ -653,10 +699,12 @@ func _log(text: String, col: Color = UIKit.TEXT) -> void:
 	if text == "":
 		return
 	var l := UIKit.label(text, 15, col)
-	l.autowrap_mode = TextServer.AUTOWRAP_ARBITRARY
+	l.clip_text = true
+	l.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
 	l.custom_minimum_size = Vector2(385, 0)
+	l.tooltip_text = text
 	log_box.add_child(l)
-	while log_box.get_child_count() > 4 or (log_box.get_child_count() > 1 and log_box.get_combined_minimum_size().y > 118):
+	while log_box.get_child_count() > 5:
 		var old := log_box.get_child(0)
 		log_box.remove_child(old)
 		old.queue_free()
@@ -732,15 +780,22 @@ func _play_events(evs: Array) -> void:
 		match e["type"]:
 			"enemy_damage":
 				var v := int(e["val"])
+				var t := int(e.get("tier", 0))
 				var big := v >= 15
+				var stop := clampf(4.0 + v / 2.0 + t * 2.0, 4.0, 20.0)
 				# ヒットストップ（桜井 #003/#047）：強いほど長く止める。受けた側を大きく、与えた側を小さく震わせる
-				portrait.hit(0.6 + v / 14.0)
-				HitMark.spawn(fx_layer, _enemy_center() + Vector2(randf_range(-50, 50), randf_range(-40, 30)), 44.0 + v * 1.6, TIER_COLORS[int(e.get("tier", 0))].lightened(0.3))
-				Sfx.play("hit_big" if big else "hit", 1.0 + randf_range(-0.05, 0.05))
-				_shake(1 if big else 0)
-				_float("-%d" % v, _enemy_center() + Vector2(randf_range(-40, 40), -60), UIKit.TEXT, 46 if big else 36)
+				portrait.hit(0.6 + v / 14.0 + t * 0.2, stop)
+				# 高揚で強くなったことを、ヒットの瞬間に見せる（桜井 #130 効果に見合った派手さ）
+				HitMark.spawn(fx_layer, _enemy_center() + Vector2(randf_range(-50, 50), randf_range(-40, 30)), (44.0 + v * 1.6) * (1.0 + 0.35 * t), TIER_COLORS[t].lightened(0.3))
+				Sfx.play("hit_big" if (big or t >= 2) else "hit", 1.0 + randf_range(-0.05, 0.05))
+				_shake(mini(2, t + (1 if big else 0)))
+				var txt := "-%d" % v
+				if t > 0:
+					txt += " ×%s" % str(battle.tier_mult(t))
+				_float(txt, _enemy_center() + Vector2(randf_range(-40, 40), -60), UIKit.TEXT if t == 0 else TIER_COLORS[t].lightened(0.25), 36 + t * 8 + (8 if big else 0))
+				_shake_panel(player_panel, 2)
 				_refresh_player()
-				await _frames(clampf(4.0 + v / 2.0, 4.0, 16.0))
+				await _frames(stop)
 				await _frames(4)
 			"block":
 				_float("忍耐+%d" % int(e["val"]), Vector2(330, 180), UIKit.BLUE, 24)
@@ -808,7 +863,7 @@ func _play_events(evs: Array) -> void:
 
 ## 責めを受けたときにパネルを縦に小さく揺らす（受けた側を震わせる）
 func _shake_panel(p: Control, v: int) -> void:
-	var base := Vector2(30, 20)
+	var base := Vector2(30, 14)
 	var amp := clampf(v / 4.0, 2.0, 9.0)
 	var tw := create_tween()
 	for i in 6:

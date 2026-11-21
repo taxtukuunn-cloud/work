@@ -38,6 +38,16 @@ func joy(button: JoyButton, hold: float = 0.05) -> void:
 	await wait(0.08)
 
 
+## シーンが終わるまで決定を押し続ける
+func through_scene(limit: int = 60) -> void:
+	await wait(0.35)
+	for i in limit:
+		if not (main().current is SceneScreen):
+			return
+		await joy(JOY_BUTTON_A)
+		await wait(0.02)
+
+
 func main() -> Node:
 	return get_tree().root.get_node("Main")
 
@@ -64,9 +74,7 @@ func _run() -> void:
 	await joy(JOY_BUTTON_A)  # はじめから
 	await wait(0.6)
 	await shot("導入の会話")
-	for i in 4:
-		await joy(JOY_BUTTON_A)  # 文字送りを一気に出す
-		await joy(JOY_BUTTON_A)  # 次へ
+	await through_scene()
 	await wait(0.8)
 	await shot("戦闘の開始と案内")
 	await joy(JOY_BUTTON_DPAD_RIGHT)
@@ -116,18 +124,18 @@ func _run() -> void:
 		await joy(JOY_BUTTON_A)
 	await wait(1.0)
 	await shot("見送りのシーン")
-	for i in 12:
-		await joy(JOY_BUTTON_A)
+	await through_scene()
 	await wait(0.5)
 	await shot("報酬と回想の知らせ")
 	await joy(JOY_BUTTON_DPAD_RIGHT)
 	await wait(0.2)
 	await joy(JOY_BUTTON_A)
-	await wait(0.6)
-	for i in 10:
-		await joy(JOY_BUTTON_A)
+	await through_scene()
 	await wait(1.0)
 	await shot("2戦目")
+	battle().battle.arousal = 45
+	battle()._refresh()
+	await wait(0.3)
 	await joy(JOY_BUTTON_BACK)  # おねだり
 	await wait(0.4)
 	await shot("おねだりの確認")
@@ -136,8 +144,7 @@ func _run() -> void:
 	await joy(JOY_BUTTON_A)
 	await wait(2.2)
 	await shot("敗北シーン")
-	for i in 30:
-		await joy(JOY_BUTTON_A)
+	await through_scene()
 	await wait(0.6)
 	await shot("敗北のあと")
 	# 2回負けたことにして、救済の選択肢を見る
@@ -154,6 +161,15 @@ func _run() -> void:
 	main().show_settings()
 	await wait(0.6)
 	await shot("設定")
+	Game.max_reached = 2
+	Game.deck = DB.starter_deck.duplicate()
+	Game.stage = 1
+	main().show_title()
+	await wait(0.6)
+	await shot("タイトル（つづきから）")
+	main().show_select()
+	await wait(0.6)
+	await shot("相手を選ぶ")
 	# ボス戦の見た目
 	Game.stage = 2
 	main()._start_battle()

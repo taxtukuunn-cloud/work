@@ -89,6 +89,101 @@ func _make(length: float, fn: Callable) -> AudioStreamWAV:
 	return s
 
 
+# ================================================================ 音楽・環境音（桜井 #069 / #202）
+# 戦闘は心音のループで、高揚の段階でテンポが上がる。シーンは場所ごとの環境音。
+
+var _music_a: AudioStreamPlayer
+var _music_b: AudioStreamPlayer
+var _music_name := ""
+var _loops: Dictionary = {}
+
+
+func _music_players() -> void:
+	if _music_a:
+		return
+	_music_a = AudioStreamPlayer.new()
+	_music_b = AudioStreamPlayer.new()
+	add_child(_music_a)
+	add_child(_music_b)
+
+
+func _music_db() -> float:
+	return -12.0 + linear_to_db(maxf(0.001, float(Game.settings.get("music_volume", 6)) / 10.0))
+
+
+func refresh_music_volume() -> void:
+	if _music_a and _music_a.playing:
+		_music_a.volume_db = _music_db()
+
+
+## 名前で音楽を切り替える（同じなら何もしない）。0.4秒で入れ替える。
+func music(name: String) -> void:
+	_music_players()
+	if name == _music_name:
+		return
+	_music_name = name
+	var old := _music_a
+	_music_a = _music_b
+	_music_b = old
+	if old.playing:
+		var tw := create_tween()
+		tw.tween_property(old, "volume_db", -60.0, 0.4)
+		tw.tween_callback(old.stop)
+	if name == "":
+		return
+	if not _loops.has(name):
+		_loops[name] = _make_loop(name)
+	_music_a.stream = _loops[name]
+	_music_a.volume_db = -60.0
+	_music_a.play()
+	create_tween().tween_property(_music_a, "volume_db", _music_db(), 0.4)
+
+
+func _make_loop(name: String) -> AudioStreamWAV:
+	var s: AudioStreamWAV
+	match name:
+		"battle_0", "battle_1", "battle_2":
+			var bpm: float = [70.0, 95.0, 130.0][int(name.right(1))]
+			var beat := 60.0 / bpm
+			var length := beat * 8.0
+			var root: float = [110.0, 123.47, 130.81][int(name.right(1))]
+			s = _make(length, func(t):
+				var tb := fmod(t, beat)
+				var heart := _heartbeat(tb) * 0.9
+				var pad := (sin(TAU * root * t) + sin(TAU * root * 1.5 * t) * 0.6 + sin(TAU * root * 2.0 * t) * 0.3) * 0.07
+				pad *= 0.75 + 0.25 * sin(TAU * t / length)
+				return heart + pad)
+		"title":
+			s = _make(8.0, func(t):
+				var chord := [220.0, 277.18, 329.63, 415.3]
+				var v := 0.0
+				for i in chord.size():
+					v += sin(TAU * chord[i] * t + i) * (0.5 + 0.5 * sin(TAU * t / 8.0 + i * 1.3))
+				return v * 0.06)
+		"tavern":
+			s = _make(6.0, func(t):
+				var murmur := _rand() * (0.08 + 0.05 * sin(TAU * 0.7 * t) * sin(TAU * 1.3 * t))
+				var clink := sin(TAU * 2600.0 * t) * exp(-fmod(t, 2.3) * 30.0) * 0.08
+				return murmur * 0.6 + clink)
+		"swamp":
+			s = _make(6.0, func(t):
+				var drop := 0.0
+				for k in [0.4, 1.7, 2.9, 4.6]:
+					var dt: float = t - k
+					if dt > 0.0:
+						drop += sin(TAU * (900.0 + 1400.0 * exp(-dt * 30.0)) * dt) * exp(-dt * 18.0) * 0.25
+				return drop + _rand() * 0.02)
+		"castle":
+			s = _make(8.0, func(t):
+				return (sin(TAU * 55.0 * t) + sin(TAU * 55.7 * t) + sin(TAU * 82.4 * t) * 0.5) * 0.09 + _rand() * 0.01)
+		_:
+			s = _make(1.0, func(_t): return 0.0)
+	s.loop_mode = AudioStreamWAV.LOOP_FORWARD
+	s.loop_begin = 0
+	s.loop_end = int(s.data.size() / 2)
+	return s
+
+
 func play(name: String, pitch: float = 1.0) -> void:
 	if not streams.has(name):
 		return

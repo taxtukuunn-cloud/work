@@ -69,7 +69,8 @@
       "ear",
       "palm",
       "pat"
-    ]
+    ],
+    "ambient": "tavern"
   },
   {
     "id": "serpena",
@@ -140,7 +141,8 @@
       "squeeze",
       "embrace",
       "squeeze"
-    ]
+    ],
+    "ambient": "swamp"
   },
   {
     "id": "verza",
@@ -234,6 +236,7 @@
       "prepare",
       "behind",
       "kiss"
-    ]
+    ],
+    "ambient": "castle"
   }
 ]

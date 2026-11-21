@@ -7,10 +7,12 @@ var failures := 0
 
 
 func _ready() -> void:
+	_test_scripts()
 	_test_data()
 	_test_basic_rules()
 	_test_climax_and_lose()
 	_test_surrender()
+	_test_preview_matches()
 	_test_cards_all_playable()
 	if "--sim" in OS.get_cmdline_user_args():
 		_simulate()
@@ -29,6 +31,18 @@ func check(cond: bool, msg: String) -> void:
 	else:
 		failures += 1
 		print("  NG  ", msg)
+
+
+## すべてのスクリプトが読み込めるか（構文の誤りでテストが黙って通らないように）
+func _test_scripts() -> void:
+	print("[スクリプト]")
+	for dir in ["res://scripts", "res://scripts/autoload", "res://scripts/battle", "res://scripts/ui", "res://tests", "res://tools"]:
+		for f in DirAccess.get_files_at(dir):
+			if not f.ends_with(".gd"):
+				continue
+			var path: String = dir + "/" + f
+			var sc = load(path)
+			check(sc != null and (sc as GDScript).can_instantiate(), "%s が読み込める" % path)
 
 
 func _test_data() -> void:
@@ -103,9 +117,28 @@ func _test_climax_and_lose() -> void:
 	check(b.result == "lose", "精がなくなると敗北")
 
 
+## 予告した興奮と、実際に入る興奮が一致するか（レビューの不具合1）
+func _test_preview_matches() -> void:
+	print("[予告と実際]")
+	for ei in DB.enemies.size():
+		var e: Dictionary = DB.enemies[ei]
+		for mid in e["moves"]:
+			var b := _new_battle(DB.starter_deck, ei, 5)
+			b.intent_id = mid
+			b.hand.clear()
+			b.block = 0
+			b.arousal = 0
+			var expect := b.incoming_arousal()
+			b._enemy_turn()
+			check(b.arousal == expect or b.climaxes > 0, "%s「%s」：予告 %d ＝ 実際 %d" % [e["name"], e["moves"][mid]["name"], expect, b.arousal])
+
+
 func _test_surrender() -> void:
 	print("[おねだり]")
 	var b := _new_battle()
+	check(not b.can_surrender(), "最初はおねだりできない（追い詰められてから）")
+	b.arousal = 45
+	check(b.can_surrender(), "火照りになればおねだりできる")
 	b.surrender()
 	check(b.result == "lose" and b.surrendered, "おねだりで、すぐ敗北になる")
 

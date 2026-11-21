@@ -23,6 +23,7 @@ func _swap(node: Control) -> void:
 	if current:
 		current.queue_free()
 	current = node
+	Game.lock_input(0.25)
 	node.modulate.a = 0.0
 	add_child(node)
 	move_child(node, 0)
@@ -39,9 +40,9 @@ func toast(text: String) -> void:
 	p.add_theme_stylebox_override("panel", UIKit.box(Color(0.15, 0.08, 0.18, 0.95), UIKit.GOLD, 10, 2, 14))
 	p.add_child(UIKit.label(text, 18, UIKit.GOLD, true))
 	toast_layer.add_child(p)
-	p.position = Vector2(1260 - p.get_combined_minimum_size().x, -80)
+	p.position = Vector2(640 - p.get_combined_minimum_size().x / 2.0, -80)
 	var tw := p.create_tween()
-	tw.tween_property(p, "position:y", 20.0, 0.2).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+	tw.tween_property(p, "position:y", 8.0, 0.2).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
 	tw.tween_interval(2.2)
 	tw.tween_property(p, "modulate:a", 0.0, 0.3)
 	tw.tween_callback(p.queue_free)
@@ -50,7 +51,17 @@ func toast(text: String) -> void:
 # ---------------------------------------------------------------- 画面
 
 func show_title() -> void:
-	_swap(Menus.title(_start_run, show_gallery, show_settings, func(): get_tree().quit()))
+	Sfx.music("title")
+	_swap(Menus.title(_start_run, show_gallery, show_settings, func(): get_tree().quit(), _next_stage, show_select))
+
+
+func show_select() -> void:
+	_swap(Menus.select_enemy(func(i):
+		if Game.deck.is_empty():
+			Game.deck = DB.starter_deck.duplicate()
+		Game.stage = i
+		Game.save()
+		_start_battle(), show_title))
 
 
 func show_gallery() -> void:
@@ -114,7 +125,7 @@ func _on_battle_end(result: String) -> void:
 
 
 func _after_win() -> void:
-	Game.stage += 1
+	Game.advance_stage()
 	if Game.stage >= DB.enemies.size():
 		play_scene("ending", show_title)
 	else:
@@ -124,6 +135,7 @@ func _after_win() -> void:
 func _on_reward(card_id: String) -> void:
 	if card_id != "":
 		Game.deck.append(card_id)
+		Game.save()
 		Sfx.play("confirm")
 	_next_stage()
 

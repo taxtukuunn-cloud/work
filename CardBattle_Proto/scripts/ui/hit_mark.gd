@@ -4,7 +4,7 @@ extends Control
 ## 黒い縁を敷いてどんな背景でも見えるようにし、短く消す。
 
 var life := 0.0
-var max_life := 0.16
+var max_life := 0.22
 var radius := 40.0
 var col := Color.WHITE
 var spin := 0.0
@@ -39,8 +39,9 @@ func _star(r_out: float, r_in: float, points: int) -> PackedVector2Array:
 
 
 func _draw() -> void:
-	var k := life / max_life
-	var r := radius * (0.7 + 0.5 * k)
+	# 最初の4フレームは最大の大きさで見せ、そのあと消えていく
+	var k := clampf((life - 4.0 / 60.0) / (max_life - 4.0 / 60.0), 0.0, 1.0)
+	var r := radius * (1.0 + 0.3 * k)
 	var fade := 1.0 - k * k
 	draw_colored_polygon(_star(r * 1.18, r * 0.55, 8), Color(0, 0, 0, 0.85 * fade))
 	draw_colored_polygon(_star(r, r * 0.42, 8), Color(col, fade))

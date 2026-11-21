@@ -30,7 +30,7 @@ static func screen(top: Color = UIKit.BG_TOP, bottom: Color = UIKit.BG_BOTTOM) -
 
 # ---------------------------------------------------------------- タイトル
 
-static func title(on_start: Callable, on_gallery: Callable, on_settings: Callable, on_quit: Callable) -> Control:
+static func title(on_start: Callable, on_gallery: Callable, on_settings: Callable, on_quit: Callable, on_continue: Callable = Callable(), on_select: Callable = Callable()) -> Control:
 	var s := screen()
 	var queen := Portrait.new().setup(DB.enemies[DB.enemies.size() - 1])
 	queen.modulate = Color(1, 1, 1, 0.55)
@@ -43,14 +43,28 @@ static func title(on_start: Callable, on_gallery: Callable, on_settings: Callabl
 	UIKit.place(sub, Vector2(86, 200), Vector2(800, 30))
 	s.add_child(sub)
 	var gc := Game.gallery_count()
-	var btns := vmenu(s, Vector2(90, 300), 320, [
-		["はじめから", on_start], ["回想　%d / %d" % [gc.x, gc.y], on_gallery], ["設定", on_settings], ["終わる", on_quit],
-	])
+	var items := []
+	var helps := []
+	if Game.has_run() and on_continue.is_valid():
+		var e: Dictionary = DB.enemies[Game.stage]
+		items.append(["つづきから", on_continue])
+		helps.append("%d体目（%s）から。デッキ %d枚" % [Game.stage + 1, e["name"], Game.deck.size()])
+	items.append(["はじめから", on_start])
+	helps.append("最初の相手から遊ぶ。負けてもペナルティなし")
+	if Game.max_reached >= 1 and on_select.is_valid():
+		items.append(["相手を選ぶ", on_select])
+		helps.append("たどり着いた相手と、もう一度戦う")
+	items.append(["回想　%d / %d" % [gc.x, gc.y], on_gallery])
+	helps.append("見たシーンをもう一度見る")
+	items.append(["設定", on_settings])
+	helps.append("責めの強さ・文字の速さ・音量・ボタン")
+	items.append(["終わる", on_quit])
+	helps.append("ゲームを閉じる")
+	var btns := vmenu(s, Vector2(90, 270), 320, items)
 	# メニューにヘルプを（桜井 #227）
 	var help := UIKit.label("", 17, UIKit.SUB)
-	UIKit.place(help, Vector2(90, 580), Vector2(600, 30))
+	UIKit.place(help, Vector2(90, 640), Vector2(600, 30))
 	s.add_child(help)
-	var helps := ["最初の相手から遊ぶ。負けてもペナルティなし", "見たシーンをもう一度見る", "責めの強さ・文字の速さ・音量・ボタン", "ゲームを閉じる"]
 	for i in btns.size():
 		(btns[i] as Button).focus_entered.connect(func(): help.text = helps[i])
 	var note := UIKit.label("登場人物はすべて成人です。", 14, UIKit.SUB)
@@ -109,6 +123,7 @@ static func reward(rng: RandomNumberGenerator, on_pick: Callable, rare_guarantee
 	UIKit.place(skip, Vector2(540, 560), Vector2(200, 56))
 	skip.pressed.connect(func(): on_pick.call(""))
 	s.add_child(skip)
+	CancelCatcher.attach(s, func(): skip.grab_focus())
 	first.grab_focus.call_deferred()
 	return s
 
@@ -153,7 +168,7 @@ static func gallery(on_play: Callable, on_back: Callable) -> Control:
 	UIKit.place(grid, Vector2(80, 140), Vector2(1120, 400))
 	s.add_child(grid)
 	var first: Button = null
-	var kinds := [["_lose1", "敗北 その1"], ["_lose2", "敗北 その2"], ["_win", "見送り（勝利）"]]
+	var kinds := [["_lose1", "敗北 その1"], ["_lose2", "敗北 その2"], ["_win", "勝利"]]
 	for e in DB.enemies:
 		var nl := UIKit.label("%s\n%s" % [e["name"], e["title"]], 20, UIKit.TEXT, true)
 		nl.custom_minimum_size = Vector2(220, 90)
@@ -165,7 +180,16 @@ static func gallery(on_play: Callable, on_back: Callable) -> Control:
 			var open := Game.is_unlocked(sid)
 			if open:
 				seen += 1
-			var b := UIKit.button(("%s\n%s" % [k[1], DB.scenes[sid]["title"].split("：")[-1]]) if open else "？？？", 18)
+			# 開いていないものには、見られる条件を出す（桜井 #023 目の前に吊るす）
+			var cond := ""
+			match k[0]:
+				"_lose1":
+					cond = "%sに負ける" % e["name"]
+				"_lose2":
+					cond = "%sにあと%d回負ける" % [e["name"], maxi(1, 2 - int(Game.lose_count.get(e["id"], 0)))]
+				"_win":
+					cond = "%sに勝つ" % e["name"]
+			var b := UIKit.button(("%s\n%s" % [k[1], DB.scenes[sid]["title"].split("：")[-1]]) if open else "？？？\n（%s）" % cond, 17)
 			b.custom_minimum_size = Vector2(270, 90)
 			if open:
 				b.pressed.connect(func(): on_play.call(sid))
@@ -182,7 +206,29 @@ static func gallery(on_play: Callable, on_back: Callable) -> Control:
 	UIKit.place(back, Vector2(80, 600), Vector2(200, 56))
 	back.pressed.connect(on_back)
 	s.add_child(back)
+	CancelCatcher.attach(s, on_back)
 	first.grab_focus.call_deferred()
+	return s
+
+
+# ---------------------------------------------------------------- 相手を選ぶ
+
+static func select_enemy(on_pick: Callable, on_back: Callable) -> Control:
+	var s := screen()
+	var t := UIKit.label("相手を選ぶ", 40, UIKit.PINK, true)
+	UIKit.place(t, Vector2(80, 40), Vector2(600, 60))
+	s.add_child(t)
+	var items := []
+	for i in mini(Game.max_reached + 1, DB.enemies.size()):
+		var e: Dictionary = DB.enemies[i]
+		var losses := int(Game.lose_count.get(e["id"], 0))
+		items.append(["%d. %s（%s）　負け %d回" % [i + 1, e["name"], e["title"], losses], on_pick.bind(i)])
+	items.append(["戻る", on_back])
+	vmenu(s, Vector2(80, 140), 560, items)
+	var note := UIKit.label("デッキは今のつづきのもの（なければ最初のデッキ）で戦います。", 17, UIKit.SUB)
+	UIKit.place(note, Vector2(80, 600), Vector2(900, 30))
+	s.add_child(note)
+	CancelCatcher.attach(s, on_back)
 	return s
 
 
@@ -201,7 +247,8 @@ static func settings(on_back: Callable) -> Control:
 	var rows := [
 		["責めの強さ", "intensity", Game.INTENSITY_NAMES, "受ける興奮の量が変わります。\nあまあま 0.75倍／ふつう 1倍／はげしい 1.3倍。\n強いほど、勝ったときの報酬にレアカードが出やすい。\n負けたい人は「はげしい」、じっくり勝ちたい人は「あまあま」。"],
 		["文字の速さ", "text_speed", Game.TEXT_SPEED_NAMES, "シーンの文字が出る速さ。"],
-		["音の大きさ", "volume", ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"], "効果音の大きさ。"],
+		["効果音の大きさ", "volume", ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"], "カードや責めの音の大きさ。"],
+		["音楽の大きさ", "music_volume", ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"], "心音や環境音の大きさ。"],
 		["決定とキャンセル", "swap_ab", ["Ⓐ決定 Ⓑ戻る", "Ⓑ決定 Ⓐ戻る"], "コントローラーの決定ボタンと戻るボタンを入れ替えます。"],
 		["回想をすべて開放", "unlock_all", ["オフ", "オン"], "オンにすると、まだ見ていないシーンも回想で見られます。"],
 	]
@@ -231,6 +278,8 @@ static func settings(on_back: Callable) -> Control:
 			Game.save()
 			if key == "swap_ab":
 				Game.apply_button_layout()
+			if key == "music_volume":
+				Sfx.refresh_music_volume()
 			Sfx.play("confirm")
 			upd.call()
 		upd.call()
@@ -251,5 +300,6 @@ static func settings(on_back: Callable) -> Control:
 	back.pressed.connect(on_back)
 	back.focus_entered.connect(func(): help.text = "")
 	v.add_child(back)
+	CancelCatcher.attach(s, on_back)
 	first.grab_focus.call_deferred()
 	return s
