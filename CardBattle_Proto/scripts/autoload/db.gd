@@ -5,6 +5,7 @@ var cards: Dictionary = {}
 var enemies: Array = []
 var scenes: Dictionary = {}
 var starter_deck: Array = []
+var params: Dictionary = {}
 
 
 func _ready() -> void:
@@ -18,6 +19,7 @@ func load_all() -> void:
 	enemies = _read("res://data/enemies.json")
 	scenes = _read("res://data/scenes.json")
 	starter_deck = _read("res://data/starter_deck.json")
+	params = _read("res://data/params.json")
 
 
 func _read(path: String) -> Variant:

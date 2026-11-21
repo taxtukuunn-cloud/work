@@ -2,14 +2,12 @@ class_name Battle
 extends RefCounted
 ## 戦闘の計算だけを受け持つ。画面には触らない。
 ## 起きたことは events に積み、画面側が take_events() で受け取って演出する。
+## 調整する数値は data/params.json に【日本語名】で置いてある（桜井 #046 / #068）。
+##
+## 芯（桜井 #006 リスクとリターン）：
+##   興奮が高いほど攻撃が強くなる（高揚）。ただし100を超えると絶頂して精を失う。
+##   限界ぎりぎりで戦うほど強いが、一歩間違えると果てる。
 
-const HAND_MAX := 10
-const DRAW_PER_TURN := 5
-const CLIMAX_AT := 100
-const AROUSAL_AFTER_CLIMAX := 40
-const SENSITIVE_RATE := 0.25
-const WEAK_RATE := 0.6
-const SHAKEN_RATE := 1.5
 const LEWD_CARDS := ["charm", "fluster"]
 
 const STATUS_NAMES := {
@@ -17,15 +15,33 @@ const STATUS_NAMES := {
 	"iron": "鋼の意志", "focus": "集中", "weak": "白け", "shaken": "動揺",
 }
 const STATUS_HELP := {
-	"sensitive": "受ける興奮が1つにつき25%増える",
+	"sensitive": "受ける興奮が増える",
 	"bound": "次のターン、引く枚数が1減る",
 	"afterglow": "次のターン、気力が1減る",
 	"iron": "毎ターン、この数だけ忍耐を得る",
 	"focus": "次の攻撃の削りがこの数だけ増える",
-	"weak": "相手の誘惑が0.6倍になる",
-	"shaken": "相手が受ける削りが1.5倍になる",
+	"weak": "相手の誘惑が弱まる",
+	"shaken": "相手が受ける削りが増える",
 }
 
+## data/params.json が読めないときの値
+const DEFAULT_PARAMS := {
+	"【ターンごとの気力】": 3,
+	"【ターンごとに引く枚数】": 5,
+	"【手札の上限】": 10,
+	"【精の数】": 3,
+	"【絶頂する興奮】": 100,
+	"【絶頂のあとの興奮】": 40,
+	"【絶頂で付く敏感】": 1,
+	"【敏感1つあたりの興奮の増加率】": 0.25,
+	"【白けのときの誘惑の倍率】": 0.6,
+	"【動揺のときの削りの倍率】": 1.5,
+	"【高揚が上がる興奮】": [40, 70],
+	"【高揚の段階の名前】": ["平常", "火照り", "限界寸前"],
+	"【高揚の削りの倍率】": [1.0, 1.3, 1.7],
+}
+
+var P: Dictionary = DEFAULT_PARAMS.duplicate()
 var rng := RandomNumberGenerator.new()
 var cards_db: Dictionary = {}
 var enemy: Dictionary = {}
@@ -56,16 +72,22 @@ var turn := 0
 var result := ""  # "" / "win" / "lose"
 var climaxes := 0
 var surrendered := false
+var best_tier := 0  # この戦闘でいちばん高かった高揚の段階（褒める演出に使う）
 
 var _uid := 0
 var _focus_bonus := 0
 var events: Array = []
 
 
-func setup(p_cards_db: Dictionary, p_enemy: Dictionary, deck: Array, p_mult: float = 1.0, seed_value: int = -1) -> void:
+func setup(p_cards_db: Dictionary, p_enemy: Dictionary, deck: Array, p_mult: float = 1.0, seed_value: int = -1, params: Dictionary = {}) -> void:
+	for k in params:
+		P[k] = params[k]
 	cards_db = p_cards_db
 	enemy = p_enemy
 	mult = p_mult
+	max_energy = int(P["【ターンごとの気力】"])
+	max_stocks = int(P["【精の数】"])
+	stocks = max_stocks
 	if seed_value >= 0:
 		rng.seed = seed_value
 	else:
@@ -80,6 +102,14 @@ func setup(p_cards_db: Dictionary, p_enemy: Dictionary, deck: Array, p_mult: flo
 
 
 # ---------------------------------------------------------------- 便利関数
+
+func climax_at() -> int:
+	return int(P["【絶頂する興奮】"])
+
+
+func hand_max() -> int:
+	return int(P["【手札の上限】"])
+
 
 func _make(id: String) -> Dictionary:
 	_uid += 1
@@ -124,6 +154,37 @@ func status_text(dict: Dictionary) -> String:
 	return "　".join(parts)
 
 
+# ---------------------------------------------------------------- 高揚（芯の仕組み）
+
+## 今の高揚の段階（0=平常, 1=火照り, 2=限界寸前）
+func tier() -> int:
+	return tier_of(arousal)
+
+
+func tier_of(a: int) -> int:
+	var t := 0
+	for th in P["【高揚が上がる興奮】"]:
+		if a >= int(th):
+			t += 1
+	return t
+
+
+func tier_name(t: int = -1) -> String:
+	return P["【高揚の段階の名前】"][tier() if t < 0 else t]
+
+
+func tier_mult(t: int = -1) -> float:
+	return float(P["【高揚の削りの倍率】"][tier() if t < 0 else t])
+
+
+## 攻撃の削り量（高揚と動揺を反映）。画面のカード表示にも使う。
+func damage_value(base: int, with_focus: int = 0) -> int:
+	var d := float(base + with_focus) * tier_mult()
+	if int(e_status.get("shaken", 0)) > 0:
+		d *= float(P["【動揺のときの削りの倍率】"])
+	return int(round(d))
+
+
 # ---------------------------------------------------------------- ターンの流れ
 
 func start_player_turn() -> void:
@@ -136,7 +197,7 @@ func start_player_turn() -> void:
 	if int(p_status.get("iron", 0)) > 0:
 		block += int(p_status["iron"])
 		_ev("block", {"val": int(p_status["iron"])})
-	var n := DRAW_PER_TURN
+	var n := int(P["【ターンごとに引く枚数】"])
 	if int(p_status.get("bound", 0)) > 0:
 		n -= 1
 		_ev("log", {"text": "巻きつかれて、引く枚数が1減った"})
@@ -157,7 +218,7 @@ func draw(n: int) -> void:
 			_shuffle(draw_pile)
 			_ev("reshuffle")
 		var c: Dictionary = draw_pile.pop_back()
-		if hand.size() >= HAND_MAX:
+		if hand.size() >= hand_max():
 			discard_pile.append(c)
 			continue
 		hand.append(c)
@@ -182,9 +243,9 @@ func why_unplayable(idx: int) -> String:
 		return ""
 	var d := card_def(hand[idx])
 	if d.get("unplayable", false):
-		return "このカードは使えない"
+		return "「%s」は使えないカード。目を逸らすなどで除外できる" % d.get("name", "")
 	if int(d.get("cost", 0)) > energy:
-		return "気力が足りない"
+		return "気力が足りない（あと%d要る）" % (int(d.get("cost", 0)) - energy)
 	return ""
 
 
@@ -255,12 +316,10 @@ func _apply_player_effect(eff: Dictionary, _d: Dictionary) -> void:
 	match op:
 		"damage":
 			for h in int(eff.get("hits", 1)):
-				var dmg := val + _focus_bonus
+				var dmg := damage_value(val, _focus_bonus)
 				_focus_bonus = 0
-				if int(e_status.get("shaken", 0)) > 0:
-					dmg = int(round(dmg * SHAKEN_RATE))
 				e_hp = maxi(0, e_hp - dmg)
-				_ev("enemy_damage", {"val": dmg})
+				_ev("enemy_damage", {"val": dmg, "tier": tier()})
 				if e_hp <= 0:
 					_win()
 					return
@@ -271,6 +330,7 @@ func _apply_player_effect(eff: Dictionary, _d: Dictionary) -> void:
 			var before := arousal
 			arousal = maxi(0, arousal - val)
 			_ev("calm", {"val": before - arousal})
+			_check_tier_change(before)
 		"draw":
 			draw(val)
 		"energy":
@@ -302,9 +362,9 @@ func _apply_player_effect(eff: Dictionary, _d: Dictionary) -> void:
 ## 相手から受ける興奮の見込み（敏感・白け・責めの強さを反映）
 func preview_arousal(val: int) -> int:
 	var v := float(val) * mult
-	v *= 1.0 + SENSITIVE_RATE * int(p_status.get("sensitive", 0))
+	v *= 1.0 + float(P["【敏感1つあたりの興奮の増加率】"]) * int(p_status.get("sensitive", 0))
 	if int(e_status.get("weak", 0)) > 0:
-		v *= WEAK_RATE
+		v *= float(P["【白けのときの誘惑の倍率】"])
 	return int(round(v))
 
 
@@ -327,19 +387,36 @@ func _gain_arousal(val: int, from_enemy: bool) -> void:
 			_ev("blocked", {"val": absorbed})
 	if amount <= 0:
 		return
+	var before := arousal
 	arousal += amount
 	_ev("arousal", {"val": amount, "from_enemy": from_enemy})
-	while arousal >= CLIMAX_AT and result == "":
-		_climax()
+	if arousal < climax_at():
+		best_tier = maxi(best_tier, tier())
+	if arousal >= climax_at():
+		while arousal >= climax_at() and result == "":
+			_climax()
+	else:
+		_check_tier_change(before)
+
+
+func _check_tier_change(before: int) -> void:
+	var t0 := tier_of(before)
+	var t1 := tier()
+	if t1 != t0:
+		best_tier = maxi(best_tier, t1)
+		_ev("tier", {"tier": t1, "up": t1 > t0})
 
 
 func _climax() -> void:
 	climaxes += 1
+	best_tier = maxi(best_tier, tier())
 	stocks -= 1
-	arousal = AROUSAL_AFTER_CLIMAX
+	arousal = int(P["【絶頂のあとの興奮】"])
 	p_status["afterglow"] = 1
 	# イったばかりで感じやすくなる
-	p_status["sensitive"] = int(p_status.get("sensitive", 0)) + 1
+	var s := int(P["【絶頂で付く敏感】"])
+	if s > 0:
+		p_status["sensitive"] = int(p_status.get("sensitive", 0)) + s
 	var heal := int(enemy.get("drain_heal", 5))
 	e_hp = mini(e_max, e_hp + heal)
 	_ev("climax", {"stocks": stocks, "heal": heal})
@@ -349,8 +426,9 @@ func _climax() -> void:
 
 
 func _win() -> void:
+	best_tier = maxi(best_tier, tier())
 	result = "win"
-	_ev("win")
+	_ev("win", {"climaxes": climaxes, "turns": turn, "best_tier": best_tier})
 
 
 # ---------------------------------------------------------------- 相手の行動
@@ -418,7 +496,7 @@ func _enemy_turn() -> void:
 					var to: String = eff.get("to", "discard")
 					if to == "draw":
 						draw_pile.insert(rng.randi_range(0, draw_pile.size()), c)
-					elif to == "hand" and hand.size() < HAND_MAX:
+					elif to == "hand" and hand.size() < hand_max():
 						hand.append(c)
 					else:
 						discard_pile.append(c)

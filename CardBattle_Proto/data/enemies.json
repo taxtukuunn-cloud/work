@@ -3,7 +3,7 @@
     "id": "milda",
     "name": "ミルダ",
     "title": "酒場のサキュバス",
-    "hp": 34,
+    "hp": 52,
     "drain_heal": 5,
     "shape": "succubus",
     "color": "#e07aa8",
@@ -75,7 +75,7 @@
     "id": "serpena",
     "name": "セルペナ",
     "title": "沼のラミア",
-    "hp": 44,
+    "hp": 70,
     "drain_heal": 6,
     "shape": "lamia",
     "color": "#5fae8b",
@@ -146,7 +146,7 @@
     "id": "verza",
     "name": "ヴェルザ",
     "title": "淫魔の女王",
-    "hp": 84,
+    "hp": 108,
     "drain_heal": 8,
     "shape": "queen",
     "color": "#8e5bd6",
@@ -173,7 +173,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 13,
+            "val": 15,
             "hits": 2
           }
         ]
@@ -201,7 +201,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 42
+            "val": 46
           }
         ]
       },

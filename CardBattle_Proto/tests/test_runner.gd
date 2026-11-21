@@ -53,7 +53,7 @@ func _test_data() -> void:
 
 func _new_battle(deck: Array = DB.starter_deck, enemy_idx: int = 0, seed_value: int = 1) -> Battle:
 	var b := Battle.new()
-	b.setup(DB.cards, DB.enemies[enemy_idx], deck, 1.0, seed_value)
+	b.setup(DB.cards, DB.enemies[enemy_idx], deck, 1.0, seed_value, DB.params)
 	return b
 
 
@@ -92,7 +92,7 @@ func _test_climax_and_lose() -> void:
 	var hp := b.e_hp
 	b._gain_arousal(5, false)
 	check(b.stocks == 2, "100に届くと精が1減る")
-	check(b.arousal == Battle.AROUSAL_AFTER_CLIMAX, "絶頂のあと興奮が戻る")
+	check(b.arousal == int(DB.params["【絶頂のあとの興奮】"]), "絶頂のあと興奮が戻る")
 	check(b.e_hp == mini(b.e_max, hp + int(DB.enemies[0]["drain_heal"])), "相手が吸精で余裕を回復する")
 	b.arousal = 99
 	b._gain_arousal(5, false)

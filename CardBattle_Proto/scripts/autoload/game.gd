@@ -1,5 +1,5 @@
 extends Node
-## 遊びの進み具合・設定・回想の開放を持つ。
+## 遊びの進み具合・設定・回想の開放・操作の割り当てを持つ。
 
 const SAVE_PATH := "user://save.cfg"
 const INTENSITY_NAMES := ["あまあま", "ふつう", "はげしい"]
@@ -7,7 +7,8 @@ const INTENSITY_MULT := [0.75, 1.0, 1.3]
 const TEXT_SPEED_NAMES := ["ゆっくり", "ふつう", "はやい", "一瞬"]
 const TEXT_SPEED_CPS := [25.0, 50.0, 100.0, 0.0]
 
-var settings := {"intensity": 1, "text_speed": 1, "unlock_all": false}
+var settings := {"intensity": 1, "text_speed": 1, "unlock_all": false, "volume": 8, "swap_ab": false}
+var tutorial_done := false
 var unlocked: Dictionary = {}
 var lose_count: Dictionary = {}
 
@@ -15,11 +16,21 @@ var lose_count: Dictionary = {}
 var deck: Array = []
 var stage := 0
 
+## 最後に触ったのがコントローラーなら true。操作の案内の表示を切り替える。
+signal input_mode_changed(joy: bool)
+var joy_mode := false
+const HINTS := {
+	"accept": ["Enter", "Ⓐ"], "cancel": ["Esc", "Ⓑ"], "end_turn": ["E", "Ⓨ"],
+	"surrender": ["Q", "Back"], "skip": ["Ctrl", "RB"], "deck": ["D", "Ⓧ"],
+	"move": ["←→", "十字キー"], "updown": ["↑↓", "十字キー"],
+}
+
 
 func _ready() -> void:
-	_setup_input()
+	process_mode = Node.PROCESS_MODE_ALWAYS
 	if "--no-save" not in OS.get_cmdline_user_args():
 		load_save()
+	_setup_input()
 	for a in OS.get_cmdline_user_args():
 		if a.begins_with("--autoshot="):
 			var shot = load("res://tools/autoshot.gd").new()
@@ -27,11 +38,35 @@ func _ready() -> void:
 			add_child.call_deferred(shot)
 
 
+func hint(key: String) -> String:
+	if bool(settings["swap_ab"]) and joy_mode:
+		if key == "accept":
+			return "Ⓑ"
+		if key == "cancel":
+			return "Ⓐ"
+	return HINTS.get(key, ["", ""])[1 if joy_mode else 0]
+
+
+func _input(event: InputEvent) -> void:
+	var joy := joy_mode
+	if event is InputEventJoypadButton:
+		joy = true
+	elif event is InputEventJoypadMotion and absf(event.axis_value) > 0.5:
+		joy = true
+	elif event is InputEventKey or event is InputEventMouseButton:
+		joy = false
+	if joy != joy_mode:
+		joy_mode = joy
+		input_mode_changed.emit(joy)
+	# 開発用：F5 で data/*.json を読み直す（桜井 #046 即時反映）
+	if OS.is_debug_build() and event is InputEventKey and event.pressed and event.keycode == KEY_F5:
+		DB.load_all()
+		print("データを読み直した")
+
+
 # ---------------------------------------------------------------- 操作の割り当て
 
 func _setup_input() -> void:
-	_add_buttons("ui_accept", [JOY_BUTTON_A])
-	_add_buttons("ui_cancel", [JOY_BUTTON_B])
 	_add_action("end_turn", [KEY_E], [JOY_BUTTON_Y])
 	_add_action("surrender", [KEY_Q], [JOY_BUTTON_BACK])
 	_add_action("skip", [KEY_CTRL], [JOY_BUTTON_RIGHT_SHOULDER])
@@ -40,6 +75,19 @@ func _setup_input() -> void:
 	_add_axis("ui_right", JOY_AXIS_LEFT_X, 1.0)
 	_add_axis("ui_up", JOY_AXIS_LEFT_Y, -1.0)
 	_add_axis("ui_down", JOY_AXIS_LEFT_Y, 1.0)
+	apply_button_layout()
+
+
+## 決定とキャンセルのボタンを入れ替える（桜井 #195）
+func apply_button_layout() -> void:
+	var a := JOY_BUTTON_B if bool(settings["swap_ab"]) else JOY_BUTTON_A
+	var b := JOY_BUTTON_A if bool(settings["swap_ab"]) else JOY_BUTTON_B
+	for action in ["ui_accept", "ui_cancel"]:
+		for ev in InputMap.action_get_events(action):
+			if ev is InputEventJoypadButton and (ev.button_index == JOY_BUTTON_A or ev.button_index == JOY_BUTTON_B):
+				InputMap.action_erase_event(action, ev)
+	_add_buttons("ui_accept", [a])
+	_add_buttons("ui_cancel", [b])
 
 
 func _add_action(action: String, keys: Array, buttons: Array) -> void:
@@ -53,9 +101,9 @@ func _add_action(action: String, keys: Array, buttons: Array) -> void:
 
 
 func _add_buttons(action: String, buttons: Array) -> void:
-	for b in buttons:
+	for btn in buttons:
 		var j := InputEventJoypadButton.new()
-		j.button_index = b
+		j.button_index = btn
 		if not InputMap.action_has_event(action, j):
 			InputMap.action_add_event(action, j)
 
@@ -83,6 +131,11 @@ func text_cps() -> float:
 	return TEXT_SPEED_CPS[int(settings["text_speed"])]
 
 
+## 報酬でレアが出る確率（はげしいほど高い。桜井 #041 悪魔の窯）
+func rare_chance() -> float:
+	return float(DB.params["【報酬でレアが出る確率（あまあま・ふつう・はげしい）】"][int(settings["intensity"])])
+
+
 ## 1回目の敗北は lose1、2回目以降は続きの lose2。
 func lose_scene_for(enemy_id: String) -> String:
 	var n := int(lose_count.get(enemy_id, 0))
@@ -94,13 +147,28 @@ func register_loss(enemy_id: String) -> void:
 	save()
 
 
-func unlock(scene_id: String) -> void:
+## 新しく開放したら true
+func unlock(scene_id: String) -> bool:
+	if unlocked.has(scene_id):
+		return false
 	unlocked[scene_id] = true
 	save()
+	return true
 
 
 func is_unlocked(scene_id: String) -> bool:
 	return bool(settings["unlock_all"]) or unlocked.has(scene_id)
+
+
+func gallery_count() -> Vector2i:
+	var seen := 0
+	var total := 0
+	for e in DB.enemies:
+		for k in ["_lose1", "_lose2", "_win"]:
+			total += 1
+			if unlocked.has(e["id"] + k):
+				seen += 1
+	return Vector2i(seen, total)
 
 
 # ---------------------------------------------------------------- 保存
@@ -113,6 +181,7 @@ func load_save() -> void:
 		settings[k] = cf.get_value("settings", k, settings[k])
 	unlocked = cf.get_value("progress", "unlocked", {})
 	lose_count = cf.get_value("progress", "lose_count", {})
+	tutorial_done = cf.get_value("progress", "tutorial_done", false)
 
 
 func save() -> void:
@@ -123,4 +192,5 @@ func save() -> void:
 		cf.set_value("settings", k, settings[k])
 	cf.set_value("progress", "unlocked", unlocked)
 	cf.set_value("progress", "lose_count", lose_count)
+	cf.set_value("progress", "tutorial_done", tutorial_done)
 	cf.save(SAVE_PATH)
