@@ -14,6 +14,8 @@ func _ready() -> void:
 	_test_cards_all_playable()
 	if "--sim" in OS.get_cmdline_user_args():
 		_simulate()
+	if "--policy" in OS.get_cmdline_user_args():
+		_policy_check()
 	if "--cardsim" in OS.get_cmdline_user_args():
 		_card_sim()
 	print("")
@@ -151,6 +153,37 @@ func _winrate(e: Dictionary, deck: Array, n: int) -> float:
 		if Bot.run_battle(DB.cards, e, deck, 1.0, s * 7919 + 13)["result"] == "win":
 			wins += 1
 	return float(wins) / n
+
+
+## 打ち方ごとの勝率（考えて打つ方が、攻撃連打より勝つこと。桜井 #006）
+func _policy_check() -> void:
+	print("")
+	print("[打ち方ごとの勝率（ふつう、最初のデッキ+強撃）]")
+	var deck: Array = DB.starter_deck + ["heavy"]
+	var n := 300
+	# 目標：考えて打つ勝率の範囲と、絶頂回数の範囲（レビューで決めた値）
+	var goals := {"milda": [0.93, 1.0], "serpena": [0.82, 0.95], "verza": [0.6, 0.8]}
+	for e in DB.enemies:
+		var row := {}
+		for m in ["smart", "attack", "defend"]:
+			Bot.mode = m
+			var wins := 0
+			var turns := 0
+			var climax := 0
+			for s in n:
+				var r := Bot.run_battle(DB.cards, e, deck, 1.0, s * 7919 + 13)
+				if r["result"] == "win":
+					wins += 1
+				turns += int(r["turns"])
+				climax += int(r["climaxes"])
+			row[m] = [float(wins) / n, float(turns) / n, float(climax) / n]
+		Bot.mode = "smart"
+		print("  %s : 考えて %3d%%（%.1fターン・絶頂%.2f）／攻撃だけ %3d%%／守り優先 %3d%%" % [
+			e["name"], int(row["smart"][0] * 100), row["smart"][1], row["smart"][2],
+			int(row["attack"][0] * 100), int(row["defend"][0] * 100)])
+		check(row["smart"][0] - row["attack"][0] >= 0.1 or row["smart"][0] >= 0.97, "%s：考えて打つ方が攻撃だけより勝つ" % e["name"])
+		var g: Array = goals.get(e["id"], [0.0, 1.0])
+		check(row["smart"][0] >= g[0] and row["smart"][0] <= g[1], "%s：勝率が目標 %d〜%d%% に入る" % [e["name"], int(g[0] * 100), int(g[1] * 100)])
 
 
 ## 勝率を測る（難易度の調整用）

@@ -46,6 +46,7 @@ var confirm: Control
 var deck_panel: Control
 
 var _hand_sig := ""
+var earned_rare := false
 
 
 func setup(p_enemy: Dictionary, deck: Array) -> BattleScreen:
@@ -282,8 +283,8 @@ func _update_tutorial() -> void:
 	var texts := [
 		"カードを選んで %s で使う。攻撃で相手の「余裕」を0にすれば勝ち。" % Game.hint("accept"),
 		"右上が相手の次の責め。「我慢」の忍耐で防げる。終わったら %s でターン終了。" % Game.hint("end_turn"),
-		"興奮が%dを超えると「火照り」、%dで「限界寸前」。高いほど攻撃が強いが、%dで絶頂する。" % [int(ths[0]), int(ths[1]), battle.climax_at()],
-		"精が尽きると負け（負けてもペナルティなし）。わざと負けたいときは %s でおねだり。" % Game.hint("surrender"),
+		"興奮が%dを超えると「火照り」、%dで「限界寸前」。高いほど攻撃が強いが、%dで絶頂する。「身を委ねる」で自分から上げられる。" % [int(ths[0]), int(ths[1]), battle.climax_at()],
+		"精が尽きると負け（ペナルティなし）。火照ってからなら %s でおねだりして自分から負けられる。" % Game.hint("surrender"),
 	]
 	if tutorial_step >= texts.size():
 		tutorial_panel.visible = false
@@ -323,6 +324,7 @@ func _refresh() -> void:
 		intent_net.text = "忍耐で防ぎきれる" if _move_arouses(mv) else ""
 		intent_net.add_theme_color_override("font_color", UIKit.BLUE)
 	_refresh_player()
+	beg_btn.modulate = Color.WHITE if battle.can_surrender() else Color(1, 1, 1, 0.45)
 	pile_label.text = "山札 %d　捨て札 %d　除外 %d" % [battle.draw_pile.size(), battle.discard_pile.size(), battle.exhaust_pile.size()]
 	_refresh_hand()
 
@@ -540,6 +542,10 @@ func _check_end() -> bool:
 
 func _open_confirm() -> void:
 	if busy or dialog_open or battle.result != "":
+		return
+	if not battle.can_surrender():
+		Sfx.play("deny")
+		_log("まだ余裕がある。もう少し追い詰められてから（火照り以上か、一度果てたあと）", UIKit.SUB)
 		return
 	dialog_open = true
 	Sfx.play("confirm")
@@ -836,12 +842,17 @@ func _win_fx() -> void:
 		praise.append("一度も果てずに勝った！　鋼の理性")
 	elif battle.stocks == 1:
 		praise.append("精が残り1つ。ぎりぎりで耐えきった！")
-	if battle.best_tier >= 2:
+	var edge: bool = battle.dmg_by_tier[2] >= battle.e_max * 0.4 or battle.finish_tier == 2
+	if edge:
 		praise.append("限界寸前の高揚で押しきった！")
 	if battle.turn <= 4:
 		praise.append("%dターンの速攻！" % battle.turn)
 	if praise.is_empty():
 		praise.append("よく耐えた！")
+	# 褒められるほどの勝ち方なら、報酬にレアを1枚確定（褒めと実利をつなぐ）
+	earned_rare = battle.climaxes == 0 or edge
+	if earned_rare:
+		praise.append("報酬にレアカードが1枚確定！")
 	await _banner("%sの余裕を崩した！" % enemy_def["name"], UIKit.GOLD, 0.5)
 	var p := PanelContainer.new()
 	p.add_theme_stylebox_override("panel", UIKit.box(Color(0.15, 0.1, 0.02, 0.95), UIKit.GOLD, 14, 2, 22))

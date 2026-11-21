@@ -1,7 +1,8 @@
 [
   {"id": "strike", "name": "斬撃", "cost": 1, "type": "attack", "rarity": "starter", "text": "余裕を6削る", "effects": [{"op": "damage", "val": 6}]},
-  {"id": "endure", "name": "我慢", "cost": 1, "type": "skill", "rarity": "starter", "text": "忍耐+5", "effects": [{"op": "block", "val": 5}]},
-  {"id": "breath", "name": "深呼吸", "cost": 1, "type": "skill", "rarity": "starter", "text": "興奮を10下げる", "effects": [{"op": "calm", "val": 10}]},
+  {"id": "endure", "name": "我慢", "cost": 1, "type": "skill", "rarity": "starter", "text": "忍耐+8", "effects": [{"op": "block", "val": 8}]},
+  {"id": "breath", "name": "深呼吸", "cost": 1, "type": "skill", "rarity": "starter", "text": "興奮を15下げる", "effects": [{"op": "calm", "val": 15}]},
+  {"id": "yield", "name": "身を委ねる", "cost": 0, "type": "skill", "rarity": "starter", "text": "興奮+12。1枚引く（高揚が上がると攻撃が強くなる）", "effects": [{"op": "arousal", "val": 12}, {"op": "draw", "val": 1}]},
   {"id": "avert", "name": "目を逸らす", "cost": 0, "type": "skill", "rarity": "starter", "text": "手札の魅了と疼きを除外。忍耐+2", "effects": [{"op": "cleanse"}, {"op": "block", "val": 2}]},
 
   {"id": "heavy", "name": "強撃", "cost": 2, "type": "attack", "rarity": "common", "text": "余裕を14削る", "effects": [{"op": "damage", "val": 14}]},

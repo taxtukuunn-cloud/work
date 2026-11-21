@@ -3,6 +3,10 @@ extends RefCounted
 ## 自動で遊ぶ係。勝率の確認と、壊れていないかの確認に使う。
 ## 桜井 #219：完璧な守りではなく、高揚を使って攻める打ち方をさせる。
 
+## 打ち方："smart"＝考えて打つ／"attack"＝守らず攻撃だけ／"defend"＝守り優先
+static var mode := "smart"
+
+
 ## 1ターン分を遊ぶ（使えるカードを点数の高い順に使い、最後にターン終了）
 static func play_turn(b: Battle) -> void:
 	for _i in 20:
@@ -24,6 +28,14 @@ static func play_turn(b: Battle) -> void:
 
 
 static func score(b: Battle, d: Dictionary) -> float:
+	var ops := []
+	for eff in d.get("effects", []):
+		ops.append(eff.get("op", ""))
+	if mode == "attack":
+		if "damage" in ops:
+			return 10.0
+		if "block" in ops or "calm" in ops:
+			return -1.0
 	var need := b.incoming_arousal()
 	var limit := b.climax_at()
 	var danger := b.arousal + need >= limit
@@ -78,6 +90,8 @@ static func score(b: Battle, d: Dictionary) -> float:
 		# 高揚の段階が上がるなら得
 		s += 6.0 * (b.tier_of(after) - b.tier())
 		s -= self_arousal * 0.15
+	if mode == "defend" and ("block" in ops or "calm" in ops):
+		s = s * 3.0 + 20.0
 	return s / max(1.0, float(d.get("cost", 0)) + 0.5)
 
 

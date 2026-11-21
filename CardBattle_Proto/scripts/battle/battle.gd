@@ -72,7 +72,9 @@ var turn := 0
 var result := ""  # "" / "win" / "lose"
 var climaxes := 0
 var surrendered := false
-var best_tier := 0  # この戦闘でいちばん高かった高揚の段階（褒める演出に使う）
+var best_tier := 0  # この戦闘でいちばん高かった高揚の段階
+var dmg_by_tier := [0, 0, 0]  # 高揚の段階ごとの削った量（褒める条件に使う）
+var finish_tier := -1  # とどめを刺したときの段階
 
 var _uid := 0
 var _focus_bonus := 0
@@ -298,6 +300,11 @@ func end_turn() -> void:
 	start_player_turn()
 
 
+## おねだりできるか（桜井 #236：追い詰められてからがご褒美の入口）
+func can_surrender() -> bool:
+	return result == "" and (tier() >= 1 or stocks < max_stocks)
+
+
 ## おねだり：自分から負けを選ぶ。
 func surrender() -> void:
 	if result != "":
@@ -318,6 +325,7 @@ func _apply_player_effect(eff: Dictionary, _d: Dictionary) -> void:
 			for h in int(eff.get("hits", 1)):
 				var dmg := damage_value(val, _focus_bonus)
 				_focus_bonus = 0
+				dmg_by_tier[tier()] += mini(dmg, e_hp)
 				e_hp = maxi(0, e_hp - dmg)
 				_ev("enemy_damage", {"val": dmg, "tier": tier()})
 				if e_hp <= 0:
@@ -360,20 +368,34 @@ func _apply_player_effect(eff: Dictionary, _d: Dictionary) -> void:
 
 
 ## 相手から受ける興奮の見込み（敏感・白け・責めの強さを反映）
-func preview_arousal(val: int) -> int:
+func preview_arousal(val: int, extra_sensitive: int = 0) -> int:
 	var v := float(val) * mult
-	v *= 1.0 + float(P["【敏感1つあたりの興奮の増加率】"]) * int(p_status.get("sensitive", 0))
+	v *= 1.0 + float(P["【敏感1つあたりの興奮の増加率】"]) * (int(p_status.get("sensitive", 0)) + extra_sensitive)
 	if int(e_status.get("weak", 0)) > 0:
 		v *= float(P["【白けのときの誘惑の倍率】"])
 	return int(round(v))
 
 
+## 次の行動の興奮を、効果の順番どおりに見積もる（先に付く敏感も含める）
+func _move_hits() -> Array:
+	var hits := []
+	var extra := 0
+	for eff in current_move().get("effects", []):
+		match eff.get("op", ""):
+			"status":
+				if eff["id"] == "sensitive":
+					extra += int(eff.get("n", 1))
+			"arouse":
+				for h in int(eff.get("hits", 1)):
+					hits.append(preview_arousal(int(eff["val"]), extra))
+	return hits
+
+
 ## 相手の次の行動で、忍耐を引いたあとに実際に入る興奮の見込み
 func incoming_arousal() -> int:
 	var total := 0
-	for eff in current_move().get("effects", []):
-		if eff.get("op", "") == "arouse":
-			total += preview_arousal(int(eff["val"])) * int(eff.get("hits", 1))
+	for v in _move_hits():
+		total += v
 	return maxi(0, total - block)
 
 
@@ -427,6 +449,7 @@ func _climax() -> void:
 
 func _win() -> void:
 	best_tier = maxi(best_tier, tier())
+	finish_tier = tier()
 	result = "win"
 	_ev("win", {"climaxes": climaxes, "turns": turn, "best_tier": best_tier})
 
@@ -457,11 +480,12 @@ func current_move() -> Dictionary:
 func intent_text() -> String:
 	var mv := current_move()
 	var parts := PackedStringArray()
+	var extra := 0
 	for eff in mv.get("effects", []):
 		match eff.get("op", ""):
 			"arouse":
 				var hits := int(eff.get("hits", 1))
-				var s := "興奮+%d" % preview_arousal(int(eff["val"]))
+				var s := "興奮+%d" % preview_arousal(int(eff["val"]), extra)
 				if hits > 1:
 					s += "×%d" % hits
 				parts.append(s)
@@ -471,6 +495,8 @@ func intent_text() -> String:
 				parts.append("%s×%dを%sへ" % [cname, int(eff.get("n", 1)), where])
 			"status":
 				parts.append("%s%d" % [STATUS_NAMES.get(eff["id"], eff["id"]), int(eff.get("n", 1))])
+				if eff["id"] == "sensitive":
+					extra += int(eff.get("n", 1))
 			"heal":
 				parts.append("余裕+%d" % int(eff["val"]))
 	if mv.has("telegraph"):

@@ -61,7 +61,7 @@ static func title(on_start: Callable, on_gallery: Callable, on_settings: Callabl
 
 # ---------------------------------------------------------------- 報酬
 
-static func reward(rng: RandomNumberGenerator, on_pick: Callable) -> Control:
+static func reward(rng: RandomNumberGenerator, on_pick: Callable, rare_guaranteed: bool = false) -> Control:
 	var s := screen()
 	var t := UIKit.label("報酬 ―― カードを1枚、デッキに加える", 34, UIKit.GOLD, true)
 	UIKit.place(t, Vector2(0, 70), Vector2(1280, 50))
@@ -81,7 +81,7 @@ static func reward(rng: RandomNumberGenerator, on_pick: Callable) -> Control:
 			commons.append(id)
 	var picks := []
 	while picks.size() < 3:
-		var from := rares if rng.randf() < Game.rare_chance() else commons
+		var from := rares if (rng.randf() < Game.rare_chance() or (rare_guaranteed and picks.is_empty())) else commons
 		var id: String = from[rng.randi_range(0, from.size() - 1)]
 		if id not in picks:
 			picks.append(id)

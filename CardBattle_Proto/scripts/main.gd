@@ -94,8 +94,12 @@ func _unlock(sid: String) -> void:
 		_pending_toast = "回想に追加：%s（%d / %d）" % [DB.scenes[sid]["title"], gc.x, gc.y]
 
 
+var _earned_rare := false
+
+
 func _on_battle_end(result: String) -> void:
 	var e := _enemy()
+	_earned_rare = (current as BattleScreen).earned_rare if current is BattleScreen else false
 	if result == "win":
 		var sid: String = e["id"] + "_win"
 		play_scene(sid, func():
@@ -114,7 +118,7 @@ func _after_win() -> void:
 	if Game.stage >= DB.enemies.size():
 		play_scene("ending", show_title)
 	else:
-		_swap(Menus.reward(rng, _on_reward))
+		_swap(Menus.reward(rng, _on_reward, _earned_rare))
 
 
 func _on_reward(card_id: String) -> void:

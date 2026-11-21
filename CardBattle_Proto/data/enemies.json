@@ -3,8 +3,8 @@
     "id": "milda",
     "name": "ミルダ",
     "title": "酒場のサキュバス",
-    "hp": 52,
-    "drain_heal": 5,
+    "hp": 58,
+    "drain_heal": 18,
     "shape": "succubus",
     "color": "#e07aa8",
     "hair": "#f4c1d9",
@@ -14,7 +14,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 28
+            "val": 24
           },
           {
             "op": "add_card",
@@ -29,7 +29,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 36
+            "val": 32
           }
         ]
       },
@@ -38,7 +38,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 18
+            "val": 12
           },
           {
             "op": "add_card",
@@ -58,7 +58,7 @@
           },
           {
             "op": "arouse",
-            "val": 24
+            "val": 22
           }
         ]
       }
@@ -76,7 +76,7 @@
     "name": "セルペナ",
     "title": "沼のラミア",
     "hp": 70,
-    "drain_heal": 6,
+    "drain_heal": 26,
     "shape": "lamia",
     "color": "#5fae8b",
     "hair": "#2e5e4e",
@@ -86,7 +86,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 22
+            "val": 24
           },
           {
             "op": "status",
@@ -100,7 +100,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 34
+            "val": 48
           }
         ]
       },
@@ -109,7 +109,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 16
+            "val": 14
           },
           {
             "op": "status",
@@ -146,8 +146,8 @@
     "id": "verza",
     "name": "ヴェルザ",
     "title": "淫魔の女王",
-    "hp": 108,
-    "drain_heal": 8,
+    "hp": 92,
+    "drain_heal": 30,
     "shape": "queen",
     "color": "#8e5bd6",
     "hair": "#1d1630",
@@ -173,7 +173,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 15,
+            "val": 16,
             "hits": 2
           }
         ]
@@ -183,7 +183,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 22
+            "val": 24
           },
           {
             "op": "heal",
@@ -201,7 +201,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 46
+            "val": 58
           }
         ]
       },
@@ -210,7 +210,7 @@
         "effects": [
           {
             "op": "arouse",
-            "val": 18
+            "val": 20
           },
           {
             "op": "add_card",
