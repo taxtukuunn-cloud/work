@@ -14,7 +14,7 @@
   {"id": "shakeoff", "name": "振り払う", "cost": 0, "type": "skill", "rarity": "common", "text": "手札の魅了と疼きを除外。忍耐+4", "effects": [{"op": "cleanse"}, {"op": "block", "val": 4}]},
   {"id": "taunt", "name": "挑発", "cost": 1, "type": "skill", "rarity": "common", "text": "相手を動揺2にする（削りが1.5倍）", "effects": [{"op": "enemy_status", "id": "shaken", "n": 2}]},
   {"id": "cold_eyes", "name": "冷めた目", "cost": 1, "type": "skill", "rarity": "rare", "text": "相手を白け2にする（誘惑が0.6倍）。忍耐+3", "effects": [{"op": "enemy_status", "id": "weak", "n": 2}, {"op": "block", "val": 3}]},
-  {"id": "accept", "name": "受け入れる", "cost": 0, "type": "skill", "rarity": "common", "text": "気力+2。興奮+8", "effects": [{"op": "energy", "val": 2}, {"op": "arousal", "val": 8}]},
+  {"id": "accept", "name": "受け入れる", "cost": 0, "type": "skill", "rarity": "common", "text": "気力+1。1枚引く。興奮+10", "effects": [{"op": "energy", "val": 1}, {"op": "draw", "val": 1}, {"op": "arousal", "val": 10}]},
   {"id": "gaze", "name": "見惚れる", "cost": 0, "type": "skill", "rarity": "common", "text": "気力+1。2枚引く。興奮+10", "effects": [{"op": "energy", "val": 1}, {"op": "draw", "val": 2}, {"op": "arousal", "val": 10}]},
 
   {"id": "allout", "name": "渾身の一撃", "cost": 2, "type": "attack", "rarity": "rare", "text": "余裕を22削る。興奮+8", "effects": [{"op": "damage", "val": 22}, {"op": "arousal", "val": 8}]},
